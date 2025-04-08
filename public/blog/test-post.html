@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS/JS + CACHEBUSTING --->
-    <link rel="stylesheet" href="/styles.css?nocache=1744128048440">
+    <link rel="stylesheet" href="/styles.css?nocache=1744129561447">
 
     <script 
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -16,7 +16,7 @@
 
 
 
-    <title>Hello World</title>
+    <title>Getting Started with Eleventy</title>
   </head>
   <body >
 
@@ -46,8 +46,8 @@
   <li><a href="/">/</a></li>
   <li><a href="/medialog">/medialog</a></li>
   <li><a href="/photogrid">/photogrid</a></li>
-  <li><a href="/blog">/blog</a></li>
   <!-- COMMENTED OUT FOR NOW
+  <li><a href="/blog">/blog</a></li>
   <li><a href="/now">/now</a></li>
   <li><a href="/sitemap">/sitemap</a></li>
   -->
@@ -57,13 +57,30 @@
   <main>
 <article class="blog-post">
 
-    <h1>Hello World</h1>
-    <time datetime="2025-04-08">April 8, 2025</time>
+    <h1>Getting Started with Eleventy</h1>
+    <time datetime="2025-04-07">April 7, 2025</time>
 
   
   <div class="blog-content">
-    <h2>This is another test post</h2>
-<p>Just to see what multiple posts look like on my page</p>
+    <h1>This is a test blog post</h1>
+<p>But I'm keeping it up for reference purposes and so others can use it as a test.</p>
+<p>Eleventy (11ty) is a simple static site generator that's perfect for building blogs, portfolio sites, and other content-focused websites.</p>
+<h2>Why Eleventy?</h2>
+<ul>
+<li>Zero client-side JavaScript by default</li>
+<li>Flexible template languages (Markdown, Nunjucks, Liquid, etc.)</li>
+<li>Fast build times</li>
+<li>Simple configuration</li>
+</ul>
+<h2>Setting up a basic Eleventy site</h2>
+<p>First, install Eleventy:</p>
+<pre><code class="language-bash">npm install -g @11ty/eleventy
+</code></pre>
+<p>Then create a simple page and run the site:</p>
+<pre><code class="language-bash">echo '# Hello World' &gt; index.md
+eleventy --serve
+</code></pre>
+<p>And that's it! You now have a basic Eleventy site up and running.</p>
 
   </div>
   
@@ -73,7 +90,13 @@
         
       
         
-          <a href="/tags/test/">test</a>
+      
+        
+          <a href="/tags/eleventy/">eleventy</a>, 
+        
+      
+        
+          <a href="/tags/javascript/">javascript</a>
         
       
       </p>
@@ -87,11 +110,11 @@
   <div class="prev-post">
     
     
-      <a href="/blog/test-post.html">← Getting Started with Eleventy</a>
-    
   </div>
   <div class="next-post">
     
+    
+      <a href="/blog/2025-04-08.html">Hello World →</a>
     
   </div>
 </nav></main>

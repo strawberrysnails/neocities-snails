@@ -275,3 +275,16 @@ figure img {
       padding: 10px;
     }
   }
+
+  /* BLOG PAGE STYLES */
+
+  .post-list{
+    max-width: 700px;
+  }
+
+  .post-item{
+    margin-top: 10px;
+    padding: 10px;
+    list-style-type: none;
+    border: 1px #fff solid;
+  }
