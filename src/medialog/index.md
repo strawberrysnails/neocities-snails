@@ -1,6 +1,6 @@
 ---
 title: Media Log
-layout: "base.njk"
+layout: main
 nesting: ""
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Homepage
-layout: "base.njk"
+layout: main
 ---
 
 

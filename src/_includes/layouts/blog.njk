@@ -1,0 +1,42 @@
+---
+layout: main
+---
+
+<article class="blog-post">
+
+    <h1>{{ title }}</h1>
+    <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time>
+
+  
+  <div class="blog-content">
+    {{ content | safe }}
+  </div>
+  
+    {% if tags %}
+      <p>Tags: 
+      {% for tag in tags %}
+        {% if tag != "blog" and tag != "posts" %}
+          <a href="/tags/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endif %}
+      {% endfor %}
+      </p>
+    {% endif %}
+
+</article>
+
+<a href="/blog">← back to blog</a>
+<br><br>
+<nav class="post-navigation">
+  <div class="prev-post">
+    {% set previousPost = collections.blog | getPreviousCollectionItem(page) %}
+    {% if previousPost %}
+      <a href="{{ previousPost.url }}">← {{ previousPost.data.title }}</a>
+    {% endif %}
+  </div>
+  <div class="next-post">
+    {% set nextPost = collections.blog | getNextCollectionItem(page) %}
+    {% if nextPost %}
+      <a href="{{ nextPost.url }}">{{ nextPost.data.title }} →</a>
+    {% endif %}
+  </div>
+</nav>

@@ -1,7 +1,6 @@
 ---
 title: Media Log / Games
-layout: "base.njk"
-script: "main.js"
+layout: main
 nesting: ""
 ---
 
@@ -45,6 +44,7 @@ nesting: ""
 
 + The Wizard of Oz: Beyond The Yellow Brick Road
 + Art Academy 
++ Pokemon X [replay]
 </details>
 
 <details>
@@ -62,8 +62,6 @@ nesting: ""
 + Pokemon Ultra Moon 
 + Bravely Default
 + Phoenix Wright: Ace Attorney Trilogy
-+ The Wizard of Oz: Beyond The Yellow Brick Road
-+ Art Academy 
 + Hello Kitty: Big City Dreams
 </details>
 
@@ -90,6 +88,7 @@ nesting: ""
 <details>
 <summary>Planning</summary>
 
++ Demon Souls
 + Dark Souls 1
 + Dark Souls 2
 + Dark Souls 3

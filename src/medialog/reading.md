@@ -1,7 +1,6 @@
 ---
 title: Media Log / Reading
-layout: "base.njk"
-script: "main.js"
+layout: main
 nesting: ""
 ---
 
