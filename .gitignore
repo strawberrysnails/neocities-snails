@@ -1,0 +1,3 @@
+.eleventyignore
+node_modules
+public.zip

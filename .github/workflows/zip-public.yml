@@ -1,0 +1,28 @@
+name: Upload Public Zip to Nekoweb
+
+on:
+  push:
+    branches:
+      - main # Change this to your default branch
+
+jobs:
+  upload-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create zip file of public folder
+        run: |
+          zip -r public.zip public
+
+      - name: Upload zip file to Nekoweb
+        env:
+          NEKOWEB_API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
+        run: |
+          curl -X POST \
+               -F "pathname=/home/snails" \
+               -F "file=@public.zip" \
+               -H "Authorization: Bearer $NEKOWEB_API_KEY" \
+               nekoweb.org/api/files/upload

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="/public/assets/jquery.style-my-tooltips.js"></script>
+
+    <title>Lea's Room</title>
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="./assets/counter.js"></script>
+    <script>
+      $(document).ready(function(){
+  
+     $("#updates").load("./updates.html");
+  
+  });
+     </script>
+    <script>
+      (function($){
+          $(document).ready(function(){
+              $("[title]").style_my_tooltips();
+          });
+      })(jQuery);
+  </script>
+    <script>
+    $(document).ready(function(){
+
+   $("#updates").load("./updates");
+
+});
+   </script>
+   <script type="text/javascript">
+    var mode = 0;
+    function grayscale() {
+      var photo = document.querySelector(".room");
+      if (mode === 0) {
+        photo.style.filter = "grayscale(100%)";
+        mode = 1;
+      } else {
+        photo.style.filter = "none";
+        mode = 0;
+      }
+    }</script>
+   
+  </head>
+  <style>
+
+
+    main {
+    display: grid;
+    max-width: 720px;
+    height: auto;
+    grid-template-areas:
+            "header"
+            "container"
+            "nav"
+            "footer";
+    margin:auto;
+}
+
+    footer{
+      grid-area: footer;
+      margin-bottom:20px;
+    }
+
+    header{
+      grid-area: header;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #container {
+      position: relative;
+      margin:auto;
+      width: 605px;
+      height: 600px;
+      grid-area: container;
+    }
+
+    #counter{
+      font-size: .8em;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .room{
+      background-image: url(./Images/Splash/Room-green.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left:0;
+      right:0;
+    }
+/*
+    .cat{
+    
+    }
+*/
+    .computer{
+    background-image: url(./Images/Splash/SomeonesPC.png);
+    left:310px;
+    top:180px;
+    position:absolute;
+    background-size: cover;
+    width:80px;
+    height: 130px;
+    }
+
+    .computer:hover{
+      filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+      transform:translateY(2px);
+      transition: all ease 0.2s;
+    }
+              
+    #updates {
+        margin-top: 20px;
+        height: 100px;
+          }
+
+    .nav {
+        grid-area: nav;
+        position:relative;
+        bottom: 5px;
+        right: 50%;
+        background-color: rgba(253,253,244, 0.9);
+        border-radius: 2px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        transition: all 0.2s ease-out;
+        width: 60%;
+        margin: 0;
+        transform: translateX(50%)translateY(20px);
+      
+        
+    }
+    
+    .nav li {
+        flex:1;
+        list-style-type: none;
+        text-align:center;
+        border-right: 1px solid #cfcfc2;
+    }
+
+    .nav a {
+        display: inline-block;
+        text-indent: 0;
+        font-size: 8px;
+        font-weight: 500;
+        color: var(--color-primary-a80);
+        font-family: 'minecraftia', monospace;
+        text-transform: uppercase;
+        line-height: 16px;
+        text-decoration: none;
+        
+    }
+
+    .nav a:hover{
+      color:rgb(110, 110, 110);
+    }
+    
+    
+    .nav.mobile {
+        display: none;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .nav, .nav, .room .bookshelf .cat .monitors .poster {
+            display: none;
+        }
+        
+        .nav.mobile {
+            display: flex;
+            opacity: 1;
+            position:relative; 
+            bottom: auto;
+            right: auto;
+            transform: none;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .nav.mobile li a{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        #container{
+          width: 500px;
+          height: 500px;
+        }
+
+        .room{
+          width: 500px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+
+        .computer{
+          width: 60px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          left:260px;
+          top:140px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+      .nav, .nav, .bookshelf .cat .monitors .poster {
+            display: none;
+        }
+
+        #container{
+          width: 400px;
+          height: 400px;
+          
+        }
+
+        .room{
+          width: 400px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+
+        .computer{
+          width: 50px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          left:210px;
+          top:100px;
+        }
+
+    }
+
+
+    
+
+</style>
+<body>
+
+<main>
+
+
+<header>
+  <h1>welcome to lea's room...</h1>
+  <button type="button" onclick="grayscale()">Toggle Grayscale</button>
+</header>
+
+<div id="container">
+
+  <div class="room"></div>
+  <a href="/someonespc"><div class="computer" title="Someone's PC"></div></a>
+
+</div>  
+
+
+
+  </div>
+             <ul class="nav mobile">
+                   <li><a href="/home.html">Enter</a></li>
+                   <li><a href="/about.html">About</a></li>
+                   <li><a href="/someonespc">Someone's PC</a></li>
+                   <li><a href="/bookshelf">Bookshelf</a></li>
+               </ul>
+
+     <footer>
+
+      <div class="blurb" id="updates">
+       
+        </div>
+     
+     
+      <div id="counter">
+        Last Updated: 1/15/24 | 
+        Visitors: 36,904 | ♡2024 Copying is an act of love. <a href="https://copyheart.org/manifesto/" target="_blank" rel="noreferrer noopener">Please copy.</a> <br><br>
+        <a href="https://lovesick.cafe/grrrl" target="_blank" rel="noreferrer noopener"><img src="/Images/Splash/madebyagirl.png"></a>
+  </div>   
+     </footer>
+    </main>
+
+
+  </div>
+</body>
+</html>

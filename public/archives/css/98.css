@@ -1,0 +1,360 @@
+/* variables and stuff */
+:root {
+    /* remember to change the media query */
+    --container-width: 1000px;
+  }
+  
+  /* background image */
+  body {
+    background-color: rgb(90, 146, 146);
+    background-image: none;
+  }
+  
+  /* change the width of the website and the centering */
+  container {
+    max-width: var(--container-width);
+    display: flex;
+    margin: 50px auto;
+  }
+  
+  /* style side bar width*/
+  #aside {
+    width: 300px;
+    margin-right: 10px;
+    order: 1;
+  }
+  
+  /* style main page width */
+  #main {
+    width: 700px;
+  }
+  
+  
+  /* button sizes */
+  .title-bar-controls button {
+    height: 15px;
+    width: 10px;
+    background-size: 8px;
+  }
+  
+  /* changes heading search bar colour text to be darker */
+  input:disabled {
+    color: #222;
+  }
+  
+  /* overriding font sizes */
+  h1,
+  h2,
+  h3 legend,
+  .title-bar {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .window,
+  input,
+  textarea,
+  h4,
+  h5,
+  h6,
+  button,
+  details, li, ul{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Pixelated MS Sans Serif", Arial;
+  }
+
+  li{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Pixelated MS Sans Serif", Arial;
+  }
+
+  ul{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Pixelated MS Sans Serif", Arial;
+  }
+  /* alignment for stuff */
+  .title-bar {
+    padding: 6px 5px 6px 6px;
+  }
+  
+  .window-body {
+    margin: 5px 5px 5px 5px;
+  }
+  
+  /* contents inside window body main and aside have margins, if over x amount will scroll */
+  main,
+  aside {
+    max-height: auto;
+    overflow: auto;
+    padding: 10px;
+  }
+  
+  /* by default images display as big as they are */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  /* adds margins to fieldsets!!! */
+  fieldset {
+    margin: 20px;
+  }
+
+  .field-row{
+    padding:10px;
+    
+
+  }
+  
+  /* styles links to be underlined when hovered over */
+  a {
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+
+  a{
+    color:#233d5a;
+  }
+  
+  a:hover {
+    text-decoration: underline dotted;
+  }
+
+  /* styling for different image gallery types */
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .buttons img {
+    width: 88px;
+    margin: 0px 1px;
+  }
+  
+  .buttons a > img:hover {
+    opacity: 0.75;
+  }
+  
+  .stamps,
+  .pixels {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .dividers img,
+  .text img,
+  .graphics img {
+    width: auto;
+  }
+  
+  .stamps img {
+    width: 99px;
+    margin: 0px 1px;
+  }
+  
+  .pixels img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 1px;
+  }
+  
+  /* ART GALLERY IMAGES */
+  .gallery[hidden] {
+    display: none;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    margin: 0.5%;
+    width: 49%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* navigation bar now displays as 1 line */
+  /* the > a is required because the homepage link isnt classified as .navlink T-T */
+  #templaterr-sidebar > a,
+  #templaterr-sidebar > .navlink {
+    margin: 0px 5px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  
+  /* styles socials bar to be 1 line*/
+  #socials {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #socials a {
+    margin: 0px 5px;
+  }
+  
+  /* styles pagedoll to be on bottom right */
+  .pagedoll {
+    position: relative;
+  }
+  
+  .pagedoll img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 10%;
+  }
+  
+  /* styles calendar */
+  #calendar {
+    padding: 0px;
+    border: 0;
+    margin: 0px;
+    position: relative;
+  }
+  
+  #calendar > iframe {
+    padding: 0px;
+    border: 0;
+    margin: 0px;
+    width: 172px;
+    height: 210px;
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+  }
+
+  .title-bar {
+    background:linear-gradient(90deg,#42283d,#6f849b);
+  }
+  
+  /* MEDIA QUERY : max width is original - 200px */
+  
+  @media only screen and (max-width: 800px) {
+    container {
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+  
+    /* sidebar and main page now fill the width */
+    #aside,
+    #main {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+  
+    /* avatar, music player, status don't appear */
+    #avatar,
+    #musicplayer,
+    #statuscafe {
+      display: none;
+    }
+  
+    /* styles main page title to NOT have the - Internet explorer */
+    #main > .title-bar > .title-bar-text::after {
+      content: none;
+    }
+  }
+  
+  /* hides pagedoll if screen is too small : max width is orignal + 100px */
+  @media only screen and (max-width: 1100px) {
+    .pagedoll {
+      display: none;
+    }
+  }
+  
+  /* hides calendar if screen is too small : max width is orignal + 425px */
+  @media only screen and (max-width: 1425px) {
+    #calendar {
+      display: none;
+    }
+  }
+  
+  /* styles the music player */
+  #musicplayer {
+    width: auto;
+    border: outset 2px;
+    margin: 10px 0px;
+  }
+  
+  #musicplayer h2 {
+    margin: 0px;
+    font-size: 15px;
+  }
+  
+  #musicplayer table {
+    border: inset 2px;
+  }
+  
+  #musicplayer td {
+    border: outset 1px;
+  }
+  
+  #musicplayer td:active {
+    border: inset 1px;
+  }
+  
+  .songtitle {
+    padding: 5px;
+    display: block;
+  }
+  
+  .controls {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .seeking {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    cursor: grab;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    cursor: grab;
+  }
+  
+  .current-time {
+    padding-right: 5px;
+  }
+  
+  .total-duration {
+    padding-left: 5px;
+  }
+  
+  i {
+    image-rendering: pixelated;
+    transform: scale(0.5);
+  }
+  
+  /* styles summarys (the dropdown text) */
+  summary {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* styles insignificant text */
+  small {
+    font-size: 15px;
+    color: gray;
+  }
+  
+  /* styles break lines */
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
