@@ -1,14 +1,18 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/sun.css');
 
+
 body{
-    font-family: monospace;
-    background-color: rgb(46, 27, 37);
-    color:#fff;
+    font-family: garamond;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    background-color: #3c2c3e;
+    background-image: url(images/background.jpg);
+    color:rgb(131, 54, 83);
     font-size: 16px;
 }
 
 a{
-    color:rgb(233, 207, 240);
+    color:rgb(113, 68, 125);
 }
 
 a:hover{
@@ -38,95 +42,80 @@ border-bottom: 2px solid #fff;
 table{ border-collapse: separate; border-spacing: 15px 0;
 }
 
+.content{
+  padding: 20px;
+}
 
+section.box{
+  border: rgb(117, 62, 98) 1px dashed;
+  background-color: #fff;
+  overflow-y: scroll;
+  height: 100px;
+  width: 30%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+section > h2{
+  display: inline-flex;
+  position: absolute;
+  margin-top: -1em;
+  background:rgb(255, 248, 248);
+  padding: 0 4px;
+}
 
 .container { 
-    width: auto;
-    height: 95vh;
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 75%;
+    height: 80%;
     display: grid;
-    grid-template-columns: 350px 1fr;
-    grid-template-rows: 5% auto 5%;
-    gap: 50px 50px;
+    grid-template-columns: 250px 80%;
+    grid-template-rows: auto minmax(auto, 80px);
+    gap: 30px;
     grid-auto-flow: row;
     grid-template-areas:
-      "header header" 
       "aside main"
       "footer footer";
   }
 
-  header { grid-area: header; }
   
-  aside { grid-area: aside; }
+  aside {
+    grid-area: aside;
+    background-color: rgb(255, 248, 248);
+    border: 50px solid transparent;
+    border-image-source: url(images/pink-border.png);
+    border-image-slice: 80;
+    border-image-repeat: round;
+    border-image-outset: 5px;
+    box-shadow: 0 0 15px 5px rgba(131, 104, 121, 0.455);
+  }
   
-  main { grid-area: main; 
-        margin-top: 30px;}
+  main {
+    grid-area: main;
+    min-height:65vh;
+    background-color: rgb(255, 248, 248);
+    border: 50px solid transparent;
+    border-image-source: url(images/pink-border.png);
+    border-image-slice: 80;
+    border-image-repeat: round;
+    border-image-outset: 5px;
+    box-shadow: 0 0 15px 5px rgba(131, 104, 121, 0.455);
+}
   
   footer {
     grid-area: footer;
+    min-height: 20px;
     text-align: center;
+    background-color: rgb(255, 248, 248);
+    border: 50px solid transparent;
+    border-image-source: url(images/pink-border.png);
+    border-image-slice: 80;
+    border-image-repeat: round;
+    border-image-outset: 5px;
+    box-shadow: 0 0 15px 5px rgba(131, 104, 121, 0.455);
 }
 
-.home {  display: grid;
-    grid-template-columns: 55% 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "content right";
-  }
-  
-  .content { grid-area: content; }
-  
-  .right { grid-area: right; }
-  
-
-.ascii{
-    font-family: monospace;
-    white-space: pre;
-}
-
-.about { 
-    display: grid;
-    grid-template-columns: 160px 1.7fr;
-    grid-template-rows: auto;
-    grid-auto-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "pic info";
-      max-width:800px;
-      padding:5px;
-      border-radius:30px;
-      border: dotted white 2px;
-  }
-
-  .about li{
-    line-height: .5em;
-    list-style: square;
-  }
-  
-  .pic { grid-area: pic;
-    width: 200px;
-    }
-
-    .pic img{
-    width:200px;
-    border: dotted white 2px;
-    border-radius:50%;
-    margin:-30px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    }
-
-    .pic img:hover{
-        transform: rotate(10deg);
-    }
-  
-  .info { grid-area: info;}
 
    details summary{
     font-weight: bold;
@@ -168,10 +157,10 @@ table{ border-collapse: separate; border-spacing: 15px 0;
     
     .container { 
         width: auto;
-        height: 95vh;
         display: grid;
+        margin-left: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
         gap: 10px 10px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -179,32 +168,18 @@ table{ border-collapse: separate; border-spacing: 15px 0;
           "main"
           "footer";
       }
-    
-
       
-      aside { grid-area: aside; text-align: left; margin-left:-20px;}
+      aside { grid-area: aside; text-align: left; max-height: 300px;}
       
-      main { grid-area: main; 
-            margin-top: 10px ;}
+      main { grid-area: main;
+            margin-top: 10px; height: auto;}
       
       footer {
         grid-area: footer;
         text-align: left;
+        max-height: 70px;
     }
     
-    .home {  display: grid;
-        grid-template-columns: 55% 1fr;
-        grid-template-rows: 1fr;
-        grid-auto-columns: 1fr;
-        gap: 10px 10px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "content right";
-      }
-      
-      .content { grid-area: content; }
-      
-      .right { grid-area: right; }
       
     
     .ascii{
@@ -288,3 +263,76 @@ figure img {
     list-style-type: none;
     border: 1px #fff solid;
   }
+
+  /* PHOTOGRID STYLES */
+
+.card{
+  background-color:white;
+  padding:10px;
+  height: 350px;
+  margin:2px;
+  border: 1px dotted rgb(138, 65, 93);
+  transition: 0.3s;
+}
+
+.card:hover{
+  rotate: 5deg;
+  transform: scale(0.90);
+
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: 0.2s;
+  filter: grayscale(50%);
+}
+
+.card img:hover{
+    filter:none;
+}
+
+.desc {
+  padding: 0px;
+  text-align: left;
+  color:black;
+  width:100%;
+  line-height: 1.4em;
+  display: inline;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 23%;
+  padding:none;
+}
+
+@media only screen and (max-width: 1650px) {
+  .responsive {
+    width: 30%;
+    margin: 6px 0;
+  }
+  .card{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 48%;
+  }
+  .card{
+    height: 430px;
+  }
+}
+
+  @media only screen and (max-width: 1050px) {
+    .responsive {
+      width: 95%;
+    }
+    .card{
+      height: auto;
+    }
+
+}

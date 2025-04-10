@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS/JS + CACHEBUSTING --->
-    <link rel="stylesheet" href="/styles.css?nocache=1744313924274">
+    <link rel="stylesheet" href="/styles.css?nocache=1744222582029">
 
     <script 
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -16,7 +16,7 @@
 
 
 
-    <title>Homepage</title>
+    <title>Image Grid Test</title>
   </head>
   <body >
 
@@ -25,8 +25,6 @@
     <div class="container">
 
   <aside>
-
-    <!----
       <div class="ascii">
                              
         \`*-.                    
@@ -43,8 +41,7 @@
           ; '   : :`-:     _.`* ;
        .*' /  .*' ; .*`- +'  `*' 
        `*-*   `*-*  `*-*'
-      </div> ---->
-      <img style="width:150px;" src="images/icon.jpg">    
+      </div>
   <ul class="a">
   <li><a href="/">/</a></li>
   <li><a href="/medialog">/medialog</a></li>
@@ -55,28 +52,24 @@
   <li><a href="/sitemap">/sitemap</a></li>
   -->
   </ul>
-
   </aside>
 
   <main>
-    <div class="content"><h1>Welcome</h1>
-<p><img src="https://i.imgur.com/AzxzIx5.png" alt=""></p>
-<h3>Not a lot going on atm but feel free to explore</h3>
-<section class="box">
-<h2>To-Do List</h2>
-<ul>
-<li>[x] photogrid</li>
-<li>[WIP] media log</li>
-<li>[ ] archive</li>
-<li>[ ] sitemap</li>
-</ul>
-</section>
-</div>
-  </main>
+<p>TEST</p>
+
+<div class="responsive">
+    <div class="card">
+        
+    </div>
+  </div>
+
+</main>
 
 <!-- FOOTER --->
   <footer>
-  Created with ♡ and hosted on <a href="https://neocities.org/" target="_blank" rel="noreferrer noopener">Neocities</a>. (ﾐዋ ﻌ ዋﾐ)ﾉ </footer>
+  Hosted on <a href="https://neocities.org/" target="_blank" rel="noreferrer noopener">Neocities</a>. (ﾐዋ ﻌ ዋﾐ)ﾉ
+  <br>
+  ♡2024 Copying is an act of love. <a href="https://copyheart.org/manifesto/" target="_blank" rel="noreferrer noopener">Please copy.</a></footer>
 </div>
   </body>
 </html>
