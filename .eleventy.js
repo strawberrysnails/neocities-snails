@@ -1,16 +1,24 @@
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy("src/javascript");
-  eleventyConfig.addPassthroughCopy("src/styles.css");
-  eleventyConfig.addPassthroughCopy("src/_includes/*.css");
+  // Passthrough file copies
+  eleventyConfig.addPassthroughCopy({
+    "src/images": "images",
+    "src/javascript": "javascript",
+    "src/css": "css",
+    "src/_includes/fonts": "fonts"
+  });
+  
+  // Layout aliases
   eleventyConfig.addLayoutAlias("main", "base.njk");
   eleventyConfig.addLayoutAlias("blog", "blog.njk");
   eleventyConfig.addLayoutAlias("photogrid", "photogrid.njk");
-
+  
   // This will stop the default behaviour of foo.html being turned into foo/index.html
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 

@@ -2,6 +2,7 @@
 layout: main
 title: Blog
 permalink: /blog/
+nesting: "../"
 eleventyExcludeFromCollections: true
 ---
 

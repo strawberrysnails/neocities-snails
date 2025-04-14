@@ -1,112 +1,21 @@
 ---
 title: Photogrid
 layout: main
+nesting: ""
 ---
 
-<!---
-<div class="responsive">
-  <div class="card">
-    <a target="_blank" href="images/miffy latte.jpg" >
-    <img src="images/miffy latte.jpg">
-    </a>
-    <div class="desc">
-      caption
-     </div>
-  </div>
-</div>
----->
-  
+
+{% for photo in photos %}
   <div class="responsive">
     <div class="card">
-      <a target="_blank" href="images/heart-pizza.jpeg" >
-      <img src="images/heart-pizza.jpeg">
+      <a target="_blank" href="images/{{ photo.src }}">
+        <img src="images/{{ photo.src }}">
       </a>
       <div class="desc">
-       <b>02.14.2025</b>
-       Heart pizza my boyfriend made for me on valentines day. </div>
+        <b>{{ photo.date }}</b>
+        {{ photo.caption | safe }}
+      </div>
     </div>
   </div>
-  
-  
-  <div class="responsive">
-    <div class="card">
-      <a target="_blank" href="images/snek.jpg" >
-      <img src="images/snek.jpg">
-      </a>
-      <div class="box-hover">caption</div>
-      <div class="desc">
-       <b>02.03.2025</b>
-       Boyfriend holding little baby snake. 🐍</div>
-    </div>
-  </div>
+{% endfor %}
 
-  <div class="responsive">
-    <div class="card">
-      <a target="_blank" href="images/miffy latte.jpg" >
-      <img src="images/miffy latte.jpg">
-      </a>
-      <div class="desc">
-       <b>6.18.2024</b>
-       Working as a barista, I made this for a customer by mistake. She ended up actually knowing who miffy is. ₍ᐢ. .ᐢ₎</div>
-    </div>
-  </div>
-
-  <!--- 
-
-  <div class="responsive">
-    <div class="card">
-      <a target="_blank" href="images/miffy latte.jpg" >
-      <img src="images/miffy latte.jpg">
-      </a>
-      <div class="desc">
-       <b>6.18.2024</b>
-       Working as a barista, I made this for a customer by mistake. She ended up actually knowing who miffy is. ₍ᐢ. .ᐢ₎</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="card">
-      <a target="_blank" href="images/miffy latte.jpg" >
-      <img src="images/miffy latte.jpg">
-      </a>
-      <div class="desc">
-       <b>6.18.2024</b>
-       Working as a barista, I made this for a customer by mistake. She ended up actually knowing who miffy is. ₍ᐢ. .ᐢ₎</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="card">
-      <a target="_blank" href="images/miffy latte.jpg" >
-      <img src="images/miffy latte.jpg">
-      </a>
-      <div class="desc">
-       <b>6.18.2024</b>
-       Working as a barista, I made this for a customer by mistake. She ended up actually knowing who miffy is. ₍ᐢ. .ᐢ₎</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="card">
-      <a target="_blank" href="images/miffy latte.jpg" >
-      <img src="images/miffy latte.jpg">
-      </a>
-      <div class="desc">
-       <b>6.18.2024</b>
-       Working as a barista, I made this for a customer by mistake. She ended up actually knowing who miffy is. ₍ᐢ. .ᐢ₎</div>
-    </div>
-  </div>
-
-  <div class="responsive">
-    <div class="card">
-      <a target="_blank" href="images/miffy latte.jpg" >
-      <img src="images/miffy latte.jpg">
-      </a>
-      <div class="desc">
-       <b>6.18.2024</b>
-       Working as a barista, I made this for a customer by mistake. She ended up actually knowing who miffy is. ₍ᐢ. .ᐢ₎</div>
-    </div>
-  </div>
-
-  --->
-  

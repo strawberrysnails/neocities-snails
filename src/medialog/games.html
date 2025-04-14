@@ -1,0 +1,123 @@
+---
+title: Media Log / Games
+layout: main
+nesting: "../"
+---
+
+<h1>Medialog &gt; Games</h1>
+
+<div class="nav-links">
+  <a href="{{ page.url }}">games</a> |
+  <a href="reading.html">reading</a> |
+  <a href="anime.html">anime</a>
+</div>
+
+<hr>
+
+<h2>Games I'm Playing</h2>
+
+<h3>Currently Playing</h3>
+<table>
+  <thead>
+    <tr><th>Title</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+      {% if game.type == "played" and game.status == "currently playing" %}
+        <tr>
+          <td>{{ game.title }}</td>
+          <td class="platform">{{ game.platform }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Completed</h3>
+<table>
+  <thead>
+    <tr><th>Title</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+      {% if game.type == "played" and game.status == "completed" %}
+        <tr>
+          <td>{{ game.title }}</td>
+          <td class="platform">{{ game.platform }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Planning</h3>
+<table>
+  <thead>
+    <tr><th>Title</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+      {% if game.type == "played" and game.status == "planning" %}
+        <tr>
+          <td>{{ game.title }}</td>
+          <td class="platform">{{ game.platform }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Games I'm Watching</h2>
+
+<h3>Currently Watching</h3>
+<table>
+  <thead>
+    <tr><th>Title</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+      {% if game.type == "watched" and game.status == "currently watching" %}
+        <tr>
+          <td>{{ game.title }}</td>
+          <td class="platform">{{ game.platform }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Completed</h3>
+<table>
+  <thead>
+    <tr><th>Title</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+      {% if game.type == "watched" and game.status == "completed" %}
+        <tr>
+          <td>{{ game.title }}</td>
+          <td class="platform">{{ game.platform }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Planning</h3>
+<table>
+  <thead>
+    <tr><th>Title</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+      {% if game.type == "watched" and game.status == "planning" %}
+        <tr>
+          <td>{{ game.title }}</td>
+          <td class="platform">{{ game.platform }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>

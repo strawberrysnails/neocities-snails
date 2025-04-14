@@ -18,7 +18,7 @@
 
 
 
-    <title>Media Log</title>
+    <title>Getting Started with Eleventy</title>
   </head>
   <body >
 
@@ -46,7 +46,7 @@
        .*' /  .*' ; .*`- +'  `*' 
        `*-*   `*-*  `*-*'
       </div> ---->
-      <img style="width:190px; border: 2px dotted #f0a8a8; border-radius: 5%;"  src="../images/icon.jpg">
+      <img style="width:190px; border: 2px dotted #f0a8a8; border-radius: 5%;"  src="/images/icon.jpg">
       <h1 style="margin-top: .5em;">Navigation</h1>    
   <ul class="a">
   <li><a href="/">Home</a></li>
@@ -62,19 +62,70 @@
   </aside>
 
   <main>
-    <div class="content"><h1>Medialog</h1>
+    <div class="content">
+<article class="blog-post">
+
+    <h1>Getting Started with Eleventy</h1>
+    <time datetime="2025-04-07">April 7, 2025</time>
+
+  
+  <div class="blog-content">
+    <h1>This is a test blog post</h1>
+<p>But I'm keeping it up for reference purposes and so others can use it as a test.</p>
+<p>Eleventy (11ty) is a simple static site generator that's perfect for building blogs, portfolio sites, and other content-focused websites.</p>
+<h2>Why Eleventy?</h2>
 <ul>
-<li>
-<p><a href="games.html">Games</a></p>
-</li>
-<li>
-<p><a href="reading.html">Reading</a></p>
-</li>
-<li>
-<p><a href="anime.html">Anime</a></p>
-</li>
+<li>Zero client-side JavaScript by default</li>
+<li>Flexible template languages (Markdown, Nunjucks, Liquid, etc.)</li>
+<li>Fast build times</li>
+<li>Simple configuration</li>
 </ul>
-</div>
+<h2>Setting up a basic Eleventy site</h2>
+<p>First, install Eleventy:</p>
+<pre><code class="language-bash">npm install -g @11ty/eleventy
+</code></pre>
+<p>Then create a simple page and run the site:</p>
+<pre><code class="language-bash">echo '# Hello World' &gt; index.md
+eleventy --serve
+</code></pre>
+<p>And that's it! You now have a basic Eleventy site up and running.</p>
+
+  </div>
+  
+    
+      <p>Tags: 
+      
+        
+      
+        
+      
+        
+          <a href="/tags/eleventy/">eleventy</a>, 
+        
+      
+        
+          <a href="/tags/javascript/">javascript</a>
+        
+      
+      </p>
+    
+
+</article>
+
+<a href="/blog">← back to blog</a>
+<br><br>
+<nav class="post-navigation">
+  <div class="prev-post">
+    
+    
+  </div>
+  <div class="next-post">
+    
+    
+      <a href="/blog/jailbreaking-my-kindle/">Jailbreaking my Kindle →</a>
+    
+  </div>
+</nav></div>
   </main>
 
 <!-- FOOTER --->

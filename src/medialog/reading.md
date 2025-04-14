@@ -1,7 +1,7 @@
 ---
 title: Media Log / Reading
 layout: main
-nesting: ""
+nesting: "../"
 ---
 
 # Medialog > Reading

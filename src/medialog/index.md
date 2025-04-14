@@ -1,7 +1,7 @@
 ---
 title: Media Log
 layout: main
-nesting: ""
+nesting: "../"
 ---
 
 
