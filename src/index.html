@@ -1,0 +1,33 @@
+---
+title: Homepage
+layout: main
+---
+
+<fieldset>
+{% set post = collections.blog[0] %}
+{% if post %}
+    <legend>Latest Blog Post</legend>
+      <h3>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </h3>
+      <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+      {% if post.data.excerpt %}
+        <p>{{ post.data.excerpt }}</p>
+        <p>...</p>
+        <a href="{{ post.url }}">Read more <i class="bi bi-arrow-right-short"></i></a>
+      {% endif %}
+{% endif %}
+</fieldset>
+
+<fieldset>
+    <legend>To-Do List</legend>
+<ul>
+    <li>[x] photogrid</li>
+    <li>[x] blog</li>
+    <li>[WIP] media log</li>
+    <li>[ ] archive</li>
+    <li>[ ] sitemap</li>
+</ul>
+</fieldset>
+
+

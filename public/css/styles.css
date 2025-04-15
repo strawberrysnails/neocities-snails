@@ -1,10 +1,11 @@
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/sun.css');
 
 @import '/css/normalize.css';
 
 :root {
   --wine: rgb(131, 54, 83);
+  --babypink:rgb(255, 248, 248);
 }
+
 
 @font-face{
   font-family: Daydream;
@@ -31,6 +32,11 @@
   src: url(/fonts/OldEnglishGoth.ttf); /* https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
 }
 
+@font-face {
+  font-family: Fira Code;
+  src: url(/fonts/FiraCode.ttf); /* https://fonts.google.com/specimen/Fira+Code */
+}
+
 
 body{
     font-family: 'Basiic';
@@ -40,25 +46,33 @@ body{
     background-image: url(/images/background.jpg); /* Credit: https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs */
     color:var(--wine);
     font-size: 16px;
+    justify-items: center;
 }
 
 
 a{
     color:var(--wine);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 aside a{
   text-decoration: none;
 }
 
-
 a:hover{
     color:rgb(148, 49, 104);
 }
 
+a[target="_blank"]::after {
+  content: "\F1C5"; /* bi-box-arrow-up-right */
+  font-family: 'bootstrap-icons';
+  margin-left: 0;
+  margin-left: 0.25em;
+  font-size: 0.65em;
+}
+
 li{
-    list-style-type: none;
+    list-style-type: square;
     margin-left:-0.3em;
     line-height: 1em;
 }
@@ -67,6 +81,8 @@ ul{
     line-height: 1em;
     padding-inline-start: 10px;  
 }
+
+/* NAVIGATION */
 
 ul.a, ul.a li {
   list-style-type: '\2661';
@@ -90,7 +106,11 @@ h1{
   margin-block-end: 1;
 }
 
-h2{ font-family: 'RomanceA';}
+h2{
+  font-family: 'RomanceA';
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
 
 h2 a{
   text-decoration: none;
@@ -131,7 +151,7 @@ th {
   color: #ffdee6;
   font-family: "RomanceA";
   font-size: 1.3rem;
-  padding: 12px 15px;
+  padding: 10px;
   text-align: left;
   border-bottom: 1px solid #a35773;
   letter-spacing: 1px;
@@ -140,7 +160,7 @@ th {
 td {
   background-color: #ffe0e8;
   color: #3e2a2a;
-  padding: 10px 12px;
+  padding: 7px;
   border-top: 1px dotted #f2b6c5;
   font-family: "Basiic", sans-serif;
   font-weight: 700;
@@ -148,7 +168,7 @@ td {
 
 td:last-child,
 th:last-child {
-  max-width: 150px;
+  max-width: 100px;
   width: 150px;
 }
 
@@ -176,27 +196,8 @@ tr:hover td {
   padding: 20px;
 }
 
-section.box{
-  border: var(--wine) 1px dashed;
-  background-color: #fff;
-  overflow-y: scroll;
-  height: 100px;
-  width: 30%;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-section > h2{
-  display: inline-flex;
-  position: absolute;
-  margin-top: -1em;
-  background:rgb(255, 248, 248);
-  padding: 0 4px;
-}
-
 .container { 
     margin-top: 50px;
-    margin-left: 15%;
     width: 75%;
     height: 80%;
     display: grid;
@@ -212,7 +213,8 @@ section > h2{
   
   aside {
     grid-area: aside;
-    background-color: rgb(255, 248, 248);
+    height: auto;
+    background-color: var(--babypink);
     border: 30px solid transparent;
     border-image-source: url(/images/pink-border.png);
     border-image-slice: 80;
@@ -224,7 +226,7 @@ section > h2{
   main {
     grid-area: main;
     min-height:65vh;
-    background-color: rgb(255, 248, 248);
+    background-color: var(--babypink);
     border: 30px solid transparent;
     border-image-source: url(/images/pink-border.png);
     border-image-slice: 80;
@@ -234,10 +236,11 @@ section > h2{
 }
   
   footer {
+    margin-bottom: 20px;
     grid-area: footer;
     min-height: 20px;
     text-align: center;
-    background-color: rgb(255, 248, 248);
+    background-color: var(--babypink);
     border: 30px solid transparent;
     border-image-source: url(/images/pink-border.png);
     border-image-slice: 80;
@@ -270,6 +273,16 @@ section > h2{
     border-left: 2px dotted rgb(255, 255, 255);
   }
 
+  fieldset{
+    border: var(--wine) 1px dashed;
+    background-color: #fff;
+    overflow-y: scroll;
+    height: 120px;
+    width: 45%;
+    padding: 6px;
+    display: inline-block;
+    vertical-align: top;
+  }
 
   /* moble view */
 
@@ -310,11 +323,16 @@ section > h2{
         max-height: 70px;
     }
     
-      
-    
     .ascii{
         font-family: monospace;
         white-space: pre;
+    }
+
+    section.box{
+      overflow-y: scroll;
+      height: 100px;
+      width: 95%;
+
     }
 
 }
@@ -346,12 +364,13 @@ figure img {
     padding: 10px;
     list-style-type: none;
     border: 1px var(--wine) dashed;
+    background-color: #fff;
   }
 
   /* PHOTOGRID STYLES */
 
 .card{
-  background-color:white;
+  background-color:fff;
   padding:10px;
   height: 300px;
   margin:2px;

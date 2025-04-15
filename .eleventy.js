@@ -22,6 +22,13 @@ module.exports = function (eleventyConfig) {
   // This will stop the default behaviour of foo.html being turned into foo/index.html
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
+  // Blog collection
+  eleventyConfig.addCollection("blog", function (collectionApi) {
+    return collectionApi.getFilteredByTag("blog").sort((a, b) => b.date - a.date);
+  });
+  
+  
+
     // Date filters
     eleventyConfig.addFilter("dateIso", (date) => {
       return DateTime.fromJSDate(date).toISODate();
@@ -39,7 +46,7 @@ module.exports = function (eleventyConfig) {
     linkify: true
   };
   
-  eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
+  eleventyConfig.setLibrary("md", markdownIt({ html: true }));
 
   return {
     dir: {
