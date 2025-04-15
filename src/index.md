@@ -3,7 +3,7 @@ title: Homepage
 layout: main
 ---
 
-# Welcome (h1)
+# Welcome 
 
 ### Not a lot going on at the moment but feel free to explore.
 

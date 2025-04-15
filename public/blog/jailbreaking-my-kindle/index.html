@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS/JS + CACHEBUSTING --->
-    <link rel="stylesheet" href="/css/styles.css?nocache=1744662025115">
+    <link rel="stylesheet" href="/css/styles.css?nocache=1744725161993">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
 
@@ -91,16 +91,18 @@
 <p>To install it, I followed <a href="https://kindlemodding.org/jailbreaking/post-jailbreak/koreader.html">this guide on the Kindle Modding Wiki</a>. It was straightforward.</p>
 <h3>Aftermath</h3>
 <p>YAY my Kindle works! KOReader has a very different interface, but with some tweaks and a quick read through the <a href="https://koreader.rocks/user_guide/">User Guide</a>, I figured it out. Custom lockscreen time!</p>
+<p><a href="https://files.catbox.moe/0zbz8h.jpg" target="_blank"><img src="https://files.catbox.moe/0zbz8h.jpg" style="min-width:200px; max-width:400px;"></a></p>
+<p>I used this <a href="https://eink-image-converter.contechity.com/">e-ink image converter</a>.</p>
 <p>While my Kindle was plugged into my PC, I created a new folder called “Books” directly on the device. Then I added a few of my favorite books, fanfiction, and manga by dragging the files over from my computer.</p>
 <p>One KOReader feature I really like is <strong>Collections</strong>, which you can read about <a href="https://koreader.rocks/user_guide/#L2-collections">here</a>. It's a much more efficient way to organize your digital library, especially since Rakuyomi doesn’t allow you to choose where downloaded manga is saved (more on that below).</p>
 <p>Right now, I’ve set up three collections: <em>Books</em>, <em>Manga</em>, and <em>Fanfiction</em>. I’ll likely expand that over time as I add more content, but for now, this setup works for me.</p>
 <p>Eventually, I want to set up automatic synchronization between my collections and folders. This will be really useful later on for keeping manga organized after downloading through Rakuyomi.</p>
 <h3>Installing and Configuring Rakuyomi</h3>
 <p>This was pretty hard for me and I ended up asking my tech-savvy boyfriend for help, which made things a lot easier.</p>
-<p>Here’s what we did:</p>
-<p>While my Kindle was plugged into my PC, I copied the <strong><code>rakuyomi.koplugin</code></strong> folder into KOReader’s <strong><code>plugins</code></strong> folder.</p>
+<p>Here’s what he did:</p>
+<p>While my Kindle was plugged into my PC, he copied the <strong><code>rakuyomi.koplugin</code></strong> folder into KOReader’s <strong><code>plugins</code></strong> folder.</p>
 <p>The confusing part was configuration. Rakuyomi needs “sources” to work. Basically, a list of manga repositories it can search through. You have to manually create this source list and add it to the app.</p>
-<p>To do that, I created a file called <strong><code>settings.json</code></strong> inside KOReader’s <strong><code>rakuyomi</code></strong> folder (inside its home directory). Here’s what I put in it:</p>
+<p>To do that, you have to create a file called <strong><code>settings.json</code></strong> inside KOReader’s <strong><code>rakuyomi</code></strong> folder (inside its home directory). Here's what mine looks like:</p>
 <pre><code>{
   &quot;$schema&quot;: &quot;https://github.com/hanatsumi/rakuyomi/releases/download/main/settings.schema.json&quot;,
   &quot;source_lists&quot;: [
@@ -125,6 +127,7 @@
 <p>You should now be able to browse and search for manga directly within KOReader.</p>
 </li>
 </ol>
+<p><a href="https://files.catbox.moe/9ht0m5.jpeg" target="_blank"><img src="https://files.catbox.moe/9ht0m5.jpeg" style="min-width:200px; max-width:400px;"></a></p>
 <h3>Conclusion</h3>
 <p>I’ve only scratched the surface of Kindle modding, and I’m really excited to keep exploring what’s possible. Emulators, native games, and lots of plugins. My boyfriend even installed Tetris for me (don’t ask me how — I have no idea).</p>
 <p>There are still a few plugins I’m interested in but haven’t tried yet. I’ll figure those out eventually and share more once I get the chance to play around with them.</p>

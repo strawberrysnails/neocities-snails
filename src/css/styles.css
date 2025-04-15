@@ -2,6 +2,10 @@
 
 @import '/css/normalize.css';
 
+:root {
+  --wine: rgb(131, 54, 83);
+}
+
 @font-face{
   font-family: Daydream;
   src: url(/fonts/Daydream.ttf) /* Credit: https://www.dafont.com/daydream-3.font */
@@ -14,7 +18,7 @@
 
 @font-face {
   font-family: Basiic;
-  src: url(/fonts/basiic.ttf);
+  src: url(/fonts/basiic.ttf); /* Credit: https://cinni.net/?z=/font */
 }
 
 @font-face {
@@ -32,15 +36,15 @@ body{
     font-family: 'Basiic';
     line-height: 1em;
     letter-spacing: 1px;
-    background-color: #3c2c3e;
+    background-color: #ba8a9e;
     background-image: url(/images/background.jpg); /* Credit: https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs */
-    color:rgb(131, 54, 83);
+    color:var(--wine);
     font-size: 16px;
 }
 
 
 a{
-    color:rgb(131, 54, 83);
+    color:var(--wine);
     text-decoration: underline;
 }
 
@@ -88,6 +92,10 @@ h1{
 
 h2{ font-family: 'RomanceA';}
 
+h2 a{
+  text-decoration: none;
+}
+
 pre code {
   display: block;
   background-color: #f4f4f4;
@@ -111,35 +119,65 @@ pre {
 /* TABLE STYLES */
 table {
   width: 100%;
-  background-color: #3c2c3e;
-  border-collapse: separate;
-  border-spacing: 0 8px; /* vertical spacing between rows */
-  font-size: 1rem;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  background-color: #ffeef2;
+  box-shadow: 0 0 0 4px #fff8fb, 0 0 0 8px #fcdce6; /* subtle layered frame */
+  font-size: 0.95rem;
 }
 
 th {
+  background-color: var(--wine);
+  color: #ffdee6;
+  font-family: "RomanceA";
+  font-size: 1.3rem;
+  padding: 12px 15px;
   text-align: left;
-  border-bottom: 2px solid #d8c6c6;
-  padding: 4px 8px;
-  font-weight: bold;
-  color: #4c2e2e;
+  border-bottom: 1px solid #a35773;
+  letter-spacing: 1px;
 }
 
 td {
-  padding: 6px 8px;
-  background: #f9f4f4;
-  border-radius: 6px;
-  vertical-align: top;
+  background-color: #ffe0e8;
   color: #3e2a2a;
+  padding: 10px 12px;
+  border-top: 1px dotted #f2b6c5;
+  font-family: "Basiic", sans-serif;
+  font-weight: 700;
 }
 
+td:last-child,
+th:last-child {
+  max-width: 150px;
+  width: 150px;
+}
+
+td:not(:last-child), th:not(:last-child) {
+  border-right: 1px dotted #d6a2b8; /* cute pastel pink border */
+}
+
+
+tr:nth-child(even) td {
+  background-color: #ffeaf0;
+}
+
+tr:hover td {
+  background-color: #fddde7;
+}
+
+.platform{
+  text-align: center;
+}
+
+
+/* */
 
 .content{
   padding: 20px;
 }
 
 section.box{
-  border: rgb(117, 62, 98) 1px dashed;
+  border: var(--wine) 1px dashed;
   background-color: #fff;
   overflow-y: scroll;
   height: 100px;
@@ -295,53 +333,7 @@ figure img {
   display: block;
 }
   
-  /* PHOTOGRID STYLES */
 
-  section {
-    padding: 10px;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 350px 350px;
-    margin-right: 10px;
-    gap: 10px;
-  }
-  .grid img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  .box-image {
-    position: relative;
-  }
-  .box-hover {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(46, 27, 37, 0.4);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-  }
-  .box-image:hover .box-hover {
-    display: flex;
-  }
-  @media screen and (max-width: 750px) {
-    .grid img,
-    .box-hover {
-      min-height: 350px;
-      max-height: 350px;
-    }
-  
-    .gallery {
-      padding: 10px;
-    }
-  }
 
   /* BLOG PAGE STYLES */
 
@@ -353,7 +345,7 @@ figure img {
     margin-top: 10px;
     padding: 10px;
     list-style-type: none;
-    border: 1px #fff solid;
+    border: 1px var(--wine) dashed;
   }
 
   /* PHOTOGRID STYLES */
@@ -363,7 +355,7 @@ figure img {
   padding:10px;
   height: 300px;
   margin:2px;
-  border: 1px dotted rgb(138, 65, 93);
+  border: 1px dashed var(--wine);
   transition: 0.3s;
 }
 
@@ -377,7 +369,7 @@ figure img {
   width: 100%;
   height: auto;
   transition: 0.2s;
-  filter: grayscale(50%);
+  filter: grayscale(20%);
 }
 
 .card img:hover{

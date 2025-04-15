@@ -44,6 +44,10 @@ To install it, I followed [this guide on the Kindle Modding Wiki](https://kindle
 
 YAY my Kindle works! KOReader has a very different interface, but with some tweaks and a quick read through the [User Guide](https://koreader.rocks/user_guide/), I figured it out. Custom lockscreen time! 
 
+<a href="https://files.catbox.moe/0zbz8h.jpg" target="_blank"><img src="https://files.catbox.moe/0zbz8h.jpg" style="min-width:200px; max-width:400px;"></a>
+
+I used this [e-ink image converter](https://eink-image-converter.contechity.com/). 
+
 While my Kindle was plugged into my PC, I created a new folder called “Books” directly on the device. Then I added a few of my favorite books, fanfiction, and manga by dragging the files over from my computer.
 
 One KOReader feature I really like is **Collections**, which you can read about [here](https://koreader.rocks/user_guide/#L2-collections). It's a much more efficient way to organize your digital library, especially since Rakuyomi doesn’t allow you to choose where downloaded manga is saved (more on that below).
@@ -57,13 +61,13 @@ Eventually, I want to set up automatic synchronization between my collections an
 
 This was pretty hard for me and I ended up asking my tech-savvy boyfriend for help, which made things a lot easier.
 
-Here’s what we did:
+Here’s what he did:
 
-While my Kindle was plugged into my PC, I copied the **`rakuyomi.koplugin`** folder into KOReader’s **`plugins`** folder.
+While my Kindle was plugged into my PC, he copied the **`rakuyomi.koplugin`** folder into KOReader’s **`plugins`** folder.
 
 The confusing part was configuration. Rakuyomi needs “sources” to work. Basically, a list of manga repositories it can search through. You have to manually create this source list and add it to the app.
 
-To do that, I created a file called **`settings.json`** inside KOReader’s **`rakuyomi`** folder (inside its home directory). Here’s what I put in it:
+To do that, you have to create a file called **`settings.json`** inside KOReader’s **`rakuyomi`** folder (inside its home directory). Here's what mine looks like:
 
 ```
 {
@@ -85,6 +89,8 @@ Once that was done, here’s how I got Rakuyomi working inside KOReader:
 3. Go to Manage Sources, then tap the + icon in the top left.
 
 4. You should now be able to browse and search for manga directly within KOReader.
+
+<a href="https://files.catbox.moe/9ht0m5.jpeg" target="_blank"><img src="https://files.catbox.moe/9ht0m5.jpeg" style="min-width:200px; max-width:400px;"></a>
 
 ### Conclusion
 
