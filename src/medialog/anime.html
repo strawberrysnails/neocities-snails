@@ -1,0 +1,135 @@
+---
+title: Anime Log
+layout: main
+nesting: "../"
+---
+
+<h1>Anime Log</h1>
+<p>Data fetched from <a href="https://anilist.co/user/snails/" target="_blank">anilist</a></p>
+
+<style>
+  .anime-section {
+    margin-top: 2rem;
+  }
+
+  .anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: stretch;
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .anime-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    padding: 0.75rem;
+    border: 1px dashed var(--wine, #8b1e3f);
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+
+  .anime-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .anime-cover {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .anime-title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 0rem;
+  }
+
+  .anime-progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    margin-top: 0rem;
+    overflow: hidden;
+  }
+
+  .anime-progress-bar .bar {
+    height: 100%;
+    background: var(--wine, #8b1e3f);
+    transition: width 0.3s ease;
+  }
+</style>
+
+{# Unpack data #}
+{% set favorites = anime.favorites or [] %}
+{% set anime = anime.anime or [] %}
+
+{% if favorites.length %}
+  <section class="anime-section">
+    <h2>Favorites</h2>
+    <div class="anime-grid">
+      {% for fav in favorites %}
+        <div class="anime-card" style="width: auto;">
+          <a href="{{ fav.url }}" target="_blank">
+            <img src="{{ fav.cover }}" style=" width: 100%;" alt="{{ fav.title }} cover" class="anime-cover">
+            <p class="anime-title">{{ fav.title }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+{% set statusLabels = {
+    current: "Watching",
+    completed: "Completed",
+    planning: "Planning"
+  } %}
+  
+
+{% for key, label in statusLabels %}
+  {% set filtered = anime | filterByStatus(key) %}
+  {% if filtered.length %}
+    <div class="anime-section">
+      <h2>{{ label }}</h2>
+      <div class="anime-grid">
+        {% for m in filtered %}
+          <div class="anime-card">
+            <img src="{{ m.cover }}" alt="{{ m.title }} cover" class="anime-cover">
+            <div style="width: 100%;">
+              <p class="anime-title">{{ m.title }}</p>
+
+              {% if key == "planning" %}
+                <div class="anime-progress-bar">
+                  <div class="bar" style="width: 0%; background: #ccc;"></div>
+                </div>
+
+              {% elif key == "completed" %}
+                <div class="anime-progress-bar">
+                  <div class="bar" style="width: 100%;"></div>
+                </div>
+
+              {% elif key == "current" %}
+                {% if m.episodes and m.episodes > 0 %}
+                  {% set percent = (m.progress / m.episodes * 100) | round %}
+                  <div class="anime-progress-bar">
+                    <div class="bar" style="width: {{ percent }}%;"></div>
+                  </div>
+                {% else %}
+                  <div class="anime-progress-bar">
+                    <div class="bar" style="width: 50%; background: var(--wine);"></div>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

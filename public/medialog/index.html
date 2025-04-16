@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS/JS + CACHEBUSTING --->
-    <link rel="stylesheet" href="/css/styles.css?nocache=1744748454428">
+    <link rel="stylesheet" href="/css/styles.css?nocache=1744826400561">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 
@@ -62,18 +62,62 @@
   </aside>
 
   <main>
-    <div class="content"><h1>Medialog</h1>
-<ul>
-<li>
-<p><a href="games.html">Games</a></p>
-</li>
-<li>
-<p><a href="reading.html">Reading</a></p>
-</li>
-<li>
-<p><a href="anime.html">Anime</a></p>
-</li>
-</ul>
+    <div class="content">
+<style>
+.link-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.link-card {
+  flex: 1 1 250px;
+  background: #fff;
+  border: 1px dashed var(--wine);
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  background: none;
+}
+</style>
+
+<h1>Media Log</h1>
+
+
+
+
+
+<div class="link-box">
+
+  <a href="games.html" class="link-card">
+    <h2>Games</h2>
+    
+      <p>Currently playing: <strong>Nier: Replicant</strong></p>
+      <p>Watching: <strong>Bloodborne</strong></p>
+    
+  </a>
+
+  <a href="manga.html" class="link-card">
+    <h2>Manga</h2>
+    
+      <p>Now reading: <strong>Yamada-kun to Lv999 no Koi wo Suru</strong></p>
+    
+  </a>
+
+  <a href="anime.html" class="link-card">
+    <h2>Anime</h2>
+    
+      <p>Now watching: <strong>Magia Record: Mahou Shoujo Madoka☆Magica Gaiden</strong></p>
+    
+  </a>
+
+</div>
 </div>
   </main>
 

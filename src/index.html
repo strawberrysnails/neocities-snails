@@ -2,6 +2,13 @@
 title: Homepage
 layout: main
 ---
+<img src="/images/banner.png" width="100%" height="190px" style="object-fit: cover;">
+
+<h1>Recent Updates:</h1>
+<ul>
+  <li>media log finally complete</li>
+  <li>first blog post</li>
+</ul>
 
 <fieldset>
 {% set post = collections.blog[0] %}
@@ -10,10 +17,9 @@ layout: main
       <h3>
         <a href="{{ post.url }}">{{ post.data.title }}</a>
       </h3>
-      <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+      <i class="bi bi-calendar-heart"></i> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
       {% if post.data.excerpt %}
         <p>{{ post.data.excerpt }}</p>
-        <p>...</p>
         <a href="{{ post.url }}">Read more <i class="bi bi-arrow-right-short"></i></a>
       {% endif %}
 {% endif %}
@@ -24,9 +30,10 @@ layout: main
 <ul>
     <li>[x] photogrid</li>
     <li>[x] blog</li>
-    <li>[WIP] media log</li>
+    <li>[x] media log</li>
     <li>[ ] archive</li>
     <li>[ ] sitemap</li>
+    <li>[ ] RSS feed</li>
 </ul>
 </fieldset>
 

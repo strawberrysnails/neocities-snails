@@ -1,0 +1,67 @@
+---
+title: Media Log
+layout: main
+nesting: "../"
+---
+
+<style>
+.link-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.link-card {
+  flex: 1 1 250px;
+  background: #fff;
+  border: 1px dashed var(--wine);
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  background: none;
+}
+</style>
+
+<h1>Media Log</h1>
+
+{% set animeList = (anime.anime | default([])) %}
+{% set mangaList = (manga.manga | default([])) %}
+{% set gamelog = gamelog | default([]) %}
+
+<div class="link-box">
+
+  <a href="games.html" class="link-card">
+    <h2>Games</h2>
+    {% if gamelog.length %}
+      <p>Currently playing: <strong>{{ gamelog | getCurrentGame }}</strong></p>
+      <p>Watching: <strong>{{ gamelog | getCurrentWatchedGame }}</strong></p>
+    {% else %}
+      <p>No game data available.</p>
+    {% endif %}
+  </a>
+
+  <a href="manga.html" class="link-card">
+    <h2>Manga</h2>
+    {% if mangaList.length %}
+      <p>Now reading: <strong>{{ mangaList | getCurrentMangaRead }}</strong></p>
+    {% else %}
+      <p>No manga data available.</p>
+    {% endif %}
+  </a>
+
+  <a href="anime.html" class="link-card">
+    <h2>Anime</h2>
+    {% if animeList.length %}
+      <p>Now watching: <strong>{{ animeList | getCurrentAnimeWatch }}</strong></p>
+    {% else %}
+      <p>No anime data available.</p>
+    {% endif %}
+  </a>
+
+</div>

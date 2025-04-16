@@ -1,0 +1,134 @@
+---
+title: Manga Log
+layout: main
+nesting: "../"
+---
+
+<h1>Manga Log</h1>
+<p>Data fetched from <a href="https://anilist.co/user/snails/" target="_blank">anilist</a></p>
+
+<style>
+  .manga-section {
+    margin-top: 2rem;
+  }
+
+  .manga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: stretch;
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .manga-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    padding: 0.75rem;
+    border: 1px dashed var(--wine, #8b1e3f);
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+
+  .manga-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .manga-cover {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .manga-title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 0rem;
+  }
+
+  .manga-progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    margin-top: 0rem;
+    overflow: hidden;
+  }
+
+  .manga-progress-bar .bar {
+    height: 100%;
+    background: var(--wine, #8b1e3f);
+    transition: width 0.3s ease;
+  }
+</style>
+
+{# Unpack data #}
+{% set favorites = manga.favorites or [] %}
+{% set manga = manga.manga or [] %}
+
+{% if favorites.length %}
+  <section class="manga-section">
+    <h2>Favorites</h2>
+    <div class="manga-grid">
+      {% for fav in favorites %}
+        <div class="manga-card" style="width: auto;">
+          <a href="{{ fav.url }}" target="_blank">
+            <img src="{{ fav.cover }}" style=" width: 100%;" alt="{{ fav.title }} cover" class="manga-cover">
+            <p class="manga-title">{{ fav.title }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+{% set statusLabels = {
+  current: "Reading",
+  completed: "Completed",
+  planning: "Planning"
+} %}
+
+{% for key, label in statusLabels %}
+  {% set filtered = manga | filterByStatus(key) %}
+  {% if filtered.length %}
+    <div class="manga-section">
+      <h2>{{ label }}</h2>
+      <div class="manga-grid">
+        {% for m in filtered %}
+          <div class="manga-card">
+            <img src="{{ m.cover }}" alt="{{ m.title }} cover" class="manga-cover">
+            <div style="width: 100%;">
+              <p class="manga-title">{{ m.title }}</p>
+
+              {% if key == "planning" %}
+                <div class="manga-progress-bar">
+                  <div class="bar" style="width: 0%; background: #ccc;"></div>
+                </div>
+
+              {% elif key == "completed" %}
+                <div class="manga-progress-bar">
+                  <div class="bar" style="width: 100%;"></div>
+                </div>
+
+              {% elif key == "current" %}
+                {% if m.chapters and m.chapters > 0 %}
+                  {% set percent = (m.progress / m.chapters * 100) | round %}
+                  <div class="manga-progress-bar">
+                    <div class="bar" style="width: {{ percent }}%;"></div>
+                  </div>
+                {% else %}
+                  <div class="manga-progress-bar">
+                    <div class="bar" style="width: 50%; background: var(--wine);"></div>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
