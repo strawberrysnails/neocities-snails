@@ -2,4 +2,4 @@
 
 ---
 
-- created using[eleventy](https://www.11ty.dev/)
+created using [eleventy](https://www.11ty.dev/)

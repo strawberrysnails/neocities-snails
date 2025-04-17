@@ -1,7 +1,7 @@
 ---
 title: Jailbreaking my Kindle
 date: 2025-04-14
-excerpt: Modding my Kindle because fuck Amazon. Amazon recently disabled the ability to download any books purchased through the Kindle storefront.
+excerpt: Modding my Kindle because I'm mad at Amazon. Amazon recently disabled the ability to download any books purchased through the Kindle storefront.
 layout: blog
 tags: 
 - blog
@@ -91,9 +91,11 @@ Once that was done, here’s how I got Rakuyomi working inside KOReader:
 
 <a href="https://files.catbox.moe/9ht0m5.jpeg" target="_blank"><img src="https://files.catbox.moe/9ht0m5.jpeg" style="min-width:200px; max-width:400px;"></a>
 
+When you download manga to your device it is sent to a folder called ``rakuyomi/downloads``. To make it easier to access, I synced this folder with my "Manga" collection.
+
 ### Conclusion
 
-I’ve only scratched the surface of Kindle modding, and I’m really excited to keep exploring what’s possible. Emulators, native games, and lots of plugins. My boyfriend even installed Tetris for me (don’t ask me how — I have no idea).
+I’ve only scratched the surface of Kindle modding, and I’m really excited to keep exploring what’s possible. Emulators, native games, and lots of plugins. My boyfriend even installed Tetris for me (idk how).
 
 There are still a few plugins I’m interested in but haven’t tried yet. I’ll figure those out eventually and share more once I get the chance to play around with them.
 
