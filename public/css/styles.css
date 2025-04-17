@@ -2,8 +2,8 @@
 @import '/css/normalize.css';
 
 :root {
-  --wine: rgb(131, 54, 83);
-  --babypink:rgb(255, 248, 248);
+  --wine: rgb(83, 35, 41);
+  --silver:rgb(237, 237, 237);
 }
 
 
@@ -37,14 +37,19 @@
   src: url(/fonts/FiraCode.ttf); /* https://fonts.google.com/specimen/Fira+Code */
 }
 
+@font-face {
+  font-family: Kelmscott;
+  src: url(/fonts/Kelmscott.ttf);
+}
+
 
 body{
     font-family: 'Basiic';
     line-height: 1em;
     letter-spacing: 1px;
     background-color: #ba8a9e;
-    background-image: url(/images/background.jpg); /* Credit: https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs */
-    color:var(--wine);
+    background-image: url(/images/background.jpg); /* https://www.zerochan.net/Pixiv+Id+20784982 */
+    color:black;
     font-size: 16px;
     justify-items: center;
 }
@@ -60,7 +65,7 @@ aside a{
 }
 
 a:hover{
-    color:rgb(148, 49, 104);
+    color:rgb(115, 42, 58);
 }
 
 a[target="_blank"]::after {
@@ -89,25 +94,25 @@ ul.a, ul.a li {
 }
 
 ul.a li{
-  border-bottom: 1px dashed rgb(237, 188, 204);
+  border-bottom: 1px dashed var(--wine);
   padding: 5px;
   font-weight: bold;
   transition: .4s;
 }
 
 ul.a li:hover{
-  background-color: rgb(254, 228, 236);
+  background-color: rgb(198, 198, 198);
 }
 
 h1{
   font-family: 'GothPixelFont';
-  font-size: xx-large;
+  font-size: 34px;
   margin-block-start: 1;
   margin-block-end: 1;
 }
 
 h2{
-  font-family: 'RomanceA';
+  font-family: 'Kelmscott';
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
@@ -142,26 +147,26 @@ table {
   border-collapse: collapse;
   margin-bottom: 2em;
   background-color: #ffeef2;
-  box-shadow: 0 0 0 4px #fff8fb, 0 0 0 8px #fcdce6; /* subtle layered frame */
+  box-shadow: 0 0 0 4px #fff8fb, 0 0 0 8px #fff;
   font-size: 0.95rem;
 }
 
 th {
-  background-color: var(--wine);
-  color: #ffdee6;
-  font-family: "RomanceA";
-  font-size: 1.3rem;
+  background-color: #000;
+  color: var(--silver);
+  font-family: "Kelmscott";
+  font-size: 1.2rem;
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #a35773;
+  border-bottom: 1px solid var(--wine);
   letter-spacing: 1px;
 }
 
 td {
-  background-color: #ffe0e8;
+  background-color: var(--silver);
   color: #3e2a2a;
   padding: 7px;
-  border-top: 1px dotted #f2b6c5;
+  border-top: 1px dotted  var(--wine);
   font-family: "Basiic", sans-serif;
   font-weight: 700;
 }
@@ -173,16 +178,16 @@ th:last-child {
 }
 
 td:not(:last-child), th:not(:last-child) {
-  border-right: 1px dotted #d6a2b8; /* cute pastel pink border */
+  border-right: 1px dotted var(--wine); 
 }
 
 
 tr:nth-child(even) td {
-  background-color: #ffeaf0;
+background-color: rgb(198, 198, 198);;
 }
 
 tr:hover td {
-  background-color: #fddde7;
+  background-color: rgb(198, 198, 198);;
 }
 
 .platform{
@@ -214,25 +219,25 @@ tr:hover td {
   aside {
     grid-area: aside;
     height: auto;
-    background-color: var(--babypink);
+    background-color: var(--silver);
     border: 30px solid transparent;
-    border-image-source: url(/images/pink-border.png);
+    border-image-source: url(/images/lace-border.png);
     border-image-slice: 80;
     border-image-repeat: round;
-    border-image-outset: 5px;
-    box-shadow: 0 0 15px 5px rgba(131, 104, 121, 0.455);
+    border-image-outset: 10px;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
   }
 
   main {
     grid-area: main;
     min-height:65vh;
-    background-color: var(--babypink);
+    background-color: var(--silver);
     border: 30px solid transparent;
-    border-image-source: url(/images/pink-border.png);
+    border-image-source: url(/images/lace-border.png); /* https://www.tumblr.com/dollsciples/774556137142009856/hi-do-you-have-more-icon-frames-like-this-one?source=share */
     border-image-slice: 80;
     border-image-repeat: round;
-    border-image-outset: 5px;
-    box-shadow: 0 0 15px 5px rgba(131, 104, 121, 0.455);
+    border-image-outset: 10px;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
 }
   
   footer {
@@ -240,13 +245,13 @@ tr:hover td {
     grid-area: footer;
     min-height: 20px;
     text-align: center;
-    background-color: var(--babypink);
+    background-color: var(--silver);
     border: 30px solid transparent;
-    border-image-source: url(/images/pink-border.png);
+    border-image-source: url(/images/lace-border.png);
     border-image-slice: 80;
     border-image-repeat: round;
-    border-image-outset: 5px;
-    box-shadow: 0 0 15px 5px rgba(131, 104, 121, 0.455);
+    border-image-outset: 10px;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
 }
 
 
@@ -285,9 +290,10 @@ tr:hover td {
   }
 
   legend{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 5px;    
+    font-family: "Kelmscott";
 
   }
   /* moble view */

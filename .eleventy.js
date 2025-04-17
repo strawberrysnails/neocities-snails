@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnchor = require("markdown-it-anchor");
+const htmlmin = require("html-minifier-terser");
 
 module.exports = function (eleventyConfig) {
   // Passthrough file copies
@@ -73,6 +74,20 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("dateReadable", (date) => {
     return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_FULL);
+  });
+
+  // Minify Settings
+  eleventyConfig.addTransform("htmlmin", function (content) {
+    if ((this.page.outputPath || "").endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true,
+      });
+      return minified;
+    }
+    return content;
   });
 
   // Markdown config
