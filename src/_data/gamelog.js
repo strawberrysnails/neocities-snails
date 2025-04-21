@@ -13,7 +13,7 @@ module.exports = [
       title: "Nier: Replicant",
       platform: "PC",
       platformImage: getPlatformBadge("PC"),
-      status: "currently playing",
+      status: "completed",
       type: "played"
     },
     {

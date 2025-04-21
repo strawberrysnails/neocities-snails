@@ -1,6 +1,7 @@
 ---
 title: Media Log
 layout: main
+permalink: /medialog/
 nesting: "../"
 ---
 
@@ -36,7 +37,7 @@ nesting: "../"
 
 <div class="link-box">
 
-  <a href="games.html" class="link-card">
+  <a href="games" class="link-card">
     <h2>Games</h2>
     {% if gamelog.length %}
       <p>Currently playing: <strong>{{ gamelog | getCurrentGame }}</strong></p>
@@ -46,7 +47,7 @@ nesting: "../"
     {% endif %}
   </a>
 
-  <a href="manga.html" class="link-card">
+  <a href="manga" class="link-card">
     <h2>Manga</h2>
     {% if mangaList.length %}
       <p>Now reading: <strong>{{ mangaList | getCurrentMangaRead }}</strong></p>
@@ -55,7 +56,7 @@ nesting: "../"
     {% endif %}
   </a>
 
-  <a href="anime.html" class="link-card">
+  <a href="anime" class="link-card">
     <h2>Anime</h2>
     {% if animeList.length %}
       <p>Now watching: <strong>{{ animeList | getCurrentAnimeWatch }}</strong></p>

@@ -52,6 +52,8 @@ body{
     color:black;
     font-size: 16px;
     justify-items: center;
+    margin: auto;
+
 }
 
 
@@ -77,8 +79,8 @@ a[target="_blank"]::after {
 }
 
 li{
-    list-style-type: square;
-    margin-left:-0.3em;
+    list-style-type: "✩";
+    margin-left:0.3em;
     line-height: 1em;
 }
 
@@ -121,6 +123,11 @@ h2 a{
   text-decoration: none;
 }
 
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+
 pre code {
   display: block;
   background-color: #f4f4f4;
@@ -133,7 +140,10 @@ pre code {
   font-family: 'Fira Code', 'Courier New', monospace;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid #e0e0e0;
-
+  overflow-x: auto;
+  max-width: 100%;
+  word-break: break-word;
+  white-space: pre-wrap;
 }
 
 pre {
@@ -195,20 +205,20 @@ tr:hover td {
 }
 
 
-/* */
+/* GRID LAYOUT */
 
 .content{
   padding: 10px;
 }
 
 .container { 
-    margin-top: 50px;
-    width: 75%;
-    height: 80%;
+    justify-items: center;
+    gap: 40px 50px;
+    margin: 20px auto;
+    width: 70%;
     display: grid;
-    grid-template-columns: 250px 80%;
+    grid-template-columns: minmax(250px, 1fr) 3fr;
     grid-template-rows: auto minmax(auto, 80px);
-    gap: 30px;
     grid-auto-flow: row;
     grid-template-areas:
       "aside main"
@@ -230,6 +240,8 @@ tr:hover td {
 
   main {
     grid-area: main;
+    width: 100%;
+    margin-left: 20px;
     min-height:65vh;
     background-color: var(--silver);
     border: 30px solid transparent;
@@ -239,11 +251,17 @@ tr:hover td {
     border-image-outset: 10px;
     box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
 }
+
+main, .post-item, .post-list {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
   
   footer {
     margin-bottom: 20px;
+    width: auto;
     grid-area: footer;
-    min-height: 20px;
+    min-height: 15px;
     text-align: center;
     background-color: var(--silver);
     border: 30px solid transparent;
@@ -295,25 +313,44 @@ tr:hover td {
     margin-left: 5px;    
     font-family: "Kelmscott";
 
+
   }
   /* moble view */
 
   @media ( max-width: 750px ) {
 
-
-    ul li{
-        display: inline;
-        margin-left: 1em;
-      }
+    img, pre code {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
       
     .button{
      display: none;
     }
+
+
+      ul.a li{
+        display: inline-block;
+        line-height: 1.5em;
+        padding:5px;
+        margin-right:1em;
+      }
+
+      ul.a li:hover{
+        background-color: rgba(198, 198, 198, 0.5);
+}
+
+    main, aside, footer {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;}
+
     
     .container { 
         width: auto;
         display: grid;
         margin-left: 0;
+        margin-bottom: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
         gap: 10px 10px;
@@ -324,27 +361,27 @@ tr:hover td {
           "footer";
       }
       
-      aside { grid-area: aside; text-align: left; max-height: 300px;}
-      
-      main { grid-area: main;
-            margin-top: 10px; height: auto;}
+      aside {
+      grid-area: aside;
+      text-align: left;
+      max-height: auto;
+    }
+
+      main { 
+      grid-area: main;
+      margin: 15px 15px;
+      height: auto;
+    }
       
       footer {
-        grid-area: footer;
-        text-align: left;
-        max-height: 70px;
+      grid-area: footer;
+      text-align: left;
+      max-height: 70px;
     }
     
     .ascii{
         font-family: monospace;
         white-space: pre;
-    }
-
-    section.box{
-      overflow-y: scroll;
-      height: 100px;
-      width: 95%;
-
     }
 
 }
@@ -362,6 +399,16 @@ tr:hover td {
     border: 1px var(--wine) dashed;
     background-color: #fff;
   }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: -2em;
+    margin:0;
+  }
+  
+  
 
   /* PHOTOGRID STYLES */
 
@@ -384,7 +431,7 @@ tr:hover td {
   width: 100%;
   height: auto;
   transition: 0.2s;
-  filter: grayscale(20%);
+  filter: grayscale(50%);
 }
 
 .card img:hover{
@@ -407,7 +454,16 @@ tr:hover td {
   padding:none;
 }
 
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+
 @media only screen and (max-width: 1650px) {
+
   .responsive {
     width: 30%;
     margin: 6px 0;
@@ -458,3 +514,66 @@ tr:hover td {
     border-radius: 10px;
     border: 4px solid #ffffff;
   }
+
+  /* STYLING TOC FOR LINKS PAGE */
+.toc {
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  padding:0;
+}
+
+/* LINKS */
+.toc a {
+  text-decoration: none;
+  color: var(--wine);
+  transition: color 0.2s ease;
+}
+
+.toc a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.toc > ol > li {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+.toc > ol > li > ol > li {
+  list-style: none;
+  margin-left: -3em;
+  border-left: 2px solid #ddd;
+  line-height: 1.5em;
+}
+
+/* (H2) */
+.toc > ol > li > a {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  margin-left: -1em;
+
+}
+
+/* (H3)*/
+.toc > ol > li > ol > li > a {
+  font-weight: normal;
+  font-size: 0.92rem;
+  color: #444;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+.toc.collapsed {
+  display: none;
+}
+
+/* BUTTON */
+.toc-toggle {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+

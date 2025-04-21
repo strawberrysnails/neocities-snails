@@ -29,6 +29,8 @@
 ---
  # bookmarks
 
++ https://www.tofugu.com/learn-japanese/
+
 + https://www.ferryhalim.com/orisinal/
 
 + https://grimgrains.com/site/home.html
@@ -77,7 +79,7 @@ On GitHub, anyone can grab your files and download them onto their computer. Not
 Click here for instructions on how to add collaborators to your GitHub repository.
 
 6.2. Pulling, fetching, merging and cloning
-If you have made a repository, you should already be familiar with the git push command. This command tells git to “push” all your commits to a remote repository (which is usually GitHub or Bitbucket.
+If you have made a repository, you should already be familiar with the git push command. This command tells git to “push” all your commits to a remote repository which is usually GitHub or Bitbucket.
 
 But what if you have an up to date repository on GitHub and you want to start working on this repository on your home computer? For this, you will need to learn about the git commands pull, fetch, merge and clone.
 

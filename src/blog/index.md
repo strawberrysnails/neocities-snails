@@ -8,6 +8,17 @@ eleventyExcludeFromCollections: true
 
 # Blog
 
+<h3>Browse by tag:</h3>
+  <div class="tag-list">
+    {% for tag in collections.tagList %}
+      <a href="/blog/tags/{{ tag | slug }}/">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </div>
+
+
+
+
+
 <ul class="post-list">
 {% for post in collections.blog %}
   <li class="post-item">

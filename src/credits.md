@@ -1,1 +1,0 @@
-https://projectsekai.fandom.com/wiki/Featuring_Hello_Kitty

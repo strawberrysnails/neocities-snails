@@ -1,0 +1,12 @@
+---
+permalink: "blog/tags/{{ tag | slug }}/"
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+layout: tags
+eleventyComputed:
+  title: "Tag: {{ tag }}"
+---
+
+<!-- BLANK INTENTIONALLY -->
