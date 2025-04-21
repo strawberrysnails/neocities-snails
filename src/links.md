@@ -1,6 +1,6 @@
 ---
 title: Links
-permalink: links
+permalink: /links/
 layout: links
 nesting: ""
 ---
