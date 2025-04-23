@@ -6,14 +6,12 @@ layout: main
 
 <button class="toc-toggle" onclick="toggleTOC()">
   Toggle Table of Contents</button> 
-{% if page.inputPath.endsWith(".md") %}
 <br><br>
 <nav class="toc collapsed" id="toc">
   <h2>Table of Contents</h2>
   {{ content | toc | safe }}
 </nav>
 
-{% endif %}
    {{ content | safe }}
 
    <script>

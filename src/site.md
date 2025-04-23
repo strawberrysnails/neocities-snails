@@ -24,7 +24,7 @@ Things that helped me build this website. Full list of resources and bookmarks c
 - [Normalize.css](https://necolas.github.io/normalize.css/) – CSS resets for consistent styling across browsers.
 - [html-minifier-terser](https://github.com/terser/html-minifier-terser) – Tool to minify and optimize your final HTML files.
 - [Eleventy](https://www.11ty.dev/) – Easiest static site generator to learn.
-- [VSCodium](https://vscodium.com/) – VSCode without Microsoft spying on you.
+- [Visual Code Studio](https://code.visualstudio.com/) – Great offline code editor with lots of plugins/customization.
 
 ### Tutorials 
 

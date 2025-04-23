@@ -8,12 +8,12 @@ function getPlatformBadge(platform) {
 
 
 module.exports = [
-    // Currently Playing
+    // Currently Playing PC
     {
-      title: "Nier: Replicant",
-      platform: "PC",
-      platformImage: getPlatformBadge("PC"),
-      status: "completed",
+      title: "Drakengard 3",
+      platform: "Emulator",
+      platformImage: getPlatformBadge("emulator"),
+      status: "currently playing",
       type: "played"
     },
     {
@@ -38,7 +38,14 @@ module.exports = [
       type: "played"
     },
   
-    // Completed
+    // Completed PC
+    {
+      title: "Nier: Replicant",
+      platform: "PC",
+      platformImage: getPlatformBadge("PC"),
+      status: "completed",
+      type: "played"
+    },
     {
       title: "Baldur's Gate 3",
       platform: "PC",
@@ -47,7 +54,7 @@ module.exports = [
       type: "played"
     },
   
-    // Planning
+    // Planning PC
     {
       title: "Divinity: Original Sin II",
       platform: "PC",
@@ -56,9 +63,9 @@ module.exports = [
       type: "played"
     },
     {
-      title: "Drakengard 3",
-      platform: "Emulator",
-      platformImage: getPlatformBadge("emulator"),
+      title: "Nier: Automata",
+      platform: "PC",
+      platformImage: getPlatformBadge("PC"),
       status: "planning",
       type: "played"
     },
@@ -80,6 +87,13 @@ module.exports = [
     },
     {
       title: "Pokemon X [replay]",
+      platform: "DS",
+      platformImage: getPlatformBadge("DS"),
+      status: "currently playing",
+      type: "played"
+    },
+    {
+      title: "Professor Layton and the Azran Legacy",
       platform: "DS",
       platformImage: getPlatformBadge("DS"),
       status: "currently playing",
@@ -144,7 +158,7 @@ module.exports = [
       title: "Bloodborne",
       platformImage: getPlatformBadge("emulator"),
       platform: "emulator",
-      status: "currently watching",
+      status: "completed",
       type: "watched"
     },
     {
@@ -158,7 +172,7 @@ module.exports = [
       title: "Demon Souls",
       platformImage: getPlatformBadge("emulator"),
       platform: "Emulator",
-      status: "planning",
+      status: "currently watching",
       type: "watched"
     },
     {

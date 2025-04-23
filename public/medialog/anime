@@ -36,7 +36,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS/JS + CACHEBUSTING --->
-    <link rel="stylesheet" href="/css/styles.css?nocache=1745264779517">
+    <link rel="stylesheet" href="/css/styles.css?nocache=1745438774399">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <script 
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -61,10 +61,11 @@
       <h1 style="margin-top: .5em;">Navigation</h1>    
   <ul class="a">
   <li><a href="/">Home</a></li>
+  <li><a href="/blog">Blog</a>
+  <li><a href="/links">Links</a></li>
   <li><a href="/medialog">Media Log</a></li>
   <li><a href="/photogrid">Photo Grid</a></li>
-  <li><a href="/blog">Blog</a>
-    <li><a href="/links">Links</a></li>
+  <li><a href="/pins">Pinboard</a></li>
   <li><a href="/site">Site Info</a></li>
   <!-- COMMENTED OUT FOR NOW
   <li><a href="/now">/now</a></li>
@@ -85,64 +86,6 @@
 </div>
 
 <p>Data fetched from <a href="https://anilist.co/user/snails/" target="_blank">anilist</a></p>
-
-<style>
-  .anime-section {
-    margin-top: 2rem;
-  }
-
-  .anime-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    align-items: stretch;
-    gap: 1.25rem;
-    margin-top: 1rem;
-  }
-
-  .anime-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100px;
-    padding: 0.75rem;
-    border: 1px dashed var(--wine, #8b1e3f);
-    background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-  }
-
-  .anime-card:hover {
-    transform: translateY(-3px);
-  }
-
-  .anime-cover {
-    height: 200px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 0.5rem;
-  }
-
-  .anime-title {
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin: 0rem;
-  }
-
-  .anime-progress-bar {
-    width: 100%;
-    height: 6px;
-    background: #eee;
-    border-radius: 3px;
-    margin-top: 0rem;
-    overflow: hidden;
-  }
-
-  .anime-progress-bar .bar {
-    height: 100%;
-    background: var(--wine, #8b1e3f);
-    transition: width 0.3s ease;
-  }
-</style>
 
 
 
@@ -171,6 +114,20 @@
           <a href="https://anilist.co/anime/853" target="_blank">
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx853-fiUtW8yohsSF.jpg" style=" width: 100%;" alt="Ouran Koukou Host Club cover" class="anime-cover">
             <p class="anime-title">Ouran Koukou Host Club</p>
+          </a>
+        </div>
+      
+        <div class="anime-card" style="width: auto;">
+          <a href="https://anilist.co/anime/9756" target="_blank">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx9756-QnUGwlwwnsuN.jpg" style=" width: 100%;" alt="Mahou Shoujo Madoka☆Magica cover" class="anime-cover">
+            <p class="anime-title">Mahou Shoujo Madoka☆Magica</p>
+          </a>
+        </div>
+      
+        <div class="anime-card" style="width: auto;">
+          <a href="https://anilist.co/anime/11061" target="_blank">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11061-y5gsT1hoHuHw.png" style=" width: 100%;" alt="HUNTER×HUNTER (2011) cover" class="anime-cover">
+            <p class="anime-title">HUNTER×HUNTER (2011)</p>
           </a>
         </div>
       
@@ -230,6 +187,22 @@
                   
                   <div class="anime-progress-bar">
                     <div class="bar" style="width: 0%;"></div>
+                  </div>
+                
+              
+            </div>
+          </div>
+        
+          <div class="anime-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1852-N3qrLcuVdUTF.png" alt="Hidamari Sketch cover" class="anime-cover">
+            <div style="width: 100%;">
+              <p class="anime-title">Hidamari Sketch</p>
+
+              
+                
+                  
+                  <div class="anime-progress-bar">
+                    <div class="bar" style="width: 25%;"></div>
                   </div>
                 
               

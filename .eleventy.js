@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("blog", "blog.njk");
   eleventyConfig.addLayoutAlias("tags", "tags.njk");
   eleventyConfig.addLayoutAlias("links", "links.njk");
+  eleventyConfig.addLayoutAlias("pinboard", "pinboard.njk");
 
   // Prevent default `foo/index.html` structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");

@@ -36,7 +36,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS/JS + CACHEBUSTING --->
-    <link rel="stylesheet" href="/css/styles.css?nocache=1745264779517">
+    <link rel="stylesheet" href="/css/styles.css?nocache=1745438774399">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <script 
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -61,10 +61,11 @@
       <h1 style="margin-top: .5em;">Navigation</h1>    
   <ul class="a">
   <li><a href="/">Home</a></li>
+  <li><a href="/blog">Blog</a>
+  <li><a href="/links">Links</a></li>
   <li><a href="/medialog">Media Log</a></li>
   <li><a href="/photogrid">Photo Grid</a></li>
-  <li><a href="/blog">Blog</a>
-    <li><a href="/links">Links</a></li>
+  <li><a href="/pins">Pinboard</a></li>
   <li><a href="/site">Site Info</a></li>
   <!-- COMMENTED OUT FOR NOW
   <li><a href="/now">/now</a></li>
@@ -86,65 +87,6 @@
 
 <p>Data fetched from <a href="https://anilist.co/user/snails/" target="_blank">anilist</a></p>
 
-<style>
-  .manga-section {
-    margin-top: 2rem;
-  }
-
-  .manga-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    align-items: stretch;
-    gap: 1.25rem;
-    margin-top: 1rem;
-  }
-
-  .manga-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100px;
-    padding: 0.75rem;
-    border: 1px dashed var(--wine, #8b1e3f);
-    background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-  }
-
-  .manga-card:hover {
-    transform: translateY(-3px);
-  }
-
-  .manga-cover {
-    height: 200px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 0.5rem;
-  }
-
-  .manga-title {
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin: 0rem;
-  }
-
-  .manga-progress-bar {
-    width: 100%;
-    height: 6px;
-    background: #eee;
-    border-radius: 3px;
-    margin-top: 0rem;
-    overflow: hidden;
-  }
-
-  .manga-progress-bar .bar {
-    height: 100%;
-    background: var(--wine, #8b1e3f);
-    transition: width 0.3s ease;
-  }
-</style>
-
-
 
 
 
@@ -152,13 +94,6 @@
   <section class="manga-section">
     <h2>Favorites</h2>
     <div class="manga-grid">
-      
-        <div class="manga-card" style="width: auto;">
-          <a href="https://anilist.co/manga/85395" target="_blank">
-            <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85395-5FR6of9F1cTU.jpg" style=" width: 100%;" alt="Namaiki Zakari. cover" class="manga-cover">
-            <p class="manga-title">Namaiki Zakari.</p>
-          </a>
-        </div>
       
         <div class="manga-card" style="width: auto;">
           <a href="https://anilist.co/manga/85412" target="_blank">
@@ -181,6 +116,13 @@
           </a>
         </div>
       
+        <div class="manga-card" style="width: auto;">
+          <a href="https://anilist.co/manga/85395" target="_blank">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85395-5FR6of9F1cTU.jpg" style=" width: 100%;" alt="Namaiki Zakari. cover" class="manga-cover">
+            <p class="manga-title">Namaiki Zakari.</p>
+          </a>
+        </div>
+      
     </div>
   </section>
 
@@ -193,6 +135,21 @@
     <div class="manga-section">
       <h2>Reading</h2>
       <div class="manga-grid">
+        
+          <div class="manga-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/nx85435-GEy771ZSyuO0.jpg" alt="Mahoutsukai no Yome cover" class="manga-cover">
+            <div style="width: 100%;">
+              <p class="manga-title">Mahoutsukai no Yome</p>
+
+              
+                
+                  <div class="manga-progress-bar">
+                    <div class="bar" style="width: 50%; background: var(--wine);"></div>
+                  </div>
+                
+              
+            </div>
+          </div>
         
           <div class="manga-card">
             <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx51525-wZ1AjkbXrKns.png" alt="Akatsuki no Yona cover" class="manga-cover">
@@ -326,6 +283,22 @@
                 
                   <div class="manga-progress-bar">
                     <div class="bar" style="width: 50%; background: var(--wine);"></div>
+                  </div>
+                
+              
+            </div>
+          </div>
+        
+          <div class="manga-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx86648-4kVHocTwOHMy.jpg" alt="Devils&#39; Line cover" class="manga-cover">
+            <div style="width: 100%;">
+              <p class="manga-title">Devils&#39; Line</p>
+
+              
+                
+                  
+                  <div class="manga-progress-bar">
+                    <div class="bar" style="width: 0%;"></div>
                   </div>
                 
               
@@ -1448,6 +1421,20 @@
             <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx33031-LzNWgqS69qAj.jpg" alt="Pandora Hearts cover" class="manga-cover">
             <div style="width: 100%;">
               <p class="manga-title">Pandora Hearts</p>
+
+              
+                <div class="manga-progress-bar">
+                  <div class="bar" style="width: 0%; background: #ccc;"></div>
+                </div>
+
+              
+            </div>
+          </div>
+        
+          <div class="manga-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx31133-Jx6map3Oidz1.png" alt="Dorohedoro cover" class="manga-cover">
+            <div style="width: 100%;">
+              <p class="manga-title">Dorohedoro</p>
 
               
                 <div class="manga-progress-bar">

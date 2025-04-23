@@ -1,15 +1,13 @@
-
-@import '/css/normalize.css';
+@import "/css/normalize.css";
 
 :root {
-  --wine: rgb(83, 35, 41);
-  --silver:rgb(237, 237, 237);
+  --wine: rgb(65, 31, 48);
+  --silver: rgb(237, 237, 237);
 }
 
-
-@font-face{
+@font-face {
   font-family: Daydream;
-  src: url(/fonts/Daydream.ttf) /* Credit: https://www.dafont.com/daydream-3.font */
+  src: url(/fonts/Daydream.ttf); /* Credit: https://www.dafont.com/daydream-3.font */
 }
 
 @font-face {
@@ -42,91 +40,100 @@
   src: url(/fonts/Kelmscott.ttf);
 }
 
-
-body{
-    font-family: 'Basiic';
-    line-height: 1em;
-    letter-spacing: 1px;
-    background-color: #ba8a9e;
-    background-image: url(/images/background.jpg); /* https://www.zerochan.net/Pixiv+Id+20784982 */
-    color:black;
-    font-size: 16px;
-    justify-items: center;
-    margin: auto;
-
+body {
+  font-family: "Basiic";
+  line-height: 1em;
+  letter-spacing: 1px;
+  background-color: #ba8a9e;
+  background-image: url(/images/background.jpg); /* https://www.zerochan.net/Pixiv+Id+20784982 */
+  color: black;
+  font-size: 16px;
+  justify-items: center;
+  margin: auto;
+  text-align: left;
 }
 
-
-a{
-    color:var(--wine);
-    text-decoration: none;
-}
-
-aside a{
+a {
+  color: var(--wine);
   text-decoration: none;
 }
 
-a:hover{
-    color:rgb(115, 42, 58);
+aside a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(115, 42, 58);
+  text-decoration-line: line-through;
 }
 
 a[target="_blank"]::after {
   content: "\F1C5"; /* bi-box-arrow-up-right */
-  font-family: 'bootstrap-icons';
+  font-family: "bootstrap-icons";
   margin-left: 0;
   margin-left: 0.25em;
   font-size: 0.65em;
 }
 
-li{
-    list-style-type: "✩";
-    margin-left:0.3em;
-    line-height: 1em;
+li {
+  list-style-type: "✩";
+  margin-left: 0.3em;
+  line-height: 1.5em;
 }
 
-ul{
-    line-height: 1em;
-    padding-inline-start: 10px;  
+ul {
+  line-height: 1em;
+  padding-inline-start: 10px;
+}
+
+ul.to-do li{
+  list-style-type: "\25A1";
+  font-size: 1em;
+  padding-left: 5px;
 }
 
 /* NAVIGATION */
 
-ul.a, ul.a li {
-  list-style-type: '\2661';
+ul.a,
+ul.a li {
+  list-style-type: "\2661";
+  line-height: 1em;
 }
 
-ul.a li{
+ul.a li {
   border-bottom: 1px dashed var(--wine);
   padding: 5px;
   font-weight: bold;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-ul.a li:hover{
+ul.a li:hover {
   background-color: rgb(198, 198, 198);
 }
 
-h1{
-  font-family: 'GothPixelFont';
+h1 {
+  font-family: "GothPixelFont";
   font-size: 34px;
   margin-block-start: 1;
   margin-block-end: 1;
+  text-align: left;
 }
 
-h2{
-  font-family: 'Kelmscott';
+h2 {
+  font-family: "Kelmscott";
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
+  text-align: left;
 }
 
-h2 a{
+h2 a {
   text-decoration: none;
 }
 
 h3 {
   margin-bottom: 0.5rem;
+  text-align: left;
 }
-
 
 pre code {
   display: block;
@@ -137,8 +144,8 @@ pre code {
   overflow-x: auto;
   font-size: 0.9rem;
   line-height: 1.4;
-  font-family: 'Fira Code', 'Courier New', monospace;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-family: "Fira Code", "Courier New", monospace;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   border: 1px solid #e0e0e0;
   overflow-x: auto;
   max-width: 100%;
@@ -149,7 +156,6 @@ pre code {
 pre {
   margin-bottom: 1.5rem;
 }
-
 
 /* TABLE STYLES */
 table {
@@ -176,7 +182,7 @@ td {
   background-color: var(--silver);
   color: #3e2a2a;
   padding: 7px;
-  border-top: 1px dotted  var(--wine);
+  border-top: 1px dotted var(--wine);
   font-family: "Basiic", sans-serif;
   font-weight: 700;
 }
@@ -187,244 +193,237 @@ th:last-child {
   width: 150px;
 }
 
-td:not(:last-child), th:not(:last-child) {
-  border-right: 1px dotted var(--wine); 
+td:not(:last-child),
+th:not(:last-child) {
+  border-right: 1px dotted var(--wine);
 }
 
-
 tr:nth-child(even) td {
-background-color: rgb(198, 198, 198);;
+  background-color: rgb(198, 198, 198);
 }
 
 tr:hover td {
-  background-color: rgb(198, 198, 198);;
+  background-color: rgb(198, 198, 198);
 }
 
-.platform{
+.platform {
   text-align: center;
 }
 
-
 /* GRID LAYOUT */
 
-.content{
+.content {
   padding: 10px;
 }
 
-.container { 
-    justify-items: center;
-    gap: 40px 50px;
-    margin: 20px auto;
-    width: 70%;
-    display: grid;
-    grid-template-columns: minmax(250px, 1fr) 3fr;
-    grid-template-rows: auto minmax(auto, 80px);
-    grid-auto-flow: row;
-    grid-template-areas:
-      "aside main"
-      "footer footer";
+.container {
+  justify-items: center;
+  gap: 40px 50px;
+  margin: 20px auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 3fr;
+  grid-template-rows: auto minmax(auto, 80px);
+  grid-auto-flow: row;
+  grid-template-areas:
+    "aside main"
+    "footer footer";
+}
+
+aside {
+  grid-area: aside;
+  height: auto;
+  background-color: var(--silver);
+  border: 30px solid transparent;
+  border-image-source: url(/images/lace-border.png);
+  border-image-slice: 80;
+  border-image-repeat: round;
+  border-image-outset: 10px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
+}
+
+main {
+  grid-area: main;
+  width: 100%;
+  margin-left: 20px;
+  min-height: 65vh;
+  background-color: var(--silver);
+  border: 30px solid transparent;
+  border-image-source: url(/images/lace-border.png); /* https://www.tumblr.com/dollsciples/774556137142009856/hi-do-you-have-more-icon-frames-like-this-one?source=share */
+  border-image-slice: 80;
+  border-image-repeat: round;
+  border-image-outset: 10px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
+}
+
+main,
+.post-item,
+.post-list {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+footer {
+  margin-bottom: 20px;
+  width: auto;
+  grid-area: footer;
+  min-height: 15px;
+  text-align: center;
+  background-color: var(--silver);
+  border: 30px solid transparent;
+  border-image-source: url(/images/lace-border.png);
+  border-image-slice: 80;
+  border-image-repeat: round;
+  border-image-outset: 10px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
+}
+
+details summary {
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger;
+}
+
+details > * {
+  margin-left: 1em;
+}
+
+details {
+  border-left: 2px solid rgb(255, 255, 255);
+}
+
+details > details {
+  border-left: 2px dashed rgb(255, 255, 255);
+}
+
+details > details > details {
+  border-left: 2px dotted rgb(255, 255, 255);
+}
+
+fieldset {
+  border: var(--wine) 1px dashed;
+  background-color: #fff;
+  overflow-y: scroll;
+  height: 120px;
+  width: 45%;
+  padding: 6px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  font-family: "Kelmscott";
+}
+/* moble view */
+
+@media (max-width: 750px) {
+  img,
+  pre code {
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
-  
+  .button {
+    display: none;
+  }
+
+  ul.a li {
+    display: inline-block;
+    line-height: 1.5em;
+    padding: 5px;
+    margin-right: 1em;
+  }
+
+  ul.a li:hover {
+    background-color: rgba(198, 198, 198, 0.5);
+  }
+
+  main,
+  aside,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: auto;
+    display: grid;
+    margin-left: 0;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aside"
+      "main"
+      "footer";
+  }
+
   aside {
     grid-area: aside;
-    height: auto;
-    background-color: var(--silver);
-    border: 30px solid transparent;
-    border-image-source: url(/images/lace-border.png);
-    border-image-slice: 80;
-    border-image-repeat: round;
-    border-image-outset: 10px;
-    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
+    text-align: left;
+    max-height: auto;
   }
 
   main {
     grid-area: main;
-    width: 100%;
-    margin-left: 20px;
-    min-height:65vh;
-    background-color: var(--silver);
-    border: 30px solid transparent;
-    border-image-source: url(/images/lace-border.png); /* https://www.tumblr.com/dollsciples/774556137142009856/hi-do-you-have-more-icon-frames-like-this-one?source=share */
-    border-image-slice: 80;
-    border-image-repeat: round;
-    border-image-outset: 10px;
-    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
-}
+    margin: 15px 15px;
+    height: auto;
+  }
 
-main, .post-item, .post-list {
-  max-width: 100%;
-  overflow-wrap: break-word;
-}
-  
   footer {
-    margin-bottom: 20px;
-    width: auto;
     grid-area: footer;
-    min-height: 15px;
-    text-align: center;
-    background-color: var(--silver);
-    border: 30px solid transparent;
-    border-image-source: url(/images/lace-border.png);
-    border-image-slice: 80;
-    border-image-repeat: round;
-    border-image-outset: 10px;
-    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
+    text-align: left;
+    max-height: 70px;
+  }
+
+  .ascii {
+    font-family: monospace;
+    white-space: pre;
+  }
 }
 
+/* BLOG PAGE STYLES */
 
-   details summary{
-    font-weight: bold;
-    font-style: italic;
-    font-size: larger;
-  }
-
-  details>* {
-    margin-left: 1em;
-  }
-  
-  details {
-    border-left: 2px solid rgb(255, 255, 255);
-  }
-  
-  details>details {
-    border-left: 2px dashed rgb(255, 255, 255);
-  }
-
-  
-  details>details>details {
-    border-left: 2px dotted rgb(255, 255, 255);
-  }
-
-  fieldset{
-    border: var(--wine) 1px dashed;
-    background-color: #fff;
-    overflow-y: scroll;
-    height: 120px;
-    width: 45%;
-    padding: 6px;
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  legend{
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 5px;    
-    font-family: "Kelmscott";
-
-
-  }
-  /* moble view */
-
-  @media ( max-width: 750px ) {
-
-    img, pre code {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-      
-    .button{
-     display: none;
-    }
-
-
-      ul.a li{
-        display: inline-block;
-        line-height: 1.5em;
-        padding:5px;
-        margin-right:1em;
-      }
-
-      ul.a li:hover{
-        background-color: rgba(198, 198, 198, 0.5);
+.post-list {
+  max-width: 700px;
 }
 
-    main, aside, footer {
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;}
-
-    
-    .container { 
-        width: auto;
-        display: grid;
-        margin-left: 0;
-        margin-bottom: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        gap: 10px 10px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "aside"
-          "main"
-          "footer";
-      }
-      
-      aside {
-      grid-area: aside;
-      text-align: left;
-      max-height: auto;
-    }
-
-      main { 
-      grid-area: main;
-      margin: 15px 15px;
-      height: auto;
-    }
-      
-      footer {
-      grid-area: footer;
-      text-align: left;
-      max-height: 70px;
-    }
-    
-    .ascii{
-        font-family: monospace;
-        white-space: pre;
-    }
-
+.post-item {
+  margin-top: 10px;
+  padding: 10px;
+  list-style-type: none;
+  border: 1px var(--wine) dashed;
+  background-color: #fff;
 }
 
-  /* BLOG PAGE STYLES */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: -2em;
+  margin: 0;
+}
 
-  .post-list{
-    max-width: 700px;
-  }
+/* PHOTOGRID STYLES */
 
-  .post-item{
-    margin-top: 10px;
-    padding: 10px;
-    list-style-type: none;
-    border: 1px var(--wine) dashed;
-    background-color: #fff;
-  }
-
-  .tag-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: -2em;
-    margin:0;
-  }
-  
-  
-
-  /* PHOTOGRID STYLES */
-
-.card{
-  background-color:fff;
-  padding:10px;
+.card {
+  background-color: fff;
+  padding: 10px;
   height: 300px;
-  margin:2px;
+  margin: 2px;
   border: 1px dashed var(--wine);
   transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
   rotate: 5deg;
-  transform: scale(0.90);
-
+  transform: scale(0.9);
 }
 
 .card img {
@@ -434,15 +433,15 @@ main, .post-item, .post-list {
   filter: grayscale(50%);
 }
 
-.card img:hover{
-    filter:none;
+.card img:hover {
+  filter: none;
 }
 
 .desc {
   padding: 0px;
   text-align: left;
-  color:black;
-  width:100%;
+  color: black;
+  width: 100%;
   line-height: 1.4em;
   display: inline;
 }
@@ -451,7 +450,7 @@ main, .post-item, .post-list {
   padding: 0 6px;
   float: left;
   width: 23%;
-  padding:none;
+  padding: none;
 }
 
 .responsive-img {
@@ -461,14 +460,12 @@ main, .post-item, .post-list {
   margin: 1rem auto;
 }
 
-
 @media only screen and (max-width: 1650px) {
-
   .responsive {
     width: 30%;
     margin: 6px 0;
   }
-  .card{
+  .card {
     height: 310px;
   }
 }
@@ -477,50 +474,49 @@ main, .post-item, .post-list {
   .responsive {
     width: 47%;
   }
-  .card{
+  .card {
     height: 350px;
   }
 }
 
-  @media only screen and (max-width: 1070px) {
-    .responsive {
-      width: 95%;
-    }
-    .card{
-      height: auto;
-    }
-
+@media only screen and (max-width: 1070px) {
+  .responsive {
+    width: 95%;
+  }
+  .card {
+    height: auto;
+  }
 }
 
 /* SCROLLBAR STYLES */
 
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: var(--wine) #fff;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--wine) #fff;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--wine);
-    border-radius: 10px;
-    border: 4px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: var(--wine);
+  border-radius: 10px;
+  border: 4px solid #ffffff;
+}
 
-  /* STYLING TOC FOR LINKS PAGE */
+/* STYLING TOC FOR LINKS PAGE */
 .toc {
   margin-bottom: 2rem;
   font-size: 0.95rem;
   padding-left: 1rem;
-  padding:0;
+  padding: 0;
 }
 
 /* LINKS */
@@ -554,7 +550,6 @@ main, .post-item, .post-list {
   margin-top: 0.5em;
   margin-bottom: 0.2em;
   margin-left: -1em;
-
 }
 
 /* (H3)*/
@@ -570,10 +565,244 @@ main, .post-item, .post-list {
   display: none;
 }
 
-/* BUTTON */
+/* TOC BUTTON */
 .toc-toggle {
   font-size: 1rem;
   cursor: pointer;
 }
 
+.link-buttons a img {
+  transition: transform 0.2s ease, filter 0.2s ease;
+  filter: grayscale(60%);
+  border: 2px solid var(--wine);
+  border-radius: 4px;
+  margin: 1px;
+  padding: 2px;
+}
+
+.link-buttons a:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.link-buttons a[target="_blank"]::after {
+  content: none !important;
+}
+
+/* ANIME + MANGA MEDIALOG */
+
+.anime-section {
+  margin-top: 2rem;
+}
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: stretch;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.anime-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+  padding: 0.75rem;
+  border: 1px dashed var(--wine, #8b1e3f);
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.anime-card:hover {
+  transform: translateY(-3px);
+}
+
+.anime-cover {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.anime-title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0rem;
+}
+
+.anime-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  margin-top: 0rem;
+  overflow: hidden;
+}
+
+.anime-progress-bar .bar {
+  height: 100%;
+  background: var(--wine, #8b1e3f);
+  transition: width 0.3s ease;
+}
+
+.manga-section {
+  margin-top: 2rem;
+}
+
+.manga-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: stretch;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.manga-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+  padding: 0.75rem;
+  border: 1px dashed var(--wine, #8b1e3f);
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.manga-card:hover {
+  transform: translateY(-3px);
+}
+
+.manga-cover {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.manga-cover img {
+  filter: grayscale(65%);
+}
+
+.manga-title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0rem;
+}
+
+.manga-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  margin-top: 0rem;
+  overflow: hidden;
+}
+
+.manga-progress-bar .bar {
+  height: 100%;
+  background: var(--wine, #8b1e3f);
+  transition: width 0.3s ease;
+}
+
+/* PINBOARD */
+
+.pinboard-header{
+  display: flex;
+}
+
+.pinboard-title{
+  min-width: 300px;
+}
+
+.pin-box{
+  width: 90%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  min-height: 65vh;
+  background-color: var(--silver);
+  border: 30px solid transparent;
+  border-image-source: url(/images/lace-border.png); /* https://www.tumblr.com/dollsciples/774556137142009856/hi-do-you-have-more-icon-frames-like-this-one?source=share */
+  border-image-slice: 80;
+  border-image-repeat: round;
+  border-image-outset: 10px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
+}
+
+.pin-box a{
+  color:silver
+}
+
+.pin-wrapper {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+  
+.pin {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  background: var(--silver);
+  color: #ddd;
+  padding: 1rem;
+  box-sizing: border-box;
+  break-inside: avoid;
+}
+
+.pin h2{
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: dashed var(--silver) 1px;
+}
+
+
+ul.pins li{
+  list-style-type: "\2732";
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+.pin:nth-child(3n+1) {
+  background-color: #353131;
+}
+
+.pin:nth-child(3n+2) {
+  background-color: var(--wine);
+}
+
+.pin:nth-child(3n) {
+  background-color: #000;
+}
+
+.pin.scrollable {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+@media (max-width: 950px) {
+  .pin-wrapper {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  .pin-wrapper{
+    column-count: 2;
+  }
+
+  @media (max-width: 550px) {
+    .pin-wrapper{
+      column-count: 1;
+    }
+
+    .pin{
+      max-width: 600px;
+    }
+}
+}
 

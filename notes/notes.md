@@ -47,12 +47,6 @@
 
 + https://crotovane.neocities.org/
 
-# Firefox stuff
-
-+ https://addons.mozilla.org/en-US/firefox/addon/styl-us/
-
-+ https://www.colorzilla.com/firefox/
-
 # blog ideas
 
 - ipod jailbreaking
