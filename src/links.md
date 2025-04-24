@@ -24,13 +24,17 @@ I don't have one yet (っ◞‸◟ c) | COMING SOON
 
 <div class="link-buttons">
 
-[![allyratworld](/images/buttons/sites/allyrat.gif)](https://allyratworld.com/) [![seafare](/images/buttons/sites/seafare.png)](https://seafare.neocities.org/) [![frills](/images/buttons/sites/frills.png)](https://frills.dev/)[![pastelhell](/images/buttons/sites/pastelhell.gif)](https://pastelhello.com) [![inkcaps](/images/buttons/sites/inkcaps.gif)](https://inkcaps.neocities.org/) [![ribozone](/images/buttons/sites/ribozone.gif)](https://ribo.zone/) [![sneekrealm](/images/buttons/sites/sneeksrealm.png)](https://sneekrealm.neocities.org/) [![petrapixel](https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif)](https://petrapixel.neocities.org/) [![10kph](/images/buttons/sites/10kph.webp)](https://karma.computer/) [![lostletters](/images/buttons/sites/LostLetters.gif)](https://lostletters.neocities.org/graphics/site_buttons/LostLetters88x31.gif) [![sweetpea](/images/buttons/sites/sweetpea.gif)](https://sweet-pea.neocities.org/) [![princess](https://princss.online/media/images/buttons/princss_button.png)](https://princss.online/) [![hillhouse](/images/buttons/sites/hillhouse.png)](https://hillhouse.neocities.org/) [![goblincat](/images/buttons/sites/goblincat.png)](https://goblincat.neocities.org/) [![crotovane](/images/buttons/sites/crotovane.gif)](https://crotovane.neocities.org/) [![uuupah](/images/buttons/sites/uuupah.png)](https://uuupah.neocities.org/) [![nenrikido](https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif)](https://nenrikido.neocities.org)
+[![allyratworld](/images/buttons/sites/allyrat.gif)](https://allyratworld.com/) [![seafare](/images/buttons/sites/seafare.png)](https://seafare.neocities.org/) [![frills](/images/buttons/sites/frills.png)](https://frills.dev/)[![pastelhell](/images/buttons/sites/pastelhell.gif)](https://pastelhello.com) [![inkcaps](/images/buttons/sites/inkcaps.gif)](https://inkcaps.neocities.org/) [![ribozone](/images/buttons/sites/ribozone.gif)](https://ribo.zone/) [![sneekrealm](/images/buttons/sites/sneeksrealm.png)](https://sneekrealm.neocities.org/) [![petrapixel](https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif)](https://petrapixel.neocities.org/) [![10kph](/images/buttons/sites/10kph.webp)](https://karma.computer/) [![lostletters](/images/buttons/sites/LostLetters.gif)](https://lostletters.neocities.org/graphics/site_buttons/LostLetters88x31.gif) [![sweetpea](/images/buttons/sites/sweetpea.gif)](https://sweet-pea.neocities.org/) [![princess](https://princss.online/media/images/buttons/princss_button.png)](https://princss.online/) [![hillhouse](/images/buttons/sites/hillhouse.png)](https://hillhouse.neocities.org/) [![goblincat](/images/buttons/sites/goblincat.png)](https://goblincat.neocities.org/) [![crotovane](/images/buttons/sites/crotovane.gif)](https://crotovane.neocities.org/) [![uuupah](/images/buttons/sites/uuupah.png)](https://uuupah.neocities.org/) [![nenrikido](https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif)](https://nenrikido.neocities.org) [![snifflebear](/images/buttons/sites/snifflebear.png)](https://www.snifflebear.moe/)
 
 </div>
 
-## Resources
+## Web Resources
  
 - Resources that I used for building this website can be found [here](/site). There may be some duplicates. 
+
+### Software
+
+- [Calibre](https://calibre-ebook.com/) – E-book management
 
 ### Image Editing
 
@@ -44,26 +48,38 @@ I don't have one yet (っ◞‸◟ c) | COMING SOON
 - [markdown-it-anchor](https://github.com/valeriangalliat/markdown-it-anchor) – Adds anchors to your Markdown headers for easy linking.
 - [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs) – Lets you add custom classes and attributes directly in Markdown.
 - [eleventy-plugin-toc](https://github.com/uncenter/eleventy-plugin-toc) – Generate a table of contents with easy config and customization.
+- [eleventy-plugin-post-stats](https://github.com/johnwargo/eleventy-plugin-post-stats) – Generate statistics for your blog. [Example](https://rknight.me/blog/stats/)
 
 ### Firefox Extensions
 
 - [Colorzilla](https://www.colorzilla.com/firefox/)
 - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 
-### Language Learning
-
-- [Learn Japanese](https://www.tofugu.com/learn-japanese/) – Guide to learning Japanese.
-- [DJT Kana](https://djtguide.neocities.org/kana/) – Learn your kanas.
 
 ### Tutorials 
 
 - [Petrapixel's Eleventy Tutorial](https://petrapixel.neocities.org/coding/eleventy-tutorial) – Neocities-friendly guide for getting started with Eleventy.
 - [Deploy to Neocities Tutorial](https://nenrikido.neocities.org/blog/post/deploy-site/) – Guide on how to deploy your site to Neocities 2 ways. 
+- [How to use Webpack](https://dev.to/derrickreimer/how-to-use-webpack-in-an-eleventy-project-272j) – How to use Webpack in an Eleventy Project.
+- [Add a Sitemap](https://11ty.recipes/recipes/add-a-sitemap/) - How to add a sitemap to your Eleventy site.
+- [Version Control with Git](https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/version_control_git.html) - This is actually part of a university course on research and data management in science but is extremely useful for understanding git. 
 
 ### Modding
 
 - [3DS Hacks Guide](https://3ds.hacks.guide/) - You already know.
 - [It's Time to Jailbreak Your Kindle.](https://www.youtube.com/watch?v=Qtk7ERwlIAk&t=361s) – Youtube video, great guide on how and why you should jailbreak your kindle.
+
+## Educational
+
+### Cooking  & Gardening
+
+- [Grimgrains](https://grimgrains.com/site/home.html) – Plant-based recipe website made by two people living on a boat.
+- [Learn how to Garden](https://dreambubble.neocities.org/garden) – Gardening resource.
+
+### Language Learning
+
+- [Learn Japanese](https://www.tofugu.com/learn-japanese/) – Guide to learning Japanese.
+- [DJT Kana](https://djtguide.neocities.org/kana/) – Learn your kanas.
 
 ## Fun Stuff
 
@@ -76,3 +92,4 @@ I don't have one yet (っ◞‸◟ c) | COMING SOON
 ### Websites 
 
 - [Every Noise as Once](https://everynoise.com/) - Music Genre Map.
+- [Chaotic Shiny](http://chaoticshiny.com/index.php) - Generator site for TTRPGs and more.

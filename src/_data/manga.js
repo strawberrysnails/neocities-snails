@@ -1,7 +1,7 @@
 require("dotenv").config();
+const eleventyFetch = require("@11ty/eleventy-fetch");
 
-
-async function fetchMangaList(username, token) {
+const fetchMangaList = async (username, token) => {
   const query = `
     query ($username: String) {
       MediaListCollection(userName: $username, type: MANGA) {
@@ -27,20 +27,25 @@ async function fetchMangaList(username, token) {
     }
   `;
 
-  const variables = { username };
-
-  const response = await fetch("https://graphql.anilist.co", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`
-    },
-    body: JSON.stringify({ query, variables })
+  const body = JSON.stringify({
+    query,
+    variables: { username }
   });
 
-  const json = await response.json();
+  const data = await eleventyFetch("https://graphql.anilist.co", {
+    duration: "1d",
+    type: "json",
+    fetchOptions: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`
+      },
+      body
+    }
+  });
 
-  const mangaList = json.data.MediaListCollection.lists.flatMap(list =>
+  return data.data.MediaListCollection.lists.flatMap(list =>
     list.entries.map(entry => ({
       id: entry.media.id,
       title: entry.media.title.romaji,
@@ -51,11 +56,9 @@ async function fetchMangaList(username, token) {
       score: entry.score
     }))
   );
+};
 
-  return mangaList;
-}
-
-async function fetchFavoriteManga(username) {
+const fetchFavoriteManga = async (username) => {
   const query = `
     query ($username: String) {
       User(name: $username) {
@@ -77,25 +80,30 @@ async function fetchFavoriteManga(username) {
     }
   `;
 
-  const response = await fetch("https://graphql.anilist.co", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      query,
-      variables: { username }
-    })
+  const body = JSON.stringify({
+    query,
+    variables: { username }
   });
 
-  const json = await response.json();
-  return json.data.User.favourites.manga.nodes.map(m => ({
+  const data = await eleventyFetch("https://graphql.anilist.co", {
+    duration: "1w",
+    type: "json",
+    fetchOptions: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body
+    }
+  });
+
+  return data.data.User.favourites.manga.nodes.map(m => ({
     id: m.id,
     title: m.title.romaji,
     cover: m.coverImage.medium,
     url: m.siteUrl
   }));
-}
+};
 
 module.exports = async () => {
   try {

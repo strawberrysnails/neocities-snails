@@ -784,6 +784,14 @@ ul.pins li{
   overflow-y: auto;
 }
 
+.pin.center{
+  text-align: center;
+}
+
+.pin.center h3{
+  text-align: center;
+}
+
 @media (max-width: 950px) {
   .pin-wrapper {
     column-count: 3;

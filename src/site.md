@@ -6,7 +6,7 @@ nesting: ""
 
 # Site Info
 
-This website is built with [Eleventy](https://www.11ty.dev/), a static site generator using [VSCodium](https://vscodium.com/). It is hosted on [Neocities](https://neocities.org/site/snails) and uses [deploy-to-neocities](https://deploy-to-neocities.neocities.org/) github action.
+This website is built with [Eleventy](https://www.11ty.dev/), a static site generator using [VSCode](https://code.visualstudio.com/). It is hosted on [Neocities](https://neocities.org/site/snails) and uses [deploy-to-neocities](https://deploy-to-neocities.neocities.org/) github action.
 
 *Snails* is mobile-friendly, responsive, and best viewed on firefox browsers.
 

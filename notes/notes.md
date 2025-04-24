@@ -1,66 +1,5 @@
 
-
-# webdev links
-
-+ https://markllobrera.com/posts/eleventy-building-image-gallery-photoswipe/#a-small-example
-
-+ https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/more_advanced_github.html
-
-+ https://codepen.io/dirtystylus/project/editor/ZgePbo
-
-+ https://darekkay.com/blog/photography-website/
-
-+ https://dev.to/derrickreimer/how-to-use-webpack-in-an-eleventy-project-272
-
-+ https://11ty.recipes/recipes/add-a-sitemap/
-
-⢠⠊⣉⠒⠤⢀⡀          ⡐⢁⠴⢜⢄
- ⡎⢸  ⠉⠐⠢⢌⠑⢄    ⡸  ⡆    ⠣⠱⡀
- ⡇⢸        ⣀⠗  ⠉⠉⠁  ⠙⠢⠤⡀⢃⢱
- ⡇⠘⣄⢀⠔⠉                    ⠈⠁⠘⡄
- ⢇    ⠁                          ⠘⡄
- ⢸            ⢀⣀⣀⡀        ⢀⣀⣀⡀  ⢣
- ⡸        ⢴⣾⡿⠿⠽⠇        ⠘⠛⠛⠛  ⠈⢄
-⠰⡁              ⢠⠒⠢⡀⠈⠒⠊  ❤ ⡠⢄  ⡘
- ⠱⣀          ⢀⠜    ⠇        ⢀⠔⠁  ⡏
-⠑⠤⢄⣀⠔⠁    ⡜        ⠊⠁  ⢀⠜”
-
-
----
- # bookmarks
-
-+ https://www.tofugu.com/learn-japanese/
-
-+ https://www.ferryhalim.com/orisinal/
-
-+ https://grimgrains.com/site/home.html
-
-+ https://www.snifflebear.moe/p/welcome.html
-
-+ https://dappervolk.com/
-
-+ https://muffin.xdg.com/
-
-+ https://petrapixel.neocities.org/resources/bookmarks
-
-+ https://frills.dev/bookmarks/
-
-+ https://crotovane.neocities.org/
-
-# blog ideas
-
-- ipod jailbreaking
-- kindle jailbreaking DONE
-- all my single use devices and their uses
-- minecraft forever world
-
-# Wishlist 
-
-- https://www.ebay.com/itm/385719919058
-- https://samoondoh.com/products/museum-bag-m-goat-black
-
-# notes
-
+# How to use github across devices
 ``` 
 6. Working with GitHub repositories on more than one computer
 In this section we will explain the basics of working with a repository on more than one computer. The basic case is that you want to work on something from your work computer and from your home computer. The lesson assumes you have already set up a GitHub repository. If you haven’t, start here: Version control with git.
@@ -148,5 +87,3 @@ If you have a conflict in your files, you will need to resolve them. Read about 
 6.2.5. Pull: merging and fetching in one go¶
 The git pull command is a combination of fetch and merge.
 ```
-
-# 

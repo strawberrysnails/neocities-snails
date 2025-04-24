@@ -1,115 +1,102 @@
 require("dotenv").config();
+const eleventyFetch = require("@11ty/eleventy-fetch");
 
-async function fetchAnimeList(username) {
-  const query = `
-    query ($username: String) {
-      MediaListCollection(userName: $username, type: ANIME) {
-        lists {
-          name
-          entries {
-            status
-            progress
-            score
-            media {
-              id
-              title {
-                romaji
-              }
-              episodes
-              coverImage {
-                medium
-              }
-              siteUrl
+const username = "snails";
+
+const animeListQuery = `
+  query ($username: String) {
+    MediaListCollection(userName: $username, type: ANIME) {
+      lists {
+        name
+        entries {
+          status
+          progress
+          score
+          media {
+            id
+            title {
+              romaji
             }
+            episodes
+            coverImage {
+              medium
+            }
+            siteUrl
           }
         }
       }
     }
-  `;
+  }
+`;
 
-  const response = await fetch("https://graphql.anilist.co", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      query,
-      variables: { username }
-    })
-  });
-
-  const json = await response.json();
-
-  const animeList = json.data.MediaListCollection.lists.flatMap(list =>
-    list.entries.map(entry => ({
-      id: entry.media.id,
-      title: entry.media.title.romaji,
-      status: entry.status.toLowerCase(),
-      progress: entry.progress,
-      episodes: entry.media.episodes,
-      cover: entry.media.coverImage.medium,
-      url: entry.media.siteUrl,
-      score: entry.score
-    }))
-  );
-
-  return animeList;
-}
-
-async function fetchFavoriteAnime(username) {
-  const query = `
-    query ($username: String) {
-      User(name: $username) {
-        favourites {
-          anime {
-            nodes {
-              id
-              title {
-                romaji
-              }
-              coverImage {
-                medium
-              }
-              siteUrl
+const favoriteAnimeQuery = `
+  query ($username: String) {
+    User(name: $username) {
+      favourites {
+        anime {
+          nodes {
+            id
+            title {
+              romaji
             }
+            coverImage {
+              medium
+            }
+            siteUrl
           }
         }
       }
     }
-  `;
+  }
+`;
 
-  const response = await fetch("https://graphql.anilist.co", {
+async function fetchAniListData(query, variables) {
+  const url = "https://graphql.anilist.co";
+  const response = await eleventyFetch(`${url}?queryHash=${Buffer.from(query + JSON.stringify(variables)).toString("base64")}`, {
+    duration: "1w", 
+    type: "json",
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      query,
-      variables: { username }
-    })
+    fetchOptions: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ query, variables })
+    }
   });
-
-  const json = await response.json();
-  return json.data.User.favourites.anime.nodes.map(a => ({
-    id: a.id,
-    title: a.title.romaji,
-    cover: a.coverImage.medium,
-    url: a.siteUrl
-  }));
+  return response;
 }
 
-module.exports = async () => {
+module.exports = async function () {
   try {
-    const username = "snails";
-
-    const [anime, favorites] = await Promise.all([
-      fetchAnimeList(username),
-      fetchFavoriteAnime(username)
+    const [animeRaw, favoritesRaw] = await Promise.all([
+      fetchAniListData(animeListQuery, { username }),
+      fetchAniListData(favoriteAnimeQuery, { username })
     ]);
+
+    const anime = animeRaw.data.MediaListCollection.lists.flatMap(list =>
+      list.entries.map(entry => ({
+        id: entry.media.id,
+        title: entry.media.title.romaji,
+        status: entry.status.toLowerCase(),
+        progress: entry.progress,
+        episodes: entry.media.episodes,
+        cover: entry.media.coverImage.medium,
+        url: entry.media.siteUrl,
+        score: entry.score
+      }))
+    );
+
+    const favorites = favoritesRaw.data.User.favourites.anime.nodes.map(a => ({
+      id: a.id,
+      title: a.title.romaji,
+      cover: a.coverImage.medium,
+      url: a.siteUrl
+    }));
 
     return { anime, favorites };
   } catch (e) {
-    console.error("Error fetching anime data:", e);
+    console.error("Error fetching AniList data with eleventy-fetch:", e);
     return { anime: [], favorites: [] };
   }
 };

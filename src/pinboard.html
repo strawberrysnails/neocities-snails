@@ -5,6 +5,16 @@ permalink: /pins/
 nesting: "../"
 ---
 
+<!-- MOON START © wdisseny -->
+<div class="pin">
+<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
+<div style="font-weight:bold">The moon today</div>
+<div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter:drop-shadow(0 0 30px hsl(0, 0%, 100%))"></div>
+<div>.</div><div style="font-size:small">.</div></div>
+<script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=100&lightColor=rgb(245,245,245)&shadeColor=rgb(17,17,17)&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="100px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b);m[2].innerHTML=b.phase[d].npWidget;m[3].innerHTML="Next full moon<br>"+b.nextFullMoon}};a.open("GET",url,true);a.send()})()</script>
+</div>
+<!-- MOON END -->
+
 <div class="pin scrollable">
 <h2>Website To-Do List</h2>
 <ul class="to-do">
@@ -13,6 +23,7 @@ nesting: "../"
     <li>Add more stuff to my homepage!!!</li>
     <li>Join some webrings or cliques</li>
     <li>Comment box or guestbook perhaps</li>
+    <li>Get a <a href="https://gifypet.neocities.org/#getapet">gifypet</a></li>
     <li>Instagram archive</li>
     <li>On Learning Japanese/resources</li>
     <li>BF page</li>
@@ -22,6 +33,8 @@ nesting: "../"
 </ul>
 </div>
 
+
+
 <div class="pin">
 <h2>Blog Ideas</h2>
 <ul class="to-do">
@@ -29,6 +42,91 @@ nesting: "../"
     <li>Minecraft Forever World</li>
     <li><s>Jailbreaking my Kindle</s></li>
 </div>
+
+
+<!---CALENDAR START --->
+<div class="pin">
+    <div id="calendar"></div>
+    
+        <style>
+          #calendar {
+            width: auto;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 8px;
+          }
+        
+          .calendar-header {
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px #fff dashed;
+          }
+        
+          .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.25rem;
+            text-align: center;
+            font-size: 0.9rem;
+          }
+        
+          .calendar-grid div {
+            padding: 0.5rem 0;
+            border-radius: 4px;
+          }
+        
+          .today {
+            background-color: #ffffff;
+            font-weight: bold;
+            color:black;
+          }
+        
+          .day-label {
+            font-weight: bold;
+            text-decoration: underline;
+          }
+    
+        </style>
+        
+        <script>
+          function generateCalendar() {
+            const calendar = document.getElementById('calendar');
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = now.getMonth();
+            const today = now.getDate();
+        
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+        
+            const monthName = now.toLocaleString('default', { month: 'long' });
+        
+            const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        
+            let html = `<div class="calendar-header">${monthName} ${year}</div>`;
+            html += '<div class="calendar-grid">';
+            for (let day of dayNames) {
+              html += `<div class="day-label">${day}</div>`;
+            }
+        
+            for (let i = 0; i < firstDay; i++) {
+              html += `<div></div>`;
+            }
+        
+            for (let i = 1; i <= daysInMonth; i++) {
+              const isToday = i === today ? 'today' : '';
+              html += `<div class="${isToday}">${i}</div>`;
+            }
+        
+            html += '</div>';
+            calendar.innerHTML = html;
+          }
+        
+          generateCalendar();
+        </script>
+        
+    </div>
+    <!---CALENDAR END --->
 
 <div class="pin">
 <h2>Japan Wishlist</h2>
@@ -38,6 +136,7 @@ nesting: "../"
     <li>Hanko seal stamp</li>
 </ul>
 </div>
+
 
 <div class="pin scrollable">
 <h2>Neverending goals</h2>
@@ -58,6 +157,18 @@ nesting: "../"
     <li><a href="https://youtu.be/Mdmhiv7O5m8?si=3L_-JD_cMqncLdYW">This Video Isn't Just About Taylor Swift. It's About You.</a></li>
     <li><a href="https://youtu.be/T0CpOYZZZW4?si=346ugvgsv9kM-uxP">The Spectacular Failure of the Star Wars Hotel</a></li>
     <li><a href="https://www.youtube.com/watch?v=e5s04E43n0Q">Tileman FULL SERIES (Runescape, but every 1,000xp I unlock a tile)</a></li>
+</div>
+
+<div class="pin center">
+<h2>Virutal Pets</h2>
+<h3>TamaNOTchi</h3>
+<a href="https://tamanotchi.world/22486c"><img src="https://tamanotchi.world/i2/22486"><br>Feed me</a><br>
+<b>Name:</b> Sneaky</p>
+<h3>Pokemon</h3>
+<a href="https://www.pokemon-adoption.de">
+<img src="https://www.yatta-tempel.de/animierte/613gino.gif" style="width: 41px; height: 44px;" alt="Sniffles" /></a><br />
+<b>Name:</b> Sniffles<br />
+Adopt one yourself @ <a href="https://www.pokemon-adoption.de">Pok&eacute;mon Orphanage</a>
 </div>
 
 <div class="pin">

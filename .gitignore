@@ -1,5 +1,4 @@
 .eleventyignore
 node_modules
-public.zip
 .vscode
 .env
