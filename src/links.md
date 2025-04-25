@@ -10,13 +10,22 @@ nesting: "../"
 ## Personal Sites & Blogs
 
 ### My Link
+<div class="link-buttons">
 
-I don't have one yet (っ◞‸◟ c) | COMING SOON
+[![SnailsV1](https://files.catbox.moe/g9r4bv.png)](https://files.catbox.moe/g9r4bv.png) [![SnailsV2](https://files.catbox.moe/9ghove.png)](https://files.catbox.moe/9ghove.png)
+
+<textarea class="code-textarea" style="height: 40px; width: 500px;">&lt;a href="https://snails.neocities.org/" target="_blank"&gt;&lt;img src="https://files.catbox.moe/g9r4bv.png" alt="snails"&gt;&lt;/a&gt;</textarea>
+
+- Hotlinking is OK!
+
+- Credit for button #2: [bulltown](https://bulltown.neocities.org/)
+
+</div>
 
 ### Neighbors
 <div class="link-buttons">
 
-[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/) [![luckyrabbit](https://files.catbox.moe/n23862.png)](https://luckyrabbit.neocities.org/) [![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/)
+[![bulltown.2022](/images/buttons/sites/b22button.png)](https://bulltown.joejenett.com)[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/) [![luckyrabbit](https://files.catbox.moe/n23862.png)](https://luckyrabbit.neocities.org/) [![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/)
 
 </div>
 
@@ -35,6 +44,7 @@ I don't have one yet (っ◞‸◟ c) | COMING SOON
 ### Software
 
 - [Calibre](https://calibre-ebook.com/) – E-book management
+- [Visual Code Studio](https://code.visualstudio.com/) – Great offline code editor with lots of plugins/customization.
 
 ### Image Editing
 
@@ -52,8 +62,9 @@ I don't have one yet (っ◞‸◟ c) | COMING SOON
 
 ### Firefox Extensions
 
-- [Colorzilla](https://www.colorzilla.com/firefox/)
-- [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+- [Colorzilla](https://www.colorzilla.com/firefox/) – Browser Color-picker
+- [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) – Edit, save, and manage CSS on websites in browser.
+- [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) – Adblocker.
 
 
 ### Tutorials 
