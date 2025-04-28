@@ -1,5 +1,32 @@
 
+# Code Snippets
+
+```.code-snippets
+
+{
+    "Markdown link": {
+    "prefix": "mdlink",
+    "body": "[${1:link text}](${2:url})",
+    "description": "Insert Markdown link"
+    },
+
+    "Markdown image": {
+    "prefix": "mdimg",
+    "body": "![${1:alt text}](${2:image-url})",
+    "description": "Insert Markdown image"
+    },
+
+    "Markdown image link": {
+    "prefix": "mdimglink",
+    "body": "[![${1:alt text}](${2:image-url})](${3:url})",
+    "description": "Insert Markdown image as link"
+    }
+}
+```
+
+
 # How to use github across devices
+[Source](https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/more_advanced_github.html)
 ``` 
 6. Working with GitHub repositories on more than one computer
 In this section we will explain the basics of working with a repository on more than one computer. The basic case is that you want to work on something from your work computer and from your home computer. The lesson assumes you have already set up a GitHub repository. If you haven’t, start here: Version control with git.

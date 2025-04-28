@@ -33,7 +33,7 @@
 <html lang="en">
   
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- CSS/JS + CACHEBUSTING --->
     <link rel="stylesheet" href="/css/styles.css{{ nocache }}">
@@ -43,13 +43,11 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
   </script>
-    {% block script %}
-    {% if script %}
-        <script src="/javascript/{{ script }}"></script>
-    {% endif %}
+{% block script %}
+{% if script %}
+  <script src="/javascript/{{ script }}?v={{ nocache }}"></script>
+{% endif %}
 {% endblock %}
-
-
     <title>{{ title }}</title>
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>

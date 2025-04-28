@@ -21,3 +21,4 @@ jobs:
           api_token: ${{ secrets.NEOCITIES_API_KEY }}
           cleanup: false
           dist_dir: public
+          neocities_supporter: true

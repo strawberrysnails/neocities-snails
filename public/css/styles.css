@@ -7,17 +7,12 @@
 
 @font-face {
   font-family: Daydream;
-  src: url(/fonts/Daydream.ttf); /* Credit: https://www.dafont.com/daydream-3.font */
+  src: url(/fonts/Daydream.ttf); /* https://www.dafont.com/daydream-3.font */
 }
 
 @font-face {
   font-family: RomanceA;
-  src: url(/fonts/RomanceA.ttf); /* Credit: https://cinni.net/?z=/font */
-}
-
-@font-face {
-  font-family: Basiic;
-  src: url(/fonts/basiic.ttf); /* Credit: https://cinni.net/?z=/font */
+  src: url(/fonts/RomanceA.ttf); /* https://cinni.net/?z=/font */
 }
 
 @font-face {
@@ -37,18 +32,62 @@
 
 @font-face {
   font-family: Kelmscott;
-  src: url(/fonts/Kelmscott.ttf);
+  src: url(/fonts/Kelmscott.ttf); /* https://www.dafont.com/kelmscott.font */ 
 }
 
+@font-face {
+  font-family: NDSBIOS;
+  src: url(/fonts/NDSBIOS.ttf); /* https://www.dafont.com/nintendo-ds-bios.font */
+}
+
+@font-face {
+  font-family: Minecraft; 
+  src: url(/fonts/Minecraft.ttf); /* https://www.dafont.com/minecraft.font */
+}
+
+/* Regular */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono.ttf') format('truetype'); /* https://www.fontsquirrel.com/fonts/dejavu-sans-mono */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
 body {
-  font-family: "Basiic";
-  line-height: 1em;
-  letter-spacing: 1px;
+  font-family: DejaVuSansMono, monospace;
+  font-size: 0.95em;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
   background-color: #ba8a9e;
   background-image: url(/images/background.jpg); /* https://www.zerochan.net/Pixiv+Id+20784982 */
   color: black;
-  font-size: 16px;
-  justify-items: center;
   margin: auto;
   text-align: left;
 }
@@ -75,16 +114,24 @@ a[target="_blank"]::after {
   font-size: 0.65em;
 }
 
+ul {
+  list-style: none;
+  padding-left: .5em; /* distance from left */
+}
+
 li {
-  list-style-type: "✩";
-  margin-left: 0.3em;
+  position: relative;
+  padding-left: 1.5em; /* distance between bullet and text */
   line-height: 1.5em;
 }
 
-ul {
-  line-height: 1em;
-  padding-inline-start: 10px;
+li::before {
+  content: "✩";
+  position: absolute;
+  left: 0;
+  color: inherit; 
 }
+
 
 ul.to-do li{
   list-style-type: "\25A1";
@@ -93,23 +140,32 @@ ul.to-do li{
 }
 
 /* NAVIGATION */
-
-ul.a,
-ul.a li {
-  list-style-type: "\2661";
-  line-height: 1em;
+ul.a {
+  list-style: none;
+  padding-left: 0;
+  letter-spacing: 2px; 
 }
 
 ul.a li {
+  position: relative;
+  padding-left: 1.5em; /* space between heart and text */
+  line-height: 1.5em;
   border-bottom: 1px dashed var(--wine);
-  padding: 5px;
   font-weight: bold;
   transition: 0.4s;
+}
+
+ul.a li::before {
+  content: "♡"; 
+  position: absolute;
+  left: 0;
+  color: inherit; 
 }
 
 ul.a li:hover {
   background-color: rgb(198, 198, 198);
 }
+
 
 h1 {
   font-family: "GothPixelFont";
@@ -183,12 +239,13 @@ td {
   color: #3e2a2a;
   padding: 7px;
   border-top: 1px dotted var(--wine);
-  font-family: "Basiic", sans-serif;
   font-weight: 700;
 }
 
 td:last-child,
-th:last-child {
+td:nth-last-child(2),
+th:last-child,
+th:nth-last-child(2) {
   max-width: 100px;
   width: 150px;
 }
@@ -209,6 +266,7 @@ tr:hover td {
 .platform {
   text-align: center;
 }
+
 
 /* GRID LAYOUT */
 
@@ -326,8 +384,9 @@ legend {
     box-sizing: border-box;
   }
 
-  .button {
-    display: none;
+  ul.a {
+    list-style-type: none;
+    padding-left: 0;
   }
 
   ul.a li {
@@ -335,6 +394,11 @@ legend {
     line-height: 1.5em;
     padding: 5px;
     margin-right: 1em;
+    position: static; 
+  }
+
+  ul.a li::before {
+    display: none; 
   }
 
   ul.a li:hover {

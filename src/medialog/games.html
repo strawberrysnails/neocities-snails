@@ -3,6 +3,7 @@ title: Media Log / Games
 layout: main
 nesting: "/"
 permalink: /medialog/games/
+script: main.js
 ---
 
 <h1>Medialog &gt; Games</h1>
@@ -16,90 +17,56 @@ permalink: /medialog/games/
 <hr>
 
 <h2>Games I'm Playing</h2>
-
-<h3>Currently Playing</h3>
-<table>
+<button id="togglePlayed">Hide Table</button>
+<table id="tablePlayed">
   <thead>
-    <tr><th>Title</th><th>Platform</th></tr>
+    <tr><th>Title</th><th>Status</th><th>Platform</th></tr>
   </thead>
   <tbody>
     {% for game in gamelog %}
-      {% if game.type == "played" and game.status == "currently playing" %}
-        <tr>
-          <td>{{ game.title }}</td>
-            <td class="platform">
-              {% if game.platformImage %}
-                <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
-              {% else %}
-                {{ game.platform }}
-              {% endif %}
-            </td>       
-        </tr>
-      {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-
-<h3>Completed</h3>
-<table>
-  <thead>
-    <tr><th>Title</th><th>Platform</th></tr>
-  </thead>
-  <tbody>
-    {% for game in gamelog %}
-      {% if game.type == "played" and game.status == "completed" %}
-        <tr>
-          <td>{{ game.title }}</td>
-            <td class="platform">
-              {% if game.platformImage %}
-                <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
-              {% else %}
-                {{ game.platform }}
-              {% endif %}
-            </td>       
-        </tr>
-      {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-
-<h3>Planning</h3>
-<table>
-  <thead>
-    <tr><th>Title</th><th>Platform</th></tr>
-  </thead>
-  <tbody>
-    {% for game in gamelog %}
-      {% if game.type == "played" and game.status == "planning" %}
-        <tr>
-          <td>{{ game.title }}</td>
-            <td class="platform">
-              {% if game.platformImage %}
-                <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
-              {% else %}
-                {{ game.platform }}
-              {% endif %}
-            </td>       
-        </tr>
-      {% endif %}
-    {% endfor %}
-  </tbody>
+    {% if game.type == "played" %}
+      <tr>
+        <td>{{ game.title }}</td>
+        <td class="status">
+          {% if game.statusImage %}
+            <img src="{{ game.statusImage }}" alt="{{ game.status }} badge">
+          {% else %}
+            {{ game.status }}
+          {% endif %}
+        </td>
+        <td class="platform">
+          {% if game.platformImage %}
+            <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
+          {% else %}
+            {{ game.platform }}
+          {% endif %}
+        </td>       
+      </tr>
+    {% endif %}
+  {% endfor %}
+</tbody>
 </table>
 
 <hr>
 
-<h2>Games I'm Watching my BF play</h2>
-
-<h3>Currently Watching</h3>
-<table>
+<h2>Games I'm Watching My Husband Play</h2>
+<button id="toggleWatched">Hide Table</button>
+<table id="tableWatched">
   <thead>
-    <tr><th>Title</th><th>Platform</th></tr>
+    <tr><th>Title</th><th>Status</th><th>Platform</th></tr>
   </thead>
   <tbody>
     {% for game in gamelog %}
-      {% if game.type == "watched" and game.status == "currently watching" %}
+      {% if game.type == "watched"%}
         <tr>
           <td>{{ game.title }}</td>
+          <td class="status">
+            {% if game.statusImage %}
+              <img src="{{ game.statusImage }}" alt="{{ game.status }} badge">
+            {% else %}
+              {{ game.status }}
+            {% endif %}
+          </td>
           <td class="platform">
             {% if game.platformImage %}
               <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
@@ -107,52 +74,6 @@ permalink: /medialog/games/
               {{ game.platform }}
             {% endif %}
           </td>  
-        </tr>
-      {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-
-<h3>Completed</h3>
-<table>
-  <thead>
-    <tr><th>Title</th><th>Platform</th></tr>
-  </thead>
-  <tbody>
-    {% for game in gamelog %}
-      {% if game.type == "watched" and game.status == "completed" %}
-        <tr>
-          <td>{{ game.title }}</td>
-            <td class="platform">
-              {% if game.platformImage %}
-                <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
-              {% else %}
-                {{ game.platform }}
-              {% endif %}
-            </td>       
-        </tr>
-      {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-
-<h3>Planning</h3>
-<table>
-  <thead>
-    <tr><th>Title</th><th>Platform</th></tr>
-  </thead>
-  <tbody>
-    {% for game in gamelog %}
-      {% if game.type == "watched" and game.status == "planning" %}
-        <tr>
-          <td>{{ game.title }}</td>
-            <td class="platform">
-              {% if game.platformImage %}
-                <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
-              {% else %}
-                {{ game.platform }}
-              {% endif %}
-            </td>
         </tr>
       {% endif %}
     {% endfor %}

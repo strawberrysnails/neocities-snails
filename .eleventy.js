@@ -22,6 +22,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("links", "links.njk");
   eleventyConfig.addLayoutAlias("pinboard", "pinboard.njk");
 
+  // Add a computed property for 'now'
+  eleventyConfig.addGlobalData('now', () => {
+    return new Date().toISOString();
+  });
+
   // Prevent default `foo/index.html` structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
@@ -92,7 +97,6 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
 
   
   // General and Fallback
-
   eleventyConfig.addFilter("filterByStatus", (list, status) =>
     list.filter(item => item.status?.toLowerCase() === status.toLowerCase())
   );
