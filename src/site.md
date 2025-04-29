@@ -10,9 +10,13 @@ This website is built with [Eleventy](https://www.11ty.dev/), a static site gene
 
 *Snails* is mobile-friendly, responsive, and best viewed on firefox browsers.
 
+---
+
 ## Credits
 
 All font and image credits can be found in my [styles.css](css/styles.css) file, which you can also view on [github](https://github.com/leajpg/neocities-snails).
+
+---
 
 ## Resources
 Things that helped me build this website. Full list of resources and bookmarks can be found on my [Links](/links) page. 
@@ -42,6 +46,10 @@ Things that helped me build this website. Full list of resources and bookmarks c
 - [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs) – Lets you add custom classes and attributes directly in Markdown.
 - [eleventy-plugin-toc](https://github.com/uncenter/eleventy-plugin-toc) – Generate a table of contents with easy config and customization.
 
+---
+
 ## Site archive
 
-Coming soon
+- [4-17-20](/archives/4-17-20)
+- [12-20-23](/archives/12-20-23)
+- [1-15-24](/archives/1-15-24)

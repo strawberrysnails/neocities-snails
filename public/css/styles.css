@@ -134,9 +134,13 @@ li::before {
 
 
 ul.to-do li{
-  list-style-type: "\25A1";
   font-size: 1em;
   padding-left: 5px;
+}
+
+ul.to-do li::before {
+  content:"\25A1";
+  left: -12px;
 }
 
 /* NAVIGATION */
@@ -454,9 +458,6 @@ legend {
 
 /* BLOG PAGE STYLES */
 
-.post-list {
-  max-width: 700px;
-}
 
 .post-item {
   margin-top: 10px;
@@ -464,6 +465,10 @@ legend {
   list-style-type: none;
   border: 1px var(--wine) dashed;
   background-color: #fff;
+}
+
+.post-item::before{
+  content:""; /* Remmoves list bullets */
 }
 
 .tag-list {
@@ -826,9 +831,14 @@ legend {
 
 
 ul.pins li{
-  list-style-type: "\2732";
+  list-style-type: none;
   font-size: 1em;
   padding-left: 5px;
+}
+
+ul.pins li::before {
+  content:"\2732";
+  left: -12px;
 }
 
 .pin:nth-child(3n+1) {

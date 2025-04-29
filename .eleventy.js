@@ -12,7 +12,8 @@ module.exports = function (eleventyConfig) {
     "src/images": "images",
     "src/javascript": "javascript",
     "src/css": "css",
-    "src/_includes/fonts": "fonts"
+    "src/_includes/fonts": "fonts",
+    "src/archives/images": "archives/images"
   });
 
   // Layout aliases

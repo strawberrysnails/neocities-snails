@@ -8,6 +8,7 @@ tags:
 - gaming
 - web development
 - eleventy
+- javascript
 ---
 There are plenty of ways to keep track of your gaming: steam, backlogged, [grovee](https://www.grouvee.com/user/175297-saturnringz/shelves), ect. but I wanted something offline and more personal. Especially because I also plan to track all the games I watch my husband play.
 
