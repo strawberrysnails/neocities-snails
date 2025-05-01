@@ -1,3 +1,18 @@
+# Blog Ideas
+- My trip to New York
+
+# Project Ideas
+- Feed reader for myself
+
+# Bookmarks
+- https://www.bellingcat.com/
+- https://ssd.eff.org/
+- https://landchad.net/
+- https://blog.knhash.in/gentle-guide-to-self-hosting/
+
+# Feeds
+- https://maia.crimew.gay/feed.xml
+
 
 # Code Snippets
 
@@ -26,7 +41,9 @@
 
 
 # How to use github across devices
+
 [Source](https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/more_advanced_github.html)
+
 ``` 
 6. Working with GitHub repositories on more than one computer
 In this section we will explain the basics of working with a repository on more than one computer. The basic case is that you want to work on something from your work computer and from your home computer. The lesson assumes you have already set up a GitHub repository. If you haven’t, start here: Version control with git.

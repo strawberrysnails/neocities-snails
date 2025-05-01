@@ -33,3 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var images = document.querySelectorAll('img');
+  images.forEach(function(img) {
+    // Remove slash if on nekoweb
+    if (window.location.hostname === "snails.nekoweb.org") {
+      img.src = img.src.replace(/^\/+/, "");  // Remove any leading slashes
+    }
+  });
+});

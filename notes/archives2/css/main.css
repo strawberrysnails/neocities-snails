@@ -1,0 +1,90 @@
+  /** CSS PRIMARY COLORS */
+ :root{
+--color-primary-a0:  #ffffff;
+--color-primary-a10:  #eeffcc;
+--color-primary-a20:  #bedc7f;
+--color-primary-a30:  #89a257;
+ 
+--color-primary-a50:  #4d8061;
+--color-primary-a60:  #305d42;
+--color-primary-a70:  #1e3a29;
+--color-primary-a80:  #112318;
+--color-primary-a90:  #000000;
+ }
+
+ /* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip{
+	/* basic */
+	max-width:300px;
+	z-index:10;
+	margin:24px 14px 7px 12px;
+	/* style and design */
+	padding:8px;
+	background:#222; /* fallback if rgba not supported */
+	background:rgba(0,0,0,0.8);
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-moz-box-shadow:2px 2px 0 rgba(0,0,0,0.15),-1px -1px 0 rgba(255,255,255,0.3);
+	-webkit-box-shadow:2px 2px 0 rgba(0,0,0,0.15),-1px -1px 0 rgba(255,255,255,0.3);
+	box-shadow:2px 2px 0 rgba(0,0,0,0.15),-1px -1px 0 rgba(255,255,255,0.3);
+	/* font */
+	font-family:Verdana,Geneva,sans-serif;
+	font-size:11px;
+	line-height:16px;
+	color:#fff;
+}
+
+ body{
+    background-color:var(--color-primary-a90);
+    color:var(--color-primary-a10);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px;
+}
+  
+  .blurb{
+    margin-top: 40px;
+    padding:20px;
+    background-color:var(--color-primary-a70);
+    box-shadow: 0px 2px 0px var(--color-primary-a20);
+    border-radius: 2px;
+    height:100px;
+    overflow: auto;
+    margin-bottom: 15px;
+    font-size: .9em;
+    line-height:1.5em;
+    color:var(--color-primary-a10);
+    }
+
+    .blurb h2{
+        margin: 0;
+        color:var(--color-primary-a20);
+    }
+
+    button{
+        background-image: linear-gradient(to top, var(--color-primary-a10) 50%, black 0);
+        background-position: top;
+        border: none;
+        box-shadow: 0px 2px 0px var(--color-primary-a20);
+        border-radius: 2px;
+        padding:7px;
+        color: var(--color-primary-a10);
+        transition-duration: 0.4s;
+        font-weight: bold;
+        font-size: .9em;
+        background-size: 200% 200%;
+    }
+
+    button:hover{
+        color:#1e3a29;
+        background-position: bottom;
+    }
+
+    button:active{
+        transform: translateY(3px);
+    }
+

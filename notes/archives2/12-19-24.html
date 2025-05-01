@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    
+    <!--change your title of the whole page here !-->
+    <title>Lea's Room</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/nav.css" rel="stylesheet" type="text/css" media="all">
+   
+<style>
+  
+  body{
+    background-color: black;
+  }
+</style>  </head>
+  <body>
+  
+  
+
+      
+      <div class="main">
+        <h1>Welcome to Lea’s Room</h1>
+        <button type="button" onclick="grayscale()">Toggle Grayscale</button>
+        <button onclick="toggleSlide('box')">Mobile Navigation</button>
+
+        <div id = "box">
+          <ul>
+            <!-- target="_blank" opens the URL in a new tab, that's all! -->
+            <li><a href="/about.html" target="_blank">About</a></li>
+            <li><a href="/" target="_blank">Someone's PC</a></li>
+            <li><a href="/" target="_blank">Bookshelf</a></li>
+            <li><a href="/" target="_blank">Art</a></li>
+            <li><a href="/" target="_blank">Pets</a></li>
+          </ul>
+
+        </div>
+
+  
+<img class="leasroom" src="./Images/RoomImgs/RoomTransparent1.png">   
+    
+    <div class="bookshelf">
+        <a href="/books"><img src="./Images/RoomImgs/Bookshelf.png"></a>
+    </div>
+      
+    <div class="cat">
+      <a href="/books"><img src="./Images/RoomImgs/Cat.png"></a>
+      </div>
+      <div class="monitors">
+    <a href="/books"><img src="./Images/RoomImgs/Monitors.png"></a>
+      </div>
+     <div class="poster">
+    <a href="/pixelart"><img src="./Images/RoomImgs/Poster.png"></a>
+      </div>
+      
+
+
+<button type="button" onclick="window.location.href = '/linky';">Links</button><button type="button" onclick="window.location.href = '/guestbook';">Guestbook</button> <button type="button" onclick="window.location.href = '/Credits';">Credits</button>
+
+      <div class="blurb">
+        <div class="blurb-text">
+        <h1>Updates</h1>
+        <br><b>【12/20/23】</b> Fixed last updated widget, added hit counter, fixed toggle grayscale. 
+        <br><b>【12/19/23】</b>Testing new update box. Added navigation but links don't work. Moved some elements around. New splash art coming. Cat Ipsum: The cat was chasing the mouse spit up on light gray carpet instead of adjacent linoleum so weigh eight pounds but take up a full-size bed.
+        Lie in the sink all day eats owners hair then claws head yet purr while eating. Good now the other hand, too destroy couch as revenge. Hack up furballs swipe at owner's legs,</div>
+      </div>
+      </div>
+     
+    <div id="counter">
+      Last Updated: 12/20/23 | 
+      Visitors: 35,530
+</div>   
+
+      <script type="text/javascript">
+var mode = 0;
+function grayscale() {
+  var photo = document.querySelector(".leasroom");
+  if (mode === 0) {
+    photo.style.filter = "grayscale(100%)";
+    mode = 1;
+  } else {
+    photo.style.filter = "none";
+    mode = 0;
+  }
+}
+
+
+
+
+function toggleSlide(el) {
+  var elem = document.getElementById(el);
+
+  // Check if the element is currently visible
+  var isVisible = elem.clientHeight !== 0;
+
+  // Toggle between sliding up and sliding down
+  if (isVisible) {
+    // If visible, slide up
+    elem.style.height = "0px";
+  } else {
+    // If hidden, slide down
+    elem.style.height = "75px"; // Adjust the height as needed
+  }
+}
+
+   </script>
+   
+   
+  </body>
+</html>

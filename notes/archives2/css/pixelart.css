@@ -1,0 +1,156 @@
+body {
+  background-color: black;
+}
+
+/* IMAGES */
+
+/* IMAGE 1 */
+#myImg {
+  cursor: pointer;
+}
+
+#myImg:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+/* IMAGE 2 */
+
+#myImg2 {
+  cursor: pointer;
+}
+
+#myImg2:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+/* IMAGE 3 */
+
+#myImg3 {
+  cursor: pointer;
+}
+
+#myImg3:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+/* IMAGE 4 */
+
+#myImg4 {
+  cursor: pointer;
+}
+
+#myImg4:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+div.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+}
+
+div.gallery img {
+  max-width: 300px;
+  height: auto;
+  border: white solid 5px;
+  margin: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 70%;
+  max-width: 700px;
+  background-color: white;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  font-family: arial;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
