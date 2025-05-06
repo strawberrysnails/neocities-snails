@@ -14,7 +14,7 @@ This website is built with [Eleventy](https://www.11ty.dev/), a static site gene
 
 ## Credits
 
-All font and image credits can be found in my [styles.css](css/styles.css) file, which you can also view on [github](https://github.com/leajpg/neocities-snails).
+All font and image credits can be found in my [styles.css](css/styles.css) file, which you can also view on [github](https://github.com/strawberrysnails/neocities-snails).
 
 ---
 

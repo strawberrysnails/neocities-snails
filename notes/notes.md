@@ -9,9 +9,16 @@
 - https://ssd.eff.org/
 - https://landchad.net/
 - https://blog.knhash.in/gentle-guide-to-self-hosting/
+- https://cheapskatesguide.org/
+- https://foreverliketh.is/
+- https://barnsworthburning.net/
+- https://owencompher.me/
+- https://ribo.zone/free/snippets/
+- https://www.tumblr.com/sexhaver/745707549131702272/can-you-tell-us-all-the-plugins-ad-blockers-you
 
 # Feeds
 - https://maia.crimew.gay/feed.xml
+- https://ribo.zone/feed.xml
 
 
 # Code Snippets
@@ -36,6 +43,117 @@
     "body": "[![${1:alt text}](${2:image-url})](${3:url})",
     "description": "Insert Markdown image as link"
     }
+}
+```
+## Photopile code 
+```html
+<div class="photopile">
+  <button popovertarget="photo1">
+    <figure>
+      <img src="/" alt="">
+      <figcaption>caption 1</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo2">
+    <figure>
+      <img src="" alt="">
+      <figcaption>caption 2</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo3">
+    <figure>
+      <img src="" alt="">
+      <figcaption>caption 3</figcaption>
+    </figure>
+  </button>
+</div>
+<div class="popovers">
+  <figure popover id="photo1">
+    <img src="/" alt="">
+    <figcaption>big caption 1</figcaption>
+  </figure>
+  <figure popover id="photo2">
+    <img src="/" alt="">
+    <figcaption>big caption 2</figcaption>
+  </figure>
+  <figure popover id="photo3">
+    <img src="/" alt="">
+    <figcaption>big caption 3</figcaption>
+  </figure>
+</div>
+```
+```css
+.photopile { 
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.photopile figure { 
+  display: inline-block;
+  background: white;
+  box-shadow: 0 0 0.4rem rgb(0,0,0,0.75);
+  transform: rotate(2deg);
+  margin: 0 -25px;
+}
+.photopile figure img {
+  max-width: calc(100% - 2rem);
+  margin: 1rem 1rem 0 1rem;
+  border: 2px rgb(0,0,0,0.55) inset;
+}
+.photopile figcaption, .popovers figcaption {
+  font-family: /* set this to have it match the rest of the page */;
+  text-align: center;
+  margin: 0.5rem 1rem 1rem 1rem;
+  font-size: 1rem;
+  color: black;
+}
+.photopile button { 
+  background: none; 
+  border: none;
+  max-width: 40%;
+}
+.photopile button:hover, .photopile button:focus { 
+  z-index: 3;
+  cursor:pointer;
+}
+.photopile button:nth-child(2n) { 
+  transform: rotate(-10deg);
+}
+.photopile button:nth-child(3n) {
+  transform: rotate(5deg);
+}
+.photopile button:nth-child(4n) { 
+  transform: rotate(4deg);
+}
+.photopile button:nth-child(5n) { 
+  transform: rotate(-2deg);
+}
+.photopile button:nth-child(6n) {
+  transform: rotate(-7deg);
+}
+:popover-open {
+  border: none;
+  box-shadow: 0 0 0.4rem rgb(0,0,0,0.75);
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+}
+.popovers figure:popover-open {
+  display: block;
+  background: white;
+}
+.popovers figure:popover-open figcaption {
+  margin: 2.5vmin 1rem 4vmin 1rem;
+  font-size: 175%;
+  color: black;
+}
+.popovers figure:popover-open img {
+  margin: 4vmin 4vmin 0 4vmin;
+  width: 80vmin;
+  border: 4px rgb(0,0,0,0.55) inset;
 }
 ```
 

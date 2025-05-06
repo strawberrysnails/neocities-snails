@@ -25,7 +25,12 @@ nesting: "../"
 ### Neighbors
 <div class="link-buttons">
 
-[![amidala](/images/buttons/sites/amidala.png)](https://amidala.neocities.org/)[![coverstar](/images/buttons/sites/cloverstar.png)](https://cloverstar.neocities.org/)[![fallenfleurs](/images/buttons/sites/fallenfleurs.png)](https://fallenfleurs.neocities.org/)[![fh102](/images/buttons/sites/sephlow.gif)](https://fh102.neocities.org/)[![bulltown.2022](/images/buttons/sites/b22button.png)](https://bulltown.joejenett.com)[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/) [![luckyrabbit](https://files.catbox.moe/n23862.png)](https://luckyrabbit.neocities.org/) [![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/)
+[![amidala](/images/buttons/sites/amidala.png)](https://amidala.neocities.org/)[![coverstar](/images/buttons/sites/cloverstar.png)](https://cloverstar.neocities.org/)[![fallenfleurs](/images/buttons/sites/fallenfleurs.png)](https://fallenfleurs.neocities.org/)[![fh102](/images/buttons/sites/sephlow.gif)](https://fh102.neocities.org/)[![bulltown.2022](/images/buttons/sites/b22button.png)](https://bulltown.joejenett.com)[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/) [![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/)
+
+</div>
+<div class="site-links">
+
+[luckyrabbit](https://luckyrabbit.neocities.org/) [strawberry-transneu](https://strawberry-transneu.neocities.org/)
 
 </div>
 
@@ -107,6 +112,7 @@ Resources I used for building this website can be found [here](/site). There may
 
 - [Learn Japanese](https://www.tofugu.com/learn-japanese/) – Full guide to learning Japanese.  
 - [DJT Kana](https://djtguide.neocities.org/kana/) – Kana learning resource.
+- [jpdb](https://jpdb.io/) – Japanese Dictionary 
 
 ---
 
@@ -120,7 +126,8 @@ Resources I used for building this website can be found [here](/site). There may
 
 #### Generators & Music
 
-- [Every Noise at Once](https://everynoise.com/) – Music genre map.  
+- [Every Noise at Once](https://everynoise.com/) – Music genre map.
+- [Radio](https://radio.garden/) – Listen to radio stations across the world.
 - [Chaotic Shiny](http://chaoticshiny.com/index.php) – Generators for TTRPGs and writing.
 
 ---

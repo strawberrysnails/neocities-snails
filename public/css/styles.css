@@ -658,6 +658,15 @@ legend {
   content: none !important;
 }
 
+.site-links a{ /* FOR SITES WITHOUT BUTTONS */
+background-color: #ba8a9e;
+padding: 5px;
+font-weight: bold;
+transition: .5s;
+}
+.site-links a:hover{
+  background-color: #e4b7ca;
+}
 /* ANIME + MANGA MEDIALOG */
 
 .anime-section {
