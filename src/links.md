@@ -12,11 +12,11 @@ nesting: "../"
 ### My Link
 <div class="link-buttons">
 
-[![SnailsV1](https://files.catbox.moe/g9r4bv.png)](https://files.catbox.moe/g9r4bv.png) [![SnailsV2](https://files.catbox.moe/9ghove.png)](https://files.catbox.moe/9ghove.png)
+[![SnailsV1](/images/buttons/sites/snails.png)](#) [![SnailsV2](/images/buttons/sites/snailsv2.png)](#)
 
-<textarea class="code-textarea" style="height: 40px; width: 500px;">&lt;a href="https://snails.neocities.org/" target="_blank"&gt;&lt;img src="https://files.catbox.moe/g9r4bv.png" alt="snails"&gt;&lt;/a&gt;</textarea>
+<textarea class="code-textarea" style="height: 40px; width: 500px;">&lt;a href="https://snails.neocities.org/" target="_blank"&gt;&lt;img src="/snails.png" alt="snails"&gt;&lt;/a&gt;</textarea>
 
-- Hotlinking is OK!
+- Please do not hotlink
 
 - Credit for button #2: [bulltown](https://bulltown.neocities.org/)
 
@@ -25,12 +25,12 @@ nesting: "../"
 ### Neighbors
 <div class="link-buttons">
 
-[![amidala](/images/buttons/sites/amidala.png)](https://amidala.neocities.org/)[![coverstar](/images/buttons/sites/cloverstar.png)](https://cloverstar.neocities.org/)[![fallenfleurs](/images/buttons/sites/fallenfleurs.png)](https://fallenfleurs.neocities.org/)[![fh102](/images/buttons/sites/sephlow.gif)](https://fh102.neocities.org/)[![bulltown.2022](/images/buttons/sites/b22button.png)](https://bulltown.joejenett.com)[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/) [![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/)
+[![amidala](/images/buttons/sites/amidala.png)](https://amidala.neocities.org/)[![coverstar](/images/buttons/sites/cloverstar.png)](https://cloverstar.neocities.org/)[![fallenfleurs](/images/buttons/sites/fallenfleurs.png)](https://fallenfleurs.neocities.org/)[![fh102](/images/buttons/sites/sephlow.gif)](https://fh102.neocities.org/)[![bulltown.2022](/images/buttons/sites/b22button.png)](https://bulltown.joejenett.com)[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/) [![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/) [![luckyrabbit](/images/buttons/sites/luckyrabbit.png)](https://luckyrabbit.neocities.org/) [![ninjaweb](/images/buttons/sites/ninjaweb.gif)](https://ninjaweb.neocities.org/) [![grossgirl94](/images/buttons/sites/grossgirl94.gif)](https://grossgirl94.neocities.org/) [![crow-queen](/images/buttons/sites/crow-queen.gif)](https://crow-queen.com/) [![oyasumimi](/images/buttons/sites/oyasumimi.gif)](https://oyasumimi.neocities.org/) [![onlywonder](/images/buttons/sites/onlywonder.png)](https://onlywonder.net/) [![00s](/images/buttons/sites/00s.gif)](https://00s.neocities.org/) [![philia995](/images/buttons/sites/philia995.png)](https://philia995.neocities.org/) [![howsoonisnow](/images/buttons/sites/howsoonisnow.gif)](https://howsoonisnow.org/) [![museumofalexandra](/images/buttons/sites/xandra.png)](https://xandra.cc/) [![chione](/images/buttons/sites/chione.png)](https://chione.neocities.org/)
 
 </div>
 <div class="site-links">
 
-[luckyrabbit](https://luckyrabbit.neocities.org/) [strawberry-transneu](https://strawberry-transneu.neocities.org/)
+[strawberry-transneu](https://strawberry-transneu.neocities.org/) [defiant-confusion](https://defiant-confusion.com/) [greytext](https://greytext.neocities.org/) [hedoro](https://hedoro.neocities.org/)
 
 </div>
 
@@ -92,23 +92,22 @@ Resources I used for building this website can be found [here](/site). There may
 - [Add a Sitemap](https://11ty.recipes/recipes/add-a-sitemap/) – Add a sitemap to Eleventy.  
 - [Version Control with Git](https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/version_control_git.html) – Intro to Git as part of a university course.
 
+
 ---
+
+## Educational Resources
 
 ### Device Modding
 
 - [3DS Hacks Guide](https://3ds.hacks.guide/) – You already know.  
 - [Jailbreak Your Kindle](https://www.youtube.com/watch?v=Qtk7ERwlIAk&t=361s) – Why and how to jailbreak your Kindle.
 
----
-
-### Educational Resources
-
-#### Cooking & Gardening
+### Cooking & Gardening
 
 - [Grimgrains](https://grimgrains.com/site/home.html) – Plant-based recipes from a boat-dwelling duo.  
 - [Learn how to Garden](https://dreambubble.neocities.org/garden) – Garden guide.
 
-#### Language Learning
+### Language Learning
 
 - [Learn Japanese](https://www.tofugu.com/learn-japanese/) – Full guide to learning Japanese.  
 - [DJT Kana](https://djtguide.neocities.org/kana/) – Kana learning resource.
@@ -116,18 +115,18 @@ Resources I used for building this website can be found [here](/site). There may
 
 ---
 
-### Fun Stuff
+## Ect.
 
-#### Games
+### Games
 
 - [Orisinal](https://www.ferryhalim.com/orisinal/) – Beautiful Flash games.  
 - [Dappervolk](https://dappervolk.com/) – Dress-up game.  
 - [Goatlings](https://www.goatlings.com/) – Goat pet game.
 
-#### Generators & Music
+### Generators & Music
 
 - [Every Noise at Once](https://everynoise.com/) – Music genre map.
-- [Radio](https://radio.garden/) – Listen to radio stations across the world.
+- [Radio.garden](https://radio.garden/) – Listen to radio stations across the world.
 - [Chaotic Shiny](http://chaoticshiny.com/index.php) – Generators for TTRPGs and writing.
 
 ---
@@ -136,3 +135,4 @@ Resources I used for building this website can be found [here](/site). There may
 
 - [Font Finder](https://www.myfonts.com/pages/whatthefont) – Identify fonts from images.  
 - [Champagne Wiki](https://champagne.pages.dev/) – Wiki/guide to piracy.
+- [Image To Text Converter ](https://www.onlineocr.net/) – OCR Converter.

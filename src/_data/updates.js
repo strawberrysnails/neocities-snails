@@ -1,11 +1,15 @@
 module.exports = [
     {
-        date: new Date("2025-05-01"),
-        blurb: "New blog post again & homepage changes."
-      },
+      date: new Date("2025-05-07"),
+      blurb: `Complete overhaul of theme ◝(ᵔᗜᵔ)◜ I wanted something simipler, cozier, and darker. If you miss the old theme, you can cry while looking at it <a href="/archives/4-30-25.html">here</a>. `
+    },
+    {
+      date: new Date("2025-05-01"),
+      blurb: `New blog post again & homepage changes.`
+    },
     {
       date: new Date("2025-04-23"),
-      blurb: "New blog post & some styling changes."
+      blurb: `New blog post & some styling changes.`
     },
     {
       date: new Date("2025-04-23"),

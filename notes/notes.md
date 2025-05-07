@@ -1,5 +1,6 @@
 # Blog Ideas
 - My trip to New York
+- https://rknight.me/blog/eleventy-post-graph-plugin/
 
 # Project Ideas
 - Feed reader for myself
@@ -15,10 +16,14 @@
 - https://owencompher.me/
 - https://ribo.zone/free/snippets/
 - https://www.tumblr.com/sexhaver/745707549131702272/can-you-tell-us-all-the-plugins-ad-blockers-you
+- https://yusha.neocities.org/downloads/digitalart/krita
+- https://shroom.ink/
+- https://crystalclearcrystalline.neocities.org/resources
 
 # Feeds
 - https://maia.crimew.gay/feed.xml
 - https://ribo.zone/feed.xml
+- https://ivyswell-tavern.neocities.org/RSS_feeds/updates.xml
 
 
 # Code Snippets
