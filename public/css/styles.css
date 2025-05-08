@@ -103,6 +103,7 @@ body {
 a {
   color: var(--pink);
   text-decoration: none;
+  transition: 0.5s ease;
 }
 
 aside a {
@@ -144,6 +145,7 @@ li::before {
 ul.to-do li{
   font-size: 1em;
   padding-left: 5px;
+  margin-left: 10px;
 }
 
 ul.to-do li::before {
@@ -193,7 +195,7 @@ h1 {
   font-family: "Alkhemikal";
   font-size: 3em;
   text-align: left;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -201,6 +203,7 @@ h2 {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   text-align: left;
+  letter-spacing: 2px;
 }
 
 h2 a {
@@ -303,18 +306,18 @@ position: absolute;
   background-color: var(--darkgrey);
   padding: 15px 30px 15px;
   gap: 20px;
-  margin: 20px auto;
-  width: 50%;
-  border: 8px solid;
-  border-image: url(/images/pixelborder3.png) 8 round;
+  margin: 0px auto 0px;
+  width: 60%;
+  height: 100%;
+
   display: grid;
-  grid-template-columns: minmax(250px, 1fr) 3fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-auto-flow: row;
   grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
 }
 
 
@@ -368,7 +371,73 @@ footer {
   letter-spacing: 4px;
   color: white;
   padding: 5px 10px;
+  transition: text-shadow 0.5s ease;
+}
 
+.banner-title:hover {
+  animation: pulse 1.5s ease-in-out infinite;
+  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* HOME GRID */
+.home {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.top-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.latest-content h2{
+  font-size: 1em;
+}
+
+.latest-content legend a{
+  transition: text-shadow 0.5s ease;
+  color:#fff;
+}
+
+.latest-content legend a:hover{
+  text-decoration: none;
+  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+}
+
+.latest-content fieldset{
+  padding:10px 15px 10px;
+}
+
+.latest-picture img{
+    max-width: 275px;
+    height: auto;
+    transition: 0.2s;
+    filter: grayscale(50%);  
+}
+
+.latest-picture img:hover{
+  filter: none;
+}
+
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bottom-row fieldset{
+  padding-left: 10px;
+  max-height: 150px;
+  overflow-y: scroll;
+  width: 95%;
 }
 
 
@@ -396,11 +465,10 @@ details > details > details {
 
 fieldset {
   border: var(--pink) 1px dashed;
-  overflow-y: scroll;
-  height: 150px;
   padding: 6px;
   display: inline-block;
   vertical-align: top;
+  background-image: url(/images/grid.png);
 }
 
 fieldset li{
@@ -408,12 +476,14 @@ fieldset li{
 }
 
 legend {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   margin-left: 5px;
   font-family: "Alkhemikal";
+  letter-spacing: 2px;
 }
-/* moble view */
+
+/* MOBILE VIEW*/
 
 @media (max-width: 750px) {
   img,
@@ -452,7 +522,6 @@ legend {
     width: 75%;
     display: grid;
     margin:auto;
-    margin-bottom: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     gap: 10px 10px;
@@ -489,6 +558,32 @@ legend {
   .light{
     display: none;
     }
+
+    .home {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
+
+    .top-row {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
+  
+    .top-row fieldset {
+      min-width: 90%; 
+    }
+  
+    .top-row img {
+      max-width: 95%; 
+    }
+  
+    .bottom-row {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
 }
 
 
@@ -519,8 +614,8 @@ legend {
 .card {
   background-color: #fff;
   padding: 10px 10px 20px 10px;
-  height: 300px;
-  margin: 2px;
+  height: 350px;
+  margin: 10px 5px;
   transition: 0.3s;
 }
 

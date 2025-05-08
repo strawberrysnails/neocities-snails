@@ -1,10 +1,5 @@
 module.exports = [
   {
-    src: "crabapple.jpg",
-    date: "4.21.2025",
-    caption: "Flowering crabapple tree. ❀"
-  },
-  {
     src: "cherryblossom.png",
     date: "4.21.2025",
     caption: "My local cherry blossom trees have bloomed. ❁✿❀"
