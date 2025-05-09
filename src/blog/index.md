@@ -4,6 +4,9 @@ title: Blog
 permalink: /blog/
 nesting: "../"
 eleventyExcludeFromCollections: true
+eleventyNavigation:
+  key: Blog
+  order: 1
 ---
 
 # Blog

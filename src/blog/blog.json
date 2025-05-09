@@ -1,6 +1,4 @@
 {
   "layout": "blog.njk",
-  "tags": ["blog"],
-  "nesting": "/",
-  "permalink": ""
+  "tags": ["blog"]
 }

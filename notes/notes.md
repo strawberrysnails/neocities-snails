@@ -24,6 +24,8 @@
 - https://maia.crimew.gay/feed.xml
 - https://ribo.zone/feed.xml
 - https://ivyswell-tavern.neocities.org/RSS_feeds/updates.xml
+- https://www.thefrugalgamer.net/rss.xml
+- https://www.snifflebear.moe/feeds/posts/default?alt=rss
 
 
 # Code Snippets

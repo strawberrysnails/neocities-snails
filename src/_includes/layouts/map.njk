@@ -1,0 +1,11 @@
+<li>
+  <a href="{{ currentItem.url }}">{{ currentItem.title }}</a>
+  {% if currentItem.children %}
+    <ul>
+      {% for child in currentItem.children %}
+        {% set currentItem = child %}
+        {% include "map.njk" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</li>

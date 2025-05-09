@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Site Map
+permalink: /map
+---
+
+<h1>Site Map</h1>
+
+{% set nav = eleventyNavigation %}
+<ul>
+  {% for item in nav %}
+    {% set currentItem = item %}
+    {% include "map.njk" %}
+  {% endfor %}
+</ul>

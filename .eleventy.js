@@ -5,6 +5,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const htmlmin = require("html-minifier-terser");
 const externalLinksPlugin = require("@sardine/eleventy-plugin-external-links");
 const pluginTOC = require("eleventy-plugin-toc");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
   // Passthrough file copies
@@ -30,6 +31,12 @@ module.exports = function (eleventyConfig) {
 
   // Prevent default `foo/index.html` structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
+
+  // Sitemap Collection
+  eleventyConfig.addCollection("allPages", function (collectionApi) {
+  return collectionApi.getAll().filter(item => !item.data.excludeFromSitemap);
+});
+
 
 // Blog collection
 eleventyConfig.addCollection("blog", (collectionApi) => {
@@ -57,8 +64,7 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
   return [...tagPages];
 });
 
-  
-  
+
   // Game Filters
   eleventyConfig.addFilter("getCurrentGame", (games) => {
     const current = games.find(g => g.status === "currently playing" && g.type === "played");
@@ -95,6 +101,8 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
     rel: "noopener noreferrer",
     extensions: ["html"]
   });
+
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   
   // General and Fallback

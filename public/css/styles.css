@@ -307,7 +307,7 @@ position: absolute;
   padding: 15px 30px 15px;
   gap: 20px;
   margin: 0px auto 0px;
-  width: 60%;
+  width: 50%;
   height: 100%;
 
   display: grid;
@@ -773,8 +773,11 @@ legend {
   cursor: pointer;
 }
 
+/* SITE BUTTONS */
 .link-buttons a img {
   transition: transform 0.2s ease, filter 0.2s ease;
+  width: 88px;
+  height: 31px;
   filter: grayscale(60%);
   border: 1px solid var(--silver);
   border-radius: 4px;
@@ -791,7 +794,8 @@ legend {
   content: none !important;
 }
 
-.site-links a{ /* FOR SITES WITHOUT BUTTONS */
+/* FOR SITES WITHOUT BUTTONS */
+.site-links a{ 
 background-color: #ba8a9e;
 color: var(--wine);
 padding: 5px;
