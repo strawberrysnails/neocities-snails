@@ -102,7 +102,8 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
     extensions: ["html"]
   });
 
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   
   // General and Fallback
