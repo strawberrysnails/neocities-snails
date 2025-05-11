@@ -193,6 +193,7 @@ ul.a li:nth-child(2)::before {
 
 h1 {
   font-family: "Alkhemikal";
+  line-height: .7em;
   font-size: 3em;
   text-align: left;
   letter-spacing: 3px;
@@ -366,7 +367,7 @@ footer {
 .banner-title {
   position: absolute;
   right: 20px;
-  top: 80px;
+  top: 70px;
   font-size: 5rem;
   letter-spacing: 4px;
   color: white;
@@ -400,6 +401,10 @@ footer {
 
 .latest-content h2{
   font-size: 1em;
+}
+
+.latest-content a:any-link{
+  text-decoration: none;
 }
 
 .latest-content legend a{
@@ -614,7 +619,7 @@ legend {
 .card {
   background-color: #fff;
   padding: 10px 10px 20px 10px;
-  height: 350px;
+  height: 300px;
   margin: 10px 5px;
   transition: 0.3s;
 }
