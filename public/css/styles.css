@@ -352,6 +352,7 @@ footer {
   width: auto;
   grid-area: footer;
   min-height: 15px;
+  max-height: auto;
   padding: 20px;
   text-align: center;
   background-color: var(--grey);
@@ -552,7 +553,7 @@ legend {
   footer {
     grid-area: footer;
     text-align: left;
-    max-height: 70px;
+    max-height: auto;
   }
 
   .ascii {

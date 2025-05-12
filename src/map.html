@@ -6,10 +6,26 @@ permalink: /map
 
 <h1>Site Map</h1>
 
-{% set nav = eleventyNavigation %}
 <ul>
-  {% for item in nav %}
-    {% set currentItem = item %}
-    {% include "map.njk" %}
-  {% endfor %}
+  <li><a href="/">Homepage</a></li>
+  <li><a href="/links">Links</a></li>
+  <li><a href="/map">Site Map</a> <i class="bi bi-compass"></i></i> You are here.</li> 
+  <li><a href="/photogrid">Photogrid</a></li>
+  <li><a href="/pins">Pinboard</a></li>
+  <li><a href="/site">About the Site</a></li>
+  <li><a href="/medialog">Media Log</a>
+    <ul>
+      <li><a href="/medialog/anime">Anime</a></li>
+      <li><a href="/medialog/games">Games</a></li>
+      <li><a href="/medialog/manga">Manga</a></li>
+    </ul>
+  </li>
+
+  <li><a href="/blog">Blog</a>
+    <ul>
+      {% for post in collections.blog %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </li>
 </ul>

@@ -33,8 +33,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
   // Sitemap Collection
-  eleventyConfig.addCollection("allPages", function (collectionApi) {
-  return collectionApi.getAll().filter(item => !item.data.excludeFromSitemap);
+eleventyConfig.addCollection("sitemapGroups", function (collectionApi) {
+  const grouped = {};
+  collectionApi.getAll().forEach(item => {
+    const group = item.data.sitemapGroup || "root";
+    if (!grouped[group]) grouped[group] = [];
+    grouped[group].push(item);
+  });
+  return grouped;
 });
 
 
