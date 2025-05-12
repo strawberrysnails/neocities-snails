@@ -2,7 +2,7 @@
 title: About the Site
 layout: main
 nesting: ""
-permalink: site
+permalink: /site/
 ---
 
 # Site Info
