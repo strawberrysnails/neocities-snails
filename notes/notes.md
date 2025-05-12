@@ -1,5 +1,6 @@
 # Blog Ideas
 - My trip to New York
+- Reaching perfection in stardew valley
 - https://rknight.me/blog/eleventy-post-graph-plugin/
 
 # Project Ideas
