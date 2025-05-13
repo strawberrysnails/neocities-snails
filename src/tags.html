@@ -1,11 +1,6 @@
 ---
 permalink: "blog/tags/{{ tag | slug }}/"
-pagination:
-  data: collections.tagList
-  size: 1
-  alias: tag
 layout: tags
-excludeFromSitemap: true
 eleventyComputed:
   title: "Tag: {{ tag }}"
 ---

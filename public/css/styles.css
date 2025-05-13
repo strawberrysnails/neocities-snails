@@ -115,6 +115,14 @@ a:hover {
   text-decoration: dotted underline;
 }
 
+.image-link img {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.image-link:hover img {
+  transform: scale(1.05);
+}
 
 a[target="_blank"]::after {
   content: "\F1C5"; /* bi-box-arrow-up-right */

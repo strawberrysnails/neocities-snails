@@ -25,9 +25,9 @@ nesting: "../"
 ### Neighbors
 <div class="link-buttons">
 
-[![amidala](/images/buttons/sites/amidala.png)](https://amidala.neocities.org/)[![coverstar](/images/buttons/sites/cloverstar.png)](https://cloverstar.neocities.org/)[![fallenfleurs](/images/buttons/sites/fallenfleurs.png)](https://fallenfleurs.neocities.org/)[![fh102](/images/buttons/sites/sephlow.gif)](https://fh102.neocities.org/)[![bulltown.2022](/images/buttons/sites/b22button.png)](https://bulltown.joejenett.com)[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/)
-[![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/) [![luckyrabbit](/images/buttons/sites/luckyrabbit.png)](https://luckyrabbit.neocities.org/) [![ninjaweb](/images/buttons/sites/ninjaweb.gif)](https://ninjaweb.neocities.org/) [![grossgirl94](/images/buttons/sites/grossgirl94.gif)](https://grossgirl94.neocities.org/) [![crow-queen](/images/buttons/sites/crow-queen.gif)](https://crow-queen.com/) [![oyasumimi](/images/buttons/sites/oyasumimi.gif)](https://oyasumimi.neocities.org/) [![onlywonder](/images/buttons/sites/onlywonder.png)](https://onlywonder.net/) [![00s](/images/buttons/sites/00s.gif)](https://00s.neocities.org/) [![philia995](/images/buttons/sites/philia995.png)](https://philia995.neocities.org/) [![howsoonisnow](/images/buttons/sites/howsoonisnow.gif)](https://howsoonisnow.org/)
-[![museumofalexandra](/images/buttons/sites/xandra.png)](https://xandra.cc/) [![chione](/images/buttons/sites/chione.png)](https://chione.neocities.org/)[![podminton](/images/buttons/sites/podminton.png)](https://podminton.neocities.org/)[![strawberry-transneu](/images/buttons/sites/strawberry-transneu.png)](https://strawberry-transneu.neocities.org/)
+[![amidala](/images/buttons/sites/amidala.png)](https://amidala.neocities.org/)[![coverstar](/images/buttons/sites/cloverstar.png)](https://cloverstar.neocities.org/)[![fallenfleurs](/images/buttons/sites/fallenfleurs.png)](https://fallenfleurs.neocities.org/)[![fh102](/images/buttons/sites/sephlow.gif)](https://fh102.neocities.org/)[![bulltown.2022](/images/buttons/sites/b22button.png)](https://bulltown.joejenett.com)[![dogmeat](/images/buttons/sites/doqmeat.png)](https://doqmeat.com/) [![strawberry gashes](https://i.imgur.com/V9sIpx6.gif)](https://strawberry-gashes.neocities.org) [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org) [![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/)
+[![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/)[![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/) [![luckyrabbit](/images/buttons/sites/luckyrabbit.png)](https://luckyrabbit.neocities.org/) [![ninjaweb](/images/buttons/sites/ninjaweb.gif)](https://ninjaweb.neocities.org/) [![grossgirl94](/images/buttons/sites/grossgirl94.gif)](https://grossgirl94.neocities.org/) [![crow-queen](/images/buttons/sites/crow-queen.gif)](https://crow-queen.com/) [![oyasumimi](/images/buttons/sites/oyasumimi.gif)](https://oyasumimi.neocities.org/) [![onlywonder](/images/buttons/sites/onlywonder.png)](https://onlywonder.net/) [![00s](/images/buttons/sites/00s.gif)](https://00s.neocities.org/)
+[![philia995](/images/buttons/sites/philia995.png)](https://philia995.neocities.org/) [![howsoonisnow](/images/buttons/sites/howsoonisnow.gif)](https://howsoonisnow.org/) [![museumofalexandra](/images/buttons/sites/xandra.png)](https://xandra.cc/) [![chione](/images/buttons/sites/chione.png)](https://chione.neocities.org/)[![podminton](/images/buttons/sites/podminton.png)](https://podminton.neocities.org/)[![strawberry-transneu](/images/buttons/sites/strawberry-transneu.png)](https://strawberry-transneu.neocities.org/)
 
 </div>
 <div class="site-links">
@@ -40,10 +40,10 @@ nesting: "../"
 
 <div class="link-buttons">
 
-[![allyratworld](/images/buttons/sites/allyrat.gif)](https://allyratworld.com/) [![seafare](/images/buttons/sites/seafare.png)](https://seafare.neocities.org/) [![frills](/images/buttons/sites/frills.png)](https://frills.dev/)[![pastelhell](/images/buttons/sites/pastelhell.gif)](https://pastelhello.com) [![inkcaps](/images/buttons/sites/inkcaps.gif)](https://inkcaps.neocities.org/) [![ribozone](/images/buttons/sites/ribozone.gif)](https://ribo.zone/) [![sneekrealm](/images/buttons/sites/sneeksrealm.png)](https://sneekrealm.neocities.org/) [![petrapixel](https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif)](https://petrapixel.neocities.org/) [![10kph](/images/buttons/sites/10kph.webp)](https://karma.computer/) [![lostletters](/images/buttons/sites/LostLetters.gif)](https://lostletters.neocities.org/graphics/site_buttons/LostLetters88x31.gif)
-[![sweetpea](/images/buttons/sites/sweetpea.gif)](https://sweet-pea.neocities.org/) [![princss](https://princss.online/media/images/buttons/princss_button.png)](https://princss.online/) [![hillhouse](/images/buttons/sites/hillhouse.png)](https://hillhouse.neocities.org/) [![goblincat](/images/buttons/sites/goblincat.png)](https://goblincat.neocities.org/) [![crotovane](/images/buttons/sites/crotovane.gif)](https://crotovane.neocities.org/) [![uuupah](/images/buttons/sites/uuupah.png)](https://uuupah.neocities.org/) [![nenrikido](https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif)](https://nenrikido.neocities.org) [![snifflebear](/images/buttons/sites/snifflebear.png)](https://www.snifflebear.moe/) [![fairygore](/images/buttons/sites/fairygore.png)](https://fairygore.neocities.org/) [![cherubiims](/images/buttons/sites/cherubiims.gif)](https://cherubiims.neocities.org/) 
-[![notprincehamlet](/images/buttons/sites/notprincehamlet.png)](https://notprincehamlet.neocities.org/) [![coverbell](/images/buttons/sites/cloverbell.gif)](https://cloverbell.neocities.org/) [![cinne](/images/buttons/sites/cinni.png)](https://cinni.net/) [![abyssbloom](/images/buttons/sites/abyssbloom.png)](https://abyssbloom.neocities.org/)[![lilthdev](/images/buttons/sites/lilithdev.gif)](https://lilithdev.neocities.org/) [![nyss](/images/buttons/sites/nyaa.gif)](https://nyaa.neocities.org/) [![antikrist](/images/buttons/sites/antikrist.png)](https://antikrist.lol/) [![maplebear](/images/buttons/sites/maplebear.gif)](https://maplebear.neocities.org/) [![artwork](/images/buttons/sites/artwork.gif)](https://artwork.neocities.org/) [![breambubble](/images/buttons/sites/dreambubble.gif)](https://dreambubble.neocities.org/)
-[![thefrugalgamer](/images/buttons/sites/frugalgamer.png)](https://www.thefrugalgamer.net/)
+[![allyratworld](/images/buttons/sites/allyrat.gif)](https://allyratworld.com/) [![seafare](/images/buttons/sites/seafare.png)](https://seafare.neocities.org/) [![frills](/images/buttons/sites/frills.png)](https://frills.dev/)[![pastelhell](/images/buttons/sites/pastelhell.gif)](https://pastelhello.com) [![inkcaps](/images/buttons/sites/inkcaps.gif)](https://inkcaps.neocities.org/) [![ribozone](/images/buttons/sites/ribozone.gif)](https://ribo.zone/) [![sneekrealm](/images/buttons/sites/sneeksrealm.png)](https://sneekrealm.neocities.org/) [![petrapixel](https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif)](https://petrapixel.neocities.org/) [![10kph](/images/buttons/sites/10kph.webp)](https://karma.computer/) 
+[![lostletters](/images/buttons/sites/LostLetters.gif)](https://lostletters.neocities.org/graphics/site_buttons/LostLetters88x31.gif) [![sweetpea](/images/buttons/sites/sweetpea.gif)](https://sweet-pea.neocities.org/) [![princss](https://princss.online/media/images/buttons/princss_button.png)](https://princss.online/) [![hillhouse](/images/buttons/sites/hillhouse.png)](https://hillhouse.neocities.org/) [![goblincat](/images/buttons/sites/goblincat.png)](https://goblincat.neocities.org/) [![crotovane](/images/buttons/sites/crotovane.gif)](https://crotovane.neocities.org/) [![uuupah](/images/buttons/sites/uuupah.png)](https://uuupah.neocities.org/) [![nenrikido](https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif)](https://nenrikido.neocities.org) [![snifflebear](/images/buttons/sites/snifflebear.png)](https://www.snifflebear.moe/)
+[![fairygore](/images/buttons/sites/fairygore.png)](https://fairygore.neocities.org/) [![cherubiims](/images/buttons/sites/cherubiims.gif)](https://cherubiims.neocities.org/)[![notprincehamlet](/images/buttons/sites/notprincehamlet.png)](https://notprincehamlet.neocities.org/)[![coverbell](/images/buttons/sites/cloverbell.gif)](https://cloverbell.neocities.org/) [![cinne](/images/buttons/sites/cinni.png)](https://cinni.net/) [![abyssbloom](/images/buttons/sites/abyssbloom.png)](https://abyssbloom.neocities.org/)[![lilthdev](/images/buttons/sites/lilithdev.gif)](https://lilithdev.neocities.org/) [![nyss](/images/buttons/sites/nyaa.gif)](https://nyaa.neocities.org/) [![antikrist](/images/buttons/sites/antikrist.png)](https://antikrist.lol/)
+[![maplebear](/images/buttons/sites/maplebear.gif)](https://maplebear.neocities.org/) [![artwork](/images/buttons/sites/artwork.gif)](https://artwork.neocities.org/) [![breambubble](/images/buttons/sites/dreambubble.gif)](https://dreambubble.neocities.org/)[![thefrugalgamer](/images/buttons/sites/frugalgamer.png)](https://www.thefrugalgamer.net/)
 
 </div>
 <div class="site-links">
@@ -58,7 +58,6 @@ nesting: "../"
 
 Resources I used for building this website can be found [here](/site). There may be some duplicates.
 
----
 
 ### General Software & Tools
 
@@ -67,7 +66,6 @@ Resources I used for building this website can be found [here](/site). There may
 - [KDE Connect](https://kdeconnect.kde.org/) – Control PC from phone and vice versa.  
 - [Flow Launcher](https://www.flowlauncher.com/) – File search and app launcher for Windows.
 
----
 
 ### Image & Design Tools
 
@@ -75,7 +73,6 @@ Resources I used for building this website can be found [here](/site). There may
 - [Dither it!](https://ditherit.com/) – Online tool for dithering images.  
 - [Dither Me This](https://doodad.dev/dither-me-this/) – Advanced image dithering and pixel manipulation.
 
----
 
 ### Eleventy Plugins
 
@@ -85,15 +82,14 @@ Resources I used for building this website can be found [here](/site). There may
 - [eleventy-plugin-toc](https://github.com/uncenter/eleventy-plugin-toc) – Easy-config Table of Contents generator.  
 - [eleventy-plugin-post-stats](https://github.com/johnwargo/eleventy-plugin-post-stats) – Generate blog stats. [Example](https://rknight.me/blog/stats/)
 
----
 
 ### Firefox Extensions
 
 - [Colorzilla](https://www.colorzilla.com/firefox/) – Eyedropper and color-picker.  
 - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) – Manage custom CSS in browser.  
 - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) – Adblocker.
+- [Web Scrobber](https://addons.mozilla.org/en-US/firefox/addon/web-scrobbler/) – Scrobbler I use for last.fm.
 
----
 
 ### Tutorials & Guides
 
@@ -140,10 +136,15 @@ Resources I used for building this website can be found [here](/site). There may
 - [Radio.garden](https://radio.garden/) – Listen to radio stations across the world.
 - [Chaotic Shiny](http://chaoticshiny.com/index.php) – Generators for TTRPGs and writing.
 
----
 
 ### Miscellaneous Useful Sites
 
 - [Font Finder](https://www.myfonts.com/pages/whatthefont) – Identify fonts from images.  
 - [Champagne Wiki](https://champagne.pages.dev/) – Wiki/guide to piracy.
 - [Image To Text Converter ](https://www.onlineocr.net/) – OCR Converter.
+
+---
+
+## Me, Elsewhere
+
+[Anilist](https://anilist.co/user/snails/) | [Last.fm](https://www.last.fm/user/froggf) | [Grouvee](https://www.grouvee.com/user/175297-saturnringz/)
