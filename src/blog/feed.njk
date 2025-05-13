@@ -1,0 +1,29 @@
+---
+permalink: "blog/feed.xml"
+eleventyExcludeFromCollections: true
+type: "xml"
+metadata:
+  title: "Snails Blog"
+  language: "en"
+  url: "https://snails.neocities.org"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ siteMetadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ siteMetadata.title }}</title>
+    <link>{{ siteMetadata.url }}</link>
+    <atom:link href="{{ siteMetadata.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    <language>{{ siteMetadata.language }}</language>
+    
+    {% for post in collections.blog %}
+    {% set absolutePostUrl = post.url | absoluteUrl(siteMetadata.url) %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ absolutePostUrl }}</link>
+      <description>{{ post.data.excerpt | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <guid>{{ absolutePostUrl }}</guid>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

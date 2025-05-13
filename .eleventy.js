@@ -6,6 +6,9 @@ const htmlmin = require("html-minifier-terser");
 const externalLinksPlugin = require("@sardine/eleventy-plugin-external-links");
 const pluginTOC = require("eleventy-plugin-toc");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+
 
 module.exports = function (eleventyConfig) {
   // Passthrough file copies
@@ -17,12 +20,18 @@ module.exports = function (eleventyConfig) {
     "src/archives/images": "archives/images"
   });
 
+  eleventyConfig.addGlobalData("siteMetadata", require("./src/_data/site.js"));
+
+  // RSS
+  eleventyConfig.addPlugin(pluginRss);
+
   // Layout aliases
   eleventyConfig.addLayoutAlias("main", "base.njk");
   eleventyConfig.addLayoutAlias("blog", "blog.njk");
   eleventyConfig.addLayoutAlias("tags", "tags.njk");
   eleventyConfig.addLayoutAlias("links", "links.njk");
   eleventyConfig.addLayoutAlias("pinboard", "pinboard.njk");
+
 
   // Add a computed property for 'now'
   eleventyConfig.addGlobalData('now', () => {

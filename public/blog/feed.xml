@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://snails.neocities.org" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snails</title>
+    <link>https://snails.neocities.org</link>
+    <atom:link href="https://snails.neocities.org/feed.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    
+    
+    
+    <item>
+      <title>April Patch Notes</title>
+      <link>https://snails.neocities.org/blog/april-update.html</link>
+      <description>What I&#39;ve read, watched, played, and thought about</description>
+      <pubDate>Wed, 30 Apr 2025 20:00:00 +0000</pubDate>
+      <guid>https://snails.neocities.org/blog/april-update.html</guid>
+    </item>
+    
+    
+    <item>
+      <title>Making a Gamelog on Eleventy</title>
+      <link>https://snails.neocities.org/blog/gamelog-on-eleventy.html</link>
+      <description>How I created my gamelog on eleventy</description>
+      <pubDate>Sun, 27 Apr 2025 20:00:00 +0000</pubDate>
+      <guid>https://snails.neocities.org/blog/gamelog-on-eleventy.html</guid>
+    </item>
+    
+    
+    <item>
+      <title>Jailbreaking my Kindle</title>
+      <link>https://snails.neocities.org/blog/jailbreaking-my-kindle.html</link>
+      <description>Modding my Kindle because I&#39;m mad at Amazon.</description>
+      <pubDate>Sun, 13 Apr 2025 20:00:00 +0000</pubDate>
+      <guid>https://snails.neocities.org/blog/jailbreaking-my-kindle.html</guid>
+    </item>
+    
+    
+    <item>
+      <title>Getting Started with Eleventy</title>
+      <link>https://snails.neocities.org/blog/test-post.html</link>
+      <description>Learn how to build a static site with 11ty, the simpler static site generator.</description>
+      <pubDate>Mon, 07 Apr 2025 20:00:00 +0000</pubDate>
+      <guid>https://snails.neocities.org/blog/test-post.html</guid>
+    </item>
+    
+  </channel>
+</rss>

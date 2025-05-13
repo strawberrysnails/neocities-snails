@@ -158,8 +158,22 @@ ul.to-do li{
 }
 
 ul.to-do li::before {
-  content:"\25A1";
-  left: -12px;
+  font-family: "bootstrap-icons";
+  content:"\F584";
+  left: -20px;
+}
+
+ul.done li{
+  font-size: 1em;
+  padding-left: 5px;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+ul.done li::before {
+  content:"\F26D";
+  font-family: "bootstrap-icons";
+  left: -20px;
 }
 
 /* NAVIGATION */

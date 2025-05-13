@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 1
 ---
 
-# Blog
+# Blog <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small>
 
 <h3>Browse by tag:</h3>
   <div class="tag-list">

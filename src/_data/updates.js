@@ -1,7 +1,11 @@
 module.exports = [
-      {
+    {
+      date: new Date("2025-05-13"),
+      blurb: `<a href="/guestbook/">Guestbook</a> + <a href="/blog/feed.xml">Blog RSS Feed</a> is up.`
+    },
+    {
       date: new Date("2025-05-12"),
-      blurb: `<a href="/map/">Sitemap</a> is up!`
+      blurb: `<a href="/map/">Sitemap</a> is up.`
     },
     {
       date: new Date("2025-05-07"),

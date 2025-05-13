@@ -1,7 +1,7 @@
 ---
 title: Jailbreaking my Kindle
 date: 2025-04-14
-excerpt: Modding my Kindle because I'm mad at Amazon. Amazon recently disabled the ability to download any books purchased through the Kindle storefront.
+excerpt: Modding my Kindle because I'm mad at Amazon.
 layout: blog
 tags: 
 - blog
