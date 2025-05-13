@@ -115,6 +115,7 @@ a:hover {
   text-decoration: dotted underline;
 }
 
+
 a[target="_blank"]::after {
   content: "\F1C5"; /* bi-box-arrow-up-right */
   font-family: "bootstrap-icons";

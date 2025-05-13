@@ -1,3 +1,13 @@
+
+  // Active links
+  const links = document.querySelectorAll('header a');
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    }
+  });
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Toggle for Games I'm Playing
   const togglePlayed = document.getElementById("togglePlayed");
@@ -34,12 +44,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  var images = document.querySelectorAll('img');
-  images.forEach(function(img) {
-    // Remove slash if on nekoweb
-    if (window.location.hostname === "snails.nekoweb.org") {
-      img.src = img.src.replace(/^\/+/, "");  // Remove any leading slashes
+
+// LASTFM WIDGET
+const username = "froggf";
+
+fetch(`https://lastfm-last-played.biancarosa.com.br/${username}/latest-song`)
+  .then(res => res.json())
+  .then(data => {
+    const widget = document.getElementById("lastfm-widget");
+    if (!widget || !data || !data.track) return;
+
+    const track = data.track;
+    if (track.name && track.artist && track.url) {
+      widget.innerHTML = `
+        Now listening:
+        <b><a href="${track.url}" target="_blank" rel="noreferrer">${track.name}</a> - ${track.artist["#text"]}</b>
+      `;
+    } else {
+      widget.textContent = "No recent tracks found.";
     }
+  })
+  .catch(err => {
+    console.error("Error fetching Last.fm data:", err);
+    widget.textContent = "Unable to load recent track.";
   });
-});
+
+
+

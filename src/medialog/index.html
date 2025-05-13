@@ -3,6 +3,7 @@ title: Media Log
 layout: main
 permalink: /medialog/
 nesting: "../"
+script: main.js
 ---
 
 
@@ -17,7 +18,7 @@ nesting: "../"
   <a href="games" class="link-card">
     <h2>Games</h2>
     {% if gamelog.length %}
-      <p>Currently playing: <strong>{{ gamelog | getCurrentGame }}</strong></p>
+      <p>Now playing: <strong>{{ gamelog | getCurrentGame }}</strong></p>
       <p>Watching: <strong>{{ gamelog | getCurrentWatchedGame }}</strong></p>
     {% else %}
       <p>No game data available.</p>
@@ -42,4 +43,12 @@ nesting: "../"
     {% endif %}
   </a>
 
+
+
+<div class="link-card">
+  <h2>Music</h2>
+  <div id="lastfm-widget">
+    Loading...
+  </div>
+ <small>powered by <a href="https://github.com/biancarosa/lastfm-last-played" target="_blank">@biancarosa/lastfm-last-played</a></small>
 </div>
