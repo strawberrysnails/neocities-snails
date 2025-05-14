@@ -6,6 +6,9 @@
 # Project Ideas
 - Feed reader for myself
 
+# Webrings to join
+- https://baccyflap.com/noai/
+
 # Bookmarks
 - https://www.bellingcat.com/
 - https://ssd.eff.org/
@@ -27,6 +30,11 @@
 - https://ivyswell-tavern.neocities.org/RSS_feeds/updates.xml
 - https://www.thefrugalgamer.net/rss.xml
 - https://www.snifflebear.moe/feeds/posts/default?alt=rss
+
+# Linux Stuff
+- https://www.gnome-look.org/p/2200291
+- https://wiki.archlinux.org/title/I3
+- https://namishh.me/blog/ricing/
 
 
 # Code Snippets

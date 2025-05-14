@@ -261,6 +261,34 @@ pre {
   margin-bottom: 1.5rem;
 }
 
+/* WEBRINGS */
+.webring {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.webring a {
+  margin: 0 0.5em;
+  text-decoration: none;
+  color:white
+}
+
+.webring a[target="_blank"]::after { /* Removes outlink icon */
+  content: none;
+}
+
+.webring > .bucket {
+  background: linear-gradient(to right, #ffcaca 0%, #ffedc1 20%, #feffb8 40%, #c4ffcb 60%, #add8ff 80%, #ccafe9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+
+
+
 /* TABLE STYLES */
 table {
   width: 100%;

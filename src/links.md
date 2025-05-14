@@ -22,6 +22,15 @@ nesting: "../"
 
 </div>
 
+### Webrings
+
+<nav class="webring">
+  <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=snails"><i class="bi bi-arrow-left"></i></a>
+  | <a class="bucket" href="https://webring.bucketfish.me"> Bucket Webring</a>
+  | <a href="https://webring.bucketfish.me/redirect.html?to=random&name=snails"><i class="bi bi-shuffle"></i></a>
+  | <a href="https://webring.bucketfish.me/redirect.html?to=next&name=snails"><i class="bi bi-arrow-right"></i></a>
+</nav>
+
 ### Neighbors
 <div class="link-buttons">
 
