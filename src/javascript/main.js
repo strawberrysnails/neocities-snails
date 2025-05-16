@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // LASTFM WIDGET
+
 const username = "froggf";
 
 fetch(`https://lastfm-last-played.biancarosa.com.br/${username}/latest-song`)
@@ -55,19 +56,26 @@ fetch(`https://lastfm-last-played.biancarosa.com.br/${username}/latest-song`)
     if (!widget || !data || !data.track) return;
 
     const track = data.track;
-    if (track.name && track.artist && track.url) {
-      widget.innerHTML = `
-        Now listening:
-        <b><a href="${track.url}" target="_blank" rel="noreferrer">${track.name}</a> - ${track.artist["#text"]}</b>
-      `;
-    } else {
-      widget.textContent = "No recent tracks found.";
-    }
+    const image = track.image?.find(img => img.size === "large")?.["#text"];
+
+    widget.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 1em;">
+        ${image ? `<img src="${image}" alt="Album art for ${track.name}" width="64" height="64" style="border-radius: 4px;">` : ""}
+        <div>
+          Now listening:<br>
+          <strong>
+            <a href="${track.url}" target="_blank" rel="noreferrer">
+              ${track.name}
+            </a> – ${track.artist["#text"]}
+          </strong>
+        </div>
+      </div>
+    `;
   })
   .catch(err => {
     console.error("Error fetching Last.fm data:", err);
-    widget.textContent = "Unable to load recent track.";
+    const widget = document.getElementById("lastfm-widget");
+    if (widget) widget.textContent = "Unable to load recent track.";
   });
-
 
 

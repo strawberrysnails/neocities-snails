@@ -98,12 +98,21 @@ body {
   color:var(--silver);
   margin: auto;
   text-align: left;
+  cursor: url(/images/cursor.png), default;
 }
 
 a {
   color: var(--pink);
   text-decoration: none;
   transition: 0.5s ease;
+}
+
+a, button{
+  cursor: url(/images/pointer.png), pointer;
+}
+
+input[type="text"], textarea, [contenteditable] {
+  cursor: url('/images/text.png') 2 12, text;
 }
 
 aside a {
@@ -114,6 +123,7 @@ a:hover {
   color: var(--silver);
   text-decoration: dotted underline;
 }
+
 
 .image-link img {
   border: none;
@@ -270,8 +280,15 @@ pre {
 .webring a {
   margin: 0 0.5em;
   text-decoration: none;
-  color:white
+  color: white;
+  display: inline-block; 
+  transition: transform 0.2s ease;
 }
+
+.webring a:hover {
+  transform: translateY(-5px);
+}
+
 
 .webring a[target="_blank"]::after { /* Removes outlink icon */
   content: none;
@@ -827,7 +844,7 @@ legend {
 /* TOC BUTTON */
 .toc-toggle {
   font-size: 1rem;
-  cursor: pointer;
+  cursor: url(/images/pointer.png), pointer;
 }
 
 /* SITE BUTTONS */
@@ -1012,6 +1029,22 @@ transition: .5s;
   background: var(--wine, #8b1e3f);
   transition: width 0.3s ease;
 }
+
+/* LASTFM WIDGET */
+
+#lastfm-widget {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  #lastfm-widget img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: grayscale(50%);
+  }
 
 /* PINBOARD */
 

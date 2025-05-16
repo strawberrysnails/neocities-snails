@@ -31,6 +31,13 @@ nesting: "../"
   | <a href="https://webring.bucketfish.me/redirect.html?to=next&name=snails"><i class="bi bi-arrow-right"></i></a>
 </nav>
 
+<nav class="webring"> 
+<a href="https://baccyflap.com/noai/?prv&s=nal" target="_top">« prev</a> |
+<a href="https://baccyflap.com/noai" target="_blank">no ai webring</a>
+<a style="font-size:60%" href="https://baccyflap.com/noai/?rnd" target="_top">(random)</a> |
+<a href="https://baccyflap.com/noai/?nxt&s=nal" target="_top">next »</a>
+</nav>
+
 ### Neighbors
 <div class="link-buttons">
 
@@ -52,7 +59,7 @@ nesting: "../"
 [![allyratworld](/images/buttons/sites/allyrat.gif)](https://allyratworld.com/) [![seafare](/images/buttons/sites/seafare.png)](https://seafare.neocities.org/) [![frills](/images/buttons/sites/frills.png)](https://frills.dev/)[![pastelhell](/images/buttons/sites/pastelhell.gif)](https://pastelhello.com) [![inkcaps](/images/buttons/sites/inkcaps.gif)](https://inkcaps.neocities.org/) [![ribozone](/images/buttons/sites/ribozone.gif)](https://ribo.zone/) [![sneekrealm](/images/buttons/sites/sneeksrealm.png)](https://sneekrealm.neocities.org/) [![petrapixel](https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif)](https://petrapixel.neocities.org/) [![10kph](/images/buttons/sites/10kph.webp)](https://karma.computer/) 
 [![lostletters](/images/buttons/sites/LostLetters.gif)](https://lostletters.neocities.org/graphics/site_buttons/LostLetters88x31.gif) [![sweetpea](/images/buttons/sites/sweetpea.gif)](https://sweet-pea.neocities.org/) [![princss](https://princss.online/media/images/buttons/princss_button.png)](https://princss.online/) [![hillhouse](/images/buttons/sites/hillhouse.png)](https://hillhouse.neocities.org/) [![goblincat](/images/buttons/sites/goblincat.png)](https://goblincat.neocities.org/) [![crotovane](/images/buttons/sites/crotovane.gif)](https://crotovane.neocities.org/) [![uuupah](/images/buttons/sites/uuupah.png)](https://uuupah.neocities.org/) [![nenrikido](https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif)](https://nenrikido.neocities.org) [![snifflebear](/images/buttons/sites/snifflebear.png)](https://www.snifflebear.moe/)
 [![fairygore](/images/buttons/sites/fairygore.png)](https://fairygore.neocities.org/) [![cherubiims](/images/buttons/sites/cherubiims.gif)](https://cherubiims.neocities.org/)[![notprincehamlet](/images/buttons/sites/notprincehamlet.png)](https://notprincehamlet.neocities.org/)[![coverbell](/images/buttons/sites/cloverbell.gif)](https://cloverbell.neocities.org/) [![cinne](/images/buttons/sites/cinni.png)](https://cinni.net/) [![abyssbloom](/images/buttons/sites/abyssbloom.png)](https://abyssbloom.neocities.org/)[![lilthdev](/images/buttons/sites/lilithdev.gif)](https://lilithdev.neocities.org/) [![nyss](/images/buttons/sites/nyaa.gif)](https://nyaa.neocities.org/) [![antikrist](/images/buttons/sites/antikrist.png)](https://antikrist.lol/)
-[![maplebear](/images/buttons/sites/maplebear.gif)](https://maplebear.neocities.org/) [![artwork](/images/buttons/sites/artwork.gif)](https://artwork.neocities.org/) [![breambubble](/images/buttons/sites/dreambubble.gif)](https://dreambubble.neocities.org/)[![thefrugalgamer](/images/buttons/sites/frugalgamer.png)](https://www.thefrugalgamer.net/)
+[![maplebear](/images/buttons/sites/maplebear.gif)](https://maplebear.neocities.org/) [![artwork](/images/buttons/sites/artwork.gif)](https://artwork.neocities.org/) [![breambubble](/images/buttons/sites/dreambubble.gif)](https://dreambubble.neocities.org/)[![thefrugalgamer](/images/buttons/sites/frugalgamer.png)](https://www.thefrugalgamer.net/) [![moonside-inn](/images/buttons/sites/moonside.png)](https://moonside-inn.neocities.org/)
 
 </div>
 <div class="site-links">
