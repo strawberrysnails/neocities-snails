@@ -49,3 +49,5 @@ I don't have a UNIQLO local to me, unfortunately, so I wanted to take advantage 
 
 Book off was definitely a favorite for me. We rifled through their used CDs and figures for a long time. I was on the hunt for [this specific CD](https://project-imas.wiki/THE_IDOLM@STER_MILLION_THE@TER_WAVE_02_Chrono-Lexica) but got a bit unlucky. 
 
+
+

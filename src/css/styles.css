@@ -372,7 +372,7 @@ position: absolute;
 
 .container {
   justify-items: center;
-  background-color: var(--darkgrey);
+  background-color: rgba(34, 34, 34, 0.6);
   padding: 15px 30px 15px;
   gap: 20px;
   margin: 0px auto 0px;
@@ -394,7 +394,7 @@ position: absolute;
 header{
   grid-area: header;
   width: 100%;
-  background-color:var(--grey);
+  background-color: rgba(34, 34, 34, 0.8);
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
 }
@@ -403,7 +403,7 @@ main {
   grid-area: main;
   width: 100%;
   height: auto;
-  background-color: var(--grey);
+  background-color: rgba(34, 34, 34, 0.8);
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
 }
@@ -423,7 +423,7 @@ footer {
   max-height: auto;
   padding: 20px;
   text-align: center;
-  background-color: var(--grey);
+  background-color: rgba(34, 34, 34, 0.8);
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
   padding:5px;
@@ -869,16 +869,35 @@ legend {
 }
 
 /* FOR SITES WITHOUT BUTTONS */
-.site-links a{ 
-background-color: #ba8a9e;
-color: var(--wine);
-padding: 5px;
-font-weight: bold;
-transition: .5s;
+.link-buttons a.text-button {
+  display: inline-flex;
+  align-items: center;         
+  justify-content: center;     
+  width: 88px;
+  height: 31px;
+  box-sizing: border-box;
+  background-color: #92cdce;
+  color: var(--darkgrey);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  word-wrap: break-word;
+  text-align: center;
+  text-decoration: none;
+  border: 1px dotted var(--silver);
+  border-radius: 4px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  vertical-align: top; 
 }
-.site-links a:hover{
-  background-color: #e4b7ca;
+
+
+.link-buttons a.text-button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
+
+
 /* MEDIALOG */
 
 .link-box {
