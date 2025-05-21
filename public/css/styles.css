@@ -662,8 +662,6 @@ legend {
 
 
 /* BLOG PAGE STYLES */
-
-
 .post-item {
   margin-top: 10px;
   padding: 15px;
@@ -672,7 +670,7 @@ legend {
 }
 
 .post-item::before{
-  content:""; /* Remmoves list bullets */
+  content:""; /* Removes list bullets */
 }
 
 .tag-list {
@@ -683,8 +681,18 @@ legend {
   margin: 0;
 }
 
-/* PHOTOGRID STYLES */
+.blog-img{
+  display: inline-block;
+  width: auto;
+  margin: 7px;
+  transition: transform 0.5s;
+}
 
+.blog-img:hover{
+  transform: scale(1.05);
+}
+
+/* PHOTOGRID STYLES */
 .card {
   background-color: #fff;
   padding: 10px 10px 20px 10px;

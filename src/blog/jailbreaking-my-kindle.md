@@ -3,18 +3,18 @@ title: Jailbreaking my Kindle
 date: 2025-04-14
 excerpt: Modding my Kindle because I'm mad at Amazon.
 layout: blog
-tags: 
-- blog
-- modding
-- e-readers
-- kindle
+tags:
+  - blog
+  - modding
+  - e-readers
+  - kindle
 ---
 
 Amazon recently disabled the ability to download any books purchased through the Kindle storefront. This means they can delete, remove, or change books on your device at any time. Essentially, when you buy a digital book from Amazon, you're just paying for a long-term rental, not true ownership.
 
 Before I jailbroke my Kindle, I was already downloading books for free and sideloading them via Calibre. But I wanted **full ownership** over both my device and my ebooks and I didn’t want to stay tied to an Amazon account just to use something I own.
 
-### Why?
+## Why?
 
 - The Kindle UI is bad and doesn’t support EPUB files.
 - You can’t download ebooks you “bought” from Amazon.
@@ -30,7 +30,7 @@ This isn’t a how-to guide. It’s more of a “how I did it, and why.” I'm j
 
 Modding your Kindle is generally safe. There’s little risk of bricking your device, and you can always undo it if you’re not happy (though I can’t imagine why you'd want to go back).
 
-### Jailbreaking
+## Jailbreaking
 
 I followed the instructions on the [Kindle Modding Wiki](https://kindlemodding.org/). My device is the 11th generation Kindle, so I used the guide for Winterbreak. After that, I installed a hotfix to stop the device from updating automatically, then installed KUAL and MRPI to run homebrew software.
 
@@ -52,7 +52,7 @@ While my Kindle was plugged into my PC, I created a new folder called “Books�
 
 One KOReader feature I really like is **Collections**, which you can read about [here](https://koreader.rocks/user_guide/#L2-collections). It's a much more efficient way to organize your digital library, especially since Rakuyomi doesn’t allow you to choose where downloaded manga is saved (more on that below).
 
-Right now, I’ve set up three collections: *Books*, *Manga*, and *Fanfiction*. I’ll likely expand that over time as I add more content, but for now, this setup works for me.
+Right now, I’ve set up three collections: _Books_, _Manga_, and _Fanfiction_. I’ll likely expand that over time as I add more content, but for now, this setup works for me.
 
 Eventually, I want to set up automatic synchronization between my collections and folders. This will be really useful later on for keeping manga organized after downloading through Rakuyomi.
 
@@ -92,7 +92,7 @@ Once that was done, here’s how I got Rakuyomi working inside KOReader:
 
 When you download manga to your device it is sent to a folder called `rakuyomi/downloads`. To make it easier to access, I synced this folder with my "Manga" collection.
 
-### Conclusion
+## Conclusion
 
 I’ve only scratched the surface of Kindle modding, and I’m really excited to keep exploring what’s possible. Emulators, native games, and lots of plugins. My boyfriend even installed Tetris for me (idk how).
 
@@ -100,7 +100,7 @@ There are still a few plugins I’m interested in but haven’t tried yet. I’l
 
 Thanks for reading!
 
-### Links
+## Links
 
 - [Kindle Modding Wiki](https://kindlemodding.org/)
 - [KOReader](https://koreader.rocks/)
