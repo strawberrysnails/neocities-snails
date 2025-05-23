@@ -23,6 +23,9 @@ script: main.js
     {% else %}
       <p>No game data available.</p>
     {% endif %}
+        {% if steam %}
+    <p> Last Played on Steam: <strong>{{ steam.name }}</strong>· {{ steam.hours }} hrs</p>
+    {% endif %}
   </a>
 
   <a href="manga" class="link-card">

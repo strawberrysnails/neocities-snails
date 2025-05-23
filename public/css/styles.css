@@ -311,27 +311,27 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2em;
-  background-color: #ffeef2;
-  box-shadow: 0 0 0 4px #fff8fb, 0 0 0 8px #fff;
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #fff;
   font-size: 0.95rem;
 }
 
 th {
-  background-color: #000;
+  background-color: var(--wine);
   color: var(--silver);
   font-family: "Kelmscott";
   font-size: 1.2rem;
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid var(--wine);
+  border-bottom: 1px solid var(--silver);
   letter-spacing: 1px;
 }
 
 td {
-  background-color: var(--silver);
-  color: #3e2a2a;
+  background-color: transparent;
+  color: var(--silver);
   padding: 7px;
-  border-top: 1px dotted var(--wine);
+  border-top: 1px dotted var(--silver);
   font-weight: 700;
 }
 
@@ -345,20 +345,22 @@ th:nth-last-child(2) {
 
 td:not(:last-child),
 th:not(:last-child) {
-  border-right: 1px dotted var(--wine);
+  border-right: 1px dotted var(--silver);
 }
 
 tr:nth-child(even) td {
-  background-color: rgb(198, 198, 198);
+  background-color: var(--darkgrey);
 }
 
 tr:hover td {
-  background-color: rgb(198, 198, 198);
+  background-color: var(--darkgrey);
 }
 
 .platform {
   text-align: center;
 }
+
+/* LIGHT */
 
 .light{
 position: absolute;

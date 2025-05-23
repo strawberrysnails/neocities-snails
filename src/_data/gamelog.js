@@ -177,21 +177,29 @@ const gamelog = [
     {
       title: "Demon Souls",
       platformImage: getPlatformBadge("emulator"),
-      statusImage: getStatusBadge("currently watching"),
+      statusImage: getStatusBadge("completed"),
       platform: "Emulator",
-      status: "currently watching",
+      status: "completed",
       type: "watched"
     },
     {
       title: "Dark Souls 1",
       platformImage: getPlatformBadge("PC"),
-      statusImage: getStatusBadge("planning"),
+      statusImage: getStatusBadge("completed"),
       platform: "PC",
-      status: "planning",
+      status: "completed",
       type: "watched"
     },
     {
       title: "Dark Souls 2",
+      platformImage: getPlatformBadge("PC"),
+      statusImage: getStatusBadge("currently watching"),
+      platform: "PC",
+      status: "currently watching",
+      type: "watched"
+    },
+    {
+      title: "Dark Souls 3",
       platformImage: getPlatformBadge("PC"),
       statusImage: getStatusBadge("planning"),
       platform: "PC",
@@ -199,7 +207,15 @@ const gamelog = [
       type: "watched"
     },
     {
-      title: "Dark Souls 3",
+      title: "Sekiro",
+      platformImage: getPlatformBadge("PC"),
+      statusImage: getStatusBadge("planning"),
+      platform: "PC",
+      status: "planning",
+      type: "watched"
+    },
+    {
+      title: "Elden Ring",
       platformImage: getPlatformBadge("PC"),
       statusImage: getStatusBadge("planning"),
       platform: "PC",

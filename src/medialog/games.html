@@ -18,6 +18,11 @@ sitemapGroup: medialog
 <hr>
 
 <h2>Games I'm Playing</h2>
+
+{% if steam %}
+<p> Last Played on Steam: <strong>{{ steam.name }}</strong>· {{ steam.hours }} hrs</p>
+{% endif %}
+
 <button id="togglePlayed">Hide Table</button>
 <table id="tablePlayed">
   <thead>
