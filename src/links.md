@@ -38,6 +38,12 @@ nesting: "../"
 <a href="https://baccyflap.com/noai/?nxt&s=nal" target="_top">next »</a>
 </nav>
 
+<nav class="webring">
+<a href='https://webring.dinhe.net/prev/https://snails.neocities.org/'>« prev</a> |
+<a href='https://webring.dinhe.net/'>retronaut webring</a> |
+<a href='https://webring.dinhe.net/next/https://snails.neocities.org/'>next »</a>
+</nav>
+
 ### My Neighbors
 
 If you want your site button changed or want your link removed for any reason, feel free to post a message on my [neocities profile](https://neocities.org/site/snails).
