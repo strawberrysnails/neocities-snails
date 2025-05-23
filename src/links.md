@@ -38,11 +38,6 @@ nesting: "../"
 <a href="https://baccyflap.com/noai/?nxt&s=nal" target="_top">next »</a>
 </nav>
 
-<nav class="webring">
-<a href='https://webring.dinhe.net/prev/https://snails.neocities.org/'>« prev</a> |
-<a href='https://webring.dinhe.net/'>retronaut webring</a> |
-<a href='https://webring.dinhe.net/next/https://snails.neocities.org/'>next »</a>
-</nav>
 
 ### My Neighbors
 
