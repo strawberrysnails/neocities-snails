@@ -1,41 +1,46 @@
 # Blog Ideas
+
 - My trip to New York
 - Reaching perfection in stardew valley
-- https://rknight.me/blog/eleventy-post-graph-plugin/
+- <https://rknight.me/blog/eleventy-post-graph-plugin/>
 
 # Project Ideas
+
 - Feed reader for myself
 
 # Webrings to join
-- https://baccyflap.com/noai/
+
+- <https://baccyflap.com/noai/>
 
 # Bookmarks
-- https://www.bellingcat.com/
-- https://ssd.eff.org/
-- https://landchad.net/
-- https://blog.knhash.in/gentle-guide-to-self-hosting/
-- https://cheapskatesguide.org/
-- https://foreverliketh.is/
-- https://barnsworthburning.net/
-- https://owencompher.me/
-- https://ribo.zone/free/snippets/
-- https://www.tumblr.com/sexhaver/745707549131702272/can-you-tell-us-all-the-plugins-ad-blockers-you
-- https://yusha.neocities.org/downloads/digitalart/krita
-- https://shroom.ink/
-- https://crystalclearcrystalline.neocities.org/resources
+
+- <https://www.bellingcat.com/>
+- <https://ssd.eff.org/>
+- <https://landchad.net/>
+- <https://blog.knhash.in/gentle-guide-to-self-hosting/>
+- <https://cheapskatesguide.org/>
+- <https://foreverliketh.is/>
+- <https://barnsworthburning.net/>
+- <https://owencompher.me/>
+- <https://ribo.zone/free/snippets/>
+- <https://www.tumblr.com/sexhaver/745707549131702272/can-you-tell-us-all-the-plugins-ad-blockers-you>
+- <https://yusha.neocities.org/downloads/digitalart/krita>
+- <https://shroom.ink/>
+- <https://crystalclearcrystalline.neocities.org/resources>
 
 # Feeds
-- https://maia.crimew.gay/feed.xml
-- https://ribo.zone/feed.xml
-- https://ivyswell-tavern.neocities.org/RSS_feeds/updates.xml
-- https://www.thefrugalgamer.net/rss.xml
-- https://www.snifflebear.moe/feeds/posts/default?alt=rss
+
+- <https://maia.crimew.gay/feed.xml>
+- <https://ribo.zone/feed.xml>
+- <https://ivyswell-tavern.neocities.org/RSS_feeds/updates.xml>
+- <https://www.thefrugalgamer.net/rss.xml>
+- <https://www.snifflebear.moe/feeds/posts/default?alt=rss>
 
 # Linux Stuff
-- https://www.gnome-look.org/p/2200291
-- https://wiki.archlinux.org/title/I3
-- https://namishh.me/blog/ricing/
 
+- <https://www.gnome-look.org/p/2200291>
+- <https://wiki.archlinux.org/title/I3>
+- <https://namishh.me/blog/ricing/>
 
 # Code Snippets
 
@@ -61,89 +66,94 @@
     }
 }
 ```
-## Photopile code 
+
+## Photopile code
+
 ```html
 <div class="photopile">
   <button popovertarget="photo1">
     <figure>
-      <img src="/" alt="">
+      <img src="/" alt="" />
       <figcaption>caption 1</figcaption>
     </figure>
   </button>
   <button popovertarget="photo2">
     <figure>
-      <img src="" alt="">
+      <img src="" alt="" />
       <figcaption>caption 2</figcaption>
     </figure>
   </button>
   <button popovertarget="photo3">
     <figure>
-      <img src="" alt="">
+      <img src="" alt="" />
       <figcaption>caption 3</figcaption>
     </figure>
   </button>
 </div>
 <div class="popovers">
   <figure popover id="photo1">
-    <img src="/" alt="">
+    <img src="/" alt="" />
     <figcaption>big caption 1</figcaption>
   </figure>
   <figure popover id="photo2">
-    <img src="/" alt="">
+    <img src="/" alt="" />
     <figcaption>big caption 2</figcaption>
   </figure>
   <figure popover id="photo3">
-    <img src="/" alt="">
+    <img src="/" alt="" />
     <figcaption>big caption 3</figcaption>
   </figure>
 </div>
 ```
+
 ```css
-.photopile { 
-  display: flex; 
+.photopile {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   max-width: 100%;
 }
-.photopile figure { 
+.photopile figure {
   display: inline-block;
   background: white;
-  box-shadow: 0 0 0.4rem rgb(0,0,0,0.75);
+  box-shadow: 0 0 0.4rem rgb(0, 0, 0, 0.75);
   transform: rotate(2deg);
   margin: 0 -25px;
 }
 .photopile figure img {
   max-width: calc(100% - 2rem);
   margin: 1rem 1rem 0 1rem;
-  border: 2px rgb(0,0,0,0.55) inset;
+  border: 2px rgb(0, 0, 0, 0.55) inset;
 }
-.photopile figcaption, .popovers figcaption {
-  font-family: /* set this to have it match the rest of the page */;
+.photopile figcaption,
+.popovers figcaption {
+  font-family: /* set this to have it match the rest of the page */ ;
   text-align: center;
   margin: 0.5rem 1rem 1rem 1rem;
   font-size: 1rem;
   color: black;
 }
-.photopile button { 
-  background: none; 
+.photopile button {
+  background: none;
   border: none;
   max-width: 40%;
 }
-.photopile button:hover, .photopile button:focus { 
+.photopile button:hover,
+.photopile button:focus {
   z-index: 3;
-  cursor:pointer;
+  cursor: pointer;
 }
-.photopile button:nth-child(2n) { 
+.photopile button:nth-child(2n) {
   transform: rotate(-10deg);
 }
 .photopile button:nth-child(3n) {
   transform: rotate(5deg);
 }
-.photopile button:nth-child(4n) { 
+.photopile button:nth-child(4n) {
   transform: rotate(4deg);
 }
-.photopile button:nth-child(5n) { 
+.photopile button:nth-child(5n) {
   transform: rotate(-2deg);
 }
 .photopile button:nth-child(6n) {
@@ -151,11 +161,11 @@
 }
 :popover-open {
   border: none;
-  box-shadow: 0 0 0.4rem rgb(0,0,0,0.75);
+  box-shadow: 0 0 0.4rem rgb(0, 0, 0, 0.75);
   position: fixed;
   top: 50vh;
   left: 50vw;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .popovers figure:popover-open {
   display: block;
@@ -169,16 +179,15 @@
 .popovers figure:popover-open img {
   margin: 4vmin 4vmin 0 4vmin;
   width: 80vmin;
-  border: 4px rgb(0,0,0,0.55) inset;
+  border: 4px rgb(0, 0, 0, 0.55) inset;
 }
 ```
-
 
 # How to use github across devices
 
 [Source](https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/more_advanced_github.html)
 
-``` 
+```
 6. Working with GitHub repositories on more than one computer
 In this section we will explain the basics of working with a repository on more than one computer. The basic case is that you want to work on something from your work computer and from your home computer. The lesson assumes you have already set up a GitHub repository. If you haven’t, start here: Version control with git.
 
