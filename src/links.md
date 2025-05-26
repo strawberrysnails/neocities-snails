@@ -51,7 +51,7 @@ If you want your site button changed or want your link removed for any reason, f
 
 [![oyasumimi](/images/buttons/sites/oyasumimi.gif)](https://oyasumimi.neocities.org/) [![onlywonder](/images/buttons/sites/onlywonder.png)](https://onlywonder.net/)[![00s](/images/buttons/sites/00s.gif)](https://00s.neocities.org/) [![philia995](/images/buttons/sites/philia995.png)](https://philia995.neocities.org/) [![howsoonisnow](/images/buttons/sites/howsoonisnow.gif)](https://howsoonisnow.org/) [![museumofalexandra](/images/buttons/sites/xandra.png)](https://xandra.cc/) [![chione](/images/buttons/sites/chione.png)](https://chione.neocities.org/)[![podminton](/images/buttons/sites/podminton.png)](https://podminton.neocities.org/)
 
-[![strawberry-transneu](/images/buttons/sites/strawberry-transneu.png)](https://strawberry-transneu.neocities.org/)
+[![strawberry-transneu](/images/buttons/sites/strawberry-transneu.png)](https://strawberry-transneu.neocities.org/) [![rini](/images/buttons/sites/rini.gif)](https://rini.neocities.org/)
 
 [defiant-confusion](https://defiant-confusion.com/){.text-button} [greytext](https://greytext.neocities.org/){.text-button} [hedoro](https://hedoro.neocities.org/){.text-button}
 

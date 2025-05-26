@@ -1,5 +1,15 @@
 module.exports = [
   {
+    src: "nyccity.png",
+    date: "5.18.2025",
+    caption: "My view of the city from Central Park.",
+  },
+  {
+    src: "nycicecream.png",
+    date: "5.18.2025",
+    caption: "Ice cram from Salt and Straw in NYC.",
+  },
+  {
     src: "dango.png",
     date: "5.10.2025",
     caption: "Brown sugar and matcha danjo. 🍡 ",
