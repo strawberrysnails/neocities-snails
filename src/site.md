@@ -15,7 +15,7 @@ This website is built with [Eleventy](https://www.11ty.dev/), a static site gene
 
 ## Credits
 
-All font and image credits can be found in my [styles.css](css/styles.css) file, which you can also view on [github](https://github.com/strawberrysnails/neocities-snails).
+All font and image credits can be found in my [styles.css](/css/styles.css) file, which you can also view on [github](https://github.com/strawberrysnails/neocities-snails).
 
 ---
 
@@ -42,10 +42,13 @@ Things that helped me build this website. Full list of resources and bookmarks c
 
 ### Eleventy Plugins
 
-- [external-links](https://www.npmjs.com/package/@sardine/eleventy-plugin-external-links) – Automatically adds target and rel attributes to external links in Eleventy.
+- [external-links](https://github.com/vimtor/eleventy-plugin-external-links) – Automatically adds target and rel attributes to external links in Eleventy.
 - [markdown-it-anchor](https://github.com/valeriangalliat/markdown-it-anchor) – Adds anchors to your Markdown headers for easy linking.
 - [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs) – Lets you add custom classes and attributes directly in Markdown.
 - [eleventy-plugin-toc](https://github.com/uncenter/eleventy-plugin-toc) – Generate a table of contents with easy config and customization.
+- [eleventy-fetch](https://github.com/11ty/eleventy-fetch) – Fetch remote content and cache it locally, useful for pulling in data from APIs or external sources at build time.
+- [rss](https://github.com/11ty/eleventy-plugin-rss) – Adds filters and shortcodes for generating RSS feeds.
+- [reading-time](https://github.com/johanbrook/eleventy-plugin-reading-time) – Estimates and displays reading time for blog posts, based on word count and average reading speed.
 
 ---
 

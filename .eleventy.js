@@ -7,6 +7,7 @@ const externalLinksPlugin = require("@sardine/eleventy-plugin-external-links");
 const pluginTOC = require("eleventy-plugin-toc");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginReadingTime = require("eleventy-plugin-reading-time");
 
 
 
@@ -119,6 +120,7 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
 
   
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(pluginReadingTime);
 
   
   // General and Fallback
