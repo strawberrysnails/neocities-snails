@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Heading to snails.town</title>
+   <meta http-equiv="refresh" content="3;url=https://snails.town">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,13 +43,24 @@
       max-width: 500px;
     }
   </style>
-
+ <script>
+    let seconds = 3;
+    function updateCountdown() {
+      document.getElementById("countdown").textContent = seconds;
+      if (seconds > 0) {
+        seconds--;
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+    window.onload = updateCountdown;
+  </script>
 </head>
 <body>
   <div class="box">
   <h1>You're on the catbus to <a href="https://snails.town">snails.town</a></h1>
-  <img src="https://snails.town/images/misc/catbus.gif">
-  <p>Sit tight, you're being gently rerouted to my cozy little corner of the web.</p>
+<p class="countdown">Redirecting in <span id="countdown">3</span> seconds...</p>
+  <img src="https://snails.town/images/catbus.gif" style="border:5px solid #ffffff;">
+  <p>Please keep your arms and legs inside the vehicle at all times.</p>
   <p>If nothing happens, <a href="https://snails.town">click here to disembark</a>.</p>
 </div>
 </body>

@@ -101,6 +101,14 @@ Resources I used for building this website can be found [here](/site). There may
 - [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs) – Add custom classes and attributes in Markdown.
 - [eleventy-plugin-toc](https://github.com/uncenter/eleventy-plugin-toc) – Easy-config Table of Contents generator.
 - [eleventy-plugin-post-stats](https://github.com/johnwargo/eleventy-plugin-post-stats) – Generate blog stats. [Example](https://rknight.me/blog/stats/)
+- [eleventy-fetch](https://github.com/11ty/eleventy-fetch) – Fetch remote content and cache it locally, useful for pulling in data from APIs or external sources at build time.
+- [rss](https://github.com/11ty/eleventy-plugin-rss) – Adds filters and shortcodes for generating RSS feeds.
+- [reading-time](https://github.com/johanbrook/eleventy-plugin-reading-time) – Estimates and displays reading time for blog posts, based on word count and average reading speed.
+
+### Web-Hosting
+
+- [Neocities](https://neocities.org) – Free, open source, and currently hosting this website.
+- [NekoWeb](https://nekoweb.org/) – A cozy and growing Neocities alternative with a strong community. I'm experimenting with it alongside Neocities for now.
 
 ### Firefox Extensions
 

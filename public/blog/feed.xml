@@ -43,14 +43,5 @@
       <guid>https://snails.neocities.org/blog/jailbreaking-my-kindle.html</guid>
     </item>
     
-    
-    <item>
-      <title>Getting Started with Eleventy</title>
-      <link>https://snails.neocities.org/blog/test-post.html</link>
-      <description>Learn how to build a static site with 11ty, the simpler static site generator.</description>
-      <pubDate>Mon, 07 Apr 2025 20:00:00 +0000</pubDate>
-      <guid>https://snails.neocities.org/blog/test-post.html</guid>
-    </item>
-    
   </channel>
 </rss>

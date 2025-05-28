@@ -7,6 +7,7 @@ tags:
 - blog
 - eleventy
 - javascript
+eleventyExcludeFromCollections: true
 ---
 # This is a test blog post
 

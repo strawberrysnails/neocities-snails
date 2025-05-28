@@ -15,7 +15,17 @@ This website is built with [Eleventy](https://www.11ty.dev/), a static site gene
 
 ## Credits
 
-All font and image credits can be found in my [styles.css](/css/styles.css) file, which you can also view on [github](https://github.com/strawberrysnails/neocities-snails).
+If anything is missing here, all font and image credits can be found in my [styles.css](/css/styles.css) file, which you can also view on [github](https://github.com/strawberrysnails/neocities-snails).
+
+All graphics on my homepage are made by me but feel free to steal, I would appreciate credit but it's not necessary. 
+
+### Fonts
+
+- [Heading 1: Alkhemikal](https://fontenddev.com/fonts/alkhemikal/){style="font-family: 'Alkhemikal', fantasy;"}
+- [Heading 2: Kelmscott](https://www.dafont.com/kelmscott.font){style="font-family: 'Kelmscott', serif;"}
+- [Body: DejaVu Sans Mono](https://www.fontsquirrel.com/fonts/dejavu-sans-mono){style="font-family: 'DejaVu Sans Mono', monospace;"}
+
+
 
 ---
 
@@ -49,6 +59,11 @@ Things that helped me build this website. Full list of resources and bookmarks c
 - [eleventy-fetch](https://github.com/11ty/eleventy-fetch) – Fetch remote content and cache it locally, useful for pulling in data from APIs or external sources at build time.
 - [rss](https://github.com/11ty/eleventy-plugin-rss) – Adds filters and shortcodes for generating RSS feeds.
 - [reading-time](https://github.com/johanbrook/eleventy-plugin-reading-time) – Estimates and displays reading time for blog posts, based on word count and average reading speed.
+
+### Web-Hosting
+
+- [Neocities](https://neocities.org) – Free, open source, and currently hosting this website.
+- [Nekoweb](https://nekoweb.org/) – A cozy and growing Neocities alternative with a strong community. I'm experimenting with it alongside Neocities for now.
 
 ---
 
