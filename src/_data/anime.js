@@ -50,10 +50,27 @@ const favoriteAnimeQuery = `
   }
 `;
 
+const genreStatsQuery = `
+query ($username: String) {
+    User(name: $username) {
+    statistics {
+      anime {
+        genres {
+          genre
+          count
+          meanScore
+          minutesWatched
+        }
+      }
+    }
+  }
+}
+`
+
 async function fetchAniListData(query, variables) {
   const url = "https://graphql.anilist.co";
   const response = await eleventyFetch(`${url}?queryHash=${Buffer.from(query + JSON.stringify(variables)).toString("base64")}`, {
-    duration: "1w", 
+    duration: "0s", 
     type: "json",
     method: "POST",
     fetchOptions: {
@@ -69,10 +86,12 @@ async function fetchAniListData(query, variables) {
 
 module.exports = async function () {
   try {
-    const [animeRaw, favoritesRaw] = await Promise.all([
-      fetchAniListData(animeListQuery, { username }),
-      fetchAniListData(favoriteAnimeQuery, { username })
-    ]);
+  const [genreStatsRaw, animeRaw, favoritesRaw] = await Promise.all([
+  fetchAniListData(genreStatsQuery, { username }),
+  fetchAniListData(animeListQuery, { username }),
+  fetchAniListData(favoriteAnimeQuery, { username })
+]);
+
 
     const anime = animeRaw.data.MediaListCollection.lists.flatMap(list =>
       list.entries.map(entry => ({
@@ -94,9 +113,17 @@ module.exports = async function () {
       url: a.siteUrl
     }));
 
-    return { anime, favorites };
+    const genres = genreStatsRaw.data.User.statistics.anime.genres.map(g => ({
+      genre: g.genre,
+      count: g.count,
+      meanScore: g.meanScore,
+      minutesWatched: g.minutesWatched
+    }));
+
+
+    return { anime, favorites, genres };
   } catch (e) {
     console.error("Error fetching AniList data with eleventy-fetch:", e);
-    return { anime: [], favorites: [] };
+    return { anime: [], favorites: [], genres: [] };
   }
 };

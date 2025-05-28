@@ -9,7 +9,7 @@ module.exports = async function () {
   const url = `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/?key=${STEAM_API_KEY}&steamid=${STEAM_ID}`;
 
   const json = await fetch(url, {
-    duration: "5h",
+    duration: "1d",
     type: "json",
   });
 

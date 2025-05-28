@@ -8,6 +8,8 @@ sitemapGroup: medialog
 
 <h1>Anime Log</h1>
 
+<pre>{{ genres | dump }}</pre>
+
 <div class="nav-links">
   <a href="/medialog/games">games</a> |
   <a href="/medialog/manga">manga</a> | 
@@ -19,6 +21,29 @@ sitemapGroup: medialog
 
 {% set favorites = anime.favorites or [] %}
 {% set anime = anime.anime or [] %}
+{% set genres = anime.genres or [] %}
+
+{% if genres.length %}
+  <section class="genre-overview">
+    <h2>Genre Overview</h2>
+    <div class="genre-tags">
+      {% set sortedGenres = genres | sort(attribute="count") | reverse %}
+      {% for g in sortedGenres %}
+        <div class="genre-tag">
+          <span class="genre-name">{{ g.genre }}</span>
+          <span class="genre-count">{{ g.count }} Entries</span>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="genre-bar">
+      {% set total = genres | sum(attribute="count") %}
+      {% for g in sortedGenres %}
+        {% set percent = (g.count / total * 100) | round(1) %}
+        <div class="genre-bar-segment" style="width: {{ percent }}%; background-color: hsl({{ loop.index0 * 40 % 360 }}, 70%, 60%);" title="{{ g.genre }} ({{ g.count }})"></div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
 
 {% if favorites.length %}
   <section class="anime-section">
