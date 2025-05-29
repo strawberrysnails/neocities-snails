@@ -70,7 +70,7 @@ query ($username: String) {
 async function fetchAniListData(query, variables) {
   const url = "https://graphql.anilist.co";
   const response = await eleventyFetch(`${url}?queryHash=${Buffer.from(query + JSON.stringify(variables)).toString("base64")}`, {
-    duration: "0s", 
+    duration: "1w", 
     type: "json",
     method: "POST",
     fetchOptions: {

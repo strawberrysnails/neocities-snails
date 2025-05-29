@@ -39,6 +39,13 @@ nesting: "../"
 <a href="https://baccyflap.com/noai/?nxt&s=nal" target="_top">next »</a>
 </nav>
 
+<nav class="webring" style="background-image: url('https://void.shroom.ink/src/img/background.webp');font-family:monospace;width:250px;text-align:center;">
+  <a aria-label="Previous" href="https://void.shroom.ink/snails.town/previous" id="previous" target="_blank" title="previous">←</a>
+  <a aria-label="Home" href="https://void.shroom.ink/" id="home" target="_blank" title="home">void.shrooms</a>
+  <a aria-label="Next" href="https://void.shroom.ink/snails.town/next" id="next" target="_blank" title="next">→</a>
+</nav>
+
+
 ### My Neighbors
 
 If you want your site button changed or want your link removed for any reason, feel free to post a message on my [neocities profile](https://neocities.org/site/snails).
