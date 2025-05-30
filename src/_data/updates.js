@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-05-30"),
+    blurb: `Made a light theme and theme picker for the site. It's still a WIP but yeah :)`
+    },
+    {
       date: new Date("2025-05-13"),
       blurb: `<a href="/guestbook/">Guestbook</a> + <a href="/blog/feed.xml">Blog RSS Feed</a> is up.`
     },

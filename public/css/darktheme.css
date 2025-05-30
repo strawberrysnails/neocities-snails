@@ -1,0 +1,189 @@
+:root {
+  --wine: rgb(59, 38, 48);
+  --pink:rgb(166, 130, 154);
+  --silver: rgb(237, 237, 237);
+  --grey:#292929;
+  --darkgrey:#181818;
+}
+
+body {
+  background-color: var(--wine);
+  color:var(--silver);
+}
+
+a {
+  color: var(--pink);
+}
+
+a:hover {
+  color: var(--silver);
+  text-decoration: dotted underline;
+}
+
+/* NAVIGATION */
+
+ul.a a{
+  color:white;
+}
+
+ul.a a:hover{
+  color:var(--pink);
+}
+
+ul.a li {
+  color:white;
+}
+
+.webring a {
+  color: white;
+}
+
+/* TABLE STYLES */
+
+table {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #fff;
+}
+
+th {
+  background-color: var(--wine);
+  color: var(--silver);
+  border-bottom: 1px solid var(--silver);
+}
+
+td {
+  background-color: transparent;
+  color: var(--silver);
+  border-top: 1px dotted var(--silver);
+}
+
+
+td:not(:last-child),
+th:not(:last-child) {
+  border-right: 1px dotted var(--silver);
+}
+
+tr:nth-child(even) td {
+  background-color: var(--darkgrey);
+}
+
+tr:hover td {
+  background-color: var(--darkgrey);
+}
+
+/* GRID LAYOUT */
+
+
+.container {
+  background-color: rgba(34, 34, 34, 0.6);
+}
+
+
+
+header{
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+main {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+
+footer {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.banner-container {
+  background-image: url(/images/banner2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  position: relative;
+}
+
+.banner-title {
+  color: white;
+}
+
+.banner-title:hover {
+  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+}
+
+.latest-content legend a{
+color:#fff;
+transition: text-shadow 0.5s ease;
+}
+
+
+.latest-content legend a:hover{
+  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+}
+
+
+details {
+  border-left: 2px solid rgb(255, 255, 255);
+}
+
+details > details {
+  border-left: 2px dashed rgb(255, 255, 255);
+}
+
+details > details > details {
+  border-left: 2px dotted rgb(255, 255, 255);
+}
+
+fieldset {
+  border: var(--pink) 1px dashed;
+}
+
+/* BLOG PAGE STYLES */
+.post-item {
+  border: 1px #fff dotted;
+}
+
+
+/* STYLING TOC FOR LINKS PAGE */
+
+.toc a {
+  color: var(--silver);
+}
+
+.toc a:hover {
+  color: var(--pink);
+  text-decoration: dashed underline;
+}
+
+
+.toc > ol > li > ol > li {
+  border-left: 2px dashed #ddd;
+}
+
+
+/* (H3)*/
+.toc > ol > li > ol > li > a {
+  color: #ffffff;
+}
+
+/* MEDIALOG */
+
+.link-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.link-card {
+  flex: 1 1 250px;
+  background: var(--darkgrey);
+  border: 1px dashed var(--silver);
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  background: none;
+}

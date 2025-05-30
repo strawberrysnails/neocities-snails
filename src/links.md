@@ -127,6 +127,7 @@ Resources I used for building this website can be found [here](/site). There may
 ### Tutorials & Guides
 
 - [Petrapixel's Eleventy Tutorial](https://petrapixel.neocities.org/coding/eleventy-tutorial) – Neocities-friendly guide to Eleventy.
+- [Kalechip's Styleswitcher Tutorial](https://kalechips.net/projects/snippets/styleswitcher) – Guide to making a styleswitcher. 
 - [Deploy to Neocities Tutorial](https://nenrikido.neocities.org/blog/post/deploy-site/) – Deploy your site to Neocities.
 - [How to use Webpack](https://dev.to/derrickreimer/how-to-use-webpack-in-an-eleventy-project-272j) – Webpack in Eleventy.
 - [Add a Sitemap](https://11ty.recipes/recipes/add-a-sitemap/) – Add a sitemap to Eleventy.

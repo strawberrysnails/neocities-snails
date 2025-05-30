@@ -93,9 +93,7 @@ body {
   font-size: 0.95em;
   line-height: 1.5em;
   letter-spacing: 0.5px;
-  background-color: var(--wine);
   background-image: url(/images/bg.png); /* https://www.zerochan.net/Pixiv+Id+20784982 */
-  color:var(--silver);
   margin: auto;
   text-align: left;
   cursor: url(/images/cursor.png), default;
@@ -193,9 +191,6 @@ ul.a {
   text-align: center;
 }
 
-ul.a a{
-  color:white;
-}
 
 ul.a a:hover{
   color:var(--pink);
@@ -206,7 +201,6 @@ ul.a li {
   display: inline-block;
   padding-left: 1.5em; /* space between heart and text */
   padding-right: 20px;
-  color:white;
   line-height: 1.5em;
   font-weight: bold;
   transition: 0.4s;
@@ -280,7 +274,6 @@ pre {
 .webring a {
   margin: 0 0.5em;
   text-decoration: none;
-  color: white;
   display: inline-block; 
   transition: transform 0.2s ease;
 }
@@ -312,26 +305,21 @@ table {
   border-collapse: collapse;
   margin-bottom: 2em;
   background-color: transparent;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #fff;
   font-size: 0.95rem;
 }
 
 th {
-  background-color: var(--wine);
   color: var(--silver);
   font-family: "Kelmscott";
   font-size: 1.2rem;
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid var(--silver);
   letter-spacing: 1px;
 }
 
 td {
   background-color: transparent;
-  color: var(--silver);
   padding: 7px;
-  border-top: 1px dotted var(--silver);
   font-weight: 700;
 }
 
@@ -343,18 +331,6 @@ th:nth-last-child(2) {
   width: 150px;
 }
 
-td:not(:last-child),
-th:not(:last-child) {
-  border-right: 1px dotted var(--silver);
-}
-
-tr:nth-child(even) td {
-  background-color: var(--darkgrey);
-}
-
-tr:hover td {
-  background-color: var(--darkgrey);
-}
 
 .platform {
   text-align: center;
@@ -363,8 +339,18 @@ tr:hover td {
 /* LIGHT */
 
 .light{
-position: absolute;
+position: fixed;
 }
+
+/* THEME PICKER */
+
+.theme-picker {
+  position: fixed;
+  bottom: 10px; 
+  right: 10px;   
+  z-index: 1000;
+}
+
 
 /* GRID LAYOUT */
 
@@ -374,7 +360,6 @@ position: absolute;
 
 .container {
   justify-items: center;
-  background-color: rgba(34, 34, 34, 0.6);
   padding: 15px 30px 15px;
   gap: 10px;
   margin: 0px auto 0px;
@@ -396,7 +381,6 @@ position: absolute;
 header{
   grid-area: header;
   width: 100%;
-  background-color: rgba(34, 34, 34, 0.8);
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
 }
@@ -405,7 +389,6 @@ main {
   grid-area: main;
   width: 100%;
   height: auto;
-  background-color: rgba(34, 34, 34, 0.8);
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
 }
@@ -425,15 +408,11 @@ footer {
   max-height: auto;
   padding: 20px;
   text-align: center;
-  background-color: rgba(34, 34, 34, 0.8);
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
   padding:5px;
 }
 
-.banner-container {
-  position: relative;
-}
 
 .banner-title {
   position: absolute;
@@ -441,14 +420,12 @@ footer {
   top: 70px;
   font-size: 5rem;
   letter-spacing: 4px;
-  color: white;
   padding: 5px 10px;
   transition: text-shadow 0.5s ease;
 }
 
 .banner-title:hover {
   animation: pulse 1.5s ease-in-out infinite;
-  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
 }
 
 @keyframes pulse {
@@ -480,12 +457,10 @@ footer {
 
 .latest-content legend a{
   transition: text-shadow 0.5s ease;
-  color:#fff;
 }
 
 .latest-content legend a:hover{
   text-decoration: none;
-  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
 }
 
 .latest-content fieldset{
@@ -527,20 +502,9 @@ details > * {
   margin-left: 1em;
 }
 
-details {
-  border-left: 2px solid rgb(255, 255, 255);
-}
 
-details > details {
-  border-left: 2px dashed rgb(255, 255, 255);
-}
-
-details > details > details {
-  border-left: 2px dotted rgb(255, 255, 255);
-}
 
 fieldset {
-  border: var(--pink) 1px dashed;
   padding: 6px;
   display: inline-block;
   vertical-align: top;
@@ -774,7 +738,6 @@ legend {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: var(--silver) var(--wine);
 }
 
 /* Chrome, Edge, and Safari */
@@ -783,13 +746,10 @@ legend {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--wine)
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--silver);
   border-radius: 10px;
-  border: 4px solid #ffffff;
 }
 
 /* STYLING TOC FOR LINKS PAGE */
@@ -803,12 +763,10 @@ legend {
 /* LINKS */
 .toc a {
   text-decoration: none;
-  color: var(--silver);
   transition: color 0.2s ease;
 }
 
 .toc a:hover {
-  color: var(--pink);
   text-decoration: dashed underline;
 }
 
@@ -825,7 +783,6 @@ legend {
 .toc > ol > li > ol > li {
   list-style: none;
   margin-left: -3em;
-  border-left: 2px dashed #ddd;
   line-height: 1.5em;
 }
 
@@ -842,7 +799,6 @@ legend {
 .toc > ol > li > ol > li > a {
   font-weight: normal;
   font-size: 0.92rem;
-  color: #ffffff;
   padding-left: 0.5rem;
   position: relative;
 }
@@ -863,7 +819,6 @@ legend {
   width: 88px;
   height: 31px;
   filter: grayscale(60%);
-  border: 1px solid var(--silver);
   border-radius: 4px;
   margin: 1px;
   padding: 2px;
@@ -908,29 +863,6 @@ legend {
 }
 
 
-/* MEDIALOG */
-
-.link-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.link-card {
-  flex: 1 1 250px;
-  background: var(--darkgrey);
-  border: 1px dashed var(--silver);
-  padding: 1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease;
-}
-
-.link-card:hover {
-  transform: translateY(-3px);
-  background: none;
-}
 
 /* MEDIALOG ANIME */ 
 .anime-section {
@@ -1188,3 +1120,38 @@ ul.pins li::before {
 }
 }
 
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #333;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #ccc;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
