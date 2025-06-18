@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
     "src/css": "css",
     "src/_includes/fonts": "fonts",
     "src/archives/images": "archives/images"
-  });
+  });  
 
   eleventyConfig.addGlobalData("siteMetadata", require("./src/_data/site.js"));
 
@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("tags", "tags.njk");
   eleventyConfig.addLayoutAlias("links", "links.njk");
   eleventyConfig.addLayoutAlias("pinboard", "pinboard.njk");
+   eleventyConfig.addLayoutAlias("notebook", "notebook.njk");
 
 
   // Add a computed property for 'now'

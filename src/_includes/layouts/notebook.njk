@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wishlist</title>
+    <style>
+
+        @font-face {
+        font-family: Fira Code;
+        src: url(/fonts/FiraCode.ttf); /* https://fonts.google.com/specimen/Fira+Code */  
+        }
+
+        body{
+        background-color: rgb(41, 41, 41);
+        color:white;
+        line-height: 1.5em;
+        margin: 20px;
+        font-family:Fira Code;
+        }
+
+        a{
+            color:rgb(175, 174, 174);
+        }
+
+        a:visited{
+            color:rgb(78, 99, 100);
+        }
+        
+        .parent{
+          display: grid;
+            place-items: center;
+        }
+
+        table{
+        width: 80%;
+        }
+
+        table, th, td {
+        border: 1px solid rgb(192, 192, 192);
+        border-collapse: collapse;
+        }
+
+        th, td{
+        padding: 10px;    
+        }
+
+
+    </style>
+  </head>
+  <body>
+  <div class="parent">
+    {{ content | safe }}
+    </div>
+  </body>
+</html>
