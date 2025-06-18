@@ -10,7 +10,11 @@ module.exports = async function () {
 
   const json = await fetch(url, {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     duration: "1d",
+=======
+    duration: "2h",
+>>>>>>> Stashed changes
 =======
     duration: "2h",
 >>>>>>> Stashed changes
