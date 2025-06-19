@@ -1,5 +1,5 @@
 ---
-title: Links
+title: Garden
 permalink: /links/
 layout: links
 nesting: "../"
@@ -56,9 +56,9 @@ If you want your site button changed or want your link removed for any reason, f
 
 [![meowbark 2000](https://i.imgur.com/0dRy6ek.png)](https://meowbark2000.neocities.org)[![spirit cellar](/images/buttons/sites/spiritcellar.gif)](https://spiritcellar.neocities.org/) [![corktree](/images/buttons/sites/corktree.png)](https://corktree.neocities.org/)[![ghostopsy](/images/buttons/sites/ghostopsy.gif)](https://ghostopsy.neocities.org/) [![luckyrabbit](/images/buttons/sites/luckyrabbit.png)](https://luckyrabbit.neocities.org/) [![ninjaweb](/images/buttons/sites/ninjaweb.gif)](https://ninjaweb.neocities.org/) [![grossgirl94](/images/buttons/sites/grossgirl94.gif)](https://grossgirl94.neocities.org/) [![crow-queen](/images/buttons/sites/crow-queen.gif)](https://crow-queen.com/)
 
-[![oyasumimi](/images/buttons/sites/oyasumimi.gif)](https://oyasumimi.neocities.org/) [![onlywonder](/images/buttons/sites/onlywonder.png)](https://onlywonder.net/)[![00s](/images/buttons/sites/00s.gif)](https://00s.neocities.org/) [![philia995](/images/buttons/sites/philia995.png)](https://philia995.neocities.org/) [![howsoonisnow](/images/buttons/sites/howsoonisnow.gif)](https://howsoonisnow.org/) [![museumofalexandra](/images/buttons/sites/xandra.png)](https://xandra.cc/) [![chione](/images/buttons/sites/chione.png)](https://chione.neocities.org/)[![podminton](/images/buttons/sites/podminton.png)](https://podminton.neocities.org/)
+[![oyasumimi](/images/buttons/sites/oyasumimi.gif)](https://oyasumimi.neocities.org/) [![onlywonder](/images/buttons/sites/onlywonder.png)](https://onlywonder.net/)[![00s](/images/buttons/sites/00s.gif)](https://00s.neocities.org/) [![philia995](/images/buttons/sites/philia995.png)](https://philia995.neocities.org/) [![howsoonisnow](/images/buttons/sites/howsoonisnow.gif)](https://howsoonisnow.org/) [![museumofalexandra](/images/buttons/sites/xandra.png)](https://xandra.cc/) [![chione](/images/buttons/sites/chione.png)](https://chione.neocities.org/)[![podminton](/images/buttons/sites/podminton.png)](https://podminton.neocities.org/) 
 
-[![strawberry-transneu](/images/buttons/sites/strawberry-transneu.png)](https://strawberry-transneu.neocities.org/) [![rini](/images/buttons/sites/rini.gif)](https://rini.neocities.org/)
+[![strawberry-transneu](/images/buttons/sites/strawberry-transneu.png)](https://strawberry-transneu.neocities.org/) [![rini](/images/buttons/sites/rini.gif)](https://rini.neocities.org/) [![coffeeplant](/images/buttons/sites/coffeeplant.png)](https://coffeeplant.neocities.org/) [![moonpr1sm](/images/buttons/sites/moonpr1sm.png)](https://moonpr1sm.com/) [![evilperson](/images/buttons/sites/evilbutton.gif)](https://evilperson.neocities.org/)
 
 [defiant-confusion](https://defiant-confusion.com/){.text-button} [greytext](https://greytext.neocities.org/){.text-button} [hedoro](https://hedoro.neocities.org/){.text-button}
 
