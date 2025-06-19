@@ -28,14 +28,6 @@ const statusOrder = {
 const gamelog = [
     // Currently Playing PC
     {
-      title: "Drakengard 3",
-      platform: "Emulator",
-      platformImage: getPlatformBadge("emulator"),
-      statusImage: getStatusBadge("currently playing"),
-      status: "currently playing",
-      type: "played"
-    },
-    {
       title: "Split Fiction",
       platform: "PC",
       platformImage: getPlatformBadge("PC"),
@@ -61,6 +53,14 @@ const gamelog = [
     },
   
     // Completed PC
+        {
+      title: "Drakengard 3",
+      platform: "Emulator",
+      platformImage: getPlatformBadge("emulator"),
+      statusImage: getStatusBadge("completed"),
+      status: "completed",
+      type: "played"
+    },
     {
       title: "Nier: Replicant",
       platform: "PC",
@@ -97,6 +97,14 @@ const gamelog = [
     },
   
     // NDS/3DS Currently Playing
+        {
+      title: "Pokemon Odyssey",
+      platform: "DS",
+      platformImage: getPlatformBadge("DS"),
+      statusImage: getStatusBadge("currently playing"),
+      status: "currently playing",
+      type: "played"
+    },
     {
       title: "The Wizard of Oz: Beyond The Yellow Brick Road",
       platform: "DS",
