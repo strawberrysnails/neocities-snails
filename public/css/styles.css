@@ -471,7 +471,7 @@ footer {
     max-width: 275px;
     height: auto;
     transition: 0.2s;
-    filter: grayscale(50%);  
+    filter: grayscale(100%);  
 }
 
 .latest-picture img:hover{

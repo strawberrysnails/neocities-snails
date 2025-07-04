@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-07-04"),
+    blurb: `Tweaked some colors and graphics and removed light theme option`
+    }, 
+    {
     date: new Date("2025-06-19"),
     blurb: `Super late May Patch Notes is up. New picture on photogrid. Nier Replicant and Drakengard 3 marked completed in game log`
     }, 
