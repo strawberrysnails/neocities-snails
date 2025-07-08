@@ -102,6 +102,7 @@ Resources I used for building this website can be found [here](/site). There may
 - [Photopea](https://www.photopea.com/) – Free browser-based Photoshop alternative.
 - [Dither it!](https://ditherit.com/) – Online tool for dithering images.
 - [Dither Me This](https://doodad.dev/dither-me-this/) – Advanced image dithering and pixel manipulation.
+- [Aseprite](https://www.aseprite.org/) – Open source pixel art and animation tool.
 
 ### Eleventy Plugins
 
@@ -155,6 +156,9 @@ Resources I used for building this website can be found [here](/site). There may
 - [DJT Kana](https://djtguide.neocities.org/kana/) – Kana learning resource.
 - [jpdb](https://jpdb.io/) – Japanese Dictionary
 
+#### Art
+
+- [Kawaii Hannah Pixel Art Tutorials](https://www.kawaiihannah.com/pixelart/tutorials)
 ---
 
 ## Ect.
