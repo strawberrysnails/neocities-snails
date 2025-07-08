@@ -5,4 +5,3 @@ layout: notebook
 ---
 
 - [Wishlist](wishlist)
-- [Wishlist](wishlist)
