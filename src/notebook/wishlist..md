@@ -1,10 +1,10 @@
 ---
 title: Wishlist
 permalink: /notebook/wishlist/
-layout: notebook
+layout: none
 nesting: ""
 ---
-
+[back to notebook](http://snails.town/notebook)
 # Wishlist
 ## [2025]
 
@@ -27,7 +27,7 @@ nesting: ""
 | ⭐ Vacuum | $180–$200 | [Amazon](https://a.co/d/hO5JSxI) | NEED. |
 | Air Purifier | $99 | [Levoit](https://levoit.com/collections/shop/products/core300-air-purifier) or [Amazon](https://a.co/d/18zSajm) | 
 | Leather Loafers | $150 | [Thursday](https://thursdayboots.com/products/womens-penny-platform-loafer-lug-sole-black) | Size 6.5 in Black Penny Platform. A bit expensive but I want real leather ones because the current ones I have are falling apart. I wear them to death.
-| Dresses or Gift Card from Disturbia | $50-$100 |[Darkside Corset Midi Dress](https://www.disturbia.us/collections/new-dresses-1/products/darkside-corset-midi-dress?variant=51243131633938), [Tulisa Check Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/tulisa-check-midi-dress?_pos=42&_fid=d73355efb&_ss=c&variant=50648424120594), & [Faythe Apron Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/faythe-apron-midi-dress?_pos=58&_fid=5f9dfa4ea&_ss=c&variant=48984995004690). [Gift Card](https://www.disturbia.us/products/e-gift-card) | Size 4 in dresses. Gift card is preferable. (❁´◡`❁)
+| Dresses or Gift Card from Disturbia | $50-$100 |[Tulisa Check Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/tulisa-check-midi-dress?_pos=42&_fid=d73355efb&_ss=c&variant=50648424120594), & [Faythe Apron Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/faythe-apron-midi-dress?_pos=58&_fid=5f9dfa4ea&_ss=c&variant=48984995004690). [Gift Card](https://www.disturbia.us/products/e-gift-card) | Size 4 in dresses. Gift card is preferable. (❁´◡`❁)
 
 
 
@@ -37,3 +37,10 @@ nesting: ""
 | --- | --- | --- | --- |
 | Steam Link | $35-$50 | [Ebay](https://www.ebay.com/sch/i.html?_nkw=valve+steam+link) | Needed for projector/bedroom TV setup |
 | Sony Walkman NW-A105 | $120-$150 | [Ebay](https://www.ebay.com/sch/i.html?_nkw=sony+walkman+nw-a105) | MP3 Player |
+
+# Japan Wishlist
+| **Item** | **Price Range** | **Where to Buy** | **Notes** |
+| --- | --- | --- | --- |
+| Shupatto Shopping Bag M | ¥2,500-¥3,000 | ON SEVEN DAYS, day&day's, 212 KITCHEN STORE, HANDS, LOFT |  |
+| Hanko Seal Stamp | ¥300-¥1000 | Vending Machine, Don Quijote | |
+| Couples Custom Ring Class | ¥154,000 | [MITUBACI](https://www.mitubaci.co.jp/en/classes/premium-couple-rings/) - Appointment required | Price includes 2 platinum rings. Comes with free engraving. |

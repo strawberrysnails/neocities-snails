@@ -1,0 +1,187 @@
+
+@font-face {
+        font-family: Fira Code;
+        src: url(/fonts/FiraCode.ttf); /* https://fonts.google.com/specimen/Fira+Code */  
+        }
+
+        body{
+        background-color: rgb(41, 41, 41);
+        color:white;
+        line-height: 1.5em;
+        margin: 20px;
+        font-family:Fira Code;
+        }
+
+        a{
+            color:rgb(175, 174, 174);
+        }
+
+        a:visited{
+            color:rgb(78, 99, 100);
+        }
+        
+        .parent{
+        display: grid;
+        place-items: center;
+        }
+
+        table{
+        width: 80%;
+        }
+
+        table, th, td {
+        border: 1px solid rgb(192, 192, 192);
+        border-collapse: collapse;
+        }
+
+        th, td{
+        padding: 10px;    
+        }
+
+
+.book{
+    width: 50%;
+    height: 575px;
+    border: 5px double rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+    margin: auto;
+    background-color: rgb(66, 94, 68);
+    margin-top: 1%;
+    padding: 0.5%;
+}
+ 
+.header{
+    background-image: url('https://files.catbox.moe/p2ar86.png');
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30%;
+}
+ 
+.header h1{
+    color: white;
+    filter: drop-shadow(1px 1px 0 rgb(39, 47, 117)) drop-shadow(-1px 1px 0 rgb(39, 47, 117)) drop-shadow(0 -1px 0 rgb(39, 47, 117)) drop-shadow(1px 0 rgb(39, 47, 117));
+    font-size: 5vw;
+    font-style: italic;
+    letter-spacing: 5px;
+    margin: 0;
+    transition: ease-in-out 1s;
+}
+ 
+.header h1:hover{
+    letter-spacing: 20px;
+    cursor: default;
+}
+ 
+.left{
+    float: left;
+    width: 49%;
+    height: 99%;
+    padding-left: 10px;
+    overflow: auto;
+    color:#3E3C3C;
+    background-color: white;
+    background-image: url('https://doqmeat.com/!g/bg/whiteline.jpg');
+    border: 1px solid black;
+    border-radius: 5px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+ 
+.left::-webkit-scrollbar { 
+    display: none;
+}
+ 
+.right{
+    float: right;
+    width: 49%;
+    height: 99%;
+    overflow: auto;
+    background-color: white;
+    background-image: url('https://doqmeat.com/!g/bg/whiteline.jpg');
+    border: 1px solid black;
+    border-radius: 5px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+ 
+.right::-webkit-scrollbar { 
+    display: none;
+}
+
+ 
+.binder{
+    width: 4%;
+    height: 60%;
+    background-image: url('https://files.catbox.moe/4lvyzf.png');
+    background-repeat: repeat-y;
+    position: absolute;
+    left: 48%;
+}
+ 
+hr{
+    border: 2px solid #5568d5;
+    border-radius: 5px;
+}
+ 
+li{
+    list-style-image: url('https://files.catbox.moe/s1yj99.png');
+}
+ 
+ul{
+    margin: 0;
+}
+ 
+.box{
+    width: 95%;
+}
+ 
+.box2{
+    margin-left: 10%;
+    margin-top: 5%;
+    color:black;
+}
+ 
+@media screen and (max-width: 500px) {
+    body{
+        font-size: 4vw;
+        height: 100vh;
+    }
+ 
+    .container{
+        width: 95%;
+        height: 90vh;
+    }
+ 
+    .right h1, .left h1, .header h1{
+        font-size: 8vw;
+    }
+ 
+    .header{
+        height: 10%;
+    }
+ 
+    .inner{
+        height: 78.5vh;
+    }
+ 
+    .binder, #hide{
+        display: none;
+    }
+ 
+    .left{
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+ 
+    .right{
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+}

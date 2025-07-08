@@ -94,6 +94,8 @@ Resources I used for building this website can be found [here](/site). There may
 - [Visual Studio Code](https://code.visualstudio.com/) – Great offline code editor with lots of plugins/customization.
 - [KDE Connect](https://kdeconnect.kde.org/) – Control PC from phone and vice versa.
 - [Flow Launcher](https://www.flowlauncher.com/) – File search and app launcher for Windows.
+- [Listary](https://www.listary.com/) – Alternative to Flow Launcher
+- [AutoHotKey](https://www.autohotkey.com/) – Create custom hotkeys and shortcuts for Windows. 
 
 ### Image & Design Tools
 
