@@ -3,7 +3,6 @@ title: I got an e-reader just for Manga.
 date: 2025-07-08
 excerpt: All about my new Kobo Aura H2o and it's amazing microSD card slot.
 layout: blog
-eleventyExcludeFromCollections: true
 tags:
   - blog
   - modding
