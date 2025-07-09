@@ -1,5 +1,10 @@
 module.exports = [
-    {
+  {
+    src: "birthdaygrid.png",
+    date: "7.02.2025",
+    caption: "A collection of images from the weekend of my birthday.",
+  },
+  {
     src: "cows.png",
     date: "6.10.2025",
     caption: "Found this farm on a walk with my Husband.",
