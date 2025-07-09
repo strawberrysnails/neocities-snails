@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [["1"],{"key":"2","value":"3"},"090921f0adfbf2b29f51b14f58b1c7",{"cachedAt":1751990610789,"type":"4","metadata":"5"},"json",{"response":"6"},{"url":"7","status":200,"headers":"8"},"https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/?key=5E5E0733930B9CA66D556A8EBF96A0FD&steamid=76561198243819620",{"connection":"9","content-encoding":"10","content-length":"11","content-type":"12","date":"13","expires":"13","server":"14","vary":"15","x-eresult":"16"},"keep-alive","gzip","421","application/json; charset=UTF-8","Tue, 08 Jul 2025 16:03:30 GMT","nginx","Accept-Encoding","1"]
+=======
+[["1"],{"key":"2","value":"3"},"090921f0adfbf2b29f51b14f58b1c7",{"cachedAt":1751758322727,"type":"4","metadata":"5"},"json",{"response":"6"},{"url":"7","status":200,"headers":"8"},"https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/?key=5E5E0733930B9CA66D556A8EBF96A0FD&steamid=76561198243819620",{"connection":"9","content-encoding":"10","content-length":"11","content-type":"12","date":"13","expires":"13","server":"14","vary":"15","x-eresult":"16"},"keep-alive","gzip","424","application/json; charset=UTF-8","Sat, 05 Jul 2025 23:32:02 GMT","nginx","Accept-Encoding","1"]
+>>>>>>> Stashed changes
 =======
 [["1"],{"key":"2","value":"3"},"090921f0adfbf2b29f51b14f58b1c7",{"cachedAt":1751758322727,"type":"4","metadata":"5"},"json",{"response":"6"},{"url":"7","status":200,"headers":"8"},"https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/?key=5E5E0733930B9CA66D556A8EBF96A0FD&steamid=76561198243819620",{"connection":"9","content-encoding":"10","content-length":"11","content-type":"12","date":"13","expires":"13","server":"14","vary":"15","x-eresult":"16"},"keep-alive","gzip","424","application/json; charset=UTF-8","Sat, 05 Jul 2025 23:32:02 GMT","nginx","Accept-Encoding","1"]
 >>>>>>> Stashed changes
