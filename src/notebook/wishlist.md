@@ -4,7 +4,7 @@ permalink: /notebook/wishlist/
 layout: none
 nesting: ""
 ---
-[back to notebook](http://snails.town/notebook)
+[back to notebook](/notebook)
 # Wishlist
 ## [2025]
 
@@ -17,7 +17,7 @@ nesting: ""
 | Bayonetta Origins: Cereza and the Lost Demon | $40–$60 | [Amazon](https://www.amazon.com/Bayonetta-Origins-Cereza-Demon-Nintendo-Switch/dp/B0BQ7L6TX6?th=1) | Nintendo Switch Game. |
 | Winter's Wish: Spirits of Edo | $32 | [Amazon](https://a.co/d/6i5lt96) | Nintendo Switch Game. |
 | 9 R.I.P | $50 | [Amazon](https://a.co/d/gN1Nlal) | Nintendo Switch Game. |
-| UGGS Slippers: Ansley | $100 | [UGG Store](https://www.ugg.com/women/ansley/1106878.html?dwvar_1106878_color=LGRY) or [Amazon](https://a.co/d/0qwN9md) | Color in black, grey, or brown. Size 7. |
+| UGG Slippers: Ansley | $100 | [UGG Store](https://www.ugg.com/women/ansley/1106878.html?dwvar_1106878_color=LGRY) or [Amazon](https://a.co/d/0qwN9md) | Color in black, grey, or brown. Size 7. |
 | IKEA Gift Card | $50–$200 | [IKEA](https://www.ikea.com/us/en/customer-service/gift-cards-pub3d1efe50/) |  |
 | ⭐ Dyson Airstrait | $500 | [Dyson](https://www.dyson.com/hair-care/hair-straighteners/airstrait/prussian-blue-rich-copper) or [Amazon](https://a.co/d/fb1K4mu) | Any color. Dream item for the distant future. |
 | Sewing Supplies Case | $18 | [Amazon](https://a.co/d/aGCVC0x) |  |
@@ -32,7 +32,8 @@ nesting: ""
 
 | **Item** | **Price Range** | **Where to Buy** | **Notes** |
 | --- | --- | --- | --- |
-| Sony Walkman NW-A105 | $120-$150 | [Ebay](https://www.ebay.com/sch/i.html?_nkw=sony+walkman+nw-a105) | MP3 Player |
+| Sony Walkman NW-A105 | $120-$150 | [Ebay](https://www.ebay.com/sch/i.html?_nkw=sony+walkman+nw-a105) | MP3 Player - Won't need this if I get my Ipod Classic working. |
+| Tomogatchi 4U | $100-$250 | [Ebay](https://www.ebay.com/sch/i.html?_nkw=tamagotchi+"4u") | Overpriced tomogatchi but arguably the best one. |
 
 # Japan Wishlist
 | **Item** | **Price Range** | **Where to Buy** | **Notes** |
@@ -44,6 +45,6 @@ nesting: ""
 # ! Received !
 | **Item** | **Notes** |
 | --- | --- |
-| Steam Link | Won on Ebay |
-| Personal Item Backpack for Travel | Birthday gift |
-| IEM Earbuds | Birthday gift |
+| Steam Link | Won on Ebay (2025) |
+| Personal Item Backpack for Travel | Birthday gift (2025)  |
+| IEM Earbuds | Birthday gift (2025)  |
