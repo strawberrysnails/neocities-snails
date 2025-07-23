@@ -1,18 +1,19 @@
 :root {
-  --wine: rgb(54, 8, 12);
-  --pink:rgb(177, 86, 111);
+  --darkcolor: #812a2f;
+  --contrast:rgb(179, 87, 112);
   --silver: rgb(237, 237, 237);
   --grey:#292929;
   --darkgrey:#181818;
+  --bg:#36080C;
 }
 
 body {
-  background-color: var(--wine);
+  background-color: var(--bg);
   color:var(--silver);
 }
 
 a {
-  color: var(--pink);
+  color: var(--contrast);
 }
 
 a:hover {
@@ -27,7 +28,7 @@ ul.a a{
 }
 
 ul.a a:hover{
-  color:var(--pink);
+  color:var(--darkcolor);
 }
 
 ul.a li {
@@ -38,6 +39,15 @@ ul.a li {
   color: white;
 }
 
+/* LIGHT */
+
+.light{
+position: fixed;
+background-image: url(/images/graphics/lamp2.png);
+width: auto;
+}
+
+
 /* TABLE STYLES */
 
 table {
@@ -45,7 +55,7 @@ table {
 }
 
 th {
-  background-color: var(--wine);
+  background-color: var(--contrast);
   color: var(--silver);
   border-bottom: 1px solid var(--silver);
 }
@@ -63,20 +73,19 @@ th:not(:last-child) {
 }
 
 tr:nth-child(even) td {
-  background-color: var(--darkgrey);
+  background-color: var(--darkcolor);
 }
 
 tr:hover td {
-  background-color: var(--darkgrey);
+  background-color: var(--contrast);
 }
 
 /* GRID LAYOUT */
 
 
 .container {
-  background-color: rgba(34, 34, 34, 0.6);
+  background-color: rgba(19, 19, 19, 0.6);
 }
-
 
 
 header{
@@ -98,6 +107,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
+  margin-bottom: -10px;
   position: relative;
 }
 
@@ -106,7 +116,7 @@ footer {
 }
 
 .banner-title:hover {
-  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+  text-shadow: 0 0 5px var(--contrast), 0 0 10px var(--contrast), 0 0 15px var(--contrast);
 }
 
 .latest-content legend a{
@@ -116,7 +126,7 @@ transition: text-shadow 0.5s ease;
 
 
 .latest-content legend a:hover{
-  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+  text-shadow: 0 0 5px var(--contrast), 0 0 10px var(--contrast), 0 0 15px var(--contrast);
 }
 
 
@@ -133,8 +143,21 @@ details > details > details {
 }
 
 fieldset {
-  border: var(--pink) 1px dashed;
+  border: var(--contrast) 2px dashed;
 }
+
+/* NAVIGATION */
+ul.a {
+  list-style: none;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--contrast);
+  border-top: 3px solid var(--darkcolor);
+  border-bottom: 3px solid var(--darkcolor);
+}
+
 
 /* BLOG PAGE STYLES */
 .post-item {
@@ -149,7 +172,7 @@ fieldset {
 }
 
 .toc a:hover {
-  color: var(--pink);
+  color: var(--contrast);
   text-decoration: dashed underline;
 }
 

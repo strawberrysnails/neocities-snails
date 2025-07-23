@@ -23,8 +23,9 @@ nesting: ""
 | Sewing Supplies Case | $18 | [Amazon](https://a.co/d/aGCVC0x) |  |
 | ⭐ Vacuum | $180–$200 | [Amazon](https://a.co/d/hO5JSxI) | NEED. |
 | Air Purifier | $99 | [Levoit](https://levoit.com/collections/shop/products/core300-air-purifier) or [Amazon](https://a.co/d/18zSajm) | 
-| Leather Loafers | $150 | [Thursday](https://thursdayboots.com/products/womens-penny-platform-loafer-lug-sole-black) | Size 6.5 in Black Penny Platform. A bit expensive but I want real leather ones because the current ones I have are falling apart. I wear them to death.
-| Dresses or Gift Card from Disturbia | $50-$100 |[Tulisa Check Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/tulisa-check-midi-dress?_pos=42&_fid=d73355efb&_ss=c&variant=50648424120594), & [Faythe Apron Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/faythe-apron-midi-dress?_pos=58&_fid=5f9dfa4ea&_ss=c&variant=48984995004690). [Gift Card](https://www.disturbia.us/products/e-gift-card) | Size 4 in dresses. Gift card is preferable. (❁´◡`❁)
+| Leather Loafers | $150 | [Thursday](https://thursdayboots.com/products/womens-penny-platform-loafer-lug-sole-black) | Size 6.5 in Black Penny Platform. A bit expensive but I want real leather ones because the current ones I have are falling apart. I wear them to death. |
+| Dresses or Gift Card from Disturbia | $50-$100 |[Tulisa Check Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/tulisa-check-midi-dress?_pos=42&_fid=d73355efb&_ss=c&variant=50648424120594), & [Faythe Apron Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/faythe-apron-midi-dress?_pos=58&_fid=5f9dfa4ea&_ss=c&variant=48984995004690). [Gift Card](https://www.disturbia.us/products/e-gift-card) | Size 4 in dresses. Gift card is preferable. (❁´◡`❁) |
+| LTEK Dance Mat | $355 | [LTEK](https://www.iamats.com/shop/dance-mat-ltek-prime/) | Buying this as soon as I move out of my 3rd floor apt. |
 
 
 

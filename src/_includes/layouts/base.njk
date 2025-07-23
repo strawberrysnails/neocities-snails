@@ -9,12 +9,12 @@
             <link rel="stylesheet" href="/css/styles.css?nocache={{ nocache }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="icon" href="{{ site.favicon }}" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
-    <link id="theme-style" rel="stylesheet" href="/css/darktheme.css">
+    <link id="theme-style" rel="stylesheet" href="/css/maintheme.css">
 <!-- STYLE SWITCHER -->
 <script>
   function changeStyle(style) {
     if (!style) {
-      style = localStorage.getItem("style") || "darktheme";
+      style = localStorage.getItem("style") || "maintheme";
     }
 
     const themeLink = document.getElementById("theme-style");
@@ -42,14 +42,14 @@
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
 <div class="light">
-<img src="/images/graphics/lamp2.png">
 </div>
 
     <div class="container">
     <header>
       <a href="/"><div class="banner-container">
         <a href="/"><h1 class="banner-title">Snails</h1></a>
-      </div></a>
+      </div>
+    </a>
       <ul class="a">
       <img src="/images/graphics/wing-left.webp">
       <li><a href="/blog">Blog</a>
@@ -58,7 +58,8 @@
       <li><a href="/notebook">Notebook</a></li>
       <li><a href="/site">Site Info</a></li>
       <img src="/images/graphics/wing-right.webp">
-      </ul></header>
+      </ul>
+    </header>
 
   <main>
     <div class="content">{{ content | safe }}</div>
@@ -74,17 +75,17 @@
   (ﾐዋ ﻌ ዋﾐ)ﾉ
 </footer>
 </div>
-<!--
+
 <div class="theme-picker">
   <form aria-label="styleswitcher">
 <select name="styleswitcher" onchange="changeStyle(this.value)">
 <option disabled selected>Theme Picker</option>
-<option value="lighttheme">DAY</option>
-<option value="darktheme">NIGHT (default)</option>
+<option value="miku">MIKU</option>
+<option value="maintheme">OG SNAIL (default)</option>
 </select>
 </form>
 </div>
--->
+
   </body>
 </html>
 

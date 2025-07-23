@@ -1,8 +1,6 @@
 @import "/css/normalize.css";
 
 :root {
-  --wine: rgb(59, 38, 48);
-  --pink:rgb(166, 130, 154);
   --silver: rgb(237, 237, 237);
   --grey:#292929;
   --darkgrey:#181818;
@@ -189,11 +187,13 @@ ul.a {
   list-style: none;
   letter-spacing: 2px;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
 ul.a a:hover{
-  color:var(--pink);
+  color:var(--darkgrey);
 }
 
 ul.a li {
@@ -336,12 +336,6 @@ th:nth-last-child(2) {
   text-align: center;
 }
 
-/* LIGHT */
-
-.light{
-position: fixed;
-}
-
 /* THEME PICKER */
 
 .theme-picker {
@@ -381,6 +375,7 @@ position: fixed;
 header{
   grid-area: header;
   width: 100%;
+  height: auto;
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
 }
@@ -535,6 +530,7 @@ legend {
   ul.a {
     list-style-type: none;
     padding-left: 0;
+    margin:0;
   }
 
   ul.a li {
@@ -542,7 +538,9 @@ legend {
     line-height: 1.5em;
     padding: 5px;
     margin-right: 1em;
-    position: static; 
+    position: static;
+    margin:0; 
+
   }
 
   ul.a li::before {
@@ -891,7 +889,7 @@ legend {
 }
 
 .anime-card a{
-  color:var(--wine);
+  color:var(--darkgrey);
 }
 
 .anime-card:hover {
@@ -922,7 +920,7 @@ legend {
 
 .anime-progress-bar .bar {
   height: 100%;
-  background: var(--wine, #8b1e3f);
+  background: var(--darkgrey);
   transition: width 0.3s ease;
 }
 /* MEDIALOG MANGA */ 
@@ -952,7 +950,7 @@ legend {
 }
 
 .manga-card a{
-  color:var(--wine);
+  color:var(--darkgrey);
 }
 
 .manga-card:hover {
@@ -987,7 +985,7 @@ legend {
 
 .manga-progress-bar .bar {
   height: 100%;
-  background: var(--wine, #8b1e3f);
+  background: var(--darkgrey);
   transition: width 0.3s ease;
 }
 
@@ -1078,7 +1076,7 @@ ul.pins li::before {
 }
 
 .pin:nth-child(3n+2) {
-  background-color: var(--wine);
+  background-color: var(--grey);
 }
 
 .pin:nth-child(3n) {

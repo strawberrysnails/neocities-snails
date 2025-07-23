@@ -5,25 +5,22 @@
         }
 
         :root {
-        --wine: rgb(54, 8, 12);
-        --pink:rgb(177, 86, 111);
+        --darkcolor: rgb(54, 8, 12);
+        --contrast:rgb(177, 86, 111);
         --silver: rgb(237, 237, 237);
         --grey:#292929;
         --darkgrey:#181818;
         }
 
         body{
-        background-color: var(--wine);
+        background-color: var(--darkcolor);
         color:#000000;
         line-height: 1.5em;
         margin: 20px;
         font-family:Fira Code;
-        background-image: url(/images/bg.png); /* https://www.zerochan.net/Pixiv+Id+20784982 */
         }
 
         .container{
-            background-color: var(--darkgrey);
-            border: #fff 2px solid;
             padding: 20px;
             text-align: center;
             width: auto;
@@ -33,14 +30,14 @@
         }
 
         .container a{
-            color:var(--pink);
+            color:var(--contrast);
         }
         a{
          color:rgb(43, 43, 43);
         }
 
         a:hover{
-            color:var(--pink);
+            color:var(--contrast);
         }
         
         .parent{
@@ -73,7 +70,7 @@
     border-bottom-right-radius: 10px;
     z-index: 1;
     margin: auto;
-    background-color: var(--pink);
+    background-color: var(--contrast);
     margin-top: 1%;
     padding: 0.5%;
 }

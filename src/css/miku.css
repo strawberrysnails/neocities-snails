@@ -1,19 +1,19 @@
 :root {
-  --wine: rgb(59, 38, 48);
-  --pink:rgb(212, 141, 165);
-  --lightpink:rgb(226, 192, 204);
+  --darkcolor: #C92B30;
+  --contrast: #21888D;
   --silver: rgb(237, 237, 237);
   --grey:#292929;
   --darkgrey:#181818;
+  --bg:#396962;
 }
 
 body {
-  background-color: var(--pink);
-  color:var(--darkgrey);
+  background-color: var(--bg);
+  color:var(--silver);
 }
 
 a {
-  color: var(--pink);
+  color: var(--contrast);
 }
 
 a:hover {
@@ -24,11 +24,11 @@ a:hover {
 /* NAVIGATION */
 
 ul.a a{
-  color:var(--darkgrey);
+  color:white;
 }
 
 ul.a a:hover{
-  color:var(--pink);
+  color:var(--darkcolor);
 }
 
 ul.a li {
@@ -36,7 +36,7 @@ ul.a li {
 }
 
 .webring a {
-  color:var(--darkgrey);
+  color: white;
 }
 
 /* TABLE STYLES */
@@ -46,57 +46,54 @@ table {
 }
 
 th {
-  background-color: var(--pink);
+  background-color: var(--contrast);
   color: var(--silver);
-  border-bottom: 1px solid var(--darkgrey);
+  border-bottom: 1px solid var(--silver);
 }
 
 td {
   background-color: transparent;
-  color: var(--darkgrey);
-  border-top: 1px dotted var(--darkgrey);
+  color: var(--silver);
+  border-top: 1px dotted var(--silver);
 }
 
 
 td:not(:last-child),
 th:not(:last-child) {
-  border-right: 1px dotted var(--darkgrey);
+  border-right: 1px dotted var(--silver);
 }
 
 tr:nth-child(even) td {
-  background-color: var(--lightpink);
+  background-color: var(--darkcolor);
 }
 
 tr:hover td {
-  background-color: var(--pink);
+  background-color: var(--contrast);
 }
 
 /* GRID LAYOUT */
 
 
 .container {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(19, 19, 19, 0.6);
 }
 
 
 header{
- background-color: rgba(255, 255, 255, 0.8);
-border-image: url(/images/pixelborder2.png) 8 round;
+  background-color: rgba(34, 34, 34, 0.8);
 }
 
 main {
- background-color: rgba(255, 255, 255, 0.8);
-border-image: url(/images/pixelborder2.png) 8 round;
+  background-color: rgba(34, 34, 34, 0.8);
 }
 
 
 footer {
- background-color: rgba(255, 255, 255, 0.8);
-border-image: url(/images/pixelborder2.png) 8 round;
+  background-color: rgba(34, 34, 34, 0.8);
 }
 
 .banner-container {
-  background-image: url(/images/banner1.png);
+  background-image: url(/images/banner3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,21 +101,22 @@ border-image: url(/images/pixelborder2.png) 8 round;
   position: relative;
 }
 
-
 .banner-title {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+  color: white;
 }
 
+.banner-title:hover {
+  text-shadow: 0 0 5px var(--contrast), 0 0 10px var(--contrast), 0 0 15px var(--contrast);
+}
 
 .latest-content legend a{
-color:#000000;
+color:#fff;
 transition: text-shadow 0.5s ease;
 }
 
 
 .latest-content legend a:hover{
-  text-shadow: 0 0 5px var(--pink), 0 0 10px var(--pink), 0 0 15px var(--pink);
+  text-shadow: 0 0 5px var(--contrast), 0 0 10px var(--contrast), 0 0 15px var(--contrast);
 }
 
 
@@ -135,35 +133,48 @@ details > details > details {
 }
 
 fieldset {
-  border: var(--pink) 1px dashed;
+  border: var(--contrast) 2px dashed;
 }
+
+/* NAVIGATION */
+ul.a {
+  list-style: none;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--contrast);
+  border-top: 3px solid var(--darkcolor);
+  border-bottom: 3px solid var(--darkcolor);
+}
+
 
 /* BLOG PAGE STYLES */
 .post-item {
-  border: 1px #000000 dotted;
+  border: 1px #fff dotted;
 }
 
 
 /* STYLING TOC FOR LINKS PAGE */
 
 .toc a {
-  color: var(--darkgrey);
+  color: var(--silver);
 }
 
 .toc a:hover {
-  color: var(--pink);
+  color: var(--contrast);
   text-decoration: dashed underline;
 }
 
 
 .toc > ol > li > ol > li {
-  border-left: 2px dashed #000000;
+  border-left: 2px dashed #ddd;
 }
 
 
 /* (H3)*/
 .toc > ol > li > ol > li > a {
-  color: #292929;
+  color: #ffffff;
 }
 
 /* MEDIALOG */
@@ -177,8 +188,8 @@ fieldset {
 
 .link-card {
   flex: 1 1 250px;
-  background:#fff;
-  border: 1px dashed var(--pink);
+  background: var(--darkgrey);
+  border: 1px dashed var(--silver);
   padding: 1rem;
   text-decoration: none;
   color: inherit;
