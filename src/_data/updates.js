@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-07-24"),
+    blurb: `Improved <a href="/notebook/photogrid">photogrid</a> with modals and ability to click through gallery with keyboard. Added Miku theme in honor of last weekend.`
+    }, 
+    {
     date: new Date("2025-07-04"),
     blurb: `Tweaked some colors and graphics and removed light theme option`
     }, 

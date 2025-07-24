@@ -28,6 +28,14 @@ const statusOrder = {
 const gamelog = [
     // Currently Playing PC
     {
+      title: "Nier: Automata",
+      platform: "PC",
+      platformImage: getPlatformBadge("PC"),
+      statusImage: getStatusBadge("currently playing"),
+      status: "currently playing",
+      type: "played"
+    },
+    {
       title: "Split Fiction",
       platform: "PC",
       platformImage: getPlatformBadge("PC"),
@@ -87,15 +95,6 @@ const gamelog = [
       status: "planning",
       type: "played"
     },
-    {
-      title: "Nier: Automata",
-      platform: "PC",
-      platformImage: getPlatformBadge("PC"),
-      statusImage: getStatusBadge("planning"),
-      status: "planning",
-      type: "played"
-    },
-  
     // NDS/3DS Currently Playing
         {
       title: "Pokemon Odyssey",
