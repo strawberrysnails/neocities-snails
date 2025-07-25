@@ -283,3 +283,28 @@ ul{
     height: auto;
   }
 }
+
+/* MOBILE VIEW*/
+
+@media (max-width: 1450px) {
+
+  .book {
+    width: 65%;
+    height: auto;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    margin-top: 1%;
+    padding: 0.5%;
+  }
+
+  .left, .right {
+    float: none;
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  .binder {
+    display: none;
+  }
+}
