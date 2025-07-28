@@ -5,4 +5,5 @@ layout: notebook
 ---
 - [Photogrid](photogrid)
 - [Wishlist](wishlist)
+- [Collections](collections)
 

@@ -13,7 +13,7 @@ nesting: "../"
 
 <div class="link-buttons">
 
-[![SnailsV1](/images/buttons/sites/snails.png)](#) [![SnailsV2](/images/buttons/sites/snailsv2.png)](#)
+[![SnailsV1](/images/buttons/sites/snails.png)](#) [![SnailsV2](/images/buttons/sites/snailsv2.png)](#) [![snailsbutton.png](/images/buttons/snailsbutton.png)](#)
 
 <textarea class="code-textarea" style="height: 70px; width: auto;">&lt;a href="https://snails.neocities.org/" target="\_blank"&gt;&lt;img src="/snails.png" alt="snails"&gt;&lt;/a&gt;</textarea>
 

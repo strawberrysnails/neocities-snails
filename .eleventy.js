@@ -116,7 +116,7 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
     urlPattern: /^https?:\/\//,
     target: "_blank",
     rel: "noopener noreferrer",
-    extensions: ["html"]
+    extensions: ['.md', '.html'],
   });
 
   
