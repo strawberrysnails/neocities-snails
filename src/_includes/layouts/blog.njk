@@ -1,6 +1,7 @@
 ---
 layout: main
 ---
+<script src="/javascript/mylikebutton.js"></script>
 
 <article class="blog-post">
 
@@ -19,11 +20,15 @@ layout: main
   <div class="blog-content">
     {{ content | safe }}
   </div>
-  
-</article>
-
-<a href="/blog">← back to blog</a>
+---
 <br><br>
+<!-- Google Form Like Button -->
+<form class="mylikebutton">
+  🤍
+</form>
+
+
+</article>
 <nav class="post-navigation">
   <div class="prev-post">
     {% set previousPost = collections.blog | getPreviousCollectionItem(page) %}

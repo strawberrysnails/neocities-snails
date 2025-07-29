@@ -5,7 +5,6 @@ layout: none
 nesting: ""
 ---
 
-
 <a href="/notebook">Notebook</a> | <a href="/">Homepage</a>
 
 # Collections
