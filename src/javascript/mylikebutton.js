@@ -263,9 +263,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     popup.style.display = 'none';
                 }, 3000);
 
-                // Refetch updated like counts from Google Sheet 
+                // Wait a bit to give Google Sheets time to update
+                await new Promise(resolve => setTimeout(resolve, 3000)); // 3 seconds
+
+                // Then refetch updated like count
                 pageLikes = await fetchLikeCounts();
                 counterDisplay.textContent = `(${pageLikes})`;
+
                 
             } catch (error) {
                 console.error("Error submitting like to Google Form:", error);
