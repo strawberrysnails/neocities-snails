@@ -11,19 +11,17 @@ permalink: notebook/photogrid/
 
 <div class="photo-container">
 {% for photo in photos %}
-  <div class="responsive">
-    <div class="card">
-        <img 
-          src="/images/photogrid/{{ photo.src }}" 
-          data-caption="{{ photo.caption | safe }}" 
-          data-date="{{ photo.date }}" 
-          class="clickable-photo" 
-          style="cursor:pointer;"
-        >
-      <div class="desc">
-        <b style="margin: 5px;">{{ photo.date }}</b><br>
-        {{ photo.caption | safe }}
-      </div>
+  <div class="card">
+    <img 
+      src="/images/photogrid/{{ photo.src }}" 
+      data-caption="{{ photo.caption | safe }}" 
+      data-date="{{ photo.date }}" 
+      class="clickable-photo" 
+      style="cursor:pointer;"
+    >
+    <div class="desc">
+      <b style="margin: 5px;">{{ photo.date }}</b><br>
+      {{ photo.caption | safe }}
     </div>
   </div>
 {% endfor %}

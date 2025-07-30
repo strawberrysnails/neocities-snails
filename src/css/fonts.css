@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Daydream;
+  src: url(/fonts/Daydream.ttf); /* https://www.dafont.com/daydream-3.font */
+}
+@font-face {
+  font-family: RomanceA;
+  src: url(/fonts/RomanceA.ttf); /* https://cinni.net/?z=/font */
+}
+@font-face {
+  font-family: GothPixelFont;
+  src: url(/fonts/GothPixelFont.ttf); /* https://dacosta.itch.io/gothic-pixel-font */
+}
+@font-face {
+  font-family: OldEnglishGoth;
+  src: url(/fonts/OldEnglishGoth.ttf); /* https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
+}
+@font-face {
+  font-family: Fira Code;
+  src: url(/fonts/FiraCode.ttf); /* https://fonts.google.com/specimen/Fira+Code */
+}
+@font-face {
+  font-family: Kelmscott;
+  src: url(/fonts/Kelmscott.ttf); /* https://www.dafont.com/kelmscott.font */ 
+}
+@font-face {
+  font-family: NDSBIOS;
+  src: url(/fonts/NDSBIOS.ttf); /* https://www.dafont.com/nintendo-ds-bios.font */
+}
+@font-face {
+  font-family: Minecraft; 
+  src: url(/fonts/Minecraft.ttf); /* https://www.dafont.com/minecraft.font */
+}
+@font-face {
+  font-family: Alkhemikal;
+  src: url(/fonts/Alkhemikal.ttf);
+}
+/* Regular */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono.ttf') format('truetype'); /* https://www.fontsquirrel.com/fonts/dejavu-sans-mono */
+  font-weight: normal;
+  font-style: normal;
+}
+/* Bold */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Italic */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+/* Bold Italic */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}

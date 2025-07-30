@@ -1,91 +1,5 @@
 @import "/css/normalize.css";
 
-:root {
-  --silver: rgb(237, 237, 237);
-  --grey:#292929;
-  --darkgrey:#181818;
-}
-
-@font-face {
-  font-family: Daydream;
-  src: url(/fonts/Daydream.ttf); /* https://www.dafont.com/daydream-3.font */
-}
-
-@font-face {
-  font-family: RomanceA;
-  src: url(/fonts/RomanceA.ttf); /* https://cinni.net/?z=/font */
-}
-
-@font-face {
-  font-family: GothPixelFont;
-  src: url(/fonts/GothPixelFont.ttf); /* https://dacosta.itch.io/gothic-pixel-font */
-}
-
-@font-face {
-  font-family: OldEnglishGoth;
-  src: url(/fonts/OldEnglishGoth.ttf); /* https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
-}
-
-@font-face {
-  font-family: Fira Code;
-  src: url(/fonts/FiraCode.ttf); /* https://fonts.google.com/specimen/Fira+Code */
-}
-
-@font-face {
-  font-family: Kelmscott;
-  src: url(/fonts/Kelmscott.ttf); /* https://www.dafont.com/kelmscott.font */ 
-}
-
-@font-face {
-  font-family: NDSBIOS;
-  src: url(/fonts/NDSBIOS.ttf); /* https://www.dafont.com/nintendo-ds-bios.font */
-}
-
-@font-face {
-  font-family: Minecraft; 
-  src: url(/fonts/Minecraft.ttf); /* https://www.dafont.com/minecraft.font */
-}
-
-@font-face {
-  font-family: Alkhemikal;
-  src: url(/fonts/Alkhemikal.ttf);
-}
-
-/* Regular */
-@font-face {
-  font-family: 'DejaVuSansMono';
-  src: url('/fonts/DejaVuSansMono.ttf') format('truetype'); /* https://www.fontsquirrel.com/fonts/dejavu-sans-mono */
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Bold */
-@font-face {
-  font-family: 'DejaVuSansMono';
-  src: url('/fonts/DejaVuSansMono-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Italic */
-@font-face {
-  font-family: 'DejaVuSansMono';
-  src: url('/fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-/* Bold Italic */
-@font-face {
-  font-family: 'DejaVuSansMono';
-  src: url('/fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-
-
-
 body {
   font-family: DejaVuSansMono, monospace;
   font-size: 0.95em;
@@ -98,7 +12,6 @@ body {
 }
 
 a {
-  color: var(--pink);
   text-decoration: none;
   transition: 0.5s ease;
 }
@@ -116,7 +29,6 @@ aside a {
 }
 
 a:hover {
-  color: var(--silver);
   text-decoration: dotted underline;
 }
 
@@ -191,10 +103,6 @@ ul.a {
   padding-bottom: 10px;
 }
 
-
-ul.a a:hover{
-  color:var(--darkgrey);
-}
 
 ul.a li {
   position: relative;
@@ -296,9 +204,6 @@ pre {
   font-weight: bold;
 }
 
-
-
-
 /* TABLE STYLES */
 table {
   width: 100%;
@@ -309,7 +214,6 @@ table {
 }
 
 th {
-  color: var(--silver);
   font-family: "Kelmscott";
   font-size: 1.2rem;
   padding: 10px;
@@ -346,34 +250,27 @@ th:nth-last-child(2) {
 }
 
 
-/* GRID LAYOUT */
+/* FLEXBOX LAYOUT */
 
 .content {
   padding: 10px;
 }
 
 .container {
-  justify-items: center;
-  padding: 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
   gap: 10px;
-  margin: 0px auto 0px;
-  width: 50%;
-  height: 100%;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1024px;   /* Prevents it from growing too wide */
+  min-width: 320px;   /* Prevents it from shrinking too small */
+  box-sizing: border-box;
 }
 
 
-
 header{
-  grid-area: header;
   width: 100%;
   height: auto;
   border: 8px solid;
@@ -381,7 +278,6 @@ header{
 }
 
 main {
-  grid-area: main;
   width: 100%;
   height: auto;
   border: 8px solid;
@@ -398,7 +294,6 @@ main,
 footer {
   margin-bottom: 20px;
   width: auto;
-  grid-area: footer;
   min-height: 15px;
   max-height: auto;
   padding: 20px;
@@ -429,17 +324,53 @@ footer {
   100% { transform: scale(1); }
 }
 
-/* HOME GRID */
+/* HOME */
+
+/* Layout for top and bottom rows on homepage */
 .home {
-  display: grid;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
+/* Top row: intro (wide) + latest content (narrow) */
 .top-row {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
   gap: 20px;
+}
+
+.intro {
+  flex: 2;
+}
+
+.latest-content {
+  flex: 1;
+}
+
+/* Bottom row: to-do and updates, equal width */
+.bottom-row {
+  display: flex;
+  gap: 20px;
+}
+
+.to-do,
+.updates {
+  flex: 1;
+}
+
+/* Responsive stacking */
+@media (max-width: 750px) {
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .intro,
+  .latest-content,
+  .to-do,
+  .updates {
+    width: 100%;
+  }
 }
 
 .latest-content h2{
@@ -458,12 +389,8 @@ footer {
   text-decoration: none;
 }
 
-.latest-content fieldset{
-  padding:10px 15px 10px;
-}
-
 .latest-picture img{
-    max-width: 275px;
+    max-width: 100%;
     height: auto;
     transition: 0.2s;
     filter: grayscale(100%);  
@@ -473,17 +400,10 @@ footer {
   filter: none;
 }
 
-.bottom-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
 
 .bottom-row fieldset{
-  padding-left: 10px;
   max-height: 150px;
   overflow-y: scroll;
-  width: 95%;
 }
 
 
@@ -497,11 +417,8 @@ details > * {
   margin-left: 1em;
 }
 
-
-
 fieldset {
-  padding: 6px;
-  display: inline-block;
+  padding: 10px;
   vertical-align: top;
   background-image: url(/images/grid.png);
 }
@@ -527,101 +444,6 @@ legend {
     box-sizing: border-box;
   }
 
-  ul.a {
-    list-style-type: none;
-    padding-left: 0;
-    margin:0;
-  }
-
-  ul.a li {
-    display: inline-block;
-    line-height: 1.5em;
-    padding: 5px;
-    margin-right: 1em;
-    position: static;
-    margin:0; 
-
-  }
-
-  ul.a li::before {
-    display: none; 
-  }
-
-
-  main,
-  aside,
-  footer {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .container {
-    width: 75%;
-    display: grid;
-    margin:auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-  }
-
-  aside {
-    grid-area: aside;
-    text-align: left;
-    max-height: auto;
-  }
-
-  main {
-    grid-area: main;
-    margin: 15px 15px;
-    height: auto;
-  }
-
-  footer {
-    grid-area: footer;
-    text-align: left;
-    max-height: auto;
-  }
-
-  .ascii {
-    font-family: monospace;
-    white-space: pre;
-  }
-
-  .light{
-    display: none;
-    }
-
-    .home {
-      display: grid;
-      grid-template-columns: 1fr; 
-      gap: 20px;
-    }
-
-    .top-row {
-      display: grid;
-      grid-template-columns: 1fr; 
-      gap: 20px;
-    }
-  
-    .top-row fieldset {
-      min-width: 90%; 
-    }
-  
-    .top-row img {
-      max-width: 95%; 
-    }
-  
-    .bottom-row {
-      display: grid;
-      grid-template-columns: 1fr; 
-      gap: 20px;
-    }
 }
 
 
@@ -689,47 +511,6 @@ legend {
   display: inline;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 23%;
-  padding: none;
-}
-
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-}
-
-@media only screen and (max-width: 1650px) {
-  .responsive {
-    width: 30%;
-    margin: 6px 0;
-  }
-  .card {
-    height: 310px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .responsive {
-    width: 47%;
-  }
-  .card {
-    height: 350px;
-  }
-}
-
-@media only screen and (max-width: 1070px) {
-  .responsive {
-    width: 95%;
-  }
-  .card {
-    height: auto;
-  }
-}
 
 /* SCROLLBAR STYLES */
 
@@ -840,7 +621,7 @@ legend {
   height: 31px;
   box-sizing: border-box;
   background-color: #92cdce;
-  color: var(--darkgrey);
+  color: #000;
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -848,7 +629,7 @@ legend {
   word-wrap: break-word;
   text-align: center;
   text-decoration: none;
-  border: 1px dotted var(--silver);
+  border: 1px dotted #fff;
   border-radius: 4px;
   transition: transform 0.2s ease, filter 0.2s ease;
   vertical-align: top; 
@@ -859,8 +640,6 @@ legend {
   transform: scale(1.05);
   filter: brightness(1.1);
 }
-
-
 
 /* MEDIALOG ANIME */ 
 .anime-section {
@@ -881,15 +660,11 @@ legend {
   justify-content: space-between;
   min-height: 100px;
   padding: 0.75rem;
-  color:var(--darkgrey);
-  border: 1px dashed var(--silver);
+  color: #000;
+  border: 1px dashed #575757;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
-}
-
-.anime-card a{
-  color:var(--darkgrey);
 }
 
 .anime-card:hover {
@@ -920,9 +695,10 @@ legend {
 
 .anime-progress-bar .bar {
   height: 100%;
-  background: var(--darkgrey);
+  background: #333;
   transition: width 0.3s ease;
 }
+
 /* MEDIALOG MANGA */ 
 .manga-section {
   margin-top: 2rem;
@@ -942,16 +718,12 @@ legend {
   justify-content: space-between;
   min-height: 100px;
   padding: 0.75rem;
-  color:var(--darkgrey);
-  border: 1px dashed var(--silver);
+  color:#fff;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
 
-.manga-card a{
-  color:var(--darkgrey);
-}
 
 .manga-card:hover {
   transform: translateY(-3px);
@@ -985,7 +757,6 @@ legend {
 
 .manga-progress-bar .bar {
   height: 100%;
-  background: var(--darkgrey);
   transition: width 0.3s ease;
 }
 
@@ -1005,151 +776,7 @@ legend {
     filter: grayscale(50%);
   }
 
-/* PINBOARD */
 
-.pinboard-header{
-  display: flex;
-}
-
-.pinboard-title{
-  min-width: 300px;
-}
-
-.pin-box{
-  width: 60%;
-  max-width: 1200px;
-  color:var(--darkgrey);
-  margin: 1rem auto;
-  min-height: 65vh;
-  background-color: var(--silver);
-  border: 30px solid transparent;
-  border-image-source: url(/images/lace-border.png);
-  border-image-slice: 80;
-  border-image-repeat: round;
-  border-image-outset: 10px;
-  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
-}
-
-.pin-box a{
-  color:var(--pink);
-}
-
-.pin-wrapper {
-  column-count: 4;
-  column-gap: 1rem;
-  padding: 1rem;
-}
-  
-.pin {
-  display: inline-block;
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 1rem;
-  background: var(--silver);
-  color: #ddd;
-  padding: 1rem;
-  box-sizing: border-box;
-  break-inside: avoid;
-}
-
-.pin h2{
-  text-align: left;
-  font-size: 18px;
-  padding-bottom: 10px;
-  border-bottom: dashed var(--silver) 1px;
-}
-
-
-ul.pins li{
-  list-style-type: none;
-  font-size: 1em;
-  padding-left: 5px;
-}
-
-ul.pins li::before {
-  content:"\2732";
-  left: -12px;
-}
-
-.pin:nth-child(3n+1) {
-  background-color: #353131;
-}
-
-.pin:nth-child(3n+2) {
-  background-color: var(--grey);
-}
-
-.pin:nth-child(3n) {
-  background-color: #000;
-}
-
-.pin.scrollable {
-  max-height: 350px;
-  overflow-y: auto;
-}
-
-.pin.center{
-  text-align: center;
-}
-
-.pin.center h3{
-  text-align: center;
-}
-
-@media (max-width: 950px) {
-  .pin-wrapper {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 700px) {
-  .pin-wrapper{
-    column-count: 2;
-  }
-
-  @media (max-width: 550px) {
-    .pin-wrapper{
-      column-count: 1;
-    }
-
-    .pin{
-      max-width: 600px;
-    }
-}
-}
-
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #333;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px; width: 26px;
-  left: 4px; bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-input:checked + .slider {
-  background-color: #ccc;
-}
-input:checked + .slider:before {
-  transform: translateX(26px);
+.content {
+  padding: 10px;
 }
