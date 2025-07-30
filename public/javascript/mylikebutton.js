@@ -1,3 +1,84 @@
+/*
+   _      _      _      _      _      _      _      _      _      _      _      _   
+ _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_ 
+(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)
+ (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_) 
+   _                                                                            _   
+ _( )_                                                                        _( )_ 
+(_ o _)                     _ _ _          _           _   _                 (_ o _)
+ (_,_)                     | (_) |        | |         | | | |                 (_,_) 
+   _      _ __ ___  _   _  | |_| | _____  | |__  _   _| |_| |_ ___  _ __        _   
+ _( )_   | '_ ` _ \| | | | | | | |/ / _ \ | '_ \| | | | __| __/ _ \| '_ \     _( )_ 
+(_ o _)  | | | | | | |_| | | | |   <  __/ | |_) | |_| | |_| || (_) | | | |   (_ o _)
+ (_,_)   |_| |_| |_|\__, | |_|_|_|\_\___| |_.__/ \__,_|\__|\__\___/|_| |_|    (_,_) 
+   _                 __/ |                                                      _   
+ _( )_              |___/                                                     _( )_ 
+(_ o _)                                                                      (_ o _)
+ (_,_)                                                                        (_,_) 
+   _      _      _      _      _      _      _      _      _      _      _      _   
+ _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_ 
+(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)
+ (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_) 
+ 
+=== This is a simple script that uses Google Form and Google Sheet to create a functional "like button". Feel free to use it as you want & style it as you like. ===
+
+=== Cobbled together by Fritzi (https://bohemiansultriness.nekoweb.org) Please don't remove the credits! ===
+
+=== For more code snippets, visit https://bohemiansultriness.nekoweb.org/siteinfo.html#tutorials ===
+
+=== If you want to use several like buttons within one page, use mylikebuttonsection.txt (https://bohemiansultriness.nekoweb.org/goodies/mylikebuttonsection.txt) instead. ===
+ 
+### Compatibility Note ###
+
+This script will only work on sites with a non-strict content policy, such as Nekoweb. Sites that enforce strict Content Security Policies (CSP) may block this type of form submission due to restrictions on where forms can send data. 
+
+### Instructions for Obtaining Google Form Field IDs, Google Form ID and Google Sheet ID ###
+
+1. **Create a Google Form**:
+   - Go to Google Forms and create your form with the required two "short answer" fields.
+   - For example: "emoji" and "page".
+
+2. **Get Field IDs**:
+   - Click on the three dots (More) in the top right corner.
+   - Select "Get pre-filled link."
+   - Fill out the form fields with sample data and click "Submit."
+   - Copy the URL from the resulting page.
+
+3. **Dissect the URL**:
+   - The URL will look something like this:
+     `https://docs.google.com/forms/d/e/placeholder-formBC1234567890/viewform?usp=pp_url&entry.123456789=Sample+Text`
+   - The part after `entry.` (e.g., `entry.123456789`) is your field ID. You will need to replace `entry.placeholder1`, `entry.placeholder2`in your HTML with these IDs.
+
+4. **Get Google Form ID**:
+   - The Google Form ID is found in the URL of your form when you are editing it.
+   - It appears between `/d/e/` and `/viewform` in the URL.
+   - For example, in `https://docs.google.com/forms/d/e/placeholder-formABC1234567890/viewform`, `placeholder-formABC1234567890` is your Google Form ID.
+   - Replace `placeholder-formABC1234567890` in your JavaScript with this ID.
+   
+5. **Change Access**:
+   - In your Google Form press "share" and change general access to "anyone with link".
+
+6. **Create a Google Sheet**:
+   - In the Google Form navigate to the "response" tab and click on "create spreadsheet".
+   - In the Google Sheet press "share" and change general access to "anyone with link".
+   
+7. **Get Google Sheet ID**:
+   - The Google Sheet ID is found in the URL of your form when you are editing it.
+   - It appears between `/d/` and `/edit` in the URL.
+   - For example, in `https://docs.google.com/spreadsheets/d/placeholder-sheetABC1234567890/edit?usp=sharing`, `placeholder-sheetABC1234567890` is your Google Sheet ID.
+   - Replace `placeholder-sheetABC1234567890` in your JavaScript with this ID.
+   
+8. **Styling**:
+   - Style the .mylikebutton classes below however you like.
+   - Fin 'popup.textContent = "Thank you very much, you've liked this page!";' and replace it with whatever message you like.
+   
+9. **Implementing the Like Button**:
+   - In your HTML file add  <div class="mylikebutton">♡</div> to display the 'like button' 
+   - You can choose whatever icon or image you like;  ♡ is just an example.
+   - link this script at the end of your document within the <body> tag like so: <script src="PATHtoYOURfile/mylikebutton.js"></script>
+
+*/
+
 document.addEventListener('DOMContentLoaded', function () {
     const likeButtonElements = document.querySelectorAll('.mylikebutton');
 
@@ -83,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const EMOJI_ENTRY_ID = "entry.1656792327"; // Entry ID for emoji field
     const PAGE_ENTRY_ID = "entry.543458836"; // Entry ID for page path field
     const GOOGLE_SHEET_ID = "13oViUXYAWXVhwr4DLHD56-AFOFXEt_UZ4_utFexY9hE";
-    const GOOGLE_SHEET_URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/export?format=csv`;
+    const GOOGLE_SHEET_URL = `const GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSAPB1paQUdJ-scNRZ23ONpjnxxRR1mZYqZJQiKl2glKNiUXn09N6cp98ztIeeJ3HehxoKHkiZzHSXP/pub?output=csv`;
     const GOOGLE_FORM_URL = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/formResponse`;
 
     // Fetch like counts for the current page from Google Sheet
@@ -162,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 // Show a feedback popup near the click location
-                popup.textContent = "Thank you very much, you've liked this page!";
+                popup.textContent = "Liked!";
                 popup.style.display = 'block';
 
                 const popupRect = popup.getBoundingClientRect();
@@ -184,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     popup.style.display = 'none';
                 }, 3000);
 
-                // Refetch updated like counts from Google Sheet after submission
+                // Refetch updated like counts from Google Sheet 
                 pageLikes = await fetchLikeCounts();
                 counterDisplay.textContent = `(${pageLikes})`;
                 

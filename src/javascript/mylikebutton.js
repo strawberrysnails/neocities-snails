@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const EMOJI_ENTRY_ID = "entry.1656792327"; // Entry ID for emoji field
     const PAGE_ENTRY_ID = "entry.543458836"; // Entry ID for page path field
     const GOOGLE_SHEET_ID = "13oViUXYAWXVhwr4DLHD56-AFOFXEt_UZ4_utFexY9hE";
-    const GOOGLE_SHEET_URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/export?format=csv`;
+    const GOOGLE_SHEET_URL = `const GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSAPB1paQUdJ-scNRZ23ONpjnxxRR1mZYqZJQiKl2glKNiUXn09N6cp98ztIeeJ3HehxoKHkiZzHSXP/pub?output=csv`;
     const GOOGLE_FORM_URL = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/formResponse`;
 
     // Fetch like counts for the current page from Google Sheet
