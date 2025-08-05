@@ -70,6 +70,7 @@ Made by me:
   <img src="/images/buttons/nap-time.png">
   <img src="/images/buttons/noai.gif">
   <img src="/images/buttons/i_like_computer.png">
+  <img src="/images/buttons/steam.gif">
 
   </div>
 
