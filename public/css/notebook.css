@@ -19,6 +19,17 @@
         font-size: .95em;
         margin: 20px;
         font-family:Fira Code;
+        cursor: url(/images/cursor.png), default;
+        }
+
+      
+
+        a {
+          transition: 0.5s ease;
+        }
+
+        a, button{
+          cursor: url(/images/pointer.png), pointer;
         }
 
         .container{
@@ -205,6 +216,7 @@ ul{
 
 .card img:hover {
   filter: none;
+  cursor: url(/images/pointer.png), pointer;
 }
 
 .desc {

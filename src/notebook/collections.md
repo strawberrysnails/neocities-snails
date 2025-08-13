@@ -41,6 +41,16 @@ Made by me:
 <a href="https://www.tumblr.com/cuteguygrian"><img src='/images/stamps/homura.png' alt='homura.png'></a>
 <a href="https://www.tumblr.com/cuteguygrian"><img src='/images/stamps/madohomu.png' alt='madohomu.png'></a>
 <a href="https://www.tumblr.com/cuteguygrian"><img src='/images/stamps/madoka.png' alt='madoka.png'></a>
+<a href="https://www.deviantart.com/babykttn"><img src='/images/stamps/evee-babykttn.png' alt='evee'></a>
+<a href="https://www.deviantart.com/babykttn"><img src='/images/stamps/sylveon-babykttn.png' alt='sylveon'></a>
+<a href="https://www.deviantart.com/kezzi-rose"><img src='/images/stamps/kezzi-rose1.gif' alt='night'></a>
+<a href="https://www.deviantart.com/kezzi-rose"><img src='/images/stamps/ramen-kezzi-rose.png' alt='ramen'></a>
+<a href="https://www.deviantart.com/kezzi-rose"><img src='/images/stamps/doctorwho-kezzi-rose.gif' alt='doctor who'></a>
+<img src="/images/stamps/reimu.gif">
+<img src="/images/stamps/remilia.gif">
+<img src="/images/stamps/badapple.gif">
+<img src="/images/stamps/miku1.png">
+<img src="/images/stamps/luckystar.gif">
 </div>
 
 </details>
@@ -54,14 +64,14 @@ Made by me:
 
   <div class="image-flex">
   <img src="/images/buttons/3ds.jpg">
-  <img src="/images/buttons/ao3.jpg">
-  <img src="/images/buttons/8.png">
+  <a href="https://archiveofourown.org/"><img src="/images/buttons/ao3.jpg"></a>
+  <a href="https://88x31.nl/"><img src="/images/buttons/8.png"></a>
   <img src="/images/buttons/minecraftbutton.png">
   <img src="/images/buttons/mobilefriendly.png">
-  <img src="/images/buttons/wayback_machine.png">
+  <a href="https://web.archive.org/"><img src="/images/buttons/wayback_machine.png"></a>
   <img src="/images/buttons/antiNFT.gif">
   <img src="/images/buttons/delete-twitter.gif">
-  <img src="/images/buttons/ditch-socialmedia.gif">
+  <a href="https://dokode.moe"><img src="/images/buttons/ditch-socialmedia.gif"></a>
   <img src="/images/buttons/firefoxnow.gif">
   <img src="/images/buttons/html.gif">
   <img src="/images/buttons/neocities.gif">
@@ -71,6 +81,10 @@ Made by me:
   <img src="/images/buttons/noai.gif">
   <img src="/images/buttons/i_like_computer.png">
   <img src="/images/buttons/steam.gif">
+  <img src="/images/buttons/runescape.png">
+  <img src="/images/buttons/tpz.png">
+  <img src="/images/buttons/css.png">
+  <a href="https://www.tumblr.com/bythelightswitch"><img src="/images/buttons/homebrewchannel.gif"></a>
 
   </div>
 
@@ -85,7 +99,9 @@ Made by me:
   <details open> <summary class="toggle-summary">collapse</summary>
 
   <div class="image-flex">
-  <a href="https://mothcub.neocities.org/"><img src="/images/adopts/bunny-mothcub.gif"></a> <a href="https://beaniepines.nekoweb.org/stimpop"><img src="/images/adopts/totoro-beaniepines.gif"></a>
+  <a href="https://www.lejlart.com/apple.html"><img src="/images/adopts/bunnypixel4.png"></a>
+  <a href="https://mothcub.neocities.org/"><img src="/images/adopts/bunny-mothcub.gif"></a>
+  <a href="https://beaniepines.nekoweb.org/stimpop"><img src="/images/adopts/totoro-beaniepines.gif"></a>
   </div>
   </details>
 
