@@ -78,4 +78,58 @@ fetch(`https://lastfm-last-played.biancarosa.com.br/${username}/latest-song`)
     if (widget) widget.textContent = "Unable to load recent track.";
   });
 
+  // Style Switcher
+function changeStyle(style) {
+  if (!style) {
+    style = localStorage.getItem("style") || "maintheme";
+  }
 
+  const themeLink = document.getElementById("theme-style");
+  if (themeLink) {
+    themeLink.setAttribute("href", `/css/${style}.css`);
+  }
+
+  localStorage.setItem("style", style);
+}
+
+// Expose globally in case needed
+window.changeStyle = changeStyle;
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const themeSelect = document.querySelector('select[name="styleswitcher"]');
+  if (themeSelect) {
+    const savedTheme = localStorage.getItem("style") || "maintheme";
+    themeSelect.value = savedTheme;
+    changeStyle(savedTheme);
+
+    themeSelect.addEventListener("change", function() {
+      changeStyle(this.value);
+    });
+  }
+
+  // SCROLL TO TOP BUTTON // CREDIT: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+ const mybutton = document.getElementById("myBtn");
+  if (mybutton) {
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.classList.add("show"); // fade in
+      } else {
+        mybutton.classList.remove("show"); // fade out
+      }
+    }
+
+    // Run once on page load
+    scrollFunction();
+
+    // Update on scroll
+    window.addEventListener("scroll", scrollFunction);
+
+    // Smooth scroll on click
+    mybutton.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+});

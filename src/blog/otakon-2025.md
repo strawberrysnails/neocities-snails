@@ -1,7 +1,7 @@
 ---
 title: Otakon 2025
 date: 2025-08-10
-excerpt: 
+excerpt: My weekend at Otakon 2025. Cosplays, gaming, and more!
 layout: blog
 eleventyExcludeFromCollections: true
 tags:
@@ -11,29 +11,34 @@ tags:
 ---
 
 ## Introduction
-This was my very first time at Otakon! It was a very special experience for me because when I first met my husband online, it was right after he had gone to Otakon in 2024. I had just went to my local anime convention recently too so it was something we bonded over. I always imagined us going together, wearing matching cosplay, and walking around the artist ally together.
+This was my very first time at Otakon! It was a special experience for me because when I first met my husband online, it was right after he had gone to Otakon in 2024. I had just been to my local anime convention recently too, so it was something we bonded over. I always imagined us going together, wearing matching cosplay, and walking around the artist alley.
 
-It was a bit overwhelming and much larger than what I'm used to but I had lots of fun and both of my cosplays drew some attention, which was cool.
+It was a bit overwhelming and much larger than what I'm used to, but I had lots of fun. Both of my cosplays drew attention, which was really exciting.
 
 ## Cosplays
+On Friday I cosplayed Zero from ***Drakengard 3***, and my husband was Emil from ***Nier: Replicant***. I was so excited when people recognized me and took photos! One person even showed me their Zero keychain. Later that evening there was a NieR/Yoko Taro photoshoot. I was the only person cosplaying from ***Drakengard***, so I had to pose alone. It was a bit intimidating, but I really appreciated the love and excitement I received representing ***Drakengard***. Even though my outfit wasn't perfect, I made it completely from scratch and I'm very proud of that. The Zero wig was super heavy because of the pigtails, so I need to figure out a better solution for that in the future.
 
-On Friday I cosplayed Zero from Drakengard 3 and my husband was Emil from Nier: Replicant. I was so excited when people recognized me and took photos! One person even showed me their Zero keychain. Later that evening there was a Nier/Yoko Taro photoshoot. I was the only person cosplaying from Drakenhard so they made me post alone which was quite scary for me, however I did appreciate the love and excitement I got when representing Drakengard, since no one else was. Even though my outfit wasn't perfect, I made it completely from scratch and I'm really proud of that.
+On Saturday we cosplayed the Hunter and Plain Doll from ***Bloodborne***. We got a lot of requests for pictures again. Most of my costume was store-bought except for the cloak, bonnet, and gloves, which I made myself. The cloak took a lot of work, but I’m glad I put in the effort. 
 
-Saturday we cosplayed the hunter and plain doll from Bloodborne! We got lots of people asking for pictures too. Most of my costume was store bought except for the cloak and bonnet but the cloak itself was a lot of work.
+I saw some great cosplays myself, see my favorites below.
 
 ## Merch & Art
+The dealers room and artist alley were huge. I wish I had spent more time there, but I did get to walk around the perimeter a few times. I did not like how early they closed, the artist alley closed at 9pm and the dealers room at 8pm. I don’t do well in very large crowds, but my husband was a great navigator and helped me feel more comfortable.
 
+We spent most of our money on CDs in the dealers room, of course. I was so lucky to find a Zero art print in the artist alley. It was the only ***Drakengard 3*** fanart I saw, so I had to get it, and the art style is gorgeous.
 
-
-
+## Arcade
+We played a lot of Wacca and Jubeat. My husband and I got to play co-op Jubeat for the first time since our local arcade only has one cabinet. Our final song was Bad Apple!! on expert, and it was so hard. One day we hope to pass it.
 
 ## Panels
-RPG Maker
-Japan on budget
-AMV Contest
-Retro Game Challenges
-Fashion Show
-
+I attended the following panels in no particular order:
+- ***AMV Contest*** – This was a fun way to pass time! 
+- **The Abstract and Obscure: RPG Maker** – This was a cool panel where I learned a lot about some unknown and interesting RPG Maker games. Hylics, Space Funeral, Toilet in Wonderland, & more.
+- ***Travel to Japan on YOUR Budget Panel*** – I've already done a lot of research on traveling to Japan, however, this panel had some insightful information on domestic travel and lodging.
+- ***Gameshow Impossibru™: Retro Game Challenge*** – This was one of my favorites to watch. People from the audience had to attempt various retro game challenges at random levels. I don't think I would participate but it was a super fun panel and I hope to attend something similar next year.
+- ***Otakon 2025 Fashion Show*** – Also a favorite. I've attached some pictures of my favorite coords! Even if I couldn't snap the best pictures, I made sure to keep track of the brand names I liked the most.
+[Night Whisper](https://nightwhisperdesign.com/) / [Sweet Mildred](https://www.etsy.com/shop/sweetmildred) / [ililil【イルイルイル】](https://www.ililil.jp/) / [Metamorphose](https://metamorphose.gr.jp/en/online-shop)
 
 
 ## Closing Thoughts
+I can’t wait to go again. Next time I want to book a hotel closer to the venue or plan better for Sunday. I would like to manage my time better because I felt like I was rushing around most of the day. I also want to find a way to relieve the inevitable wig headache without taking NSAIDs all day. And definitely bringing some snacks next time to save money.

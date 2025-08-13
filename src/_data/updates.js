@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-08-13"),
+    blurb: `Added scroll to top button.`
+    }, 
+    {
     date: new Date("2025-07-31"),
     blurb: `Switched from CSS grid to flexbox on every page for more accessibility. Every page should be perfectly responsive now. Also added a "like" button to my blog posts!`
     }, 
