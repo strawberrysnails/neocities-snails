@@ -469,7 +469,6 @@ legend {
 
 .blog-img{
   display: inline-block;
-  width: auto;
   margin: 7px;
   transition: transform 0.5s;
 }
