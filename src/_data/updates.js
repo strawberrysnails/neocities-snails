@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-08-15"),
+    blurb: `<a href="/blog/otakon-2025.html">Otakon 2025</a> blog post is up!`
+    }, 
+    {
     date: new Date("2025-08-13"),
     blurb: `Added scroll to top button.`
     }, 
