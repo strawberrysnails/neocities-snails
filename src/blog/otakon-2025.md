@@ -12,13 +12,13 @@ tags:
 ## Introduction
 This was my very first time at Otakon! It was a special experience for me because when I first met my husband online, it was right after he had gone to Otakon in 2024. I had just been to my local anime convention recently too, so it was something we bonded over. I always imagined us going together, wearing matching cosplay, and walking around the artist alley.
 
-It was a bit overwhelming and much larger than what I"m used to, but I had lots of fun. Both of my cosplays drew attention, which was really exciting.
+It was a bit overwhelming and much larger than what I'm used to, but I had lots of fun. Both of my cosplays drew attention, which was really exciting.
 
 
 ## Cosplays
 On Friday I cosplayed Zero from ***Drakengard 3***, and my husband was Emil from ***Nier: Replicant***. I was so excited when people recognized me and took photos! One person even showed me their Zero keychain. Later that evening there was a NieR/Yoko Taro photoshoot. I was the only person cosplaying from ***Drakengard***, so I had to pose alone. It was a bit intimidating, but I really appreciated the love and excitement I received representing ***Drakengard***. A very lovely person talked to me after the shoot and took solo photos of me and my husband. They gave us the film which I thought was so sweet <3 I hope to find them online soon. I told them to make a neocities so I hope to see them on the indie web!
 
-Even though my outfit wasn"t perfect, I made it completely from scratch and I"m very proud of that. The Zero wig was super heavy because of the pigtails, so I need to figure out a better solution for that in the future.
+Even though my outfit wasn't perfect, I made it completely from scratch and I'm very proud of that. The Zero wig was super heavy because of the pigtails, so I need to figure out a better solution for that in the future.
 
 On Saturday we cosplayed the Hunter and Plain Doll from ***Bloodborne***. We got a lot of requests for pictures again. Most of my costume was store-bought except for the cloak, bonnet, and gloves, which I made myself. The cloak took a lot of work, but I’m glad I put in the effort. 
 
@@ -30,7 +30,7 @@ I saw some great cosplays myself, see my favorites below.
 
 <a href="/images/blog/EliasChise.png"><img src="/images/blog/EliasChise.png" width="220" class="blog-img" alt="EliasChise.png"></a> <a href="/images/blog/Mami.png"><img src="/images/blog/Mami.png" width="220" class="blog-img" alt="Mami.png"></a> <a href="/images/blog/Saber.png"><img src="/images/blog/Saber.png" width="220" class="blog-img" alt="Saber.png"></a> <a href="/images/blog/Teto.png"><img src="/images/blog/Teto.png" width="220" class="blog-img" alt="Teto.png"></a> 
 
-Elias and Chise: ***Ancient Magus Bride*** / Mami: ***Madoka Magica*** / Saber: ***Fate/Zero*** / Kasane Teto: ***UTAUloid/Voicaloid***
+Elias and Chise: ***Ancient Magus Bride*** / Mami: ***Madoka Magica*** / Saber: ***Fate Series*** / Kasane Teto: ***UTAUloid/Voicaloid***
 
 
 ## Merch & Art
@@ -51,9 +51,9 @@ We played a lot of Wacca and Jubeat. My husband and I got to play co-op Jubeat f
 I attended the following panels in no particular order:
 - ***AMV Contest*** – This was a fun way to pass time! 
 - ***The Abstract and Obscure: RPG Maker*** – This was a cool panel where I learned a lot about some unknown and interesting RPG Maker games. Hylics, Space Funeral, Toilet in Wonderland, & more.
-- ***Travel to Japan on YOUR Budget Panel*** – I"ve already done a lot of research on traveling to Japan, however, this panel had some insightful information on domestic travel and lodging.
-- ***Gameshow Impossibru™: Retro Game Challenge*** – This was one of my favorites to watch. People from the audience had to attempt various retro game challenges at random levels. I don"t think I would participate but it was a super fun panel and I hope to attend something similar next year.
-- ***Otakon 2025 Fashion Show*** – Also a favorite. I"ve attached some pictures of my favorite coords! Even if I couldn"t snap the best pictures, I made sure to keep track of the brand names I liked the most: [Night Whisper](https://nightwhisperdesign.com/) / [Sweet Mildred](https://www.etsy.com/shop/sweetmildred) / [ililil【イルイルイル】](https://www.ililil.jp/) / [Metamorphose](https://metamorphose.gr.jp/en/online-shop)
+- ***Travel to Japan on YOUR Budget Panel*** – I've already done a lot of research on traveling to Japan, however, this panel had some insightful information on domestic travel and lodging.
+- ***Gameshow Impossibru™: Retro Game Challenge*** – This was one of my favorites to watch. People from the audience had to attempt various retro game challenges at random levels. I don't think I would participate but it was a super fun panel and I hope to attend something similar next year.
+- ***Otakon 2025 Fashion Show*** – Also a favorite. I've attached some pictures of my favorite coords! Even if I couldn't snap the best pictures, I made sure to keep track of the brand names I liked the most: [Night Whisper](https://nightwhisperdesign.com/) / [Sweet Mildred](https://www.etsy.com/shop/sweetmildred) / [ililil【イルイルイル】](https://www.ililil.jp/) / [Metamorphose](https://metamorphose.gr.jp/en/online-shop)
 
 
 ## Closing Thoughts
