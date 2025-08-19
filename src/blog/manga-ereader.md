@@ -35,10 +35,10 @@ I ended up finding a Kobo Aura H2O (waterproof, by the way) on eBay for just und
 
 Everything I hoped and dreamed came true. The KOReader installation was flawless and it was reading my 256GB microSD, after putting it through a multi-step formatting process.  I have my entire manga library on the Kobo with plenty of room to spare. If you want an e-reader with a disgusting amount of storage, I highly reccomend looking for one that can read a microSD! It also makes uploading files a bit easier too. 
 
-![MoNH Sea Lion](/images/blog/kobokindle1.png){.blog-img}
+![](/images/blog/kobokindle1.png){.blog-img}
 *Kobo Aura H20 on the left and Kindle Paperwhite (11th gen) on the right*.
 
-![MoNH Sea Lion](/images/blog/kobokindle2.png){.blog-img}
+![](/images/blog/kobokindle2.png){.blog-img}
 *Kobo shown below Kindle both with cases*.
 
 The Kobo Aura H20 is bigger and clunkier than my Kindle Paperwhite but I don't mind "thicker" tech. I got a case for it (note: the only case I could find available) and I think it adds a lot to the bulk. It's still small enough to fit in my normal-sized purse. I fall asleep with it in front of my face almost every night now. Some small downsides include:

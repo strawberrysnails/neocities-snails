@@ -2,6 +2,10 @@ module.exports = [
     {
     date: new Date("2025-08-19"),
     blurb: `<a href="/notebook/bookmarks/">Bookmarks</a> have been moved to the Notebook page for an easier reading experience.`
+    },
+    {
+    date: new Date("2025-08-15"),
+    blurb: `<a href="/blog/otakon-2025.html">Otakon 2025</a> blog post is up!`
     }, 
     {
     date: new Date("2025-08-13"),
