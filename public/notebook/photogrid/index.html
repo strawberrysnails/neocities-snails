@@ -1,1 +1,169 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="icon" href="/images/favicon.gif" type="image/png"><!-- Credit: https://pixelsafari.neocities.org/favicon/2 --><title>Snails | Photogrid</title><link rel="stylesheet" href="/css/notebook.css"></head><body><div class="container"><a href="/notebook">Notebook</a> | <a href="/">Homepage</a><br><br><img src="/images/graphics/camera.png"><h1>Photogrid</h1><div class="photo-container"><div class="card"><img src="/images/photogrid/doublemiku.png" data-caption="Double Miku with my bestie at the con! 💙💙" data-date="7.20.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">7.20.2025</b><br>Double Miku with my bestie at the con! 💙💙</div></div><div class="card"><img src="/images/photogrid/birthdaygrid.png" data-caption="A collection of images from the weekend of my birthday." data-date="7.02.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">7.02.2025</b><br>A collection of images from the weekend of my birthday.</div></div><div class="card"><img src="/images/photogrid/cows.png" data-caption="Found this farm on a walk with my Husband." data-date="6.10.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">6.10.2025</b><br>Found this farm on a walk with my Husband.</div></div><div class="card"><img src="/images/photogrid/nyccity.png" data-caption="My view of the city from Central Park." data-date="5.18.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">5.18.2025</b><br>My view of the city from Central Park.</div></div><div class="card"><img src="/images/photogrid/nycicecream.png" data-caption="Ice cram from Salt and Straw in NYC." data-date="5.18.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">5.18.2025</b><br>Ice cram from Salt and Straw in NYC.</div></div><div class="card"><img src="/images/photogrid/dango.png" data-caption="Brown sugar and matcha danjo. 🍡 " data-date="5.10.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">5.10.2025</b><br>Brown sugar and matcha danjo. 🍡</div></div><div class="card"><img src="/images/photogrid/cherryblossom.png" data-caption="My local cherry blossom trees have bloomed. ❁✿❀" data-date="4.21.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">4.21.2025</b><br>My local cherry blossom trees have bloomed. ❁✿❀</div></div><div class="card"><img src="/images/photogrid/heart-pizza.jpeg" data-caption="Heart pizza my boyfriend made for me on valentines day." data-date="02.14.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">02.14.2025</b><br>Heart pizza my boyfriend made for me on valentines day.</div></div><div class="card"><img src="/images/photogrid/snek.jpg" data-caption="Boyfriend holding little baby snake. 𓆙" data-date="02.03.2025" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">02.03.2025</b><br>Boyfriend holding little baby snake. 𓆙</div></div><div class="card"><img src="/images/photogrid/miffy-latte.jpg" data-caption="Miffy flat white I made at work. <br> ₍ᐢ. .ᐢ₎" data-date="6.18.2024" class="clickable-photo" style="cursor:url(/images/pointer.png),pointer"><div class="desc"><b style="margin:5px">6.18.2024</b><br>Miffy flat white I made at work.<br>₍ᐢ. .ᐢ₎</div></div><div id="photoModal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(46,46,46,.9)"><span id="closeModal" style="position:absolute;top:15px;right:35px;color:#fff;font-size:60px;cursor:url(/images/pointer.png),pointer">×</span><div style="margin:auto;padding:20px;max-width:90%;text-align:center"><img id="modalImage" src="" style="max-width:100%;height:auto;margin-top:10%;border:10px solid #fff"><div id="modalCaption" style="color:#fff;margin-top:10px"></div><div id="modalNav" style="margin-top:10px"><button id="prevPhoto" style="margin-right:10px">← Prev</button> <button id="nextPhoto">Next →</button></div></div></div></div><script>const photos=Array.from(document.querySelectorAll(".clickable-photo"));let currentIndex=0;function openModal(e){const t=photos[e];t&&(document.getElementById("modalImage").src=t.src,document.getElementById("modalCaption").innerHTML=`<b>${t.dataset.date}</b><br>${t.dataset.caption}`,document.getElementById("photoModal").style.display="block",currentIndex=e)}photos.forEach(((e,t)=>{e.addEventListener("click",(()=>openModal(t)))})),document.getElementById("closeModal").addEventListener("click",(()=>{document.getElementById("photoModal").style.display="none"})),window.addEventListener("click",(e=>{e.target===document.getElementById("photoModal")&&(document.getElementById("photoModal").style.display="none")})),document.getElementById("prevPhoto").addEventListener("click",(()=>{openModal((currentIndex-1+photos.length)%photos.length)})),document.getElementById("nextPhoto").addEventListener("click",(()=>{openModal((currentIndex+1)%photos.length)})),document.addEventListener("keydown",(e=>{const t=document.getElementById("photoModal");"block"===t.style.display&&("Escape"===e.key?t.style.display="none":"ArrowLeft"===e.key?openModal((currentIndex-1+photos.length)%photos.length):"ArrowRight"===e.key&&openModal((currentIndex+1)%photos.length))}))</script></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
+        <title>Snails | Photogrid</title>
+    <link rel="stylesheet" href="/css/notebook.css">
+  </head>
+  <body>
+    <div class="container">
+                        <a href="/notebook">Notebook</a> |
+<a href="/">Homepage</a><br><br>
+<img src="/images/graphics/camera.png">
+<h1>Photogrid</h1>
+
+<div class="photo-container">
+
+  <div class="card">
+    <img src="/images/photogrid/doublemiku.png" data-caption="Double Miku with my bestie at the con! 💙💙" data-date="7.20.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">7.20.2025</b><br>
+      Double Miku with my bestie at the con! 💙💙
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/birthdaygrid.png" data-caption="A collection of images from the weekend of my birthday." data-date="7.02.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">7.02.2025</b><br>
+      A collection of images from the weekend of my birthday.
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/cows.png" data-caption="Found this farm on a walk with my Husband." data-date="6.10.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">6.10.2025</b><br>
+      Found this farm on a walk with my Husband.
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/nyccity.png" data-caption="My view of the city from Central Park." data-date="5.18.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">5.18.2025</b><br>
+      My view of the city from Central Park.
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/nycicecream.png" data-caption="Ice cram from Salt and Straw in NYC." data-date="5.18.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">5.18.2025</b><br>
+      Ice cram from Salt and Straw in NYC.
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/dango.png" data-caption="Brown sugar and matcha danjo. 🍡 " data-date="5.10.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">5.10.2025</b><br>
+      Brown sugar and matcha danjo. 🍡 
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/cherryblossom.png" data-caption="My local cherry blossom trees have bloomed. ❁✿❀" data-date="4.21.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">4.21.2025</b><br>
+      My local cherry blossom trees have bloomed. ❁✿❀
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/heart-pizza.jpeg" data-caption="Heart pizza my boyfriend made for me on valentines day." data-date="02.14.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">02.14.2025</b><br>
+      Heart pizza my boyfriend made for me on valentines day.
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/snek.jpg" data-caption="Boyfriend holding little baby snake. 𓆙" data-date="02.03.2025" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">02.03.2025</b><br>
+      Boyfriend holding little baby snake. 𓆙
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/images/photogrid/miffy-latte.jpg" data-caption="Miffy flat white I made at work. <br> ₍ᐢ. .ᐢ₎" data-date="6.18.2024" class="clickable-photo" style="cursor: url(/images/pointer.png), pointer;">
+    <div class="desc">
+      <b style="margin: 5px;">6.18.2024</b><br>
+      Miffy flat white I made at work. <br> ₍ᐢ. .ᐢ₎
+    </div>
+  </div>
+
+
+<div id="photoModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(46, 46, 46, 0.90);">
+  <span id="closeModal" style="position:absolute; top:15px; right:35px; color:white; font-size:60px; cursor: url(/images/pointer.png), pointer;">×</span>
+  <div style="margin: auto; padding: 20px; max-width: 90%; text-align: center;">
+    <img id="modalImage" src="" style="max-width: 100%; height: auto; margin-top: 10%; border: 10px solid white">
+    <div id="modalCaption" style="color:white; margin-top:10px;"></div>
+    <div id="modalNav" style="margin-top: 10px;">
+  <button id="prevPhoto" style="margin-right: 10px;">← Prev</button>
+  <button id="nextPhoto">Next →</button>
+</div>
+  </div>
+</div>
+</div>
+
+<script>
+  const photos = Array.from(document.querySelectorAll('.clickable-photo'));
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = photos[index];
+    if (!img) return;
+
+    document.getElementById('modalImage').src = img.src;
+    document.getElementById('modalCaption').innerHTML = `<b>${img.dataset.date}</b><br>${img.dataset.caption}`;
+    document.getElementById('photoModal').style.display = "block";
+    currentIndex = index;
+  }
+
+  photos.forEach((img, index) => {
+    img.addEventListener('click', () => openModal(index));
+  });
+
+
+  document.getElementById('closeModal').addEventListener('click', () => {
+    document.getElementById('photoModal').style.display = "none";
+  });
+
+
+  window.addEventListener('click', (e) => {
+    if (e.target === document.getElementById('photoModal')) {
+      document.getElementById('photoModal').style.display = "none";
+    }
+  });
+
+  document.getElementById('prevPhoto').addEventListener('click', () => {
+    openModal((currentIndex - 1 + photos.length) % photos.length);
+  });
+
+  document.getElementById('nextPhoto').addEventListener('click', () => {
+    openModal((currentIndex + 1) % photos.length);
+  });
+
+  document.addEventListener('keydown', (e) => {
+  const modal = document.getElementById('photoModal');
+  if (modal.style.display !== "block") return;
+
+  if (e.key === "Escape") {
+    modal.style.display = "none";
+  } else if (e.key === "ArrowLeft") {
+    openModal((currentIndex - 1 + photos.length) % photos.length);
+  } else if (e.key === "ArrowRight") {
+    openModal((currentIndex + 1) % photos.length);
+  }
+});
+
+</script>
+
+    </div>
+</body>
+</html>
