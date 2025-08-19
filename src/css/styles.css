@@ -659,6 +659,21 @@ legend {
   cursor: url(/images/pointer.png), pointer;
 }
 
+/* LINKS FLEX LAYOUT */
+.link-grid {
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 5px;             
+}
+
+.col {
+  flex: 1 1 300px;       /* grow, shrink, min width */
+  min-width: 300px;      /* forces wrap below this width */
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+
 /* SITE BUTTONS */
 
 .link-buttons {

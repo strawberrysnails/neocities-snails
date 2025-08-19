@@ -44,7 +44,7 @@ To install it, I followed [this guide on the Kindle Modding Wiki](https://kindle
 
 YAY my Kindle works! KOReader has a very different interface, but with some tweaks and a quick read through the [User Guide](https://koreader.rocks/user_guide/), I figured it out. Custom lockscreen time!
 
-<a href="https://files.catbox.moe/0zbz8h.jpg" target="_blank"><img src="https://files.catbox.moe/0zbz8h.jpg" class="responsive-img"></a>
+<img src="/images/blog/mikulockscreen.png" class="responsive-img"></a>
 
 I used this [e-ink image converter](https://eink-image-converter.contechity.com/).
 
@@ -88,7 +88,7 @@ Once that was done, here’s how I got Rakuyomi working inside KOReader:
 3. Go to Manage Sources, then tap the + icon in the top left.
 4. You should now be able to browse and search for manga directly within KOReader.
 
-<a href="https://files.catbox.moe/9ht0m5.jpeg" target="_blank"><img src="https://files.catbox.moe/9ht0m5.jpeg" class="responsive-img"></a>
+<img src="/images/blog/dorohedoromanga.png" class="responsive-img"></a>
 
 When you download manga to your device it is sent to a folder called `rakuyomi/downloads`. To make it easier to access, I synced this folder with my "Manga" collection.
 

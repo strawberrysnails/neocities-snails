@@ -6,7 +6,7 @@
 
         :root {
         --darkcolor: rgb(54, 8, 12);
-        --contrast:rgb(177, 86, 111);
+        --contrast:rgb(250, 170, 191);
         --silver: rgb(237, 237, 237);
         --grey:#292929;
         --darkgrey:#181818;
@@ -26,6 +26,7 @@
 
         a {
           transition: 0.5s ease;
+          color:var(--contrast);
         }
 
         a, button{
@@ -272,4 +273,15 @@ ul{
   border: dashed 1px #ffffff7a;
   margin: auto;
   margin-top: 10px;
+}
+
+/* BOOKMARKS */
+#bookmarks table {
+  border-collapse: collapse;
+}
+
+
+#bookmarks th:first-child,
+#bookmarks td:first-child {
+  width: 350px; /* adjust as needed */
 }

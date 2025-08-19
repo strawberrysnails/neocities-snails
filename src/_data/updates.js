@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-08-19"),
+    blurb: `<a href="/notebook/bookmarks/">Bookmarks</a> have been moved to the Notebook page for an easier reading experience.`
+    }, 
+    {
     date: new Date("2025-08-13"),
     blurb: `Added scroll to top button.`
     }, 

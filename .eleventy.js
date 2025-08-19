@@ -2,7 +2,6 @@ const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnchor = require("markdown-it-anchor");
-const htmlmin = require("html-minifier-terser");
 const externalLinksPlugin = require("@sardine/eleventy-plugin-external-links");
 const pluginTOC = require("eleventy-plugin-toc");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
@@ -141,19 +140,6 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
     return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_FULL);
   });
 
-  // Minify Settings
-  eleventyConfig.addTransform("htmlmin", function (content) {
-    if ((this.page.outputPath || "").endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        collapseWhitespace: true,
-        minifyCSS: true,
-        minifyJS: true,
-      });
-      return minified;
-    }
-    return content;
-  });
 
   // Markdown config 
   // EXAMPLE: ![Alt Text](image.jpg){.my-class}

@@ -3,7 +3,6 @@ title: Otakon 2025
 date: 2025-08-10
 excerpt: My weekend at Otakon 2025. Cosplays, gaming, and more!
 layout: blog
-eleventyExcludeFromCollections: true
 tags:
   - blog
   - travel
