@@ -104,6 +104,7 @@ Made by me:
   <a href="https://beaniepines.nekoweb.org/stimpop"><img src="/images/adopts/totoro-beaniepines.gif"></a>
   <a href="https://www1.flightrising.com/dragon/74746209"><img src="/images/adopts/snailcat-dovalore.png"></a>
   <a href="https://www1.flightrising.com/dragon/74746209"><img src="/images/adopts/wizardcat-dovalore.png"></a>
+  <a href="https://plumes.neocities.org/"><img src="/images/adopts/emil.png"></a>
   </div>
   </details>
 
