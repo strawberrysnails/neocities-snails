@@ -22,7 +22,17 @@
         cursor: url(/images/cursor.png), default;
         }
 
-      
+      /* Change text selection color */
+      ::selection {
+        background: var(--contrast);  /* highlight background */
+        color: #000000;       /* text color while highlighted */
+      }
+
+      /* For Firefox */
+      ::-moz-selection {
+        background: var(--contrast);
+        color: #000000;
+      }
 
         a {
           transition: 0.5s ease;
