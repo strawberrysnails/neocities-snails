@@ -15,7 +15,7 @@ nesting: ""
 | --- | --- | --- | --- |
 | 3D Printer | $290-$320| [Neptune 4 Plus](https://us.elegoo.com/products/neptune-4-plus-fdm-3d-printer) or [Anycubic Kobra 2 Max](https://store.anycubic.com/products/kobra-2-max) + Enclosure:  [Link 1](https://www.etsy.com/listing/1631034183/diy-acrylic-enclosure-for-3d-printer-up) [Link 2](https://www.etsy.com/listing/1367052864/enclosure-ender-3-pro-ikea-lack-custom)| For cosplay props. |
 | Thermaltake Tower 600 | $190 | [Thermaltake Website](https://thermaltakeusa.com/products/the-tower-600-mid-tower-chassis-ca-1z1-00m1wn-00) or [Amazon](https://a.co/d/4fDEA2f) | Color in black. |
-| Mini Sodering Iron - PINECIL | $ 40 | [Amazon](https://a.co/d/3nuOQP7) | For Switch Lite modding. |
+| Mini Sodering Iron - PINECIL | $40 | [Amazon](https://a.co/d/3nuOQP7) | For Switch Lite modding. |
 | IKEA Gift Card | $50–$200 | [IKEA](https://www.ikea.com/us/en/customer-service/gift-cards-pub3d1efe50/) |  |
 | ⭐ Dyson Airstrait | $500 | [Dyson](https://www.dyson.com/hair-care/hair-straighteners/airstrait/prussian-blue-rich-copper) or [Amazon](https://a.co/d/fb1K4mu) | Any color. Dream item for the distant future. |
 | Sewing Supplies Case | $18 | [Amazon](https://a.co/d/aGCVC0x) |  |
@@ -33,12 +33,13 @@ nesting: ""
 | Sony Walkman NW-A105 | $120-$150 | [Ebay](https://www.ebay.com/sch/i.html?_nkw=sony+walkman+nw-a105) | MP3 Player - Won't need this if I get my Ipod Classic working. |
 | Tomogatchi 4U | $100-$250 | [Ebay](https://www.ebay.com/sch/i.html?_nkw=tamagotchi+"4u") | Overpriced tomogatchi but arguably the best one. |
 
-# Clothing
+# Fashion & Cosplay
 | **Item** | **Price Range** | **Where to Buy** | **Notes** |
 | --- | --- | --- | --- |
-| Leather Loafers | $150 | [Thursday](https://thursdayboots.com/products/womens-penny-platform-loafer-lug-sole-black) | Size 6.5 in Black Penny Platform. A bit expensive but I want real leather ones because the current ones I have are falling apart. I wear them to death. |
+| Hatsune Miku Cosplay | $100 | [Dokidoki Cosplay](https://dokidokicos.com/products/dokidoki-sr-cosplay-costume-official-suit) | Size M |
 | Dresses or Gift Card from Disturbia | $50-$100 |[Tulisa Check Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/tulisa-check-midi-dress?_pos=42&_fid=d73355efb&_ss=c&variant=50648424120594), & [Faythe Apron Midi Dress](https://www.disturbia.us/collections/womens-midi-dresses/products/faythe-apron-midi-dress?_pos=58&_fid=5f9dfa4ea&_ss=c&variant=48984995004690). [Gift Card](https://www.disturbia.us/products/e-gift-card) | Size 4 in dresses. Gift card is preferable. (❁´◡`❁) |
-| UGG Slippers: Ansley | $100 | [UGG Store](https://www.ugg.com/women/ansley/1106878.html?dwvar_1106878_color=LGRY) or [Amazon](https://a.co/d/0qwN9md) | Color in black, grey, or brown. Size 7. |
+| UGG Slippers: Elea | $125 | [UGG Store](https://www.ugg.com/women-slippers/elea-slip-on/1171390.html?dwvar_1171390_color=MSG) or [Amazon](https://a.co/d/0D0ghG5) | Color in Dusted Cocoa |
+| UGG Classic Boots | $190 | [UGG Store](https://www.ugg.com/women-boots-classic-boots/classic-short-ii/1016223.html?dwvar_1016223) | Color in Burnt or Chestnut |
 
 # Video Games 
 | **Item** | **Price Range** | **Where to Buy** | **Notes** |
@@ -61,3 +62,4 @@ nesting: ""
 | Steam Link | Won on Ebay (2025) |
 | Personal Item Backpack for Travel | Birthday gift (2025)  |
 | IEM Earbuds | Birthday gift (2025)  |
+| Thursday Leather Loafers | Purchased for myself (2025) |
