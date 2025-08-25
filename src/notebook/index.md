@@ -7,3 +7,4 @@ layout: notebook
 - [Wishlist](wishlist)
 - [Collections](collections)
 - [Bookmarks](bookmarks)
+- [Fonts](fonts)
