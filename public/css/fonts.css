@@ -34,6 +34,14 @@
   font-family: Alkhemikal;
   src: url(/fonts/Alkhemikal.ttf);
 }
+
+
+@font-face {
+  font-family: Sebaldus Gotisch;
+  src: url(/fonts/Sebaldus-Gotisch.ttf) format("truetype");
+}
+
+
 /* Regular */
 @font-face {
   font-family: 'DejaVuSansMono';
