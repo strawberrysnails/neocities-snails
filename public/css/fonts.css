@@ -35,11 +35,16 @@
   src: url(/fonts/Alkhemikal.ttf);
 }
 
-
 @font-face {
   font-family: Sebaldus Gotisch;
   src: url(/fonts/Sebaldus-Gotisch.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: Pirata One;
+  src: url(/fonts/PirataOne.ttf) format("truetype");
+}
+
 
 
 /* Regular */

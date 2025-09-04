@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecticut Recording Fees Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 700px; margin: 0 auto; padding: 20px; }
+        input, select { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        .document { margin-bottom: 20px; padding: 10px; background-color: #f1f1f1; border-radius: 5px; }
+        .document button { background-color: #f44336; }
+        .document button:hover { background-color: #d32f2f; }
+        .results { margin-top: 20px; }
+        .breakdown-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .breakdown-table th, .breakdown-table td { padding: 8px; border: 1px solid #ddd; text-align: right; }
+        .breakdown-table th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Connecticut Recording Fees Calculator</h1>
+
+        <!-- Sale Price Input -->
+        <label for="salePrice">Sale Price of Home</label>
+        <input type="number" id="salePrice" placeholder="Enter sale price" oninput="updateTotals()" />
+
+        <div id="documents">
+            <!-- Documents will be dynamically added here -->
+        </div>
+
+        <button onclick="addDocument()">Add Document</button>
+
+        <!-- Results Section -->
+        <div class="results">
+            <h2>Document Breakdown</h2>
+            <table class="breakdown-table">
+                <thead>
+                    <tr>
+                        <th>Document Type</th>
+                        <th>Pages</th>
+                        <th>Recording Fee</th>
+                        <th>Conveyance Tax</th>
+                        <th>Total Fee</th>
+                    </tr>
+                </thead>
+                <tbody id="breakdownTableBody">
+                    <!-- Breakdown rows will be dynamically added here -->
+                </tbody>
+            </table>
+
+            <h3>Total:</h3>
+            <p><strong>Total Recording Fees:</strong> $<span id="totalRecordingFee">0</span></p>
+            <p><strong>Total Conveyance Tax:</strong> $<span id="totalConveyanceTax">0</span></p>
+            <p><strong>Total Fee:</strong> $<span id="totalFee">0</span></p>
+        </div>
+    </div>
+
+    <script>
+        let documentCount = 0;
+        let totalRecordingFee = 0;
+        let totalConveyanceTax = 0;
+        let totalFee = 0;
+
+        // Function to add a new document
+        function addDocument() {
+            documentCount++;
+            const documentDiv = document.createElement('div');
+            documentDiv.classList.add('document');
+            documentDiv.id = `document${documentCount}`;
+            documentDiv.innerHTML = `
+                <h3>Document ${documentCount}</h3>
+                <label for="documentType${documentCount}">Document Type</label>
+                <select id="documentType${documentCount}" onchange="updateTotals()">
+                    <option value="mortgageMers">Mortgage - MERS</option>
+                    <option value="mortgageRegular">Mortgage - Regular</option>
+                    <option value="warrantyDeed">Warranty Deed/QC Deed</option>
+                    <option value="poa">POA</option>
+                    <option value="affidavit">Affidavit of Facts/Name Change</option>
+                </select>
+
+                <label for="pages${documentCount}">Number of Pages</label>
+                <input type="number" id="pages${documentCount}" placeholder="Enter number of pages" oninput="updateTotals()" />
+
+                <button onclick="removeDocument(${documentCount})">Remove Document</button>
+            `;
+            document.getElementById('documents').appendChild(documentDiv);
+        }
+
+        // Function to remove a document
+        function removeDocument(documentId) {
+            const documentDiv = document.getElementById(`document${documentId}`);
+            documentDiv.remove();
+            updateTotals();
+        }
+
+        // Function to update the totals and breakdown
+        function updateTotals() {
+            const salePrice = parseFloat(document.getElementById('salePrice').value) || 0;
+            totalRecordingFee = 0;
+            totalConveyanceTax = 0;
+            totalFee = 0;
+            let breakdownHtml = '';
+
+            // Loop through each document and calculate its fees
+            for (let i = 1; i <= documentCount; i++) {
+                const documentType = document.getElementById(`documentType${i}`).value;
+                const pages = parseInt(document.getElementById(`pages${i}`).value) || 1;
+
+                let recordingFee = 0;
+                let conveyanceTax = 0;
+
+                // Calculate conveyance tax
+                conveyanceTax = salePrice * 0.0075;
+
+                // Calculate recording fee based on document type
+                if (documentType === 'mortgageMers') {
+                    recordingFee = 160 + (pages - 1) * 5;
+                } else if (documentType === 'mortgageRegular') {
+                    recordingFee = 70 + (pages - 1) * 5;
+                } else if (documentType === 'warrantyDeed') {
+                    recordingFee = 70 + (pages - 1) * 5 + 2;
+                } else if (documentType === 'poa' || documentType === 'affidavit') {
+                    recordingFee = 70 + (pages - 1) * 5;
+                }
+
+                // Update total fees
+                totalRecordingFee += recordingFee;
+                totalConveyanceTax += conveyanceTax;
+                totalFee += recordingFee + conveyanceTax;
+
+                // Add this document's breakdown to the table
+                breakdownHtml += `
+                    <tr>
+                        <td>${documentType.replace(/([A-Z])/g, ' $1').trim()}</td>
+                        <td>${pages}</td>
+                        <td>$${recordingFee.toFixed(2)}</td>
+                        <td>$${conveyanceTax.toFixed(2)}</td>
+                        <td>$${(recordingFee + conveyanceTax).toFixed(2)}</td>
+                    </tr>
+                `;
+            }
+
+            // Update the breakdown table
+            document.getElementById('breakdownTableBody').innerHTML = breakdownHtml;
+
+            // Update the total amounts displayed
+            document.getElementById('totalRecordingFee').textContent = totalRecordingFee.toFixed(2);
+            document.getElementById('totalConveyanceTax').textContent = totalConveyanceTax.toFixed(2);
+            document.getElementById('totalFee').textContent = totalFee.toFixed(2);
+        }
+    </script>
+</body>
+</html>

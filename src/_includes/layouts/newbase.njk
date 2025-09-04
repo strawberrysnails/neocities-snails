@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+            <!-- CSS/JS + CACHEBUSTING -->
+            <link rel="stylesheet" href="/css/newstyles.css">
+            <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+            <link rel="icon" href="{{ site.favicon }}" type="image/png"> 
+
+<title>{{ site.title }}{% if title %} | {{ title }}{% endif %}</title>
+
+  </head>
+  <body>
+    <img src="/images/zero.png" alt="zero" class="zero">
+<div class="container">
+  <header>Header Content</header>
+  <div class="main-layout">
+    <nav>Navigation</nav>
+    <main> {{ content | safe }} </main>
+   
+    <aside>
+  <a href="notebook/photogrid">Latest Picture</a>
+  {% if photos and photos.length %}
+    {% set recent = photos[0] %}
+    <div class="responsive">
+      <a class="image-link" href="notebook/photogrid">
+        <div class="image-frame">
+          <img class="clipped-image" src="images/photogrid/{{ recent.src }}" alt="Recent Photo">
+          <div class="frame"></div> <!-- This is your "locket" frame -->
+        </div>
+      </a>
+    </div>
+  {% endif %}
+
+  {% set post = collections.blog[0] %}
+  {% if post %}
+    <legend><a href="/blog">Latest Blog Post </a> <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small></legend>
+    <h2><a href="{{ post.url }}">{{ post.data.title }} </a></h2>
+    <i class="bi bi-calendar-heart"></i> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
+    
+    {% if post.data.excerpt %}
+      <p>{{ post.data.excerpt }}</p>
+    {% endif %}
+  {% endif %}
+</aside>
+
+
+  </div>
+  <footer>Footer Content</footer>
+</div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+<script src="/javascript/main.js?nocache={{ nocache }}"></script>
+  </body>
+</html>
