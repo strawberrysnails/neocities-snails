@@ -22,19 +22,23 @@
     <nav>Navigation</nav>
     <main> {{ content | safe }} </main>
    
-    <aside>
-  <a href="notebook/photogrid">Latest Picture</a>
-  {% if photos and photos.length %}
-    {% set recent = photos[0] %}
-    <div class="responsive">
-      <a class="image-link" href="notebook/photogrid">
-        <div class="image-frame">
-          <img class="clipped-image" src="images/photogrid/{{ recent.src }}" alt="Recent Photo">
-          <div class="frame"></div> <!-- This is your "locket" frame -->
-        </div>
-      </a>
-    </div>
-  {% endif %}
+<aside>
+
+{% if photos and photos.length %}
+  {% set recent = photos[0] %}
+<div class="responsive">
+  <div class="image-frame">
+    <a class="clipped-link" href="notebook/photogrid">
+      <img class="inner-image" src="images/photogrid/{{ recent.src }}" alt="Recent Photo">
+    </a>
+    <div class="frame-overlay"></div>
+  </div>
+</div>
+<br><br>
+{% endif %}
+
+
+
 
   {% set post = collections.blog[0] %}
   {% if post %}
