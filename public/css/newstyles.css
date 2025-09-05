@@ -1,6 +1,6 @@
 
 body {
-  font-family: DejaVuSansMono, monospace;
+  font-family: Merriweather, monospace;
   font-size: 0.95em;
   line-height: 1.5em;
   letter-spacing: 0.5px;
@@ -12,6 +12,11 @@ body {
   background-size: cover;
   color: white;
   overflow-x: hidden;
+}
+
+h1, h2, h3{
+  font-family: Pirata One;
+  letter-spacing: .5rem;
 }
 
 .container {
@@ -73,6 +78,9 @@ aside {
 footer {
   width: 100%;
   box-sizing: border-box;
+  text-align: center;
+  font-size: ;
+  font-family: Alkhemikal;
 }
 
 /* Mobile */
@@ -168,3 +176,30 @@ filter:grayscale(10%);
   transform-origin: center; 
 }
 
+nav h1,h2,h3{
+  text-align: center;
+  border-bottom: #c5c5c5 1px solid;
+}
+
+
+nav a{
+  display: block;
+  opacity: .8;
+  line-height:1.5rem;
+  background-color: #f2f2f2;
+  color:#000;
+  font-size: .8rem;
+  text-align: center;
+  border: 3px groove #000;
+  margin:5px;
+  text-decoration: none;
+  box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 20%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
+  transition: all ease-in-out .3s;
+}
+
+nav a:hover{
+  color: ;
+  text-decoration: none;
+  background: #fff;
+  transform: scale(1.1);
+}

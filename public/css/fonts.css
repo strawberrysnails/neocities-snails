@@ -45,6 +45,28 @@
   src: url(/fonts/PirataOne.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: Jim Nightshade;
+  src: url(/fonts/JimNightshade.ttf) format("truetype");
+}
+
+/* Regular Merriweather */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('/fonts/Merriweather-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic Merriweather */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('/fonts/Merriweather-Italic.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 
 /* Regular */
