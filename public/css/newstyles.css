@@ -1,45 +1,70 @@
+:root{
+  --darkcolor: #020a16;
+  --text:#f3d5e1;
+  --text2:#ffffff;
+  --text3:#333333;
+}
 
 body {
   font-family: Merriweather, monospace;
-  font-size: 0.95em;
+  font-size: 0.9em;
   line-height: 1.5em;
   letter-spacing: 0.5px;
   margin: auto;
   text-align: left;
   cursor: url(/images/cursor.png), default;
-  background-color: #000;
-  background-image: url();
+  background-color: var(--darkcolor);
+  background-image: url(/images/bg9.png);
   background-size: cover;
-  color: white;
+  background-repeat: no-repeat;
+  color: var(--text);
   overflow-x: hidden;
+}
+
+a{
+  color:var(--text2);
+  text-decoration: underline dotted;
+  -webkit-transition: all ease-in-out .2s;
+  -moz-transition: all ease-in-out .2s;
+  -o-transition: all ease-in-out .2s;
+  -ms-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+a:hover{
+color: var(--text3);
+  text-shadow: 0 0 5px var(--text), 0 0 10px var(--text), 0 0 15px var(--text);
 }
 
 h1, h2, h3{
   font-family: Pirata One;
   letter-spacing: .5rem;
+  color:var(--text2);
 }
 
 .container {
   display: flex;
   flex-direction: column; 
-  background-color: transparent
-  align-items: flex-start; 
-  gap: 10px;
-  margin:auto;
+  align-items: flex-start;
+  gap: 10px; 
+  margin:20px auto;
   width: 100%;
-  max-width: 1320px;
+  max-width: 1240px;
   min-width: 320px;
   box-sizing: border-box;
-  border: 70px solid transparent;
-  border-image: url(/images/border7.png) 70 round;
-  background-clip: padding-box;
+  border: 50px solid transparent;
+  background-color: #00000091;
+  border-image: url(/images/border7.png) 50 round;
+  border-image-outset: 20px;
+  background-image: url(/images/bg8.png);
 }
 
 
 header, nav, main, aside, footer {
   border: #c5c5c5 4px groove;
   background-color: #0000007e;
-  padding: 20px;
+  padding: 10px;
+
 }
 
 
@@ -52,11 +77,36 @@ header, nav, main, aside, footer {
 }
 
 
-header {
-width: 100%;
-box-sizing: border-box;
+header{
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url(/images/bg4.jpg);
+  background-size: cover;
+  height: 100px;
 }
 
+.title {
+  position: absolute;
+  top:11%;
+  left:22%;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  padding: 5px 10px;
+  transition: text-shadow 0.5s ease;
+  color:white;
+  font-family: RomanceA;
+}
+
+.title:hover {
+  animation: pulse 1.5s ease-in-out infinite;
+  text-shadow: 0 0 5px var(--text), 0 0 10px var(--text), 0 0 15px var(--text);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
 
 nav {
   width: 20%; 
@@ -79,8 +129,8 @@ footer {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  font-size: ;
-  font-family: Alkhemikal;
+  font-size: 1.2em;
+  font-family: RomanceA;
 }
 
 /* Mobile */
@@ -113,7 +163,23 @@ footer {
   width: 500px; 
   height: auto; 
   z-index: 10; 
+  transition: ease-in-out .5s;
+  -webkit-transition: ease-in-out .5s;
+  -moz-transition: ease-in-out .5s;
+  -o-transition: ease-in-out .5s;
+  -ms-transition: ease-in-out .5s;
+  transition: all ease-in-out .2s;
+  
 }
+
+.zero:hover{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    right:0;
+}
+
 
 @media (max-width: 1530px) {
 .zero{
@@ -129,10 +195,10 @@ footer {
 
 .image-frame {
   position: relative;
-  width: 120%;
+  width: 110%;
   max-width: 350px;
-  top:55px;
-  margin-bottom: 65px;
+  top:50px;
+  margin-bottom: 90px;
 }
 
 
@@ -153,8 +219,12 @@ footer {
   height: auto;
   display: block;
   object-fit: cover;
-  filter:grayscale(100%);
+  filter:grayscale(50%);
   transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
 }
 
 .inner-image:hover {
@@ -195,6 +265,10 @@ nav a{
   text-decoration: none;
   box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 20%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
   transition: all ease-in-out .3s;
+  -webkit-transition: all ease-in-out .2s;
+  -moz-transition: all ease-in-out .2s;
+  -o-transition: all ease-in-out .2s;
+  -ms-transition: all ease-in-out .2s;
 }
 
 nav a:hover{
@@ -202,4 +276,9 @@ nav a:hover{
   text-decoration: none;
   background: #fff;
   transform: scale(1.1);
+}
+
+.blog-link{
+  color:var(--text2);
+  text-decoration: none;
 }

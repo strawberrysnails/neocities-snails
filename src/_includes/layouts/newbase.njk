@@ -17,7 +17,7 @@
   <body>
     <img src="/images/zero.png" alt="zero" class="zero">
 <div class="container">
-  <header>Header Content</header>
+  <header><div class="title">Snails.Town</div>_</header>
   <div class="main-layout">
     <nav>
       <h3>Navigation</h3>
@@ -33,7 +33,7 @@
 
 <div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
     <div style="font-weight:bold"></div>
-    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsl(0, 0%, 30%))" class="moon-svg"></div>
+    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsla(0, 0%, 30%, 0.171))" class="moon-svg"></div>
     <div></div>
     <div style="font-size:smaller">.</div>
 </div>
@@ -43,7 +43,7 @@
     var d = new Date().getDate();
     var m = document.querySelectorAll("#contain_moon div");
     var a = new XMLHttpRequest();
-    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(191, 191, 191)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(240, 240, 240)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
     
     m[1].style.height = "100px";
     
@@ -65,11 +65,11 @@
 #contain_moon div:nth-child(3) {
     position: relative; 
     font-family: "Jim Nightshade";
-    margin-top: -50px; 
+    margin-top: -30px;
     z-index: 2; 
-    font-size: 2em; 
+    font-size: 1.3em; 
     color: #ffffff;
-    text-shadow: #000000 1px 1px 0;}
+  }
 
 .moon-svg {
     position: relative; 
@@ -108,9 +108,9 @@
 
   {% set post = collections.blog[0] %}
   {% if post %}
-    <legend><a href="/blog">Latest Blog Post </a> <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small></legend>
-    <h2><a href="{{ post.url }}">{{ post.data.title }} </a></h2>
-    <i class="bi bi-calendar-heart"></i> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
+    <a href="/blog">Latest Blog Post </a> <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small>
+    <h2><a class="blog-link" href="{{ post.url }}">{{ post.data.title }} </a></h2>
+    <small><i class="bi bi-calendar-heart"></i> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | <i class="bi bi-stopwatch"></i> {{ post | readingTime }}</small>
     
     {% if post.data.excerpt %}
       <p>{{ post.data.excerpt }}</p>
