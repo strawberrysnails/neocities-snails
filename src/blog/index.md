@@ -14,12 +14,13 @@ eleventyNavigation:
 
 <details style="border-left:none;">
   <summary>Browse by Tag</summary>
-  <div class="tag-list">
+  <div class="tag-list"> 
     {% for tag in collections.tagList %}
-      <a href="/blog/tags/{{ tag | slug }}/">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+      <a href="/blog/tags/{{ tag | slug }}/">#{{ tag }}</a>{% if not loop.last %} {% endif %}
     {% endfor %}
   </div>
 </details>
+<br>
 
 
 

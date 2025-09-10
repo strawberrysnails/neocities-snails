@@ -282,6 +282,7 @@ main {
   height: auto;
   border: 8px solid;
   border-image: url(/images/pixelborder3.png) 8 round;
+  overflow-y: scroll;
 }
 
 main,
