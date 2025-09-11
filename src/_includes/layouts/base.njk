@@ -93,8 +93,12 @@
 <!-- MOON END -->
     </nav>
 
-    <main> {{ content | safe }} </main>
-   
+          <!-- MAIN LAYOUT CONTAINER -->
+      <div class="main-layout">
+        {% block main %}{% endblock %}
+        {% block aside %}{% endblock %}
+      </div>
+    
 
   </div>
   <footer>

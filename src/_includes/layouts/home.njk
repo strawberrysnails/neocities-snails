@@ -1,27 +1,33 @@
 ---
 layout: base.njk
-layoutType: three-column
 title: Home
 ---
-
 {% block main %}
 <main>
-{{ content | safe }} 
+  TEST MAIN BLOCK
+  {{ content | safe }}
 </main>
 {% endblock %}
 
 {% block aside %}
 <aside>
+  TEST ASIDE BLOCK
+</aside>
+{% endblock %}
 
-{% if photos and photos.length %}
-  {% set recent = photos[0] %}
-<div class="responsive">
-  <div class="image-frame">
-    <a class="clipped-link" href="notebook/photogrid">
-      <img class="inner-image" src="images/photogrid/{{ recent.src }}" alt="Recent Photo">
-    </a>
-    <div class="frame-overlay"></div>
-  </div>
-</div>
-<br><br>
-{% endif %}
+{% block aside %}
+<aside>
+  {% if photos and photos.length %}
+    {% set recent = photos[0] %}
+    <div class="responsive">
+      <div class="image-frame">
+        <a class="clipped-link" href="notebook/photogrid">
+          <img class="inner-image" src="images/photogrid/{{ recent.src }}" alt="Recent Photo">
+        </a>
+        <div class="frame-overlay"></div>
+      </div>
+    </div>
+    <br><br>
+  {% endif %}
+</aside>
+{% endblock %}
