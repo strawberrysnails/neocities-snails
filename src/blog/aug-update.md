@@ -14,9 +14,9 @@ This blog post and many other regular site updates are much later than expected 
 ### **Playing:**  
 - *Nier: Automata* – Still working on it.
 - *Blue Prince* – Honestly not sure what the hype is about but maybe I will understand once I finish it.
+- *League of Legends ARAM & Doom Bots* – No ranked or normals for me. I got my husband into the game just so we can play ARAM together hehe.
 
 ## Watching
-
 ### **Currently:**
 - *Doctor Who* – My Husbands first time watching it. I enjoy re-visiting the old episodes a lot.
 ### **Completed:**
@@ -27,3 +27,4 @@ This blog post and many other regular site updates are much later than expected 
 
 ## Goals for Next Month
 - Make some F2U Templates! 
+- Update the media log A LOT. I want to add mini reviews and a filtering system for anime/manga. I also want to make the game log prettier with images and a filtering system as well.
