@@ -1,5 +1,5 @@
 :root{
-  --darkcolor: #020a16;
+  --darkcolor: #000000;
   --text:#f3d5e1;
   --text2:#ffffff;
   --text3:#333333;
@@ -34,6 +34,10 @@ a{
 a:hover{
 color:;
   text-shadow: 0 0 5px var(--text), 0 0 10px var(--text), 0 0 15px var(--text);
+}
+
+a, button{
+  cursor: url(/images/pointer.png), pointer;
 }
 
 /* Change text selection color */
@@ -412,26 +416,32 @@ nav a:hover::after {
 
 @media (max-width: 1150px) {
 
-  
   nav a::after {
-    width: 100%;     
+    width: 90%;     
   }
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   nav a {
     display: block;        
     text-align: left;      
     padding: 0 0px;       
     margin: 0px 0;       
   }
+
+    nav a::after {
+    display:none; 
+  }
+
   nav a:nth-child(odd),
   nav a:nth-child(even) {
     display: block !important;      
     justify-content: unset !important;
     align-items: unset !important;
-    padding-right: 0 !important;   
+    padding-right: 0 !important;
+    text-align: left;
+    padding: 0;
   }
 }
 

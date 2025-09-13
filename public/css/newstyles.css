@@ -36,6 +36,10 @@ color:;
   text-shadow: 0 0 5px var(--text), 0 0 10px var(--text), 0 0 15px var(--text);
 }
 
+a, button{
+  cursor: url(/images/pointer.png), pointer;
+}
+
 /* Change text selection color */
 ::selection {
   background: var(--text3);  /* highlight background */
