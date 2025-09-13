@@ -58,6 +58,14 @@ h1, h2, h3{
   color:var(--text2);
 }
 
+h1{
+  font-size: 4em;
+}
+
+h2{
+  font-size: 3em;
+}
+
 h3{
   font-size: 2em;
 }
@@ -519,26 +527,6 @@ nav a:hover::after {
   font-size: 0.9em;
 }
 
-.post-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2em; /* space between posts */
-}
-
-.post-item {
-  background: #00000066; /* semi-transparent background */
-  border: 1px solid #ccc;
-  padding: 1.5em;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.post-item:hover {
-  background: #00000088;
-}
 
 .post-list {
   list-style: none;
@@ -554,6 +542,12 @@ nav a:hover::after {
   padding: 1.5em;
   border-radius: 8px;
   transition: 0.3s ease;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.post-item:hover {
+  background: #00000088;
 }
 
 .post-item h2 {

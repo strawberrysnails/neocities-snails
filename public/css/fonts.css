@@ -55,6 +55,12 @@
   src: url(/fonts/Angelic.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: Animal Crossing;
+  src: url(/fonts/AnimalCrossing.ttf) format("truetype");
+}
+
+
 /* Regular Merriweather */
 @font-face {
   font-family: 'Merriweather';
