@@ -1,6 +1,7 @@
 ---
 layout: main
 ---
+<main>
 <script src="/javascript/mylikebutton.js"></script>
 
 <article class="blog-post">
@@ -29,17 +30,15 @@ layout: main
 
 
 </article>
-<nav class="post-navigation">
-  <div class="prev-post">
+
     {% set previousPost = collections.blog | getPreviousCollectionItem(page) %}
     {% if previousPost %}
       <a href="{{ previousPost.url }}">← {{ previousPost.data.title }}</a>
     {% endif %}
-  </div>
-  <div class="next-post">
+|
     {% set nextPost = collections.blog | getNextCollectionItem(page) %}
     {% if nextPost %}
       <a href="{{ nextPost.url }}">{{ nextPost.data.title }} →</a>
     {% endif %}
-  </div>
-</nav>
+
+</main>

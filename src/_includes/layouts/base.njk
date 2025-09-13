@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-  
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,46 +14,101 @@
 <title>{{ site.title }}{% if title %} | {{ title }}{% endif %}</title>
 
   </head>
-  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
-
-<div class="light">
-</div>
-
-    <div class="container">
-    <header>
-      <a href="/"><div class="banner-container">
-        <a href="/"><h1 class="banner-title">snails.town</h1></a>
+  <body>
+    <img src="/images/zero.png" alt="zero" class="zero">
+    <img class="lunar-tear" src="/images/DOD3_flower.png">
+<div class="container">
+  <header><a href="/index.html" class="title">Snails.Town</a></header>
+  <div class="main-layout">
+      <div class="mobile-links">
+      <a href="/blog">Blog</a>
+      <a href="/links">Neighborhood</a>
+      <a href="/medialog">MediaLog</a>
+      <a href="/notebook">Notebook</a>
+      <a href="/site">About</a>
+      <a href="/map">Sitemap</a>
+      <a href="/guestbook">Guestbook</a>
       </div>
-    </a>
-      <ul class="a">
-      <img src="/images/graphics/wing-left.webp">
-      <li><a href="/blog">Blog</a>
-      <li><a href="/links">Neighborhood</a></li>
-      <li><a href="/medialog">Media Log</a></li>
-      <li><a href="/notebook">Notebook</a></li>
-      <img src="/images/graphics/wing-right.webp">
-      </ul>
-    </header>
+    <nav>
+      <h3 style="line-height: .5;">Navigation</h3>
+      <a href="/blog">Blog</a>
+      <a href="/links">Neighborhood</a>
+      <a href="/notebook">Notebook</a>
+      <a href="/medialog">MediaLog</a>
+      <a href="/site">About</a>
+      <a href="/map">Sitemap</a>
+      <a href="/guestbook">Guestbook</a>
 
-  <main>
-    <div class="content">{{ content | safe }}</div>
-  </main>
+<!-- MOON START © wdisseny -->
 
-<!-- FOOTER --->
-<footer>
-  <a href="https://copyheart.org/">♡2025</a> |
-  <a href="/map/">Sitemap</a> | <a href="/site">Credits/Info</a>
-  (ﾐዋ ﻌ ዋﾐ)ﾉ
-</footer>
+<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
+    <div style="font-weight:bold"></div>
+    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsla(0, 0%, 30%, 0.171))" class="moon-svg"></div>
+    <div></div>
+    <div style="font-size:smaller">.</div>
 </div>
-<div class="bottom-right-ui">
+
+<script>
+(function() {
+    var d = new Date().getDate();
+    var m = document.querySelectorAll("#contain_moon div");
+    var a = new XMLHttpRequest();
+    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(240, 240, 240)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+    
+    m[1].style.height = "100px";
+    
+    a.onreadystatechange = function() {
+        if (a.readyState == 4 && a.status == 200) {
+            var b = JSON.parse(a.responseText);
+            m[1].innerHTML = b.phase[d].svg;
+            if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+            m[2].innerHTML = b.phase[d].npWidget;
+            m[3].innerHTML = "Next full moon:<br>" + b.nextFullMoon;
+        }
+    };
+    
+    a.open("GET", url, true);
+    a.send();
+})()
+</script>
+<style>
+#contain_moon div:nth-child(3) {
+    position: relative; 
+    font-family: "Jim Nightshade";
+    margin-top: -30px;
+    z-index: 2; 
+    font-size: 1.3em; 
+    color: #ffffff;
+  }
+
+.moon-svg {
+    position: relative; 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1; 
+}
+
+.moon-svg:hover {
+    transform: scale(1.1); 
+}
+
+</style>
+
+<!-- MOON END -->
+    </nav>
+        {{ content | safe }} 
+  </div>
+  <footer>
+   ᓚᘏᗢ snails.town since 2019 | <a href="https://neocities.org/site/snails">neocities profile</a> | <a href="https://github.com/strawberrysnails/neocities-snails">source code</a>
+  </footer>
+  <!--
+  <div class="bottom-right-ui">
 <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
 <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
 <select name="styleswitcher" class="styleswitcher">
   <option value="maintheme">OG SNAIL (default)</option>
   <option value="miku">MIKU</option>
 </select>
-</div>
+</div> --->
 
 </select>
 </form>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,236 +15,213 @@
 
   </head>
   <body>
+    <img src="/images/zero.png" alt="zero" class="zero">
+    <img class="lunar-tear" src="/images/DOD3_flower.png">
+<div class="container">
+  <header><a href="/index.html" class="title">Snails.Town</a></header>
+  <div class="main-layout">
+      <div class="mobile-links">
+      <a href="/blog">Blog</a>
+      <a href="/links">Neighborhood</a>
+      <a href="/medialog">MediaLog</a>
+      <a href="/notebook">Notebook</a>
+      <a href="/site">About</a>
+      <a href="/map">Sitemap</a>
+      <a href="/guestbook">Guestbook</a>
+      </div>
+    <nav>
+      <h3 style="line-height: .5;">Navigation</h3>
+      <a href="/blog">Blog</a>
+      <a href="/links">Neighborhood</a>
+      <a href="/notebook">Notebook</a>
+      <a href="/medialog">MediaLog</a>
+      <a href="/site">About</a>
+      <a href="/map">Sitemap</a>
+      <a href="/guestbook">Guestbook</a>
 
-<div class="light">
+<!-- MOON START © wdisseny -->
+
+<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
+    <div style="font-weight:bold"></div>
+    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsla(0, 0%, 30%, 0.171))" class="moon-svg"></div>
+    <div></div>
+    <div style="font-size:smaller">.</div>
 </div>
 
-    <div class="container">
-    <header>
-      <a href="/"><div class="banner-container">
-        <a href="/"><h1 class="banner-title">snails.town</h1></a>
-      </div>
-    </a>
-      <ul class="a">
-      <img src="/images/graphics/wing-left.webp">
-      <li><a href="/blog">Blog</a>
-      </li><li><a href="/links">Neighborhood</a></li>
-      <li><a href="/medialog">Media Log</a></li>
-      <li><a href="/notebook">Notebook</a></li>
-      <img src="/images/graphics/wing-right.webp">
-      </ul>
-    </header>
+<script>
+(function() {
+    var d = new Date().getDate();
+    var m = document.querySelectorAll("#contain_moon div");
+    var a = new XMLHttpRequest();
+    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(240, 240, 240)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+    
+    m[1].style.height = "100px";
+    
+    a.onreadystatechange = function() {
+        if (a.readyState == 4 && a.status == 200) {
+            var b = JSON.parse(a.responseText);
+            m[1].innerHTML = b.phase[d].svg;
+            if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+            m[2].innerHTML = b.phase[d].npWidget;
+            m[3].innerHTML = "Next full moon:<br>" + b.nextFullMoon;
+        }
+    };
+    
+    a.open("GET", url, true);
+    a.send();
+})()
+</script>
+<style>
+#contain_moon div:nth-child(3) {
+    position: relative; 
+    font-family: "Jim Nightshade";
+    margin-top: -30px;
+    z-index: 2; 
+    font-size: 1.3em; 
+    color: #ffffff;
+  }
 
-  <main>
-    <div class="content">
-<div class="home">
+.moon-svg {
+    position: relative; 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1; 
+}
 
-  <!-- Top row section -->
-  <div class="top-row">
-    <!-- Left column -->
-    <div class="intro">
-    <h1>Welcome to my site</h1>
-    <p>This is <b>snails</b>: my small, snail-paced corner of the internet. It’s a personal archive of my thoughts, snapshots, and things I enjoy. 
-      This site is <b>mobile-friendly</b>, <b>safe for work</b>, and uses <b>JavaScript</b>.</p>
-      <p>Reccomended Page: <a href="/Notebook">Notebook</a> – Full of goodies and resources for you. 
-    </p>
-    <img src="/images/graphics/chain2.gif" width="33%"><img src="/images/graphics/chain2.gif" width="33%"><img src="/images/graphics/chain2.gif" width="33%">
-    <br><br>
-    <a class="image-link" href="/guestbook/" style="margin-left:25%;"><img src="/images/graphics/signmybook.png" width="55%"></a>
-     
-    </div>
+.moon-svg:hover {
+    transform: scale(1.1); 
+}
 
-    <!-- Right column  -->
-    <div class="latest-content">
-      <div class="latest-picture">
-        <fieldset>
-          <legend><a href="notebook/photogrid">Latest Picture</a></legend>
+</style>
+
+<!-- MOON END -->
+    </nav>
+        <main>
+  <div style="margin-top: 20px;">
+<img src="/images/wiess.png" alt="Grimore Wiess" style="float:left; width:190px; height:auto; margin:0 15px 15px 0; border-radius:0px; transition: transform 0.3s;" onmouseover="this.style.transform='rotate(-5deg)';" onmouseout="this.style.transform='rotate(0deg)';">
+<p><b style="font-size:3em; font-family: Kelmscott;">Welcome,</b> traveler - you have landed in <i>snails.town</i>, a personal archive of my thoughts, interests, creations, and more. The website theme is inspired by the <i>DrakeNieR</i> series,
+  specifically Drakengard 3, my favorite video game. I enjoy <a href="/blog">writing</a>, experimenting with javascript, and <a href="/medialog/games">gaming</a>. I write about web development, device modding, and traveling.
+  I have eventual plans to create free-to-use templates and widgets. For now, I have lots of free resources and goodies listed in the <a href="/notebook">notebook</a>. </p>
+<p>This website is safe for work and mobile-friendly. Some things are still a work-in-progress to me. You can learn more about it <a href="/site">here</a>.</p>
+<p>Please explore freely &amp; you are welcome to leave a message in my <a href="/guesbook">guestbook</a>. Thanks for visiting! (。・ω・。)</p> 
+</div>
+<img width="100%" src="/images/div.png">
+<fieldset>
+  <legend>Recent Blog Post</legend>
+    
           
-            
-            <div class="responsive">
-              <a class="image-link" href="notebook/photogrid">
-                <img src="images/photogrid/doublemiku.png">
-              </a>
-            </div>
-          
-        </fieldset>
-      </div>
-      <br>
-      <img src="/images/graphics/chain2.gif" width="49%"><img src="/images/graphics/chain2.gif" width="49%">
-      <br><br>
-        <fieldset>
-          
-          
-            <legend><a href="/blog">Latest  Blog Post </a> <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small></legend>
-            <h2><a href="/blog/otakon-2025.html">Otakon 2025 </a></h2>
-            <i class="bi bi-calendar-heart"></i> <time datetime="2025-08-14">August 14, 2025</time> | <i class="bi bi-stopwatch"></i> 3 min
+            <i class="bi bi-paperclip"></i> <a href="/blog/otakon-2025.html">Otakon 2025</a> |
+            <i class="bi bi-calendar-heart"></i> <time datetime="2025-08-14">August 14, 2025</time> | <i class="bi bi-stopwatch"></i> 3 min | <a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i> RSS</a>
           
           
             <p>My weekend at Otakon 2025. Cosplays, gaming, and more!</p>
           
-        </fieldset>
-      </div>
-    </div>
-    
-  <!-- Bottom row section -->
-  <div class="bottom-row">
-    <div class="to-do">
-      <fieldset>
-        <legend>To-Do List</legend>
-        
-        <ul class="to-do">
-          <li>Update Manga and Anime log to have ratings and maybe some notes. Maybe add sorting/tags too.</li>
-          <li>Update site credits/info to be more accurate and move to Notebook.</li>
-          <li>Update game log to look better and add sorting.</li>
-          <li>Tags/sorting to wishlist.</li>
-          <li>DrakeNieR shrine.</li>
-          <li>Miku shrine.</li>
-          </ul>
-          <ul class="done">
-          <li>Add scroll to top button</li>
-          <li>Organize Garden page</li>
-          <li>add modal to photogrid</li>
-          <li>Make a custom favicon and cursor</li>
-          <li>Join some webrings or cliques</li>
-          <li>RSS Feed</li>
-          <li>Comment box or guestbook perhaps</li>
-          <li>Sitemap</li>
-          <li>About the site/links</li>
-          <li>Photogrid</li>
-          <li>Blog / blog tags</li>
-      </ul>
+</fieldset><br>
+<fieldset>
+<legend>Webrings</legend>
+<div class="webring">
+  <a rel="noreferrer" target="_blank" href="https://webring.bucketfish.me/redirect.html?to=prev&name=snails"><i class="bi bi-arrow-left"></i></a>
+  | <a rel="noreferrer" target="_blank" class="bucket" href="https://webring.bucketfish.me"> Bucket Webring</a>
+  | <a rel="noreferrer" target="_blank" href="https://webring.bucketfish.me/redirect.html?to=random&name=snails"><i class="bi bi-shuffle"></i></a>
+  | <a rel="noreferrer" target="_blank" href="https://webring.bucketfish.me/redirect.html?to=next&name=snails"><i class="bi bi-arrow-right"></i></a>
+</div>
 
-      </fieldset>
-    </div>
-    <div class="updates">
-      <fieldset>
-        <legend>Updates</legend>
-        
-          <ul>
-            
-              <li>
-                <strong><time datetime="2025-08-18">
-                  August 18, 2025</time></strong>
-                 – <a href="/notebook/bookmarks/">Bookmarks</a> have been moved to the Notebook page for an easier reading experience.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-08-14">
-                  August 14, 2025</time></strong>
-                 – <a href="/blog/otakon-2025.html">Otakon 2025</a> blog post is up!
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-08-12">
-                  August 12, 2025</time></strong>
-                 – Added scroll to top button.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-07-30">
-                  July 30, 2025</time></strong>
-                 – Switched from CSS grid to flexbox on every page for more accessibility. Every page should be perfectly responsive now. Also added a "like" button to my blog posts!
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-07-23">
-                  July 23, 2025</time></strong>
-                 – Improved <a href="/notebook/photogrid">photogrid</a> with modals and ability to click through gallery with keyboard. Added Miku theme in honor of last weekend.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-07-03">
-                  July 3, 2025</time></strong>
-                 – Tweaked some colors and graphics and removed light theme option
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-06-18">
-                  June 18, 2025</time></strong>
-                 – Super late May Patch Notes is up. New picture on photogrid. Nier Replicant and Drakengard 3 marked completed in game log
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-05-29">
-                  May 29, 2025</time></strong>
-                 – Made a light theme and theme picker for the site. It's still a WIP but yeah :)
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-05-12">
-                  May 12, 2025</time></strong>
-                 – <a href="/guestbook/">Guestbook</a> + <a href="/blog/feed.xml">Blog RSS Feed</a> is up.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-05-11">
-                  May 11, 2025</time></strong>
-                 – <a href="/map/">Sitemap</a> is up.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-05-06">
-                  May 6, 2025</time></strong>
-                 – Complete overhaul of theme ◝(ᵔᗜᵔ)◜ I wanted something simipler, cozier, and darker. If you miss the old theme, you can cry while looking at it <a href="/archives/4-30-25.html">here</a>. 
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-04-22">
-                  April 22, 2025</time></strong>
-                 – Two new pictures uploaded to my <a href="/notebook/photogrid">photogrid</a> and a whole new page — check out my <a href="/pins">Pinboard</a>.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-04-20">
-                  April 20, 2025</time></strong>
-                 – New pages: <a href="/site">site info</a> &amp; <a href="/links">links</a>. Also blog tags now work.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-04-18">
-                  April 18, 2025</time></strong>
-                 – Finished Nier: Replicant and updated my <a href="/medialog/games">gamelog</a>.
-              </li>
-            
-              <li>
-                <strong><time datetime="2025-04-17">
-                  April 17, 2025</time></strong>
-                 – Big theme change :3 more my style
-              </li>
-            
-          </ul>
-        
-      </fieldset>
-    </div>
+<div class="webring"> 
+  <a rel="noreferrer" href="https://baccyflap.com/noai/?prv&s=nal" target="_blank">« prev</a> |
+  <a rel="noreferrer" href="https://baccyflap.com/noai" target="_blank">no ai webring</a>
+  <a rel="noreferrer" style="font-size:60%" href="https://baccyflap.com/noai/?rnd" target="_blank">(random)</a> |
+  <a rel="noreferrer" href="https://baccyflap.com/noai/?nxt&s=nal" target="_blank">next »</a>
+</div>
+
+<div class="webring" style="background-image: url('https://void.shroom.ink/src/img/background.webp');font-family:monospace;width:250px;text-align:center;">
+  <a rel="noreferrer" aria-label="Previous" href="https://void.shroom.ink/snails/previous" id="previous" target="_blank" title="previous">←</a>
+  <a rel="noreferrer" aria-label="Home" href="https://void.shroom.ink/" id="home" target="_blank" title="home">void.shrooms</a>
+  <a rel="noreferrer" aria-label="Next" href="https://void.shroom.ink/snails/next" id="next" target="_blank" title="next">→</a>
+</div>
+</fieldset>
+</main>
+<aside>
+
+
+  
+<div class="responsive">
+  <div class="image-frame">
+    <a class="clipped-link" href="notebook/photogrid">
+      <img class="inner-image" src="images/photogrid/doublemiku.png" alt="Recent Photo">
+    </a>
+    <div class="frame-overlay"></div>
   </div>
+</div>
+<hr>
 
-</div>
-</div>
-  </main>
 
-<!-- FOOTER --->
-<footer>
-  <a rel="noreferrer" target="_blank" href="https://copyheart.org/">♡2025</a> |
-  <a href="/map/">Sitemap</a> | <a href="/site">Credits/Info</a>
-  (ﾐዋ ﻌ ዋﾐ)ﾉ
-</footer>
+
+
+<h3 style="line-height: 0;">Status</h3>
+<i>(via <a href="/medialog">media log)</a></i>
+<ul>
+  
+    <li>Playing:<br>
+      <a href="/medialog/games">Blue Prince</a> (5.5 hrs)</li>
+  
+  
+  <li>Watching:<br>
+    
+      <a href="/medialog/anime">Soukyuu no Fafner</a>
+    
+  </li>
+  
+  <li>Reading:<br>
+    
+      <a href="/medialog/manga">Hotaru no Yomeiri</a>
+    
+  </li>
+</ul>
+<hr>
+<div class="buttons-n-blinkers">
+  <div>
+<img src="/images/stamps/zerodod3.png" alt="zerodod3.png">
+<img src="/images/stamps/zeromikhail.png" alt="zeromikhail.png">
+<img src="/images/stamps/mikhail.png" alt="mikhail.png">
+<img src="/images/stamps/onedod3.png" alt="onedod3.png">
+<img src="/images/stamps/twodod3.png" alt="twodod3.png">
+<img src="/images/stamps/threedod3.png" alt="threedod3.png">
+<img src="/images/stamps/fourdod3.png" alt="fourdod3.png">
+<img src="/images/stamps/fivedod3.png" alt="fivedod3.png">
+  </div>
 </div>
-<div class="bottom-right-ui">
+
+
+</aside>
+ 
+  </div>
+  <footer>
+   ᓚᘏᗢ snails.town since 2019 | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a>
+  </footer>
+  <!--
+  <div class="bottom-right-ui">
 <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
 <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
 <select name="styleswitcher" class="styleswitcher">
   <option value="maintheme">OG SNAIL (default)</option>
   <option value="miku">MIKU</option>
 </select>
-</div>
-
-
-
+</div> --->
 
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
 </script>
-<script src="/javascript/main.js?nocache=?nocache=1757473939707"></script>
-  </body>
+<script src="/javascript/main.js?nocache=?nocache=1757732752390"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    toggleButton.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  });
+</script>
+
+  </div></body>
 </html>
 
 

@@ -6,7 +6,7 @@
 
         :root {
         --darkcolor: rgb(29, 29, 29);
-        --contrast:rgb(250, 170, 191);
+        --contrast:#f3d5e1;
         --silver: rgb(237, 237, 237);
         --grey:#292929;
         --darkgrey:#181818;
@@ -101,10 +101,10 @@
   max-width: 1200px;
   min-width: 750px;
   margin: auto;
-  background-color: var(--contrast);
+  background-color: #333;
   margin-top: 1%;
   padding: 0.5%;
-  border: 6px #ffffff outset;
+  border: 6px var(--contrast) inset;
   border-radius: 5px;
 }
 

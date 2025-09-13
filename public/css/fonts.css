@@ -50,6 +50,11 @@
   src: url(/fonts/JimNightshade.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: Chaos;
+  src: url(/fonts/Angelic.ttf) format("truetype");
+}
+
 /* Regular Merriweather */
 @font-face {
   font-family: 'Merriweather';

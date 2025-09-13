@@ -9,6 +9,7 @@ eleventyNavigation:
   order: 1
 ---
 
+<main>
 
 # Blog <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small>
 
@@ -37,3 +38,4 @@ eleventyNavigation:
   </li>
 {% endfor %}
 </ul>
+</main>

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snail-paced personal space on the web">
+            <!-- CSS/JS + CACHEBUSTING -->            <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
+
+<title>Snails | Homepage</title>
+
+  </head>
+  <style>
+
+    @font-face {
+  font-family: Alkhemikal;
+  src: url(/fonts/Alkhemikal.ttf);
+}
+
+    :root {
+  --darkcolor: #812a2f;
+  --contrast:rgb(179, 87, 112);
+  --silver: rgb(237, 237, 237);
+  --grey:#292929;
+  --darkgrey:#181818;
+  --bg:#36080C;
+}
+
+
+body {
+  font-family: DejaVuSansMono, monospace;
+  font-size: 0.95em;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  background-image: url(/images/bg.png); /* https://www.zerochan.net/Pixiv+Id+20784982 */
+  margin: auto;
+  text-align: left;
+  cursor: url(/images/cursor.png), default;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+a, button{
+  cursor: url(/images/pointer.png), pointer;
+}
+
+input[type="text"], textarea, [contenteditable] {
+  cursor: url('/images/text.png') 2 12, text;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: dotted underline;
+}
+
+
+.image-link img {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.image-link:hover img {
+  transform: scale(1.05);
+}
+
+a[target="_blank"]::after {
+  content: "\F1C5"; /* bi-box-arrow-up-right */
+  font-family: "bootstrap-icons";
+  margin-left: 0;
+  margin-left: 0.25em;
+  font-size: 0.65em;
+}
+
+ul {
+  list-style: none;
+  padding-left: .5em; /* distance from left */
+}
+
+li {
+  position: relative;
+  padding-left: 1.5em; /* distance between bullet and text */
+  line-height: 1.5em;
+}
+
+li::before {
+  content: "✩";
+  position: absolute;
+  left: 0;
+  color: inherit; 
+}
+
+
+ul.to-do li{
+  font-size: 1em;
+  padding-left: 5px;
+  margin-left: 10px;
+}
+
+ul.to-do li::before {
+  font-family: "bootstrap-icons";
+  content:"\F584";
+  left: -20px;
+}
+
+ul.done li{
+  font-size: 1em;
+  padding-left: 5px;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+ul.done li::before {
+  content:"\F26D";
+  font-family: "bootstrap-icons";
+  left: -20px;
+}
+
+/* NAVIGATION */
+ul.a {
+  list-style: none;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+ul.a li {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5em; /* space between heart and text */
+  padding-right: 20px;
+  line-height: 1.5em;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+ul.a li::before {
+  content: "♡"; 
+  position: absolute;
+  left: 0;
+  color: inherit; 
+}
+
+ul.a li:nth-child(2)::before {
+  content: none;
+}
+
+
+h1 {
+  font-family: "Alkhemikal";
+  line-height: .7em;
+  font-size: 3em;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-family: "Kelmscott";
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+body {
+  background-color: var(--bg);
+  color:var(--silver);
+}
+
+a {
+  color: var(--contrast);
+}
+
+a:hover {
+  color: var(--silver);
+  text-decoration: dotted underline;
+}
+
+/* FLEXBOX LAYOUT */
+
+.content {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1024px;   /* Prevents it from growing too wide */
+  min-width: 320px;   /* Prevents it from shrinking too small */
+  box-sizing: border-box;
+}
+
+
+header{
+  width: 100%;
+  height: auto;
+  border: 8px solid;
+  border-image: url(/images/pixelborder3.png) 8 round;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  border: 8px solid;
+  border-image: url(/images/pixelborder3.png) 8 round;
+  overflow-y: scroll;
+}
+
+main,
+.post-item,
+.post-list {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+footer {
+  margin-bottom: 20px;
+  width: auto;
+  min-height: 15px;
+  max-height: auto;
+  padding: 20px;
+  text-align: center;
+  border: 8px solid;
+  border-image: url(/images/pixelborder3.png) 8 round;
+  padding:5px;
+}
+
+
+.banner-title {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  font-size: 5rem;
+  letter-spacing: 4px;
+  padding: 5px 10px;
+  transition: text-shadow 0.5s ease;
+}
+
+.banner-title:hover {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* NAVIGATION */
+
+ul.a a{
+  color:white;
+}
+
+ul.a a:hover{
+  color:var(--darkcolor);
+}
+
+ul.a li {
+  color:white;
+}
+
+.webring a {
+  color: white;
+}
+
+/* Change text selection color */
+::selection {
+  background: var(--contrast);  /* highlight background */
+  color: #000000;       /* text color while highlighted */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: var(--contrast);
+  color: #000000;
+}
+
+/* LIGHT */
+
+.light{
+position: fixed;
+background-image: url(/images/graphics/lamp2.png);
+width: auto;
+}
+
+
+/* HOME */
+
+/* Layout for top and bottom rows on homepage */
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Top row: intro (wide) + latest content (narrow) */
+.top-row {
+  display: flex;
+  gap: 20px;
+}
+
+.intro {
+  flex: 2;
+}
+
+.latest-content {
+  flex: 1;
+}
+
+/* Bottom row: to-do and updates, equal width */
+.bottom-row {
+  display: flex;
+  gap: 20px;
+}
+
+.to-do,
+.updates {
+  flex: 1;
+}
+
+/* Responsive stacking */
+@media (max-width: 750px) {
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .intro,
+  .latest-content,
+  .to-do,
+  .updates {
+    width: 100%;
+  }
+}
+
+.latest-content h2{
+  font-size: 1em;
+}
+
+.latest-content a:any-link{
+  text-decoration: none;
+}
+
+.latest-content legend a{
+  transition: text-shadow 0.5s ease;
+}
+
+.latest-content legend a:hover{
+  text-decoration: none;
+}
+
+.latest-picture img{
+    max-width: 100%;
+    height: auto;
+    transition: 0.2s;
+    filter: grayscale(100%);  
+}
+
+.latest-picture img:hover{
+  filter: none;
+}
+
+
+.bottom-row fieldset{
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+
+details summary {
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger;
+}
+
+details > * {
+  margin-left: 1em;
+}
+
+fieldset {
+  padding: 10px;
+  vertical-align: top;
+  background-image: url(/images/grid.png);
+}
+
+fieldset li{
+  line-height: 2em;
+}
+
+legend {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 5px;
+  font-family: "Alkhemikal";
+  letter-spacing: 2px;
+}
+
+/* MOBILE VIEW*/
+
+@media (max-width: 750px) {
+  img,
+  pre code {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+
+
+/* GRID LAYOUT */
+
+
+.container {
+  background-color: rgba(19, 19, 19, 0.6);
+}
+
+
+header{
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+main {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+
+footer {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.banner-container {
+  background-image: url(images/banner2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.banner-title {
+  color: white;
+}
+
+.banner-title:hover {
+  text-shadow: 0 0 5px var(--contrast), 0 0 10px var(--contrast), 0 0 15px var(--contrast);
+}
+
+.latest-content legend a{
+color:#fff;
+transition: text-shadow 0.5s ease;
+}
+
+
+.latest-content legend a:hover{
+  text-shadow: 0 0 5px var(--contrast), 0 0 10px var(--contrast), 0 0 15px var(--contrast);
+}
+
+
+details {
+  border-left: 2px solid rgb(255, 255, 255);
+}
+
+details > details {
+  border-left: 2px dashed rgb(255, 255, 255);
+}
+
+details > details > details {
+  border-left: 2px dotted rgb(255, 255, 255);
+}
+
+fieldset {
+  border: var(--contrast) 2px dashed;
+}
+
+/* NAVIGATION */
+ul.a {
+  list-style: none;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--contrast);
+  border-top: 3px solid var(--darkcolor);
+  border-bottom: 3px solid var(--darkcolor);
+}
+
+
+/* BLOG PAGE STYLES */
+.post-item {
+  border: 1px #fff dotted;
+}
+
+
+/* STYLING TOC FOR LINKS PAGE */
+
+.toc a {
+  color: var(--silver);
+}
+
+.toc a:hover {
+  color: var(--contrast);
+  text-decoration: dashed underline;
+}
+
+
+.toc > ol > li > ol > li {
+  border-left: 2px dashed #ddd;
+}
+
+
+/* (H3)*/
+.toc > ol > li > ol > li > a {
+  color: #ffffff;
+}
+
+/* MEDIALOG */
+
+.link-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.link-card {
+  flex: 1 1 250px;
+  background: var(--darkgrey);
+  border: 1px dashed var(--silver);
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  background: none;
+}
+  </style>
+  <body>
+
+<div class="light">
+</div>
+
+    <div class="container">
+    <header>
+        <a href="/site">← back to main site</a>
+      <a href="/"><div class="banner-container">
+        <a href="#"><h1 class="banner-title">snails.town</h1></a>
+      </div>
+    </a>
+      <ul class="a">
+      <li><a href="#">Blog</a>
+      </li><li><a href="#">Neighborhood</a></li>
+      <li><a href="#">Media Log</a></li>
+      <li><a href="#">Notebook</a></li>
+      </ul>
+    </header>
+
+  <main>
+    <div class="content">
+<div class="home">
+
+  <!-- Top row section -->
+  <div class="top-row">
+    <!-- Left column -->
+    <div class="intro">
+    <h1>Welcome to my site</h1>
+    <p>This is <b>snails</b>: my small, snail-paced corner of the internet. It’s a personal archive of my thoughts, snapshots, and things I enjoy. 
+      This site is <b>mobile-friendly</b>, <b>safe for work</b>, and uses <b>JavaScript</b>.</p>
+      <p>Reccomended Page: <a href="/Notebook">Notebook</a> – Full of goodies and resources for you. 
+    </p>
+    <img src="images/chain2.gif" width="33%"><img src="images/chain2.gif" width="33%"><img src="images/chain2.gif" width="33%">
+    <br><br>
+    <a class="image-link" href="/guestbook/" style="margin-left:25%;"><img src="images/signmybook.png" width="55%"></a>
+     
+    </div>
+
+    <!-- Right column  -->
+    <div class="latest-content">
+      <div class="latest-picture">
+        <fieldset>
+          <legend><a href="#">Latest Picture</a></legend>
+          
+            
+            <div class="responsive">
+              <a class="image-link" href="#">
+                <img src="images/doublemiku.png">
+              </a>
+            </div>
+          
+        </fieldset>
+      </div>
+      <br>
+      <img src="images/chain2.gif" width="49%"><img src="images/chain2.gif" width="49%">
+      <br><br>
+        <fieldset>
+          
+          
+            <legend><a href="/blog">Latest  Blog Post </a> <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small></legend>
+            <h2><a href="/blog/otakon-2025.html">Otakon 2025 </a></h2>
+            <i class="bi bi-calendar-heart"></i> <time datetime="2025-08-14">August 14, 2025</time> | <i class="bi bi-stopwatch"></i> 3 min
+          
+          
+            <p>My weekend at Otakon 2025. Cosplays, gaming, and more!</p>
+          
+        </fieldset>
+      </div>
+    </div>
+    
+  <!-- Bottom row section -->
+  <div class="bottom-row">
+    <div class="to-do">
+      <fieldset>
+        <legend>To-Do List</legend>
+        
+        <ul class="to-do">
+          <li>Update Manga and Anime log to have ratings and maybe some notes. Maybe add sorting/tags too.</li>
+          <li>Update site credits/info to be more accurate and move to Notebook.</li>
+          <li>Update game log to look better and add sorting.</li>
+          <li>Tags/sorting to wishlist.</li>
+          <li>DrakeNieR shrine.</li>
+          <li>Miku shrine.</li>
+          </ul>
+          <ul class="done">
+          <li>Add scroll to top button</li>
+          <li>Organize Garden page</li>
+          <li>add modal to photogrid</li>
+          <li>Make a custom favicon and cursor</li>
+          <li>Join some webrings or cliques</li>
+          <li>RSS Feed</li>
+          <li>Comment box or guestbook perhaps</li>
+          <li>Sitemap</li>
+          <li>About the site/links</li>
+          <li>Photogrid</li>
+          <li>Blog / blog tags</li>
+      </ul>
+
+      </fieldset>
+    </div>
+    <div class="updates">
+      <fieldset>
+        <legend>Updates</legend>
+        
+          <ul>
+            
+              <li>
+                <strong><time datetime="2025-08-18">
+                  August 18, 2025</time></strong>
+                 – <a href="#">Bookmarks</a> have been moved to the Notebook page for an easier reading experience.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-08-14">
+                  August 14, 2025</time></strong>
+                 – <a href="#">Otakon 2025</a> blog post is up!
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-08-12">
+                  August 12, 2025</time></strong>
+                 – Added scroll to top button.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-07-30">
+                  July 30, 2025</time></strong>
+                 – Switched from CSS grid to flexbox on every page for more accessibility. Every page should be perfectly responsive now. Also added a "like" button to my blog posts!
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-07-23">
+                  July 23, 2025</time></strong>
+                 – Improved <a href="#>photogrid</a> with modals and ability to click through gallery with keyboard. Added Miku theme in honor of last weekend.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-07-03">
+                  July 3, 2025</time></strong>
+                 – Tweaked some colors and graphics and removed light theme option
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-06-18">
+                  June 18, 2025</time></strong>
+                 – Super late May Patch Notes is up. New picture on photogrid. Nier Replicant and Drakengard 3 marked completed in game log
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-05-29">
+                  May 29, 2025</time></strong>
+                 – Made a light theme and theme picker for the site. It's still a WIP but yeah 
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-05-12">
+                  May 12, 2025</time></strong>
+                 – <a href="/guestbook/">Guestbook</a> + <a href="/blog/feed.xml">Blog RSS Feed</a> is up.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-05-11">
+                  May 11, 2025</time></strong>
+                 – <a href="/map/">Sitemap</a> is up.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-05-06">
+                  May 6, 2025</time></strong>
+                 – Complete overhaul of theme ◝(ᵔᗜᵔ)◜ I wanted something simipler, cozier, and darker. If you miss the old theme, you can cry while looking at it <a href="/archives/4-30-25.html">here</a>. 
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-04-22">
+                  April 22, 2025</time></strong>
+                 – Two new pictures uploaded to my <a href="#">photogrid</a> and a whole new page — check out my <a href="#">Pinboard</a>.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-04-20">
+                  April 20, 2025</time></strong>
+                 – New pages: <a href="#">site info</a> &amp; <a href="#">links</a>. Also blog tags now work.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-04-18">
+                  April 18, 2025</time></strong>
+                 – Finished Nier: Replicant and updated my <a href="#">gamelog</a>.
+              </li>
+            
+              <li>
+                <strong><time datetime="2025-04-17">
+                  April 17, 2025</time></strong>
+                 – Big theme change :3 more my style
+              </li>
+            
+          </ul>
+        
+      </fieldset>
+    </div>
+  </div>
+
+</div>
+</div>
+  </main>
+
+<!-- FOOTER --->
+<footer>
+  <a rel="noreferrer" target="_blank" href="https://copyheart.org/">♡2025</a> |
+  <a href="#">Sitemap</a> | <a href="#">Credits/Info</a>
+  (ﾐዋ ﻌ ዋﾐ)ﾉ
+</footer>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+<script src="/javascript/main.js?nocache=?nocache=1757473939707"></script>
+  </body>
+</html>
