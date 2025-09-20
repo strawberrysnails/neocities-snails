@@ -254,3 +254,4 @@ document.addEventListener("DOMContentLoaded", function () {
   follower.classList.add("play"); // and makes them both play
   innerDiv.classList.add("play");
 })
+

@@ -60,6 +60,16 @@
   src: url(/fonts/AnimalCrossing.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: Calligraph421;
+  src: url(/fonts/Calligraph421.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Bronela;
+  src: url(/fonts/Bronela.ttf) format("truetype");
+}
+
 
 /* Regular Merriweather */
 @font-face {

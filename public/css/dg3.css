@@ -1,0 +1,170 @@
+body{
+margin: auto;
+text-align: left;
+background-color:#D6B88A;
+font-family: Bronela;
+color:#503F27;
+}
+
+h1, h2{
+ font-family: Calligraph421;
+}
+
+a{
+color:#503F27;
+font-weight: bold;
+}
+
+.container {
+  background: url("/images/dg3/chapterselect.png") no-repeat center/cover;
+  width: 100%;
+  max-width: 1400px;  
+  aspect-ratio: 16/9;
+  margin: 50px auto 50px auto; 
+  position: relative;
+  border: 10px #755E27 inset;
+}
+
+.grid-container { 
+    margin-top: 220px;
+    display: grid;
+  grid-template-columns: 47% 53%;
+  grid-template-rows: 450px 1fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "left-page right-page ."
+    "footer footer ."
+    ". . .";
+}
+
+.left-page {
+grid-area: left-page;
+padding:10px;
+overflow-y: scroll;
+
+}
+
+.right-page {
+grid-area: right-page;
+padding:20px;
+overflow-y: scroll;
+}
+
+.footer {
+grid-area: footer;
+text-align: center;
+margin-top: 6px;
+margin-left:-100px;
+color:white;
+}
+
+.footer a{
+    color:white;
+}
+
+
+.logo{
+    max-width: 600px;
+    position: absolute;
+    margin-left:40%;
+    margin-top: -20px;
+    z-index: 10;
+}
+
+/* TO TOP BUTTON */
+
+#myBtn {
+  opacity: 0;              /* Start invisible */
+  pointer-events: none;    /* Can't click when invisible */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade */
+  
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 35px;
+  background-color: transparent;
+  color:#fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#myBtn.show {
+  opacity: 1;
+  pointer-events: auto; /* Re-enable clicking */
+}
+
+#myBtn:hover {
+  color:#cfcfcf;
+  transition: 0.3s ease-in-out;
+  cursor: url(/images/pointer.png), pointer;
+}
+
+/* MUSIC PLAYER */
+.simple-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+  background-color: #fff;
+  max-width: 400px;
+  margin: 10px auto;
+  border: 2px solid #ddd;
+  padding:5px;
+}
+
+.simple-player .cover {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.simple-player .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.song-title {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.song-title span {
+    font-family: Calligraph421;
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+}
+
+.controls button {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #ddd;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.seek-slider {
+  flex: 1;
+}
