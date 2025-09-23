@@ -1,0 +1,15 @@
+<ul class="post-list">
+{% for post in collections.blog %}
+  <li>
+    <a href="{{ post.url }}" class="post-item">
+      <h2>{{ post.data.title }}</h2>
+      <i class="bi bi-calendar-heart"></i>
+      <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | 
+      <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
+      {% if post.data.excerpt %}
+        <p>{{ post.data.excerpt }}</p>
+      {% endif %}
+    </a>
+  </li>
+{% endfor %}
+</ul>

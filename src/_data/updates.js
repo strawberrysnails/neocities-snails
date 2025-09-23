@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-09-23"),
+    blurb: `Theme updates and tweaks. New photos in the <a href="/notebook/photogrid">photogrid</a>! Working on an RSS feed for the update log. New shrine coming soon hehe.`
+    },
+    {
     date: new Date("2025-09-12"),
     blurb: `Huge theme update! No blog post in a while because I've been working on the new layout but a new one will be up soon. See old layout <a href="/archives/6-01-25">here</a>.`
     },

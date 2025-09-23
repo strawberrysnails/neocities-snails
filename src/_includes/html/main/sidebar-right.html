@@ -1,0 +1,110 @@
+
+{% if photos and photos.length %}
+  {% set recent = photos[0] %}
+<div class="responsive">
+  <div class="image-frame">
+    <a class="clipped-link" href="notebook/photogrid">
+      <img class="inner-image" src="images/photogrid/{{ recent.src }}" alt="Recent Photo">
+    </a>
+    <div class="frame-overlay"></div>
+  </div>
+</div>
+<hr>
+{% endif %}
+{% set animeList = (anime.anime | default([])) %}
+{% set mangaList = (manga.manga | default([])) %}
+
+<h3 style="line-height: 0;">Status</h3>
+<i>(via <a href="/medialog">media log)</a></i>
+<ul>
+  {% if steam %}
+    <li>Playing:<br>
+      <a href="/medialog/games">{{ steam.name }}</a> ({{ steam.hours }} hrs)</li>
+  {% endif %}
+  
+  <li>Watching:<br>
+    {% if animeList and animeList | length %}
+      <a href="/medialog/anime">{{ animeList | getCurrentAnimeWatch }}</a>
+    {% else %}
+      Nothing right now
+    {% endif %}
+  </li>
+  
+  <li>Reading:<br>
+    {% if mangaList and mangaList | length %}
+      <a href="/medialog/manga">{{ mangaList | getCurrentMangaRead }}</a>
+    {% else %}
+      Nothing right now
+    {% endif %}
+  </li>
+</ul>
+<hr>
+<div class="buttons-n-blinkers">
+  <div>
+<img src='/images/stamps/zerodod3.png' alt='zerodod3.png'>
+<img src='/images/stamps/zeromikhail.png' alt='zeromikhail.png'>
+<img src='/images/stamps/mikhail.png' alt='mikhail.png'>
+<img src='/images/stamps/onedod3.png' alt='onedod3.png'>
+<img src='/images/stamps/twodod3.png' alt='twodod3.png'>
+<img src='/images/stamps/threedod3.png' alt='threedod3.png'>
+<img src='/images/stamps/fourdod3.png' alt='fourdod3.png'>
+<img src='/images/stamps/fivedod3.png' alt='fivedod3.png'>
+  </div>
+</div>
+
+<!-- MOON START © wdisseny -->
+
+<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
+    <div style="font-weight:bold"></div>
+    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsla(0, 0%, 30%, 0.171))" class="moon-svg"></div>
+    <div></div>
+    <div style="font-size:smaller">.</div>
+</div>
+
+
+<script>
+(function() {
+    var d = new Date().getDate();
+    var m = document.querySelectorAll("#contain_moon div");
+    var a = new XMLHttpRequest();
+    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(240, 240, 240)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+    
+    m[1].style.height = "100px";
+    
+    a.onreadystatechange = function() {
+        if (a.readyState == 4 && a.status == 200) {
+            var b = JSON.parse(a.responseText);
+            m[1].innerHTML = b.phase[d].svg;
+            if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+            m[2].innerHTML = b.phase[d].npWidget;
+            m[3].innerHTML = "Next full moon:<br>" + b.nextFullMoon;
+        }
+    };
+    
+    a.open("GET", url, true);
+    a.send();
+})()
+</script>
+<style>
+#contain_moon div:nth-child(3) {
+    position: relative; 
+    font-family: "Jim Nightshade";
+    margin-top: -30px;
+    z-index: 2; 
+    font-size: 1.3em; 
+    color: #ffffff;
+  }
+
+.moon-svg {
+    position: relative; 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1; 
+}
+
+.moon-svg:hover {
+    transform: scale(1.1); 
+}
+
+</style>
+
+<!-- MOON END -->

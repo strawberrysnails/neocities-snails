@@ -5,91 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Snail-paced personal space on the web">
             <!-- CSS/JS + CACHEBUSTING -->
-            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1758328274155">
+            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1758596464271">
             <link rel="stylesheet" href="/css/fonts.css">
             <link rel="stylesheet" href="/css/bootstrap-icons.css">
             <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
-
+<script src="/javascript/animations.js"></script>
 <title>Snails | Neighborhood</title>
 
   </head>
   <body>
-    <img src="/images/zero.png" alt="zero" class="zero">
+    <img src="/images/zero.png" alt="zero" class="zero" id="myBtn" data-tooltip="for debug">
     <img class="lunar-tear" src="/images/DOD3_flower.png">
 <div class="container">
   <header><a href="/index.html" class="title">Snails.Town</a></header>
   <div class="main-layout">
-      <div class="mobile-links">
+     <!-- LEFT SIDEBAR -->  <div class="mobile-links">
       <a href="/blog">Blog</a>
       <a href="/links">Neighborhood</a>
       <a href="/medialog">MediaLog</a>
       <a href="/notebook">Notebook</a>
       <a href="/site">About</a>
       </div>
-    <nav>
-      <h3 style="line-height: .5;">Navigation</h3>
+      <nav class="sidebar-links">
+      <h3 class="nav-title">Navigation</h3>
       <a href="/blog">Blog</a>
       <a href="/links">Neighborhood</a>
       <a href="/notebook">Notebook</a>
       <a href="/medialog">MediaLog</a>
       <a href="/site">About</a>
-
-<!-- MOON START © wdisseny -->
-
-<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
-    <div style="font-weight:bold"></div>
-    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsla(0, 0%, 30%, 0.171))" class="moon-svg"></div>
-    <div></div>
-    <div style="font-size:smaller">.</div>
-</div>
-
-<script>
-(function() {
-    var d = new Date().getDate();
-    var m = document.querySelectorAll("#contain_moon div");
-    var a = new XMLHttpRequest();
-    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(240, 240, 240)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
-    
-    m[1].style.height = "100px";
-    
-    a.onreadystatechange = function() {
-        if (a.readyState == 4 && a.status == 200) {
-            var b = JSON.parse(a.responseText);
-            m[1].innerHTML = b.phase[d].svg;
-            if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
-            m[2].innerHTML = b.phase[d].npWidget;
-            m[3].innerHTML = "Next full moon:<br>" + b.nextFullMoon;
-        }
-    };
-    
-    a.open("GET", url, true);
-    a.send();
-})()
-</script>
-<style>
-#contain_moon div:nth-child(3) {
-    position: relative; 
-    font-family: "Jim Nightshade";
-    margin-top: -30px;
-    z-index: 2; 
-    font-size: 1.3em; 
-    color: #ffffff;
-  }
-
-.moon-svg {
-    position: relative; 
-    transition: transform 0.3s ease-in-out; 
-    z-index: 1; 
-}
-
-.moon-svg:hover {
-    transform: scale(1.1); 
-}
-
-</style>
-
-<!-- MOON END -->
-    </nav>
+         <img src="/images/intoner-white.png">
+    </nav> 
         
 <!--
 <button class="toc-toggle" onclick="toggleTOC()">
@@ -101,8 +46,7 @@
 </nav>
   -->
 
-   
-              
+        
 <main>
 <h1 style="text-align: center;">Neighborhood</h1>
 <div class="link-grid">
@@ -137,7 +81,6 @@
 <div class="col">
 <h2>Webrings</h2>
 
-
 <div class="webring">
   <a rel="noreferrer" target="_blank" href="https://webring.bucketfish.me/redirect.html?to=prev&name=snails"><i class="bi bi-arrow-left"></i></a>
   | <a rel="noreferrer" target="_blank" class="bucket" href="https://webring.bucketfish.me"> Bucket Webring</a>
@@ -158,12 +101,11 @@
   <a rel="noreferrer" aria-label="Next" href="https://void.shroom.ink/snails/next" id="next" target="_blank" title="next">→</a>
 </div>
 
-
 <div class="webring">
-<div id="gamer-ring" style="text-align: center;">
-<script type="text/javascript" src="https://gamerring.neocities.org/js/variables.js"></script>
-<script type="text/javascript" src="https://gamerring.neocities.org/js/widget-whitetext.js"></script>
-</div>
+  <div id="gamer-ring">
+  <script type="text/javascript" src="https://gamerring.neocities.org/js/variables.js"></script>
+  <script type="text/javascript" src="https://gamerring.neocities.org/js/widget-whitetext.js"></script>
+  </div>
 </div>
 
 <!-- RICE RING -->
@@ -177,8 +119,7 @@
 #rice-ring .webring-next,#rice-ring .webring-prev{display:flex;flex-direction:column;justify-content:center!important}
 #rice-ring .webring-links{font-size:18px}</style><div class="webring"><div id="rice-ring"><script src="https://terakun.nekoweb.org/ricepaddy/webring-variables.js"></script>
   <script src="https://terakun.nekoweb.org/ricepaddy/webring-widget.js"></script></div></div>
-<!-- END RICE RING -->
-</div>
+<!-- END RICE RING --> 
 </div>
 
 <div class="link-grid">
@@ -188,7 +129,7 @@
 
 <div class="link-buttons">
 
-  <a href="milktea.nekoweb.org"><img src="/images/buttons/sites/milktea.png"></a>
+  <a rel="noreferrer" target="_blank" href="https://milktea.nekoweb.org"><img src="/images/buttons/sites/milktea.png"></a>
   <a rel="noreferrer" href="https://nanacore.neocities.org/" target="_blank"><img src="/images/buttons/sites/nanacore.png" alte="nanacore"></a>  
   <a rel="noreferrer" href="https://venus-territory.neocities.org" target="_blank"><img src="/images/buttons/sites/venus-territory.png" alte="venus-territory"></a>
   <a rel="noreferrer" href="https://ordainedmotion.neocities.org" target="_blank"><img src="/images/buttons/sites/ordainedmotion.png" alt="ordainedmotion"></a>
@@ -302,7 +243,7 @@
 </div>
 
 <p>If you want your site button changed or want your link removed for any reason, feel free to post a message on my <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> or <a href="mailto:hello@snails.town">email me</a>.</p>
-</main>
+</div></main>
 
    <script>
     function toggleTOC() {
@@ -315,24 +256,16 @@
  
   </div>
   <footer>
-   ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a>
+  <!-- FOOTER -->  ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a> 
   </footer>
-  <!--
-  <div class="bottom-right-ui">
-<button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
-<button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
-<select name="styleswitcher" class="styleswitcher">
-  <option value="maintheme">OG SNAIL (default)</option>
-  <option value="miku">MIKU</option>
-</select>
-</div> --->
+
 
 
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
 </script>
-<script src="/javascript/main.js?nocache=?nocache=1758328274155"></script>
+<script src="/javascript/main.js?nocache=?nocache=1758596464271"></script>
   </body>
 </html>
 

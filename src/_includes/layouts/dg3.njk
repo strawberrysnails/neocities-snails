@@ -13,7 +13,13 @@
 
   </head>
   <body>
-<!--MUSIC PLAYER -->
+    <img src="/images/circle3.gif" class="circle">
+<div class="grid-container">
+  <div class="header"></div>
+  <div class="sidebar">
+    {% include "html/drakengard3shrine/dg3-sidebar.html" %}
+
+          <!--MUSIC PLAYER -->
 <div class="simple-player">
   <img class="cover" src="https://files.catbox.moe/kc2d48.jpg" alt="Cover">
   
@@ -36,14 +42,17 @@
 
   <audio id="music" autoplay src=""></audio>
 </div>
-
 <!-- END MUSIC PLAYER -->
-    <img class ="logo" src="/images/dg3/logo.png">
-    <div class="container">
-                        {{ content | safe }}
-    </div>
+  </div>
+  <div class="main">
+    {{ content | safe }}
+  </div>
+  <div class="footer">footer</div>
+</div>
+
     <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
         <script src="/javascript/main.js"></script>
         <script src="/javascript/musicplayer.js"></script>
 </body>
 </html>
+

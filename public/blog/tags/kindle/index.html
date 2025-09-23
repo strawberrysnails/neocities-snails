@@ -5,163 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Snail-paced personal space on the web">
             <!-- CSS/JS + CACHEBUSTING -->
-            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1758328274155">
+            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1758596464271">
             <link rel="stylesheet" href="/css/fonts.css">
             <link rel="stylesheet" href="/css/bootstrap-icons.css">
             <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
-
+<script src="/javascript/animations.js"></script>
 <title>Snails | Tag: kindle</title>
 
   </head>
   <body>
-    <img src="/images/zero.png" alt="zero" class="zero">
+    <img src="/images/zero.png" alt="zero" class="zero" id="myBtn" data-tooltip="for debug">
     <img class="lunar-tear" src="/images/DOD3_flower.png">
 <div class="container">
   <header><a href="/index.html" class="title">Snails.Town</a></header>
   <div class="main-layout">
-      <div class="mobile-links">
+     <!-- LEFT SIDEBAR -->  <div class="mobile-links">
       <a href="/blog">Blog</a>
       <a href="/links">Neighborhood</a>
       <a href="/medialog">MediaLog</a>
       <a href="/notebook">Notebook</a>
       <a href="/site">About</a>
       </div>
-    <nav>
-      <h3 style="line-height: .5;">Navigation</h3>
+      <nav class="sidebar-links">
+      <h3 class="nav-title">Navigation</h3>
       <a href="/blog">Blog</a>
       <a href="/links">Neighborhood</a>
       <a href="/notebook">Notebook</a>
       <a href="/medialog">MediaLog</a>
       <a href="/site">About</a>
-
-<!-- MOON START © wdisseny -->
-
-<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
-    <div style="font-weight:bold"></div>
-    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsla(0, 0%, 30%, 0.171))" class="moon-svg"></div>
-    <div></div>
-    <div style="font-size:smaller">.</div>
-</div>
-
-<script>
-(function() {
-    var d = new Date().getDate();
-    var m = document.querySelectorAll("#contain_moon div");
-    var a = new XMLHttpRequest();
-    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(240, 240, 240)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+         <img src="/images/intoner-white.png">
+    </nav> 
+        <main>
+  <h1>Tag: kindle</h1>
+  <a href="/blog">← back to blog</a>
+<ul class="post-list">
+  
     
-    m[1].style.height = "100px";
     
-    a.onreadystatechange = function() {
-        if (a.readyState == 4 && a.status == 200) {
-            var b = JSON.parse(a.responseText);
-            m[1].innerHTML = b.phase[d].svg;
-            if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
-            m[2].innerHTML = b.phase[d].npWidget;
-            m[3].innerHTML = "Next full moon:<br>" + b.nextFullMoon;
-        }
-    };
+  
     
-    a.open("GET", url, true);
-    a.send();
-})()
-</script>
-<style>
-#contain_moon div:nth-child(3) {
-    position: relative; 
-    font-family: "Jim Nightshade";
-    margin-top: -30px;
-    z-index: 2; 
-    font-size: 1.3em; 
-    color: #ffffff;
-  }
-
-.moon-svg {
-    position: relative; 
-    transition: transform 0.3s ease-in-out; 
-    z-index: 1; 
-}
-
-.moon-svg:hover {
-    transform: scale(1.1); 
-}
-
-</style>
-
-<!-- MOON END -->
-    </nav>
+    
+  
+    
+    
+  
+    
+      <li>
+      <a href="/blog/manga-ereader.html" class="post-item">
+        <h2>I got an e-reader just for Manga.</h2>
+        <i class="bi bi-calendar-heart"></i>
+        <time datetime="2025-07-07">July 7, 2025</time> | 
+        <i class="bi bi-stopwatch"></i> 3 min
         
-<h1>Tag: kindle</h1>
-<a href="/blog">← back to blog</a>
+          <p>All about my new Kobo Aura H2o and it's amazing microSD card slot.</p>
+        
+      </a>
+    
+    </li>
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+      <li>
+      <a href="/blog/jailbreaking-my-kindle.html" class="post-item">
+        <h2>Jailbreaking my Kindle</h2>
+        <i class="bi bi-calendar-heart"></i>
+        <time datetime="2025-04-13">April 13, 2025</time> | 
+        <i class="bi bi-stopwatch"></i> 3 min
+        
+          <p>Modding my Kindle because I'm mad at Amazon.</p>
+        
+      </a>
+    
+    </li>
+  
+  </ul>
+</main>
 
-<ul>
-  
-    
-  
-    
-  
-    
-  
-    
-      
-         <li class="post-item">
-    <h2>
-      <a href="/blog/manga-ereader.html">I got an e-reader just for Manga.</a>
-    </h2>
-    <i class="bi bi-calendar-heart"></i> <time datetime="2025-07-07">July 7, 2025</time> | <i class="bi bi-stopwatch"></i> 3 min
-    
-      <p>All about my new Kobo Aura H2o and it's amazing microSD card slot.</p>
-    
-  </li>
-
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-         <li class="post-item">
-    <h2>
-      <a href="/blog/jailbreaking-my-kindle.html">Jailbreaking my Kindle</a>
-    </h2>
-    <i class="bi bi-calendar-heart"></i> <time datetime="2025-04-13">April 13, 2025</time> | <i class="bi bi-stopwatch"></i> 3 min
-    
-      <p>Modding my Kindle because I'm mad at Amazon.</p>
-    
-  </li>
-
-    
-  
-</ul>
  
   </div>
   <footer>
-   ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a>
+  <!-- FOOTER -->  ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a> 
   </footer>
-  <!--
-  <div class="bottom-right-ui">
-<button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
-<button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
-<select name="styleswitcher" class="styleswitcher">
-  <option value="maintheme">OG SNAIL (default)</option>
-  <option value="miku">MIKU</option>
-</select>
-</div> --->
+
 
 
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
 </script>
-<script src="/javascript/main.js?nocache=?nocache=1758328274155"></script>
+<script src="/javascript/main.js?nocache=?nocache=1758596464271"></script>
   </body>
 </html>
 

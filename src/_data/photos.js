@@ -1,5 +1,20 @@
 module.exports = [
   {
+    src: "pochiandmofu.png",
+    date: "9.22.2025",
+    caption: "Pochacco and Mofusand enjoying some arcade fries.",
+  },
+  {
+    src: "sbux.png",
+    date: "9.18.2025",
+    caption: "Enjoying pumpkin while it lasts.",
+  },
+  {
+    src: "hike.png",
+    date: "9.07.2025",
+    caption: "Early fall hike with my Husband!",
+  },
+  {
     src: "doublemiku.png",
     date: "7.20.2025",
     caption: "Double Miku with my bestie at the con! 💙💙",

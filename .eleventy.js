@@ -140,6 +140,11 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
     return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_FULL);
   });
 
+    eleventyConfig.addFilter("dateReadableShort", (date) => {
+    return DateTime.fromJSDate(date).toFormat("MMM-dd-yy");
+  });
+
+
 
   // Markdown config 
   // EXAMPLE: ![Alt Text](image.jpg){.my-class}

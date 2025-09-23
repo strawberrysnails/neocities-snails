@@ -9,24 +9,25 @@ eleventyComputed:
   title: "Tag: {{ tag }}"
 layout: main
 ---
-
-<h1>{{ title }}</h1>
-<a href="/blog">← back to blog</a>
-
-<ul>
+<main>
+  <h1>{{ title }}</h1>
+  <a href="/blog">← back to blog</a>
+<ul class="post-list">
   {% for post in collections.blog %}
     {% if tag in post.data.tags %}
-      
-         <li class="post-item">
-    <h2>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </h2>
-    <i class="bi bi-calendar-heart"></i> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
-    {% if post.data.excerpt %}
-      <p>{{ post.data.excerpt }}</p>
+      <li>
+      <a href="{{ post.url }}" class="post-item">
+        <h2>{{ post.data.title }}</h2>
+        <i class="bi bi-calendar-heart"></i>
+        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | 
+        <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
+        {% if post.data.excerpt %}
+          <p>{{ post.data.excerpt }}</p>
+        {% endif %}
+      </a>
     {% endif %}
-  </li>
-
-    {% endif %}
+    </li>
   {% endfor %}
-</ul>
+  </ul>
+</main>
+
