@@ -2,9 +2,10 @@ body{
 margin: auto;
 text-align: left;
 background-color:#000000;
-font-family: Bronela;
+font-family: Merriweather;
 color:#503F27;
 overflow-x: hidden;
+font-size: .9em;
 }
 
 h1, h2{
@@ -46,12 +47,14 @@ font-weight: bold;
 }
 
 .sidebar, .header, .main, .footer{
-  border: #2e2e2e 4px groove;
+  border: #000000 4px outset;
   background-color: #fcfcfc;
+  background-image: url(/images/dg3/concrete-wall.png);
 }
 
 .sidebar {
 grid-area: sidebar;
+padding: 10px;
 
 }
 
@@ -72,7 +75,8 @@ padding:20px;
 .footer {
 grid-area: footer;
 text-align: center;
-max-height: 50px;
+max-height: 20px;
+padding: 10px;
 }
 
 .footer a{
@@ -155,7 +159,7 @@ max-height: 50px;
   justify-content: space-between;
   font-family: sans-serif;
   background-color: #fff; 
-  width: 240px; 
+  width: 225px; 
   height: auto;
   border: 2px solid #ddd;
   padding: 5px;
@@ -223,10 +227,42 @@ max-height: 50px;
 
 
 .circle {
-  position: absolute; 
+  position: fixed; 
   bottom: -10%; 
   right: -150px; 
-  width: 500px; 
+  width: 600px; 
   height: auto; 
   z-index: -10; 
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li {
+  position: relative;
+  padding-left: 1rem;   
+  margin: 0.25rem 0;   
+  line-height: 1.2;    
+}
+
+ul ul {
+  margin-left: 0.7rem;  
+  padding-left: 0rem;
+  border-left: 1px solid #a0a0a0;
+}
+
+
+ul ul li::before {
+  content: "";
+  position: absolute;
+  top: .6em;          
+  left: -0rem;
+  width: 1rem;     
+  height: 1px;
+  background: #a0a0a0;
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
             <!-- CSS/JS + CACHEBUSTING -->
             <link rel="stylesheet" href="/css/styles.css?nocache={{ nocache }}">
             <link rel="stylesheet" href="/css/fonts.css">
@@ -20,7 +22,7 @@
   <header><a href="/index.html" class="title">Snails.Town</a></header>
   <div class="main-layout">
      <!-- LEFT SIDEBAR --> {% include "html/main/sidebar-left.html" %} 
-        {{ content | safe }} 
+        {{ content | safe }}
   </div>
   <footer>
   <!-- FOOTER --> {% include "html/main/footer.html" %} 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
+        <title>Snails | Drakengard 3 | How to Play</title>
+            <!-- CSS/JS + CACHEBUSTING -->
+            <link rel="stylesheet" href="/css/dg3.css?nocache=?nocache=1758899845730">
+            <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <img src="/images/circle3.gif" class="circle">
+<div class="grid-container">
+  <div class="header"></div>
+  <div class="sidebar">
+    <ul>
+  <li><a href="/shrines/drakengard3">Index</a></li>
+  <li>
+    Introduction
+    <ul>
+      <li><a href="howto">How to play</a></li>
+      <li>Gameplay Overview</li>
+    </ul>
+  </li>
+    <li>
+    Story & Lore
+    <ul>
+      <li>Story Summary</li>
+      <li>Characters</li>
+      <li>Weapon Stories</li>
+      <li>Verse Timeline</li>
+      <li>Side Content / DLC</li>
+      <li>Lore Connections</li>
+    </ul>
+  </li>
+ <li>
+    Media
+    <ul>
+      <li>Gallery</li>
+      <li>Soundtrack</li>
+      <li>Quotes & Dialogue</li>
+    </ul>
+  </li>
+  <li>
+    Meta
+    <ul>
+      <li><a href="links">Links/Resources</a></li>
+    </ul>
+  </li>
+</ul>
+
+          <!--MUSIC PLAYER -->
+<div class="simple-player">
+  <img class="cover" src="https://files.catbox.moe/kc2d48.jpg" alt="Cover">
+  
+  <div class="info">
+    <div class="song-title"><span>Song Title Goes Here</span></div>
+    <div class="controls">
+<div class="controls">
+  <button class="prev-track" onclick="prevTrack()">⏮</button>
+  <button class="playpause-track" onclick="playpauseTrack()"><i class="bi bi-play-fill"></i></button>
+  <button class="next-track" onclick="nextTrack()">⏭</button>
+</div>
+
+    </div>
+    <div class="progress">
+      <span class="current-time">0:00</span>
+      <input type="range" min="0" max="100" value="0" class="seek-slider" onchange="seekTo()">
+      <span class="total-duration">0:00</span>
+    </div>
+  </div>
+
+  <audio id="music" autoplay src=""></audio>
+</div>
+<!-- END MUSIC PLAYER -->
+  </div>
+  <div class="main">
+    <h1 id="how-to-play-drakengard-3" tabindex="-1">How to play Drakengard 3</h1>
+<p>Drakengard 3 was release exclusively for the Playstation 3, however it's very <em>very</em> simple to emulate. In fact, even if you have a Playstation 3, <strong>it is highly recommend to emulate it anyways.</strong> Emulating allows for you to play the game at 60fps, as it was originally capped at 30fps and has very slow loading times.</p>
+<p><em>Note: When I first played the game, my husband installed everything for me so I am just reverse engineering what he did. If you have any questions or need clarification, please feel free to contact me.</em></p>
+<h3 id="step-1%3A-download-rps3" tabindex="-1">Step 1: Download RPS3</h3>
+<ul>
+<li>Download: <a href="https://rpcs3.net">rpcs3.net</a></li>
+<li>Make sure you are aware of where your rpcs3 files are. You will need to put files in the &quot;games&quot; folder.</li>
+</ul>
+<h3 id="step-2%3A-download-drakengard-3%2Fdrag-on-dragoon-3-rom" tabindex="-1">Step 2: Download Drakengard 3/Drag-on Dragoon 3 ROM</h3>
+<ul>
+<li>Link here</li>
+<li>Link here</li>
+<li>Link here</li>
+</ul>
+<h3 id="step-3%3A-download-the-dlc" tabindex="-1">Step 3: Download the DLC</h3>
+<ul>
+<li>The DLC is technically <em>optional</em> but brings a lot to the story. You also get to play as the intoner sisters, which is really fun.</li>
+<li>When you complete missions from the DLC you unlock &quot;Memories of the Intoners&quot; which are extra stories that delve into the intoners lives.</li>
+<li>It also includes cute costumes and headgear for Zero and Mikhail.  ⸜(｡˃ ᵕ ˂ )⸝♡</li>
+<li>Link here</li>
+<li>Link here</li>
+</ul>
+<h3 id="%5Boptional%5D-step-4%3A-download-the-undub" tabindex="-1">[Optional] Step 4: Download the Undub</h3>
+<ul>
+<li>Blah blah play the game in Japanese.</li>
+</ul>
+<p>If any links are broken, do some googling. If you're really desperate, you can <a href="mailto:hello@snails.town">e-mail me</a>. (. ❛ ᴗ ❛.)</p>
+
+  </div>
+  <div class="footer">   <a href="credits">credits</a> | <a href="/">back to snails.town</a> | <a href="mailto:hello@snails.town">contact me</a> </div>
+</div>
+
+    <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
+        <script src="/javascript/main.js"></script>
+        <script src="/javascript/musicplayer.js"></script>
+</body>
+</html>
+

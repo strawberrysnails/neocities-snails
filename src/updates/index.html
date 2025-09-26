@@ -1,0 +1,34 @@
+---
+layout: main
+title: Updates
+permalink: /updates/
+---
+<style>
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+th:first-child,
+td:first-child {
+  width: 200px; 
+  white-space: nowrap; 
+}
+
+th:last-child,
+td:last-child {
+  width: auto;
+}
+
+</style>
+<main>
+<h1>Updates <a href="/updates/feed.xml">(RSS)</a></h1>
+<table>
+<tr><th>Date</th><th>Info</th></tr>
+{% if updates and updates.length %}
+{% for update in updates %}
+<tr><td><time datetime="{{ update.date | dateIso }}">{{ update.date | dateReadable }}</time></td><td>{{ update.blurb | safe }}</td></tr>
+        {% endfor %}
+          {% endif %}
+</table>
+</main>

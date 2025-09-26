@@ -1,4 +1,9 @@
 module.exports = [
+      {
+    date: new Date("2025-09-24"),
+    blurb: `Created an RSS feed for site updates. <a href="/updates/feed.xml">/updates/feed/xml</a>. Added new links in <a href="/notebook/bookmarks">/notebook/bookmarks</a>.
+    Joined 2 new webrings. <a href="/shrines">Shrines</a> page and <a href="/shrines/drakengard3">Drakengard 3</a> shrine is finally up!!! `
+    },
     {
     date: new Date("2025-09-23"),
     blurb: `Theme updates and tweaks. New photos in the <a href="/notebook/photogrid">photogrid</a>! Working on an RSS feed for the update log. New shrine coming soon hehe.`

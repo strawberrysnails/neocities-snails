@@ -536,7 +536,7 @@ hr{
 
 .post-item:hover {
   transform: translateY(-1px);
-  text-shadow: 0 0 5px var(--text), 0 0 10px var(--text);
+  text-shadow: 0 0 5px var(--glow), 0 0 10px var(--glow);
 }
 
 .post-item h2 {
@@ -755,11 +755,25 @@ hr{
   text-decoration: none;
   color: inherit;
   transition: transform 0.4s ease;
+    /* make content centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
 
 .link-card:hover {
   transform: translateY(-3px);
 }
+
+.shrine-img{
+  max-width: 100%;
+  outline: 1px solid #555555;
+  outline-offset: -4px;
+  border: 1px solid #555555;
+  display: block;
+}
+
 /* MEDIALOG MANGA */ 
 .manga-section {
   margin-top: 2rem;

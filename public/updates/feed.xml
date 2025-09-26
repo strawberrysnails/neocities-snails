@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://snails.town" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snails</title>
+    <link>https://snails.town</link>
+    <atom:link href="https://snails.town/updates/feed.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    
+ 
+    <item>
+      <title>Created an RSS feed for site updates. /updates/feed/xml. Add…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Created an RSS feed for site updates. <a href="/updates/feed.xml">/updates/feed/xml</a>. Added new links in <a href="/notebook/bookmarks">/notebook/bookmarks</a>.
+    Joined 2 new webrings. <a href="/shrines">Shrines</a> page and <a href="/shrines/drakengard3">Drakengard 3</a> shrine is finally up!!! ]]></description>
+      <pubDate>Tue, 23 Sep 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-09-23</guid>
+    </item>
+    
+    <item>
+      <title>Theme updates and tweaks. New photos in the photogrid! Worki…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Theme updates and tweaks. New photos in the <a href="/notebook/photogrid">photogrid</a>! Working on an RSS feed for the update log. New shrine coming soon hehe.]]></description>
+      <pubDate>Mon, 22 Sep 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-09-22</guid>
+    </item>
+    
+    <item>
+      <title>Huge theme update! No blog post in a while because I&#39;ve been…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Huge theme update! No blog post in a while because I've been working on the new layout but a new one will be up soon. See old layout <a href="/archives/6-01-25">here</a>.]]></description>
+      <pubDate>Thu, 11 Sep 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-09-11</guid>
+    </item>
+    
+    <item>
+      <title>Bookmarks have been moved to the Notebook page for an easier…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[<a href="/notebook/bookmarks/">Bookmarks</a> have been moved to the Notebook page for an easier reading experience.]]></description>
+      <pubDate>Mon, 18 Aug 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-08-18</guid>
+    </item>
+    
+    <item>
+      <title>Otakon 2025 blog post is up!</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[<a href="/blog/otakon-2025.html">Otakon 2025</a> blog post is up!]]></description>
+      <pubDate>Thu, 14 Aug 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-08-14</guid>
+    </item>
+    
+    <item>
+      <title>Added scroll to top button.</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Added scroll to top button.]]></description>
+      <pubDate>Tue, 12 Aug 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-08-12</guid>
+    </item>
+    
+    <item>
+      <title>Switched from CSS grid to flexbox on every page for more acc…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Switched from CSS grid to flexbox on every page for more accessibility. Every page should be perfectly responsive now. Also added a "like" button to my blog posts!]]></description>
+      <pubDate>Wed, 30 Jul 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-07-30</guid>
+    </item>
+    
+    <item>
+      <title>Improved photogrid with modals and ability to click through …</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Improved <a href="/notebook/photogrid">photogrid</a> with modals and ability to click through gallery with keyboard. Added Miku theme in honor of last weekend.]]></description>
+      <pubDate>Wed, 23 Jul 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-07-23</guid>
+    </item>
+    
+    <item>
+      <title>Tweaked some colors and graphics and removed light theme opt…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Tweaked some colors and graphics and removed light theme option]]></description>
+      <pubDate>Thu, 03 Jul 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-07-03</guid>
+    </item>
+    
+    <item>
+      <title>Super late May Patch Notes is up. New picture on photogrid. …</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Super late May Patch Notes is up. New picture on photogrid. Nier Replicant and Drakengard 3 marked completed in game log]]></description>
+      <pubDate>Wed, 18 Jun 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-06-18</guid>
+    </item>
+    
+    <item>
+      <title>Made a light theme and theme picker for the site. It&#39;s still…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Made a light theme and theme picker for the site. It's still a WIP but yeah :)]]></description>
+      <pubDate>Thu, 29 May 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-05-29</guid>
+    </item>
+    
+    <item>
+      <title>Guestbook + Blog RSS Feed is up.</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[<a href="/guestbook/">Guestbook</a> + <a href="/blog/feed.xml">Blog RSS Feed</a> is up.]]></description>
+      <pubDate>Mon, 12 May 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-05-12</guid>
+    </item>
+    
+    <item>
+      <title>Sitemap is up.</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[<a href="/map/">Sitemap</a> is up.]]></description>
+      <pubDate>Sun, 11 May 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-05-11</guid>
+    </item>
+    
+    <item>
+      <title>Complete overhaul of theme ◝(ᵔᗜᵔ)◜ I wanted something simipl…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Complete overhaul of theme ◝(ᵔᗜᵔ)◜ I wanted something simipler, cozier, and darker. If you miss the old theme, you can cry while looking at it <a href="/archives/4-30-25.html">here</a>. ]]></description>
+      <pubDate>Tue, 06 May 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-05-06</guid>
+    </item>
+    
+    <item>
+      <title>Two new pictures uploaded to my photogrid and a whole new pa…</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Two new pictures uploaded to my <a href="/notebook/photogrid">photogrid</a> and a whole new page — check out my <a href="/pins">Pinboard</a>.]]></description>
+      <pubDate>Tue, 22 Apr 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-04-22</guid>
+    </item>
+    
+    <item>
+      <title>New pages: site info &amp; links. Also blog tags now work.</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[New pages: <a href="/site">site info</a> & <a href="/links">links</a>. Also blog tags now work.]]></description>
+      <pubDate>Sun, 20 Apr 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-04-20</guid>
+    </item>
+    
+    <item>
+      <title>Finished Nier: Replicant and updated my gamelog.</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Finished Nier: Replicant and updated my <a href="/medialog/games">gamelog</a>.]]></description>
+      <pubDate>Fri, 18 Apr 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-04-18</guid>
+    </item>
+    
+    <item>
+      <title>Big theme change :3 more my style</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[Big theme change :3 more my style]]></description>
+      <pubDate>Thu, 17 Apr 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2025-04-17</guid>
+    </item>
+    
+  </channel>
+</rss>
