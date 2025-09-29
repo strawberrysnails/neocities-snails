@@ -1,13 +1,10 @@
 ---
-title: Collections
+title: Graphics
 permalink: /notebook/collections/
 layout: none
 nesting: ""
 ---
 
-<a href="/notebook">Notebook</a> | <a href="/">Homepage</a>
-
-# Collections
 
 All graphics will be linked to their original creator or source (unless I can't find them).
 Please contact me if you want something removed or credited. o((>ω< ))o  

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
+        <title>Snails | Media Log | Video Games</title>
+            <!-- CSS/JS + CACHEBUSTING -->
+            <link rel="stylesheet" href="/css/notebook.css?nocache=?nocache=1759179042506">
+            <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <a href="/notebook">Notebook</a> | <a href="/">Homepage</a>
+      <h1 style="text-align: center;"> Media Log | Video Games</h1>
+                        
+<h2>Games I'm Playing</h2>
+<div class="fieldset-row">
+<fieldset><legend>Filters</legend>
+<div class="filters" data-section="played">
+      <!-- Status filters -->
+  Status:<br>
+  <button class="filter-btn" data-filter-type="status" data-filter="currently playing">
+    <img src="/images/badges/currently.png" alt="Currently Playing">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="completed">
+    <img src="/images/badges/completed.png" alt="Completed">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="planning">
+    <img src="/images/badges/planning.png" alt="Planning">
+  </button>
+  </div>
+  <div class="filters" data-section="played">
+  <!-- Platform filters -->
+  Platform:<br>
+  <button class="filter-btn" data-filter-type="platform" data-filter="pc">
+    <img src="/images/badges/pc.webp" alt="PC">
+  </button>
+  <button class="filter-btn" data-filter-type="platform" data-filter="ds">
+    <img src="/images/badges/ds.webp" alt="DS/3DS">
+  </button>
+  <button class="filter-btn" data-filter-type="platform" data-filter="emulator">
+    <img src="/images/badges/emulator.webp" alt="Emulator">
+  </button>
+</div>
+  <div class="filters" data-section="played">
+  <!-- Rating filters -->
+     Rating:<br>
+     <button class="filter-btn" data-filter-type="rating" data-filter="unrated">
+    <img src="/images/badges/unrated.png" alt="unrated">
+  </button>
+  <button class="filter-btn" data-filter-type="rating" data-filter="1star">
+    <img src="/images/badges/1star.png" alt="1star">
+  </button>
+  <button class="filter-btn" data-filter-type="rating" data-filter="2star">
+    <img src="/images/badges/2star.png" alt="2star">
+  </button>
+  <button class="filter-btn" data-filter-type="rating" data-filter="3star">
+    <img src="/images/badges/3star.png" alt="3star">
+  </button>
+    <button class="filter-btn" data-filter-type="rating" data-filter="4star">
+    <img src="/images/badges/4star.png" alt="4star">
+  </button>
+    <button class="filter-btn" data-filter-type="rating" data-filter="5star">
+    <img src="/images/badges/5star.png" alt="5star">
+  </button>
+</div>
+</fieldset>
+<fieldset>
+  <legend>Info</legend>
+  Thanks for checking out my Game Log. I only log games here that have are (mostly) single-player and have a full story-line with a hard ending. This is so the log doesn't get overwhelmed
+  by games I regularly play like sandbox games, MMOs, ect. I will also only add "planned" games that I own or have downloaded. You can click on the cards to see some of my notes!
+  
+<p> Last Played on Steam: <strong>NieR:Automata™</strong>· 42.1 hrs</p>
+
+</fieldset>
+</div>
+<div class="link-box" data-section="played">
+  
+    
+      <div class="link-card"
+     data-platform="pc"
+     data-status="currently playing"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/nier-automata.png" alt="Nier: Automata thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Nier: Automata</p>
+            <div class="badges">
+              <img src="/images/badges/currently.png" alt="currently playing">
+              <img src="/images/badges/pc.webp" alt="PC">
+              <img src="/images/badges/unrated.png" alt="unrated">
+            </div>
+                
+                <div class="notes">Completed ending A &amp; B (plus some odd ones). Working through C &amp; D now.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="pc"
+     data-status="currently playing"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/blue-prince.png" alt="Blue Prince thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Blue Prince</p>
+            <div class="badges">
+              <img src="/images/badges/currently.png" alt="currently playing">
+              <img src="/images/badges/pc.webp" alt="PC">
+              <img src="/images/badges/unrated.png" alt="unrated">
+            </div>
+                
+                <div class="notes">I love puzzle games! This is my first rougelite, idk how I feel about it yet. It&#39;s not as puzzle-heavy as I would like but the story is very interesting so far.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="emulator"
+     data-status="currently playing"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/sweet-fuse.png" alt="Sweet Fuse thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Sweet Fuse</p>
+            <div class="badges">
+              <img src="/images/badges/currently.png" alt="currently playing">
+              <img src="/images/badges/emulator.webp" alt="emulator">
+              <img src="/images/badges/unrated.png" alt="unrated">
+            </div>
+                
+                <div class="notes">Cute PSP visual novel that I&#39;m emulating on my phone. Very unique and I&#39;m excited to see where it goes.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="ds"
+     data-status="currently playing"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/professorlayton-azran.png" alt="Professor Layton and the Azran Legacy thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Professor Layton and the Azran Legacy</p>
+            <div class="badges">
+              <img src="/images/badges/currently.png" alt="currently playing">
+              <img src="/images/badges/ds.webp" alt="DS">
+              
+            </div>
+                
+                <div class="notes">Mmm puzzles.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="link-card"
+     data-platform="emulator"
+     data-status="completed"
+     data-rating="5star">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/drakengard-3.png" alt="Drakengard 3 thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Drakengard 3</p>
+            <div class="badges">
+              <img src="/images/badges/completed.png" alt="completed">
+              <img src="/images/badges/emulator.webp" alt="Emulator">
+              <img src="/images/badges/5star.png" alt="5star">
+            </div>
+                
+                <div class="notes">My favorite game of all time &lt;3 Completed on 5/25/25.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="pc"
+     data-status="completed"
+     data-rating="5star">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/nier-replicant.png" alt="Nier: Replicant thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Nier: Replicant</p>
+            <div class="badges">
+              <img src="/images/badges/completed.png" alt="completed">
+              <img src="/images/badges/pc.webp" alt="PC">
+              <img src="/images/badges/5star.png" alt="5star">
+            </div>
+                
+                <div class="notes">Thank you to my husband for introducing me to a franchise I will be fixated on forever. Completed on 4/19/25.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="pc"
+     data-status="completed"
+     data-rating="4star">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/baulders-gate-3.png" alt="Baldur&#39;s Gate 3 thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Baldur&#39;s Gate 3</p>
+            <div class="badges">
+              <img src="/images/badges/completed.png" alt="completed">
+              <img src="/images/badges/pc.webp" alt="PC">
+              <img src="/images/badges/4star.png" alt="4star">
+            </div>
+                
+                <div class="notes">I obviously loved this like everyone else. Will attempt honor-mode someday. Completed on 7/16/24.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="link-card"
+     data-platform="pc"
+     data-status="planning"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/divinity.png" alt="Divinity: Original Sin thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Divinity: Original Sin</p>
+            <div class="badges">
+              <img src="/images/badges/planning.png" alt="planning">
+              <img src="/images/badges/pc.webp" alt="PC">
+              
+            </div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="ds"
+     data-status="planning"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/pokemon-odyssey.png" alt="Pokemon Odyssey thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Pokemon Odyssey</p>
+            <div class="badges">
+              <img src="/images/badges/planning.png" alt="planning">
+              <img src="/images/badges/ds.webp" alt="DS">
+              
+            </div>
+                
+                <div class="notes">Story-rich Pokemon FireRed ROM hack that combines Pokemon, Etrian Odyssey, and Made in Abyss.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="ds"
+     data-status="planning"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/wizardofoz.png" alt="The Wizard of Oz: Beyond The Yellow Brick Road thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">The Wizard of Oz: Beyond The Yellow Brick Road</p>
+            <div class="badges">
+              <img src="/images/badges/planning.png" alt="planning">
+              <img src="/images/badges/ds.webp" alt="DS">
+              
+            </div>
+                
+                <div class="notes">Turn-based RPG that&#39;s surprisingly good. The art style is what really pulled me in.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="ds"
+     data-status="planning"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/pokemon-ultramoon.png" alt="Pokemon Ultra Moon thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Pokemon Ultra Moon</p>
+            <div class="badges">
+              <img src="/images/badges/planning.png" alt="planning">
+              <img src="/images/badges/ds.webp" alt="DS">
+              
+            </div>
+                
+                <div class="notes">Heard it&#39;s one of the best Pokemon games I&#39;ve somehow never played.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="link-card"
+     data-platform="ds"
+     data-status="planning"
+     data-rating="unrated">
+        <div class="card-main">
+          
+            <img class="thumbnail" src="/images/gamelog/bravely-default.png" alt="Bravely Default thumbnail">
+          
+          <div class="card-info">
+            <p class="game-title">Bravely Default</p>
+            <div class="badges">
+              <img src="/images/badges/planning.png" alt="planning">
+              <img src="/images/badges/ds.webp" alt="DS">
+              
+            </div>
+                
+                <div class="notes">Apparently the best DS game ever.</div>
+                
+          </div>
+        </div>
+      </div>
+    
+  
+    
+  
+    
+  
+</div>
+
+
+
+<h2>Games I'm Watching My Husband Play</h2>
+<div class="fieldset-row">
+<fieldset><legend>Filters</legend>
+<div class="filters" data-section="watched">
+  <!-- Status filters -->
+ Status:<br>
+ <button class="filter-btn" data-filter-type="status" data-filter="currently watching">
+    <img src="/images/badges/currently.png" alt="Currently Watching">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="completed">
+    <img src="/images/badges/completed.png" alt="Completed">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="planning">
+    <img src="/images/badges/planning.png" alt="Planning">
+  </button>
+</div>
+<div class="filters" data-section="watched">
+  <!-- Platform filters -->
+  Platform:<br>
+  <button class="filter-btn" data-filter-type="platform" data-filter="pc">
+    <img src="/images/badges/pc.webp" alt="PC">
+  </button>
+  <button class="filter-btn" data-filter-type="platform" data-filter="emulator">
+    <img src="/images/badges/emulator.webp" alt="Emulator">
+  </button>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Info</legend>
+These are the games my husband plays while I watch and help with choices and puzzles. It’s a special way for us to enjoy the story and bond over games.
+It's like having my own personal streamer.
+</fieldset>
+</div>
+<div class="link-box" data-section="watched">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="link-card"
+           data-platform="pc"
+           data-status="currently watching"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/dark-souls2.png" alt="Dark Souls 2 thumbnail">
+          
+        <p class="game-title">Dark Souls 2</p>
+        <div class="badges">
+          <img src="/images/badges/currently.png" alt="currently watching">
+          <img src="/images/badges/pc.webp" alt="PC">
+        </div>
+       
+      </div>
+    
+  
+    
+      <div class="link-card"
+           data-platform="pc"
+           data-status="currently watching"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/sekiro.png" alt="Sekiro thumbnail">
+          
+        <p class="game-title">Sekiro</p>
+        <div class="badges">
+          <img src="/images/badges/currently.png" alt="currently watching">
+          <img src="/images/badges/pc.webp" alt="PC">
+        </div>
+       
+      </div>
+    
+  
+    
+      <div class="link-card"
+           data-platform="pc"
+           data-status="currently watching"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/ys1and2.png" alt="YS I &amp; II thumbnail">
+          
+        <p class="game-title">YS I &amp; II</p>
+        <div class="badges">
+          <img src="/images/badges/currently.png" alt="currently watching">
+          <img src="/images/badges/pc.webp" alt="PC">
+        </div>
+       
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="link-card"
+           data-platform="emulator"
+           data-status="completed"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/bloodborne.png" alt="Bloodborne thumbnail">
+          
+        <p class="game-title">Bloodborne</p>
+        <div class="badges">
+          <img src="/images/badges/completed.png" alt="completed">
+          <img src="/images/badges/emulator.webp" alt="emulator">
+        </div>
+       
+          <div class="notes">This was the first game I watched him play which started our tradition. </div>
+      
+      </div>
+    
+  
+    
+      <div class="link-card"
+           data-platform="pc"
+           data-status="completed"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/outer-wilds.png" alt="Outer Wilds thumbnail">
+          
+        <p class="game-title">Outer Wilds</p>
+        <div class="badges">
+          <img src="/images/badges/completed.png" alt="completed">
+          <img src="/images/badges/pc.webp" alt="PC">
+        </div>
+       
+          <div class="notes">We used to eat cheese balls (branded as space balls) and play this every night.</div>
+      
+      </div>
+    
+  
+    
+      <div class="link-card"
+           data-platform="emulator"
+           data-status="completed"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/demons-souls.png" alt="Demon&#39;s Souls thumbnail">
+          
+        <p class="game-title">Demon&#39;s Souls</p>
+        <div class="badges">
+          <img src="/images/badges/completed.png" alt="completed">
+          <img src="/images/badges/emulator.webp" alt="Emulator">
+        </div>
+       
+          <div class="notes">It was cool to see the first soulsborne game.</div>
+      
+      </div>
+    
+  
+    
+      <div class="link-card"
+           data-platform="pc"
+           data-status="completed"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/dark-souls1.png" alt="Dark Souls thumbnail">
+          
+        <p class="game-title">Dark Souls</p>
+        <div class="badges">
+          <img src="/images/badges/completed.png" alt="completed">
+          <img src="/images/badges/pc.webp" alt="PC">
+        </div>
+       
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <div class="link-card"
+           data-platform="pc"
+           data-status="planning"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/dark-souls3.png" alt="Dark Souls 3 thumbnail">
+          
+        <p class="game-title">Dark Souls 3</p>
+        <div class="badges">
+          <img src="/images/badges/planning.png" alt="planning">
+          <img src="/images/badges/pc.webp" alt="PC">
+        </div>
+       
+      </div>
+    
+  
+    
+      <div class="link-card"
+           data-platform="pc"
+           data-status="planning"
+           data-type="watched">
+            
+            <img class="thumbnail" src="/images/gamelog/elden-ring.png" alt="Elden Ring thumbnail">
+          
+        <p class="game-title">Elden Ring</p>
+        <div class="badges">
+          <img src="/images/badges/planning.png" alt="planning">
+          <img src="/images/badges/pc.webp" alt="PC">
+        </div>
+       
+      </div>
+    
+  
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filterSections = document.querySelectorAll(".filters");
+
+  filterSections.forEach(section => {
+    const sectionName = section.dataset.section;
+    const cards = document.querySelectorAll(`.link-box[data-section="${sectionName}"] .link-card`);
+    const buttons = section.querySelectorAll(".filter-btn");
+
+    // Each section gets its own filters
+    const activeFilters = {
+      platform: new Set(),
+      status: new Set(),
+      rating: new Set()
+    };
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filterType = btn.dataset.filterType;
+        const filterValue = btn.dataset.filter;
+
+        if (activeFilters[filterType].has(filterValue)) {
+          activeFilters[filterType].delete(filterValue);
+          btn.classList.remove("active");
+        } else {
+          activeFilters[filterType].add(filterValue);
+          btn.classList.add("active");
+        }
+
+        cards.forEach(card => {
+          const cardPlatform = card.dataset.platform;
+          const cardStatus = card.dataset.status;
+          const cardRating = card.dataset.rating;
+
+          const matchesPlatform =
+            activeFilters.platform.size === 0 || activeFilters.platform.has(cardPlatform);
+          const matchesStatus =
+            activeFilters.status.size === 0 || activeFilters.status.has(cardStatus);
+          const matchesRating =
+            activeFilters.rating.size === 0 || activeFilters.rating.has(cardRating);
+
+          card.style.display = (matchesPlatform && matchesStatus && matchesRating) ? "" : "none";
+        });
+      });
+    });
+  });
+});
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".link-card");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      if (card.classList.contains("expanded")) {
+        card.classList.remove("expanded");
+      } else {
+        // collapse others in the same section
+        card.closest(".link-box")
+            .querySelectorAll(".link-card.expanded")
+            .forEach(c => c.classList.remove("expanded"));
+        
+        card.classList.add("expanded");
+      }
+    });
+  });
+});
+
+</script>
+    </div>
+    <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
+        <script src="/javascript/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,9 @@
 module.exports = [
-      {
+    {
+    date: new Date("2025-09-29"),
+    blurb: `I'm updating and reorganizing the media logs. First up: video games, now redesigned and relocated: <a href="/notebook/games">/notebook/games</a>. Now featuring thumbnails and filterable by status, platform, and rating!`
+    },
+    {
     date: new Date("2025-09-24"),
     blurb: `Created an RSS feed for site updates. <a href="/updates/feed.xml">/updates/feed/xml</a>. Added new links in <a href="/notebook/bookmarks">/notebook/bookmarks</a>.
     Joined 2 new webrings. <a href="/shrines">Shrines</a> page and <a href="/shrines/drakengard3">Drakengard 3</a> shrine is finally up!!! `

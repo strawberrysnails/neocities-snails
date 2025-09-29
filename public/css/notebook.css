@@ -175,7 +175,8 @@ hr{
 }
  
 li {
-  list-style: none; /* Remove default bullet */
+  list-style: none; 
+  margin-left: -20px;
 }
 
 li::before {
@@ -184,7 +185,8 @@ li::before {
 
 
 ul{
-    margin: 0;
+    margin-left: 0px;
+    border-left: 1px solid #000;
 }
  
 .box{
@@ -341,3 +343,113 @@ ul{
   margin-bottom: 5px;
   font-size: 1.5em;
 }
+
+.link-card {
+  background: linear-gradient(to bottom, #1b1b1be7 0%, #0f0f0fe7 50%, #000000e7 100%);
+  outline: 1px solid #555;
+  outline-offset: -4px;
+  box-shadow: 2px 2px #555;
+  border: 1px solid #555;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.4s ease, width 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: url(/images/pointer.png), pointer;
+  overflow: hidden;
+  max-height: 360px; 
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+}
+
+.link-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: min-content; 
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: start;
+}
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.notes {
+  display: none;
+  color: #ddd;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.link-card.expanded {
+  max-height: 600px; /* expands vertically instead of sideways */
+}
+
+.link-card.expanded .card-main {
+  flex-direction: column; /* keep thumbnail + info stacked */
+  align-items: center;
+}
+
+.link-card.expanded .card-info {
+  align-items: center;
+  margin-left: 0;
+}
+
+.link-card.expanded .notes {
+  display: block; /* ✅ notes appear only when expanded */
+}
+
+
+.filters {
+  margin: 1rem 0;
+  text-align: left;
+}
+.filter-btn {
+  background: none;
+  border: none;
+  cursor: url(/images/pointer.png), pointer;
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.filter-btn img {
+  height: auto;
+}
+
+.fieldset-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; 
+  text-align: left;
+}
+
+
+.fieldset-row fieldset {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+

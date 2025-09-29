@@ -3,11 +3,17 @@ title: Notebook
 permalink: /notebook/index.html
 layout: notebook
 ---
-**Resources**
+### **Resources**
 - [Bookmarks](bookmarks)
 - [Graphics](collections)
 - [Fonts](fonts)
 
-**Personal**
+### **Personal**
 - [Photogrid](photogrid)
 - [Wishlist](wishlist)
+
+### **Media Logs**
+- [Video Games](games)
+- [~~Anime~~](#)
+- [~~Manga~~](#)
+- [~~Library~~](#)

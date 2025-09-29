@@ -4,10 +4,6 @@ permalink: /notebook/wishlist/
 layout: none
 nesting: ""
 ---
-<a href="/notebook">Notebook</a> | <a href="/">Homepage</a>
-
-# Wishlist
-## [2025]
 
 ⭐ = High Priority/Favorites
 

@@ -1,0 +1,224 @@
+---
+title: Media Log | Video Games
+layout: none
+nesting: "/"
+permalink: /notebook/games
+---
+
+<h2>Games I'm Playing</h2>
+<div class="fieldset-row">
+<fieldset><legend>Filters</legend>
+<div class="filters" data-section="played">
+      <!-- Status filters -->
+  Status:<br>
+  <button class="filter-btn" data-filter-type="status" data-filter="currently playing">
+    <img src="/images/badges/currently.png" alt="Currently Playing">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="completed">
+    <img src="/images/badges/completed.png" alt="Completed">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="planning">
+    <img src="/images/badges/planning.png" alt="Planning">
+  </button>
+  </div>
+  <div class="filters" data-section="played">
+  <!-- Platform filters -->
+  Platform:<br>
+  <button class="filter-btn" data-filter-type="platform" data-filter="pc">
+    <img src="/images/badges/pc.webp" alt="PC">
+  </button>
+  <button class="filter-btn" data-filter-type="platform" data-filter="ds">
+    <img src="/images/badges/ds.webp" alt="DS/3DS">
+  </button>
+  <button class="filter-btn" data-filter-type="platform" data-filter="emulator">
+    <img src="/images/badges/emulator.webp" alt="Emulator">
+  </button>
+</div>
+  <div class="filters" data-section="played">
+  <!-- Rating filters -->
+     Rating:<br>
+     <button class="filter-btn" data-filter-type="rating" data-filter="unrated">
+    <img src="/images/badges/unrated.png" alt="unrated">
+  </button>
+  <button class="filter-btn" data-filter-type="rating" data-filter="1star">
+    <img src="/images/badges/1star.png" alt="1star">
+  </button>
+  <button class="filter-btn" data-filter-type="rating" data-filter="2star">
+    <img src="/images/badges/2star.png" alt="2star">
+  </button>
+  <button class="filter-btn" data-filter-type="rating" data-filter="3star">
+    <img src="/images/badges/3star.png" alt="3star">
+  </button>
+    <button class="filter-btn" data-filter-type="rating" data-filter="4star">
+    <img src="/images/badges/4star.png" alt="4star">
+  </button>
+    <button class="filter-btn" data-filter-type="rating" data-filter="5star">
+    <img src="/images/badges/5star.png" alt="5star">
+  </button>
+</div>
+</fieldset>
+<fieldset>
+  <legend>Info</legend>
+  Thanks for checking out my Game Log. I only log games here that have are (mostly) single-player and have a full story-line with a hard ending. This is so the log doesn't get overwhelmed
+  by games I regularly play like sandbox games, MMOs, ect. I will also only add "planned" games that I own or have downloaded. You can click on the cards to see some of my notes!
+  {% if steam %}
+<p> Last Played on Steam: <strong>{{ steam.name }}</strong>· {{ steam.hours }} hrs</p>
+{% endif %}
+</fieldset>
+</div>
+<div class="link-box" data-section="played">
+  {% for game in gamelog %}
+    {% if game.type == "played" %}
+      <div class="link-card"
+     data-platform="{{ game.platform | lower }}"
+     data-status="{{ game.status | lower }}"
+     data-rating="{% if game.rating %}{{ game.rating | lower }}{% else %}unrated{% endif %}">
+        <div class="card-main">
+          {% if game.thumbnail %}
+            <img class="thumbnail" src="{{ game.thumbnail }}" alt="{{ game.title }} thumbnail">
+          {% endif %}
+          <div class="card-info">
+            <p class="game-title">{{ game.title }}</p>
+            <div class="badges">
+              {% if game.statusImage %}<img src="{{ game.statusImage }}" alt="{{ game.status }}">{% endif %}
+              {% if game.platformImage %}<img src="{{ game.platformImage }}" alt="{{ game.platform }}">{% endif %}
+              {% if game.ratingImage %}<img src="{{ game.ratingImage }}" alt="{{ game.rating }}">{% endif %}
+            </div>
+                {% if game.notes %}
+                <div class="notes">{{ game.notes }}</div>
+                {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+
+<h2>Games I'm Watching My Husband Play</h2>
+<div class="fieldset-row">
+<fieldset><legend>Filters</legend>
+<div class="filters" data-section="watched">
+  <!-- Status filters -->
+ Status:<br>
+ <button class="filter-btn" data-filter-type="status" data-filter="currently watching">
+    <img src="/images/badges/currently.png" alt="Currently Watching">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="completed">
+    <img src="/images/badges/completed.png" alt="Completed">
+  </button>
+  <button class="filter-btn" data-filter-type="status" data-filter="planning">
+    <img src="/images/badges/planning.png" alt="Planning">
+  </button>
+</div>
+<div class="filters" data-section="watched">
+  <!-- Platform filters -->
+  Platform:<br>
+  <button class="filter-btn" data-filter-type="platform" data-filter="pc">
+    <img src="/images/badges/pc.webp" alt="PC">
+  </button>
+  <button class="filter-btn" data-filter-type="platform" data-filter="emulator">
+    <img src="/images/badges/emulator.webp" alt="Emulator">
+  </button>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Info</legend>
+These are the games my husband plays while I watch and help with choices and puzzles. It’s a special way for us to enjoy the story and bond over games.
+It's like having my own personal streamer.
+</fieldset>
+</div>
+<div class="link-box" data-section="watched">
+  {% for game in gamelog %}
+    {% if game.type == "watched" %}
+      <div class="link-card"
+           data-platform="{{ game.platform | lower }}"
+           data-status="{{ game.status | lower }}"
+           data-type="watched">
+            {% if game.thumbnail %}
+            <img class="thumbnail" src="{{ game.thumbnail }}" alt="{{ game.title }} thumbnail">
+          {% endif %}
+        <p class="game-title">{{ game.title }}</p>
+        <div class="badges">
+          {% if game.statusImage %}<img src="{{ game.statusImage }}" alt="{{ game.status }}">{% endif %}
+          {% if game.platformImage %}<img src="{{ game.platformImage }}" alt="{{ game.platform }}">{% endif %}
+        </div>
+       {% if game.notes %}
+          <div class="notes">{{ game.notes }}</div>
+      {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filterSections = document.querySelectorAll(".filters");
+
+  filterSections.forEach(section => {
+    const sectionName = section.dataset.section;
+    const cards = document.querySelectorAll(`.link-box[data-section="${sectionName}"] .link-card`);
+    const buttons = section.querySelectorAll(".filter-btn");
+
+    // Each section gets its own filters
+    const activeFilters = {
+      platform: new Set(),
+      status: new Set(),
+      rating: new Set()
+    };
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filterType = btn.dataset.filterType;
+        const filterValue = btn.dataset.filter;
+
+        if (activeFilters[filterType].has(filterValue)) {
+          activeFilters[filterType].delete(filterValue);
+          btn.classList.remove("active");
+        } else {
+          activeFilters[filterType].add(filterValue);
+          btn.classList.add("active");
+        }
+
+        cards.forEach(card => {
+          const cardPlatform = card.dataset.platform;
+          const cardStatus = card.dataset.status;
+          const cardRating = card.dataset.rating;
+
+          const matchesPlatform =
+            activeFilters.platform.size === 0 || activeFilters.platform.has(cardPlatform);
+          const matchesStatus =
+            activeFilters.status.size === 0 || activeFilters.status.has(cardStatus);
+          const matchesRating =
+            activeFilters.rating.size === 0 || activeFilters.rating.has(cardRating);
+
+          card.style.display = (matchesPlatform && matchesStatus && matchesRating) ? "" : "none";
+        });
+      });
+    });
+  });
+});
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".link-card");
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      if (card.classList.contains("expanded")) {
+        card.classList.remove("expanded");
+      } else {
+        // collapse others in the same section
+        card.closest(".link-box")
+            .querySelectorAll(".link-card.expanded")
+            .forEach(c => c.classList.remove("expanded"));
+        
+        card.classList.add("expanded");
+      }
+    });
+  });
+});
+
+</script>
