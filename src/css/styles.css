@@ -191,6 +191,9 @@ footer {
   .container {
     flex-direction: column; 
     overflow-y: scroll;
+  background-color: #000000bd;
+  border: none;
+  background-image: none;
   }
   
 
@@ -244,15 +247,9 @@ footer {
   box-sizing: border-box;
 }
 
-
-.mobile-links a:hover{
-  font-family: Chaos;
-}
-
-
   .mobile-links a{
     padding: 15px;
-    line-height: normal;
+    line-height: 2em;
   }
 
 .image-frame {

@@ -60,9 +60,19 @@
             border: 4px #32302f outset;
         }
 
+        @media (max-width: 900px) {
+            .container{
+            padding: 5%;
+            width: 90%;
+            margin-top: 5px;
+          }
+        }
+          
+
         .container a{
             color:var(--contrast);
         }
+
         a{
          color:rgb(43, 43, 43);
         }
@@ -197,31 +207,22 @@ ul{
     margin-top: 10%;
 }
  
-
 /* PHOTOGRID STYLES */
-
 .photo-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 25px 0;
   margin: auto;
   width: 90%;
-  border: dashed 1px #ffffff7a;
 }
 
 .card {
   background-color: #fff;
   padding: 10px;
-  width: 23%;
-  min-width: 250px;
   box-sizing: border-box;
   transition: 0.3s;
-  display: flex;
-  flex-direction: column;
 }
-
 
 .card:hover {
   transform: scale(0.95) rotate(1deg);
@@ -230,6 +231,7 @@ ul{
 .card img {
   width: 100%;
   height: auto;
+  display: block;
   transition: 0.2s;
   filter: grayscale(50%);
 }
@@ -246,32 +248,25 @@ ul{
   margin-top: 10px;
 }
 
-/* Responsive columns based on screen width */
-
-@media (max-width: 1400px) {
-  .card {
-    width: 30%;
-    height: auto;
-
-  }
-  .photo-container {
-    width: 100%;
-}
-}
-
-@media (max-width: 1000px) {
-  .card {
-    width: 45%;
-    height: auto;
-  }
-}
-
+/* Mobile override: Instagram-style grid */
 @media (max-width: 700px) {
+  .photo-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
   .card {
-    width: 90%;
-    height: auto;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .desc {
+    display: none; /* hide captions if you want pure photo grid */
   }
 }
+
+
 
 /* Collections */
 .image-flex {

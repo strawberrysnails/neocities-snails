@@ -7,7 +7,7 @@
         <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
         <title>Snails | Drakengard 3 | To-Do List</title>
             <!-- CSS/JS + CACHEBUSTING -->
-            <link rel="stylesheet" href="/css/dg3.css?nocache=?nocache=1759191098481">
+            <link rel="stylesheet" href="/css/dg3.css?nocache=?nocache=1759270092410">
             <link rel="stylesheet" href="/css/fonts.css">
             <link rel="stylesheet" href="/css/bootstrap-icons.css">
 
@@ -17,7 +17,8 @@
 <div class="grid-container">
   <div class="header"></div>
   <div class="sidebar">
-    <ul>
+    <div class="timeline-list">
+<ul>
   <li><a href="/shrines/drakengard3">Index</a></li>
   <li>
     Introduction
@@ -52,6 +53,7 @@
     </ul>
   </li>
 </ul>
+</div>
 
           <!--MUSIC PLAYER -->
 <div class="simple-player">

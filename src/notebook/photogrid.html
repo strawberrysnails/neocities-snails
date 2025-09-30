@@ -8,36 +8,116 @@ permalink: notebook/photogrid/
 <img src="/images/graphics/camera.png">
 
 <div class="photo-container">
-{% for photo in photos %}
-  <div class="card">
-    <img 
-      src="/images/photogrid/{{ photo.src }}" 
-      data-caption="{{ photo.caption | safe }}" 
-      data-date="{{ photo.date }}" 
-      class="clickable-photo" 
-      style="cursor: url(/images/pointer.png), pointer;"
-    >
-    <div class="desc">
-      <b style="margin: 5px;">{{ photo.date }}</b><br>
-      {{ photo.caption | safe }}
+  {% for photo in photos %}
+    <div class="card">
+      <img 
+        src="/images/photogrid/{{ photo.src }}" 
+        data-caption="{{ photo.caption | safe }}" 
+        data-date="{{ photo.date }}" 
+        class="clickable-photo" 
+        style="cursor: url(/images/pointer.png), pointer;"
+      >
+      <div class="desc">
+        <b style="margin: 5px;">{{ photo.date }}</b><br>
+        {{ photo.caption | safe }}
+      </div>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
+</div>
 
-<div id="photoModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(46, 46, 46, 0.90);">
-  <span id="closeModal" style="position:absolute; top:15px; right:35px; color:white; font-size:60px; cursor: url(/images/pointer.png), pointer;">&times;</span>
-  <div style="margin: auto; padding: 20px; max-width: 90%; text-align: center;">
-    <img id="modalImage" src="" style="max-width: 100%; height: auto; margin-top: 10%; border: 10px solid white" />
-    <div id="modalCaption" style="color:white; margin-top:10px;"></div>
-    <div id="modalNav" style="margin-top: 10px;">
-  <button id="prevPhoto" style="margin-right: 10px;">← Prev</button>
-  <button id="nextPhoto">Next →</button>
-</div>
+<!-- PHOTO MODAL -->
+<div id="photoModal">
+  <span id="closeModal">&times;</span>
+
+  <div class="modal-content">
+    <div class="modal-inner">
+      <button id="prevPhoto" class="modal-nav">‹</button>
+      <img id="modalImage" src="" />
+      <button id="nextPhoto" class="modal-nav">›</button>
+    </div>
+    <div id="modalCaption"></div>
   </div>
 </div>
-</div>
+
+
+<style>
+#photoModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(46,46,46,0.9);
+}
+
+#closeModal {
+  position: absolute;
+  top: 15px; right: 35px;
+  color: white;
+  font-size: 60px;
+  cursor: url(/images/pointer.png), pointer;
+  z-index: 1002;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.modal-inner {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+#modalImage {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid white;
+  display: block;
+  margin: auto;
+}
+
+#modalCaption {
+  color: white;
+  margin-top: 10px;
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 2rem;
+  color: white;
+  padding: 5px 10px;
+  cursor: url(/images/pointer.png), pointer;
+  z-index: 1001;
+}
+
+#prevPhoto { left: -40px; cursor: url(/images/pointer.png), pointer;}  
+#nextPhoto { right: -40px; cursor: url(/images/pointer.png), pointer;} 
+
+@media (max-width: 768px) {
+  .modal-nav {
+    
+  }
+  .modal-content{
+    max-width: 80%;
+  }
+  #prevPhoto { left: -10px;}
+  #nextPhoto { right: -30px;} 
+}
+
+</style>
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const photos = Array.from(document.querySelectorAll('.clickable-photo'));
   let currentIndex = 0;
 
@@ -46,46 +126,56 @@ permalink: notebook/photogrid/
     if (!img) return;
 
     document.getElementById('modalImage').src = img.src;
-    document.getElementById('modalCaption').innerHTML = `<b>${img.dataset.date}</b><br>${img.dataset.caption}`;
+    document.getElementById('modalCaption').innerHTML =
+      `<b>${img.dataset.date}</b><br>${img.dataset.caption}`;
     document.getElementById('photoModal').style.display = "block";
     currentIndex = index;
   }
 
-  photos.forEach((img, index) => {
-    img.addEventListener('click', () => openModal(index));
-  });
-
+  photos.forEach((img, index) =>
+    img.addEventListener('click', () => openModal(index))
+  );
 
   document.getElementById('closeModal').addEventListener('click', () => {
     document.getElementById('photoModal').style.display = "none";
   });
 
-
-  window.addEventListener('click', (e) => {
-    if (e.target === document.getElementById('photoModal')) {
+  // click outside modal-inner closes modal
+  document.getElementById('photoModal').addEventListener('click', e => {
+    if (!document.querySelector('.modal-inner').contains(e.target)) {
       document.getElementById('photoModal').style.display = "none";
     }
   });
 
-  document.getElementById('prevPhoto').addEventListener('click', () => {
-    openModal((currentIndex - 1 + photos.length) % photos.length);
+  document.getElementById('prevPhoto').addEventListener('click', () =>
+    openModal((currentIndex - 1 + photos.length) % photos.length)
+  );
+
+  document.getElementById('nextPhoto').addEventListener('click', () =>
+    openModal((currentIndex + 1) % photos.length)
+  );
+
+   // keyboard nav
+  document.addEventListener('keydown', e => {
+    const modal = document.getElementById('photoModal');
+    if (modal.style.display !== "block") return;
+    if (e.key === "Escape") modal.style.display = "none";
+    else if (e.key === "ArrowLeft") openModal((currentIndex - 1 + photos.length) % photos.length);
+    else if (e.key === "ArrowRight") openModal((currentIndex + 1) % photos.length);
   });
 
-  document.getElementById('nextPhoto').addEventListener('click', () => {
-    openModal((currentIndex + 1) % photos.length);
+  // touch swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+  const modalInner = document.querySelector('.modal-inner');
+
+  modalInner.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX);
+  modalInner.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    const swipeDistance = touchEndX - touchStartX;
+    const minSwipe = 50;
+    if (swipeDistance > minSwipe) openModal((currentIndex - 1 + photos.length) % photos.length);
+    else if (swipeDistance < -minSwipe) openModal((currentIndex + 1) % photos.length);
   });
-
-  document.addEventListener('keydown', (e) => {
-  const modal = document.getElementById('photoModal');
-  if (modal.style.display !== "block") return;
-
-  if (e.key === "Escape") {
-    modal.style.display = "none";
-  } else if (e.key === "ArrowLeft") {
-    openModal((currentIndex - 1 + photos.length) % photos.length);
-  } else if (e.key === "ArrowRight") {
-    openModal((currentIndex + 1) % photos.length);
-  }
 });
-
 </script>

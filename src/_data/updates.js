@@ -1,5 +1,9 @@
 module.exports = [
     {
+    date: new Date("2025-09-30"),
+    blurb: `The <a href="/notebook/photogrid">photogrid</a> got a new update! It's more mobile-friendly and has swipe support now. ALSO my guide: <a href="/shrines/drakengard3/howto">How to play Drakengard 3</a> is up and available to read!`
+    },
+    {
     date: new Date("2025-09-29"),
     blurb: `I'm updating and reorganizing the media logs. First up: video games, now redesigned and relocated: <a href="/notebook/videogames">/notebook/videogames</a>. Now featuring thumbnails and filterable by status, platform, and rating!`
     },
