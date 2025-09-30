@@ -27,8 +27,8 @@ let seek_slider = document.querySelector(".seek-slider");
           path:"https://files.catbox.moe/ttvk5t.mp3"
       },
       {
-          name:"Shooting Arrows - The Cat's Whiskers",
-          path:"https://files.catbox.moe/wohb5g.mp3"
+          name:"Kuroi Uta",
+          path:"https://files.catbox.moe/ttvk5t.mp3"
       }
   ];
   //

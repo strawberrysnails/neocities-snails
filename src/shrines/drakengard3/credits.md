@@ -1,6 +1,6 @@
 ---
 title: Drakengard 3
-permalink: /shrines/drakengard3/credits
+permalink: /shrines/drakengard3/credits/
 layout: dg3.njk
 ---
 - [Drakenier Enjoyer](https://www.pinterest.com/ACC0RD/)  on Pinterest

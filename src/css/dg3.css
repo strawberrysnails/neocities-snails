@@ -236,33 +236,31 @@ padding: 10px;
 }
 
 
-ul {
+.timeline-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-
-ul li {
+.timeline-list ul li {
   position: relative;
-  padding-left: 1rem;   
-  margin: 0.25rem 0;   
-  line-height: 1.2;    
+  padding-left: 1rem;
+  margin: 0.25rem 0;
+  line-height: 1.2;
 }
 
-ul ul {
-  margin-left: 0.7rem;  
-  padding-left: 0rem;
+.timeline-list ul ul {
+  margin-left: 0.7rem;
+  padding-left: 0;
   border-left: 1px solid #a0a0a0;
 }
 
-
-ul ul li::before {
+.timeline-list ul ul li::before {
   content: "";
   position: absolute;
-  top: .6em;          
-  left: -0rem;
-  width: 1rem;     
+  top: .6em;
+  left: 0;
+  width: 1rem;
   height: 1px;
   background: #a0a0a0;
 }
