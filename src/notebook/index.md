@@ -13,7 +13,7 @@ layout: notebook
 - [Wishlist](wishlist)
 
 ### **Media Logs**
-- [Video Games](games)
+- [Video Games](videogames)
 - [~~Anime~~](#)
 - [~~Manga~~](#)
 - [~~Library~~](#)
