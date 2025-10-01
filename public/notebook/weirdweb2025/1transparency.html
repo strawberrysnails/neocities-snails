@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weird Web October 2025 | Transparency</title>
+  <link rel="octo:octothorpes" href="Transparency">
+              <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+            <link rel="stylesheet" href="/css/styles.css">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      font-family: ;
+      background: #1a1a1a;
+      color: #ccc;
+      margin: 2rem;
+    }
+
+    .parent{
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 1rem;
+      max-width: 100%;
+      margin: auto;
+      height: 600px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* move up 10px */
+  }
+}
+
+    model-viewer {
+      width: 100%;
+      height: 100%;
+      animation: bob 2s ease-in-out infinite;
+    }
+
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 1rem;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .fieldset-row {
+    margin-top: 50px;
+    display: flex;
+    gap: 1rem;        
+    flex-wrap: wrap;
+    align-items: stretch;
+    }
+
+    .fieldset-row fieldset {
+    flex: 1 1 300px;
+    min-height: 75px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    a {
+      color: #d4d4d4;
+      margin: 0 0.25rem;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="parent">
+      <model-viewer src="/images/emil.glb" alt="Emil Replicant" auto-rotate="" camera-controls="" ar="" exposure="1" field-of-view="20deg">
+</model-viewer>
+    </div>
+    <div class="fieldset-row">
+      <fieldset>
+    <legend>Notes</legend>
+        I've always wanted to experiment with <a rel="noreferrer" target="_blank" href="https://modelviewer.dev/">model-viewer</a> so this is my attempt at that! Hope you like it. Comments, questions, and feedback are welcome.
+        Credits: <a rel="noreferrer" target="_blank" href="https://www.deviantart.com/vvampii/art/NieR-Re-in-Emil-Replicant-887687423">3D Model</a>.
+  </fieldset>
+  <fieldset>
+    <legend>Info</legend>
+    <a href="/">Homepage</a> |
+    <a href="/blog/weird-web-october.html">Calendar</a> | 
+    <a rel="noreferrer" target="_blank" href="https://weirdweboctober.website/">What is this?</a> |
+    <a rel="noreferrer" target="_blank" href="https://octothorp.es/~/Transparency">#transparency</a> | 
+    <a rel="noreferrer" target="_blank" href="https://octothorp.es/~/weirdweboctober">#weirdweboctober</a>
+  </fieldset>
+</div>
+  <script>
+    // Example script: log a message when page loads
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Weird Web October page loaded!");
+    });
+  </script>
+</body>
+</html>

@@ -17,7 +17,7 @@ tags:
   *Infinity Nikki* – 1.5 is a little buggy but I'm excited for new content.
 
 - **Watching:**
-  Demon Souls – Husband let me create his charecter, like always. Her name is Arizonyaa. ₍^. .^₎⟆
+  Demon Souls – Husband let me create his character, like always. Her name is Arizonyaa. ₍^. .^₎⟆
 
 ## Reading
 - **Started:**  
