@@ -1,5 +1,9 @@
 module.exports = [
     {
+      date: new Date("2025-10-06"),
+      blurb: `Finished up day 3-6 of <a href="/notebook/weirdweb2025/">Weird Web October</a>.`
+    },
+    {
       date: new Date("2025-10-03"),
       blurb: `Day 2 of Weird Web October: <a href="/notebook/weirdweb2025/2maps">#maps</a>.`
     },
