@@ -18,7 +18,14 @@ layout: main
   {% endif %}
 
   
+
   <div class="blog-content">
+    {% set tocHtml = content | toc %}
+{% if tocHtml %}
+    <h2>Table of Contents</h2>
+    {{ tocHtml | safe }}
+{% endif %}
+
     {{ content | safe }}
   </div>
 ---

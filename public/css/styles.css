@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Deja Vu Sans Mono, monospace;
+  font-family: DejaVuSansMono, monospace;
   font-size: 0.9em;
   line-height: 1.3em;
   letter-spacing: 0.5px;
@@ -451,6 +451,28 @@ hr{
           background-color: var(--darkcolor);
         }
   
+.blog-content h1,
+.blog-content h2,
+.blog-content h3{
+font-family: DejaVuSansMono;
+}
+
+
+
+.blog-content h2{
+  font-size: 2em;
+}
+
+.blog-content h3{
+  font-size:1em;
+}
+
+nav.toc {
+width: auto;
+padding-left: 20px;
+margin-top: 20px;
+border: none;
+}
 
 /* BOTTOM UI */
 

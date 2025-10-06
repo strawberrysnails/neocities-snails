@@ -9,7 +9,7 @@
     <link rel="preload" as="image" href="https://octothorp.es/?uri=https://snails.town/">
     <link rel="octo:octothorpes" href="weirdweboctober">
             <!-- CSS/JS + CACHEBUSTING -->
-            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1759773326858">
+            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1759783353177">
             <link rel="stylesheet" href="/css/fonts.css">
             <link rel="stylesheet" href="/css/bootstrap-icons.css">
             <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
@@ -66,10 +66,19 @@
   
 
   
+
   <div class="blog-content">
+    
+
+    <h2>Table of Contents</h2>
+    <nav class="toc">
+        <ol><li><a href="#why"># Why?</a><ol><li><a href="#some-notes"># Some Notes</a></li></ol></li><li><a href="#jailbreaking"># Jailbreaking</a><ol><li><a href="#installing-koreader"># Installing KOReader</a></li><li><a href="#aftermath"># Aftermath</a></li><li><a href="#installing-and-configuring-rakuyomi"># Installing and Configuring Rakuyomi</a></li></ol></li><li><a href="#conclusion"># Conclusion</a></li><li><a href="#links"># Links</a></li></ol>
+      </nav>
+
+
     <p>Amazon recently disabled the ability to download any books purchased through the Kindle storefront. This means they can delete, remove, or change books on your device at any time. Essentially, when you buy a digital book from Amazon, you're just paying for a long-term rental, not true ownership.</p>
 <p>Before I jailbroke my Kindle, I was already downloading books for free and sideloading them via Calibre. But I wanted <strong>full ownership</strong> over both my device and my ebooks and I didn’t want to stay tied to an Amazon account just to use something I own.</p>
-<h2 id="why%3F" tabindex="-1">Why?</h2>
+<h2 id="why" tabindex="-1"><a class="header-anchor" href="#why" aria-hidden="true">#</a> Why?</h2>
 <ul>
 <li>The Kindle UI is bad and doesn’t support EPUB files.</li>
 <li>You can’t download ebooks you “bought” from Amazon.</li>
@@ -78,15 +87,15 @@
 <li>Manga downloader via plugin. I had trouble uploading manga manually, so this makes it much easier.</li>
 </ul>
 <p>Basically, the goal is to disconnect from Amazon services entirely.</p>
-<h3 id="some-notes" tabindex="-1">Some Notes</h3>
+<h3 id="some-notes" tabindex="-1"><a class="header-anchor" href="#some-notes" aria-hidden="true">#</a> Some Notes</h3>
 <p>This isn’t a how-to guide. It’s more of a “how I did it, and why.” I'm just documenting my process and reasoning. Hopefully it helps someone in a similar position.</p>
 <p>Modding your Kindle is generally safe. There’s little risk of bricking your device, and you can always undo it if you’re not happy (though I can’t imagine why you'd want to go back).</p>
-<h2 id="jailbreaking" tabindex="-1">Jailbreaking</h2>
+<h2 id="jailbreaking" tabindex="-1"><a class="header-anchor" href="#jailbreaking" aria-hidden="true">#</a> Jailbreaking</h2>
 <p>I followed the instructions on the <a rel="noreferrer" target="_blank" href="https://kindlemodding.org/">Kindle Modding Wiki</a>. My device is the 11th generation Kindle, so I used the guide for Winterbreak. After that, I installed a hotfix to stop the device from updating automatically, then installed KUAL and MRPI to run homebrew software.</p>
-<h3 id="installing-koreader" tabindex="-1">Installing KOReader</h3>
+<h3 id="installing-koreader" tabindex="-1"><a class="header-anchor" href="#installing-koreader" aria-hidden="true">#</a> Installing KOReader</h3>
 <p><a rel="noreferrer" target="_blank" href="https://koreader.rocks/">KOReader</a> is a document viewer for e-readers and other e-ink devices. It lets you open and read pretty much any file type.</p>
 <p>To install it, I followed <a rel="noreferrer" target="_blank" href="https://kindlemodding.org/jailbreaking/post-jailbreak/koreader.html">this guide on the Kindle Modding Wiki</a>. It was straightforward.</p>
-<h3 id="aftermath" tabindex="-1">Aftermath</h3>
+<h3 id="aftermath" tabindex="-1"><a class="header-anchor" href="#aftermath" aria-hidden="true">#</a> Aftermath</h3>
 <p>YAY my Kindle works! KOReader has a very different interface, but with some tweaks and a quick read through the <a rel="noreferrer" target="_blank" href="https://koreader.rocks/user_guide/">User Guide</a>, I figured it out. Custom lockscreen time!</p>
 <p><img src="/images/blog/mikulockscreen.png" class="responsive-img"></p>
 <p>I used this <a rel="noreferrer" target="_blank" href="https://eink-image-converter.contechity.com/">e-ink image converter</a>.</p>
@@ -94,7 +103,7 @@
 <p>One KOReader feature I really like is <strong>Collections</strong>, which you can read about <a rel="noreferrer" target="_blank" href="https://koreader.rocks/user_guide/#L2-collections">here</a>. It's a much more efficient way to organize your digital library, especially since Rakuyomi doesn’t allow you to choose where downloaded manga is saved (more on that below).</p>
 <p>Right now, I’ve set up three collections: <em>Books</em>, <em>Manga</em>, and <em>Fanfiction</em>. I’ll likely expand that over time as I add more content, but for now, this setup works for me.</p>
 <p>Eventually, I want to set up automatic synchronization between my collections and folders. This will be really useful later on for keeping manga organized after downloading through Rakuyomi.</p>
-<h3 id="installing-and-configuring-rakuyomi" tabindex="-1">Installing and Configuring Rakuyomi</h3>
+<h3 id="installing-and-configuring-rakuyomi" tabindex="-1"><a class="header-anchor" href="#installing-and-configuring-rakuyomi" aria-hidden="true">#</a> Installing and Configuring Rakuyomi</h3>
 <p>This was pretty hard for me and I ended up asking my tech-savvy boyfriend for help, which made things a lot easier.</p>
 <p>Here’s what he did:</p>
 <p>While my Kindle was plugged into my PC, he copied the <strong><code>rakuyomi.koplugin</code></strong> folder into KOReader’s <strong><code>plugins</code></strong> folder.</p>
@@ -119,11 +128,11 @@
 </ol>
 <p><img src="/images/blog/dorohedoromanga.png" class="responsive-img"></p>
 <p>When you download manga to your device it is sent to a folder called <code>rakuyomi/downloads</code>. To make it easier to access, I synced this folder with my "Manga" collection.</p>
-<h2 id="conclusion" tabindex="-1">Conclusion</h2>
+<h2 id="conclusion" tabindex="-1"><a class="header-anchor" href="#conclusion" aria-hidden="true">#</a> Conclusion</h2>
 <p>I’ve only scratched the surface of Kindle modding, and I’m really excited to keep exploring what’s possible. Emulators, native games, and lots of plugins. My boyfriend even installed Tetris for me (idk how).</p>
 <p>There are still a few plugins I’m interested in but haven’t tried yet. I’ll figure those out eventually and share more once I get the chance to play around with them.</p>
 <p>Thanks for reading!</p>
-<h2 id="links" tabindex="-1">Links</h2>
+<h2 id="links" tabindex="-1"><a class="header-anchor" href="#links" aria-hidden="true">#</a> Links</h2>
 <ul>
 <li><a rel="noreferrer" target="_blank" href="https://kindlemodding.org/">Kindle Modding Wiki</a></li>
 <li><a rel="noreferrer" target="_blank" href="https://koreader.rocks/">KOReader</a></li>
@@ -164,7 +173,7 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
 </script>
-<script src="/javascript/main.js?nocache=?nocache=1759773326858"></script>
+<script src="/javascript/main.js?nocache=?nocache=1759783353177"></script>
   </body>
 </html>
 

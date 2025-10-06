@@ -145,8 +145,6 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
   });
 
 
-
-  // Markdown config 
   // EXAMPLE: ![Alt Text](image.jpg){.my-class}
   eleventyConfig.setLibrary("md", markdownIt({
     html: true,
@@ -154,11 +152,36 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
     linkify: true
   }).use(markdownItAttrs).use(markdownItAnchor));
 
-  // TOC 
+
+    // Markdown config with anchors & TOC
+  const md = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  })
+  .use(markdownItAttrs)
+  .use(markdownItAnchor, {
+    level: [2, 3], // h2 and h3
+    permalink: markdownItAnchor.permalink.ariaHidden({
+      symbol: '#',
+      placement: 'before'
+    }),
+    slugify: s =>
+      s
+        .trim()
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, '')  
+        .replace(/\s+/g, '-'),     
+  });
+
+  eleventyConfig.setLibrary("md", md);
+
+  // TOC plugin
   eleventyConfig.addPlugin(pluginTOC, {
-    tags: ["h2", "h3"], // adjust as needed
+    tags: ["h2", "h3"],       
     wrapper: "nav",
     wrapperClass: "toc",
+    headingText: "Table of Contents", 
   });
 
   return {
