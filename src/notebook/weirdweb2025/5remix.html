@@ -1,13 +1,14 @@
 
+
   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weird Web October 2025 | Scramble</title>
+  <title>Weird Web October 2025 | Remix</title>
 <link rel="preload" as="image" href="https://octothorp.es/?uri=https://snails.town/">
   <link rel="octo:octothorpes" href="weirdweboctober">
-  <link rel="octo:octothorpes" href="Scramble">
+  <link rel="octo:octothorpes" href="Remix">
               <link rel="stylesheet" href="/css/fonts.css">
             <link rel="stylesheet" href="/css/bootstrap-icons.css">
             <link rel="stylesheet" href="/css/styles.css">
@@ -29,10 +30,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 48px;
-      line-height: 1em;
-      font-family:Georgia, 'Times New Roman', Times, serif;
-      font-style: italic;
     }
 
     fieldset {
@@ -65,23 +62,54 @@
       margin: 0 0.25rem;
     }
 
+.blend-box {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.blend-box img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.base {
+  z-index: 1;
+  transform:scale(110%) translateX(-60px);
+  mix-blend-mode: multiply;
+}
+
+.blend {
+  z-index: 2;
+  opacity: 0.8;
+  mix-blend-mode: multiply; 
+  filter: hue-rotate(30deg) contrast(120%);
+  transform: translateX(50px);
+}
+
   </style>
     <div class="parent">
-      “we tsum ssducci, neht, eht snhtreailpioh bweaetn nmeow nda rtewa. hewn nme lfal itno eht sae, ehyt nrdwo. hewn nmeow teet eht wtear, ehyt afnmtrsor. ti eobcmse avtli ot sak: si htsi a atmimrseptooh, ro a nighoceom?”
+        <div class="blend-box">
+  <img src="/images/weirdweb/human.png" class="base">
+  <img src="/images/weirdweb/emil.png" class="blend">
+</div>
      </div>
     <div class="fieldset-row">
       <fieldset>
     <legend>Notes</legend>
-Scrambled quote from <i>A Study in Drowning</i>: 
-“We must discuss, then, the relationship between women and water. When men fall into the sea, they drown. When women meet the water, they transform. It becomes vital to ask: is this a metamorphosis, or a homecoming?” 
+    Fun with "mix-blend-mode".
   </fieldset>
   <fieldset>
     <legend>Info</legend>
     <a href="/">Homepage</a> |
     <a href="/notebook/weirdweb2025">Calendar</a> | 
     <a href="https://weirdweboctober.website/">What is this?</a> |
-    <a href="https://octothorp.es/~/Scramble">#scramble</a> | 
+    <a href="https://octothorp.es/~/Remix">#remix</a> | 
     <a href="https://octothorp.es/~/weirdweboctober">#weirdweboctober</a><br><br>
-        <a href="/notebook/weirdweb2025/2maps"> <i class="bi bi-arrow-left"></i> Maps</a> | <a href="/notebook/weirdweb2025/4filters">Filters <i class="bi bi-arrow-right"></i></a>
+        <a href="/notebook/weirdweb2025/4filters"> <i class="bi bi-arrow-left"></i> Filters</a> | <a href="/notebook/weirdweb2025/6solids">Solids <i class="bi bi-arrow-right"></i></a>
   </fieldset>
 </div>
