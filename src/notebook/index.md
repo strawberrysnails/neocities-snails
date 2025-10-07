@@ -7,6 +7,8 @@ layout: notebook
 - [Bookmarks](bookmarks)
 - [Graphics](collections)
 - [Fonts](fonts)
+- [Templates](templates)
+- [Widgets](widgets)
 
 ### **Personal**
 - [Photogrid](photogrid)

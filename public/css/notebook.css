@@ -60,6 +60,27 @@
             border: 4px #32302f outset;
         }
 
+        .contain {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .col {
+          flex: 1 1 45%;   
+          min-width: 200px;
+          box-sizing: border-box;
+          margin-bottom: 30px;
+          text-align: left;
+        }
+
+        /* Optional: stack on very small screens */
+        @media (max-width: 500px) {
+          .col {
+            flex: 1 1 100%;
+          }
+        }
+
         @media (max-width: 900px) {
             .container{
             padding: 5%;
@@ -180,7 +201,7 @@
 
  
 hr{
-    border: 2px solid #5568d5;
+    border: 1px solid #cacaca;
     border-radius: 5px;
 }
  

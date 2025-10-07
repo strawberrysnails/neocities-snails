@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!---
                             SNAILS.TOWN TEMPLATE
            d8b                                                   d8,      d8b 
@@ -12,10 +12,11 @@
  d88                                              ,88P                        
  ?8P                                          `?8888P        
 
- Hello, please read the instructions carefully to set up your photogrid properly.
+ Hello, please read the instructions carefully to set up your photogrid properly. 
+ You can download this file and remove the .txt at the end or copy and paste everything into an .html file
 
 -  You can add/change/remove anything you want! It's totally customizable! Just be careful: some edits might break parts of the layout. But have fun <3
--  I’ve added helpful comments throughout the CSS and JavaScript to guide you.
+-  I have added helpful comments throughout the CSS and JavaScript to guide you.
 -  You can also move the CSS and JS into separate files if you prefer, just make sure to link them correctly back to this HTML file.
 -  problems, comments or suggestions? email me: hello@snails.town
 
@@ -33,7 +34,7 @@ INSTRUCTIONS:
     EXAMPLE:
 
     const photos = [
-         { src: "/images/photogrid/example.png", caption: "My first upload!", date: "10.07.2025" },
+         { src: "/images/example.png", caption: "My first upload!", date: "10.07.2025" },
     ];
 
 
@@ -42,11 +43,11 @@ INSTRUCTIONS:
 
 3. Style it if you'd like! Feel free to play around under the <style> tag and change anything your heart desires 
 
-4. Enjoy! Credit is not necessary but very appreciated. If you use this template, I’d love to see it so please send me a note: hello@snails.town
+4. Enjoy! Credit is not necessary but very appreciated. If you use this template, Iâ€™d love to see it so please send me a note: hello@snails.town
 
 --->
 
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -169,10 +170,10 @@ INSTRUCTIONS:
             display: block;
         }
 
-            .card img:hover {
-            opacity: .8;
+        
+        .card img:hover {
+        opacity: .8;
         }
-       
 
         .desc {
             display: none;
@@ -281,16 +282,19 @@ INSTRUCTIONS:
         }
     </style>
 
-</head><body>
+<body>
     <div class="container">
         <div class="bio-container">
-            <div class="pfp-border"><img class="pfp" src="https://i.pinimg.com/736x/cd/aa/a9/cdaaa9e39c21d58f592fefd07523738c.jpg"></div>
+            <div class="pfp-border"><img class="pfp"
+                    src="PROFILE_PICTURE_IMAGE_HERE"></div>
             <div class="p-text">
-                <h1 class="username">@hostharuhi</h1>
-                <p class="stats"><!-- Photo amount will be loaded dynamically --></p>
-                <p class="name">Haruhi Fujioka ❀</p>
-                <p class="bio">Just trying to get through high school without breaking another vase. <a target="_blank" rel="noreferrer" href="https://octothorp.es/~/photogrid">#photogrid</a></p>
-                <a href="/notebook/templates" class="bio-link">View more templates</a>
+                <h1 class="username">@USERNAME</h1>
+                    <p class="stats"><!-- Photo amount will be loaded dynamically --></p>
+                    <p class="name">NAME</p>
+                    <p class="bio">BIO HERE
+                        <!--- OPTIONAL PHOTOGRID HASHTAG: <a target="_blank" rel="noopener noreferrer" href="https://octothorp.es/~/photogrid">#photogrid</a> -->
+                    </p>
+                <a href="#link_url_here" class="bio-link">My Website</a>
             </div>
         </div>
 
@@ -300,13 +304,13 @@ INSTRUCTIONS:
 
         <!-- Photo Modal -->
         <div id="photoModal">
-            <span id="closeModal">×</span>
+            <span id="closeModal">X</span>
 
             <div class="modal-content">
                 <div class="modal-inner">
-                    <button id="prevPhoto" class="modal-nav">‹</button>
+                    <button id="prevPhoto" class="modal-nav"><</button>
                     <img id="modalImage" src="">
-                    <button id="nextPhoto" class="modal-nav">›</button>
+                    <button id="nextPhoto" class="modal-nav">></button>
                 </div>
                 <div id="modalCaption"></div>
             </div>
@@ -316,14 +320,15 @@ INSTRUCTIONS:
 
 
         <script>
-            // Add list of image data here
+            // Add list of image data here.
+            // You can format the date however you want! 
+            // Remember that each photo will appear in the order it is listed. I recommend having your newest image added to the top of the array.
+            // NOTE: THERE NEEDS TO BE A COMMA AFTER EVERY CLOSED CURLY BRACKET. (except the last one)
             document.addEventListener('DOMContentLoaded', () => {
                 const photos = [
-                    { src: "/images/photogrid/sbux.png", caption: "Enjoying pumpkin while it lasts.", date: "9.18.2025" },
-                    { src: "/images/photogrid/hike.png", caption: "Early fall hike with my Husband!", date: "9.07.2025" },
-                    { src: "/images/photogrid/cows.png", caption: "Found this farm on a walk with my Husband.", date: "6.10.2025" },
-                    { src: "/images/photogrid/nyccity.png", caption: "My view of the city from Central Park.", date: "5.18.2025" },
-                    { src: "/images/photogrid/nycicecream.png", caption: "Ice cream from Salt and Straw in NYC.", date: "5.18.2025" }
+                    { src: "https://placehold.co/600x400", caption: "CAPTION HERE", date: "9.13.2025" },
+                    { src: "https://placehold.co/600x400", caption: "CAPTION HERE", date: "8.07.2025" },
+                    { src: "https://placehold.co/600x400", caption: "CAPTION HERE", date: "7.20.2025" }
                 ];
 
                 // Update stats with the number of photos
@@ -420,6 +425,6 @@ INSTRUCTIONS:
                 });
             });
         </script>
-</div></body>
+</body>
 
 </html>
