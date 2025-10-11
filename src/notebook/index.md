@@ -14,6 +14,7 @@ layout: notebook
 - [Photogrid](photogrid)
 - [Wishlist](wishlist)
 - [Weird Web October 2025](weirdweb2025)
+- [~~Collections~~](#)
 
 ### **Media Logs**
 - [Video Games](videogames)

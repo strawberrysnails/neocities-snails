@@ -1,5 +1,10 @@
 module.exports = [
   {
+    src: "ratwedding.png",
+    date: "10.04.2025",
+    caption: "Had the honor of attending a rat wedding at the Renaissance Faire.",
+  },
+  {
     src: "pochiandmofu.png",
     date: "9.22.2025",
     caption: "Pochacco and Mofusand enjoying some arcade fries.",

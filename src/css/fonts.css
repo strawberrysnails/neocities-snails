@@ -70,6 +70,12 @@
   src: url(/fonts/Bronela.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: Mythic Pixels;
+  src: url(/fonts/mythic-pixels.ttf) format("truetype");
+}
+
+
 
 /* Regular Merriweather */
 @font-face {

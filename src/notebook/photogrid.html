@@ -4,8 +4,17 @@ layout: none
 nesting: ""
 permalink: notebook/photogrid/
 ---
-
-<img src="/images/graphics/camera.png">
+ <div class="bio-container">
+            <div class="pfp-border"><img class="pfp"
+                    src="/images/photogrid/pfp.png"></div>
+            <div class="p-text">
+                <h1 class="username">@snails.town</h1>
+                <img style="width: 50px" src="/images/graphics/camera.png">
+                <p class="stats">{{ photos | length }} photos</p>
+                <p class="name">El ʕ•ᴥ•ʔ</p>
+                <p class="bio">A digital scrapbook of my life. <a target="_blank" rel="noopener noreferrer" href="https://octothorp.es/~/photogrid">#photogrid</a></p>
+                
+            </div></div>
 
 <div class="photo-container">
   {% for photo in photos %}
@@ -41,6 +50,87 @@ permalink: notebook/photogrid/
 
 
 <style>
+
+  
+        .bio-container {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            margin: 20px auto;
+            gap: 20px;
+            text-align: left;
+            border-bottom: 2px solid #ccc;
+            border-top: 2px solid #ccc;
+            
+        }
+
+        .pfp-border {
+            background: linear-gradient(45deg, #facfa2, #eb71aa, #c56c7b, #f7b5cf, #e48ba6); /* Gradient circle around profile picture */
+            padding: 4px;
+            border-radius: 50%;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+
+        }
+
+        .pfp {
+            display: block;
+            border-radius: 50%;
+            max-width: 150px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border: 0.35em solid white;
+        }
+
+        .p-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            flex-wrap: wrap;
+        }
+
+        .username {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .stats {
+            font-size: 1.2rem;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+                .username, .bio, .stats, .name{
+                  margin: 5px;
+                }
+
+                @media (max-width: 768px) {
+
+            .pfp-border {
+                padding: 4px;
+                border-radius: 50%;
+                display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .pfp {
+                max-width: 100px;
+            }
+
+        }
+
 #photoModal {
   display: none;
   position: fixed;

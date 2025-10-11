@@ -1,6 +1,10 @@
 module.exports = [
     {
       date: new Date("2025-10-07"),
+      blurb: `<ul><li>Launch of my first F2U template and widget: <a href="/notebook/templates">/notebook/templates</a> & <a href="/notebook/widgets">/notebook/widgets</a>.</li><li>Also new font added to the <a href="/notebook/fonts">fonts</a> page & joined some cliques on the <a href="/links">neighborhood</a> page.</li></ul>`
+    },
+    {
+      date: new Date("2025-10-07"),
       blurb: `General updates. <ul><li>New <a href="/blog">blog post</a></li><li>Updated the <a href="/links">Neighborhood</a></li><li>Added some links to <a href="/notebook/bookmarks">Bookmarks</a></li></ul>`
     },
     {
