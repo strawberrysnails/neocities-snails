@@ -1,0 +1,134 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weird Web October 2025 | Camera</title>
+<link rel="preload" as="image" href="https://octothorp.es/?uri=https://snails.town/notebook/weirdweb2025/11camera">
+  <link rel="octo:octothorpes" href="weirdweboctober">
+  <link rel="octo:octothorpes" href="Camera">
+              <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+            <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body {
+      font-family: ;
+      background: #1a1a1a;
+      color: #ccc;
+      margin: 2rem;
+    }
+
+    .parent{
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 1rem;
+      max-width: 100%;
+      margin: auto;
+      height: 600px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 1rem;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .fieldset-row {
+    margin-top: 50px;
+    display: flex;
+    gap: 1rem;        
+    flex-wrap: wrap;
+    align-items: stretch;
+    }
+
+    .fieldset-row fieldset {
+    flex: 1 1 300px;
+    min-height: 75px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    a {
+      color: #d4d4d4;
+      margin: 0 0.25rem;
+    }
+
+.eye {
+  width: 200px;
+  height: 200px;
+  background: #b8b8b8;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.ball {
+  width: 70px;
+  height: 70px;
+  background: #525252;
+  border: 20px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.lens{
+  width: 5px;
+  height: 5px;
+  background: #d30b0b;
+  border: 20px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  </style>
+    <div class="parent">
+      <div class="eye">
+      <div class="ball">
+        <div class="lens"></div>
+      </div>
+      </div> 
+     </div>
+    <div class="fieldset-row">
+      <fieldset>
+    <legend>Notes</legend>
+    
+  </fieldset>
+  <fieldset>
+    <legend>Info</legend>
+    <a href="/">Homepage</a> |
+    <a href="/notebook/weirdweb2025">Calendar</a> | 
+    <a href="https://weirdweboctober.website/">What is this?</a> |
+    <a href="https://octothorp.es/~/Camera">#camera</a> | 
+    <a href="https://octothorp.es/~/weirdweboctober">#weirdweboctober</a><br><br>
+        <a href="/notebook/weirdweb2025/10warning"> <i class="bi bi-arrow-left"></i> Warning </a> | <a href="/notebook/weirdweb2025/12battle"> Battle <i class="bi bi-arrow-right"></i></a>
+  </fieldset>
+</div>
+<script>
+  const balls = document.getElementsByClassName('ball');
+document.onmousemove = (event) => {
+  const x = (event.clientX * 100) / window.innerWidth + '%';
+  const y = (event.clientY * 100) / window.innerHeight + '%';
+
+  for (let i = 0; i < 2; i++) {
+    balls[i].style.left = x;
+    balls[i].style.top = y;
+    balls[i].transform = 'translate(-' + x + ',-' + y + ')';
+  }
+};
+</script>

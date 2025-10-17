@@ -1,0 +1,130 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weird Web October 2025 | Remix</title>
+<link rel="preload" as="image" href="https://octothorp.es/?uri=https://snails.town/notebook/weirdweb2025/notebook/weirdweb2025/7suboptimal">
+  <link rel="octo:octothorpes" href="weirdweboctober">
+  <link rel="octo:octothorpes" href="Suboptimal">
+              <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+            <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body {
+      font-family: ;
+      background: #1a1a1a;
+      color: #ccc;
+      margin: 2rem;
+    }
+
+    .parent{
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 1rem;
+      max-width: 100%;
+      margin: auto;
+      height: 600px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 1rem;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .fieldset-row {
+    margin-top: 50px;
+    display: flex;
+    gap: 1rem;        
+    flex-wrap: wrap;
+    align-items: stretch;
+    }
+
+    .fieldset-row fieldset {
+    flex: 1 1 300px;
+    min-height: 75px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    a {
+      color: #d4d4d4;
+      margin: 0 0.25rem;
+    }
+
+
+    body { background: #333; }
+
+.img {
+  width: 820px;
+  height: 461px;
+  margin: 50px auto;
+  position: relative;
+  background: var(--src) no-repeat center / cover;
+  overflow: hidden;
+}
+
+/* Generate 200 pseudo "lines" via gradients instead of 200 divs */
+.img.glitch::before,
+.img.glitch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--src) no-repeat center / cover;
+  clip-path: polygon(0 0,100% 0,100% 50%,0 50%);
+  animation: glitchShift 1s infinite;
+  mix-blend-mode: lighten;
+}
+
+.img.glitch::after {
+  clip-path: polygon(0 50%,100% 50%,100% 100%,0 100%);
+  animation-delay: -2s;
+}
+
+@keyframes glitchShift {
+  0%, 100% { transform: translate(0, 0); filter: hue-rotate(0deg); }
+  10% { transform: translate(-5px, 2px); filter: hue-rotate(20deg); }
+  20% { transform: translate(5px, -2px); }
+  30% { transform: translate(-3px, 1px); }
+  40% { transform: translate(2px, -3px); }
+  50% { transform: translate(0, 0); filter: hue-rotate(-10deg); }
+}
+
+
+  </style>
+  </head>
+  <body>
+    <div class="parent">
+          <div class="img glitch" style="--src:url('/images/weirdweb/chii.png')"></div>
+
+     </div>
+    <div class="fieldset-row">
+      <fieldset>
+    <legend>Notes</legend>
+    Chiiiiiii.
+  </fieldset>
+  <fieldset>
+    <legend>Info</legend>
+    <a href="/">Homepage</a> |
+    <a href="/notebook/weirdweb2025">Calendar</a> | 
+    <a href="https://weirdweboctober.website/">What is this?</a> |
+    <a href="https://octothorp.es/~/Suboptimal">#suboptimal</a> | 
+    <a href="https://octothorp.es/~/weirdweboctober">#weirdweboctober</a><br><br>
+        <a href="/notebook/weirdweb2025/6solids"> <i class="bi bi-arrow-left"></i> Solids </a> | <a href="/notebook/weirdweb2025/8containers">  Containers <i class="bi bi-arrow-right"></i></a>
+  </fieldset>
+  
+</div>
+<script>
+</script>
+</body>
+</html>
