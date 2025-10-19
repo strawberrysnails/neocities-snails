@@ -1,4 +1,9 @@
 module.exports = [
+    {
+    src: "pumpkin.png",
+    date: "10.19.2025",
+    caption: "We went pumpkin picking today and got this cutie.",
+  },
   {
     src: "ratwedding.png",
     date: "10.04.2025",
