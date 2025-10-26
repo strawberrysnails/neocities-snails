@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 const externalLinksPlugin = require("@sardine/eleventy-plugin-external-links");
 const pluginTOC = require("eleventy-plugin-toc");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
@@ -39,8 +40,27 @@ module.exports = function (eleventyConfig) {
     return new Date().toISOString();
   });
 
-  // Prevent default `foo/index.html` structure
-  eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
+  // Computed permalinks for blog posts by date
+eleventyConfig.addGlobalData("eleventyComputed", {
+  permalink: (data) => {
+    // Only apply to markdown files tagged as "blog"
+    if (data.tags && data.tags.includes("blog")) {
+      const date = new Date(data.date);
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      const shortDate = `${month}${day}`;
+
+      // Use fileSlug (from filename) for the main part
+      const slug = data.page.fileSlug;
+
+      return `/blog/${year}/${slug}-${shortDate}/`;
+    }
+
+    // Fallback: default Eleventy behavior for other pages
+    return data.permalink;
+  },
+});
 
   // Sitemap Collection
 eleventyConfig.addCollection("sitemapGroups", function (collectionApi) {
@@ -160,6 +180,7 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
     linkify: true
   })
   .use(markdownItAttrs)
+  .use(markdownItFootnote)
   .use(markdownItAnchor, {
     level: [2, 3], // h2 and h3
     permalink: markdownItAnchor.permalink.ariaHidden({
