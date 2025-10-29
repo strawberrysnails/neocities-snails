@@ -22,13 +22,20 @@ Even though my outfit wasn't perfect, I made it completely from scratch and I'm 
 
 On Saturday we cosplayed the Hunter and Plain Doll from ***Bloodborne***. We got a lot of requests for pictures again. Most of my costume was store-bought except for the cloak, bonnet, and gloves, which I made myself. The cloak took a lot of work, but I’m glad I put in the effort. 
 
-<a href="/images/blog/Bloodborne.png"><img src="/images/blog/Bloodborne.png" width="250" class="blog-img" alt="bloodborne"/></a><a href="/images/blog/EmilHead.png"><img src="/images/blog/EmilHead.png" width="250" class="blog-img" alt="emil"/></a> <a href="/images/blog/EmilZeroPolaroids.png"><img src="/images/blog/EmilZeroPolaroids.png" width="250" class="blog-img" alt="Emil Zero Polaroids"/></a> 
+<div class="blog-image-group">
+<img src="/images/blog/Bloodborne.png" class="blog-img" alt="Our Bloodborne cosplay"/><img src="/images/blog/EmilHead.png" class="blog-img" alt="Emil Head"/><img src="/images/blog/EmilZeroPolaroids.png" class="blog-img" alt="Emil & Zero Polaroids"/></a> 
+</div>
 
 This Emil head was created by the person who organized the DrakeNier/Yoko Taro photoshoot. I took a picture for reference, hoping we can re-create it.
 
 I saw some great cosplays myself, see my favorites below.
 
-<a href="/images/blog/EliasChise.png"><img src="/images/blog/EliasChise.png" width="220" class="blog-img" alt="EliasChise.png"></a> <a href="/images/blog/Mami.png"><img src="/images/blog/Mami.png" width="220" class="blog-img" alt="Mami.png"></a> <a href="/images/blog/Saber.png"><img src="/images/blog/Saber.png" width="220" class="blog-img" alt="Saber.png"></a> <a href="/images/blog/Teto.png"><img src="/images/blog/Teto.png" width="220" class="blog-img" alt="Teto.png"></a> 
+<div class="blog-image-group">
+<img src="/images/blog/EliasChise.png"  class="blog-img" alt="Elias and Chise: Ancient Magus Bride">
+<img src="/images/blog/Mami.png"  class="blog-img" alt="Mami: Madoka Magica">
+<img src="/images/blog/Saber.png" class="blog-img" alt="Saber: Fate Series">
+<img src="/images/blog/Teto.png"  class="blog-img" alt="Kasane Teto: UTAUloid/Voicaloid">
+</div>
 
 Elias and Chise: ***Ancient Magus Bride*** / Mami: ***Madoka Magica*** / Saber: ***Fate Series*** / Kasane Teto: ***UTAUloid/Voicaloid***
 
@@ -38,8 +45,11 @@ The dealers room and artist alley were huge. I wish I had spent more time there,
 
 We spent most of our money on CDs in the dealers room, of course. I was so lucky to find a Zero art print in the artist alley. It was the only ***Drakengard 3*** fanart I saw, so I had to get it, and the art style is gorgeous.
 
-<a href="/images/blog/OtakonCDs.png"><img src="/images/blog/OtakonCDs.png" width="300" class="blog-img" alt="OtakonCDs"/></a><a href="/images/blog/ZeroPrint.png"><img src="/images/blog/ZeroPrint.png" width="300" class="blog-img" alt="Zero Print"/></a>
-<a href="/images/blog/BrotherNier.png"><img src="/images/blog/BrotherNier.png" width="300" class="blog-img" alt="BrotherNier.png"></a><a href="/images/blog/OtakonCards.png"><img src="/images/blog/OtakonCards.png" width="300" class="blog-img" alt="OtakonCards"></a> 
+<div class="blog-image-group">
+<img src="/images/blog/OtakonCDs.png" class="blog-img" alt="CD Haul">
+<img src="/images/blog/ZeroPrint.png"  class="blog-img" alt="Zero Print by @catthytrinh">
+<img src="/images/blog/BrotherNier.png"  class="blog-img" alt="Brother Nier">
+</div>
 
 This nice person snagged the last Brother Nier plushie but they let me take a picture!
 Zero Print: [@catthytrinh](https://linktr.ee/catthytrinh)

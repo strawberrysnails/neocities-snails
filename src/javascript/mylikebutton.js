@@ -84,11 +84,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (likeButtonElements.length === 0) return;
 
-    // Get the current page path (use 'home' for root or index pages)
-    const currentPath = window.location.pathname;
-    const pagePath = currentPath === '/' || currentPath.endsWith('index.html') 
-        ? 'home' 
-        : currentPath.replace(/^\/|\/$/g, ''); // Remove leading/trailing slashes
+// Normalize pagePath for backward compatibility with older URLs
+let pagePath = window.location.pathname.replace(/^\/|\/$/g, ''); // Trim slashes
+
+// Treat homepage consistently
+if (pagePath === '' || pagePath.endsWith('index.html')) {
+  pagePath = 'home';
+}
+
+// Handle new 2025 permalink format (e.g. /blog/2025/april-patch-notes-0501/)
+if (/^blog\/\d{4}\//.test(pagePath)) {
+  // Remove the year folder (e.g. 2025/)
+  pagePath = pagePath.replace(/^blog\/\d{4}\//, 'blog/');
+  
+  // Replace trailing "-MMDD" pattern with .html (e.g. april-patch-notes-0501 → april-patch-notes.html)
+  pagePath = pagePath.replace(/-\d{4}$/, '.html');
+}
 
     // Add styles for the like button container, counter, and popup
     const style = document.createElement('style');
