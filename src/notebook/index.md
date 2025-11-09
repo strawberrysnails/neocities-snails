@@ -13,11 +13,14 @@ layout: notebook
 ### **Personal**
 - [Photogrid](photogrid)
 - [Wishlist](wishlist)
-- [Weird Web October 2025](weirdweb2025)
 - [~~Collections~~](#)
 
 ### **Media Logs**
-- [Video Games](videogames)
+- [Video Games](logs/videogames)
+- [Books](logs/books)
 - [~~Anime~~](#)
 - [~~Manga~~](#)
 - [~~Library~~](#)
+
+### **Misc.**
+- [Weird Web October 2025](weirdweb2025)
