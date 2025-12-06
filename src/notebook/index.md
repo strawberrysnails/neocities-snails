@@ -9,6 +9,7 @@ layout: notebook
 - [Fonts](fonts)
 - [Templates](templates)
 - [Widgets](widgets)
+- [Archives](archives)
 
 ### **Personal**
 - [Photogrid](photogrid)
@@ -24,3 +25,5 @@ layout: notebook
 
 ### **Misc.**
 - [Weird Web October 2025](weirdweb2025)
+
+

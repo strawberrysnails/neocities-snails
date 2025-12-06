@@ -18,7 +18,8 @@ module.exports = function (eleventyConfig) {
     "src/javascript": "javascript",
     "src/css": "css",
     "src/_includes/fonts": "fonts",
-    "src/archives/images": "archives/images"
+    "src/archives/images": "archives/images",
+    "src/notebook/archives/images": "notebook/archives/images",
   });  
 
   eleventyConfig.addGlobalData("siteMetadata", require("./src/_data/site.js"));
@@ -33,6 +34,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("links", "links.njk");
   eleventyConfig.addLayoutAlias("pinboard", "pinboard.njk");
    eleventyConfig.addLayoutAlias("notebook", "notebook.njk");
+      eleventyConfig.addLayoutAlias("archive", "archive.njk");
 
 
   // Add a computed property for 'now'
@@ -61,6 +63,7 @@ eleventyConfig.addGlobalData("eleventyComputed", {
     return data.permalink;
   },
 });
+
 
   // Sitemap Collection
 eleventyConfig.addCollection("sitemapGroups", function (collectionApi) {

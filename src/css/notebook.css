@@ -74,7 +74,6 @@
           text-align: left;
         }
 
-        /* Optional: stack on very small screens */
         @media (max-width: 500px) {
           .col {
             flex: 1 1 100%;
@@ -82,12 +81,22 @@
         }
 
         @media (max-width: 900px) {
-            .container{
-            padding: 5%;
-            width: 90%;
-            margin-top: 5px;
-          }
+   .container {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
         }
+
+        @media (max-width: 600px) {
+  th, td {
+    padding: 5px;
+    font-size: 0.9em;
+  }
+    body {
+    margin: 0px;
+  }
+}
           
 
         .container a{
@@ -107,9 +116,12 @@
         place-items: center;
         }
 
-        table{
-        width: 80%;
-        }
+table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+
 
         table, th, td {
         border: 1px solid rgb(192, 192, 192);
@@ -122,6 +134,7 @@
         th, td{
         padding: 10px;    
         }
+
 
 .book {
   position: relative;
