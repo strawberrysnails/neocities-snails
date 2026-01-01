@@ -11,10 +11,14 @@ nesting: ""
 | UGG Classic Boots | $190 | [UGG Store](https://www.ugg.com/women-boots-classic-boots/classic-short-ii/1016223.html?dwvar_1016223) | Color: Burnt Cedar (Dark Brown) Size 7 |
 | Jellycat Stuffed animal | $15-$30 | [Jellycat Online](https://jellycat.com/) | Prefer an animal (bunny, bear, or cat) but whatever is cute. |
 | Barnes and Noble Membership | $40 | [Barnes and Noble](https://www.barnesandnoble.com/b/gift-cards/_/N-8rg) | A yearly membership costs $39.99 and can be given in the form of a gift card |
+| Magic Puzzle | $25-$35 | [Amazon](https://www.amazon.com/stores/MagicPuzzleCompany/page/5B989B37-48DB-4182-9620-61148AE128FA) | I already own "Secret Soup" and "Gnomes Homes" |
+| Air Dry Clay | $10-15 | Anywhere or [Amazon](https://a.co/d/fITGHkX) | |
 | Doctor Who DVD "The Christopher Eccleston & David Tennant Collection " | $25 | [Amazon](https://a.co/d/iIL29xP) | |
 | Bookmarks, notebooks, & sketchbooks, and general stationary | $ | Anywhere | I like dark red, brown, and black. |
 | Clothing: Tops, sweaters, hoodies, socks. | $ | [Brandy Melville](https://us.brandymelville.com/), [Hollister](https://www.hollisterco.com/shop/us), & [Target](https://www.target.com/b/a-new-day/-/N-xrye7)  | Colors: Brown, dark blue, dark red, black, white, and grey. Plaid. I prefer natural materials like cotton, wool, and cashmere. Little to no polyester please. Size medium for tops. Size Large for hoodies and sweatshirts |
 | Moka Pot | $20-$50 | [Amazon](https://www.amazon.com/s?k=moke+pot&crid=1PYTGZETQBOS4&sprefix=moke+pot%2Caps%2C151) | |
+| DJUNGELSKOG | $24-$30 | [IKEA](https://www.ikea.com/us/en/p/djungelskog-soft-toy-brown-bear-00402832/) | |
+
 
 
 # General

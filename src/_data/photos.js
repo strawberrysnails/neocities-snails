@@ -1,4 +1,18 @@
 module.exports = [
+    { 
+    src: "christmas2025.png",
+    date: "12.24.2025",
+    caption: "Our first Christmas tree! <3",
+    },
+    {src: "rowletsquish.png",
+    date: "12.09.2025",
+    caption: "Christmas shopping adventures."
+    },
+    {
+    src: "thanksgivingbundt.png",
+    date: "11.27.2025",
+    caption: "My first bundt cake ever! It was a coffee cake I made for Thanksgiving.",
+    },
     {
     src: "pumpkin.png",
     date: "10.19.2025",
