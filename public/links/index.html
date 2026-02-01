@@ -3,101 +3,757 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Snail-paced personal space on the web.">
+
+    <title>Courtyard</title>
+
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
-    <link rel="preload" as="image" href="https://octothorp.es/?uri=https://snails.town/">
-    <link rel="octo:octothorpes" href="weirdweboctober">
-            <!-- CSS/JS + CACHEBUSTING -->
-            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1767917075190">
-            <link rel="stylesheet" href="/css/fonts.css">
-            <link rel="stylesheet" href="/css/bootstrap-icons.css">
-            <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
-<script src="/javascript/animations.js"></script>
-<title>Snails | Neighborhood</title>
 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+
+    
   </head>
+
   <body>
-    <img src="/images/zero.png" alt="zero" class="zero" id="myBtn" data-tooltip="for debug">
-    <img class="lunar-tear" src="/images/DOD3_flower.png">
-<div class="container">
-  <header><a href="/index.html" class="title">Snails.Town</a></header>
-  <div class="main-layout">
-     <!-- LEFT SIDEBAR -->  <div class="mobile-links">
-      <a href="/blog">Blog</a>
-      <a href="/links">Neighborhood</a>
-      <a href="/notebook">Notebook</a>
-      <a href="/site">About</a>
-      <a href="/shrines">Shrines</a>
+    
+
+<input type="checkbox" id="menuToggle" class="menu-checkbox">
+
+
+<label for="menuToggle" class="menu-toggle" aria-label="Open menu">
+  <img src="/images/graphics/menu.png" alt="">
+</label>
+
+
+<div class="mobile-menu">
+  <label for="menuToggle" class="menu-close" aria-label="Close menu">✕</label>
+
+<style>
+
+.nav-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-container li {
+  list-style-type: none;
+  border-left: 2px solid #000;
+  margin-left: 1em;
+}
+
+.nav-container li div {
+  padding-left: 1em;
+  position: relative;
+}
+
+.nav-container li div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  bottom: 50%;
+  width: 0.75em;
+  border: 2px solid #000;
+  border-top: 0;
+  border-right: 0;
+}
+
+.nav-container ul > li:last-child {
+  border-left: 2px solid transparent;
+}
+
+</style>
+
+  <div class="main-container">
+    <div class="nav-container">
+<ul>
+  <!-- Home -->
+  <li>
+    <div><a href="/">Home</a></div>
+  </li>
+
+
+  <!-- Library -->
+  <li>
+    <div>
+      <details>
+        <summary><a href="/library">Library</a></summary>
+        <ul>
+          <!-- placeholders -->
+          <li><div><a href="/library/bookmarks">Bookmarks</a></div></li>
+          <li><div><a href="/library/bookmarks#software">Software/Tools</a></div></li>
+          <li><div><a href="/library/bookmarks#tutorials">Tutorials</a></div></li>
+          <li><div><a href="/library/bookmarks#articles">Articles</a></div></li>
+          <li><div><a href="/library/codes">Code Snippets</a></div></li>
+          <li><div><a href="/library/fonts">Fonts</a></div></li>
+          <li><div><a href="/library/graphics">Graphics</a></div></li>
+          <li><div><a href="/library/recipes">Recipes</a></div></li>
+          <li><div><a href="/library/Inspiration">Inspiration</a></div></li>
+          <li><div><a href="/library/curios">Curiosities</a></div></li>
+          <li><div><a href="/library/collections">Collections</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Courtyard -->
+  <li>
+    <div>
+      <details open>
+        <summary>Courtyard</summary>
+        <ul>
+          <li><div><a href="/links#buttons">Button Wall</a></div></li>
+          <li><div><a href="/links#webrings">Webrings &amp; Cliques</a></div></li>
+          <li><div><a href="/guestbook">Guestbook</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Bedroom -->
+  <li>
+    <div>
+      <details open>
+        <summary>Bedroom</summary>
+        <ul>
+          <li><div><a href="/photogrid">Photos</a></div></li>
+          <!-- Writings -->
+          <li>
+            <div>
+              <details>
+                <summary><a href="/blog">Writings</a></summary>
+                <ul>
+                  
+                    <li>
+                      <div><a href="/blog/2026/2025patchnotes-0101/">2025 Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/oct-update-1101/">October Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/minecraft-forever-world-1027/">Starting a Modded Minecraft Forever World</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/chess-and-anxiety-1024/">On Chess and Anxiety</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/sept-update-0930/">September Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/weird-web-october-0930/">Weird Web October</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/aug-update-0831/">August Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/otakon-2025-0814/">Otakon 2025</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/july-update-0731/">July Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/manga-ereader-0707/">I got an e-reader just for Manga.</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/june-update-0630/">June Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/may-update-0531/">May Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/nyc-trip-0518/">My Weekend Trip to NYC</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/april-update-0430/">April Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/gamelog-on-eleventy-0427/">Making a Gamelog on Eleventy</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/jailbreaking-my-kindle-0413/">Jailbreaking my Kindle</a></div>
+                    </li>
+                  
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Laboratory -->
+  <li>
+    <div>
+      <details open>
+        <summary>Laboratory</summary>
+        <ul>
+          <li><div><a href="/about">About</a></div></li>
+          <li><div><a href="/updates">Changelog</a></div></li>
+          <li><div><a href="/about#archives">Archives</a></div></li>
+          <li><div><a href="/map">Site Map</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+<!-- Museum -->
+<li>
+  <div>
+    <details open>
+      <summary>Museum</summary>
+      <ul>
+        <!-- Exhibits -->
+        <li>
+          <div>
+            <details>
+              <summary><a href="/exhibits">Exhibits</a></summary>
+              <ul>
+                <li>
+                  <div>
+                    <a href="/exhibits/weirdweb2025/">Weird Web October 2025</a>
+                  </div>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </li>
+      </ul>
+    </details>
+  </div>
+</li>
+</ul></div>
+</div>
+</div>
+
+
+<div class="doll" id="myBtn">
+  <img src="https://bloodborne.wiki.fextralife.com/file/Bloodborne/plain-doll.png" alt="">
+</div>
+
+
+
+<div class="lace">
+  <div class="bow">
+    <img src="/images/graphics/bow.png" alt="">
+  </div>
+
+  <div class="container">
+    <div class="top">
+      <div class="portrait"></div>
+      <div class="banner">
+        <a href="/">snails.town</a>
       </div>
-      <nav class="sidebar-links">
-      <h3 class="nav-title">Navigation</h3>
-      <a href="/blog">Blog</a>
-      <a href="/links">Neighborhood</a>
-      <a href="/notebook">Notebook</a>
-      <a href="/site">About</a>
-      <a href="/shrines">Shrines</a>
-         <img src="/images/intoner-white.png">
-    </nav> 
-        
-<!--
-<button class="toc-toggle" onclick="toggleTOC()">
-  Toggle Table of Contents</button> 
-<br><br>
-<nav class="toc collapsed" id="toc">
-  <h2>Table of Contents</h2>
-  
-</nav>
-  -->
+    </div>
 
-        
+    <div class="nav"><div class="nav">
+  <ul class="nav-list">
+    <li class="nav-item" data-desc="A collection of resources, reading material, and bookmarks.">
+      <a href="/library">Library</a>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="Small web community gathering.">
+      <a href="/links">Courtyard</a>
+      <ul class="dropdown">
+        <li><a href="/links#buttons">Button Wall</a></li>
+        <li><a href="/links#webrings">Webrings &amp; Cliques</a></li>
+        <li><a href="/guestbook">Guestbook</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="A window into my personal life.">
+      <a href="#">Bedroom</a>
+      <ul class="dropdown">
+        <li><a href="/photogrid">Photos</a></li>
+        <li><a href="/blog">Writings</a></li>
+        <li><s><a href="#">Microblog</a></s></li>
+        <li><s><a href="#">Shrines</a></s></li>
+        <li><s><a href="#">Toybox</a></s></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="Tools, templates, and site notes.">
+      <a href="#">Laboratory</a>
+      <ul class="dropdown">
+        <li><a href="/about">About</a></li>
+        <li><a href="/updates">Changelog</a></li>
+        <li><a href="/about#archives">Archives</a></li>
+        <li><a href="/map">Sitemap</a></li>
+        <li><s><a href="#">Templates &amp; Widgets</a></s></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="Art, media logs, and works in progress. More to come.">
+      <a href="#">Museum</a>
+      <ul class="dropdown">
+        <li><a href="/exhibits">Exhibits</a></li>
+        <li><s><a href="#">Media Logs</a></s></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+     
 <main>
-<h1 style="text-align: center;">Neighborhood</h1>
-<div class="link-grid">
+  <div class="main-container">
+<h2>Courtyard</h2>
+<h3>Link me 𓆑. ݁₊</h3>
 
-<div class="col">
-  <fieldset>
-<legend>Mayor of Snails Town</legend>
-
-<div class="link-buttons">
-  <a href="#"><img src="/images/buttons/sites/snails.png" alt="SnailsV1"></a>
-  <a href="#"><img src="/images/buttons/sites/snailsv2.png" alt="SnailsV2"></a>
-  <a href="#"><img src="/images/buttons/snailsbutton.png" alt="snailsbutton"></a>
+<div class="link-buttons button-wall">
+    <a href="#"><img src="/images/buttons/sites/me/snailsbutton.png" alt="snailsbutton"></a>
+  <a href="#"><img src="/images/buttons/sites/me/snails.png" alt="SnailsV1"></a>
+  <a href="#"><img src="/images/buttons/sites/me/snailsv2.png" alt="SnailsV2"></a>
   </div>
   <p></p>
   <textarea class="code-textarea" style="height: auto; min-width: 300px;"><a href="https://snails.neocities.org/" target="_blank"><img src="/snails.png" alt="snails"></a></textarea>
 
   <ul>
     <li>Please do not hotlink</li>
-    <li>Credit for button #2: <a rel="noreferrer" target="_blank" href="https://bulltown.neocities.org/">bulltown</a></li>
+    <li>Credit for button #3: <a rel="noreferrer" target="_blank" href="https://bulltown.neocities.org/">bulltown</a></li>
   </ul>
----
-<p><a href="https://github.com/strawberrysnails/neocities-snails" target="_blank" rel="noreferrer">Github</a> 
-  | <a href="https://neocities.org/site/snails" target="_blank" rel="noreferrer">Neocities Profile</a> | <a href="https://nekoweb.org/follow/snails" target="_blank" rel="noreferrer">Nekoweb</a> </p>
-<p>
-  <a rel="noreferrer" target="_blank" href="https://anilist.co/user/snails/">Anilist</a> | 
-  <a rel="noreferrer" target="_blank" href="https://www.last.fm/user/froggf">Last.fm</a> | 
-  <a rel="noreferrer" target="_blank" href="https://www.grouvee.com/user/175297-saturnringz/">Grouvee</a>
-</p>
-</fieldset>
-<fieldset>
-  <legend>Cliques</legend>
-  <a rel="noreferrer" target="_blank" href="https://lovesick.cafe/esoterica/angelnumbers"><img src="https://i.ibb.co/QcCNDtZ/tiny-222.png"></a>
-  <img src="https://i.imgur.com/QiZ5lzT.png"> I am <a rel="noreferrer" target="_blank" href="https://ballonlea.neocities.org/trickyfox/"> angelic ♥</a> <img src="https://i.imgur.com/QMVvoFa.png">
-  <a rel="noreferrer" target="_blank" href="https://rice.place/colorclique.html"><img src="https://rice.place/color/colorcliqueBLACK1.png"></a>
-    <a rel="noreferrer" target="_blank" href="https://lovesick.cafe/grrrl"><img src="https://lovesick.cafe/img/sozai/grrrl/byagirl-red2.png"></a>
-</fieldset>
+
+<p></p>
+<h2 id="buttons">Buttons</h2>
+<div id="buttonwall">
+  
+<div class="link-buttons button-wall">
+  
+    <a href="https://moonflower.nekoweb.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/moonflower.png" alt="moonflower">
+    </a>
+  
+    <a href="https://blueberrymuffinss.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/blueberrymuffins.png" alt="blueberrymuffinss">
+    </a>
+  
+    <a href="https://fallenfleurs.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/fallenfleurs.png" alt="fallenfleurs">
+    </a>
+  
+    <a href="https://philia995.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/philia995.png" alt="philia995">
+    </a>
+  
+    <a href="https://plumes.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/plumes.gif" alt="plumes">
+    </a>
+  
+    <a href="https://dokode.moe/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dokodemobutton.gif" alt="dokode">
+    </a>
+  
+    <a href="https://seafare.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/seafare.png" alt="seafare">
+    </a>
+  
+    <a href="https://lostletters.neocities.org/graphics/site_buttons/LostLetters88x31.gif" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/LostLetters.gif" alt="lostletters">
+    </a>
+  
+    <a href="https://sweet-pea.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/sweetpea.gif" alt="sweetpea">
+    </a>
+  
+    <a href="https://princss.online/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/princss.png" alt="princss">
+    </a>
+  
+    <a href="https://sweetfish.site/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/sweetfish.png" alt="sweetfish">
+    </a>
+  
+    <a href="https://altalenae.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/altalenae.png" alt="altalenae">
+    </a>
+  
+    <a href="https://kdkemp.com/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/kdkemp.gif" alt="kdkemp">
+    </a>
+  
+    <a href="https://miserabledolly.net/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/miserabledolly.gif" alt="miserabledolly">
+    </a>
+  
+    <a href="https://pizzacatdelights.nekoweb.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/pizzacatdelights.png" alt="PizzacatDelights">
+    </a>
+  
+    <a href="https://pxxels.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/pxxels.png" alt="pxxels">
+    </a>
+  
+    <a href="https://nanacore.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/nanacore.png" alt="nanacore">
+    </a>
+  
+    <a href="https://ordainedmotion.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/ordainedmotion.png" alt="ordainedmotion">
+    </a>
+  
+    <a href="https://doqmeat.com/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/doqmeat.png" alt="dogmeat">
+    </a>
+  
+    <a href="https://luckyrabbit.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/luckyrabbit.png" alt="luckyrabbit">
+    </a>
+  
+    <a href="https://oyasumimi.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/oyasumimi.gif" alt="oyasumimi">
+    </a>
+  
+    <a href="https://00s.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/00s.gif" alt="00s">
+    </a>
+  
+    <a href="https://halovian.nekoweb.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/halovian.gif" alt="halovian">
+    </a>
+  
+    <a href="https://cinni.net/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/cinni.png" alt="cinni">
+    </a>
+  
+    <a href="https://abyssbloom.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/abyssbloom.png" alt="abyssbloom">
+    </a>
+  
+    <a href="https://nyaa.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/nyaa.gif" alt="nyaa">
+    </a>
+  
+    <a href="https://debtdeath.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/debtdeath.png" alt="debtdeath">
+    </a>
+  
+    <a href="https://garfriend.me/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/garfriend.gif" alt="garfriend">
+    </a>
+  
+    <a href="https://fh102.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/sephlow.gif" alt="fh102">
+    </a>
+  
+    <a href="https://starry-knight.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/starrys-grove.png" alt="starrys-grove">
+    </a>
+  
+    <a href="https://inkcaps.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/inkcaps.gif" alt="inkcaps">
+    </a>
+  
+    <a href="https://ribo.zone/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/ribozone.gif" alt="ribozone">
+    </a>
+  
+    <a href="https://uuupah.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/uuupah.png" alt="uuupah">
+    </a>
+  
+    <a href="https://fairygore.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/fairygore.png" alt="fairygore">
+    </a>
+  
+    <a href="https://antikrist.lol/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/antikrist.png" alt="antikrist">
+    </a>
+  
+    <a href="https://www.thefrugalgamer.net/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/frugalgamer.png" alt="thefrugalgamer">
+    </a>
+  
+    <a href="https://leizy8499.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/leizy8499.png" alt="leizy8499">
+    </a>
+  
+    <a href="https://dollarchive.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dollarchive.gif" alt="dollarchive">
+    </a>
+  
+    <a href="https://milktea.nekoweb.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/milktea.png" alt="milktea">
+    </a>
+  
+    <a href="https://peepo.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/peepo.png" alt="peepo">
+    </a>
+  
+    <a href="https://dreambubble.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dreambubble.gif" alt="dreambubble">
+    </a>
+  
+    <a href="https://cloverstar.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/cloverstar.png" alt="coverstar">
+    </a>
+  
+    <a href="https://strawberry-transneu.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/strawberry-transneu.png" alt="strawberry-transneu">
+    </a>
+  
+    <a href="https://rini.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/rini.gif" alt="rini">
+    </a>
+  
+    <a href="https://moonpr1sm.com/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/moonpr1sm.png" alt="moonpr1sm">
+    </a>
+  
+    <a href="https://hellomei.dev/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/hellomei.gif" alt="hellomei">
+    </a>
+  
+    <a href="https://allyratworld.com/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/allyrat.gif" alt="allyratworld">
+    </a>
+  
+    <a href="https://petrapixel.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/petrapixel.webp" alt="petrapixel">
+    </a>
+  
+    <a href="https://hillhouse.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/hillhouse.png" alt="hillhouse">
+    </a>
+  
+    <a href="https://cherubiims.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/cherubiims.gif" alt="cherubiims">
+    </a>
+  
+    <a href="https://cloverbell.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/cloverbell.gif" alt="coverbell">
+    </a>
+  
+    <a href="https://seaofstars.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/seaofstars.gif" alt="seaofstars">
+    </a>
+  
+    <a href="https://lazer-bunny.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/lazer-bunny.gif" alt="lazer-bunny">
+    </a>
+  
+    <a href="https://bechnokid.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/bechnokid.png" alt="bechnokid">
+    </a>
+  
+    <a href="https://beaniepines.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/beaniepines.gif" alt="beaniepines">
+    </a>
+  
+    <a href="https://dudalog.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dudalog.png" alt="dudalog">
+    </a>
+  
+    <a href="https://spinebreaker.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/spinebreaker.gif" alt="spinebreaker">
+    </a>
+  
+    <a href="https://spiritcellar.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/spiritcellar.gif" alt="spiritcellar">
+    </a>
+  
+    <a href="https://ghostopsy.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/ghostopsy.gif" alt="ghostopsy">
+    </a>
+  
+    <a href="https://xandra.cc/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/xandra.png" alt="museumofalexandra">
+    </a>
+  
+    <a href="https://chione.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/chione.png" alt="chione">
+    </a>
+  
+    <a href="https://karma.computer/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/10kph.webp" alt="10kph">
+    </a>
+  
+    <a href="https://www.snifflebear.moe/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/snifflebear.png" alt="snifflebear">
+    </a>
+  
+    <a href="https://artwork.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/artwork.gif" alt="artwork">
+    </a>
+  
+    <a href="https://nine-moonbeams.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/nine-moonbeams.gif" alt="nine-moonbeams">
+    </a>
+  
+    <a href="https://ransei.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/ransei.gif" alt="ransei">
+    </a>
+  
+    <a href="https://kimberlygb.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/kimberlygb.png" alt="kimberlygb">
+    </a>
+  
+    <a href="https://caterpillarangel.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/caterpillarangel.png" alt="caterpillarangel">
+    </a>
+  
+    <a href="https://bulltown.joejenett.com/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/b22button.png" alt="bulltown">
+    </a>
+  
+    <a href="https://corktree.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/corktree.png" alt="corktree">
+    </a>
+  
+    <a href="https://howsoonisnow.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/howsoonisnow.gif" alt="howsoonisnow">
+    </a>
+  
+    <a href="https://podminton.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/podminton.png" alt="podminton">
+    </a>
+  
+    <a href="https://coffeeplant.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/coffeeplant.png" alt="coffeeplant">
+    </a>
+  
+    <a href="https://reinlibrary.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/reinlibrary.png" alt="reinlibrary">
+    </a>
+  
+    <a href="https://sweetheartmemory.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/sweetheartmemory.png" alt="sweetheartmemory">
+    </a>
+  
+    <a href="https://mn1ca.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/mn1ca.gif" alt="mn1ca">
+    </a>
+  
+    <a href="https://pastelhello.com/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/pastelhell.gif" alt="pastelhell">
+    </a>
+  
+    <a href="https://sneekrealm.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/sneeksrealm.png" alt="sneekrealm">
+    </a>
+  
+    <a href="https://notprincehamlet.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/notprincehamlet.png" alt="notprincehamlet">
+    </a>
+  
+    <a href="https://maplebear.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/maplebear.gif" alt="maplebear">
+    </a>
+  
+    <a href="https://datura.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/brugmansiamanor.png" alt="datura">
+    </a>
+  
+    <a href="https://velvetblue.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/velvetblue.gif" alt="Velvet Blue">
+    </a>
+  
+    <a href="https://venus-territory.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/venus-territory.png" alt="venus-territory">
+    </a>
+  
+    <a href="https://rexalted.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/rexalted.gif" alt="rexalted">
+    </a>
+  
+    <a href="https://ectobe.ing/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/ectobeing.png" alt="ectobeing">
+    </a>
+  
+    <a href="https://nyscyra.nekoweb.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/nyscyra.png" alt="nyscyra">
+    </a>
+  
+    <a href="https://amidala.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/amidala.png" alt="amidala">
+    </a>
+  
+    <a href="https://ninjaweb.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/ninjaweb.gif" alt="ninjaweb">
+    </a>
+  
+    <a href="https://grossgirl94.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/grossgirl94.gif" alt="grossgirl94">
+    </a>
+  
+    <a href="https://crow-queen.com/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/crow-queen.gif" alt="crow-queen">
+    </a>
+  
+    <a href="https://onlywonder.net/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/onlywonder.png" alt="onlywonder">
+    </a>
+  
+    <a href="https://jbc.lol/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/jbclol.png" alt="jbclol">
+    </a>
+  
+    <a href="https://solita.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/solita.png" alt="solita">
+    </a>
+  
+    <a href="http://nondmo.online/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/nondmo.png" alt="nondmo">
+    </a>
+  
+    <a href="https://frills.dev/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/frills.png" alt="frills">
+    </a>
+  
+    <a href="https://goblincat.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/goblincat.png" alt="goblincat">
+    </a>
+  
+    <a href="https://crotovane.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/crotovane.gif" alt="crotovane">
+    </a>
+  
+    <a href="https://moonside-inn.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/moonside.png" alt="moonside-inn">
+    </a>
+  
+    <a href="https://dashweb.neocities.org/" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dash.gif" alt="dash">
+    </a>
+  
+  <p>If you want your site button changed, link updated, or link removed for any reason, feel free to post a message on my <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> or <a href="mailto:hello@snails.town">email me</a>.</p>
+
 </div>
 
-<div class="col">
-  <fieldset>
-<legend>Webrings</legend>
+</div>
+</div>
+<main><div class="main-container">
+<h2 id="webrings">Webrings</h2>
 
 <div class="webring">
   <a rel="noreferrer" target="_blank" href="https://webring.bucketfish.me/redirect.html?to=prev&name=snails"><i class="bi bi-arrow-left"></i></a>
   | <a rel="noreferrer" target="_blank" class="bucket" href="https://webring.bucketfish.me"> Bucket Webring</a>
   | <a rel="noreferrer" target="_blank" href="https://webring.bucketfish.me/redirect.html?to=random&name=snails"><i class="bi bi-shuffle"></i></a>
   | <a rel="noreferrer" target="_blank" href="https://webring.bucketfish.me/redirect.html?to=next&name=snails"><i class="bi bi-arrow-right"></i></a>
+</div>
+
+<div class="webring">
+  <a rel="noreferrer" target="_blank" href="https://jbc.lol/webrings/ssgring/redirect?slug=snails&way=prev"><i class="bi bi-arrow-left"></i></a>
+  | <a rel="noreferrer" target="_blank" href="https://jbc.lol/webrings/ssgring/"> SSGRing </a>
+  | <a rel="noreferrer" target="_blank" href="https://jbc.lol/webrings/ssgring/redirect?way=rand"><i class="bi bi-shuffle"></i></a>
+  | <a rel="noreferrer" target="_blank" href="https://jbc.lol/webrings/ssgring/redirect?slug=snails&way=next"><i class="bi bi-arrow-right"></i></a>
 </div>
 
 <div class="webring"> 
@@ -107,11 +763,12 @@
   <a rel="noreferrer" href="https://baccyflap.com/noai/?nxt&s=nal" target="_blank">next »</a>
 </div>
 
-<div class="webring" style="background-image: url('https://void.shroom.ink/src/img/background.webp');font-family:monospace;width:250px;text-align:center;">
+<div class="webring" style="width:250px;text-align:left;">
   <a rel="noreferrer" aria-label="Previous" href="https://void.shroom.ink/snails/previous" id="previous" target="_blank" title="previous">←</a>
   <a rel="noreferrer" aria-label="Home" href="https://void.shroom.ink/" id="home" target="_blank" title="home">void.shrooms</a>
   <a rel="noreferrer" aria-label="Next" href="https://void.shroom.ink/snails/next" id="next" target="_blank" title="next">→</a>
 </div>
+
 
 <div class="webring">
 <div id="gamer-ring">
@@ -120,9 +777,7 @@
 </div>
 </div>
 
-<div class="webring">
-<script src="https://jbc.lol/webrings/ssgring/pmoring.js"></script>
-</div>
+
 
 <div class="webring">
   <style>
@@ -133,167 +788,40 @@
 <script type="text/javascript" src="https://terakun.nekoweb.org/ricepaddy/webring-widget.js"></script>
 </div>
 </div>
- 
-  </fieldset>
+  <style>
+#stampsociety{
+  text-align: left;
+  margin-left: 0;
+}
+</style>
+<script src="https://stampsociety.howsoonisnow.org/js/widget.js" class="standard"></script> 
+<h2>Cliques</h2>
+ <a rel="noreferrer" target="_blank" href="https://lovesick.cafe/esoterica/angelnumbers"><img src="/images/courtyard/tiny-222.png"></a>
+  <img src="/images/courtyard/wing-left.png"> I am <a rel="noreferrer" target="_blank" href="https://ballonlea.neocities.org/trickyfox/"> angelic ♥</a> <img src="/images/courtyard/wing-right.png">
+  <a rel="noreferrer" target="_blank" href="https://rice.place/colorclique.html"><img src="https://rice.place/color/colorcliqueBLACK1.png"></a>
+    <a rel="noreferrer" target="_blank" href="https://lovesick.cafe/grrrl"><img src="/images/courtyard/madebyagirl.png"></a>
+    <a rel="noreferrer" href="https://dust.kuchiki.net/" target="_blank"><img src="/images/courtyard/cats.gif" title="cats"></a>
+    <h2>Fanlistings</h2>
 </div>
 
-<div class="link-grid">
-
-  <div class="col">
-  <fieldset>
-<legend>Neighbors</legend>
-
-<div class="link-buttons">
-  <a rel="noreferrer" href="https://pizzacatdelights.nekoweb.org/" target="_blank"><img src="https://pizzacatdelights.nekoweb.org/images/buttons/Pizzacat Delights Neko Button 1.1.png" alt="Pizzacat Delights"></a>
-  <a rel="noreferrer" target="_blank" href="https://pxxels.neocities.org/"><img src="https://pxxels.neocities.org/images/light_button.png"></a>
-  <a rel="noreferrer" target="_blank" href="https://velvetblue.neocities.org"><img src="https://files.catbox.moe/vltthb.png" alt="Velvet Blue"></a>
-  <a rel="noreferrer" target="_blank" href="https://milktea.nekoweb.org"><img src="/images/buttons/sites/milktea.png"></a>
-  <a rel="noreferrer" href="https://nanacore.neocities.org/" target="_blank"><img src="/images/buttons/sites/nanacore.png" alte="nanacore"></a>  
-  <a rel="noreferrer" href="https://venus-territory.neocities.org" target="_blank"><img src="/images/buttons/sites/venus-territory.png" alte="venus-territory"></a>
-  <a rel="noreferrer" href="https://ordainedmotion.neocities.org" target="_blank"><img src="/images/buttons/sites/ordainedmotion.png" alt="ordainedmotion"></a>
-  <a rel="noreferrer" href="https://moonflower.nekoweb.org/" target="_blank"><img src="https://moonflower.nekoweb.org/button.png" alt="moonflower"></a>
-  <a rel="noreferrer" target="_blank" href="https://beaniepines.neocities.org/"><img src="/images/buttons/sites/beaniepines.gif"></a>
-  <a rel="noreferrer" target="_blank" href="https://rexalted.neocities.org/"><img src="/images/buttons/sites/rexalted.gif" alt="rexalted"></a>
-  <a rel="noreferrer" target="_blank" href="https://dudalog.neocities.org/"><img src="/images/buttons/sites/dudalog.png"></a>
-  <a rel="noreferrer" target="_blank" href="https://caterpillarangel.neocities.org"><img src="/images/buttons/sites/caterpillarangel.png" alt="caterpillarangel"></a>
-  <a rel="noreferrer" target="_blank" href="https://blueberrymuffinss.neocities.org"><img src="https://blueberrymuffinss.neocities.org/media/buttons/button.png"></a>
-  <a rel="noreferrer" target="_blank" href="https://spinebreaker.neocities.org/"><img src="/images/buttons/sites/spinebreaker.gif" alt="spinebreaker"></a>
-  <a rel="noreferrer" target="_blank" href="https://ectobe.ing/"><img src="/images/buttons/sites/ectobeing.png" alt="ectobeing"></a>
-  <a rel="noreferrer" target="_blank" href="https://nyscyra.nekoweb.org/"><img src="https://nyscyra.nekoweb.org/img/button.png" alt="nyscyra"></a>
-  <a rel="noreferrer" target="_blank" href="https://peepo.neocities.org/"><img src="/images/buttons/sites/peepo.png" alt="peepo"></a>
-  <a rel="noreferrer" href="https://kimberlygb.neocities.org" target="_blank"><img src="/images/buttons/sites/kimberlygb.png" alt="kimberlygb"></a> 
-  <a rel="noreferrer" target="_blank" href="https://dreambubble.neocities.org/"><img src="/images/buttons/sites/dreambubble.gif" alt="breambubble"></a>
-  <a rel="noreferrer" target="_blank" href="https://amidala.neocities.org/"><img src="/images/buttons/sites/amidala.png" alt="amidala"></a>
-  <a rel="noreferrer" target="_blank" href="https://cloverstar.neocities.org/"><img src="/images/buttons/sites/cloverstar.png" alt="coverstar"></a>
-  <a rel="noreferrer" target="_blank" href="https://fallenfleurs.neocities.org/"><img src="/images/buttons/sites/fallenfleurs.png" alt="fallenfleurs"></a>
-  <a rel="noreferrer" target="_blank" href="https://fh102.neocities.org/"><img src="/images/buttons/sites/sephlow.gif" alt="fh102"></a>
-  <a rel="noreferrer" target="_blank" href="https://bulltown.joejenett.com"><img src="/images/buttons/sites/b22button.png" alt="bulltown.2022"></a>
-  <a rel="noreferrer" target="_blank" href="https://doqmeat.com/"><img src="/images/buttons/sites/doqmeat.png" alt="dogmeat"></a>
-  <a rel="noreferrer" target="_blank" href="https://strawberry-gashes.neocities.org"><img src="https://i.imgur.com/V9sIpx6.gif" alt="strawberry gashes"></a>
-  <a rel="noreferrer" target="_blank" href="https://meowbark2000.neocities.org"><img src="https://i.imgur.com/0dRy6ek.png" alt="meowbark 2000"></a>
-  <a rel="noreferrer" target="_blank" href="https://spiritcellar.neocities.org/"><img src="/images/buttons/sites/spiritcellar.gif" alt="spirit cellar"></a>
-  <a rel="noreferrer" target="_blank" href="https://corktree.neocities.org/"><img src="/images/buttons/sites/corktree.png" alt="corktree"></a>
-  <a rel="noreferrer" target="_blank" href="https://ghostopsy.neocities.org/"><img src="/images/buttons/sites/ghostopsy.gif" alt="ghostopsy"></a>
-  <a rel="noreferrer" target="_blank" href="https://luckyrabbit.neocities.org/"><img src="/images/buttons/sites/luckyrabbit.png" alt="luckyrabbit"></a>
-  <a rel="noreferrer" target="_blank" href="https://ninjaweb.neocities.org/"><img src="/images/buttons/sites/ninjaweb.gif" alt="ninjaweb"></a>
-  <a rel="noreferrer" target="_blank" href="https://grossgirl94.neocities.org/"><img src="/images/buttons/sites/grossgirl94.gif" alt="grossgirl94"></a>
-  <a rel="noreferrer" target="_blank" href="https://crow-queen.com/"><img src="/images/buttons/sites/crow-queen.gif" alt="crow-queen"></a>
-  <a rel="noreferrer" target="_blank" href="https://oyasumimi.neocities.org/"><img src="/images/buttons/sites/oyasumimi.gif" alt="oyasumimi"></a>
-  <a rel="noreferrer" target="_blank" href="https://onlywonder.net/"><img src="/images/buttons/sites/onlywonder.png" alt="onlywonder"></a>
-  <a rel="noreferrer" target="_blank" href="https://00s.neocities.org/"><img src="/images/buttons/sites/00s.gif" alt="00s"></a>
-  <a rel="noreferrer" target="_blank" href="https://philia995.neocities.org/"><img src="/images/buttons/sites/philia995.png" alt="philia995"></a>
-  <a rel="noreferrer" target="_blank" href="https://howsoonisnow.org/"><img src="/images/buttons/sites/howsoonisnow.gif" alt="howsoonisnow"></a>
-  <a rel="noreferrer" target="_blank" href="https://xandra.cc/"><img src="/images/buttons/sites/xandra.png" alt="museumofalexandra"></a>
-  <a rel="noreferrer" target="_blank" href="https://chione.neocities.org/"><img src="/images/buttons/sites/chione.png" alt="chione"></a>
-  <a rel="noreferrer" target="_blank" href="https://podminton.neocities.org/"><img src="/images/buttons/sites/podminton.png" alt="podminton"></a>
-  <a rel="noreferrer" target="_blank" href="https://strawberry-transneu.neocities.org/"><img src="/images/buttons/sites/strawberry-transneu.png" alt="strawberry-transneu"></a>
-  <a rel="noreferrer" target="_blank" href="https://rini.neocities.org/"><img src="/images/buttons/sites/rini.gif" alt="rini"></a>
-  <a rel="noreferrer" target="_blank" href="https://coffeeplant.neocities.org/"><img src="/images/buttons/sites/coffeeplant.png" alt="coffeeplant"></a>
-  <a rel="noreferrer" target="_blank" href="https://moonpr1sm.com/"><img src="/images/buttons/sites/moonpr1sm.png" alt="moonpr1sm"></a>
-  <a rel="noreferrer" target="_blank" href="https://web.archive.org/web/20250725220422/https://evilperson.neocities.org/"><img src="/images/buttons/sites/evilbutton.gif" alt="evilperson"></a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://defiant-confusion.com/">defiant-confusion</a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://greytext.neocities.org/">greytext</a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://hedoro.neocities.org/">hedoro</a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://sugarfantasies.neocities.org/">sugarfantasies</a>
-
-</div>
-</fieldset></div>
-
-
-  <div class="col">
-  <fieldset>
-<legend>Other Sites I Enjoy</legend>
-
-<div class="link-buttons">
-   <a rel="noreferrer" target="_blank" href="https://reinlibrary.neocities.org"><img src="https://file.garden/ZdkCPZzmo3pLm8Vt/rein88x31.png"></a>
-  <a rel="noreferrer" target="_blank" href="https://jbc.lol"><img src="https://jbc.lol/imgs/buttons/jbtn.svg" alt="jb's site" style="image-rendering: pixelated;"></a>
-  <a rel="noreferrer" target="_blank" href="https://solita.neocities.org/"><img src="/images/buttons/sites/solita.png"></a>
-  <a rel="noreferrer" href="http://nondmo.online" target="_blank"><img src="http://nondmo.online/assets/button.png"></a>
-  <a rel="noreferrer" target="_blank" href="https://terakun.nekoweb.org/"><img src="https://terakun.nekoweb.org/img/buttons/ricex31.gif"></a>
-  <a rel="noreferrer" href="https://sweetheartmemory.neocities.org/" target="_blank"><img src="https://sweetheartmemory.neocities.org/z385fj.png" alt="sweetheartmemory"></a>
-  <a rel="noreferrer" target="_blank" href="https://cherie.nekoweb.org"><img src="https://cherie.nekoweb.org/assets/cherie88x31.gif" style="image-rendering:pixelated;height:31px;width:88px"></a>
-  <a rel="noreferrer" href="https://halovian.nekoweb.org/" target="_blank"><img src="https://file.garden/Z_DpZBCb9VvMuwJJ/halo.gif"></a>
-  <a rel="noreferrer" target="_blank" href="https://hellomei.dev/"><img src="/images/buttons/sites/hellomei.gif"></a>
-  <a rel="noreferrer" target="_blank" href="https://plumes.neocities.org/"><img src="/images/buttons/sites/plumes.gif"></a>
-  <a rel="noreferrer" target="_blank" href="https://dokode.moe/"><img src="/images/buttons/sites/dokodemobutton.gif"></a>
-  <a rel="noreferrer" target="_blank" href="https://mn1ca.neocities.org/"><img src="/images/buttons/sites/mn1ca.gif" alt="mn1ca"></a>
-  <a rel="noreferrer" href="https://mitzyrie.neocities.org/" target="_blank"><img src="https://mitzyrie.neocities.org/index/mitzyriebutton.gif"></a>
-  <a rel="noreferrer" target="_blank" href="https://inthewreckage.neocities.org/"><img src="/images/buttons/sites/inthewreckagebutton.png" alt="inthewreckage"></a>
-  <a rel="noreferrer" target="_blank" href="https://allyratworld.com/"><img src="/images/buttons/sites/allyrat.gif" alt="allyratworld"></a>
-  <a rel="noreferrer" target="_blank" href="https://seafare.neocities.org/"><img src="/images/buttons/sites/seafare.png" alt="seafare"></a>
-  <a rel="noreferrer" target="_blank" href="https://frills.dev/"><img src="/images/buttons/sites/frills.png" alt="frills"></a>
-  <a rel="noreferrer" target="_blank" href="https://pastelhello.com"><img src="/images/buttons/sites/pastelhell.gif" alt="pastelhell"></a>
-  <a rel="noreferrer" href="https://starry-knight.neocities.org/" target="_blank">
-<img src="https://starryknight06.github.io/neocities/public/images/button-starrys-grove.png" alt="Starry's Grove">
-</a>
-  <a rel="noreferrer" target="_blank" href="https://inkcaps.neocities.org/"><img src="/images/buttons/sites/inkcaps.gif" alt="inkcaps"></a>
-  <a rel="noreferrer" target="_blank" href="https://ribo.zone/"><img src="/images/buttons/sites/ribozone.gif" alt="ribozone"></a>
-  <a rel="noreferrer" target="_blank" href="https://sneekrealm.neocities.org/"><img src="/images/buttons/sites/sneeksrealm.png" alt="sneekrealm"></a>
-  <a rel="noreferrer" target="_blank" href="https://petrapixel.neocities.org/"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel"></a>
-  <a rel="noreferrer" target="_blank" href="https://karma.computer/"><img src="/images/buttons/sites/10kph.webp" alt="10kph"></a>
-  <a rel="noreferrer" target="_blank" href="https://lostletters.neocities.org/graphics/site_buttons/LostLetters88x31.gif"><img src="/images/buttons/sites/LostLetters.gif" alt="lostletters"></a>
-  <a rel="noreferrer" target="_blank" href="https://sweet-pea.neocities.org/"><img src="/images/buttons/sites/sweetpea.gif" alt="sweetpea"></a>
-  <a rel="noreferrer" target="_blank" href="https://princss.online/"><img src="https://princss.online/media/images/buttons/princss_button.png" alt="princss"></a>
-  <a rel="noreferrer" target="_blank" href="https://hillhouse.neocities.org/"><img src="/images/buttons/sites/hillhouse.png" alt="hillhouse"></a>
-  <a rel="noreferrer" target="_blank" href="https://goblincat.neocities.org/"><img src="/images/buttons/sites/goblincat.png" alt="goblincat"></a>
-  <a rel="noreferrer" target="_blank" href="https://crotovane.neocities.org/"><img src="/images/buttons/sites/crotovane.gif" alt="crotovane"></a>
-  <a rel="noreferrer" target="_blank" href="https://uuupah.neocities.org/"><img src="/images/buttons/sites/uuupah.png" alt="uuupah"></a>
-  <a rel="noreferrer" target="_blank" href="https://fairygore.neocities.org/"><img src="/images/buttons/sites/fairygore.png" alt="fairygore"></a>
-  <a rel="noreferrer" target="_blank" href="https://cherubiims.neocities.org/"><img src="/images/buttons/sites/cherubiims.gif" alt="cherubiims"></a>
-  <a rel="noreferrer" target="_blank" href="https://notprincehamlet.neocities.org/"><img src="/images/buttons/sites/notprincehamlet.png" alt="notprincehamlet"></a>
-  <a rel="noreferrer" target="_blank" href="https://cloverbell.neocities.org/"><img src="/images/buttons/sites/cloverbell.gif" alt="coverbell"></a>
-  <a rel="noreferrer" target="_blank" href="https://cinni.net/"><img src="/images/buttons/sites/cinni.png" alt="cinne"></a>
-  <a rel="noreferrer" target="_blank" href="https://abyssbloom.neocities.org/"><img src="/images/buttons/sites/abyssbloom.png" alt="abyssbloom"></a>
-  <a rel="noreferrer" target="_blank" href="https://lilithdev.neocities.org/"><img src="/images/buttons/sites/lilithdev.gif" alt="lilthdev"></a>
-  <a rel="noreferrer" target="_blank" href="https://nyaa.neocities.org/"><img src="/images/buttons/sites/nyaa.gif" alt="nyaa"></a>
-  <a rel="noreferrer" target="_blank" href="https://antikrist.lol/"><img src="/images/buttons/sites/antikrist.png" alt="antikrist"></a>
-  <a rel="noreferrer" target="_blank" href="https://nenrikido.neocities.org"><img src="https://dl.dropbox.com/s/265wg2om8bjr5g6/nenrikido_button.gif" alt="nenrikido"></a>
-  <a rel="noreferrer" target="_blank" href="https://www.snifflebear.moe/"><img src="/images/buttons/sites/snifflebear.png" alt="snifflebear"></a>
-  <a rel="noreferrer" target="_blank" href="https://maplebear.neocities.org/"><img src="/images/buttons/sites/maplebear.gif" alt="maplebear"></a>
-  <a rel="noreferrer" target="_blank" href="https://artwork.neocities.org/"><img src="/images/buttons/sites/artwork.gif" alt="artwork"></a>
-  <a rel="noreferrer" target="_blank" href="https://www.thefrugalgamer.net/"><img src="/images/buttons/sites/frugalgamer.png" alt="thefrugalgamer"></a>
-  <a rel="noreferrer" target="_blank" href="https://moonside-inn.neocities.org/"><img src="/images/buttons/sites/moonside.png" alt="moonside-inn"></a>
-  <a rel="noreferrer" target="_blank" href="https://seaofstars.neocities.org/"><img src="/images/buttons/sites/seaofstars.gif" alt="seaofstars"></a>
-  <a rel="noreferrer" target="_blank" href="https://sweetfish.site/"><img src="/images/buttons/sites/sweetfish.png" alt="sweetfish"></a>
-  <a rel="noreferrer" target="_blank" href="https://debtdeath.neocities.org/"><img src="/images/buttons/sites/debtdeath.png" alt="debtdeath"></a>
-  <a rel="noreferrer" target="_blank" href="https://mustakatu.nekoweb.org/"><img src="https://mustakatu.nekoweb.org/2025_03_19_0qk_Kleki.png"></a>
-  <a rel="noreferrer" target="_blank" href="https://nine-moonbeams.neocities.org/"><img src="/images/buttons/sites/nine-moonbeams.gif" alt="nine-moonbeams"></a>
-  <a rel="noreferrer" href="https://dashweb.neocities.org/" target="_blank"><img src="https://dashweb.neocities.org/images/dash.gif"></a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://suboptimalism.neocities.org/">suboptimalism</a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://rvklein.neocities.org/">rvklein</a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://mooface.neocities.org">mooface</a>
-  <a rel="noreferrer" target="_blank" class="text-button" href="https://kdkemp.com/">kdkemp</a>
-
-  </div>
-</fieldset></div>
+</main></main></div>
 </div>
 
-<p>If you want your site button changed or want your link removed for any reason, feel free to post a message on my <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> or <a href="mailto:hello@snails.town">email me</a>.</p>
-</div></main>
-
-   <script>
-    function toggleTOC() {
-      const toc = document.getElementById("toc");
-      toc.classList.toggle("collapsed");
-    }
-  </script>
 
 
-
-  </div>
-  <footer>
-  <!-- FOOTER -->  ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a> 
-  </footer>
-
-
-
-
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+<script>
+[...document.querySelectorAll(".buttons-n-blinkers")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
 </script>
-<script src="/javascript/main.js?nocache=?nocache=1767917075190"></script>
+
+
+    <script src="/javascript/main.js?nocache=?nocache=1769919395662"></script>
   </body>
 </html>
-
-
-

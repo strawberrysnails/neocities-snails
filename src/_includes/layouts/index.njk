@@ -1,0 +1,50 @@
+---
+title: Main Corridor
+layout: main
+showLocket: true
+---
+
+{% include "html/main/mobile-links.html" %}
+
+<div class="doll" id="myBtn">
+  <img
+    src="https://bloodborne.wiki.fextralife.com/file/Bloodborne/plain-doll.png"
+    alt=""
+  />
+</div>
+
+{% if showLocket %}
+  {% include "html/main/locket.njk" %}
+{% endif %}
+
+<div class="lace">
+  <div class="bow">
+    <img src="/images/graphics/bow.png" alt="">
+  </div>
+
+  <div class="container">
+    <div class="top">
+      <div class="portrait"></div>
+      <div class="banner">
+        <a href="/">snails.town</a>
+      </div>
+    </div>
+
+    {% include "html/main/links.html" %}
+{{ content | safe }}
+</div>
+</div>
+<footer>{% include "html/main/footer.html" %}</footer>
+
+
+<script>
+[...document.querySelectorAll(".buttons-n-blinkers")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
+</script>

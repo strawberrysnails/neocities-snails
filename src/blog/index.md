@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: index
 title: Blog
 permalink: /blog/
 nesting: "../"
@@ -9,11 +9,11 @@ eleventyNavigation:
   order: 1
 ---
 
-<main>
+<div class="main-container">
 
-# Blog <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small>
+# Writings <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small>
 
-<details style="border-left:none;">
+<details>
   <summary>Browse by Tag</summary>
   <div class="tag-list">
     {% for tag in collections.tagList %}
@@ -22,4 +22,4 @@ eleventyNavigation:
   </div>
 </details>
   {% include "html/main/blog-feed.html" %} 
-</main>
+</div>

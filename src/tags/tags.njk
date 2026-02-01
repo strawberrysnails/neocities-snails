@@ -7,11 +7,24 @@ pagination:
 permalink: "blog/tags/{{ tag | slug }}/"
 eleventyComputed:
   title: "Tag: {{ tag }}"
-layout: main
+layout: index.njk
 ---
-<main>
-  <h1>{{ title }}</h1>
-  <a href="/blog">← back to blog</a>
+<div class="main-container">
+ <p style="text-align: center;">
+  <a href="/blog"><i class="bi bi-arrow-left-short"></i> back to posts</a>
+</p>
+<h1>Posts tagged #{{ tag }}</h1>
+<details open>
+  <summary>Browse by Tag</summary>
+ <div class="tag-list">
+  {% for tag in collections.tagList %}
+    <p>
+      <a href="/blog/tags/{{ tag | slug }}/">#{{ tag }}</a>
+    </p>
+  {% endfor %}
+</div>
+
+</details>
 <ul class="post-list">
   {% for post in collections.blog %}
     {% if tag in post.data.tags %}
@@ -29,5 +42,5 @@ layout: main
     </li>
   {% endfor %}
   </ul>
-</main>
+</div>
 

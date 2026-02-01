@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
+    <link rel="preload" as="image" href="https://octothorp.es/?uri=https://snails.town/">
+    <link rel="octo:octothorpes" href="weirdweboctober" >
+            <!-- CSS/JS + CACHEBUSTING -->
+            <link rel="stylesheet" href="/css/styles.css?nocache={{ nocache }}">
+            <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+            <link rel="icon" href="{{ site.favicon }}" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
+<script src="/javascript/animations.js"></script>
+<title>{{ site.title }}{% if title %} | {{ title }}{% endif %}</title>
+
+  </head>
+  <body>
+    <img src="/images/zero.png" alt="zero" class="zero" id="myBtn" data-tooltip="for debug">
+    <img class="lunar-tear" src="/images/DOD3_flower.png">
+<div class="container">
+  <header><a href="/index.html" class="title">Snails.Town</a></header>
+  <div class="main-layout">
+     <!-- LEFT SIDEBAR --> {% include "html/main/sidebar-left.html" %} 
+        {{ content | safe }}
+  </div>
+  <footer>
+  <!-- FOOTER --> {% include "html/main/footer.html" %} 
+  </footer>
+
+
+</select>
+</form>
+</div>
+<script 
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+<script src="/javascript/main.js?nocache={{ nocache }}"></script>
+  </body>
+</html>
+
+
+

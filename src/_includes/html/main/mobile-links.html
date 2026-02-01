@@ -1,0 +1,166 @@
+
+<input type="checkbox" id="menuToggle" class="menu-checkbox" />
+
+
+<label for="menuToggle" class="menu-toggle" aria-label="Open menu">
+  <img src="/images/graphics/menu.png" alt="">
+</label>
+
+
+<div class="mobile-menu">
+  <label for="menuToggle" class="menu-close" aria-label="Close menu">✕</label>
+
+<style>
+
+.nav-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-container li {
+  list-style-type: none;
+  border-left: 2px solid #000;
+  margin-left: 1em;
+}
+
+.nav-container li div {
+  padding-left: 1em;
+  position: relative;
+}
+
+.nav-container li div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  bottom: 50%;
+  width: 0.75em;
+  border: 2px solid #000;
+  border-top: 0;
+  border-right: 0;
+}
+
+.nav-container ul > li:last-child {
+  border-left: 2px solid transparent;
+}
+
+</style>
+
+  <div class="main-container">
+    <div class="nav-container">
+<ul>
+  <!-- Home -->
+  <li>
+    <div><a href="/">Home</a></div>
+  </li>
+
+
+  <!-- Library -->
+  <li>
+    <div>
+      <details>
+        <summary><a href="/library">Library</a></summary>
+        <ul>
+          <!-- placeholders -->
+          <li><div><a href="/library/bookmarks">Bookmarks</a></div></li>
+          <li><div><a href="/library/bookmarks#software">Software/Tools</a></div></li>
+          <li><div><a href="/library/bookmarks#tutorials">Tutorials</a></div></li>
+          <li><div><a href="/library/bookmarks#articles">Articles</a></div></li>
+          <li><div><a href="/library/codes">Code Snippets</a></div></li>
+          <li><div><a href="/library/fonts">Fonts</a></div></li>
+          <li><div><a href="/library/graphics">Graphics</a></div></li>
+          <li><div><a href="/library/recipes">Recipes</a></div></li>
+          <li><div><a href="/library/Inspiration">Inspiration</a></div></li>
+          <li><div><a href="/library/curios">Curiosities</a></div></li>
+          <li><div><a href="/library/collections">Collections</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Courtyard -->
+  <li>
+    <div>
+      <details open>
+        <summary>Courtyard</summary>
+        <ul>
+          <li><div><a href="/links#buttons">Button Wall</a></div></li>
+          <li><div><a href="/links#webrings">Webrings & Cliques</a></div></li>
+          <li><div><a href="/guestbook">Guestbook</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Bedroom -->
+  <li>
+    <div>
+      <details open>
+        <summary>Bedroom</summary>
+        <ul>
+          <li><div><a href="/photogrid">Photos</a></div></li>
+          <!-- Writings -->
+          <li>
+            <div>
+              <details>
+                <summary><a href="/blog">Writings</a></summary>
+                <ul>
+                  {% for post in collections.blog %}
+                    <li>
+                      <div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Laboratory -->
+  <li>
+    <div>
+      <details open>
+        <summary>Laboratory</summary>
+        <ul>
+          <li><div><a href="/about">About</a></div></li>
+          <li><div><a href="/updates">Changelog</a></div></li>
+          <li><div><a href="/about#archives">Archives</a></div></li>
+          <li><div><a href="/map">Site Map</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+<!-- Museum -->
+<li>
+  <div>
+    <details open>
+      <summary>Museum</summary>
+      <ul>
+        <!-- Exhibits -->
+        <li>
+          <div>
+            <details>
+              <summary><a href="/exhibits">Exhibits</a></summary>
+              <ul>
+                <li>
+                  <div>
+                    <a href="/exhibits/weirdweb2025/">Weird Web October 2025</a>
+                  </div>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </li>
+      </ul>
+    </details>
+  </div>
+</li>
+</div>
+</div>
+</div>

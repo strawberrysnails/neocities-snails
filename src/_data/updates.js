@@ -1,19 +1,15 @@
 module.exports = [
       {
       date: new Date("2026-01-02"),
-      blurb: `<a href="/blog">Blog post</a> on 2025 & <a href="/notebook/photogrid">photos</a>!`
+      blurb: `<a href="/blog">Blog post</a> on 2025 & <a href="/photogrid">photos</a>!`
     },
     {
       date: new Date("2025-10-19"),
-      blurb: `New <a href="/notebook/photogrid">photo</a> and <a href="notebook/weirdweb2025/">weird web october</a>.`
+      blurb: `New <a href="/photogrid">photo</a> and <a href="/exhibits/weirdweb2025/">weird web october</a>.`
     },
     {
       date: new Date("2025-10-16"),
-      blurb: `Completed day 7-13 of <a href="notebook/weirdweb2025/">weird web october</a>. Yes, I'm behind <3`
-    },
-    {
-      date: new Date("2025-10-07"),
-      blurb: `<ul><li>Launch of my first F2U template and widget: <a href="/notebook/templates">/notebook/templates</a> & <a href="/notebook/widgets">/notebook/widgets</a>.</li><li>Also new font added to the <a href="/notebook/fonts">fonts</a> page & joined some cliques on the <a href="/links">neighborhood</a> page.</li></ul>`
+      blurb: `Completed day 7-13 of <a href="/exhibits/weirdweb2025/">weird web october</a>. Yes, I'm behind <3`
     },
     {
       date: new Date("2025-10-07"),
@@ -21,23 +17,23 @@ module.exports = [
     },
     {
       date: new Date("2025-10-06"),
-      blurb: `Finished up day 3-6 of <a href="/notebook/weirdweb2025/">Weird Web October</a>.`
+      blurb: `Finished up day 3-6 of <a href="/exhibits/weirdweb2025/">Weird Web October</a>.`
     },
     {
       date: new Date("2025-10-03"),
-      blurb: `Day 2 of Weird Web October: <a href="/notebook/weirdweb2025/2maps">#maps</a>.`
+      blurb: `Day 2 of Weird Web October: <a href="/exhibits/weirdweb2025/2maps">#maps</a>.`
     },
     {
     date: new Date("2025-10-02"),
-    blurb: `Started Weird Web October! Day 1: <a href="/notebook/weirdweb2025/1transparency">#transparancy</a>`
+    blurb: `Started Weird Web October! Day 1: <a href="/exhibits/weirdweb2025/1transparency">#transparancy</a>`
     },
     {
     date: new Date("2025-09-30"),
-    blurb: `The <a href="/notebook/photogrid">photogrid</a> got a new update! It's more mobile-friendly and has swipe support now. ALSO my guide: <a href="/shrines/drakengard3/howto">How to play Drakengard 3</a> is up and available to read!`
+    blurb: `The <a href="/photogrid">photogrid</a> got a new update! It's more mobile-friendly and has swipe support now. ALSO my guide: <a href="/shrines/drakengard3/howto">How to play Drakengard 3</a> is up and available to read!`
     },
     {
     date: new Date("2025-09-29"),
-    blurb: `I'm updating and reorganizing the media logs. First up: video games, now redesigned and relocated: <a href="/notebook/videogames">/notebook/videogames</a>. Now featuring thumbnails and filterable by status, platform, and rating!`
+    blurb: `I'm updating and reorganizing the media logs. First up: video games, now redesigned and relocated: <a href="/museum/videogames">/notebook/videogames</a>. Now featuring thumbnails and filterable by status, platform, and rating!`
     },
     {
     date: new Date("2025-09-24"),
@@ -46,7 +42,7 @@ module.exports = [
     },
     {
     date: new Date("2025-09-23"),
-    blurb: `Theme updates and tweaks. New photos in the <a href="/notebook/photogrid">photogrid</a>! Working on an RSS feed for the update log. New shrine coming soon hehe.`
+    blurb: `Theme updates and tweaks. New photos in the <a href="/photogrid">photogrid</a>! Working on an RSS feed for the update log. New shrine coming soon hehe.`
     },
     {
     date: new Date("2025-09-12"),
@@ -70,7 +66,7 @@ module.exports = [
     }, 
     {
     date: new Date("2025-07-24"),
-    blurb: `Improved <a href="/notebook/photogrid">photogrid</a> with modals and ability to click through gallery with keyboard. Added Miku theme in honor of last weekend.`
+    blurb: `Improved <a href="/photogrid">photogrid</a> with modals and ability to click through gallery with keyboard. Added Miku theme in honor of last weekend.`
     }, 
     {
     date: new Date("2025-07-04"),
@@ -98,7 +94,7 @@ module.exports = [
     },
     {
       date: new Date("2025-04-23"),
-      blurb: `Two new pictures uploaded to my <a href="/notebook/photogrid">photogrid</a> and a whole new page — check out my <a href="/pins">Pinboard</a>.`
+      blurb: `Two new pictures uploaded to my <a href="/photogrid">photogrid</a> and a whole new page — check out my <a href="/pins">Pinboard</a>.`
     },
     {
       date: new Date("2025-04-21"),

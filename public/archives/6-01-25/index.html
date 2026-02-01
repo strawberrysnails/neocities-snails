@@ -35,7 +35,6 @@ body {
   background-image: url(/images/bg.png); /* https://www.zerochan.net/Pixiv+Id+20784982 */
   margin: auto;
   text-align: left;
-  cursor: url(/images/cursor.png), default;
 }
 
 a {
@@ -206,8 +205,8 @@ a:hover {
   gap: 10px;
   margin: 10px auto;
   width: 100%;
-  max-width: 1024px;   /* Prevents it from growing too wide */
-  min-width: 320px;   /* Prevents it from shrinking too small */
+  max-width: 1024px;   
+  min-width: 320px;  
   box-sizing: border-box;
 }
 
@@ -285,10 +284,10 @@ ul.a li {
   color: white;
 }
 
-/* Change text selection color */
+
 ::selection {
-  background: var(--contrast);  /* highlight background */
-  color: #000000;       /* text color while highlighted */
+  background: var(--contrast);  
+  color: #000000;       
 }
 
 /* For Firefox */
@@ -306,16 +305,16 @@ width: auto;
 }
 
 
-/* HOME */
 
-/* Layout for top and bottom rows on homepage */
+
+
 .home {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Top row: intro (wide) + latest content (narrow) */
+
 .top-row {
   display: flex;
   gap: 20px;
@@ -329,7 +328,7 @@ width: auto;
   flex: 1;
 }
 
-/* Bottom row: to-do and updates, equal width */
+
 .bottom-row {
   display: flex;
   gap: 20px;
@@ -429,7 +428,6 @@ legend {
 }
 
 
-/* GRID LAYOUT */
 
 
 .container {
@@ -451,7 +449,7 @@ footer {
 }
 
 .banner-container {
-  background-image: url(images/banner2.png);
+  background-image: url(https://snails.town/archives/6-01-25/banner2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -567,7 +565,7 @@ ul.a {
 
     <div class="container">
     <header>
-        <a href="/site">← back to main site</a>
+        <a href="/about">← back to main site</a>
       <a href="/"><div class="banner-container">
         <a href="#"><h1 class="banner-title">snails.town</h1></a>
       </div>
@@ -593,10 +591,7 @@ ul.a {
       This site is <b>mobile-friendly</b>, <b>safe for work</b>, and uses <b>JavaScript</b>.</p>
       <p>Reccomended Page: <a href="/Notebook">Notebook</a> – Full of goodies and resources for you. 
     </p>
-    <img src="images/chain2.gif" width="33%"><img src="images/chain2.gif" width="33%"><img src="images/chain2.gif" width="33%">
-    <br><br>
-    <a class="image-link" href="/guestbook/" style="margin-left:25%;"><img src="images/signmybook.png" width="55%"></a>
-     
+    <img src="https://snails.town/archives/6-01-25/chain2.gif" width="33%"><img src="https://snails.town/archives/6-01-25/chain2.gif" width="33%"><img src="https://snails.town/archives/6-01-25/chain2.gif" width="33%">
     </div>
 
     <!-- Right column  -->
@@ -608,20 +603,20 @@ ul.a {
             
             <div class="responsive">
               <a class="image-link" href="#">
-                <img src="images/doublemiku.png">
+                <img src="https://snails.town/images/photogrid/doublemiku.png">
               </a>
             </div>
           
         </fieldset>
       </div>
       <br>
-      <img src="images/chain2.gif" width="49%"><img src="images/chain2.gif" width="49%">
+      <img src="https://snails.town/archives/6-01-25/chain2.gif" width="49%"><img src="https://snails.town/archives/6-01-25/chain2.gif" width="49%">
       <br><br>
         <fieldset>
           
           
             <legend><a href="/blog">Latest  Blog Post </a> <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small></legend>
-            <h2><a href="/blog/otakon-2025.html">Otakon 2025 </a></h2>
+            <h2><a href="/blog/2025/otakon-2025-0814">Otakon 2025 </a></h2>
             <i class="bi bi-calendar-heart"></i> <time datetime="2025-08-14">August 14, 2025</time> | <i class="bi bi-stopwatch"></i> 3 min
           
           

@@ -61,7 +61,7 @@ module.exports = [
   {
     src: "nycicecream.png",
     date: "5.18.2025",
-    caption: "Ice cram from Salt and Straw in NYC.",
+    caption: "Ice cream from Salt and Straw in NYC.",
   },
   {
     src: "dango.png",

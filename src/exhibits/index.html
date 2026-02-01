@@ -1,0 +1,67 @@
+---
+layout: main
+title: Exhibits
+---
+<a class="home" href="/">
+  go home?<br />
+  <img style="width: 40px" src="/images/graphics/candle.gif" alt="go home" />
+</a>
+
+<div class="exhibits-wrap">
+  <div class="exhibits-rail">
+
+    <!-- Real exhibit -->
+    <a class="exhibit" href="/exhibits/weirdweb2025/">
+      <div class="exhibit-frame"><img src="/images/exhibits/weirdweb-frame.png"></div>
+      <div class="exhibit-inner">
+        <h2>Weird Web October [2025]</h2>
+        <p>Fun web experiments for the month of October.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 1 -->
+    <a class="exhibit placeholder" href="#">
+      <div class="exhibit-frame"></div>
+      <div class="exhibit-inner">
+        <h2>Exhibit II</h2>
+        <p>Unknown artifact. Under observation.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 2 -->
+    <a class="exhibit placeholder" href="#">
+      <div class="exhibit-frame"></div>
+      <div class="exhibit-inner">
+        <h2>Exhibit III</h2>
+        <p>Interface behaving strangely.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 3 -->
+    <a class="exhibit placeholder" href="#">
+      <div class="exhibit-frame"></div>
+      <div class="exhibit-inner">
+        <h2>Exhibit IV</h2>
+        <p>Awaiting containment.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+
+
+<script>
+  const exhibits = document.querySelector('.exhibits-wrap');
+
+  if (exhibits) {
+    exhibits.addEventListener('wheel', (e) => {
+      if (exhibits.scrollWidth > exhibits.clientWidth) {
+        e.preventDefault();
+        exhibits.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  }
+</script>
+

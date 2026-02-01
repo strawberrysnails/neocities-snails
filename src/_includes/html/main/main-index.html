@@ -1,52 +1,17 @@
-  <div style="margin-top: 20px;">
-<img src="/images/wiess.png" alt="Grimore Wiess"
-     style="float:left; width:190px; height:auto; margin:0 15px 15px 0; border-radius:0px; transition: transform 0.3s;"
-     onmouseover="this.style.transform='rotate(-5deg)';"
-     onmouseout="this.style.transform='rotate(0deg)';">
-<p><b style="font-size:3em; font-family: Kelmscott;">Welcome,</b> traveler - you have landed in <i>snails.town</i>, a personal archive of my thoughts, interests, creations, and more. The website theme is inspired by the <i>DrakeNieR</i> series,
-  specifically Drakengard 3, my favorite video game. I enjoy <a href="/blog">writing</a>, experimenting with javascript, and <a href="/notebook/videogames">gaming</a>. I write about web development, device modding, and traveling.
- Some of my free-to-use templates and widgets can be found in the <a href="/notebook">notebook</a>. </p>
-<p>This website is safe for work and mobile-friendly. Some things are still a work-in-progress to me. You can learn more about it <a href="/site">here</a>.</p>
-<p>Please explore freely & you are welcome to leave a message in my <a href="/guestbook">guestbook</a>. Thanks for visiting! (。・ω・。)</p> 
-<fieldset>
-           <script src="https://stampsociety.howsoonisnow.org/js/widget.js" class="monochrome"></script>
-</fieldset>
-</div>
-<hr>
-<fieldset>
-  <legend>Recent Blog Post <a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i> RSS</a></legend>
+<p style="margin-top: 30px;"><b style="font-size: 40px;">Welcome,</b> traveler - you have landed in <i>snails.town</i>,<br>
+  a personal archive of my thoughts, interests, creations, and more.<br>
+I enjoy <a href="/blog">writing</a>, experimenting with javascript, and gaming. I write about web development, device modding, and traveling.<br>
+This website is <b>safe for work</b> and <b>mobile-friendly.</b> Some things are still a work-in-progress <i>to me.</i><br>
+Please explore freely & you are welcome to leave a message in my <a href="/guestbook">guestbook</a>. Thanks for visiting! (。・ω・。)
+  <img src="/images/graphics/sword.gif">
+<div class="blog-feed">
+<h2>Recent Blog Post <a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></h2>
     {% set post = collections.blog[0] %}
           {% if post %}
-            <i class="bi bi-paperclip"></i> <a href="{{ post.url }}">{{ post.data.title }}</a> |
+            <h3><i class="bi bi-paperclip"></i><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
             <i class="bi bi-calendar-heart"></i> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
           {% endif %}
           {% if post.data.excerpt %}
             <p>{{ post.data.excerpt }}</p>
           {% endif %}
-</fieldset><br>
-<fieldset>
-<legend>Update Log <a href="/updates/feed.xml"><i class="bi bi-rss-fill"></i> RSS</a></legend>
-{% if updates and updates.length %}
-  <ul>
-    {% if updates[0] %}
-      <li>
-        <strong><time datetime="{{ updates[0].date | dateIso }}">{{ updates[0].date | dateReadable }}</time></strong> – {{ updates[0].blurb | safe }}
-      </li>
-    {% endif %}
-    {% if updates[1] %}
-      <li>
-        <strong><time datetime="{{ updates[1].date | dateIso }}">{{ updates[1].date | dateReadable }}</time></strong> – {{ updates[1].blurb | safe }}
-      </li>
-    {% endif %}
-    {% if updates[2] %}
-      <li>
-        <strong><time datetime="{{ updates[2].date | dateIso }}">{{ updates[2].date | dateReadable }}</time></strong> – {{ updates[2].blurb | safe }}
-      </li>
-    {% endif %}
-  </ul>
-...See all previous updates <a href="updates">here.</a>
-{% else %}
-  <p>No updates yet.</p>
-{% endif %}
-
-</fieldset>
+</div>

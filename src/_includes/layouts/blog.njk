@@ -1,11 +1,13 @@
 ---
-layout: main
+layout: index
 ---
-<main>
+<div class="main-container">
 <script src="/javascript/mylikebutton.js"></script>
 
 <article class="blog-post">
-
+<p style="text-align: center;">
+  <a href="/blog"><i class="bi bi-arrow-left-short"></i> back to posts</a>
+</p>
     <h1>{{ title }}</h1>
     <i class="bi bi-calendar-heart"></i> <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> | 
     {% if tags %}
@@ -40,12 +42,12 @@ layout: main
 
     {% set previousPost = collections.blog | getPreviousCollectionItem(page) %}
     {% if previousPost %}
-      <a href="{{ previousPost.url }}">← {{ previousPost.data.title }}</a>
+      <a href="{{ previousPost.url }}"><i class="bi bi-arrow-left-short"></i> {{ previousPost.data.title }}</a>
     {% endif %}
 |
     {% set nextPost = collections.blog | getNextCollectionItem(page) %}
     {% if nextPost %}
-      <a href="{{ nextPost.url }}">{{ nextPost.data.title }} →</a>
+      <a href="{{ nextPost.url }}">{{ nextPost.data.title }} <i class="bi bi-arrow-right-short"></i></a>
     {% endif %}
 
     <!-- BLOG IMAGE MODAL -->
@@ -60,107 +62,6 @@ layout: main
     <div id="modalCaption"></div>
   </div>
 </div>
-<style>
-
-.blog-content .blog-image-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem; 
-  margin: 1.5rem 0;
-}
-
-/* Individual blog images */
-.blog-content .blog-img {
-  flex: 1 1 250px; 
-  max-width: 250px; 
-  aspect-ratio: 1 / 1; 
-  object-fit: cover; 
-  border-radius: 8px;
-  cursor: url(/images/pointer.png), pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover zoom and shadow */
-.blog-content .blog-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-}
-
-#photoModal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(46,46,46,0.9);
-}
-
-#closeModal {
-  position: absolute;
-  top: 15px; right: 35px;
-  color: white;
-  font-size: 60px;
-  cursor: url(/images/pointer.png), pointer;
-  z-index: 1002;
-}
-
-.modal-content {
-  position: relative;
-  max-width: 90%;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-.modal-inner {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-}
-
-#modalImage {
-  max-width: 100%;
-  height: auto;
-  border: 10px solid white;
-  display: block;
-  margin: auto;
-}
-
-#modalCaption {
-  color: white;
-  margin-top: 10px;
-}
-
-.modal-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255,255,255,0.2);
-  border: none;
-  font-size: 2rem;
-  color: white;
-  padding: 5px 10px;
-  cursor: url(/images/pointer.png), pointer;
-  z-index: 1001;
-}
-
-#prevPhoto { left: -40px; }
-#nextPhoto { right: -40px; }
-
-@media (max-width: 768px) {
-  .modal-content { max-width: 80%; }
-  #prevPhoto { left: -10px; }
-  #nextPhoto { right: -30px; }
-  .blog-content .blog-img {
-    flex: 1 1 45%; /* two per row on mobile */
-    max-width: none;
-  }
-}
-
-
-</style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('photoModal');
@@ -222,4 +123,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-</main>
+</div>

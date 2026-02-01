@@ -29,12 +29,9 @@ module.exports = function (eleventyConfig) {
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("main", "base.njk");
+    eleventyConfig.addLayoutAlias("index", "index.njk");
   eleventyConfig.addLayoutAlias("blog", "blog.njk");
   eleventyConfig.addLayoutAlias("tags", "tags.njk");
-  eleventyConfig.addLayoutAlias("links", "links.njk");
-  eleventyConfig.addLayoutAlias("pinboard", "pinboard.njk");
-   eleventyConfig.addLayoutAlias("notebook", "notebook.njk");
-      eleventyConfig.addLayoutAlias("archive", "archive.njk");
 
 
   // Add a computed property for 'now'

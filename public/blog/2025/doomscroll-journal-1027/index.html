@@ -3,47 +3,339 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Snail-paced personal space on the web.">
+
+    <title>Writing Down What I Learn on Online</title>
+
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
-    <link rel="preload" as="image" href="https://octothorp.es/?uri=https://snails.town/">
-    <link rel="octo:octothorpes" href="weirdweboctober">
-            <!-- CSS/JS + CACHEBUSTING -->
-            <link rel="stylesheet" href="/css/styles.css?nocache=?nocache=1767917075190">
-            <link rel="stylesheet" href="/css/fonts.css">
-            <link rel="stylesheet" href="/css/bootstrap-icons.css">
-            <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
-<script src="/javascript/animations.js"></script>
-<title>Snails | Writing Down What I Learn on Online</title>
 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+
+    
+      <link rel="stylesheet" href="/css/blog.css">
+    
   </head>
+
   <body>
-    <img src="/images/zero.png" alt="zero" class="zero" id="myBtn" data-tooltip="for debug">
-    <img class="lunar-tear" src="/images/DOD3_flower.png">
-<div class="container">
-  <header><a href="/index.html" class="title">Snails.Town</a></header>
-  <div class="main-layout">
-     <!-- LEFT SIDEBAR -->  <div class="mobile-links">
-      <a href="/blog">Blog</a>
-      <a href="/links">Neighborhood</a>
-      <a href="/notebook">Notebook</a>
-      <a href="/site">About</a>
-      <a href="/shrines">Shrines</a>
+    
+
+<input type="checkbox" id="menuToggle" class="menu-checkbox">
+
+
+<label for="menuToggle" class="menu-toggle" aria-label="Open menu">
+  <img src="/images/graphics/menu.png" alt="">
+</label>
+
+
+<div class="mobile-menu">
+  <label for="menuToggle" class="menu-close" aria-label="Close menu">✕</label>
+
+<style>
+
+.nav-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-container li {
+  list-style-type: none;
+  border-left: 2px solid #000;
+  margin-left: 1em;
+}
+
+.nav-container li div {
+  padding-left: 1em;
+  position: relative;
+}
+
+.nav-container li div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  bottom: 50%;
+  width: 0.75em;
+  border: 2px solid #000;
+  border-top: 0;
+  border-right: 0;
+}
+
+.nav-container ul > li:last-child {
+  border-left: 2px solid transparent;
+}
+
+</style>
+
+  <div class="main-container">
+    <div class="nav-container">
+<ul>
+  <!-- Home -->
+  <li>
+    <div><a href="/">Home</a></div>
+  </li>
+
+
+  <!-- Library -->
+  <li>
+    <div>
+      <details>
+        <summary><a href="/library">Library</a></summary>
+        <ul>
+          <!-- placeholders -->
+          <li><div><a href="/library/bookmarks">Bookmarks</a></div></li>
+          <li><div><a href="/library/bookmarks#software">Software/Tools</a></div></li>
+          <li><div><a href="/library/bookmarks#tutorials">Tutorials</a></div></li>
+          <li><div><a href="/library/bookmarks#articles">Articles</a></div></li>
+          <li><div><a href="/library/codes">Code Snippets</a></div></li>
+          <li><div><a href="/library/fonts">Fonts</a></div></li>
+          <li><div><a href="/library/graphics">Graphics</a></div></li>
+          <li><div><a href="/library/recipes">Recipes</a></div></li>
+          <li><div><a href="/library/Inspiration">Inspiration</a></div></li>
+          <li><div><a href="/library/curios">Curiosities</a></div></li>
+          <li><div><a href="/library/collections">Collections</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Courtyard -->
+  <li>
+    <div>
+      <details open>
+        <summary>Courtyard</summary>
+        <ul>
+          <li><div><a href="/links#buttons">Button Wall</a></div></li>
+          <li><div><a href="/links#webrings">Webrings &amp; Cliques</a></div></li>
+          <li><div><a href="/guestbook">Guestbook</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Bedroom -->
+  <li>
+    <div>
+      <details open>
+        <summary>Bedroom</summary>
+        <ul>
+          <li><div><a href="/photogrid">Photos</a></div></li>
+          <!-- Writings -->
+          <li>
+            <div>
+              <details>
+                <summary><a href="/blog">Writings</a></summary>
+                <ul>
+                  
+                    <li>
+                      <div><a href="/blog/2026/2025patchnotes-0101/">2025 Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/oct-update-1101/">October Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/minecraft-forever-world-1027/">Starting a Modded Minecraft Forever World</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/chess-and-anxiety-1024/">On Chess and Anxiety</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/sept-update-0930/">September Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/weird-web-october-0930/">Weird Web October</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/aug-update-0831/">August Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/otakon-2025-0814/">Otakon 2025</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/july-update-0731/">July Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/manga-ereader-0707/">I got an e-reader just for Manga.</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/june-update-0630/">June Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/may-update-0531/">May Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/nyc-trip-0518/">My Weekend Trip to NYC</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/april-update-0430/">April Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/gamelog-on-eleventy-0427/">Making a Gamelog on Eleventy</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/jailbreaking-my-kindle-0413/">Jailbreaking my Kindle</a></div>
+                    </li>
+                  
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Laboratory -->
+  <li>
+    <div>
+      <details open>
+        <summary>Laboratory</summary>
+        <ul>
+          <li><div><a href="/about">About</a></div></li>
+          <li><div><a href="/updates">Changelog</a></div></li>
+          <li><div><a href="/about#archives">Archives</a></div></li>
+          <li><div><a href="/map">Site Map</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+<!-- Museum -->
+<li>
+  <div>
+    <details open>
+      <summary>Museum</summary>
+      <ul>
+        <!-- Exhibits -->
+        <li>
+          <div>
+            <details>
+              <summary><a href="/exhibits">Exhibits</a></summary>
+              <ul>
+                <li>
+                  <div>
+                    <a href="/exhibits/weirdweb2025/">Weird Web October 2025</a>
+                  </div>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </li>
+      </ul>
+    </details>
+  </div>
+</li>
+</ul></div>
+</div>
+</div>
+
+
+<div class="doll" id="myBtn">
+  <img src="https://bloodborne.wiki.fextralife.com/file/Bloodborne/plain-doll.png" alt="">
+</div>
+
+
+  
+
+
+<div class="locket">
+  <a href="/photogrid" class="locket-inner">
+    <img src="/images/photogrid/christmas2025.png" alt="Recent Photo">
+  </a>
+
+  <img class="locket-open" src="/images/graphics/locket-open.png" alt="">
+  <img class="locket-closed" src="/images/graphics/locket-closed.png" alt="">
+</div>
+
+
+
+
+
+<div class="lace">
+  <div class="bow">
+    <img src="/images/graphics/bow.png" alt="">
+  </div>
+
+  <div class="container">
+    <div class="top">
+      <div class="portrait"></div>
+      <div class="banner">
+        <a href="/">snails.town</a>
       </div>
-      <nav class="sidebar-links">
-      <h3 class="nav-title">Navigation</h3>
-      <a href="/blog">Blog</a>
-      <a href="/links">Neighborhood</a>
-      <a href="/notebook">Notebook</a>
-      <a href="/site">About</a>
-      <a href="/shrines">Shrines</a>
-         <img src="/images/intoner-white.png">
-    </nav> 
-        <main>
+    </div>
+
+    <div class="nav"><div class="nav">
+  <ul class="nav-list">
+    <li class="nav-item" data-desc="A collection of resources, reading material, and bookmarks.">
+      <a href="/library">Library</a>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="Small web community gathering.">
+      <a href="/links">Courtyard</a>
+      <ul class="dropdown">
+        <li><a href="/links#buttons">Button Wall</a></li>
+        <li><a href="/links#webrings">Webrings &amp; Cliques</a></li>
+        <li><a href="/guestbook">Guestbook</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="A window into my personal life.">
+      <a href="#">Bedroom</a>
+      <ul class="dropdown">
+        <li><a href="/photogrid">Photos</a></li>
+        <li><a href="/blog">Writings</a></li>
+        <li><s><a href="#">Microblog</a></s></li>
+        <li><s><a href="#">Shrines</a></s></li>
+        <li><s><a href="#">Toybox</a></s></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="Tools, templates, and site notes.">
+      <a href="#">Laboratory</a>
+      <ul class="dropdown">
+        <li><a href="/about">About</a></li>
+        <li><a href="/updates">Changelog</a></li>
+        <li><a href="/about#archives">Archives</a></li>
+        <li><a href="/map">Sitemap</a></li>
+        <li><s><a href="#">Templates &amp; Widgets</a></s></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="Art, media logs, and works in progress. More to come.">
+      <a href="#">Museum</a>
+      <ul class="dropdown">
+        <li><a href="/exhibits">Exhibits</a></li>
+        <li><s><a href="#">Media Logs</a></s></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="main-container">
 <script src="/javascript/mylikebutton.js"></script>
 
 <article class="blog-post">
-
+<p style="text-align: center;">
+  <a href="/blog"><i class="bi bi-arrow-left-short"></i> back to posts</a>
+</p>
     <h1>Writing Down What I Learn on Online</h1>
     <i class="bi bi-calendar-heart"></i> <time datetime="2025-10-27">October 27, 2025</time> | 
     
@@ -98,107 +390,6 @@
     <div id="modalCaption"></div>
   </div>
 </div>
-<style>
-
-.blog-content .blog-image-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem; 
-  margin: 1.5rem 0;
-}
-
-/* Individual blog images */
-.blog-content .blog-img {
-  flex: 1 1 250px; 
-  max-width: 250px; 
-  aspect-ratio: 1 / 1; 
-  object-fit: cover; 
-  border-radius: 8px;
-  cursor: url(/images/pointer.png), pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover zoom and shadow */
-.blog-content .blog-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-}
-
-#photoModal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(46,46,46,0.9);
-}
-
-#closeModal {
-  position: absolute;
-  top: 15px; right: 35px;
-  color: white;
-  font-size: 60px;
-  cursor: url(/images/pointer.png), pointer;
-  z-index: 1002;
-}
-
-.modal-content {
-  position: relative;
-  max-width: 90%;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-.modal-inner {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-}
-
-#modalImage {
-  max-width: 100%;
-  height: auto;
-  border: 10px solid white;
-  display: block;
-  margin: auto;
-}
-
-#modalCaption {
-  color: white;
-  margin-top: 10px;
-}
-
-.modal-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255,255,255,0.2);
-  border: none;
-  font-size: 2rem;
-  color: white;
-  padding: 5px 10px;
-  cursor: url(/images/pointer.png), pointer;
-  z-index: 1001;
-}
-
-#prevPhoto { left: -40px; }
-#nextPhoto { right: -40px; }
-
-@media (max-width: 768px) {
-  .modal-content { max-width: 80%; }
-  #prevPhoto { left: -10px; }
-  #nextPhoto { right: -30px; }
-  .blog-content .blog-img {
-    flex: 1 1 45%; /* two per row on mobile */
-    max-width: none;
-  }
-}
-
-
-</style>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('photoModal');
@@ -260,21 +451,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-</main>
-  </div>
-  <footer>
-  <!-- FOOTER -->  ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a> 
-  </footer>
-
-
-
-
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</div>
+</div>
+<footer> ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a></footer>
+
+
+<script>
+[...document.querySelectorAll(".buttons-n-blinkers")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
 </script>
-<script src="/javascript/main.js?nocache=?nocache=1767917075190"></script>
+
+
+    <script src="/javascript/main.js?nocache=?nocache=1769919395662"></script>
   </body>
 </html>
-
-
-

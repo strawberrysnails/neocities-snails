@@ -130,3 +130,19 @@
   src: url("/fonts/bootstrap-icons.woff2") format("woff2"),
        url("/fonts/bootstrap-icons.woff") format("woff");
 }
+
+/* FOLKLORE FONT */
+@font-face {
+  font-family: "folklore";
+    src: url(/fonts/ImFell.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "folklore-it";
+    src: url(/fonts/ImFellIT.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "RoseCaps";
+    src: url(/fonts/rosecaps.ttf) format("truetype");
+}

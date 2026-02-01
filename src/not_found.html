@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: base.njk
 title: 404 Not Found
 ---
 
@@ -17,27 +17,32 @@ title: 404 Not Found
   <body>
     <style>
         body{
-            background-color: black;
             font-family: Jim Nightshade;
             color: white;
             font-size: 2rem;
+            margin: auto;
         }
-
-        .container{
-        position: relative;
-        margin: 10% auto;
-        text-align: center;
-        }
-
         a{
         color:#fff;
         }
 
+        .o{
+          margin: auto;
+          text-align: center;
+        }
+
+        .o img{
+          margin-top: 10px;
+          border: double antiquewhite 4px;
+          border-radius: 50px;
+          filter: sepia(50%);
+        }
+
     </style>
-    <div class="container">
+    <div class="o">
         <p>404 Not Found</p>
-        <a href="/">Respawn?</a>
-        <br>
-    <img src="/images/endingE.gif"></div>
+    <img src="/images/endingE.gif"><br>
+  <a href="/">Respawn?</a>
+</div>
   </body>
 </html>

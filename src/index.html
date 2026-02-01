@@ -1,11 +1,62 @@
 ---
-title: Homepage
-layout: main
-script: main.js
+title: Main Corridor
+layout: index
+showLocket: true
 ---
-<main>
-  {% include "html/main/main-index.html" %} 
-</main>
-<aside>
-  {% include "html/main/sidebar-right.html" %} 
-</aside>
+    <div class="index">
+
+      <aside class="updates-aside">
+        <div class="aside-inner">
+          {% include "html/main/updates.html" %}
+
+          <img
+            class="candle"
+            src="/images/graphics/candle.gif"
+            alt=""
+          >
+
+          <div class="stamp-wrap">
+            <script
+              src="https://stampsociety.howsoonisnow.org/js/widget.js"
+              class="standard"
+            ></script>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        {% include "html/main/main-index.html" %}
+        <div class="stain"></div>
+      </main>
+
+    </div>
+      <div class="buttons-n-blinkers">
+  <div>
+    <img src="/images/stamps/zerodod3.png" alt="">
+    <img src="/images/stamps/zeromikhail.png" alt="">
+    <img src="/images/stamps/mikhail.png" alt="">
+    <img src="/images/stamps/onedod3.png" alt="">
+    <img src="/images/stamps/twodod3.png" alt="">
+    <img src="/images/stamps/threedod3.png" alt="">
+    <img src="/images/stamps/fourdod3.png" alt="">
+    <img src="/images/stamps/fivedod3.png" alt="">
+    <img src="/images/stamps/johnbloodborne.png" alt="">
+    <img src="/images/stamps/thehunt.png" alt="">
+    <img src="/images/stamps/micolash.webp" alt="">
+    <img src="/images/stamps/kaine.webp" alt="">
+    
+  </div>
+  </div>
+  
+
+<script>
+[...document.querySelectorAll(".buttons-n-blinkers")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
+</script>

@@ -1,27 +1,39 @@
 ---
-layout: main
+layout: index.njk
 title: Updates
-permalink: /updates/
 ---
 <style>
+
 table {
-  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-}
-th:first-child,
-td:first-child {
-  width: 200px; 
-  white-space: nowrap; 
+  background: transparent;
 }
 
-th:last-child,
-td:last-child {
+th, td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border: 1px solid #000000;
+}
+
+th {
+  background-color: #5B2F38;
+  font-weight: bold;
+  color:antiquewhite;
+}
+
+th:first-child, td:first-child {
+  width: 180px;
+  white-space: nowrap;
+}
+
+th:last-child, td:last-child {
   width: auto;
 }
 
 </style>
 <main>
+  <div class="main-container">
 <h1>Updates <a href="/updates/feed.xml">(RSS)</a></h1>
 <table>
 <tr><th>Date</th><th>Info</th></tr>
@@ -31,4 +43,5 @@ td:last-child {
         {% endfor %}
           {% endif %}
 </table>
+</div>
 </main>
