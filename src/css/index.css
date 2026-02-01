@@ -48,13 +48,14 @@
 }
 
 
-aside img {
+.updates-aside img.candle {
   position: absolute;
   bottom: -15px;
   left: 0;
   width: 50px;
   height: auto;
 }
+
 
 main {
   flex: 1;
