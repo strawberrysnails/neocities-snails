@@ -1,4 +1,8 @@
 module.exports = [
+        {
+      date: new Date("2026-02-01"),
+      blurb: `Answered <a href="/blog">100 q's for webmasters</a>. Also brand new theme/layout! You can view my old layout in the <a href="https://snails.town/site/#archives">archives</a>.`
+    },
       {
       date: new Date("2026-01-02"),
       blurb: `<a href="/blog">Blog post</a> on 2025 & <a href="/photogrid">photos</a>!`
