@@ -215,21 +215,6 @@ table td:first-child {
   white-space: nowrap;
 }
 
-.toc {
-  position: fixed;
-  top: 25px;
-  left: 120px;
-  width: 250px; 
-  max-height: 80vh;
-  overflow-y: auto;
-  padding: 10px;
- background-image: url("/images/graphics/paper-texture.png");
-  background-size: fit;
-  background-repeat: repeat;
-  background-color: #f4f2e6;
-  border: 4px double #391820;
-  border-radius: 40px;
-}
 
 .graphics img{
   transition: transform 0.2s ease, filter 0.2s ease;

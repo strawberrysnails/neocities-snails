@@ -14,17 +14,26 @@
     <link rel="stylesheet" href="/css/bootstrap-icons.css">
 
     
+      <link rel="stylesheet" href="/css/photogrid.css">
+    
+    
+
+  
+  <link rel="preload" as="fetch" href="https://octothorp.es/?uri=https://snails.town/photogrid/">
+  <link rel="octo:octothorpes" href="photogrid">
+
+
   </head>
 
   <body>
-    
-<a class="home" href="/">go home?<br>
-  <img style="width: 40px" src="/images/graphics/candle.gif" alt="go home">
-</a>
+    <header>
+  <a href="/">Return home</a> <!-- | <a href="/lab">Want this template?</a> --> 
+</header>
+
 <div class="img-container">
   <div class="bio-container">
     <div class="pfp-border">
-      <img class="pfp" src="/images/photogrid/pfp.jpg">
+      <img class="pfp" src="/images/photogrid/pfp.png">
     </div>
     <div class="p-text">
       <h1 class="username">@snails.town</h1>
@@ -32,7 +41,8 @@
       <p class="stats">18 photos</p>
       <p class="bio">
         Digital scrapbook from my cellphone.
-        <a target="_blank" rel="noreferrer" href="https://octothorp.es/~/photogrid">#photogrid</a>
+        <a target="_blank" rel="noreferrer" href="https://octothorp.es/~/photogrid">#photogrid</a> ≽^• ˕ • ྀི≼ <br>
+        pfp by <a rel="noreferrer" target="_blank" href="https://linktr.ee/catthytrinh">@catthytrinh</a>
       </p>
     </div>
   </div>
@@ -185,6 +195,7 @@
     
   </div>
 </div>
+<footer>hey</footer>
 <!-- PHOTO MODAL -->
 <div id="photoModal">
   <span id="closeModal">×</span>
@@ -199,278 +210,6 @@
   </div>
 </div>
 
-<style>
-  body {
-    background-image: url(/images/graphics/black-paper.png);
-    background-color: #181414;
-    font-family: folklore;
-    text-align: left;
-  }
-
-  .home {
-    position: absolute;
-    font-size: smaller;
-    text-decoration: none;
-    margin-left: 5px;
-  }
-
-  .img-container {
-    position: relative;
-    border: 4px double #181414;
-    padding: 10px;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  }
-
-  .img-container::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #391820;
-    background-image: url(/images/graphics/argyle.png);
-    opacity: 0.4;
-    z-index: 0;
-  }
-
-  .img-container > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  .photo-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 25px 0;
-    margin: auto;
-    width: 90%;
-  }
-
-  .card {
-    background-image: url("/images/graphics/paper-texture.png");
-    background-color: #f4f2e6;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: 0.3s;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  }
-
-  .card:hover {
-    transform: scale(0.95) rotate(1deg);
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: 0.2s;
-    filter: grayscale(50%);
-  }
-
-  .card img:hover {
-    filter: none;
-    cursor: url(/images/pointer.png), pointer;
-  }
-
-  .desc {
-    text-align: left;
-    color: black;
-    line-height: 1.4em;
-    margin-top: 10px;
-  }
-
-  @media (max-width: 700px) {
-    .photo-container {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-    }
-
-    .card {
-      padding: 0;
-      background: none;
-      border: none;
-    }
-
-    .desc {
-      display: none;
-    }
-  }
-
-  .bio-container {
-    display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    margin: 20px auto;
-    gap: 20px;
-    text-align: left;
-  }
-
-  .pfp-border {
-    background: linear-gradient(
-      135deg,
-      #282020 0%,
-      #301f1f 35%,
-      #6c6057 70%,
-      #3d2b2c 100%
-    );
-    border: 1px solid #facfa2;
-    padding: 4px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-  }
-
-  .pfp {
-    display: block;
-    border-radius: 50%;
-    max-width: 150px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border: 0.35em solid #f4f2e6;
-  }
-
-  .p-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    flex-wrap: wrap;
-    color: #f4f2e6;
-  }
-
-  .username {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .stats {
-    font-size: 1.2rem;
-  }
-
-  .name {
-    font-weight: bold;
-  }
-
-  .bio {
-    font-size: 0.9rem;
-  }
-
-  .username,
-  .bio,
-  .stats,
-  .name {
-    margin: 5px;
-  }
-
-  a {
-    color: #facfa2;
-    font-family: folklore;
-  }
-
-  @media (max-width: 768px) {
-    .pfp-border {
-      padding: 4px;
-      border-radius: 50%;
-      display: inline-block;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .pfp {
-      max-width: 100px;
-    }
-  }
-
-  #photoModal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 46, 46, 0.9);
-  }
-
-  #closeModal {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 60px;
-    cursor: url(/images/pointer.png), pointer;
-    z-index: 1002;
-  }
-
-  .modal-content {
-    position: relative;
-    max-width: 90%;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-  }
-
-  .modal-inner {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-  }
-
-  #modalImage {
-    max-width: 100%;
-    height: auto;
-    border: 10px solid white;
-    display: block;
-    margin: auto;
-  }
-
-  #modalCaption {
-    color: white;
-    margin-top: 10px;
-  }
-
-  .modal-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    font-size: 2rem;
-    color: white;
-    padding: 5px 10px;
-    cursor: url(/images/pointer.png), pointer;
-    z-index: 1001;
-  }
-
-  #prevPhoto {
-    left: -40px;
-    cursor: url(/images/pointer.png), pointer;
-  }
-  #nextPhoto {
-    right: -40px;
-    cursor: url(/images/pointer.png), pointer;
-  }
-
-  @media (max-width: 768px) {
-    .modal-nav {
-    }
-    .modal-content {
-      max-width: 80%;
-    }
-    #prevPhoto {
-      left: -10px;
-    }
-    #nextPhoto {
-      right: -30px;
-    }
-  }
-</style>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -548,6 +287,6 @@
 </script>
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1770009633802"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1770232236973"></script>
   </body>
 </html>

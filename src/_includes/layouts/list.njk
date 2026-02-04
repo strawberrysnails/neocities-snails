@@ -1,0 +1,23 @@
+---
+layout: main
+---
+<header>
+<a href="/">Return home</a> {{ header | safe }}
+</header>
+
+{% if showToc %}
+<div class="toc-wrapper">
+  <details>
+    <summary>Table of Contents</summary>
+    {{ content | toc({ tags: ['h2','h3'] }) | safe }}
+  </details>
+</div>
+{% endif %}
+
+
+
+<main>
+  <div class="main-container" style="margin: auto; margin-top: 20px;">
+    {{ content | safe }}
+  </div>
+</main>

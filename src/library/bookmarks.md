@@ -1,65 +1,19 @@
 ---
-layout: main
+layout: list.njk
 title: Bookmarks
 permalink: /library/bookmarks/
+showToc: true
+header:  '&#124; <a href="/library">Return to Library</a>'
 ---
-<main>
-  <a class="home" href="/library">
-    back to the library<br />
-    <img style="width: 40px" src="/images/graphics/candle.gif" alt="go home" />
-  </a>
-</div>
-
-<div class="toc">
-
-       <details>
-  <summary>Table of Contents</summary>
-  <ul>
-    <li><a href="#general">General</a>
-      <ul>
-        <li><a href="#useful-sites">Useful Sites</a></li>
-        <li><a href="#privacy-piracy">Privacy & Piracy</a></li>
-        <li><a href="#device-modding">Device Modding</a></li>
-        <li><a href="#cooking-gardening">Cooking & Gardening</a></li>
-        <li><a href="#language-learning">Language Learning</a></li>
-        <li><a href="#educational-games-tools">Educational Games & Tools</a></li>
-      </ul>
-    </li>
-    <li><a href="#software-tools">Software & Tools</a>
-          <ul>
-        <li><a href="#general-software">General Software</a></li>
-        <li><a href="#image-design-tools">Image & Design Tools</a></li>
-        <li><a href="#firefox-extensions">Firefox Extensions</a></li>
-        <li><a href="#eleventy-plugins">Eleventy Plugins</a></li>
-      </ul></li>
-
-    <li><a href="#tutorials">Tutorials</a>
-     <ul>
-        <li><a href="#web-development">Web Development</a></li>
-        <li><a href="#art">Art</a></li>
-      </ul></li>
-    <li><a href="#articles">Articles & Blog Posts</a>
-         <ul>
-        <li><a href="#web-development-coding">Web Development & Coding</a></li>
-      </ul></li>
-    <li><a href="#miscellaneous">Miscellaneous</a>
-     <ul>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#books">Books</a></li>
-      </ul></li></li>
-  </ul>
-</details>
-</div>
-
-  <div class="main-container" style="max-width:1000px; margin:auto; margin-top:20px;">
 
 
-    <h1 id="bookmarks">Bookmarks</h1>
+ # Bookmarks
 
-    <img src="/images/graphics/pixels/pc-pixel.gif" alt="Pixel PC" /> <!-- Credit: https://artwork.neocities.org/ -->
+ ![](/images/graphics/pixels/pc-pixel.gif) 
 
-    <h2 id="general">General</h2>
+<!-- Credit: https://artwork.neocities.org/ -->
+
+## General
 
     <h3 id="useful-sites">Useful Sites</h3>
 
@@ -115,7 +69,7 @@ permalink: /library/bookmarks/
 <tr><td><a href="https://nandgame.com/">The Nand Game</a></td><td>Build a computer virtually.</td></tr>
 </table>
 
- <h2 id="software-tools">Software & Tools</h2>
+## Software & Tools
     <h3 id="general-software">General Software</h3>
 <table>
 <tr><th>Link</th><th>Description</th></tr>
@@ -163,7 +117,8 @@ permalink: /library/bookmarks/
 <tr><td><a href="https://github.com/johanbrook/eleventy-plugin-reading-time">reading-time</a></td><td>Display reading time for blog posts.</td></tr>
 </table>
 
-    <h2 id="tutorials">Tutorials</h2>
+## Tutorials
+
     <h3 id="web-development">Web Development</h3>
 <table>
 <tr><th>Link</th><th>Description</th></tr>
@@ -181,7 +136,8 @@ permalink: /library/bookmarks/
 <tr><td><a href="https://www.kawaiihannah.com/pixelart/tutorials">Kawaii Hannah Pixel Art Tutorials</a></td><td>Pixel art guides and speedpaints.</td></tr>
 </table>
 
-   <h2 id="articles">Articles & Blog Posts</h2>
+## Articles & Blog Posts
+
     <h3 id="web-development-coding">Web Development & Coding</h3>
 <table>
 <tr><th>Link</th><th>Description</th></tr>
@@ -191,7 +147,7 @@ permalink: /library/bookmarks/
 </table>
 
 
-    <h2 id="miscellaneous">Miscellaneous</h2>
+## Miscellaneous
 
     <h3 id="games">Games</h3>
 <table>
@@ -220,6 +176,3 @@ permalink: /library/bookmarks/
 <tr><td><a href="https://www.reddit.com/r/zlibrary/">r/zlibrary</a></td><td>Find latest Zlibrary links to download e-books.</td></tr>
 <tr><td><a href="https://gist.github.com/cemerson/043d3b455317d762bb1378aeac3679f3">Archive.org Book Downloader</a></td><td>Download scanned books from archive.org</td></tr>
 </table>
-
-</div>
-</main>

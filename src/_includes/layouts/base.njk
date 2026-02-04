@@ -31,7 +31,14 @@
       <link rel="stylesheet" href="/css/library.css" />
           {% elif page.url.startsWith("/exhibits") %}
       <link rel="stylesheet" href="/css/museum.css" />
+      {% elif page.url.startsWith("/photogrid") %}
+      <link rel="stylesheet" href="/css/photogrid.css" />
     {% endif %}
+    
+
+  {# Render extra head content from frontmatter #}
+  {{ head_extra | safe }}
+
   </head>
 
   <body>
