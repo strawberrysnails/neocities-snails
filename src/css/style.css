@@ -537,6 +537,7 @@ legend{
 }
 
 
+
 .button-wall a img:hover {
   transform: scale(1.5); 
   z-index: 10; 
@@ -569,4 +570,40 @@ legend{
 header, footer{
   min-height: 1em;
   text-align: center;
+}
+
+.graphics img{
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.graphics img:hover{
+  transform: scale(1.5); 
+  z-index: 10; 
+}
+
+.webring{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cliques{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 6px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cliques a{
+  border: 1px dotted;
+  padding: 5px;
+  text-align: center;
+    min-height: 1.5em;
+      align-items: center;
+  justify-content: center;
+}
+
+.square a{
+    min-height: 50px;
 }
