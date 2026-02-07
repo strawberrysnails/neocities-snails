@@ -45,7 +45,7 @@ const buttons = [
     "name": "moonflower",
     "url": "https://moonflower.nekoweb.org/",
     "image": "moonflower.png",
-    "color": "light"
+    "color": "blue"
   },
   {
     "name": "beaniepines",
@@ -75,7 +75,7 @@ const buttons = [
     "name": "blueberrymuffinss",
     "url": "https://blueberrymuffinss.neocities.org/",
     "image": "blueberrymuffins.png",
-    "color": "light"
+    "color": "white"
   },
   {
     "name": "spinebreaker",
@@ -93,7 +93,7 @@ const buttons = [
     "name": "nyscyra",
     "url": "https://nyscyra.nekoweb.org/",
     "image": "nyscyra.png",
-    "color": "dark"
+    "color": "black"
   },
   {
     "name": "peepo",
@@ -177,7 +177,7 @@ const buttons = [
     "name": "ninjaweb",
     "url": "https://ninjaweb.neocities.org/",
     "image": "ninjaweb.gif",
-    "color": "dark"
+    "color": "black"
   },
   {
     "name": "grossgirl94",
@@ -201,7 +201,7 @@ const buttons = [
     "name": "onlywonder",
     "url": "https://onlywonder.net/",
     "image": "onlywonder.png",
-    "color": "dark"
+    "color": "black"
   },
   {
     "name": "00s",
@@ -273,19 +273,19 @@ const buttons = [
     "name": "jbclol",
     "url": "https://jbc.lol/",
     "image": "jbclol.png",
-    "color": "dark"
+    "color": "black"
   },
   {
     "name": "solita",
     "url": "https://solita.neocities.org/",
     "image": "solita.png",
-    "color": "dark"
+    "color": "black"
   },
   {
     "name": "nondmo",
     "url": "http://nondmo.online/",
     "image": "nondmo.png",
-    "color": "dark"
+    "color": "black"
   },
   {
     "name": "sweetheartmemory",
@@ -309,7 +309,7 @@ const buttons = [
     "name": "plumes",
     "url": "https://plumes.neocities.org/",
     "image": "plumes.gif",
-    "color": "light"
+    "color": "white"
   },
   {
     "name": "dokode",
@@ -333,7 +333,7 @@ const buttons = [
     "name": "seafare",
     "url": "https://seafare.neocities.org/",
     "image": "seafare.png",
-    "color": "light"
+    "color": "white"
   },
   {
     "name": "frills",
@@ -543,7 +543,7 @@ const buttons = [
     "name": "altalenae",
     "url": "https://altalenae.neocities.org/",
     "image": "altalenae.png",
-    "color": "light"
+    "color": "white"
   },
       {
     "name": "kdkemp",
@@ -593,10 +593,30 @@ const buttons = [
     "image": "bechnokid.png",
     "color": "pink"
   },
+            {
+    "name": "mossypawprints",
+    "url": "https://mossypawprints.neocities.org/",
+    "image": "mossypawprints.jpg",
+    "color": "dark"
+  },
+              {
+    "name": "softheartclinic",
+    "url": "https://softheartclinic.neocities.org/",
+    "image": "softheartclinic.gif",
+    "color": "pink"
+  },
+                {
+    "name": "kkul",
+    "url": "https://kkul.neocities.org/",
+    "image": "kkulbutton.gif",
+    "color": "pink"
+  }
+  
   
 ];
 
 const colorOrder = [
+  "white",
   "light",
   "blue",
   "green",
@@ -604,7 +624,8 @@ const colorOrder = [
   "purple",
   "red",
   "brown",
-  "dark"
+  "dark",
+  "black"
 ];
 
 module.exports = buttons.sort(

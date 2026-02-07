@@ -2,15 +2,20 @@
 layout: main
 title: Exhibits
 ---
-<a class="home" href="/">
-  go home?<br />
-  <img style="width: 40px" src="/images/graphics/candle.gif" alt="go home" />
-</a>
+<aside><p>Thank you for visiting the Museum. Please browse the <a href="/exhibits/shop">gift shop</a> on your way out.</p>
+  <details><summary>Credits</summary>
+    <a href="https://theinspirationgallery.com/"><img src="/images/buttons/sites/inspogallery.png" alt="background image and top border"></a>
+        <a href="https://dollarchive.neocities.org/compendium" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dollarchive.gif" alt="frame border">
+    </a>
+  </details>
+  <a href="/">return home?</a>
+</aside>
 
 <div class="exhibits-wrap">
   <div class="exhibits-rail">
 
-    <!-- Real exhibit -->
+    <!-- Exhibit -->
     <a class="exhibit" href="/exhibits/weirdweb2025/">
       <div class="exhibit-frame"><img src="/images/exhibits/weirdweb-frame.png"></div>
       <div class="exhibit-inner">
@@ -53,7 +58,7 @@ title: Exhibits
 
 
 <script>
-  const exhibits = document.querySelector('.exhibits-wrap');
+  const exhibits = document.querySelector('.exhibits-wrap'); 
 
   if (exhibits) {
     exhibits.addEventListener('wheel', (e) => {
