@@ -408,7 +408,6 @@ transform: scale(1.1);
 hr{
   border: none;
   height: 60px;
-  background-image: url(https://64.media.tumblr.com/dc1843cad7f45a7707b3529b877c0c32/b25b1aa8bd0a6627-40/s2048x3072/a80a605fa201def4fd28df4f045acdcffff1647c.pnj);
    background-repeat: repeat-x;
   background-size: cover; 
 }
@@ -489,6 +488,10 @@ hr{
   .locket, .bow{
     display: none;
   }
+
+  .lace {
+border: none;
+}
 
 }
 
