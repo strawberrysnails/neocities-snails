@@ -1,4 +1,9 @@
 module.exports = [
+      { 
+    src: "armoury.png",
+    date: "02.08.2026",
+    caption: "The Arms and Armoury exhibit at the Worcester Art Museum.",
+    },
     { 
     src: "christmas2025.png",
     date: "12.24.2025",

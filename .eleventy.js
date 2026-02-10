@@ -161,7 +161,7 @@ eleventyConfig.addCollection("tagPages", function(collectionApi) {
   });
 
     eleventyConfig.addFilter("dateReadableShort", (date) => {
-    return DateTime.fromJSDate(date).toFormat("MMM-dd-yy");
+    return DateTime.fromJSDate(date).toFormat("MMM d, yyyy");
   });
 
 

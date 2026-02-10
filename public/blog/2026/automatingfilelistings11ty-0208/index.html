@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.gif" type="image/gif">
+    <title>Automating your graphics page (and more) in Eleventy</title>
+
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+
+    
+      <link rel="stylesheet" href="/css/blog.css">
+    
+    
+
+  
+  
+
+  </head>
+
+  <body>
+    
+
+<input type="checkbox" id="menuToggle" class="menu-checkbox">
+
+
+<label for="menuToggle" class="menu-toggle" aria-label="Open menu">
+  <img src="/images/graphics/menu.png" alt="">
+</label>
+
+
+<div class="mobile-menu">
+  <label for="menuToggle" class="menu-close" aria-label="Close menu">✕</label>
+
+<style>
+
+.nav-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-container li {
+  list-style-type: none;
+  border-left: 2px solid #000;
+  margin-left: 1em;
+}
+
+.nav-container li div {
+  padding-left: 1em;
+  position: relative;
+}
+
+.nav-container li div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  bottom: 50%;
+  width: 0.75em;
+  border: 2px solid #000;
+  border-top: 0;
+  border-right: 0;
+}
+
+.nav-container ul > li:last-child {
+  border-left: 2px solid transparent;
+}
+
+</style>
+
+  <div class="main-container">
+    <div class="nav-container">
+<ul>
+  <!-- Home -->
+  <li>
+    <div><a href="/">Home</a></div>
+  </li>
+
+
+  <!-- Library -->
+  <li>
+    <div>
+      <details>
+        <summary><a href="/library">Library</a></summary>
+        <ul>
+          <!-- placeholders -->
+          <li><div><a href="/library/bookmarks">Bookmarks</a></div></li>
+          <li><div><a href="/library/bookmarks#software">Software/Tools</a></div></li>
+          <li><div><a href="/library/bookmarks#tutorials">Tutorials</a></div></li>
+          <li><div><a href="/library/bookmarks#articles">Articles</a></div></li>
+          <li><div><a href="/library/codes">Code Snippets</a></div></li>
+          <li><div><a href="/library/fonts">Fonts</a></div></li>
+          <li><div><a href="/library/graphics">Graphics</a></div></li>
+          <li><div><a href="/library/recipes">Recipes</a></div></li>
+          <li><div><a href="/library/Inspiration">Inspiration</a></div></li>
+          <li><div><a href="/library/curios">Curiosities</a></div></li>
+          <li><div><a href="/library/collections">Collections</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Courtyard -->
+  <li>
+    <div>
+      <details open>
+        <summary>Courtyard</summary>
+        <ul>
+          <li><div><a href="/links#buttons">Button Wall</a></div></li>
+          <li><div><a href="/links#webrings">Webrings &amp; Cliques</a></div></li>
+          <li><div><a href="/guestbook">Guestbook</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Bedroom -->
+  <li>
+    <div>
+      <details open>
+        <summary>Bedroom</summary>
+        <ul>
+          <li><div><a href="/photogrid">Photos</a></div></li>
+          <!-- Writings -->
+          <li>
+            <div>
+              <details>
+                <summary><a href="/blog">Writings</a></summary>
+                <ul>
+                  
+                    <li>
+                      <div><a href="/blog/2026/automatingfilelistings11ty-0208/">Automating your graphics page (and more) in Eleventy</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2026/100qs-0131/">100 Questions for Webmasters</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2026/2025patchnotes-0101/">2025 Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/oct-update-1101/">October Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/minecraft-forever-world-1027/">Starting a Modded Minecraft Forever World</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/chess-and-anxiety-1024/">On Chess and Anxiety</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/sept-update-0930/">September Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/weird-web-october-0930/">Weird Web October</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/aug-update-0831/">August Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/otakon-2025-0814/">Otakon 2025</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/july-update-0731/">July Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/manga-ereader-0707/">I got an e-reader just for Manga.</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/june-update-0630/">June Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/may-update-0531/">May Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/nyc-trip-0518/">My Weekend Trip to NYC</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/april-update-0430/">April Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/gamelog-on-eleventy-0427/">Making a Gamelog on Eleventy</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/jailbreaking-my-kindle-0413/">Jailbreaking my Kindle</a></div>
+                    </li>
+                  
+                  <li><div><a href="/toybox">Toybox</a></div></li>
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Laboratory -->
+  <li>
+    <div>
+      <details open>
+        <summary>Laboratory</summary>
+        <ul>
+          <li><div><a href="/site">About</a></div></li>
+          <li><div><a href="/updates">Changelog</a></div></li>
+          <li><div><a href="/about#archives">Archives</a></div></li>
+          <li><div><a href="/map">Site Map</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+<!-- Museum -->
+<li>
+  <div>
+    <details open>
+      <summary>Museum</summary>
+      <ul>
+        <!-- Exhibits -->
+        <li>
+          <div>
+            <details>
+              <summary><a href="/exhibits">Exhibits</a></summary>
+              <ul>
+                <li>
+                  <div>
+                    <a href="/exhibits/weirdweb2025/">Weird Web October 2025</a>
+                  </div>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </li>
+      </ul>
+    </details>
+  </div>
+</li>
+</ul></div>
+</div>
+</div>
+
+
+<div class="doll" id="myBtn">
+  <img src="/images/plain-doll.png" alt="">
+</div>
+
+
+  
+
+
+<div class="locket">
+  <a href="/photogrid" class="locket-inner">
+    <img src="/images/photogrid/armoury.png" alt="Recent Photo">
+  </a>
+
+  <img class="locket-open" src="/images/graphics/locket-open.png" alt="">
+  <img class="locket-closed" src="/images/graphics/locket-closed.png" alt="">
+</div>
+
+
+
+
+
+<div class="lace">
+  <div class="bow">
+    <img src="/images/graphics/bow.png" alt="">
+  </div>
+
+  <div class="container">
+    <div class="top">
+      <div class="portrait"></div>
+      <div class="banner">
+        <a href="/">snails.town</a>
+      </div>
+    </div>
+
+    <div class="nav"><div class="nav">
+  <ul class="nav-list">
+
+        <li class="nav-item has-dropdown" data-desc="A window into my personal life.">
+      <a href="#">Bedroom</a>
+      <ul class="dropdown">
+        <li><a href="/photogrid">Photos</a></li>
+        <li><a href="/blog">Writings</a></li>
+        <li><div><a href="/toybox">Toybox</a></div></li>
+        <li><s><a href="#">Shrines</a></s></li>
+      </ul>
+    </li>
+
+        <li class="nav-item has-dropdown" data-desc="Small web community gathering.">
+      <a href="/links">Courtyard</a>
+      <ul class="dropdown">
+        <li><a href="/links#buttons">Button Wall</a></li>
+        <li><a href="/links#webrings">Webrings &amp; Cliques</a></li>
+        <li><a href="/guestbook">Guestbook</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item" data-desc="A collection of resources, reading material, and bookmarks.">
+      <a href="/library">Library</a>
+    </li>
+
+       <li class="nav-item has-dropdown" data-desc="Art, media logs, and works in progress. More to come.">
+      <a href="#">Museum</a>
+      <ul class="dropdown">
+        <li><a href="/exhibits">Exhibits</a></li>
+        <li><s><a href="#">Media Logs</a></s></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown" data-desc="Tools, templates, and site notes.">
+      <a href="#">Laboratory</a>
+      <ul class="dropdown">
+        <li><a href="/site">About</a></li>
+        <li><a href="/updates">Changelog</a></li>
+        <li><a href="/site#archives">Archives</a></li>
+        <li><a href="/map">Sitemap</a></li>
+        <li><s><a href="#">Templates &amp; Widgets</a></s></li>
+      </ul>
+    </li>
+
+
+  </ul>
+</div>
+</div>
+<div class="main-container">
+<script src="/javascript/mylikebutton.js"></script>
+
+<article class="blog-post">
+<p style="text-align: center;">
+  <a href="/blog"><i class="bi bi-arrow-left-short"></i> back to posts</a>
+</p>
+    <h1>Automating your graphics page (and more) in Eleventy</h1>
+    <i class="bi bi-calendar-heart"></i> <time datetime="2026-02-08">February 8, 2026</time> | 
+    
+    
+      
+    
+      
+        <a href="/blog/tags/tutorial/">#tutorial</a>, 
+      
+    
+      
+        <a href="/blog/tags/eleventy/">#eleventy</a>
+      
+    
+
+  
+
+  
+
+  <div class="blog-content">
+    
+
+    <h2>Table of Contents</h2>
+    <nav class="toc">
+        <ol><li><a href="#introduction"># Introduction</a></li><li><a href="#the-_data-folder"># The _data Folder</a></li><li><a href="#detecting-files-in-a-folder"># Detecting Files in a Folder</a></li><li><a href="#my-code-for-src_datagraphicsjs"># My code for src/_data/graphics.js</a></li><li><a href="#your-html-file"># Your HTML file</a></li><li><a href="#converting-your-old-html-to-readable-data"># Converting your old HTML to readable data</a><ol><li><a href="#prepare-your-html"># Prepare your HTML</a></li><li><a href="#save-the-conversion-script"># Save the Conversion Script</a></li><li><a href="#run-the-script"># Run the Script</a></li><li><a href="#copy-the-data-into-graphicsjs"># Copy the Data into graphics.js</a></li></ol></li><li><a href="#conclusion"># Conclusion</a></li></ol>
+      </nav>
+
+
+    <h2 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h2>
+<p>I've learned a lot about Eleventy the past year or so while playing and tinkering with it; I've been utilizing the "<code>_data</code>" Folder a lot to hold data such as my ever-growing button wall, my photogrid, and more. I recently discovered the ability to have Eleventy "auto detect" files in a specific folder and list them as you please, it's quite amazing.</p>
+<p>This type of data is best for large amounts of images that DO NOT have a link attached to them. So your own F2U graphics or buttons and stamps that you can't find the source of. For example, I have this set-up for my stamps because <em><strong>most</strong></em> of them are NOT links.</p>
+<p>Please note this tutorial is for people who are already have some familiarity with 11ty. You don't need that much Javascript knowledge because you can just copy mine.</p>
+<p>Please <a href="mailto:hello@snails.town">email me</a> if any of this information is confusing or not explained well enough, I'm happy to edit the post with more clarity or explain concepts further as needed. This is my first tutorial so I hope things are clear and easy to understand.</p>
+<h2 id="the-_data-folder" tabindex="-1"><a class="header-anchor" href="#the-_data-folder" aria-hidden="true">#</a> The _data Folder</h2>
+<p>If you don't already have a "<code>_data</code>" Folder, it should be in the source or input folder of your 11ty project. The name of mine is "<code>src</code>".<br>
+<code>_data</code>" files are Javascript (or JSON) modules that return data objects or arrays. When you name a file in your <code>_data</code>" folder it detects it as a variable in your templates. For example, a file named "<code>_data/graphics.js</code>" will be accessible as the variable name "<code>graphics</code>" when writing to your templates or HTML files.</p>
+<h2 id="detecting-files-in-a-folder" tabindex="-1"><a class="header-anchor" href="#detecting-files-in-a-folder" aria-hidden="true">#</a> Detecting Files in a Folder</h2>
+<p>Since we will be using the vague term "graphics" (You can edit this to be anything) we need a graphics folder, preferable under a folder called "images".<br>
+Here is my recomended structure:</p>
+<pre><code>src/_data/
+  graphics.js      ← main data file
+src/images/
+  graphics/        ← folder containing images
+</code></pre>
+<p>We will use Node's <code>fs</code> and <code>path</code> to read files in a folder. We want graphics.js to output something like this:</p>
+<pre><code class="language-json">{
+image: mygraphic.png,
+src: `/images/graphics/mygraphic.png`,
+alt: `mygraphic`
+url: ``
+}
+</code></pre>
+<p>This will be readable data that we can output using templates to generate the typical HTML blocks that you're all familar with: <code>&lt;a href=""&gt;&lt;img src="" alt=""&gt;&lt;/a&gt;</code></p>
+<p>Now, the automating of this will not input any URLs, this is something we need to do manually depending on which graphics need linkbacks. Again, this method is best for a mix of mostly regular images and some links. <em><strong>We will mainly be focusing on mass-listing <code>&lt;img&gt;</code> tags and adding the URL data AS NEEDED, afterwards.</strong></em></p>
+<h2 id="my-code-for-src_datagraphicsjs" tabindex="-1"><a class="header-anchor" href="#my-code-for-src_datagraphicsjs" aria-hidden="true">#</a> My code for src/_data/graphics.js</h2>
+<p>This code block detects images in the src/images/graphics folder and outputs what I've mentioned above. We have the ability to add images manually with custom metadata such as "url" and if they are not listed the rest will be filled automatically. Manual overrides appear first so you can customize the order.</p>
+<pre><code class="language-js">const fs = require("fs");
+const path = require("path");
+
+// Path to the folder containing your graphics
+const GRAPHICS_DIR = "src/images/graphics";
+
+// Public URL path for images (used in templates)
+const PUBLIC_PATH = "/images/graphics";
+
+// Allowed file extensions to include
+const EXTS = [".png", ".jpg", ".gif"];
+
+// Manual entries: graphics you want to add with optional alt text or URLs
+// These will appear first in the data array
+const MANUAL = [
+  { image: "custom.png", alt: "alt_text_here", url: "https://example.com" }
+];
+
+module.exports = function () {
+  // Read all files in the graphics folder
+  const files = fs.readdirSync(GRAPHICS_DIR)
+    // Filter only allowed extensions
+    .filter(f =&gt; EXTS.includes(path.extname(f).toLowerCase()));
+
+  // Create objects for automatically detected files
+  // Skip any files already listed in MANUAL to avoid duplicates
+  const auto = files
+    .filter(f =&gt; !MANUAL.some(m =&gt; m.image === f))
+    .map(file =&gt; ({
+      image: file,                                 // Filename
+      src: `${PUBLIC_PATH}/${file}`,               // Full public path for templates
+      alt: file.replace(/[-_]/g, " ").replace(/\..+$/, ""), // Generate readable alt text
+    }));
+
+  // Return combined array: manual entries first, auto-detected entries after
+  return [...MANUAL, ...auto];
+};
+
+</code></pre>
+<p>Please refer to the comments in the code for explainations, you can copy this snippet exactly and replace "graphics" with what you're working with.</p>
+<h2 id="your-html-file" tabindex="-1"><a class="header-anchor" href="#your-html-file" aria-hidden="true">#</a> Your HTML file</h2>
+<p>Now we need to output all this data on our "<code>graphics.html</code>" page. You may be used to long strings of <code>&lt;img&gt;</code> tags, links, and more. With this, we only need to write one block and 11ty will generate the rest!</p>
+<pre><code class="language-njk">
+{% for graphic in graphics %}
+  {% if graphic.url %}
+    &lt;a href="{{ graphic.url }}"&gt;
+      &lt;img src="{{ graphic.src }}" alt="{{ graphic.alt }}"&gt;
+    &lt;/a&gt;
+  {% else %}
+    &lt;img src="{{ graphic.src }}" alt="{{ graphic.alt }}"&gt;
+  {% endif %}
+{% endfor %}
+
+</code></pre>
+<p>Here, we are using the variable "graphics" mentioned earlier and that pulls the <code>graphics.js</code> data. Now, each image that's added to your graphics folder will output as an <code>&lt;img&gt;</code> tag on your page automatically.</p>
+<h2 id="converting-your-old-html-to-readable-data" tabindex="-1"><a class="header-anchor" href="#converting-your-old-html-to-readable-data" aria-hidden="true">#</a> Converting your old HTML to readable data</h2>
+<p>Do you already have a long list of <code>&lt;a&gt;</code> and <code>&lt;img&gt;</code> tags that need to be converted? No problem! I wrote a simple script to convert them to JS objects.<br>
+We need to add them to out <code>graphics.js</code> file here:</p>
+<pre><code class="language-js">const MANUAL = [
+  { image: "custom.png", alt: "alt_text_here", url: "https://example.com" }
+];
+</code></pre>
+<p>This script uses Bash which is native to Linux and MacOS. If you are on Windows you need to run this script in Git Bash. This will not work in PowerShell or CMD on Windows.</p>
+<p>Please note: This script only works for img tags wrapped in <code>&lt;a&gt;</code>. The rest are automatic so no need to add them unless you want to edit the alt text or add a URL later on.</p>
+<h3 id="prepare-your-html" tabindex="-1"><a class="header-anchor" href="#prepare-your-html" aria-hidden="true">#</a> Prepare your HTML</h3>
+<ol>
+<li>
+<p>Create a blank HTML file (e.g., my-buttons.html).</p>
+</li>
+<li>
+<p>Copy all your <code>&lt;a&gt;</code>-wrapped <code>&lt;img&gt;</code> elements into this file. For example:</p>
+</li>
+</ol>
+<pre><code class="language-html">&lt;a href="https://example.com/"&gt;&lt;img src="images/button1.png" alt="Button One"&gt;&lt;/a&gt;
+&lt;a href="https://example.com/"&gt;&lt;img src="images/button2.png" alt="Button Two"&gt;&lt;/a&gt;
+</code></pre>
+<h3 id="save-the-conversion-script" tabindex="-1"><a class="header-anchor" href="#save-the-conversion-script" aria-hidden="true">#</a> Save the Conversion Script</h3>
+<p>Save the following Bash script as <a rel="noreferrer" target="_blank" href="http://convert-html.sh">convert-html.sh</a>:</p>
+<pre><code class="language-bash">#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 &lt;html-file&gt; [output-file]"
+  exit 1
+fi
+
+INPUT="$1"
+OUTPUT="${2:-buttons-list.txt}"  # default output file
+
+# Extract &lt;a&gt; with &lt;img&gt; or standalone &lt;img&gt; into JS object format
+sed -E 's/.*href="([^"]*)".*src="[^"]*\/([^"/]+)".*alt="([^"]*)".*/{ image: "\2", alt: "\3", url: "\1" },/;
+s/.*&lt;img src="[^"]*\/([^"/]+)".*alt="([^"]*)".*/{ image: "\1", alt: "\2", url: "" },/' "$INPUT" &gt; "$OUTPUT"
+
+echo "Converted data written to $OUTPUT"
+
+</code></pre>
+<p>If you're on Linux, make it executable:</p>
+<pre><code class="language-bash">chmod +x convert-html.sh
+</code></pre>
+<h3 id="run-the-script" tabindex="-1"><a class="header-anchor" href="#run-the-script" aria-hidden="true">#</a> Run the Script</h3>
+<pre><code class="language-bash">./convert-html.sh my-buttons.html
+</code></pre>
+<p>By default, the output will be written to buttons-list.txt.</p>
+<h3 id="copy-the-data-into-graphicsjs" tabindex="-1"><a class="header-anchor" href="#copy-the-data-into-graphicsjs" aria-hidden="true">#</a> Copy the Data into graphics.js</h3>
+<p>Open <code>buttons-list.txt</code> (or your custom output file), then copy and paste the objects into your MANUAL array:</p>
+<pre><code class="language-js">const MANUAL = [
+    // PASTE HERE
+  { image: "button1.png", alt: "Button One", url: "https://example.com/" },
+  { image: "button2.png", alt: "Button Two", url: "https://example.com/" }
+];
+</code></pre>
+<p>Once the script finishes running, you’ll have a clean list of JS objects ready to drop into your <code>MANUAL</code> array. From there, Eleventy takes over and merges them with your automatically detected images.</p>
+<h2 id="conclusion" tabindex="-1"><a class="header-anchor" href="#conclusion" aria-hidden="true">#</a> Conclusion</h2>
+<p>The <code>_data</code> folder completely changed how I build my graphics-heavy pages. Instead of maintaining long, fragile lists of <code>&lt;img&gt;</code> tags, I can just drop files into a folder! I think that's amazing and a huge time-saver.</p>
+<p>Please <a href="mailto:hello@snails.town">email me</a> with any questions or comments. &lt;3</p>
+
+  </div>
+---
+<br><br>
+<!-- Google Form Like Button -->
+<form class="mylikebutton">
+  🤍
+</form>
+
+
+</article>
+
+    
+    
+|
+    
+    
+      <a href="/blog/2026/100qs-0131/">100 Questions for Webmasters <i class="bi bi-arrow-right-short"></i></a>
+    
+
+    <!-- BLOG IMAGE MODAL -->
+<div id="photoModal">
+  <span id="closeModal">×</span>
+  <div class="modal-content">
+    <div class="modal-inner">
+      <button id="prevPhoto" class="modal-nav">‹</button>
+      <img id="modalImage" src="">
+      <button id="nextPhoto" class="modal-nav">›</button>
+    </div>
+    <div id="modalCaption"></div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('photoModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+  const prevBtn = document.getElementById('prevPhoto');
+  const nextBtn = document.getElementById('nextPhoto');
+  const closeBtn = document.getElementById('closeModal');
+
+  let photos = Array.from(document.querySelectorAll('.blog-img'));
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = photos[index];
+    if (!img) return;
+
+    modalImg.src = img.src;
+    caption.textContent = img.alt || '';
+    modal.style.display = "block";
+    currentIndex = index;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Delegated click handler on blog-content
+  document.querySelector('.blog-content').addEventListener('click', e => {
+    if (!e.target.classList.contains('blog-img')) return;
+
+    // Re-fetch photos in case new ones were added dynamically
+    photos = Array.from(document.querySelectorAll('.blog-img'));
+    const index = photos.indexOf(e.target);
+    if (index !== -1) openModal(index);
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  // Click outside modal-inner closes modal
+  modal.addEventListener('click', e => {
+    if (!document.querySelector('.modal-inner').contains(e.target)) closeModal();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    openModal((currentIndex - 1 + photos.length) % photos.length);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    openModal((currentIndex + 1) % photos.length);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (modal.style.display !== "block") return;
+    if (e.key === "Escape") closeModal();
+    else if (e.key === "ArrowLeft") openModal((currentIndex - 1 + photos.length) % photos.length);
+    else if (e.key === "ArrowRight") openModal((currentIndex + 1) % photos.length);
+  });
+});
+</script>
+
+</div>
+</div>
+</div>
+<footer> ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a></footer>
+
+
+<script>
+[...document.querySelectorAll(".buttons-n-blinkers")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
+</script>
+
+
+    <script src="/javascript/main.js?nocache=?nocache=1770686741214"></script>
+  </body>
+</html>

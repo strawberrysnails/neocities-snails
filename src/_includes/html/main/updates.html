@@ -4,17 +4,17 @@
   <ul>
     {% if updates[0] %}
       <li>
-        <strong><time datetime="{{ updates[0].date | dateIso }}">{{ updates[0].date | dateReadable }}</time></strong> {{ updates[0].blurb | safe }}
+        <strong><time datetime="{{ updates[0].date | dateIso }}">{{ updates[0].date | dateReadableShort }}</time></strong>: {{ updates[0].blurb | safe }}
       </li>
     {% endif %}
     {% if updates[1] %}
       <li>
-        <strong><time datetime="{{ updates[1].date | dateIso }}">{{ updates[1].date | dateReadable }}</time></strong> {{ updates[1].blurb | safe }}
+        <strong><time datetime="{{ updates[1].date | dateIso }}">{{ updates[1].date | dateReadableShort }}</time></strong>: {{ updates[1].blurb | safe }}
       </li>
     {% endif %}
     {% if updates[2] %}
       <li>
-        <strong><time datetime="{{ updates[2].date | dateIso }}">{{ updates[2].date | dateReadable }}</time></strong> {{ updates[2].blurb | safe }}
+        <strong><time datetime="{{ updates[2].date | dateIso }}">{{ updates[2].date | dateReadableShort }}</time></strong>: {{ updates[2].blurb | safe }}
       </li>
     {% endif %}
   </ul>

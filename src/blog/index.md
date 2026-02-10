@@ -13,7 +13,7 @@ eleventyNavigation:
 
 # Writings <small><a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></small>
 
-<details>
+<details class="tag">
   <summary>Browse by Tag</summary>
   <div class="tag-list">
     {% for tag in collections.tagList %}

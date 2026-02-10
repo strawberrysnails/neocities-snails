@@ -610,6 +610,12 @@ const buttons = [
     "url": "https://kkul.neocities.org/",
     "image": "kkulbutton.gif",
     "color": "pink"
+  },
+                  {
+    "name": "kkul",
+    "url": "https://kkul.neocities.org/",
+    "image": "kkulbutton.gif",
+    "color": "pink"
   }
   
   

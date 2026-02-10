@@ -1,5 +1,9 @@
 module.exports = [
   {
+          date: new Date("2026-02-09"),
+      blurb: `New <a href="/photogrid">photo</a> from the Arms and Armoury Exhibit.` 
+    },
+  {
         date: new Date("2026-02-07"),
       blurb: `Re-designed the <a href="https://snails.town/exhibits">Museum</a> a bit and a secret page.` 
     },
