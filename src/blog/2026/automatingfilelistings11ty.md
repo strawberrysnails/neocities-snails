@@ -142,7 +142,7 @@ Please note: This script only works for img tags wrapped in ```<a>```. The rest 
 
 ### Save the Conversion Script
 
-Save the following Bash script as convert-html.sh:
+Save the following Bash script as `convert-html.sh`:
 
 ```bash
 #!/usr/bin/env bash

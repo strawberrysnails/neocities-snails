@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* =========================
-     MOBILE MENU
-  ========================= */
+// MOBILE MENU
   const toggle = document.getElementById("menuToggle");
   const menu = document.getElementById("mobileMenu");
 
@@ -18,18 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     ACTIVE NAV LINKS
-  ========================= */
-  document.querySelectorAll("header a").forEach(link => {
-    if (link.href === window.location.href) {
-      link.classList.add("active");
-    }
-  });
-
-  /* =========================
-     SCROLL-TO-TOP DOLL
-  ========================= */
+  // SCROLL-TO-TOP FUNCTION
   const doll = document.getElementById("myBtn");
 
   if (doll) {
@@ -65,3 +52,34 @@ document.addEventListener("DOMContentLoaded", () => {
   innerDiv.classList.add("play");
 })
 
+// CODE COPY BUTTON
+
+document.querySelectorAll("pre > code").forEach((codeBlock) => {
+  const pre = codeBlock.parentNode;
+
+  const button = document.createElement("button");
+  button.className = "copy-button";
+  button.type = "button";
+  button.textContent = "Copy";
+
+  button.addEventListener("click", () => {
+    navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+      button.textContent = "Copied!";
+      setTimeout(() => (button.textContent = "Copy"), 1500);
+    });
+  });
+
+  pre.appendChild(button);
+});
+
+// UP ARROW
+
+const scrollbtn = document.querySelector(".up");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    scrollbtn.style.display = "block";
+  } else {
+    scrollbtn.style.display = "none";
+  }
+});
