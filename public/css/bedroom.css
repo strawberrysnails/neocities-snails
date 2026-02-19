@@ -1,0 +1,10 @@
+body{
+    background-color: #de9ead;
+    background-image: url(/images/graphics/fancy-deboss.png);
+}
+
+.outer{
+    background-color: aliceblue;
+    margin: auto;
+    max-width: 1200px;
+}

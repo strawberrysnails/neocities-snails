@@ -9,12 +9,12 @@
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
 
     
-      <link rel="stylesheet" href="/css/museum.css">
+      <link rel="stylesheet" href="/css/museum.css" type="text/css">
       
     
 
@@ -24,6 +24,7 @@
   </head>
 
   <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
     <aside><p>Thank you for visiting the Museum. Please browse the <a href="/exhibits/shop">gift shop</a> on your way out.</p>
   <details><summary>Credits</summary>
     <a rel="noreferrer" target="_blank" href="https://theinspirationgallery.com/"><img src="/images/buttons/sites/inspogallery.png" alt="background image and top border"></a>
@@ -47,11 +48,11 @@
     </a>
 
     <!-- Placeholder 1 -->
-    <a class="exhibit placeholder" href="#">
-      <div class="exhibit-frame"></div>
+    <a class="exhibit" href="/exhibits/tabling/">
+      <div class="exhibit-frame"><img src="/images/exhibits/tabling.png"></div>
       <div class="exhibit-inner">
-        <h2>Exhibit II</h2>
-        <p>Unknown artifact. Under observation.</p>
+        <h2>Tabling</h2>
+        <p>My beautiful Tabling created by TabF5.</p>
       </div>
     </a>
 
@@ -94,6 +95,15 @@
 
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1770944521395"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1771464815768"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
   </body>
 </html>

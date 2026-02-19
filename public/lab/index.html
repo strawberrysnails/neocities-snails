@@ -9,9 +9,9 @@
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
 
     
     
@@ -22,26 +22,38 @@
   </head>
 
   <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
     <header style="
 background-color: #f4f2e6;
 border-bottom: 2px solid rgb(50, 45, 39);
 padding: 10px 0 10px 0;">
+<nav>
 <a href="/">Return home</a> 
+</nav>
 </header>
 
 
 
-<div class="up" id="myBtn">
-<i class="bi bi-arrow-up-square-fill"></i>
+<div class="up" id="myBtn" alt="Scroll to top">
+<i title="Scroll to top" class="bi bi-arrow-up-square-fill"></i>
 </div>
 
-<main>
+<main id="main-content">
   <div class="main-container" style="margin: auto; margin-top: 20px;">
     
   </div>
 </main>
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1770944521395"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1771464815768"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
   </body>
 </html>

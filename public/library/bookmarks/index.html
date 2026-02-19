@@ -9,12 +9,12 @@
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
 
     
-      <link rel="stylesheet" href="/css/library.css">
+      <link rel="stylesheet" href="/css/library.css" type="text/css">
           
     
 
@@ -24,11 +24,14 @@
   </head>
 
   <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
     <header style="
 background-color: #f4f2e6;
 border-bottom: 2px solid rgb(50, 45, 39);
 padding: 10px 0 10px 0;">
+<nav>
 <a href="/">Return home</a> | <a href="/library">Return to Library</a>
+</nav>
 </header>
 
 
@@ -42,11 +45,11 @@ padding: 10px 0 10px 0;">
 </div>
 
 
-<div class="up" id="myBtn">
-<i class="bi bi-arrow-up-square-fill"></i>
+<div class="up" id="myBtn" alt="Scroll to top">
+<i title="Scroll to top" class="bi bi-arrow-up-square-fill"></i>
 </div>
 
-<main>
+<main id="main-content">
   <div class="main-container" style="margin: auto; margin-top: 20px;">
     <h1>Bookmarks</h1>
 <p><img src="/images/graphics/pixels/pc-pixel.gif" alt=""></p>
@@ -121,6 +124,7 @@ padding: 10px 0 10px 0;">
 <tr><td><a rel="noreferrer" target="_blank" href="https://doodad.dev/dither-me-this/">Dither Me This</a></td><td>Alternative dithering tool.</td></tr>
 <tr><td><a rel="noreferrer" target="_blank" href="https://www.pixilart.com/">Pixilart</a> | <a rel="noreferrer" target="_blank" href="https://pixart.neocities.org/">Neocities Mirror</a></td><td>Simple Browser-based pixel art tool.</td></tr>
 <tr><td><a rel="noreferrer" target="_blank" href="https://www.aseprite.org/">Aseprite</a></td><td>Open source pixel art &amp; animation software.</td></tr>
+<tr><td><a rel="noreferrer" target="_blank" href="https://www.transparenttextures.com/">Transparent Textures</a></td><td>Seamless, transparent texture images.</td></tr>
 </table>
   <h3 id="firefox-extensions">Firefox Extensions</h3>
 <table>
@@ -153,6 +157,8 @@ padding: 10px 0 10px 0;">
 <tr><td><a rel="noreferrer" target="_blank" href="https://dev.to/derrickreimer/how-to-use-webpack-in-an-eleventy-project-272j">How to use Webpack</a></td><td>Webpack in Eleventy.</td></tr>
 <tr><td><a rel="noreferrer" target="_blank" href="https://11ty.recipes/recipes/add-a-sitemap/">Add a Sitemap</a></td><td>Add sitemap in Eleventy.</td></tr>
 <tr><td><a rel="noreferrer" target="_blank" href="https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/version_control_git.html">Version Control with Git</a></td><td>Intro to Git.</td></tr>
+<tr><td><a rel="noreferrer" target="_blank" href="https://manos.malihu.gr/style-my-tooltips-jquery-plugin/">Style-my-tooltips jQuery plugin</a></td><td>A simple, lightweight jQuery plugin to enhance the look of browser tooltips.</td></tr>
+<tr><td><a rel="noreferrer" target="_blank" href="https://accessible-webmastery.neocities.org/">Guide to Accessible Webmastery</a></td><td>Make your website Accessible!</td></tr>
 </table>
 <p></p><h3 id="art">Art</h3><p></p>
 <table>
@@ -197,6 +203,15 @@ padding: 10px 0 10px 0;">
 </main>
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1770944521395"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1771464815768"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
   </body>
 </html>

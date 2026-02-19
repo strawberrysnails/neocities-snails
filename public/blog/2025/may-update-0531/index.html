@@ -9,12 +9,12 @@
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
 
     
-      <link rel="stylesheet" href="/css/blog.css">
+      <link rel="stylesheet" href="/css/blog.css" type="text/css">
     
     
 
@@ -24,6 +24,7 @@
   </head>
 
   <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
     
 
 <input type="checkbox" id="menuToggle" class="menu-checkbox">
@@ -263,14 +264,14 @@
 
 
 <div class="doll" id="myBtn">
-  <img src="/images/plain-doll.png" alt="">
+  <img src="/images/plain-doll.png" alt="Scroll to top" title="Hello, good hunter">
 </div>
 
 
   
 
 
-<div class="locket">
+<div class="locket" title="Check out my most recent upload!">
   <a href="/photogrid" class="locket-inner">
     <img src="/images/photogrid/armoury.png" alt="Recent Photo">
   </a>
@@ -296,21 +297,21 @@
       </div>
     </div>
 
-    <div class="nav"><div class="nav">
+    <div class="nav"><div class="nav" role="navigation">
   <ul class="nav-list">
 
-        <li class="nav-item has-dropdown" data-desc="A window into my personal life.">
-      <a href="#">Bedroom</a>
+        <li class="nav-item has-dropdown">
+      <a title="A window into my personal life." href="#">Bedroom</a>
       <ul class="dropdown">
         <li><a href="/photogrid">Photos</a></li>
         <li><a href="/blog">Writings</a></li>
         <li><div><a href="/toybox">Toybox</a></div></li>
-        <li><s><a href="#">Shrines</a></s></li>
+        <li><a href="/scriptorium">Scriptorium</a></li>
       </ul>
     </li>
 
-        <li class="nav-item has-dropdown" data-desc="Small web community gathering.">
-      <a href="/links">Courtyard</a>
+        <li class="nav-item has-dropdown">
+      <a title="Small web community gathering." href="/links">Courtyard</a>
       <ul class="dropdown">
         <li><a href="/links#buttons">Button Wall</a></li>
         <li><a href="/links#webrings">Webrings &amp; Cliques</a></li>
@@ -318,20 +319,20 @@
       </ul>
     </li>
 
-    <li class="nav-item" data-desc="A collection of resources, reading material, and bookmarks.">
+    <li class="nav-item" title="A collection of resources, reading material, and bookmarks.">
       <a href="/library">Library</a>
     </li>
 
-       <li class="nav-item has-dropdown" data-desc="Art, media logs, and works in progress. More to come.">
-      <a href="#">Museum</a>
+       <li class="nav-item has-dropdown">
+      <a title="Art, media logs, and works in progress. More to come." href="#">Museum</a>
       <ul class="dropdown">
         <li><a href="/exhibits">Exhibits</a></li>
         <li><s><a href="#">Media Logs</a></s></li>
       </ul>
     </li>
 
-    <li class="nav-item has-dropdown" data-desc="Tools, templates, and site notes.">
-      <a href="#">Laboratory</a>
+    <li class="nav-item has-dropdown">
+      <a title="Tools, templates, and site notes." href="#">Laboratory</a>
       <ul class="dropdown">
         <li><a href="/site">About</a></li>
         <li><a href="/updates">Changelog</a></li>
@@ -525,6 +526,15 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1770944521395"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1771464815768"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
   </body>
 </html>

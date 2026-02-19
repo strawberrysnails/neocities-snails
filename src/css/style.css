@@ -137,7 +137,7 @@ footer a{
   right: 200px;
   width: clamp(180px, 18vw, 280px);
   aspect-ratio: 939 / 647;
-  z-index: 9999;
+  z-index: 999;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -382,28 +382,6 @@ transform: scale(1.1);
   position: relative;
 }
 
-.nav-item::after {
-  content: attr(data-desc);
-  position: absolute;
-  left: 50%;
-  bottom: 30px;
-  transform: translateX(-50%);
-  background: rgba(24, 20, 20, 0.9);
-  color: #d0bfaf;
-  padding: 6px 10px;
-  font-size: 12px;
-  border: 1px solid #391820;
-  border-radius: 8px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 20;
-}
-
-.nav-item:hover::after {
-  opacity: 1;
-}
 
 hr{
   border: none;
@@ -668,4 +646,66 @@ transition: all ease-in-out .2s;
 
 .up:hover{
 color: #30191D;
+}
+
+/* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip{
+   background: rgba(24, 20, 20, 0.9);
+  color: #d0bfaf;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid #391820;
+	/* basic */
+	max-width:300px;
+	z-index:9999;
+	margin:24px 14px 7px 12px;
+	/* style and design */
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	-moz-box-shadow:2px 2px 0 rgba(0,0,0,0.15),-1px -1px 0 rgba(255,255,255,0.3);
+	-webkit-box-shadow:2px 2px 0 rgba(0,0,0,0.15),-1px -1px 0 rgba(255,255,255,0.3);
+	box-shadow:2px 2px 0 rgba(0,0,0,0.15),-1px -1px 0 rgba(255,255,255,0.3);
+	/* font */
+	font-size:11px;
+	line-height:16px;
+}
+
+/* Visually hidden utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
+/* Skip link hidden by default */
+#skipnav a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-200%);
+  z-index: 1000;
+}
+
+/* Show only when keyboard-focused */
+#skipnav a:focus-visible {
+  transform: translateY(0);
+  position: fixed;
+  top: 0.5rem;
+  left: 0;      
+  right: 0;
+
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  background: #000;
+  color: #fff;
 }

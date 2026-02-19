@@ -9,12 +9,12 @@
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
 
     
-      <link rel="stylesheet" href="/css/museum.css">
+      <link rel="stylesheet" href="/css/museum.css" type="text/css">
       
     
 
@@ -24,6 +24,7 @@
   </head>
 
   <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
     <main class="graphics">
             <a href="/exhibits">back to exhibits</a> | <a href="/">return home</a>
             <h1>Museum Gift Shop</h1>
@@ -40,6 +41,15 @@
 
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1770944521395"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1771464815768"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
   </body>
 </html>

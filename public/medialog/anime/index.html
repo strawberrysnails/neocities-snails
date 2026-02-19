@@ -9,9 +9,9 @@
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
 
     
     
@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
     <main>
 <h1>Anime Log</h1>
 
@@ -77,6 +78,13 @@
           <a rel="noreferrer" href="https://anilist.co/anime/11061" target="_blank">
             <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11061-y5gsT1hoHuHw.png" style=" width: 100%;" alt="HUNTER×HUNTER (2011) cover" class="anime-cover">
             <p class="anime-title">HUNTER×HUNTER (2011)</p>
+          </a>
+        </div>
+      
+        <div class="anime-card" style="width: auto;">
+          <a rel="noreferrer" href="https://anilist.co/anime/201903" target="_blank">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201903-v43gxQKw8Tc8.jpg" style=" width: 100%;" alt="Chou Kaguya-hime! cover" class="anime-cover">
+            <p class="anime-title">Chou Kaguya-hime!</p>
           </a>
         </div>
       
@@ -175,15 +183,15 @@
           </div>
         
           <div class="anime-card">
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx849-wQM3GqLvl62P.png" alt="Suzumiya Haruhi no Yuuutsu cover" class="anime-cover">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx4382-ojMWjGFfJFmN.png" alt="Suzumiya Haruhi no Yuuutsu (2009) cover" class="anime-cover">
             <div style="width: 100%;">
-              <p class="anime-title">Suzumiya Haruhi no Yuuutsu</p>
+              <p class="anime-title">Suzumiya Haruhi no Yuuutsu (2009)</p>
 
               
                 
                   
                   <div class="anime-progress-bar">
-                    <div class="bar" style="width: 79%;"></div>
+                    <div class="bar" style="width: 61%;"></div>
                   </div>
                 
               
@@ -1628,6 +1636,34 @@
             </div>
           </div>
         
+          <div class="anime-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx849-wQM3GqLvl62P.png" alt="Suzumiya Haruhi no Yuuutsu cover" class="anime-cover">
+            <div style="width: 100%;">
+              <p class="anime-title">Suzumiya Haruhi no Yuuutsu</p>
+
+              
+                <div class="anime-progress-bar">
+                  <div class="bar" style="width: 100%;"></div>
+                </div>
+
+              
+            </div>
+          </div>
+        
+          <div class="anime-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201903-v43gxQKw8Tc8.jpg" alt="Chou Kaguya-hime! cover" class="anime-cover">
+            <div style="width: 100%;">
+              <p class="anime-title">Chou Kaguya-hime!</p>
+
+              
+                <div class="anime-progress-bar">
+                  <div class="bar" style="width: 100%;"></div>
+                </div>
+
+              
+            </div>
+          </div>
+        
       </div>
     </div>
   
@@ -2814,12 +2850,49 @@
             </div>
           </div>
         
+          <div class="anime-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx7311-9Mfc1YRHwCCW.jpg" alt="Suzumiya Haruhi no Shoushitsu cover" class="anime-cover">
+            <div style="width: 100%;">
+              <p class="anime-title">Suzumiya Haruhi no Shoushitsu</p>
+
+              
+                <div class="anime-progress-bar">
+                  <div class="bar" style="width: 0%; background: #ccc;"></div>
+                </div>
+
+              
+            </div>
+          </div>
+        
+          <div class="anime-card">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20566-BSk4WYE7kJsy.jpg" alt="Nagato Yuki-chan no Shoushitsu cover" class="anime-cover">
+            <div style="width: 100%;">
+              <p class="anime-title">Nagato Yuki-chan no Shoushitsu</p>
+
+              
+                <div class="anime-progress-bar">
+                  <div class="bar" style="width: 0%; background: #ccc;"></div>
+                </div>
+
+              
+            </div>
+          </div>
+        
       </div>
     </div>
   
 
 </main>
 
-    <script src="/javascript/main.js?nocache=?nocache=1770944521395"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1771464815768"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
   </body>
 </html>

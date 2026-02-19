@@ -93,6 +93,7 @@ header:  '&#124; <a href="/library">Return to Library</a>'
 <tr><td><a href="https://doodad.dev/dither-me-this/">Dither Me This</a></td><td>Alternative dithering tool.</td></tr>
 <tr><td><a href="https://www.pixilart.com/">Pixilart</a> | <a href="https://pixart.neocities.org/">Neocities Mirror</a></td><td>Simple Browser-based pixel art tool.</td></tr>
 <tr><td><a href="https://www.aseprite.org/">Aseprite</a></td><td>Open source pixel art & animation software.</td></tr>
+<tr><td><a href="https://www.transparenttextures.com/">Transparent Textures</a></td><td>Seamless, transparent texture images.</td></tr>
 </table>
 
   <h3 id="firefox-extensions">Firefox Extensions</h3>
@@ -129,6 +130,8 @@ header:  '&#124; <a href="/library">Return to Library</a>'
 <tr><td><a href="https://dev.to/derrickreimer/how-to-use-webpack-in-an-eleventy-project-272j">How to use Webpack</a></td><td>Webpack in Eleventy.</td></tr>
 <tr><td><a href="https://11ty.recipes/recipes/add-a-sitemap/">Add a Sitemap</a></td><td>Add sitemap in Eleventy.</td></tr>
 <tr><td><a href="https://www.geos.ed.ac.uk/~smudd/NMDM_Course/html/version_control_git.html">Version Control with Git</a></td><td>Intro to Git.</td></tr>
+<tr><td><a href="https://manos.malihu.gr/style-my-tooltips-jquery-plugin/">Style-my-tooltips jQuery plugin</a></td><td>A simple, lightweight jQuery plugin to enhance the look of browser tooltips.</td></tr>
+<tr><td><a href="https://accessible-webmastery.neocities.org/">Guide to Accessible Webmastery</a></td><td>Make your website Accessible!</td></tr>
 </table>
 
     <h3 id="art">Art</h3>
