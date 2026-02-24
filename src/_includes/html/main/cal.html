@@ -1,0 +1,48 @@
+
+<div class="cal">
+  <div id="calendar">
+  <div title="Current date & time" id="divCal"></div>
+  </div>
+</div>
+<script src="/javascript/cal.js"></script>
+<style>
+
+.cal{
+  max-width:300px;
+  height:auto;
+  margin: auto;
+  text-align:center;
+}
+
+table {
+  width:100%;
+  border:2px solid black;
+  border-radius:3px;
+  color:black;
+  font-size: small;
+}
+thead{
+    font-weight: 700;
+}
+
+td {
+  height:20px;
+  text-align:center;
+  vertical-align:middle;
+  border:1px solid black;
+  width:100% / 7;
+  transition: all ease-in-out .3s;
+}
+
+td:hover{
+background-color: #ffb9c7;
+}
+
+td.normal {}
+
+td.today {
+  font-weight:700;
+  color:#EE6B86;
+}
+
+</style>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.gif" type="image/gif">
+    <title>Bedroom</title>
+
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
+
+    
+      <link rel="stylesheet" href="/css/bedroom.css" type="text/css">
+    
+    
+
+  
+  
+
+  </head>
+
+  <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
+    <div class="outer">
+<aside class="left">
+
+<div class="cal">
+  <div id="calendar">
+  <div title="Current date & time" id="divCal"></div>
+  </div>
+</div>
+<script src="/javascript/cal.js"></script>
+<style>
+
+.cal{
+  max-width:300px;
+  height:auto;
+  margin: auto;
+  text-align:center;
+}
+
+table {
+  width:100%;
+  border:2px solid black;
+  border-radius:3px;
+  color:black;
+  font-size: small;
+}
+thead{
+    font-weight: 700;
+}
+
+td {
+  height:20px;
+  text-align:center;
+  vertical-align:middle;
+  border:1px solid black;
+  width:100% / 7;
+  transition: all ease-in-out .3s;
+}
+
+td:hover{
+background-color: #ffb9c7;
+}
+
+td.normal {}
+
+td.today {
+  font-weight:700;
+  color:#EE6B86;
+}
+
+</style>
+<!-- © wdisseny -->
+ <style>
+    #contain_moon{
+  margin-top: 10px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+    }
+
+ </style>
+<div id="contain_moon" style="text-align: center; padding-bottom: 5px">
+  <div style="font-weight: bold"></div>
+  <div title="Current moon phase"></div>
+  <div>.</div>
+  <div style="font-size: small">.</div>
+</div>
+<script>
+  (function () {
+    var d = new Date().getDate();
+    var m = document.querySelectorAll("#contain_moon div");
+    var a = new XMLHttpRequest();
+    var url =
+      "https://www.icalendar37.net/lunar/api/?lang=en&month=" +
+      (new Date().getMonth() + 1) +
+      "&year=" +
+      new Date().getFullYear() +
+      "&size=100&lightColor=rgb(245,245,245)&shadeColor=rgb(238,107,134)&t&LDZ=" +
+      new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 +
+      "";
+    m[1].style.height = "100px";
+    a.onreadystatechange = function () {
+      if (a.readyState == 4 && a.status == 200) {
+        var b = JSON.parse(a.responseText);
+        m[1].innerHTML = b.phase[d].svg;
+        if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+        m[2].innerHTML = b.phase[d].npWidget;
+        m[3].innerHTML = "Next full moon<br>" + b.nextFullMoon;
+      }
+    };
+    a.open("GET", url, true);
+    a.send();
+  })();
+</script>
+
+    
+</aside>
+<main>
+    <div class="main-head">My Bedroom</div>
+<div class="main-inner">Welcome to my innermost thoughts, or whatever I'm comfortable sharing online. This is a space for all things <b>me</b>-related. More things to come.</div>
+</main>
+<aside class="right">
+<a title="Pictures" class="pic-nav" href="/photogrid"><img src="/images/graphics/camera.png"></a>
+<a title="Writings" class="pic-nav" href="/blog"><img src="/images/graphics/pixels/notebook.gif"></a>
+<a title="Toybox" class="pic-nav" href="/bedroom/toybox"><img src="/images/graphics/teddy.gif"></a>
+</aside>
+</div>
+<footer>
+<a href="/">Return Home</a>  | Credits: <a rel="noreferrer" target="_blank" href="https://hillhouse.neocities.org/">background image</a>, <a rel="noreferrer" target="_blank" href="https://www.deviantart.com/darkdevi/art/romantic-alice-stationary-79153257">stationary drawing</a>
+</footer>
+
+
+    <script src="/javascript/main.js?nocache=?nocache=1771907131182"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
+  </body>
+</html>

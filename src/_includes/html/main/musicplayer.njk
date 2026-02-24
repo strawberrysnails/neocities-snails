@@ -1,0 +1,25 @@
+          <!--MUSIC PLAYER -->
+<div class="simple-player">
+  <img class="cover" src="https://files.catbox.moe/kc2d48.jpg" alt="Cover">
+  
+  <div class="info">
+    <div class="song-title"><span>Song Title Goes Here</span></div>
+    <div class="controls">
+<div class="controls">
+  <button class="prev-track" onclick="prevTrack()">⏮</button>
+  <button class="playpause-track" onclick="playpauseTrack()"><i class="bi bi-play-fill"></i></button>
+  <button class="next-track" onclick="nextTrack()">⏭</button>
+</div>
+
+    </div>
+    <div class="progress">
+      <span class="current-time">0:00</span>
+      <input type="range" min="0" max="100" value="0" class="seek-slider" onchange="seekTo()">
+      <span class="total-duration">0:00</span>
+    </div>
+  </div>
+
+  <audio id="music" autoplay src=""></audio>
+</div>
+<!-- END MUSIC PLAYER -->
+<script src="/javascript/musicplayer.js"></script>

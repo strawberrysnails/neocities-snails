@@ -1,10 +1,117 @@
 body{
     background-color: #de9ead;
-    background-image: url(/images/graphics/fancy-deboss.png);
+    background-image: url(/images/graphics/bedroom-bg.png);
+}
+
+
+footer{
+    color:rgb(48, 36, 36);
+    font-weight: bold;
+    font-size: small;
+}
+
+footer a{
+        color:rgb(26, 26, 26);
+    font-weight: bold;
 }
 
 .outer{
-    background-color: aliceblue;
     margin: auto;
-    max-width: 1200px;
+    margin-top: 100px;
+    max-width: 1000px;
+    display: flex;
+    gap: 25px;
+}
+
+main{
+    display: flex;
+    width: 580px;
+    height: 444px;
+    background-image: url("/images/graphics/bedroom-paper.png");
+    background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+.main-head{
+width: 250px;
+margin-top: 110px;
+margin-left:200px;
+font-size: 34px;
+font-family: "folklore-it";
+}
+
+.main-inner{
+    margin-top: 20px;
+    margin-left:90px;
+    max-width: 370px;
+}
+
+.left, .right{
+    max-width: 300px;
+    margin-top: 50px;
+}
+
+.right{
+padding-left: 20px;
+margin-top: 100px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pic-nav img{
+    min-width: 60px;
+    image-rendering: pixelated;
+    margin-bottom: 10px;
+    transition: all ease-in-out .3s;
+    filter: grayscale(50%) drop-shadow(4px 8px 8px rgba(123, 63, 63, 0.90));
+}
+
+.pic-nav img:hover{
+transform: scale(1.2);
+}
+
+
+@media (max-width: 800px) {
+.outer{
+  flex-direction: column-reverse;
+  margin-top: 0;
+justify-content: center;
+}
+.right{
+    order:1;
+    flex-direction: row;
+    align-items:end;
+    justify-content: center;
+}
+
+
+.left{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+
+
+
+    #contain_moon{
+transform: rotate(1deg);
+background-color: #fff;
+    }
+
+    .cal{
+        transform: rotate(-1deg);
+        background-color: #fff;
+    }
+
+    
+.toybox{
+    background-color: antiquewhite;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    border: double 4px #000;
 }
