@@ -1,4 +1,8 @@
 module.exports = [
+      {
+      date: new Date("2026-02-23"),
+      blurb: `New page: <a href="/bedroom/">Bedroom</a>!` 
+    },
     {
       date: new Date("2026-02-18"),
       blurb: `A brand new exhibit has been added to the <a href="https://snails.town/exhibits/">museum</a>.` 
