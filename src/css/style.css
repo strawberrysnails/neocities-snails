@@ -1,7 +1,14 @@
 :root {
   --cursor-default: url("/images/cursor.png") 4 4, auto;
   --cursor-pointer: url("/images/pointer.png") 6 6, pointer;
+    --cursor-move: url("/images/move-cursor.png") 10 10, grab;
+      /* Scrollbars */
+    --scrollbg:#272727;
+    --scrollcolor:#6c3030;
 }
+
+
+* { scrollbar-color: var(--scrollcolor) var(--scrollbg);}
 
 body {
   font-family: folklore;
@@ -793,3 +800,15 @@ color: #30191D;
   height: auto; 
   z-index: -10; 
 }
+
+.mini-pic-feed{
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mini-pic-feed img{
+  width: 80px;
+}
+

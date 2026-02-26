@@ -1,0 +1,408 @@
+:root {
+    /* Page background */
+    --background:#4a7a68;
+    
+    /* Universal text and link colors */
+    --color:#131313;
+    --link:#462328;
+    
+    /* Font family (can include fallbacks) */
+    --bodyfont: "folklore";
+
+    /* List background colors */
+    --color1: #5a463d;
+    --color2: #c4a9a9;
+    --color3: #dcd8cc;
+    --color4: #57353b;
+    --color5: #dbb8a0;
+    
+    /* Borders for each background color */
+    --color1border:#f2c9c9;
+    --color2border:#22211e;
+    --color3border:#948C63;
+    --color4border:#ffffff;
+    --color5border:#4b3135;
+    
+    /* Header background and border */
+    --header: #E5E1D5;
+    --headerborder:#6B444A;
+    
+    /* Scrollbars */
+    --scrollbg:#2b2b2b;
+    --scrollcolor:#7b6d66;
+
+}
+
+* { margin:0; padding:0; scrollbar-color: var(--scrollcolor) var(--scrollbg);}
+
+body {
+    background: var(--background);
+    font: 1.15rem var(--bodyfont);
+    color: var(--color);
+    line-height:1.5;
+}
+
+/* Body text styles */
+
+.main1 ul {
+    list-style-position:outside;
+    margin-left:20px;
+    line-height:1.5;
+}
+
+p {
+    line-height:1.5;
+    margin:10px 0 10px 0;
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover, a:focus {
+    text-decoration:none;
+}
+
+/* Main header */
+
+header#top {
+    width: 80%;
+    max-width:1000px;
+    box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+    background: var(--header);
+    border: 1px solid var(--headerborder);
+    margin: 25px auto;
+    border-radius: 5px; 
+    text-align: left;
+    color: var(--color);
+}
+
+header#top h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: "folklore-it";
+}
+
+/* Header text */
+
+#infocontainer {
+    padding:20px;
+    min-height:5.5em;
+}
+
+/* Header icon */
+
+.header-icon {
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 65px;
+    width: 65px;
+    float:left;
+}
+
+/* Menu */
+
+nav {
+    margin-top:10px;
+    border-top: 1px solid var(--headerborder); 
+    font-size:1rem;
+}
+
+nav ul {
+    list-style:none;
+    display:inline;
+}
+
+nav ul li {
+    display: inline-block;
+    width:100px;
+    text-align:center;
+    padding: 6px 0;
+    border-left: 1px solid var(--headerborder); 
+}
+
+nav ul li:first-child {
+    border: 0px; 
+}
+
+nav a {
+    text-decoration:none;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+/* Main content */
+
+.main1 {
+ columns: 3 500px;
+  column-gap: .5rem;
+}
+
+/* Lists */
+
+section {
+    margin:10px;
+    box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+    border: 1px solid;
+    border-radius: 5px; 
+    padding:15px;
+    display: none;
+    break-inside: avoid;
+}
+
+/* List colors */
+
+.item {
+    background:var(--color1);
+    border-color:var(--color1border);
+    color:#dcd8cc;
+    
+    & .listheader {
+        border-color:var(--color1border);
+    }
+    
+    & .handle {
+        color:var(--color1border);
+    }
+}
+
+.item:nth-child(5n+1){
+    background:var(--color2);
+    border-color:var(--color2border);
+    color:#22211e;
+        & .listheader {
+        border-color:var(--color2border);
+    }
+        & .handle {
+        color:var(--color2border);
+    }
+
+}
+
+.item:nth-child(5n+2){
+    background:var(--color3);
+    border-color:var(--color3border);
+    color:#22211e;
+        & .listheader {
+        border-color:var(--color3border);
+    }
+        & .handle {
+        color:var(--color3border);
+    }
+
+}
+
+.item:nth-child(5n+3){
+    background:var(--color4);
+    border-color:var(--color4border);
+    color:#dcd8cc;
+        & .listheader {
+        border-color:var(--color4border);
+    }
+        & .handle {
+        color:var(--color4border);
+    }
+
+}
+
+.item:nth-child(5n+3) .foot{
+color:#b57e92;
+
+}
+
+.item:nth-child(5n+4){
+    background:var(--color5);
+    border-color:var(--color5border);
+    color:#22211e;
+        & .listheader {
+        border-color:var(--color5border);
+    }
+        & .handle {
+        color:var(--color5border);
+    }
+
+}
+
+
+
+/* List titles */
+
+header.listheader {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid; 
+    padding-bottom:5px;
+    margin-bottom:10px;
+}
+
+h2 {
+    font-size:1.1em;
+    font-family: "folklore-it";
+}
+
+h2 .subtitle {
+    font-weight:normal;
+}
+
+h2 a {
+    text-decoration:none;
+    color: var(--color);
+}
+
+h2 a:hover {
+    text-decoration:underline;
+}
+
+/* Drag handle */
+
+.handle {
+    font-size:1.4rem;
+    cursor:var(--cursor-move);
+    font-weight:bold;
+}
+
+/* List icons */
+
+.listicon {
+    float: right;
+    margin: 0 0 5px 10px;
+    width:90px;
+    border-radius:5px;
+}
+
+/* List content */
+
+.listtext {
+    overflow: auto;
+    max-height: 300px;
+    padding:10px;
+}
+
+.listtext img{
+max-width: 550px;
+}
+
+/* List footers */
+
+.foot {
+    font-size: 0.9em;
+    padding: 10px;
+    text-align: right; 
+    color:var(--link);
+    font-weight: 700;
+}
+
+.foot p {
+    margin:0;
+}
+
+/* Main footer */
+
+footer#bottom {
+    background: var(--header);
+    border: 1px solid var(--headerborder);
+    padding: 5px;
+    font-size:1rem;
+    margin: 25px auto;
+    max-width: 700px;
+    width:70%;
+    box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+    text-align: center;
+    border-radius: 5px; 
+        color: var(--color);
+}
+
+footer#bottom a{
+    color: var(--link);
+}
+
+/* Phone stuff */
+
+@media screen and (max-width: 899px) {
+    header#top {
+        width:calc(100% - 40px);
+        margin-top:20px;
+    }
+
+    header#top h1 {
+        font-size:1.4em;
+    }
+
+    .main1 {
+        display:inline;
+        margin: auto;
+        width:calc(100% - 40px);
+    }
+
+    .listtext {
+        height:auto;
+        max-height:250px;
+    }
+
+    .handle {
+        display:none;
+    }
+    
+    .foot {
+        font-size:0.85em;
+    }
+
+    h2 {
+        font-size:1.2em;
+    }
+
+    footer#bottom {
+        width:75%;
+    }
+}
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  padding: 12px 16px;
+  background-color: #6B444A;
+  color:#dcd8cc;
+  cursor: var(--cursor-pointer);
+  transition: all ease-in-out .3s;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #5b5454;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #462328;
+  color: white;
+}

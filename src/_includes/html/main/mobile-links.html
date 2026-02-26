@@ -51,11 +51,42 @@
   <div class="main-container">
     <div class="nav-container">
 <ul>
+<ul>
   <!-- Home -->
   <li>
     <div><a href="/">Home</a></div>
   </li>
+    <!-- Bedroom -->
+  <li>
+    <div>
+      <details open>
+        <summary><a href="/bedroom">Bedroom</a> <!-- NEW START--><img src="/images/graphics/pixels/newskull.png"> <!-- NEW END--> </summary>
+        <ul>
+        <li><div><a href="/photogrid">Photos</a></div></li>
+        <li><div><a href="/bedroom/toybox">Toybox</a></div></li>
+        <li><div><a href="/bedroom/lists">Lists</a></div></li>
+        <li><div><a href="/bedroom/piccrew">Piccrews</a></div></li>
+        <li><div><a href="/bedroom/shrines">Shrines</a></div></li>
 
+          <!-- Writings -->
+          <li>
+            <div>
+              <details>
+                <summary><a href="/blog">Writings</a></summary>
+                <ul>
+                  {% for post in collections.blog %}
+                    <li>
+                      <div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
 
   <!-- Library -->
   <li>
@@ -71,10 +102,6 @@
           <li><div><a href="/library/codes">Code Snippets</a></div></li>
           <li><div><a href="/library/fonts">Fonts</a></div></li>
           <li><div><a href="/library/graphics">Graphics</a></div></li>
-          <li><div><a href="/library/recipes">Recipes</a></div></li>
-          <li><div><a href="/library/Inspiration">Inspiration</a></div></li>
-          <li><div><a href="/library/curios">Curiosities</a></div></li>
-          <li><div><a href="/library/collections">Collections</a></div></li>
         </ul>
       </details>
     </div>
@@ -94,50 +121,8 @@
     </div>
   </li>
 
-  <!-- Bedroom -->
-  <li>
-    <div>
-      <details open>
-        <summary>Bedroom</summary>
-        <ul>
-          <li><div><a href="/photogrid">Photos</a></div></li>
-          <!-- Writings -->
-          <li>
-            <div>
-              <details>
-                <summary><a href="/blog">Writings</a></summary>
-                <ul>
-                  {% for post in collections.blog %}
-                    <li>
-                      <div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
-                    </li>
-                  {% endfor %}
-                  <li><div><a href="/toybox">Toybox</a></div></li>
-                </ul>
-              </details>
-            </div>
-          </li>
-        </ul>
-      </details>
-    </div>
-  </li>
 
-  <!-- Laboratory -->
-  <li>
-    <div>
-      <details open>
-        <summary>Laboratory</summary>
-        <ul>
-          <li><div><a href="/site">About</a></div></li>
-          <li><div><a href="/updates">Changelog</a></div></li>
-          <li><div><a href="/about#archives">Archives</a></div></li>
-          <li><div><a href="/map">Site Map</a></div></li>
-        </ul>
-      </details>
-    </div>
-  </li>
-
-<!-- Museum -->
+  <!-- Museum -->
 <li>
   <div>
     <details open>
@@ -146,22 +131,43 @@
         <!-- Exhibits -->
         <li>
           <div>
-            <details>
+            <details open>
               <summary><a href="/exhibits">Exhibits</a></summary>
               <ul>
                 <li>
-                  <div>
-                    <a href="/exhibits/weirdweb2025/">Weird Web October 2025</a>
-                  </div>
+                  <div><a href="/exhibits/weirdweb2025/">Weird Web October 2025</a></div>
                 </li>
+                <li><div><a href="/exhibits/tabling/">Tabling</a> <!-- NEW START--><img src="/images/graphics/pixels/newskull.png"> <!-- NEW END--> </div></li>
               </ul>
             </details>
           </div>
         </li>
-      </ul>
     </details>
   </div>
 </li>
+
+
+  <!-- Laboratory -->
+  <li>
+    <div>
+      <details open>
+        <summary>Laboratory</summary>
+        <ul>
+          <li><div><a href="/site">Colophon</a></div></li>
+          <li><div><a href="/updates">Changelog</a></div></li>
+          <li><div><a href="/site#archives">Archives</a></div></li>
+          <li><div><a href="/uses">Uses</a></div></li>
+          <li>
+            <div>
+              <a href="/map">Site Map</a>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+
 </div>
 </div>
 </div>

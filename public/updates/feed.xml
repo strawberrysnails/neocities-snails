@@ -8,6 +8,14 @@
     
  
     <item>
+      <title>Another new page: Lists :3</title>
+      <link>https://snails.town/updates</link>
+      <description><![CDATA[ Another new page: <a href="/bedroom/lists">Lists</a> :3]]></description>
+      <pubDate>Wed, 25 Feb 2026 19:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2026-02-25</guid>
+    </item>
+    
+    <item>
       <title>New page: Bedroom!</title>
       <link>https://snails.town/updates</link>
       <description><![CDATA[New page: <a href="/bedroom/">Bedroom</a>!]]></description>

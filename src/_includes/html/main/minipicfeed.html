@@ -1,0 +1,21 @@
+{% if photos and photos.length %}
+<div class="mini-pic-feed" title="Most recent photos">
+  {% if photos[0] %}<a href="/photogrid"><img
+    src="/images/photogrid/{{ photos[0].src }}"
+    alt="Recent Photo 1"
+  /></a>{% endif %} {% if photos[1] %}<a href="/photogrid"><img
+    src="/images/photogrid/{{ photos[1].src }}"
+    alt="Recent Photo 2" 
+  /></a>{% endif %} {% if photos[2] %}<a href="/photogrid"><img
+    src="/images/photogrid/{{ photos[2].src }}"
+    alt="Recent Photo 3"
+  /></a>{% endif %} {% if photos[3] %}<a href="/photogrid"><img
+      src="/images/photogrid/{{ photos[3].src }}"
+    alt="Recent Photo 4"
+  /></a>{% endif %} 
+  {% if photos[4] %}<a href="/photogrid"><img
+      src="/images/photogrid/{{ photos[4].src }}"
+    alt="Recent Photo 5"
+  /></a>{% endif %}
+</div>
+{% endif %}

@@ -1,0 +1,10 @@
+---
+Title: Piccrews
+layout: base.njk
+permalink: /bedroom/piccrew/
+---
+{% for pic in piccrew %}
+  <a href="{{ pic.url }}">
+    <img src="{{ pic.src }}" alt="{{ pic.alt }}">
+  </a>
+{% endfor %}
