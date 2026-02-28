@@ -1,4 +1,9 @@
 module.exports = [
+        { 
+    src: "arcade.png",
+    date: "02.27.2026",
+    caption: "My local arcade removed ALL of my favorite rhythm games so I used my remaining credits on claw machines, never to return.",
+    },
       { 
     src: "armoury.png",
     date: "02.08.2026",
