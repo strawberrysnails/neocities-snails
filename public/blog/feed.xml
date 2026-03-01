@@ -9,6 +9,15 @@
     
     
     <item>
+      <title>New Website in the Snails Universe</title>
+      <link>https://snails.town/blog/2026/newwebsite-0228/</link>
+      <description>Compartmenting my tech-y stuff and personal stuff.</description>
+      <pubDate>Sat, 28 Feb 2026 19:00:00 +0000</pubDate>
+      <guid>https://snails.town/blog/2026/newwebsite-0228/</guid>
+    </item>
+    
+    
+    <item>
       <title>Automating your graphics page (and more) in Eleventy</title>
       <link>https://snails.town/blog/2026/automatingfilelistings11ty-0208/</link>
       <description>Automate any file listings (graphics, buttons, ect) in Eleventy easy style. Just add to a folder!</description>
