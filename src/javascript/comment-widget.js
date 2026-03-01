@@ -23,8 +23,8 @@ const s_formId = '1FAIpQLSdqf1QPfel8za8AJ6fmTcM_npAGKHQzq0L6vYA-xuNU60QITw';
 const s_nameId = '1646181037';
 const s_websiteId = '1404541375';
 const s_textId = '1799803632';
-const s_pageId = '240274154';
-const s_replyId = '1416333460';
+const s_pageId = '1416333460';
+const s_replyId = '240274154';
 const s_moderatedId = '306709368';
 const s_adminId = '1200655328';
 
