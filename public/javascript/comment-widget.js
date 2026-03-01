@@ -372,16 +372,20 @@ function createComment(data) {
     const id = data.Name + '|--|' + data.Timestamp2;
     comment.id = id;
 
+    // Normalize moderated/admin values from Google Sheets
+    const isModerated = String(data.Moderated).toLowerCase() === 'true';
+    const isAdmin = String(data.Admin).toLowerCase() === 'true';
+
     // Name of user
     let name = document.createElement('h3');
     let filteredName = data.Name;
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
     name.innerText = filteredName;
     name.className = 'c-name';
-    if (data.Moderated == false) {
+    if (!isModerated) {
         name.innerText = 'Guest';
     }
-    if (data.Admin == true) {
+    if (isAdmin) {
         name.insertAdjacentHTML('beforeend', " <img src='/images/favicon.gif' style='width:15px; height:15px' title='admin' alt='admin'> ");
     }
     comment.appendChild(name);
@@ -398,7 +402,7 @@ function createComment(data) {
         site.innerText = s_websiteText;
         site.href = data.Website;
         site.className = 'c-site';
-        if (data.Moderated == false) {
+        if (!isModerated) {
             site.innerText = '';
         }
         comment.appendChild(site);
@@ -410,7 +414,7 @@ function createComment(data) {
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
     text.innerText = filteredText;
     text.className = 'c-text';
-    if (data.Moderated == false) {
+    if (!isModerated) {
         text.innerText = 'This comment is awaiting moderation';
     }
     comment.appendChild(text);
