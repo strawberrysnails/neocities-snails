@@ -1,0 +1,113 @@
+
+/* PINBOARD */
+
+.pinboard-header{
+  display: flex;
+}
+
+.pinboard-title{
+  min-width: 300px;
+}
+
+.pin-box{
+  width: 60%;
+  max-width: 1200px;
+  color:var(--darkgrey);
+  margin: 1rem auto;
+  min-height: 65vh;
+  background-color: var(--silver);
+  border: 30px solid transparent;
+  border-image-source: url(/images/lace-border.png);
+  border-image-slice: 80;
+  border-image-repeat: round;
+  border-image-outset: 10px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.455);
+}
+
+.pin-box a{
+  color:var(--pink);
+}
+
+.pin-wrapper {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+  
+.pin {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  background: var(--silver);
+  color: #ddd;
+  padding: 1rem;
+  box-sizing: border-box;
+  break-inside: avoid;
+}
+
+.pin h2{
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: dashed var(--silver) 1px;
+}
+
+
+ul.pins li{
+  list-style-type: none;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+ul.pins li::before {
+  content:"\2732";
+  left: -12px;
+}
+
+.pin:nth-child(3n+1) {
+  background-color: #353131;
+}
+
+.pin:nth-child(3n+2) {
+  background-color: var(--grey);
+}
+
+.pin:nth-child(3n) {
+  background-color: #000;
+}
+
+.pin.scrollable {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.pin.center{
+  text-align: center;
+}
+
+.pin.center h3{
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .pin-wrapper {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  .pin-wrapper{
+    column-count: 2;
+  }
+
+  @media (max-width: 550px) {
+    .pin-wrapper{
+      column-count: 1;
+    }
+
+    .pin{
+      max-width: 600px;
+    }
+}
+}

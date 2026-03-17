@@ -1,0 +1,85 @@
+---
+title: Media Log / Manga
+layout: main
+nesting: "/"
+permalink: /medialog/manga/
+sitemapGroup: medialog
+---
+<main>
+<h1>Manga Log</h1>
+
+<div class="nav-links">
+  <a href="/medialog/games">games</a> |
+  <a href="{{ page.url }}">manga</a> | 
+  <a href="/medialog/anime">anime</a>
+</div>
+
+<p>Data fetched from <a href="https://anilist.co/user/snails/" target="_blank">anilist</a></p>
+
+{% set favorites = manga.favorites or [] %}
+{% set manga = manga.manga or [] %}
+
+{% if favorites.length %}
+  <section class="manga-section">
+    <h2>Favorites</h2>
+    <div class="manga-grid">
+      {% for fav in favorites %}
+        <div class="manga-card" style="width: auto;">
+          <a href="{{ fav.url }}" target="_blank">
+            <img src="{{ fav.cover }}" style=" width: 100%;" alt="{{ fav.title }} cover" class="manga-cover">
+            <p class="manga-title">{{ fav.title }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+{% set statusLabels = {
+  current: "Reading",
+  completed: "Completed",
+  planning: "Planning"
+} %}
+
+{% for key, label in statusLabels %}
+  {% set filtered = manga | filterByStatus(key) %}
+  {% if filtered.length %}
+    <div class="manga-section">
+      <h2>{{ label }}</h2>
+      <div class="manga-grid">
+        {% for m in filtered %}
+          <div class="manga-card">
+            <img src="{{ m.cover }}" alt="{{ m.title }} cover" class="manga-cover">
+            <div style="width: 100%;">
+              <p class="manga-title">{{ m.title }}</p>
+
+              {% if key == "planning" %}
+                <div class="manga-progress-bar">
+                  <div class="bar" style="width: 0%; background: #ccc;"></div>
+                </div>
+
+              {% elif key == "completed" %}
+                <div class="manga-progress-bar">
+                  <div class="bar" style="width: 100%;"></div>
+                </div>
+
+              {% elif key == "current" %}
+                {% if m.chapters and m.chapters > 0 %}
+                  {% set percent = (m.progress / m.chapters * 100) | round %}
+                  <div class="manga-progress-bar">
+                    <div class="bar" style="width: {{ percent }}%;"></div>
+                  </div>
+                {% else %}
+                  <div class="manga-progress-bar">
+                    <div class="bar" style="width: 50%; background: var(--wine);"></div>
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</main>

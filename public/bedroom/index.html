@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.gif" type="image/gif">
+    <title>Bedroom</title>
+
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
+
+    
+      <link rel="stylesheet" href="/css/bedroom.css" type="text/css">
+    
+    
+
+  
+  
+
+  </head>
+
+  <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
+    <div class="outer">
+<aside class="left">
+
+<div class="cal">
+  <div id="calendar">
+  <div title="Current date & time" id="divCal"></div>
+  </div>
+</div>
+<script src="/javascript/cal.js"></script>
+<style>
+
+.cal{
+  max-width:300px;
+  height:auto;
+  text-align:center;
+}
+
+table {
+  width:100%;
+  border:2px solid black;
+  border-radius:3px;
+  color:black;
+  font-size: small;
+}
+thead{
+    font-weight: 700;
+}
+
+td {
+  height:20px;
+  text-align:center;
+  vertical-align:middle;
+  border:1px solid black;
+  width:100% / 7;
+  transition: all ease-in-out .3s;
+}
+
+td:hover{
+background-color: #ffb9c7;
+}
+
+td.normal {}
+
+td.today {
+  font-weight:700;
+  color:#EE6B86;
+}
+
+</style>
+<!-- © wdisseny -->
+ <style>
+    #contain_moon{
+  margin-top: 10px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+    }
+
+ </style>
+<div id="contain_moon" style="text-align: center; padding-bottom: 5px">
+  <div style="font-weight: bold"></div>
+  <div title="Current moon phase"></div>
+  <div>.</div>
+  <div style="font-size: small">.</div>
+</div>
+<script>
+  (function () {
+    var d = new Date().getDate();
+    var m = document.querySelectorAll("#contain_moon div");
+    var a = new XMLHttpRequest();
+    var url =
+      "https://www.icalendar37.net/lunar/api/?lang=en&month=" +
+      (new Date().getMonth() + 1) +
+      "&year=" +
+      new Date().getFullYear() +
+      "&size=100&lightColor=rgb(245,245,245)&shadeColor=rgb(238,107,134)&t&LDZ=" +
+      new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 +
+      "";
+    m[1].style.height = "100px";
+    a.onreadystatechange = function () {
+      if (a.readyState == 4 && a.status == 200) {
+        var b = JSON.parse(a.responseText);
+        m[1].innerHTML = b.phase[d].svg;
+        if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+        m[2].innerHTML = b.phase[d].npWidget;
+        m[3].innerHTML = "Next full moon<br>" + b.nextFullMoon;
+      }
+    };
+    a.open("GET", url, true);
+    a.send();
+  })();
+</script>
+
+</aside>
+<main>
+    <div class="main-head">My Bedroom</div>
+<div class="main-inner">
+<div class="picart"><img id="profile-pic" src="" title="click to shuffle!" style="cursor:var(--cursor-pointer);"></div>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+ <div class="mini-pics">
+<div class="mini-pic-feed" title="Most recent photos">
+  <a href="/photogrid"><img src="/images/photogrid/arcade.png" alt="Recent Photo 1"></a> <a href="/photogrid"><img src="/images/photogrid/armoury.png" alt="Recent Photo 2"></a> <a href="/photogrid"><img src="/images/photogrid/christmas2025.png" alt="Recent Photo 3"></a> <a href="/photogrid"><img src="/images/photogrid/rowletsquish.png" alt="Recent Photo 4"></a> 
+  <a href="/photogrid"><img src="/images/photogrid/thanksgivingbundt.png" alt="Recent Photo 5"></a>
+</div>
+
+</div>
+</div>
+</main>
+
+
+
+<aside class="right">
+    <nav class="right-inner">
+        <ul>
+        <li><div><a href="/photogrid">Photos</a></div></li>
+        <li><div><a href="/bedroom/toybox">Toybox</a></div></li>
+        <li><div><a href="/bedroom/lists">Lists</a></div></li>
+        <li><div><a href="/bedroom/piccrew">Piccrews</a></div></li>
+        <li><div><a href="/bedroom/shrines">Shrines</a></div></li>
+        </ul>
+</nav>
+</aside>
+</div>
+
+<footer>
+<a href="/">Return Home</a>  | Credits: <a rel="noreferrer" target="_blank" href="https://hillhouse.neocities.org/">background image</a>, <a rel="noreferrer" target="_blank" href="https://www.deviantart.com/darkdevi/art/romantic-alice-stationary-79153257">stationary drawing</a>
+</footer>
+<script>
+[...document.querySelectorAll(".mini-pics")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
+</script>
+<script>
+  const piccrews = [{"image":"1272810.png","src":"/images/piccrews/1272810.png","alt":"1272810","url":"https://picrew.me/en/image_maker/1272810"},{"image":"1453974.png","src":"/images/piccrews/1453974.png","alt":"1453974","url":"https://picrew.me/en/image_maker/1453974"},{"image":"1685240.png","src":"/images/piccrews/1685240.png","alt":"1685240","url":"https://picrew.me/en/image_maker/1685240"},{"image":"185483.png","src":"/images/piccrews/185483.png","alt":"185483","url":"https://picrew.me/en/image_maker/185483"},{"image":"1972967.png","src":"/images/piccrews/1972967.png","alt":"1972967","url":"https://picrew.me/en/image_maker/1972967"},{"image":"1996436.png","src":"/images/piccrews/1996436.png","alt":"1996436","url":"https://picrew.me/en/image_maker/1996436"},{"image":"2089566.png","src":"/images/piccrews/2089566.png","alt":"2089566","url":"https://picrew.me/en/image_maker/2089566"},{"image":"392067.png","src":"/images/piccrews/392067.png","alt":"392067","url":"https://picrew.me/en/image_maker/392067"},{"image":"407340.png","src":"/images/piccrews/407340.png","alt":"407340","url":"https://picrew.me/en/image_maker/407340"},{"image":"45252.png","src":"/images/piccrews/45252.png","alt":"45252","url":"https://picrew.me/en/image_maker/45252"},{"image":"5209.png","src":"/images/piccrews/5209.png","alt":"5209","url":"https://picrew.me/en/image_maker/5209"},{"image":"6738.png","src":"/images/piccrews/6738.png","alt":"6738","url":"https://picrew.me/en/image_maker/6738"},{"image":"69653.png","src":"/images/piccrews/69653.png","alt":"69653","url":"https://picrew.me/en/image_maker/69653"}];
+</script>
+<script>
+  const img = document.getElementById("profile-pic");
+
+  function randomPic() {
+    const random = piccrews[Math.floor(Math.random() * piccrews.length)];
+    img.src = random.src;
+    img.alt = random.alt;
+  }
+
+  img.addEventListener("click", randomPic);
+
+  // generate one on page load
+  randomPic();
+</script>
+
+    <script src="/javascript/main.js?nocache=?nocache=1772422058786"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
+  </body>
+</html>

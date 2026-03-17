@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.gif" type="image/gif">
+    <title>Making a Gamelog on Eleventy</title>
+
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
+
+    
+      <link rel="stylesheet" href="/css/blog.css" type="text/css">
+    
+    
+
+  
+  
+
+  </head>
+
+  <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
+    
+
+<input type="checkbox" id="menuToggle" class="menu-checkbox">
+
+
+<label for="menuToggle" class="menu-toggle" aria-label="Open menu">
+  <img src="/images/graphics/menu.png" alt="">
+</label>
+
+
+<div class="mobile-menu">
+  <label for="menuToggle" class="menu-close" aria-label="Close menu">✕</label>
+
+<style>
+
+.nav-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-container li {
+  list-style-type: none;
+  border-left: 2px solid #000;
+  margin-left: 1em;
+}
+
+.nav-container li div {
+  padding-left: 1em;
+  position: relative;
+}
+
+.nav-container li div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  bottom: 50%;
+  width: 0.75em;
+  border: 2px solid #000;
+  border-top: 0;
+  border-right: 0;
+}
+
+.nav-container ul > li:last-child {
+  border-left: 2px solid transparent;
+}
+
+</style>
+
+  <div class="main-container">
+    <div class="nav-container">
+<ul>
+<ul>
+  <!-- Home -->
+  <li>
+    <div><a href="/">Home</a></div>
+  </li>
+    <!-- Bedroom -->
+  <li>
+    <div>
+      <details open>
+        <summary><a href="/bedroom">Bedroom</a> <!-- NEW START--><img src="/images/graphics/pixels/newskull.png"> <!-- NEW END--> </summary>
+        <ul>
+        <li><div><a href="/photogrid">Photos</a></div></li>
+        <li><div><a href="/bedroom/toybox">Toybox</a></div></li>
+        <li><div><a href="/bedroom/lists">Lists</a></div></li>
+        <li><div><a href="/bedroom/piccrew">Piccrews</a></div></li>
+        <li><div><a href="/bedroom/shrines">Shrines</a></div></li>
+
+          <!-- Writings -->
+          <li>
+            <div>
+              <details>
+                <summary><a href="/blog">Writings</a></summary>
+                <ul>
+                  
+                    <li>
+                      <div><a href="/blog/2026/newwebsite-0228/">New Website in the Snails Universe</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2026/automatingfilelistings11ty-0208/">Automating your graphics page (and more) in Eleventy</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2026/100qs-0131/">100 Questions for Webmasters</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2026/2025patchnotes-0101/">2025 Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/oct-update-1101/">October Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/minecraft-forever-world-1027/">Starting a Modded Minecraft Forever World</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/chess-and-anxiety-1024/">On Chess and Anxiety</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/sept-update-0930/">September Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/weird-web-october-0930/">Weird Web October</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/aug-update-0831/">August Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/otakon-2025-0814/">Otakon 2025</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/july-update-0731/">July Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/manga-ereader-0707/">I got an e-reader just for Manga.</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/june-update-0630/">June Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/may-update-0531/">May Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/nyc-trip-0518/">My Weekend Trip to NYC</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/april-update-0430/">April Patch Notes</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/gamelog-on-eleventy-0427/">Making a Gamelog on Eleventy</a></div>
+                    </li>
+                  
+                    <li>
+                      <div><a href="/blog/2025/jailbreaking-my-kindle-0413/">Jailbreaking my Kindle</a></div>
+                    </li>
+                  
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Library -->
+  <li>
+    <div>
+      <details>
+        <summary><a href="/library">Library</a></summary>
+        <ul>
+          <!-- placeholders -->
+          <li><div><a href="/library/bookmarks">Bookmarks</a></div></li>
+          <li><div><a href="/library/bookmarks#software">Software/Tools</a></div></li>
+          <li><div><a href="/library/bookmarks#tutorials">Tutorials</a></div></li>
+          <li><div><a href="/library/bookmarks#articles">Articles</a></div></li>
+          <li><div><a href="/library/codes">Code Snippets</a></div></li>
+          <li><div><a href="/library/fonts">Fonts</a></div></li>
+          <li><div><a href="/library/graphics">Graphics</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Courtyard -->
+  <li>
+    <div>
+      <details open>
+        <summary>Courtyard</summary>
+        <ul>
+          <li><div><a href="/links#buttons">Button Wall</a></div></li>
+          <li><div><a href="/links#webrings">Webrings &amp; Cliques</a></div></li>
+          <li><div><a href="/guestbook">Guestbook</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+
+  <!-- Museum -->
+<li>
+  <div>
+    <details open>
+      <summary>Museum</summary>
+      <ul>
+        <!-- Exhibits -->
+        <li>
+          <div>
+            <details open>
+              <summary><a href="/exhibits">Exhibits</a></summary>
+              <ul>
+                <li>
+                  <div><a href="/exhibits/weirdweb2025/">Weird Web October 2025</a></div>
+                </li>
+                <li><div><a href="/exhibits/tabling/">Tabling</a> <!-- NEW START--><img src="/images/graphics/pixels/newskull.png"> <!-- NEW END--> </div></li>
+              </ul>
+            </details>
+          </div>
+        </li>
+    </ul></details>
+  </div>
+</li>
+
+
+  <!-- Laboratory -->
+  <li>
+    <div>
+      <details open>
+        <summary>Laboratory</summary>
+        <ul>
+          <li><div><a href="/site">Colophon</a></div></li>
+          <li><div><a href="/updates">Changelog</a></div></li>
+          <li><div><a href="/site#archives">Archives</a></div></li>
+          <li><div><a href="/uses">Uses</a></div></li>
+          <li>
+            <div>
+              <a href="/map">Site Map</a>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+
+</ul></ul></div>
+</div>
+</div>
+
+
+<div class="doll" id="myBtn">
+  <img src="/images/plain-doll.png" alt="Scroll to top" title="Hello, good hunter">
+</div>
+
+
+  
+
+
+<div class="locket" title="Check out my most recent upload!">
+  <a href="/photogrid" class="locket-inner">
+    <img src="/images/photogrid/arcade.png" alt="Recent Photo">
+  </a>
+
+  <img class="locket-open" src="/images/graphics/locket-open.png" alt="">
+  <img class="locket-closed" src="/images/graphics/locket-closed.png" alt="">
+</div>
+
+
+
+
+
+<div class="lace">
+  <div class="bow">
+    <img src="/images/graphics/bow.png" alt="">
+  </div>
+
+  <div class="container">
+    <div class="top">
+      <div class="portrait"></div>
+      <div class="banner">
+        <a href="/">snails.town</a>
+      </div>
+    </div>
+
+    <div class="nav"><div class="nav" role="navigation">
+  <ul class="nav-list">
+
+        <li class="nav-item has-dropdown">
+      <a title="A window into my personal life." href="/bedroom">Bedroom</a>
+      <ul class="dropdown">
+        <li><a href="/photogrid">Photos</a></li>
+        <li><a href="/blog">Writings (rss) </a></li>
+        <li><div><a href="/bedroom/toybox">Toybox</a></div></li>
+        <li><div><a href="/bedroom/lists">Lists</a></div></li>
+        <li><div><a href="/bedroom/piccrew">Piccrews</a></div></li>
+        <li><div><a href="/bedroom/shrines">Shrines</a></div></li>
+      </ul>
+    </li>
+
+        <li class="nav-item has-dropdown">
+      <a title="Small web community gathering." href="/links">Courtyard</a>
+      <ul class="dropdown">
+        <li><a href="/links#buttons">Button Wall</a></li>
+        <li><a href="/links#webrings">Webrings &amp; Cliques</a></li>
+        <li><a href="/guestbook">Guestbook</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item" title="A collection of resources, reading material, and bookmarks.">
+      <a href="/library">Library</a>
+    </li>
+
+       <li class="nav-item has-dropdown">
+      <a title="Art, media logs, and works in progress. More to come." href="#">Museum</a>
+      <ul class="dropdown">
+        <li><a href="/exhibits">Exhibits</a></li>
+        <li><s><a href="#">Media Logs</a></s></li>
+      </ul>
+    </li>
+
+    <li class="nav-item has-dropdown">
+      <a title="Tools, templates, and site notes." href="#">Laboratory</a>
+      <ul class="dropdown">
+        <li><a href="/site">Colophon</a></li>
+        <li><a href="/updates">Changelog (rss)</a></li>
+        <li><a href="/site#archives">Archives</a></li>
+        <li><a href="/uses">Uses</a></li>
+        <li><a href="/map">Sitemap</a></li>
+      </ul>
+    </li>
+
+
+  </ul>
+</div>
+</div>
+<div class="main-container">
+<script src="/javascript/mylikebutton.js"></script>
+
+<article class="blog-post">
+<p style="text-align: center;">
+  <a href="/blog"><i class="bi bi-arrow-left-short"></i> back to posts</a>
+</p>
+    <h1>Making a Gamelog on Eleventy</h1>
+    <i class="bi bi-calendar-heart"></i> <time datetime="2025-04-27">April 27, 2025</time> | 
+    
+    
+      
+    
+      
+        <a href="/blog/tags/gaming/">#gaming</a>, 
+      
+    
+      
+        <a href="/blog/tags/web-development/">#web development</a>, 
+      
+    
+      
+        <a href="/blog/tags/eleventy/">#eleventy</a>, 
+      
+    
+      
+        <a href="/blog/tags/javascript/">#javascript</a>
+      
+    
+
+  
+
+  
+
+  <div class="blog-content">
+    
+
+    <h2>Table of Contents</h2>
+    <nav class="toc">
+        <ol><li><a href="#table-of-contents"># Table of Contents</a></li><li><a href="#intro"># Intro</a><ol><li><a href="#minor-rules-for-myself"># Minor rules for myself</a></li><li><a href="#notes-for-the-reader"># Notes for the reader</a></li></ol></li><li><a href="#first-steps"># First steps</a></li><li><a href="#making-the-page"># Making the page</a><ol><li><a href="#organizing-it-a-bit-more"># Organizing it a bit more</a></li></ol></li><li><a href="#styling-and-fun-stuff"># Styling and fun stuff</a><ol><li><a href="#styles"># Styles</a></li><li><a href="#collapsibility"># Collapsibility</a></li><li><a href="#making-custom-badges"># Making custom badges</a></li><li><a href="#adding-the-badges-to-my-table"># Adding the badges to my table</a></li></ol></li><li><a href="#conclusion"># Conclusion</a></li></ol>
+      </nav>
+
+
+    <p>There are plenty of ways to keep track of your gaming: steam, backlogged, <a rel="noreferrer" target="_blank" href="https://www.grouvee.com/user/175297-saturnringz/shelves">grovee</a>, ect. but I wanted something offline and more personal. Especially because I also plan to track all the games I watch my husband play.</p>
+<h2 id="table-of-contents" tabindex="-1"><a class="header-anchor" href="#table-of-contents" aria-hidden="true">#</a> Table of Contents</h2>
+<p>Because this is a long one.</p>
+<ul>
+<li><a href="#intro">Introduction</a>
+<ul>
+<li><a href="#minor-rules-for-myself">Minor rules for myself</a></li>
+<li><a href="#notes-for-the-reader">Notes for the reader</a></li>
+</ul>
+</li>
+<li><a href="#first-steps">First steps</a></li>
+<li><a href="#making-the-page">Making the page</a>
+<ul>
+<li><a href="#organizing-it-a-bit-more">Organizing it a bit more</a></li>
+</ul>
+</li>
+<li><a href="#styling-and-fun-stuff">Styling and fun stuff</a>
+<ul>
+<li><a href="#styles">Styles</a></li>
+<li><a href="#collapsibility">Collapsibility</a></li>
+<li><a href="#making-custom-badges">Making custom badges</a></li>
+<li><a href="#adding-the-badges-to-my-table">Adding the badges to my table</a></li>
+</ul>
+</li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+<h2 id="intro" tabindex="-1"><a class="header-anchor" href="#intro" aria-hidden="true">#</a> Intro</h2>
+<p>This is kind of a special case, because we have a little ritual: my husband plays through a game while I watch, helping him make decisions, solve puzzles, etc., while he controls everything. We have the opposite dynamic as well, he watches me play plenty. For example, he watched me play through <em>Nier: Replicant</em>, and right now he’s watching me play <em>Drakengard 3</em>. We also plan for him to watch me play Nier: Automata. Just like he's working through all the <em>Dark Souls</em> games with me watching, I'm working through the <em>Nier</em> series with him watching. I think this is special and I highly reccomend it, it's a nice way to bond and we really enjoy the story and lore of games together.</p>
+<p>I also started regularly using <em>his</em> modded New 3DS XL, which is a much nicer version of mine. (I have a regular 3DS). I love handheld consoles and the 3DS is very nostalgic and special to me. There are so many amazing games that were created for it that you can only really experience on the console itself, impossible to emmulate. I want to keep track of these too, which is something you can do on grovee but it's not perfect.</p>
+<h3 id="minor-rules-for-myself" tabindex="-1"><a class="header-anchor" href="#minor-rules-for-myself" aria-hidden="true">#</a> Minor rules for myself</h3>
+<p>I don't want to overwhelm myself with my massive gaming backlog, the games I've completed over the years, or the ones I'll keep revisiting forever (like Minecraft and Stardew Valley). I also want to focus only on tracking linear, narrative games, ones with a clear beginning and end, and skip things like MMOs, MOBAs, and similar. The "planning" category should stay small too. It will be just games I've already downloaded and actually plan to start soon, not a giant wishlist. Maybe eventually my large wishlist/backlog will make it's way to this website some other day, but for now that will live on grovee and steam.</p>
+<h3 id="notes-for-the-reader" tabindex="-1"><a class="header-anchor" href="#notes-for-the-reader" aria-hidden="true">#</a> Notes for the reader</h3>
+<p>I wouldn’t really consider this a tutorial or guide, but if you’re following along, some previous knowledge of Eleventy is definitely required. I’m assuming you already have an Eleventy project set up and running before trying anything I talk about here. If any of this is confusing or I'm missing information, I apologize. Perhaps view the <strong><a rel="noreferrer" target="_blank" href="https://github.com/leajpg/neocities-snails">source code on github</a></strong> for some clarity. Also, <em><strong>I grant full permission to steal all of it.</strong></em> Just let me know if you do. (˶ᵔ ᵕ ᵔ˶)</p>
+<h2 id="first-steps" tabindex="-1"><a class="header-anchor" href="#first-steps" aria-hidden="true">#</a> First steps</h2>
+<p>All that being said, I wanted a game log with the following:</p>
+<ul>
+<li>Personal, customizable, and not dependant on any website</li>
+<li>Keep track of games I am playing vs. watching</li>
+<li>The platform (PC, 3DS, or emulated)</li>
+<li>Obviously wether it's being currently played/watched, completed, or planning</li>
+<li>Keep data clean and in it's own file so I don't have to manually update the HTML every time something changes</li>
+<li>Collapsable tables for easy viewing</li>
+<li>Clean and organized layout</li>
+</ul>
+<p>First, I made a list of games and the variables that are important to me. In my input folder (mine is called src but some people call it "input" or "content"), I created a file under <code>/_data</code> called <strong><code>gamelog.js</code></strong>.</p>
+<p><code>src/_data/gamelog.js</code></p>
+<pre><code class="language-javascript">module.exports = [
+    {
+    title: "TITLE OF GAME",
+    platform: "Emulator", "PC", or "DS",
+    status: "currently playing", "completed", or "planning",
+    type: "played" or "watched" // only applies to me unless you plan on keeping track of all the playthoughs you watch
+    }
+    // Real example:
+    {
+      title: "Drakengard 3",
+      platform: "Emulator",
+      status: "currently playing", 
+      type: "played"
+    },
+      ];
+</code></pre>
+<p>Simple! Now if I want to update or add games I can just edit this file. I can easily search for a game I want to edit with Ctrl+F.</p>
+<h2 id="making-the-page" tabindex="-1"><a class="header-anchor" href="#making-the-page" aria-hidden="true">#</a> Making the page</h2>
+<p>Most of my Eleventy pages are written in Markdown, especially if it's just a lot of text and images. But for this page, I thought HTML would be easier for creating the tables and customizing the styling.</p>
+<p>Here, I won’t be showing too much of the front matter or other parts of the page, just the tables I'm generating with the data I created.</p>
+<p>I chose to organize it with two tables: Games I'm Playing and Games I'm Watching My Husband Play</p>
+<pre><code class="language-html">&lt;h2&gt;Games I'm Playing&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Platform&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    {% for game in gamelog %}
+      {% if game.type == "played" %}
+        &lt;tr&gt;
+          &lt;td&gt;{{ game.title }}&lt;/td&gt;
+          &lt;td&gt;{{ game.status }}&lt;/td&gt;
+          &lt;td&gt;{{ game.platform}}&lt;/td&gt;       
+        &lt;/tr&gt;
+      {% endif %}
+    {% endfor %}
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;Games I'm Watching my Husband Play&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Platform&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    {% for game in gamelog %}
+      {% if game.type == "watched"%}
+        &lt;tr&gt;
+          &lt;td&gt;{{ game.title }}&lt;/td&gt;
+          &lt;td&gt;{{ game.status }}&lt;/td&gt;
+          &lt;td&gt;{{ game.platform }}&lt;/td&gt;  
+        &lt;/tr&gt;
+      {% endif %}
+    {% endfor %}
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>The above should output something <strong>like</strong> this:</p>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Status</th>
+<th>Platform</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drakengard 3</td>
+<td>Currently Playing</td>
+<td>Emulator</td>
+</tr>
+<tr>
+<td>Divinity: Original Sin</td>
+<td>Currently Playing</td>
+<td>PC</td>
+</tr>
+<tr>
+<td>Art Academy</td>
+<td>Currently Playing</td>
+<td>DS</td>
+</tr>
+<tr>
+<td>Pokemon X [replay]</td>
+<td>Currently Playing</td>
+<td>DS</td>
+</tr>
+<tr>
+<td>Nier: Replicant</td>
+<td>Completed</td>
+<td>PC</td>
+</tr>
+<tr>
+<td>Baldur's Gate 3</td>
+<td>Completed</td>
+<td>PC</td>
+</tr>
+<tr>
+<td>Divinity: Original Sin II</td>
+<td>Planning</td>
+<td>PC</td>
+</tr>
+<tr>
+<td>Nier: Automata</td>
+<td>Planning</td>
+<td>PC</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>this is my default table styling from my styles.css file. We will get to that shortly.</li>
+<li>this table is from a smaller set of data with no second table for "Games I'm watching", just for simplicity.</li>
+</ul>
+<h3 id="organizing-it-a-bit-more" tabindex="-1"><a class="header-anchor" href="#organizing-it-a-bit-more" aria-hidden="true">#</a> Organizing it a bit more</h3>
+<p>Everything is functioning as it should but I wanted my tables to be organized by status, so I wrapped my data in a fuction like so:</p>
+<pre><code class="language-javascript">// define the status order
+const statusOrder = {
+  "currently playing": 0,
+  "currently watching": 1,
+  "completed": 2,
+  "planning": 3,
+};
+
+const gamelog = [
+    {
+    // game variables here
+    }, 
+];
+  
+// export sorted by status
+module.exports = gamelog.sort((a, b) =&gt; {
+  return (statusOrder[a.status] ?? 99) - (statusOrder[b.status] ?? 99);
+});
+</code></pre>
+<h2 id="styling-and-fun-stuff" tabindex="-1"><a class="header-anchor" href="#styling-and-fun-stuff" aria-hidden="true">#</a> Styling and fun stuff</h2>
+<h3 id="styles" tabindex="-1"><a class="header-anchor" href="#styles" aria-hidden="true">#</a> Styles</h3>
+<p>This is my personal way of styling. I wanted it to be simple, readable, and match my websites aesthetic. If you want to see the full file, it's public on <a rel="noreferrer" target="_blank" href="https://github.com/leajpg/neocities-snails/blob/main/public/css/styles.css">github</a> or viewable <strong><a href="/css/styles.css">here</a></strong>.</p>
+<pre><code class="language-css">table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  background-color: #ffeef2;
+  box-shadow: 0 0 0 4px #fff8fb, 0 0 0 8px #fff;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #000;
+  color: var(--silver);
+  font-family: "Kelmscott";
+  font-size: 1.2rem;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--wine);
+  letter-spacing: 1px;
+}
+
+td {
+  background-color: var(--silver);
+  color: #3e2a2a;
+  padding: 7px;
+  border-top: 1px dotted var(--wine);
+  font-family: "Basiic", sans-serif;
+  font-weight: 700;
+}
+
+td:last-child,
+th:last-child {
+  max-width: 100px;
+  width: 150px;
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+  border-right: 1px dotted var(--wine);
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(198, 198, 198);
+}
+
+tr:hover td {
+  background-color: rgb(198, 198, 198);
+}
+
+</code></pre>
+<h3 id="collapsibility" tabindex="-1"><a class="header-anchor" href="#collapsibility" aria-hidden="true">#</a> Collapsibility</h3>
+<p>I added a "Hide Table" button and id to my table like so.<br>
+Since I have two tables, they need unique ids.</p>
+<pre><code class="language-html">&lt;h2&gt;Games I'm Playing&lt;/h2&gt;
+&lt;button id="togglePlayed"&gt;Hide Table&lt;/button&gt;
+&lt;table id="tablePlayed"&gt;
+...
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;Games I'm Watching My Husband Play&lt;/h2&gt;
+&lt;button id="toggleWatched"&gt;Hide Table&lt;/button&gt;
+&lt;table id="tableWatched"&gt;
+...
+&lt;/table&gt;
+</code></pre>
+<p>and here's the javascript to make the button hide my table body.</p>
+<pre><code class="language-javascript">document.addEventListener("DOMContentLoaded", function () {
+  // Toggle for Games I'm Playing
+  const togglePlayed = document.getElementById("togglePlayed");
+  const tablePlayed = document.getElementById("tablePlayed");
+
+  if (togglePlayed &amp;&amp; tablePlayed) {
+    const tbodyPlayed = tablePlayed.querySelector('tbody');
+    togglePlayed.addEventListener("click", function() {
+      if (tbodyPlayed.style.display === "none") {
+        tbodyPlayed.style.display = "table-row-group"; // show tbody
+        togglePlayed.textContent = "Hide Table";
+      } else {
+        tbodyPlayed.style.display = "none"; // hide tbody
+        togglePlayed.textContent = "Show Table";
+      }
+    });
+  }
+
+  // Toggle for Games I'm Watching My Husband Play
+  const toggleWatched = document.getElementById("toggleWatched");
+  const tableWatched = document.getElementById("tableWatched");
+
+  if (toggleWatched &amp;&amp; tableWatched) {
+    const tbodyWatched = tableWatched.querySelector('tbody');
+    toggleWatched.addEventListener("click", function() {
+      if (tbodyWatched.style.display === "none") {
+        tbodyWatched.style.display = "table-row-group"; // show tbody
+        toggleWatched.textContent = "Hide Table";
+      } else {
+        tbodyWatched.style.display = "none"; // hide tbody
+        toggleWatched.textContent = "Show Table";
+      }
+    });
+  }
+});
+</code></pre>
+<h3 id="making-custom-badges" tabindex="-1"><a class="header-anchor" href="#making-custom-badges" aria-hidden="true">#</a> Making custom badges</h3>
+<p>I thought it would be cute to make badges for each platform and game status instead of plain text.<br>
+<strong><a rel="noreferrer" target="_blank" href="https://www1.flightrising.com/forums/cc/3078623">This form</a></strong> has an endless amount of buttons to look at and choose from. They have a button maker and blank buttons to customize too! I made these using a mix of their blank and <strong><a rel="noreferrer" target="_blank" href="https://idbuttons.neocities.org/maker/">this generator</a></strong>, depending on how complex I wanted the graphic to be.</p>
+<p><img src="/images/badges/ds.webp" alt="ds"> <img src="/images/badges/emulator.webp" alt="emulator"> <img src="/images/badges/pc.webp" alt="pc"></p>
+<p><img src="/images/badges/currently.png" alt="currently"> <img src="/images/badges/completed.png" alt="completed"> <img src="/images/badges/planning.png" alt="planning"></p>
+<h3 id="adding-the-badges-to-my-table" tabindex="-1"><a class="header-anchor" href="#adding-the-badges-to-my-table" aria-hidden="true">#</a> Adding the badges to my table</h3>
+<p>In my <strong><code>gamelog.js</code></strong> file I added 2 new functions and variables.</p>
+<pre><code class="language-javascript">
+// Platform badges
+function getPlatformBadge(platform) {
+  const key = platform.toLowerCase();
+  if (key === "pc") return "/images/badges/pc.webp";
+  if (key === "ds" || key === "3ds" || key === "nds") return "/images/badges/ds.webp";
+  if (key === "emulator") return "/images/badges/emulator.webp";
+  return null;
+}
+// Status badges
+function getStatusBadge(status) {
+  const key = status.toLowerCase();
+  if (key === "currently playing") return "/images/badges/currently.png";
+  if (key === "currently watching") return "/images/badges/currently.png";
+  if (key === "completed") return "/images/badges/completed.png";
+  if (key === "planning") return "/images/badges/emulator.planning.png";
+  return null;
+}
+
+const gamelog = [
+    {
+      title: "Drakengard 3",
+      platform: "Emulator",
+      platformImage: getPlatformBadge("emulator"),
+      statusImages: getStatusBadge("currently playing"),
+      status: "currently playing",
+      type: "played"
+    }, 
+    ...
+]
+</code></pre>
+<p>and on my <strong><code>games.html</code></strong> pages I edited my table</p>
+<pre><code class="language-html">&lt;h2&gt;Games I'm Playing&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Platform&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    {% for game in gamelog %}
+      {% if game.type == "played" %}
+        &lt;tr&gt;
+          &lt;td&gt;{{ game.title }}&lt;/td&gt;
+        &lt;td class="status"&gt;
+          {% if game.statusImage %}
+            &lt;img src="{{ game.statusImage }}" alt="{{ game.status }} badge"&gt;
+          {% else %}
+            {{ game.status }}
+          {% endif %}
+        &lt;/td&gt;
+        &lt;td class="platform"&gt;
+          {% if game.platformImage %}
+            &lt;img src="{{ game.platformImage }}" alt="{{ game.platform }} badge"&gt;
+          {% else %}
+            {{ game.platform }}
+          {% endif %}
+        &lt;/td&gt;           
+        &lt;/tr&gt;
+      {% endif %}
+    {% endfor %}
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>Well, I think it looks nice and it's working properly.</p>
+<h2 id="conclusion" tabindex="-1"><a class="header-anchor" href="#conclusion" aria-hidden="true">#</a> Conclusion</h2>
+<p>My game log, like the rest of my website, will forever be under construction. I'll want to add, change, and remove things as long as I keep making updates. But for now it's <em>done</em> and I actually like it. You can view it live <strong><a href="/medialog/games/">here</a></strong>! You can also look at all the source code on <strong><a rel="noreferrer" target="_blank" href="https://github.com/leajpg/neocities-snails">github</a></strong> I really enjoyed learning a bit more about eleventy from this. If you make something similar, please share (,,&gt;ヮ&lt;,,)</p>
+
+  </div>
+---
+<br><br>
+<!-- Google Form Like Button -->
+<form class="mylikebutton">
+  🤍
+</form>
+<!--Comment Box-->
+<div id="c_widget"></div>
+<script src="/javascript/comment-widget.js"></script>
+</article>
+
+    
+    
+      <a href="/blog/2025/april-update-0430/"><i class="bi bi-arrow-left-short"></i> April Patch Notes</a>
+    
+|
+    
+    
+      <a href="/blog/2025/jailbreaking-my-kindle-0413/">Jailbreaking my Kindle <i class="bi bi-arrow-right-short"></i></a>
+    
+
+    <!-- BLOG IMAGE MODAL -->
+<div id="photoModal">
+  <span id="closeModal">×</span>
+  <div class="modal-content">
+    <div class="modal-inner">
+      <button id="prevPhoto" class="modal-nav">‹</button>
+      <img id="modalImage" src="">
+      <button id="nextPhoto" class="modal-nav">›</button>
+    </div>
+    <div id="modalCaption"></div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('photoModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+  const prevBtn = document.getElementById('prevPhoto');
+  const nextBtn = document.getElementById('nextPhoto');
+  const closeBtn = document.getElementById('closeModal');
+
+  let photos = Array.from(document.querySelectorAll('.blog-img'));
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = photos[index];
+    if (!img) return;
+
+    modalImg.src = img.src;
+    caption.textContent = img.alt || '';
+    modal.style.display = "block";
+    currentIndex = index;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Delegated click handler on blog-content
+  document.querySelector('.blog-content').addEventListener('click', e => {
+    if (!e.target.classList.contains('blog-img')) return;
+
+    // Re-fetch photos in case new ones were added dynamically
+    photos = Array.from(document.querySelectorAll('.blog-img'));
+    const index = photos.indexOf(e.target);
+    if (index !== -1) openModal(index);
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  // Click outside modal-inner closes modal
+  modal.addEventListener('click', e => {
+    if (!document.querySelector('.modal-inner').contains(e.target)) closeModal();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    openModal((currentIndex - 1 + photos.length) % photos.length);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    openModal((currentIndex + 1) % photos.length);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (modal.style.display !== "block") return;
+    if (e.key === "Escape") closeModal();
+    else if (e.key === "ArrowLeft") openModal((currentIndex - 1 + photos.length) % photos.length);
+    else if (e.key === "ArrowRight") openModal((currentIndex + 1) % photos.length);
+  });
+});
+</script>
+
+</div>
+</div>
+</div>
+<footer> ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a></footer>
+
+
+<script>
+[...document.querySelectorAll(".buttons-n-blinkers")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
+</script>
+
+
+    <script src="/javascript/main.js?nocache=?nocache=1772422058786"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
+  </body>
+</html>

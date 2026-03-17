@@ -1,0 +1,88 @@
+---
+title: Media Log / Games
+layout: main
+nesting: "/"
+permalink: /medialog/games/
+script: main.js
+sitemapGroup: medialog
+---
+<main>
+<h1>Medialog &gt; Games</h1>
+
+<div class="nav-links">
+  <a href="{{ page.url }}">games</a> |
+  <a href="/medialog/manga">manga</a> | 
+  <a href="/medialog/anime">anime</a>
+</div>
+
+<hr>
+
+<h2>Games I'm Playing</h2>
+
+{% if steam %}
+<p> Last Played on Steam: <strong>{{ steam.name }}</strong>· {{ steam.hours }} hrs</p>
+{% endif %}
+
+<button id="togglePlayed">Hide Table</button>
+<table id="tablePlayed">
+  <thead>
+    <tr><th>Title</th><th>Status</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+    {% if game.type == "played" %}
+      <tr>
+        <td>{{ game.title }}</td>
+        <td class="status">
+          {% if game.statusImage %}
+            <img src="{{ game.statusImage }}" alt="{{ game.status }} badge">
+          {% else %}
+            {{ game.status }}
+          {% endif %}
+        </td>
+        <td class="platform">
+          {% if game.platformImage %}
+            <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
+          {% else %}
+            {{ game.platform }}
+          {% endif %}
+        </td>       
+      </tr>
+    {% endif %}
+  {% endfor %}
+</tbody>
+</table>
+
+<hr>
+
+<h2>Games I'm Watching My Husband Play</h2>
+<button id="toggleWatched">Hide Table</button>
+<table id="tableWatched">
+  <thead>
+    <tr><th>Title</th><th>Status</th><th>Platform</th></tr>
+  </thead>
+  <tbody>
+    {% for game in gamelog %}
+      {% if game.type == "watched"%}
+        <tr>
+          <td>{{ game.title }}</td>
+          <td class="status">
+            {% if game.statusImage %}
+              <img src="{{ game.statusImage }}" alt="{{ game.status }} badge">
+            {% else %}
+              {{ game.status }}
+            {% endif %}
+          </td>
+          <td class="platform">
+            {% if game.platformImage %}
+              <img src="{{ game.platformImage }}" alt="{{ game.platform }} badge">
+            {% else %}
+              {{ game.platform }}
+            {% endif %}
+          </td>  
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+</main>

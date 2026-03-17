@@ -1,0 +1,47 @@
+---
+layout: index.njk
+title: Updates
+---
+<style>
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+th, td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border: 1px solid #000000;
+}
+
+th {
+  background-color: #5B2F38;
+  font-weight: bold;
+  color:antiquewhite;
+}
+
+th:first-child, td:first-child {
+  width: 180px;
+  white-space: nowrap;
+}
+
+th:last-child, td:last-child {
+  width: auto;
+}
+
+</style>
+<main>
+  <div class="main-container">
+<h1>Updates <a href="/updates/feed.xml">(RSS)</a></h1>
+<table>
+<tr><th>Date</th><th>Info</th></tr>
+{% if updates and updates.length %}
+{% for update in updates %}
+<tr><td><time datetime="{{ update.date | dateIso }}">{{ update.date | dateReadable }}</time></td><td>{{ update.blurb | safe }}</td></tr>
+        {% endfor %}
+          {% endif %}
+</table>
+</div>
+</main>

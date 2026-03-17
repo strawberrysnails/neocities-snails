@@ -1,0 +1,28 @@
+---
+permalink: updates/feed.xml
+eleventyExcludeFromCollections: true
+type: "xml"
+metadata:
+  title: "Snails.Town Updates"
+  language: "en"
+  url: "https://snails.neocities.org/updates"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ siteMetadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ siteMetadata.title }}</title>
+    <link>{{ siteMetadata.url }}</link>
+    <atom:link href="{{ siteMetadata.url }}/updates/feed.xml" rel="self" type="application/rss+xml" />
+    <language>{{ siteMetadata.language }}</language>
+    
+ {% for update in updates %}
+    <item>
+      <title>{{ update.blurb | striptags | truncate(60, true, '…') }}</title>
+      <link>{{ siteMetadata.url }}/updates</link>
+      <description><![CDATA[{{ update.blurb | safe }}]]></description>
+      <pubDate>{{ update.date | dateToRfc822 }}</pubDate>
+      <guid isPermaLink="false">{{ update.date | dateIso }}</guid>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

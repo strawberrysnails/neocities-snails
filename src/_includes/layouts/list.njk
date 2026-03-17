@@ -1,0 +1,31 @@
+---
+layout: main
+---
+<header
+style="
+background-color: #f4f2e6;
+border-bottom: 2px solid rgb(50, 45, 39);
+padding: 10px 0 10px 0;">
+<nav>
+<a href="/">Return home</a> {{ header | safe }}
+</nav>
+</header>
+
+{% if showToc %}
+<div class="toc-wrapper">
+  <details>
+    <summary>Table of Contents</summary>
+    {{ content | toc({ tags: ['h2','h3'] }) | safe }}
+  </details>
+</div>
+{% endif %}
+
+<div class="up" id="myBtn" alt="Scroll to top">
+<i title="Scroll to top" class="bi bi-arrow-up-square-fill"></i>
+</div>
+
+<main id="main-content">
+  <div class="main-container" style="margin: auto; margin-top: 20px;">
+    {{ content | safe }}
+  </div>
+</main>

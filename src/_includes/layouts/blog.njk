@@ -1,0 +1,127 @@
+---
+layout: index
+---
+<div class="main-container">
+<script src="/javascript/mylikebutton.js"></script>
+
+<article class="blog-post">
+<p style="text-align: center;">
+  <a href="/blog"><i class="bi bi-arrow-left-short"></i> back to posts</a>
+</p>
+    <h1>{{ title }}</h1>
+    <i class="bi bi-calendar-heart"></i> <time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time> | 
+    {% if tags %}
+    {% for tag in tags %}
+      {% if tag != "blog" and tag != "posts" %}
+        <a href="/blog/tags/{{ tag | slug }}/">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  {% endif %}
+
+  
+
+  <div class="blog-content">
+    {% set tocHtml = content | toc %}
+{% if tocHtml %}
+    <h2>Table of Contents</h2>
+    {{ tocHtml | safe }}
+{% endif %}
+
+    {{ content | safe }}
+  </div>
+---
+<br><br>
+<!-- Google Form Like Button -->
+<form class="mylikebutton">
+  🤍
+</form>
+<!--Comment Box-->
+<div id="c_widget"></div>
+<script src="/javascript/comment-widget.js"></script>
+</article>
+
+    {% set previousPost = collections.blog | getPreviousCollectionItem(page) %}
+    {% if previousPost %}
+      <a href="{{ previousPost.url }}"><i class="bi bi-arrow-left-short"></i> {{ previousPost.data.title }}</a>
+    {% endif %}
+|
+    {% set nextPost = collections.blog | getNextCollectionItem(page) %}
+    {% if nextPost %}
+      <a href="{{ nextPost.url }}">{{ nextPost.data.title }} <i class="bi bi-arrow-right-short"></i></a>
+    {% endif %}
+
+    <!-- BLOG IMAGE MODAL -->
+<div id="photoModal">
+  <span id="closeModal">&times;</span>
+  <div class="modal-content">
+    <div class="modal-inner">
+      <button id="prevPhoto" class="modal-nav">‹</button>
+      <img id="modalImage" src="" />
+      <button id="nextPhoto" class="modal-nav">›</button>
+    </div>
+    <div id="modalCaption"></div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('photoModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+  const prevBtn = document.getElementById('prevPhoto');
+  const nextBtn = document.getElementById('nextPhoto');
+  const closeBtn = document.getElementById('closeModal');
+
+  let photos = Array.from(document.querySelectorAll('.blog-img'));
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = photos[index];
+    if (!img) return;
+
+    modalImg.src = img.src;
+    caption.textContent = img.alt || '';
+    modal.style.display = "block";
+    currentIndex = index;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Delegated click handler on blog-content
+  document.querySelector('.blog-content').addEventListener('click', e => {
+    if (!e.target.classList.contains('blog-img')) return;
+
+    // Re-fetch photos in case new ones were added dynamically
+    photos = Array.from(document.querySelectorAll('.blog-img'));
+    const index = photos.indexOf(e.target);
+    if (index !== -1) openModal(index);
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  // Click outside modal-inner closes modal
+  modal.addEventListener('click', e => {
+    if (!document.querySelector('.modal-inner').contains(e.target)) closeModal();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    openModal((currentIndex - 1 + photos.length) % photos.length);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    openModal((currentIndex + 1) % photos.length);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (modal.style.display !== "block") return;
+    if (e.key === "Escape") closeModal();
+    else if (e.key === "ArrowLeft") openModal((currentIndex - 1 + photos.length) % photos.length);
+    else if (e.key === "ArrowRight") openModal((currentIndex + 1) % photos.length);
+  });
+});
+</script>
+
+</div>

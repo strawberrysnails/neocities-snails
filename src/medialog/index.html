@@ -1,0 +1,58 @@
+---
+title: Media Log
+layout: main
+permalink: /medialog/
+nesting: "../"
+script: main.js
+---
+
+<main>
+<h1>Media Log</h1>
+
+{% set animeList = (anime.anime | default([])) %}
+{% set mangaList = (manga.manga | default([])) %}
+{% set gamelog = gamelog | default([]) %}
+
+<div class="link-box">
+
+  <a href="games" class="link-card">
+    <h2>Games</h2>
+    {% if gamelog.length %}
+      <p>Now playing: <strong>{{ gamelog | getCurrentGame }}</strong></p>
+      <p>Watching: <strong>{{ gamelog | getCurrentWatchedGame }}</strong></p>
+    {% else %}
+      <p>No game data available.</p>
+    {% endif %}
+        {% if steam %}
+    <p> Last Played on Steam: <strong>{{ steam.name }}</strong>· {{ steam.hours }} hrs</p>
+    {% endif %}
+  </a>
+
+  <a href="manga" class="link-card">
+    <h2>Manga</h2>
+    {% if mangaList.length %}
+      <p>Now reading: <strong>{{ mangaList | getCurrentMangaRead }}</strong></p>
+    {% else %}
+      <p>No manga data available.</p>
+    {% endif %}
+  </a>
+
+  <a href="anime" class="link-card">
+    <h2>Anime</h2>
+    {% if animeList.length %}
+      <p>Now watching: <strong>{{ animeList | getCurrentAnimeWatch }}</strong></p>
+    {% else %}
+      <p>No anime data available.</p>
+    {% endif %}
+  </a>
+
+
+
+<div class="link-card">
+  <h2>Music</h2>
+  <div id="lastfm-widget">
+    Loading...
+  </div>
+ <small>powered by <a href="https://github.com/biancarosa/lastfm-last-played" target="_blank">@biancarosa/lastfm-last-played</a></small>
+</div>
+</main>

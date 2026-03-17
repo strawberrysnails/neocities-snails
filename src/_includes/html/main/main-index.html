@@ -1,0 +1,17 @@
+<p style="margin-top: 30px;"><b style="font-size: 40px;">Welcome,</b> traveler - you have landed in <i>snails.town</i>,<br>
+  a personal archive of my thoughts, interests, creations, and more.<br>
+I enjoy <a href="/blog">writing</a>, experimenting with javascript, and gaming. I write about web development, device modding, and traveling.<br>
+This website is <b>safe for work</b> and <b>mobile-friendly.</b> Some things are still a work-in-progress <i>to me.</i><br>
+Please explore freely & you are welcome to leave a message in my <a href="/guestbook">guestbook</a>. Thanks for visiting! (。・ω・。)
+  <img src="/images/graphics/sword.gif">
+<div class="blog-feed">
+<h2>Recent Blog Post <a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></h2>
+    {% set post = collections.blog[0] %}
+          {% if post %}
+            <h3><i class="bi bi-paperclip"></i><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <i class="bi bi-calendar-heart"></i> <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
+          {% endif %}
+          {% if post.data.excerpt %}
+            <p>{{ post.data.excerpt }}</p>
+          {% endif %}
+</div>

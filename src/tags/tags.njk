@@ -1,0 +1,46 @@
+---
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+  addAllPagesToCollections: true
+permalink: "blog/tags/{{ tag | slug }}/"
+eleventyComputed:
+  title: "Tag: {{ tag }}"
+layout: index.njk
+---
+<div class="main-container">
+ <p style="text-align: center;">
+  <a href="/blog"><i class="bi bi-arrow-left-short"></i> back to posts</a>
+</p>
+<h1>Posts tagged #{{ tag }}</h1>
+<details open>
+  <summary>Browse by Tag</summary>
+ <div class="tag-list">
+  {% for tag in collections.tagList %}
+    <p>
+      <a href="/blog/tags/{{ tag | slug }}/">#{{ tag }}</a>
+    </p>
+  {% endfor %}
+</div>
+
+</details>
+<ul class="post-list">
+  {% for post in collections.blog %}
+    {% if tag in post.data.tags %}
+      <li>
+      <a href="{{ post.url }}" class="post-item">
+        <h2>{{ post.data.title }}</h2>
+        <i class="bi bi-calendar-heart"></i>
+        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time> | 
+        <i class="bi bi-stopwatch"></i> {{ post | readingTime }}
+        {% if post.data.excerpt %}
+          <p>{{ post.data.excerpt }}</p>
+        {% endif %}
+      </a>
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+

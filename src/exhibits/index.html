@@ -1,0 +1,72 @@
+---
+layout: main
+title: Exhibits
+---
+<aside><p>Thank you for visiting the Museum. Please browse the <a href="/exhibits/shop">gift shop</a> on your way out.</p>
+  <details><summary>Credits</summary>
+    <a href="https://theinspirationgallery.com/"><img src="/images/buttons/sites/inspogallery.png" alt="background image and top border"></a>
+        <a href="https://dollarchive.neocities.org/compendium" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dollarchive.gif" alt="frame border">
+    </a>
+  </details>
+  <a href="/">return home?</a>
+</aside>
+
+<div class="exhibits-wrap">
+  <div class="exhibits-rail">
+
+    <!-- Exhibit -->
+    <a class="exhibit" href="/exhibits/weirdweb2025/">
+      <div class="exhibit-frame"><img src="/images/exhibits/weirdweb-frame.png"></div>
+      <div class="exhibit-inner">
+        <h2>Weird Web October [2025]</h2>
+        <p>Fun web experiments for the month of October.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 1 -->
+    <a class="exhibit" href="/exhibits/tabling/">
+      <div class="exhibit-frame"><img src="/images/exhibits/tabling.png"></div>
+      <div class="exhibit-inner">
+        <h2>Tabling</h2>
+        <p>My beautiful Tabling created by TabF5.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 2 -->
+    <a class="exhibit placeholder" href="#">
+      <div class="exhibit-frame"></div>
+      <div class="exhibit-inner">
+        <h2>Exhibit III</h2>
+        <p>Interface behaving strangely.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 3 -->
+    <a class="exhibit placeholder" href="#">
+      <div class="exhibit-frame"></div>
+      <div class="exhibit-inner">
+        <h2>Exhibit IV</h2>
+        <p>Awaiting containment.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+
+
+<script>
+  const exhibits = document.querySelector('.exhibits-wrap'); 
+
+  if (exhibits) {
+    exhibits.addEventListener('wheel', (e) => {
+      if (exhibits.scrollWidth > exhibits.clientWidth) {
+        e.preventDefault();
+        exhibits.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  }
+</script>
+

@@ -1,0 +1,64 @@
+---
+layout: list.njk
+title: Graphics
+permalink: /library/graphics/
+showToc: true
+header:  '&#124; <a href="/library">Return to Library</a>'
+---
+<!-- =====
+STAMPS
+===== -->
+ <div class="graphics">
+    <h1>Graphics</h1>
+    <h2 id="stamps">Stamps</h2>
+<h3 id="stamps-by-me">Made by me</h3>
+<div class="stamps">
+  {% for stamp in stamps.mine %}
+    <img src="{{ stamp.src }}" alt="{{ stamp.alt }}">
+  {% endfor %}
+</div>
+
+<h3 id="found">Found</h3>
+<div class="stamps">
+  {% for stamp in stamps.found %}
+    {% if stamp.url %}
+      <a href="{{ stamp.url }}">
+        <img src="{{ stamp.src }}" alt="{{ stamp.alt }}">
+      </a>
+    {% else %}
+      <img src="{{ stamp.src }}" alt="{{ stamp.alt }}">
+    {% endif %}
+  {% endfor %}
+</div>
+
+<!-- =====
+BUTTONS
+===== -->
+
+<h3 id="buttons-by-me">Made by me</h3>
+<div class="buttons">
+  {% for button in buttons2.mine %}
+    <img src="{{ button.src }}" alt="{{ button.alt }}">
+  {% endfor %}
+</div>
+
+<h3 id="buttons-found">Found</h3>
+<div class="buttons">
+  {% for button in buttons2.found %}
+    {% if button.url %}
+      <a href="{{ button.url }}" class="button">
+        <img src="{{ button.src }}" alt="{{ button.alt }}">
+      </a>
+    {% else %}
+      <span class="button">
+        <img src="{{ button.src }}" alt="{{ button.alt }}">
+      </span>
+    {% endif %}
+  {% endfor %}
+</div>
+
+        <h2 id="blinkies">Blinkies</h2>
+        <img  src="/images/blinkies/ao3.webp" alt="">
+        <img  src="/images/blinkies/kaine.webp" alt="">
+        <img  src="/images/blinkies/kaine2.webp" alt="">
+ </div>

@@ -1,0 +1,51 @@
+---
+title: Media Log | Books
+layout: none
+permalink: /notebook/logs/books/
+nesting: ""
+---
+
+<h2>Currently Reading</h2>
+{% if books.currentlyReading.length %}
+<ul>
+{% for book in books.currentlyReading %}
+  <li>
+    {{ book.title }}{% if book.authors %} by {{ book.authors }}{% endif %}
+    {% if book.score %}- Rating: {{ book.score }}{% endif %}
+    {% if book.tags.length %}<br><small>Tags: {{ book.tags | join(", ") }}</small>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No books currently reading.</p>
+{% endif %}
+
+<h2>Completed</h2>
+{% if books.completed.length %}
+<ul>
+{% for book in books.completed %}
+  <li>
+    {{ book.title }}{% if book.authors %} by {{ book.authors }}{% endif %}
+    {% if book.score %}- Rating: {{ book.score }}{% endif %}
+    {% if book.tags.length %}<br><small>Tags: {{ book.tags | join(", ") }}</small>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No completed books yet.</p>
+{% endif %}
+
+<h2>To Read</h2>
+{% if books.toRead.length %}
+<ul>
+{% for book in books.toRead %}
+  <li>
+    {{ book.title }}{% if book.authors %} by {{ book.authors }}{% endif %}
+    {% if book.score %}- Rating: {{ book.score }}{% endif %}
+    {% if book.tags.length %}<br><small>Tags: {{ book.tags | join(", ") }}</small>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No books on your to-read list.</p>
+{% endif %}

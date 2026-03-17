@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Daydream;
+  src: url(/fonts/Daydream.ttf); /* https://www.dafont.com/daydream-3.font */
+}
+@font-face {
+  font-family: RomanceA;
+  src: url(/fonts/RomanceA.ttf); /* https://cinni.net/?z=/font */
+}
+@font-face {
+  font-family: GothPixelFont;
+  src: url(/fonts/GothPixelFont.ttf); /* https://dacosta.itch.io/gothic-pixel-font */
+}
+@font-face {
+  font-family: OldEnglishGoth;
+  src: url(/fonts/OldEnglishGoth.ttf); /* https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
+}
+@font-face {
+  font-family: Fira Code;
+  src: url(/fonts/FiraCode.ttf); /* https://fonts.google.com/specimen/Fira+Code */
+}
+@font-face {
+  font-family: Kelmscott;
+  src: url(/fonts/Kelmscott.ttf); /* https://www.dafont.com/kelmscott.font */ 
+}
+@font-face {
+  font-family: NDSBIOS;
+  src: url(/fonts/NDSBIOS.ttf); /* https://www.dafont.com/nintendo-ds-bios.font */
+}
+@font-face {
+  font-family: Minecraft; 
+  src: url(/fonts/Minecraft.ttf); /* https://www.dafont.com/minecraft.font */
+}
+@font-face {
+  font-family: Alkhemikal;
+  src: url(/fonts/Alkhemikal.ttf);
+}
+
+@font-face {
+  font-family: Sebaldus Gotisch;
+  src: url(/fonts/Sebaldus-Gotisch.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Pirata One;
+  src: url(/fonts/PirataOne.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Jim Nightshade;
+  src: url(/fonts/JimNightshade.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Chaos;
+  src: url(/fonts/Angelic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Animal Crossing;
+  src: url(/fonts/AnimalCrossing.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Calligraph421;
+  src: url(/fonts/Calligraph421.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Bronela;
+  src: url(/fonts/Bronela.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Mythic Pixels;
+  src: url(/fonts/mythic-pixels.ttf) format("truetype");
+}
+
+
+
+/* Regular Merriweather */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('/fonts/Merriweather-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic Merriweather */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('/fonts/Merriweather-Italic.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* Regular */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono.ttf') format('truetype'); /* https://www.fontsquirrel.com/fonts/dejavu-sans-mono */
+  font-weight: normal;
+  font-style: normal;
+}
+/* Bold */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Italic */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+/* Bold Italic */
+@font-face {
+  font-family: 'DejaVuSansMono';
+  src: url('/fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("/fonts/bootstrap-icons.woff2") format("woff2"),
+       url("/fonts/bootstrap-icons.woff") format("woff");
+}
+
+/* FOLKLORE FONT */
+@font-face {
+  font-family: "folklore";
+    src: url(/fonts/ImFell.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "folklore-it";
+    src: url(/fonts/ImFellIT.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "RoseCaps";
+    src: url(/fonts/rosecaps.ttf) format("truetype");
+}

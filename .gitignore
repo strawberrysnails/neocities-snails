@@ -1,0 +1,5 @@
+.eleventyignore
+node_modules
+.vscode
+.env
+.cache/

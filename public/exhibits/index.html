@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.gif" type="image/gif">
+    <title>Exhibits</title>
+
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Updates RSS" href="/updates/feed.xml">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css">
+
+    
+      <link rel="stylesheet" href="/css/museum.css" type="text/css">
+      
+    
+
+  
+  
+
+  </head>
+
+  <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
+    <aside><p>Thank you for visiting the Museum. Please browse the <a href="/exhibits/shop">gift shop</a> on your way out.</p>
+  <details><summary>Credits</summary>
+    <a rel="noreferrer" target="_blank" href="https://theinspirationgallery.com/"><img src="/images/buttons/sites/inspogallery.png" alt="background image and top border"></a>
+        <a href="https://dollarchive.neocities.org/compendium" target="_blank" rel="noreferrer">
+      <img src="/images/buttons/sites/dollarchive.gif" alt="frame border">
+    </a>
+  </details>
+  <a href="/">return home?</a>
+</aside>
+
+<div class="exhibits-wrap">
+  <div class="exhibits-rail">
+
+    <!-- Exhibit -->
+    <a class="exhibit" href="/exhibits/weirdweb2025/">
+      <div class="exhibit-frame"><img src="/images/exhibits/weirdweb-frame.png"></div>
+      <div class="exhibit-inner">
+        <h2>Weird Web October [2025]</h2>
+        <p>Fun web experiments for the month of October.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 1 -->
+    <a class="exhibit" href="/exhibits/tabling/">
+      <div class="exhibit-frame"><img src="/images/exhibits/tabling.png"></div>
+      <div class="exhibit-inner">
+        <h2>Tabling</h2>
+        <p>My beautiful Tabling created by TabF5.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 2 -->
+    <a class="exhibit placeholder" href="#">
+      <div class="exhibit-frame"></div>
+      <div class="exhibit-inner">
+        <h2>Exhibit III</h2>
+        <p>Interface behaving strangely.</p>
+      </div>
+    </a>
+
+    <!-- Placeholder 3 -->
+    <a class="exhibit placeholder" href="#">
+      <div class="exhibit-frame"></div>
+      <div class="exhibit-inner">
+        <h2>Exhibit IV</h2>
+        <p>Awaiting containment.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+
+
+<script>
+  const exhibits = document.querySelector('.exhibits-wrap'); 
+
+  if (exhibits) {
+    exhibits.addEventListener('wheel', (e) => {
+      if (exhibits.scrollWidth > exhibits.clientWidth) {
+        e.preventDefault();
+        exhibits.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  }
+</script>
+
+
+
+    <script src="/javascript/main.js?nocache=?nocache=1772422058786"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
+  </body>
+</html>

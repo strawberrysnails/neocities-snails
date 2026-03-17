@@ -1,0 +1,189 @@
+---
+layout: index.njk
+title: Site Map
+---
+<style>
+  /*
+Source - https://stackoverflow.com/a/14424029
+Posted by David Thomas, modified by community. See post 'Timeline' for change history
+Retrieved 2026-01-31, License - CC BY-SA 3.0
+*/
+.main-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.main-container li {
+  list-style-type: none;
+  border-left: 2px solid #000;
+  margin-left: 1em;
+}
+
+.main-container li div {
+  padding-left: 1em;
+  position: relative;
+}
+
+.main-container li div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  bottom: 50%;
+  width: 0.75em;
+  border: 2px solid #000;
+  border-top: 0;
+  border-right: 0;
+}
+
+.main-container ul > li:last-child {
+  border-left: 2px solid transparent;
+}
+
+</style>
+<main id="main-content">
+  <div class="main-container">
+<h1>Site Map</h1>
+
+<ul>
+  <!-- Home -->
+  <li>
+    <div><a href="/">Home</a></div>
+  </li>
+
+  <!-- 404 -->
+  <li>
+    <div><a href="/not_found">404 Page</a></div>
+  </li>
+
+    <!-- Bedroom -->
+  <li>
+    <div>
+      <details open>
+        <summary><a href="/bedroom">Bedroom</a> <!-- NEW START--><img src="/images/graphics/pixels/newskull.png"> <!-- NEW END--> </summary>
+        <ul>
+        <li><div><a href="/photogrid">Photos</a></div></li>
+        <li><div><a href="/bedroom/toybox">Toybox</a></div></li>
+        <li><div><a href="/bedroom/lists">Lists</a></div></li>
+        <li><div><a href="/bedroom/piccrew">Piccrews</a></div></li>
+        <li><div><a href="/bedroom/shrines">Shrines</a></div></li>
+
+          <!-- Writings -->
+          <li>
+            <div>
+              <details>
+                <summary><a href="/blog">Writings</a></summary>
+                <ul>
+                  {% for post in collections.blog %}
+                    <li>
+                      <div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Library -->
+  <li>
+    <div>
+      <details>
+        <summary><a href="/library">Library</a></summary>
+        <ul>
+          <!-- placeholders -->
+          <li><div><a href="/library/bookmarks">Bookmarks</a></div></li>
+          <li><div><a href="/library/bookmarks#software">Software/Tools</a></div></li>
+          <li><div><a href="/library/bookmarks#tutorials">Tutorials</a></div></li>
+          <li><div><a href="/library/bookmarks#articles">Articles</a></div></li>
+          <li><div><a href="/library/codes">Code Snippets</a></div></li>
+          <li><div><a href="/library/fonts">Fonts</a></div></li>
+          <li><div><a href="/library/graphics">Graphics</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+  <!-- Courtyard -->
+  <li>
+    <div>
+      <details open>
+        <summary>Courtyard</summary>
+        <ul>
+          <li><div><a href="/links#buttons">Button Wall</a></div></li>
+          <li><div><a href="/links#webrings">Webrings & Cliques</a></div></li>
+          <li><div><a href="/guestbook">Guestbook</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+
+  <!-- Museum -->
+<li>
+  <div>
+    <details open>
+      <summary>Museum</summary>
+      <ul>
+        <!-- Exhibits -->
+        <li>
+          <div>
+            <details open>
+              <summary><a href="/exhibits">Exhibits</a></summary>
+              <ul>
+                <li>
+                  <div><a href="/exhibits/weirdweb2025/">Weird Web October 2025</a></div>
+                </li>
+                <li><div><a href="/exhibits/tabling/">Tabling</a> <!-- NEW START--><img src="/images/graphics/pixels/newskull.png"> <!-- NEW END--> </div></li>
+              </ul>
+            </details>
+          </div>
+        </li>
+    </details>
+  </div>
+</li>
+
+
+  <!-- Laboratory -->
+  <li>
+    <div>
+      <details open>
+        <summary>Laboratory</summary>
+        <ul>
+          <li><div><a href="/site">Colophon</a></div></li>
+          <li><div><a href="/updates">Changelog</a></div></li>
+          <li><div><a href="/site#archives">Archives</a></div></li>
+          <li><div><a href="/uses">Uses</a></div></li>
+          <li>
+            <div>
+              <a href="#">Site Map</a>
+              <small><i class="bi bi-compass"></i> You are here.</small>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </li>
+
+
+  <!-- RSS -->
+  <li>
+    <div>
+      <details open>
+        <summary>RSS Feeds</summary>
+        <ul>
+          <li><div><a href="/blog/feed.xml">Writings Feed</a></div></li>
+          <li><div><a href="/updates/feed.xml">Updates Feed</a></div></li>
+        </ul>
+      </details>
+    </div>
+  </li>
+</ul>
+
+</div>
+</main>

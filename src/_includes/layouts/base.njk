@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon.gif" type="image/gif">
+    <title>{{ title or "snails.town" }}</title>
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Blog RSS"
+      href="/feed.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Updates RSS"
+      href="/updates/feed.xml"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" type="text/css"/>
+
+    {% if page.url == "/" %}
+      <link rel="stylesheet" href="/css/index.css" type="text/css"/>
+    {% elif page.url.startsWith("/blog") %}
+      <link rel="stylesheet" href="/css/blog.css" type="text/css"/>
+    {% elif page.url.startsWith("/library") %}
+      <link rel="stylesheet" href="/css/library.css" type="text/css"/>
+          {% elif page.url.startsWith("/exhibits") %}
+      <link rel="stylesheet" href="/css/museum.css" type="text/css"/>
+      {% elif page.url.startsWith("/photogrid") %}
+      <link rel="stylesheet" href="/css/photogrid.css" type="text/css"/>
+      {% elif page.url.startsWith("/toybox") %}
+      <link rel="stylesheet" href="/css/toybox.css" type="text/css"/>
+          {% elif page.url.startsWith("/bedroom") %}
+      <link rel="stylesheet" href="/css/bedroom.css" type="text/css"/>
+    {% endif %}
+    
+
+  {# Render extra head content from frontmatter #}
+  {{ head_extra | safe }}
+
+  </head>
+
+  <body>
+    <div id="skipnav"><a href="#main-content">Skip to main content</a></div>
+    {{ content | safe }}
+
+    <script src="/javascript/main.js?nocache={{ nocache }}"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
+  </body>
+</html>

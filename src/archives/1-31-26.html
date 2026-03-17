@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snail-paced personal space on the web.">
+        <link href="https://snails.town/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<title>Snails</title>
+
+  </head>
+  <style>
+    :root{
+  --darkcolor: #000000;
+  --text:#f3d5e1;
+  --text2:#ffffff;
+  --text3:#333333;
+  --glow:#ffffff5d;
+}
+
+body {
+  font-family: DejaVuSansMono, monospace;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  letter-spacing: 0.5px;
+  margin: auto;
+  text-align: left;
+  cursor: url(https://snails.town/archives/1-31-26/cursor.png), default;
+  background-color: var(--darkcolor);
+  background-image: url(https://snails.town/archives/1-31-26/bg9.png);
+  background-size: 100% auto; 
+  background-position: top center; 
+  background-repeat: no-repeat;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+a{
+  color:var(--text2);
+  text-decoration: underline dotted;
+  -webkit-transition: all ease-in-out .2s;
+  -moz-transition: all ease-in-out .2s;
+  -o-transition: all ease-in-out .2s;
+  -ms-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+a:hover{
+text-shadow: 0 0 5px var(--glow), 0 0 10px var(--glow), 0 0 15px var(--glow);
+}
+
+a, button{
+  cursor: url(https://snails.town/archives/1-31-26/pointer.png), pointer;
+}
+
+/* Change text selection color */
+::selection {
+  background: var(--text3);  /* highlight background */
+  color: #000000;       /* text color while highlighted */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: var(--text3);
+  color: #ffffff;
+}
+
+h1, h2, h3{
+  font-family: Pirata One;
+  letter-spacing: .2rem;
+  color:var(--text2);
+}
+
+h1{
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+h2{
+  font-size: 3em;
+}
+
+h3{
+  font-size: 2em;
+}
+
+li{
+margin-left: -20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 10px; 
+  margin: 40px auto;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  box-sizing: border-box;
+  border: 50px solid transparent;
+  background-color: #000000bd;
+  border-image: url(https://snails.town/archives/1-31-26/border7.png) 50 round;
+  border-image-outset: 20px;
+  background-image: url(https://snails.town/archives/1-31-26/bg8.png);
+  overflow: hidden; 
+  height: 100%;
+  z-index: 1;
+}
+
+
+header, nav, main, aside, footer {
+  border: #686868 4px groove;
+  background-color: #0000007e;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+main{
+  overflow-y: auto;
+}
+
+
+.main-layout {
+  display: flex;
+  flex: 1; 
+  flex-direction: row; 
+  gap: 10px;
+  width: 100%; 
+  overflow: hidden;
+}
+
+
+header{
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #1b1b1be7 0%, #0f0f0fe7 50%, #000000e7 100%);
+  background-size: cover;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.title {
+  display: inline-block;
+  margin-top:15px;
+  margin-left:10px;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  padding: 5px 10px;
+  transition: text-shadow 0.5s ease;
+  color:white;
+  font-family: RomanceA;
+  text-decoration: none;
+}
+
+.title:hover {
+  text-shadow: 0 0 5px var(--glow), 0 0 10px var(--glow), 0 0 15px var(--glow);
+  color:white;
+  font-family: Chaos;
+  font-size: 4rem;
+}
+
+
+.lunar-tear{
+position: absolute;
+width: 400px;
+right: 26%;
+top:48px;
+filter:contrast(130%) grayscale(30%) drop-shadow(10px 5px 10px #ffffff2f) brightness(80%);
+z-index: 9;
+}
+
+nav {
+  width: 20%; 
+  box-sizing: border-box;
+}
+
+
+main {
+  flex: 1; 
+  box-sizing: border-box;
+}
+
+aside {
+  width: 22%; 
+  box-sizing: border-box;
+}
+
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: RomanceA;
+}
+
+.mobile-links{
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    overflow-y: scroll;
+  background-color: #000000bd;
+  border: none;
+  background-image: none;
+  }
+  
+
+  .main-layout {
+    flex-direction: column; 
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  nav, main, aside {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .zero{
+    display: none;
+  }
+
+  .lunar-tear{
+    display: none;
+  }
+
+  .title{
+    font-size: 3em;
+  }
+
+  nav{
+  display: none;
+  }
+
+  main {
+    height: auto; /* let content define height */
+    min-height: 200px; /* optional safety */
+  }
+  .container {
+    height: auto; /* allow full content to scroll */
+    overflow-y: visible;
+  }
+
+
+.mobile-links{
+  font-size: 1.5em;
+  width: 100%;
+  display: block;
+  font-family: Jim Nightshade;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.3s ease; 
+  margin-bottom: 5px; 
+  box-sizing: border-box;
+}
+
+  .mobile-links a{
+    padding: 15px;
+    line-height: 2em;
+  }
+
+.image-frame {
+width: 100%;
+margin-top:50px;
+}
+  }
+
+.zero {
+  position: fixed; 
+  bottom: -200px; 
+  right: -150px; 
+  width: 530px; 
+  height: auto; 
+  z-index: 10;
+  cursor: url(https://snails.town/archives/1-31-26/pointer.png), pointer;
+  transition: ease-in-out .5s;
+  -webkit-transition: ease-in-out .5s;
+  -moz-transition: ease-in-out .5s;
+  -o-transition: ease-in-out .5s;
+  -ms-transition: ease-in-out .5s;
+  transition: all ease-in-out .2s;
+  
+}
+
+.zero:hover{
+    transform:translateY(10px);
+}
+
+
+
+@media (max-width: 1530px) {
+.zero{
+    display: none;
+}
+}
+
+
+.responsive {
+  position: relative;
+  display: inline-block;
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  top:55px;
+  left:20px;
+  margin-bottom: 50px;
+  filter: brightness(120%);
+  z-index: 2;
+}
+
+.image-frame:hover {
+  transform: translateY(3px) translateX(3px) rotate(2deg);
+}
+
+
+.clipped-link {
+  display: block;
+  width: 100%;
+  height: auto;
+  clip-path: ellipse(45% 42% at 50% 45%);
+  -webkit-clip-path: ellipse(45% 42% at 50% 45%);
+  overflow: hidden; 
+  position: relative;
+  z-index: 2;
+}
+
+
+.inner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  filter: blur(1px) grayscale(90%);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+}
+
+
+.inner-image:hover {
+filter:grayscale(10%);
+}
+
+.frame-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://snails.town/archives/1-31-26/frame2.png") no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 2;
+  transform: scale(1.5) translate(0, -5%);
+  transform-origin: center; 
+}
+
+.nav-title {
+  background-image: url(https://snails.town/archives/1-31-26/title2.png);
+  font-family: RomanceA;
+  height:40px;
+  margin-top:-10px;
+   transform: translateY(20px);
+  background-size: cover;     
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;               
+  font-size: 1rem;          
+  font-weight: bold;
+  text-align: center;         
+  display: flex;              
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: .5rem;
+}
+
+
+.sidebar-links a {
+  font-family: Jim Nightshade;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 0.9rem;
+  height: 40px; 
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.sidebar-links a:hover{
+  font-family: Chaos;
+  font-size: 0.7rem;
+}
+
+.sidebar-links a::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  background-image: url(https://snails.town/archives/1-31-26/button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 1px;
+}
+
+
+.sidebar-links a:hover::after {
+  animation: shimmer 0.5s ease-in-out;
+  transform: rotate(1deg) scale(1.02);
+}
+
+@keyframes shimmer {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.5); }
+  100% { filter: brightness(1); }
+}
+
+
+      .buttons-n-blinkers {
+  overflow: hidden;
+  width: fit-content; /* just for demonstration */
+  position: relative;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.buttons-n-blinkers > div {
+  animation: marquee 20s linear infinite;
+  animation-play-state: paused;
+  animation-delay: -10s; /* This MUST be -duration/2 */
+  width: 100%;
+  min-width: fit-content;
+  text-wrap: nowrap;
+  filter:grayscale(75%);
+}
+
+.buttons-n-blinkers > div.follower {
+  position: absolute;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.buttons-n-blinkers > div.play {
+  animation-play-state: running;
+}
+
+.buttons-n-blinkers:hover > div.play {
+  animation-play-state: paused;
+}
+
+.buttons-n-blinkers > div.img:hover{
+ filter:grayscale(0%);
+}
+  </style>
+  <body>
+    <img src="https://snails.town/archives/1-31-26/zero.png" alt="zero" class="zero" id="myBtn" data-tooltip="for debug">
+    <img class="lunar-tear" src="https://snails.town/archives/1-31-26/DOD3_flower.png">
+    <a href="/about">← back to main site</a>
+<div class="container">
+  <header><a href="#" class="title">Snails.Town</a></header>
+  <div class="main-layout">
+     <!-- LEFT SIDEBAR -->  <div class="mobile-links">
+      <a href="#">Blog</a>
+      <a href="#">Neighborhood</a>
+      <a href="#">Notebook</a>
+      <a href="#">About</a>
+      <a href="#">Shrines</a>
+      </div>
+      <nav class="sidebar-links">
+      <h3 class="nav-title">Navigation</h3>
+      <a href="#">Blog</a>
+      <a href="#">Neighborhood</a>
+      <a href="/#">Notebook</a>
+      <a href="#">About</a>
+      <a href="#">Shrines</a>
+         <img src="https://snails.town/archives/1-31-26/intoner-white.png">
+    </nav> 
+        <main>
+    <div style="margin-top: 20px;">
+<img src="https://snails.town/archives/1-31-26/wiess.png" alt="Grimore Wiess" style="float:left; width:190px; height:auto; margin:0 15px 15px 0; border-radius:0px; transition: transform 0.3s;" onmouseover="this.style.transform='rotate(-5deg)';" onmouseout="this.style.transform='rotate(0deg)';">
+<p><b style="font-size:3em; font-family: Kelmscott;">Welcome,</b> traveler - you have landed in <i>snails.town</i>, a personal archive of my thoughts, interests, creations, and more. The website theme is inspired by the <i>DrakeNieR</i> series,
+  specifically Drakengard 3, my favorite video game. I enjoy <a href="#">writing</a>, experimenting with javascript, and <a href="#">gaming</a>. I write about web development, device modding, and traveling.
+ Some of my free-to-use templates and widgets can be found in the <a href="#">notebook</a>. </p>
+<p>This website is safe for work and mobile-friendly. Some things are still a work-in-progress to me. You can learn more about it <a href="#">here</a>.</p>
+<p>Please explore freely &amp; you are welcome to leave a message in my <a href="#">guestbook</a>. Thanks for visiting! (。・ω・。)</p> 
+</div>
+<hr>
+<fieldset>
+  <legend>Recent Blog Post <a href="#"><i class="bi bi-rss-fill"></i> RSS</a></legend>
+    
+          
+            <i class="bi bi-paperclip"></i> <a href="/blog/2026/2025patchnotes-0101/">2025 Patch Notes</a> |
+            <i class="bi bi-calendar-heart"></i> <time datetime="2026-01-01">January 1, 2026</time> | <i class="bi bi-stopwatch"></i> 2 min
+          
+          
+            <p>A recap of the year and some recent updates.</p>
+          
+</fieldset><br>
+<fieldset>
+<legend>Update Log <a href="#"><i class="bi bi-rss-fill"></i> RSS</a></legend>
+
+  <ul>
+    
+      <li>
+        <strong><time datetime="2026-01-01">January 1, 2026</time></strong> – <a href="#">Blog post</a> on 2025 &amp; <a href="#">photos</a>!
+      </li>
+    
+    
+      <li>
+        <strong><time datetime="2025-10-18">October 18, 2025</time></strong> – New <a href="#">photo</a> and <a href="#">weird web october</a>.
+      </li>
+    
+    
+      <li>
+        <strong><time datetime="2025-10-15">October 15, 2025</time></strong> – Completed day 7-13 of <a href="#">weird web october</a>. Yes, I'm behind &lt;3
+      </li>
+    
+  </ul>
+...See all previous updates <a href="#">here.</a>
+
+
+</fieldset> 
+</main>
+<aside>
+  
+
+  
+<div class="responsive">
+  <div class="image-frame">
+    <a class="clipped-link" href="#">
+      <img class="inner-image" src="https://snails.town/photogrid/christmas2025.png" alt="Recent Photo">
+    </a>
+    <div class="frame-overlay"></div>
+  </div>
+</div>
+<hr>
+
+
+
+
+<h3 style="line-height: 0;">Status</h3>
+<ul>
+  
+    <li>Playing:<br>
+      <a href="#">Blue Prince</a> (10.7 hrs)</li>
+  
+  
+  <li>Watching:<br>
+    
+      <a href="#">Chuunibyou demo Koi ga Shitai!</a>
+    
+  </li>
+  
+  <li>Reading:<br>
+    
+      <a href="#">Hotaru no Yomeiri</a>
+    
+  </li>
+</ul>
+<hr>
+<div class="buttons-n-blinkers">
+  <div>
+<img src="https://snails.town/archives/1-31-26/zerodod3.png" alt="zerodod3.png">
+<img src="https://snails.town/archives/1-31-26/zeromikhail.png" alt="zeromikhail.png">
+<img src="https://snails.town/archives/1-31-26/mikhail.png" alt="mikhail.png">
+<img src="https://snails.town/archives/1-31-26/onedod3.png" alt="onedod3.png">
+<img src="https://snails.town/archives/1-31-26/twodod3.png" alt="twodod3.png">
+<img src="https://snails.town/archives/1-31-26/threedod3.png" alt="threedod3.png">
+<img src="https://snails.town/archives/1-31-26/fourdod3.png" alt="fourdod3.png">
+<img src="https://snails.town/archives/1-31-26/fivedod3.png" alt="fivedod3.png">
+  </div>
+</div>
+
+<!-- MOON START © wdisseny -->
+
+<div id="contain_moon" style="text-align:center;padding-top:5px;padding-bottom:5px;">
+    <div style="font-weight:bold"></div>
+    <div style="margin-top:-7px;margin-bottom:-15px;padding:30px;filter: drop-shadow(0 0 10px hsla(0, 0%, 30%, 0.171))" class="moon-svg"></div>
+    <div></div>
+    <div style="font-size:smaller">.</div>
+</div>
+
+
+<script>
+(function() {
+    var d = new Date().getDate();
+    var m = document.querySelectorAll("#contain_moon div");
+    var a = new XMLHttpRequest();
+    var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=100&lightColor=rgb(240, 240, 240)&shadeColor=rgb(31, 31, 31)&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + "";
+    
+    m[1].style.height = "100px";
+    
+    a.onreadystatechange = function() {
+        if (a.readyState == 4 && a.status == 200) {
+            var b = JSON.parse(a.responseText);
+            m[1].innerHTML = b.phase[d].svg;
+            if (typeof moon_widget_loaded == "function") moon_widget_loaded(b);
+            m[2].innerHTML = b.phase[d].npWidget;
+            m[3].innerHTML = "Next full moon:<br>" + b.nextFullMoon;
+        }
+    };
+    
+    a.open("GET", url, true);
+    a.send();
+})()
+</script>
+<style>
+#contain_moon div:nth-child(3) {
+    position: relative; 
+    font-family: "Jim Nightshade";
+    margin-top: -30px;
+    z-index: 2; 
+    font-size: 1.3em; 
+    color: #ffffff;
+  }
+
+.moon-svg {
+    position: relative; 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1; 
+}
+
+.moon-svg:hover {
+    transform: scale(1.1); 
+}
+
+</style>
+
+<!-- MOON END -->
+ 
+</aside>
+
+  </div>
+  <footer>
+  <!-- FOOTER -->  ᓚᘏᗢ snails.town since 2019 | <a href="#">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a> 
+  </footer>
+
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+<script src="/javascript/main.js?nocache=?nocache=1767917075190"></script>
+  </body>
+</html>
+
+
+

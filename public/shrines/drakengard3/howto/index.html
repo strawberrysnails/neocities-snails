@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="/images/favicon.gif" type="image/png"> <!-- Credit: https://pixelsafari.neocities.org/favicon/2 -->
+        <title>Snails | Drakengard 3 | How to Play</title>
+            <!-- CSS/JS + CACHEBUSTING -->
+            <link rel="stylesheet" href="/css/dg3.css?nocache=?nocache=1772422058786">
+            <link rel="stylesheet" href="/css/fonts.css">
+            <link rel="stylesheet" href="/css/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <img src="/images/circle3.gif" class="circle">
+<div class="grid-container">
+  <div class="header"></div>
+  <div class="sidebar">
+    <div class="timeline-list">
+<ul>
+  <li><a href="/shrines/drakengard3">Index</a></li>
+  <li>
+    Introduction
+    <ul>
+      <li><a href="/shrines/drakengard3/howto">How to play</a></li>
+      <li>Gameplay Overview</li>
+    </ul>
+  </li>
+    <li>
+    Story &amp; Lore
+    <ul>
+      <li>Story Summary</li>
+      <li>Characters</li>
+      <li>Weapon Stories</li>
+      <li>Verse Timeline</li>
+      <li>Side Content / DLC</li>
+      <li>Lore Connections</li>
+    </ul>
+  </li>
+ <li>
+    Media
+    <ul>
+      <li>Gallery</li>
+      <li>Soundtrack</li>
+      <li>Quotes &amp; Dialogue</li>
+    </ul>
+  </li>
+  <li>
+    Meta
+    <ul>
+      <li><a href="/shrines/drakengard3/links">Links/Resources</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+          <!--MUSIC PLAYER -->
+<div class="simple-player">
+  <img class="cover" src="https://files.catbox.moe/kc2d48.jpg" alt="Cover">
+  
+  <div class="info">
+    <div class="song-title"><span>Song Title Goes Here</span></div>
+    <div class="controls">
+<div class="controls">
+  <button class="prev-track" onclick="prevTrack()">⏮</button>
+  <button class="playpause-track" onclick="playpauseTrack()"><i class="bi bi-play-fill"></i></button>
+  <button class="next-track" onclick="nextTrack()">⏭</button>
+</div>
+
+    </div>
+    <div class="progress">
+      <span class="current-time">0:00</span>
+      <input type="range" min="0" max="100" value="0" class="seek-slider" onchange="seekTo()">
+      <span class="total-duration">0:00</span>
+    </div>
+  </div>
+
+  <audio id="music" autoplay src=""></audio>
+</div>
+<!-- END MUSIC PLAYER -->
+  </div>
+  <div class="main">
+    <h1>How to play Drakengard 3</h1>
+<p>Drakengard 3 was released exclusively for the Playstation 3, however it's very <em>very</em> simple to emulate. In fact, even if you have a Playstation 3, <strong>it is highly recommend to emulate it anyways.</strong> Emulating allows for you to play the game at 60fps, as it was originally capped at 30fps and has slow loading times.</p>
+<p><em>Note: When I first played the game, my husband installed everything for me so I am just phoning him in to write this. If you have any questions or need clarification, please feel free to contact me.</em></p>
+<h3 id="step-1-download-rps3" tabindex="-1"><a class="header-anchor" href="#step-1-download-rps3" aria-hidden="true">#</a> Step 1: Download RPS3</h3>
+<ul>
+<li>Download: <a rel="noreferrer" target="_blank" href="https://rpcs3.net">rpcs3.net</a></li>
+<li>If you need further help with installing and setting up rpcs3, please refer to the <a rel="noreferrer" target="_blank" href="https://rpcs3.net/quickstart">rpcs3 Quickstart Guide</a>.</li>
+</ul>
+<h3 id="step-2-download-and-install-drakengard-3" tabindex="-1"><a class="header-anchor" href="#step-2-download-and-install-drakengard-3" aria-hidden="true">#</a> Step 2: Download and install Drakengard 3</h3>
+<ul>
+<li>For sheer ease of use, I recommend setting up <a rel="noreferrer" target="_blank" href="https://nopaystation.com/">NoPayStation</a> (NoPayStation is also very useful if you plan on emulating any other PS3 games). If you need more direct instructions with setting this up, please see this <a rel="noreferrer" target="_blank" href="https://www.cfwaifu.com/nopaystation/">Guide</a>.</li>
+<li>Using <strong>NoPayStation</strong>, search "Drakengard" and download the US version of Drakengard 3 (only if you care about playing the DLC with Japanese voices).</li>
+<li>If you can't or don't want to use NoPayStation, here is another link to the main game.</li>
+<li><a rel="noreferrer" target="_blank" href="https://myrient.erista.me/files/No-Intro/Sony%20-%20PlayStation%203%20(PSN)%20(Content)/">Mirror</a> - and search "Drakengard". Use "Drakengard 3 (USA).zip".</li>
+<li>Once downloaded, you can install the .pkg file through the rpcs3 menu.</li>
+</ul>
+<h3 id="step-3-download-and-install-the-101-patch" tabindex="-1"><a class="header-anchor" href="#step-3-download-and-install-the-101-patch" aria-hidden="true">#</a> Step 3: Download and install the 1.01 patch</h3>
+<ul>
+<li>You'll need the patch for the DLC undub later, and it fixes some bugs you may or may not encounter in the game.</li>
+<li><a rel="noreferrer" target="_blank" href="http://b0.ww.np.dl.playstation.net/tppkg/np/NPUB31251/NPUB31251_T2/8e926275905549a9/UP0082-NPUB31251_00-DOD3MAINGAME0000-A0101-V0101-PE.pkg">Link</a><br>
+<br></li>
+<li>Once downloaded, install it in the same way you installed the main game.</li>
+</ul>
+<h3 id="step-4-download-the-dlc-and-japanese-voice-pack" tabindex="-1"><a class="header-anchor" href="#step-4-download-the-dlc-and-japanese-voice-pack" aria-hidden="true">#</a> Step 4: Download the DLC and Japanese Voice Pack</h3>
+<ul>
+<li>The DLC is technically <em>optional</em> but brings a lot to the story. You also get to play as the intoner sisters, which is really fun.</li>
+<li>When you complete missions from the DLC you unlock "Memories of the Intoners" which are extra stories that delve into the intoners lives.</li>
+<li>It also includes cute costumes and headgear for Zero and Mikhail.  ⸜(｡˃ ᵕ ˂ )⸝♡<br>
+<br></li>
+<li>In a greedy move by Square Enix, the Japanese dub was sold separately as DLC and doesn't add japanese voices to the Intoner's prologue DLCs (see step 4a).</li>
+<li>I personally recommend playing the game with the Japanese dub, as intended.<br>
+<br></li>
+<li>Using <strong>NoPayStation</strong>, download and install (the same way you've been doing it): "Drakengard 3 - Zero/One/Two/Three/Four/Five's Prologue" and "Drakengard 3 - Japanese Voice Pack" (as well as any of the cosmetic DLCs you want)</li>
+</ul>
+<h3 id="step-4a-the-dlc-undub" tabindex="-1"><a class="header-anchor" href="#step-4a-the-dlc-undub" aria-hidden="true">#</a> Step 4a: The DLC Undub</h3>
+<ul>
+<li>Despite the Japanese Voice Pack not working for the DLC prologues, someone has made a guide on how to manually patch in the japanese voice files while keeping your game in english.</li>
+<li><a rel="noreferrer" target="_blank" href="https://gbatemp.net/threads/release-drakengard-3-dlc-undub-prototype-ver-0-70710678118.585938/">Guide</a></li>
+</ul>
+<p><strong>NOTE:</strong> The process of undubbing the DLC will break the Japanese Voice Pack for the main game, thus I recommend not playing the DLC until <strong>after</strong> you complete the main game (Ending D) if you intend to play it in Japanese.</p>
+<h3 id="step-5-play-the-game" tabindex="-1"><a class="header-anchor" href="#step-5-play-the-game" aria-hidden="true">#</a> Step 5: Play the game!</h3>
+<ul>
+<li>Before launching the game, right click the game in your rpcs3 library and click "Manage Game Patches". At the bare minimum, I recommend ticking "Unlock FPS". However I also ticked "Disable low-res Depth-of-field" and "Increased Horizontal Camera Sensitivity".<br>
+<br></li>
+<li>Launch the game!</li>
+</ul>
+<p>If any links are broken, do some googling. If you're really desperate, you can <a href="mailto:hello@snails.town">e-mail me</a>. (. ❛ ᴗ ❛.)</p>
+
+  </div>
+  <div class="footer">   <a href="credits">credits</a> | <a href="/">back to snails.town</a> | <a href="mailto:hello@snails.town">contact me</a> </div>
+</div>
+
+    <button id="myBtn" title="Go to top"><i class="bi bi-arrow-up-square-fill"></i></button>
+        <script src="/javascript/main.js"></script>
+        <script src="/javascript/musicplayer.js"></script>
+</body>
+</html>
+
