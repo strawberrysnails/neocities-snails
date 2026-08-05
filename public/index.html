@@ -104,6 +104,10 @@
                 <ul>
                   
                     <li>
+                      <div><a href="/blog/2026/2026cons-0803/">Connecticon &amp; Otakon 2026</a></div>
+                    </li>
+                  
+                    <li>
                       <div><a href="/blog/2026/newwebsite-0228/">New Website in the Snails Universe</a></div>
                     </li>
                   
@@ -368,17 +372,17 @@
   <ul>
     
       <li>
+        <strong><time datetime="2026-08-04">Aug 4, 2026</time></strong>: Sorry for the lack of updates! I have a <a href="/blog/2026/2026cons-0803/">new blog post</a> up about the 2 conventions I went to this year. Also thank you for 300 followers &amp; 300k views! ˚ʚ♡ɞ˚
+      </li>
+    
+    
+      <li>
         <strong><time datetime="2026-02-25">Feb 25, 2026</time></strong>:  Another new page: <a href="/bedroom/lists">Lists</a> :3
       </li>
     
     
       <li>
         <strong><time datetime="2026-02-22">Feb 22, 2026</time></strong>: New page: <a href="/bedroom/">Bedroom</a>!
-      </li>
-    
-    
-      <li>
-        <strong><time datetime="2026-02-17">Feb 17, 2026</time></strong>: A brand new exhibit has been added to the <a rel="noreferrer" target="_blank" href="https://snails.town/exhibits/">museum</a>.
       </li>
     
   </ul>
@@ -405,11 +409,11 @@ Please explore freely &amp; you are welcome to leave a message in my <a href="/g
 <h2>Recent Blog Post <a href="/blog/feed.xml"><i class="bi bi-rss-fill"></i></a></h2>
     
           
-            <h3><i class="bi bi-paperclip"></i><a href="/blog/2026/newwebsite-0228/">New Website in the Snails Universe</a></h3>
-            <i class="bi bi-calendar-heart"></i> <time datetime="2026-02-28">February 28, 2026</time> | <i class="bi bi-stopwatch"></i> 1 min
+            <h3><i class="bi bi-paperclip"></i><a href="/blog/2026/2026cons-0803/">Connecticon &amp; Otakon 2026</a></h3>
+            <i class="bi bi-calendar-heart"></i> <time datetime="2026-08-03">August 3, 2026</time> | <i class="bi bi-stopwatch"></i> 4 min
           
           
-            <p>Compartmenting my tech-y stuff and personal stuff.</p>
+            <p>My July con experiences this year</p>
           
 </div>
         <div class="stain"></div>
@@ -466,7 +470,7 @@ Please explore freely &amp; you are welcome to leave a message in my <a href="/g
 </script>
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1772422058786"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1785967892256"></script>
     <script src="/javascript/jquery.min.js"></script>
     <script src="/javascript/jquery.style-my-tooltips.js"></script>
     <script>
@@ -476,5 +480,80 @@ Please explore freely &amp; you are welcome to leave a message in my <a href="/g
         });
     })(jQuery);
 </script>
+
+    <!-- BLOG IMAGE MODAL -->
+<div id="photoModal">
+  <span id="closeModal">×</span>
+  <div class="modal-content">
+    <div class="modal-inner">
+      <button id="prevPhoto" class="modal-nav">‹</button>
+      <img id="modalImage" src="">
+      <button id="nextPhoto" class="modal-nav">›</button>
+    </div>
+    <div id="modalCaption"></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('photoModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+  const prevBtn = document.getElementById('prevPhoto');
+  const nextBtn = document.getElementById('nextPhoto');
+  const closeBtn = document.getElementById('closeModal');
+  let photos = Array.from(document.querySelectorAll('.blog-img'));
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = photos[index];
+    if (!img) return;
+    modalImg.src = img.src;
+    caption.textContent = img.alt || '';
+    modal.style.display = "block";
+    currentIndex = index;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Delegated click handler on blog-content
+  const blogContent = document.querySelector('.blog-content');
+  if (blogContent) {
+    blogContent.addEventListener('click', e => {
+      if (!e.target.classList.contains('blog-img')) return;
+      // Re-fetch photos in case new ones were added dynamically
+      photos = Array.from(document.querySelectorAll('.blog-img'));
+      const index = photos.indexOf(e.target);
+      if (index !== -1) openModal(index);
+    });
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+
+  // Click outside modal-inner closes modal
+  modal.addEventListener('click', e => {
+    if (!document.querySelector('.modal-inner').contains(e.target)) closeModal();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    openModal((currentIndex - 1 + photos.length) % photos.length);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    openModal((currentIndex + 1) % photos.length);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (modal.style.display !== "block") return;
+    if (e.key === "Escape") closeModal();
+    else if (e.key === "ArrowLeft") openModal((currentIndex - 1 + photos.length) % photos.length);
+    else if (e.key === "ArrowRight") openModal((currentIndex + 1) % photos.length);
+  });
+});
+</script>
+
   </body>
 </html>

@@ -1,0 +1,144 @@
+---
+title: Media Log
+layout: main
+permalink: /medialog/
+---
+
+<div class="medialog-wrap">
+  <div class="tabs" role="tablist">
+    <button class="tab active" role="tab" data-tab="games">games</button>
+    <button class="tab" role="tab" data-tab="watched">co-op watch</button>
+    <button class="tab" role="tab" data-tab="anime">anime</button>
+    <button class="tab" role="tab" data-tab="vn">visual novels</button>
+    <button class="tab" role="tab" data-tab="manga">manga</button>
+    <button class="tab" role="tab" data-tab="books">books</button>
+  </div>
+
+  {# ── Games ── #}
+  <section id="tab-games" class="tab-panel active">
+    {% set sections = ["currently playing", "completed", "planning"] %}
+    {% for status in sections %}
+      {% set items = gamelog | selectattr("type", "equalto", "played") | selectattr("status", "equalto", status) %}
+      {% if items | length %}
+        <h2 class="section-label">{{ status }}</h2>
+        <div class="card-grid">
+          {% for item in items %}
+            {% include "html/mediacard.njk" %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  {# ── Co-op Watch ── #}
+  <section id="tab-watched" class="tab-panel">
+    {% set sections = ["currently watching", "completed", "planning"] %}
+    {% for status in sections %}
+      {% set items = gamelog | selectattr("type", "equalto", "watched") | selectattr("status", "equalto", status) %}
+      {% if items | length %}
+        <h2 class="section-label">{{ status }}</h2>
+        <div class="card-grid">
+          {% for item in items %}
+            {% include "html/mediacard.njk" %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  {# ── Anime ── #}
+  <section id="tab-anime" class="tab-panel">
+    {% if animelog | length %}
+      {# same pattern as above once animelog.js exists #}
+    {% else %}
+      <p class="wip">nothing logged yet!</p>
+    {% endif %}
+  </section>
+
+  {# ── Visual Novels ── #}
+  <section id="tab-vn" class="tab-panel">
+    {% if vnlog | length %}
+    {% else %}
+      <p class="wip">nothing logged yet!</p>
+    {% endif %}
+  </section>
+
+  {# ── Manga ── #}
+  <section id="tab-manga" class="tab-panel">
+    {% if mangalog | length %}
+    {% else %}
+      <p class="wip">nothing logged yet!</p>
+    {% endif %}
+  </section>
+
+  {# ── Books ── #}
+  <section id="tab-books" class="tab-panel">
+    {% if booklist | length %}
+    {% else %}
+      <p class="wip">nothing logged yet!</p>
+    {% endif %}
+  </section>
+</div>
+<script>
+  document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+</script>
+
+<!-- OLD VERSION
+<main>
+<h1>Media Log</h1>
+
+{% set animeList = (anime.anime | default([])) %}
+{% set mangaList = (manga.manga | default([])) %}
+{% set gamelog = gamelog | default([]) %}
+
+<div class="link-box">
+
+  <a href="games" class="link-card">
+    <h2>Games</h2>
+    {% if gamelog.length %}
+      <p>Now playing: <strong>{{ gamelog | getCurrentGame }}</strong></p>
+      <p>Watching: <strong>{{ gamelog | getCurrentWatchedGame }}</strong></p>
+    {% else %}
+      <p>No game data available.</p>
+    {% endif %}
+        {% if steam %}
+    <p> Last Played on Steam: <strong>{{ steam.name }}</strong>· {{ steam.hours }} hrs</p>
+    {% endif %}
+  </a>
+
+  <a href="manga" class="link-card">
+    <h2>Manga</h2>
+    {% if mangaList.length %}
+      <p>Now reading: <strong>{{ mangaList | getCurrentMangaRead }}</strong></p>
+    {% else %}
+      <p>No manga data available.</p>
+    {% endif %}
+  </a>
+
+  <a href="anime" class="link-card">
+    <h2>Anime</h2>
+    {% if animeList.length %}
+      <p>Now watching: <strong>{{ animeList | getCurrentAnimeWatch }}</strong></p>
+    {% else %}
+      <p>No anime data available.</p>
+    {% endif %}
+  </a>
+
+
+
+<div class="link-card">
+  <h2>Music</h2>
+  <div id="lastfm-widget">
+    Loading...
+  </div>
+ <small>powered by <a href="https://github.com/biancarosa/lastfm-last-played" target="_blank">@biancarosa/lastfm-last-played</a></small>
+</div>
+</main>
+->

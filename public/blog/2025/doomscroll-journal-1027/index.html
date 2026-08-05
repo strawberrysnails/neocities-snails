@@ -104,6 +104,10 @@
                 <ul>
                   
                     <li>
+                      <div><a href="/blog/2026/2026cons-0803/">Connecticon &amp; Otakon 2026</a></div>
+                    </li>
+                  
+                    <li>
                       <div><a href="/blog/2026/newwebsite-0228/">New Website in the Snails Universe</a></div>
                     </li>
                   
@@ -407,6 +411,35 @@
 |
     
     
+</div>
+</div>
+</div>
+<footer> ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a></footer>
+
+
+<script>
+[...document.querySelectorAll(".buttons-n-blinkers")]
+  .map(div => div.children[0])
+  .forEach(innerDiv => {
+    let follower = innerDiv.cloneNode(true);
+    follower.classList.add("follower");
+    innerDiv.parentElement.appendChild(follower);
+    follower.classList.add("play");
+    innerDiv.classList.add("play");
+  });
+</script>
+
+
+    <script src="/javascript/main.js?nocache=?nocache=1785967892256"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
 
     <!-- BLOG IMAGE MODAL -->
 <div id="photoModal">
@@ -420,6 +453,7 @@
     <div id="modalCaption"></div>
   </div>
 </div>
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('photoModal');
@@ -428,14 +462,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.getElementById('prevPhoto');
   const nextBtn = document.getElementById('nextPhoto');
   const closeBtn = document.getElementById('closeModal');
-
   let photos = Array.from(document.querySelectorAll('.blog-img'));
   let currentIndex = 0;
 
   function openModal(index) {
     const img = photos[index];
     if (!img) return;
-
     modalImg.src = img.src;
     caption.textContent = img.alt || '';
     modal.style.display = "block";
@@ -447,14 +479,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Delegated click handler on blog-content
-  document.querySelector('.blog-content').addEventListener('click', e => {
-    if (!e.target.classList.contains('blog-img')) return;
-
-    // Re-fetch photos in case new ones were added dynamically
-    photos = Array.from(document.querySelectorAll('.blog-img'));
-    const index = photos.indexOf(e.target);
-    if (index !== -1) openModal(index);
-  });
+  const blogContent = document.querySelector('.blog-content');
+  if (blogContent) {
+    blogContent.addEventListener('click', e => {
+      if (!e.target.classList.contains('blog-img')) return;
+      // Re-fetch photos in case new ones were added dynamically
+      photos = Array.from(document.querySelectorAll('.blog-img'));
+      const index = photos.indexOf(e.target);
+      if (index !== -1) openModal(index);
+    });
+  }
 
   closeBtn.addEventListener('click', closeModal);
 
@@ -481,34 +515,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-</div>
-</div>
-</div>
-<footer> ᓚᘏᗢ snails.town since 2019 | <a href="/map">sitemap</a> | <a rel="noreferrer" target="_blank" href="https://neocities.org/site/snails">neocities profile</a> | <a rel="noreferrer" target="_blank" href="https://github.com/strawberrysnails/neocities-snails">source code</a></footer>
-
-
-<script>
-[...document.querySelectorAll(".buttons-n-blinkers")]
-  .map(div => div.children[0])
-  .forEach(innerDiv => {
-    let follower = innerDiv.cloneNode(true);
-    follower.classList.add("follower");
-    innerDiv.parentElement.appendChild(follower);
-    follower.classList.add("play");
-    innerDiv.classList.add("play");
-  });
-</script>
-
-
-    <script src="/javascript/main.js?nocache=?nocache=1772422058786"></script>
-    <script src="/javascript/jquery.min.js"></script>
-    <script src="/javascript/jquery.style-my-tooltips.js"></script>
-    <script>
-    (function($){
-        $(document).ready(function(){
-            $("[title]").style_my_tooltips();
-        });
-    })(jQuery);
-</script>
   </body>
 </html>

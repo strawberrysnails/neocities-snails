@@ -102,6 +102,10 @@
                 <ul>
                   
                     <li>
+                      <div><a href="/blog/2026/2026cons-0803/">Connecticon &amp; Otakon 2026</a></div>
+                    </li>
+                  
+                    <li>
                       <div><a href="/blog/2026/newwebsite-0228/">New Website in the Snails Universe</a></div>
                     </li>
                   
@@ -920,7 +924,7 @@
 </script>
 
 
-    <script src="/javascript/main.js?nocache=?nocache=1772422058786"></script>
+    <script src="/javascript/main.js?nocache=?nocache=1785967892256"></script>
     <script src="/javascript/jquery.min.js"></script>
     <script src="/javascript/jquery.style-my-tooltips.js"></script>
     <script>
@@ -930,5 +934,80 @@
         });
     })(jQuery);
 </script>
+
+    <!-- BLOG IMAGE MODAL -->
+<div id="photoModal">
+  <span id="closeModal">×</span>
+  <div class="modal-content">
+    <div class="modal-inner">
+      <button id="prevPhoto" class="modal-nav">‹</button>
+      <img id="modalImage" src="">
+      <button id="nextPhoto" class="modal-nav">›</button>
+    </div>
+    <div id="modalCaption"></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('photoModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+  const prevBtn = document.getElementById('prevPhoto');
+  const nextBtn = document.getElementById('nextPhoto');
+  const closeBtn = document.getElementById('closeModal');
+  let photos = Array.from(document.querySelectorAll('.blog-img'));
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = photos[index];
+    if (!img) return;
+    modalImg.src = img.src;
+    caption.textContent = img.alt || '';
+    modal.style.display = "block";
+    currentIndex = index;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Delegated click handler on blog-content
+  const blogContent = document.querySelector('.blog-content');
+  if (blogContent) {
+    blogContent.addEventListener('click', e => {
+      if (!e.target.classList.contains('blog-img')) return;
+      // Re-fetch photos in case new ones were added dynamically
+      photos = Array.from(document.querySelectorAll('.blog-img'));
+      const index = photos.indexOf(e.target);
+      if (index !== -1) openModal(index);
+    });
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+
+  // Click outside modal-inner closes modal
+  modal.addEventListener('click', e => {
+    if (!document.querySelector('.modal-inner').contains(e.target)) closeModal();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    openModal((currentIndex - 1 + photos.length) % photos.length);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    openModal((currentIndex + 1) % photos.length);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (modal.style.display !== "block") return;
+    if (e.key === "Escape") closeModal();
+    else if (e.key === "ArrowLeft") openModal((currentIndex - 1 + photos.length) % photos.length);
+    else if (e.key === "ArrowRight") openModal((currentIndex + 1) % photos.length);
+  });
+});
+</script>
+
   </body>
 </html>

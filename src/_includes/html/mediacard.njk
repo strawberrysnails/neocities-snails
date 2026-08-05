@@ -1,0 +1,24 @@
+<div class="media-card">
+  <div class="card-thumb">
+    {% if item.thumbnail %}
+      <img src="{{ item.thumbnail }}" alt="{{ item.title }}">
+    {% endif %}
+    <div class="card-badges">
+      {% if item.statusImage %}
+        <img src="{{ item.statusImage }}" alt="{{ item.status }}" class="badge">
+      {% endif %}
+      {% if item.platformImage %}
+        <img src="{{ item.platformImage }}" alt="{{ item.platform }}" class="badge">
+      {% endif %}
+    </div>
+  </div>
+  <div class="card-info">
+    <p class="card-title">{{ item.title }}</p>
+    {% if item.ratingImage %}
+      <img src="{{ item.ratingImage }}" alt="{{ item.rating }}" class="rating-badge">
+    {% endif %}
+    {% if item.notes %}
+      <p class="card-notes">{{ item.notes }}</p>
+    {% endif %}
+  </div>
+</div>

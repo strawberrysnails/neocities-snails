@@ -1,4 +1,8 @@
 module.exports = [
+          {
+      date: new Date("2026-08-05"),
+      blurb: `Sorry for the lack of updates! I have a <a href="/blog/2026/2026cons-0803/">new blog post</a> up about the 2 conventions I went to this year. Also thank you for 300 followers & 300k views! ˚ʚ♡ɞ˚` 
+    },
         {
       date: new Date("2026-02-26"),
       blurb: ` Another new page: <a href="/bedroom/lists">Lists</a> :3` 
